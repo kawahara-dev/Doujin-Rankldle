@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11131a">
+  <title>FANZA MARKET BOT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div><p class="eyebrow">AUTONOMOUS MARKET WATCHER</p><h1>FANZA <span>MARKET BOT</span></h1></div>
+      <div class="level">BOT<br><strong>Lv.1</strong></div>
+    </header>
+
+    <section class="status-panel panel">
+      <div><p class="label">BOT STATUS</p><p class="online" id="botStatus"><i></i> CHECKING</p></div>
+      <div class="scan"><p class="label">NEXT SCAN</p><strong id="countdown">--:--:--</strong></div>
+    </section>
+
+    <section class="metrics">
+      <article class="panel"><p class="label">本日の巡回</p><strong id="runs">0</strong><small>SCANS</small></article>
+      <article class="panel"><p class="label">監視商品</p><strong id="itemCount">0</strong><small>ITEMS</small></article>
+      <article class="panel"><p class="label">最終巡回</p><strong id="lastRun">--:--</strong><small id="lastDate">NO DATA</small></article>
+    </section>
+
+    <section class="products panel">
+      <div class="section-title"><div><p class="eyebrow">LIVE RANKING</p><h2>商品一覧</h2></div><span id="updatedAt">未取得</span></div>
+      <div id="productList" class="product-list"><p class="empty">データをロード中...</p></div>
+    </section>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
