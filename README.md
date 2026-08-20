@@ -1,6 +1,12 @@
-# FANZA MARKET BOT
+# DOUJIN RANKIDLE
 
-FANZAの商品ランキングを1時間ごとに収集し、GitHub Pagesで表示する放置ゲーム風ダッシュボードです。
+FANZAモジュールの商品ランキングを1時間ごとに収集し、GitHub Pagesで表示する放置ゲーム風ダッシュボードです。FANZAは収集モジュールのひとつとして分離してあり、将来ほかのストアを追加できます。
+
+## ゲームデータ
+
+`status.json` は直近巡回の `items_collected` / `runs_today` に加え、`first_run`、`last_run`、`total_runs`、`total_items_collected`、`mode` を保持します。EXPは巡回成功ごとに5、取得商品ごとに1を加算し、100 EXPごとにレベルが上がります。実績は保存せず、累積巡回・商品数から画面表示時に判定します。
+
+旧形式の `status.json` は自動移行されます。`first_run` がない場合は既存の `last_run`、`total_items_collected` がない場合は既存の `items_collected` を初期値として引き継ぎます。
 
 ## セットアップ
 

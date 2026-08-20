@@ -19,6 +19,18 @@ LATEST_PATH = DATA_DIR / "latest.json"
 STATUS_PATH = DATA_DIR / "status.json"
 API_URL = "https://api.dmm.com/affiliate/v3/ItemList"
 JST = ZoneInfo("Asia/Tokyo")
+EXP_PER_RUN = 5
+EXP_PER_ITEM = 1
+EXP_PER_LEVEL = 100
+ACHIEVEMENTS = (
+    ("first_boot", "FIRST BOOT", "runs", 1),
+    ("scanner_1", "SCANNER I", "runs", 10),
+    ("scanner_2", "SCANNER II", "runs", 100),
+    ("scanner_3", "SCANNER III", "runs", 1_000),
+    ("collector_1", "DATA COLLECTOR I", "items", 100),
+    ("collector_2", "DATA COLLECTOR II", "items", 1_000),
+    ("collector_3", "DATA COLLECTOR III", "items", 10_000),
+)
 
 
 def atomic_write(path: Path, payload: dict[str, Any]) -> None:
@@ -37,7 +49,53 @@ def read_status() -> dict[str, Any]:
     try:
         return json.loads(STATUS_PATH.read_text(encoding="utf-8"))
     except (FileNotFoundError, json.JSONDecodeError):
-        return {"last_run": None, "total_runs": 0, "items_collected": 0}
+        return {}
+
+
+def normalize_status(status: dict[str, Any]) -> dict[str, Any]:
+    """旧 status.json を、累積値を持つ現在の形式として解釈する。"""
+    total_runs = max(0, int(status.get("total_runs", 0) or 0))
+    items_collected = max(0, int(status.get("items_collected", 0) or 0))
+    # 旧形式では直近件数しかないため、移行時点の累積値の初期値として引き継ぐ。
+    total_items = max(
+        0, int(status.get("total_items_collected", items_collected) or 0)
+    )
+    return {
+        **status,
+        "total_runs": total_runs,
+        "total_items_collected": total_items,
+        "items_collected": items_collected,
+        "runs_today": max(0, int(status.get("runs_today", 0) or 0)),
+        "first_run": status.get("first_run") or status.get("last_run"),
+        "last_run": status.get("last_run"),
+        "mode": "live" if status.get("mode") == "live" else "mock",
+    }
+
+
+def experience(total_runs: int, total_items_collected: int) -> int:
+    """実装済みイベントだけから累積 EXP を算出する。"""
+    return total_runs * EXP_PER_RUN + total_items_collected * EXP_PER_ITEM
+
+
+def level_progress(exp: int) -> tuple[int, int]:
+    """固定 100 EXP 制の (レベル, 現レベルEXP) を返す。"""
+    return exp // EXP_PER_LEVEL + 1, exp % EXP_PER_LEVEL
+
+
+def achievement_progress(total_runs: int, total_items_collected: int) -> list[dict[str, Any]]:
+    """保存状態を増やさず、累積値から実績解除状況を算出する。"""
+    values = {"runs": total_runs, "items": total_items_collected}
+    return [
+        {
+            "id": achievement_id,
+            "name": name,
+            "kind": kind,
+            "current": values[kind],
+            "target": target,
+            "unlocked": values[kind] >= target,
+        }
+        for achievement_id, name, kind, target in ACHIEVEMENTS
+    ]
 
 
 def fetch_items() -> list[dict[str, Any]]:
@@ -106,7 +164,7 @@ def main() -> None:
     mode = "live" if has_credentials else "mock"
     items = fetch_items() if has_credentials else mock_items()
     now = datetime.now(JST).replace(microsecond=0).isoformat()
-    old_status = read_status()
+    old_status = normalize_status(read_status())
     run_date = now[:10]
     runs_today = (
         int(old_status.get("runs_today", 0)) + 1
@@ -114,13 +172,23 @@ def main() -> None:
         else 1
     )
     latest = {"updated_at": now, "items": items}
+    total_runs = old_status["total_runs"] + 1
+    total_items = old_status["total_items_collected"] + len(items)
+    exp = experience(total_runs, total_items)
+    level, level_exp = level_progress(exp)
     status = {
+        "first_run": old_status["first_run"] or now,
         "last_run": now,
-        "total_runs": int(old_status.get("total_runs", 0)) + 1,
+        "total_runs": total_runs,
+        "total_items_collected": total_items,
         "items_collected": len(items),
         "run_date": run_date,
         "runs_today": runs_today,
         "mode": mode,
+        "exp": exp,
+        "level": level,
+        "level_exp": level_exp,
+        "exp_to_next_level": EXP_PER_LEVEL,
     }
     atomic_write(LATEST_PATH, latest)
     atomic_write(STATUS_PATH, status)
