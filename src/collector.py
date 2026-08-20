@@ -1,4 +1,4 @@
-"""FANZA API からランキング商品を収集する。"""
+"""FANZA API または開発用モックからランキング商品を収集する。"""
 
 from __future__ import annotations
 
@@ -41,10 +41,8 @@ def read_status() -> dict[str, Any]:
 
 
 def fetch_items() -> list[dict[str, Any]]:
-    api_id = os.environ.get("DMM_API_ID")
-    affiliate_id = os.environ.get("DMM_AFFILIATE_ID")
-    if not api_id or not affiliate_id:
-        raise RuntimeError("DMM_API_ID と DMM_AFFILIATE_ID を設定してください")
+    api_id = os.environ.get("DMM_API_ID", "").strip()
+    affiliate_id = os.environ.get("DMM_AFFILIATE_ID", "").strip()
 
     params = {
         "api_id": api_id,
@@ -83,9 +81,30 @@ def fetch_items() -> list[dict[str, Any]]:
     return items
 
 
+def mock_items() -> list[dict[str, Any]]:
+    """API 認証情報がない環境向けの安定したサンプルを返す。"""
+    products = [
+        ("モック作品：真夏のランキング", 1980),
+        ("モック作品：放課後コレクション", 2480),
+        ("モック作品：秘密のスタジオ", 2980),
+        ("モック作品：週末スペシャル", 1480),
+        ("モック作品：プライベートタイム", 3280),
+    ]
+    return [
+        {"id": f"mock-{rank:03d}", "title": title, "price": price,
+         "url": f"https://example.com/mock-products/{rank}", "rank": rank}
+        for rank, (title, price) in enumerate(products, start=1)
+    ]
+
+
 def main() -> None:
     # API の取得・整形がすべて成功してから、既存ファイルを原子的に置換する。
-    items = fetch_items()
+    has_credentials = bool(
+        os.environ.get("DMM_API_ID", "").strip()
+        and os.environ.get("DMM_AFFILIATE_ID", "").strip()
+    )
+    mode = "live" if has_credentials else "mock"
+    items = fetch_items() if has_credentials else mock_items()
     now = datetime.now(JST).replace(microsecond=0).isoformat()
     old_status = read_status()
     run_date = now[:10]
@@ -101,10 +120,11 @@ def main() -> None:
         "items_collected": len(items),
         "run_date": run_date,
         "runs_today": runs_today,
+        "mode": mode,
     }
     atomic_write(LATEST_PATH, latest)
     atomic_write(STATUS_PATH, status)
-    print(f"{len(items)} 件を収集しました ({now})")
+    print(f"{len(items)} 件を収集しました ({now}, mode={mode})")
 
 
 if __name__ == "__main__":
