@@ -32,3 +32,12 @@ python -m http.server 8000 -d docs
 ```
 
 ブラウザで <http://localhost:8000> を開いて確認できます。API認証情報がない場合はモックモードで実行します。認証情報があるときのAPIエラーは処理を失敗させ、既存JSONを上書きしません。
+
+## v0.3 modes
+
+The collector selects `live` only when both DMM credentials exist, otherwise selects
+`public` when `PUBLIC_WATCH_ENABLED=true`, and falls back to `mock`. Public Watch reads
+only the configured public ranking page, checks `robots.txt`, stores no images or review
+text, and stops without evasion or destructive replacement on access errors. Set
+`POST_COOLDOWN_HOURS` (default: 24) to tune candidate suppression. Candidates are for
+human review only; this project does not post to X.
