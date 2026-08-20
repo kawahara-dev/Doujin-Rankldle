@@ -13,7 +13,8 @@ class V03Test(unittest.TestCase):
   self.assertEqual(collector.determine_mode({'DMM_API_ID':'a'}),'mock')
  def test_parser(self):
   items=parse_ranking_html(Path('tests/fixtures/fanza_ranking.html').read_text(),'https://www.dmm.co.jp/rank/')
-  self.assertEqual([(x['rank'],x['title'],x['price']) for x in items],[(1,'作品A',1980),(12,'作品B',980)])
+  self.assertEqual([(x['rank'],x['title'],x['price']) for x in items],[(1,'フィクスチャ作品A',1980),(12,'フィクスチャ作品B',980)])
+  self.assertEqual([x['id'] for x in items],['d_fixture001','d_fixture012'])
  def test_diff_status_and_score(self):
   old=[{'id':'a','rank':38},{'id':'b','rank':2},{'id':'c','rank':3}]
   new=[{'id':'a','rank':12,'title':'A','url':'a'},{'id':'b','rank':4,'title':'B','url':'b'},{'id':'c','rank':3,'title':'C','url':'c'},{'id':'d','rank':8,'title':'D','url':'d'}]
