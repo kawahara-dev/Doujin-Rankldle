@@ -1,14 +1,14 @@
 {
   "first_run": "2026-08-21T06:42:04+09:00",
-  "last_run": "2026-08-21T07:33:36+09:00",
-  "total_runs": 11,
-  "total_items_collected": 10,
+  "last_run": "2026-08-21T07:41:56+09:00",
+  "total_runs": 12,
+  "total_items_collected": 15,
   "items_collected": 5,
   "run_date": "2026-08-21",
-  "runs_today": 8,
+  "runs_today": 9,
   "mode": "mock",
-  "exp": 65,
+  "exp": 75,
   "level": 1,
-  "level_exp": 65,
+  "level_exp": 75,
   "exp_to_next_level": 100
 }
