@@ -15,6 +15,6 @@
   "processed_updates": [
     "mock-001:1|mock-002:2|mock-003:3|mock-004:4|mock-005:5"
   ],
-  "public_watch_status": "error",
-  "last_public_watch_error": "no public ranking items parsed"
+  "public_watch_status": "age_gate",
+  "last_public_watch_error": "FANZA age verification page reached"
 }

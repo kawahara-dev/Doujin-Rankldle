@@ -58,7 +58,7 @@ function renderAchievements(scans, items) {
 }
 
 function renderModules(mode) {
-  const modules = [{ name: mode === "public" ? "FANZA PUBLIC" : mode === "live" ? "FANZA API" : "FANZA MOCK", enabled: true }];
+  const modules = [{ name: mode === "public" ? "FANZA PUBLIC" : mode === "import" ? "FANZA MANUAL IMPORT" : mode === "live" ? "FANZA API" : "FANZA MOCK", enabled: true }];
   el("modules").replaceChildren(...modules.filter((module) => module.enabled).map((module) => {
     const card = document.createElement("article");
     card.className = "module active";
@@ -123,10 +123,11 @@ async function loadDashboard() {
     el("botAge").textContent = botAge(status.first_run || status.last_run);
     el("level").textContent = level; el("levelExp").textContent = levelExp; el("expTarget").textContent = target;
     el("totalExp").textContent = `TOTAL ${exp.toLocaleString("ja-JP")} EXP`; el("expBar").style.width = `${Math.min(100, levelExp / target * 100)}%`;
-    const mode = ["live", "public"].includes(status.mode) ? status.mode : "mock";
+    const mode = ["live", "public", "import"].includes(status.mode) ? status.mode : "mock";
     const publicError = mode === "public" && status.public_watch_status === "error";
-    el("modeBadge").textContent = publicError ? "PUBLIC WATCH ERROR" : mode === "live" ? "LIVE MODE" : mode === "public" ? "PUBLIC WATCH" : "DEMO MODE";
-    el("modeSubtitle").textContent = mode === "live" ? "DMM API CONNECTED" : mode === "public" ? "PUBLIC RANKING DATA" : "SAMPLE DATA"; el("modeBadge").className = `mode-badge ${mode}`; el("demoNote").hidden = mode !== "mock";
+    const ageGate = status.public_watch_status === "age_gate";
+    el("modeBadge").textContent = ageGate ? "PUBLIC WATCH: AGE GATE" : publicError ? "PUBLIC WATCH ERROR" : mode === "live" ? "LIVE MODE" : mode === "import" ? "MANUAL IMPORT" : mode === "public" ? "PUBLIC WATCH" : "DEMO MODE";
+    el("modeSubtitle").textContent = ageGate ? "FANZA AGE VERIFICATION REACHED / NO BYPASS" : mode === "live" ? "DMM API CONNECTED" : mode === "import" ? "MANUALLY SUPPLIED RANKING DATA" : mode === "public" ? "PUBLIC RANKING DATA" : "SAMPLE DATA"; el("modeBadge").className = `mode-badge ${mode}`; el("demoNote").hidden = mode !== "mock";
     renderModules(mode); renderAchievements(scans, totalItems); renderItems(items); renderCandidates(candidates);
     if (status.last_run || latest.updated_at) {
       const timestamp = status.last_run || latest.updated_at;
