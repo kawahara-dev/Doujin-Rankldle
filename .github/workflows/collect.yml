@@ -2,7 +2,7 @@ name: Collect FANZA products
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17 3,9,14,22 * * *"
   workflow_dispatch:
 
 permissions:
@@ -31,9 +31,10 @@ jobs:
         env:
           DMM_API_ID: ${{ secrets.DMM_API_ID }}
           DMM_AFFILIATE_ID: ${{ secrets.DMM_AFFILIATE_ID }}
-        run: python src/collector.py
+          PUBLIC_WATCH_ENABLED: ${{ vars.PUBLIC_WATCH_ENABLED }}
+        run: python -m src.collector
       - name: Sync data for GitHub Pages
-        run: cp data/*.json docs/data/
+        run: cp -R data/. docs/data/
       - name: Commit updated data
         run: |
           if git diff --quiet -- data docs/data; then
