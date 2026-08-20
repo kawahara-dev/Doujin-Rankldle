@@ -40,6 +40,10 @@ async function loadDashboard() {
     const items = Array.isArray(latest.items) ? latest.items : [];
     el("runs").textContent = status.runs_today ?? 0;
     el("itemCount").textContent = items.length;
+    const isLive = status.mode === "live";
+    el("modeBadge").textContent = isLive ? "LIVE MODE" : "DEMO MODE";
+    el("modeBadge").classList.toggle("live", isLive);
+    el("modeBadge").classList.toggle("mock", !isLive);
     renderItems(items);
     if (latest.updated_at) {
       const updated = new Date(latest.updated_at);

@@ -1,4 +1,40 @@
 {
-  "updated_at": null,
-  "items": []
+  "updated_at": "2026-08-20T21:49:41+09:00",
+  "items": [
+    {
+      "id": "mock-001",
+      "title": "モック作品：真夏のランキング",
+      "price": 1980,
+      "url": "https://example.com/mock-products/1",
+      "rank": 1
+    },
+    {
+      "id": "mock-002",
+      "title": "モック作品：放課後コレクション",
+      "price": 2480,
+      "url": "https://example.com/mock-products/2",
+      "rank": 2
+    },
+    {
+      "id": "mock-003",
+      "title": "モック作品：秘密のスタジオ",
+      "price": 2980,
+      "url": "https://example.com/mock-products/3",
+      "rank": 3
+    },
+    {
+      "id": "mock-004",
+      "title": "モック作品：週末スペシャル",
+      "price": 1480,
+      "url": "https://example.com/mock-products/4",
+      "rank": 4
+    },
+    {
+      "id": "mock-005",
+      "title": "モック作品：プライベートタイム",
+      "price": 3280,
+      "url": "https://example.com/mock-products/5",
+      "rank": 5
+    }
+  ]
 }
