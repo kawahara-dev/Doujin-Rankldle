@@ -36,8 +36,27 @@ python -m http.server 8000 -d docs
 ## v0.3 modes
 
 The collector selects `live` only when both DMM credentials exist, otherwise selects
-`public` when `PUBLIC_WATCH_ENABLED=true`, and falls back to `mock`. Public Watch reads
+`public` when `PUBLIC_WATCH_ENABLED=true`, then uses a manual import when present, and otherwise falls back to `mock`. Public Watch reads
 only the configured public ranking page, checks `robots.txt`, stores no images or review
 text, and stops without evasion or destructive replacement on access errors. Set
 `POST_COOLDOWN_HOURS` (default: 24) to tune candidate suppression. Candidates are for
 human review only; this project does not post to X.
+
+### Age gate and supported data sources
+
+Public Watch does not inject cookies, accept the age check, or otherwise evade access
+controls. If the final response URL contains `/age_check/`, it records
+`public_watch_status: "age_gate"` and `last_public_watch_error: "FANZA age verification page reached"`.
+The repository currently contains no official unauthenticated DMM/FANZA ranking API or
+feed. The only structured official source implemented here is the authenticated DMM
+Affiliate API (`src/providers/fanza_api.py`). Public HTML therefore remains monitoring
+only and is not treated as a dependable input while the age gate is present.
+
+Until DMM API credentials are available, save a manually obtained ranking as
+`data/import/fanza.json`. It may be either an array or `{ "items": [...] }`; each item
+needs `rank`, `title`, and either `id` or `url`, with optional `price` and `url`. The
+collector validates this file and feeds it into the existing rank-difference, Trend
+Score, history, and post-candidate pipeline. When Public Watch reaches the age gate it
+keeps the explicit age-gate status while processing this import; without Public Watch,
+the import is selected ahead of mock mode. Post candidates remain review/copy material
+only—there is no automatic posting.

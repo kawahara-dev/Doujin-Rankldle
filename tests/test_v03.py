@@ -4,7 +4,7 @@ from pathlib import Path
 from unittest.mock import patch
 from src import collector
 from src.post_generator import generate_candidates
-from src.providers.fanza_public import parse_ranking_html
+from src.providers.fanza_public import FanzaAgeGateError, FanzaPublicProvider, parse_ranking_html
 
 class V03Test(unittest.TestCase):
  def test_mode_priority(self):
@@ -40,3 +40,24 @@ class V03Test(unittest.TestCase):
    self.assertEqual(json.loads(latest.read_text())['items'][0]['id'],'safe')
    self.assertEqual(json.loads(status.read_text())['public_watch_status'],'error')
  def test_experience_includes_trends(self): self.assertEqual(collector.experience(1,2,1),17)
+ def test_age_gate_is_detected_from_final_url_before_empty_ranking(self):
+  class Headers:
+   def get(self,name,default=''): return 'text/html' if name=='Content-Type' else default
+   def get_content_charset(self): return 'utf-8'
+  class Response:
+   status=200; headers=Headers()
+   def __enter__(self): return self
+   def __exit__(self,*args): pass
+   def read(self): return b'<html>age verification</html>'
+   def geturl(self): return 'https://www.dmm.co.jp/en/age_check/=/declared=yes/'
+  with patch('src.providers.fanza_public.RobotFileParser.read'), patch('src.providers.fanza_public.RobotFileParser.can_fetch',return_value=True), patch('src.providers.fanza_public.urlopen',return_value=Response()):
+   with self.assertRaisesRegex(FanzaAgeGateError,'FANZA age verification page reached'): FanzaPublicProvider().fetch()
+ def test_manual_import_runs_existing_ranking_pipeline(self):
+  import json, tempfile
+  with tempfile.TemporaryDirectory() as directory:
+   root=Path(directory); import_path=root/'import'/'fanza.json'; import_path.parent.mkdir(); import_path.write_text(json.dumps([{'id':'manual-a','rank':1,'title':'Manual A','price':500,'url':'https://example.com/a'}]))
+   fanza=root/'fanza'; latest=root/'latest.json'; status=root/'status.json'; posts=root/'posts'/'candidates.json'
+   with patch.dict(os.environ,{},clear=True), patch.object(collector,'IMPORT_PATH',import_path), patch.object(collector,'FANZA_DIR',fanza), patch.object(collector,'LATEST_PATH',latest), patch.object(collector,'STATUS_PATH',status), patch.object(collector,'POSTS_PATH',posts): collector.main()
+   item=json.loads(latest.read_text())['items'][0]; saved=json.loads(status.read_text())
+   self.assertEqual((saved['mode'],saved['input_source']),('import','manual_import'))
+   self.assertEqual((item['current_rank'],item['trend_score'],item['status']),(1,40,'new'))

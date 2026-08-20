@@ -19,6 +19,10 @@ PRODUCT_PATH = re.compile(r"/dc/doujin/-/detail/", re.I)
 CARD_CLASS = re.compile(r"(?:ranking|rank)[-_\w]*(?:item|list__item)", re.I)
 
 
+class FanzaAgeGateError(RuntimeError):
+    """Raised when FANZA redirects the public request to age verification."""
+
+
 def _classes(attrs: dict[str, str | None]) -> str:
     return attrs.get("class") or ""
 
@@ -153,6 +157,8 @@ class FanzaPublicProvider(RankingProvider):
             f"HTML characters={len(html)}; ranking candidates={parser.candidate_count}; "
             f"parsed items={len(items)}"
         )
+        if "/age_check/" in urlparse(final_url).path:
+            raise FanzaAgeGateError("FANZA age verification page reached")
         if "captcha" in html.lower():
             raise RuntimeError("CAPTCHA detected; stopped safely")
         if not content_type.lower().startswith("text/html"):
