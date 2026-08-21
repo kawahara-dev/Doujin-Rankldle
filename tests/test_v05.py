@@ -6,6 +6,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from src import collector
+from src.providers.fanza_public import FanzaAgeGateError
 
 
 class RankingSeparationV05Test(unittest.TestCase):
@@ -72,6 +73,46 @@ class RankingSeparationV05Test(unittest.TestCase):
         other=collector.compare_rankings([self.item(2)], [{**self.item(20),"current_rank":20}])
         signals=collector.add_cross_signals(current,other,"1h")
         self.assertEqual(len(signals),1); self.assertLessEqual(current[0]["trend_score"],100)
+
+    def test_age_gate_falls_back_to_each_manual_ranking_type(self):
+        for ranking_type in ("1h", "24h"):
+            with self.subTest(ranking_type=ranking_type), tempfile.TemporaryDirectory() as directory:
+                root=Path(directory); import_path=root/"import/fanza.json"
+                import_path.parent.mkdir(parents=True)
+                import_path.write_text(json.dumps({"source":"fanza_manual", "ranking_type":ranking_type,
+                                                   "captured_at":f"{ranking_type}-age-gate",
+                                                   "items":[self.item(1)]}), encoding="utf-8")
+                patches=self.sandbox(root)
+                with patches[0],patches[1],patches[2],patches[3],patches[4], \
+                     patch.dict("os.environ", {"PUBLIC_WATCH_ENABLED":"true"}, clear=True), \
+                     patch.object(collector.FanzaPublicProvider, "fetch",
+                                  side_effect=FanzaAgeGateError("FANZA age verification page reached")):
+                    result=collector.main()
+
+                status=json.loads((root/"status.json").read_text())
+                current=root/f"fanza/{ranking_type}/current.json"
+                history=root/f"fanza/{ranking_type}/history"
+                self.assertIsNone(result)
+                self.assertEqual((status["mode"],status["ranking_type"],status["input_source"]),
+                                 ("import",ranking_type,"manual_import"))
+                self.assertIn(f"fanza_{ranking_type}",status["rankings"])
+                self.assertTrue(current.is_file())
+                self.assertEqual(json.loads(current.read_text())["ranking_type"],ranking_type)
+                self.assertEqual(len(list(history.glob("*.json"))),1)
+
+    def test_age_gate_without_manual_import_exits_safely(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory); patches=self.sandbox(root)
+            with patches[0],patches[1],patches[2],patches[3],patches[4], \
+                 patch.dict("os.environ", {"PUBLIC_WATCH_ENABLED":"true"}, clear=True), \
+                 patch.object(collector.FanzaPublicProvider, "fetch",
+                              side_effect=FanzaAgeGateError("FANZA age verification page reached")):
+                result=collector.main()
+
+            status=json.loads((root/"status.json").read_text())
+            self.assertIsNone(result)
+            self.assertEqual((status["mode"],status["public_watch_status"]),("public","age_gate"))
+            self.assertFalse((root/"latest.json").exists())
 
 
 if __name__ == "__main__": unittest.main()
