@@ -126,6 +126,7 @@ def cross_candidate(signal,now):
  return {**signal,'generated_at':now.isoformat(),'text':f"【FANZA CROSS TREND】\n🔥 1H・24Hともに上昇\n\n「{signal['title']}」\n\n1H: #{one['previous_rank']} → #{one['current_rank']}\n24H: #{daily['previous_rank']} → #{daily['current_rank']}"}
 def main():
  now=datetime.now(JST).replace(microsecond=0); stamp=now.isoformat(); mode=determine_mode(); old=normalize_status(read_status()); age_gate=False
+ ranking_mode=False; ranking_type='24h'
  migrate_legacy_fanza()
  try:
   raw=fetch_items() if mode=='live' else FanzaPublicProvider().fetch() if mode=='public' else import_items() if mode=='import' else mock_items()
@@ -137,7 +138,7 @@ def main():
   status={**old,'mode':'public','public_watch_status':'age_gate','last_public_watch_error':'FANZA age verification page reached','items_collected':0}
   atomic_write(STATUS_PATH,status); print(f'PUBLIC WATCH AGE GATE: {exc}')
   if not IMPORT_PATH.is_file(): return
-  age_gate=True; mode='import'; ranking_type=ranking_type_from_import(); raw=import_items(); bucket=old.get('rankings',{}).get(f'fanza_{ranking_type}',{})
+  age_gate=True; mode='import'; ranking_mode=True; ranking_type=ranking_type_from_import(); raw=import_items(); bucket=old.get('rankings',{}).get(f'fanza_{ranking_type}',{})
   previous=read_json(ranking_dir(ranking_type)/'current.json',{}).get('items',[]); items=compare_rankings(raw,previous,bucket.get('seen_keys'),bucket.get('streaks'))
  except Exception as exc:
   if mode!='public': raise
