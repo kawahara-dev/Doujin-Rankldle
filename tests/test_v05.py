@@ -53,6 +53,33 @@ class RankingSeparationV05Test(unittest.TestCase):
             self.run_import(root,"24h",items,"same")
             self.assertTrue(json.loads((root/"status.json").read_text())["duplicate_import"])
 
+    def test_duplicate_import_does_not_mutate_ranking_or_progress_state(self):
+        for ranking_type, captured_at in (("1h", "same-capture"), ("24h", "first-capture")):
+            with self.subTest(ranking_type=ranking_type), tempfile.TemporaryDirectory() as directory:
+                root=Path(directory); items=[self.item(1)]
+                self.run_import(root,ranking_type,items,captured_at)
+                status_path=root/"status.json"; first_status=json.loads(status_path.read_text())
+                tracked={path.relative_to(root):path.read_bytes() for path in root.rglob("*")
+                         if path.is_file() and path != status_path and "import" not in path.parts}
+
+                # 1h exercises duplicate captured_at detection; 24h exercises identical
+                # ranking-content detection even when captured_at differs.
+                second_capture=captured_at if ranking_type=="1h" else "second-capture"
+                self.run_import(root,ranking_type,items,second_capture)
+                second_status=json.loads(status_path.read_text())
+
+                first_without_heartbeat={k:v for k,v in first_status.items()
+                                         if k not in ("last_run","duplicate_import")}
+                second_without_heartbeat={k:v for k,v in second_status.items()
+                                          if k not in ("last_run","duplicate_import")}
+                self.assertEqual(second_without_heartbeat,first_without_heartbeat)
+                self.assertTrue(second_status["duplicate_import"])
+                self.assertEqual(second_status["rankings"][f"fanza_{ranking_type}"]["streaks"]["a"],1)
+                current=json.loads((root/f"fanza/{ranking_type}/current.json").read_text())
+                self.assertEqual(current["items"][0]["consecutive_appearances"],1)
+                self.assertEqual({path.relative_to(root):path.read_bytes() for path in root.rglob("*")
+                                  if path.is_file() and path != status_path and "import" not in path.parts},tracked)
+
     def test_unknown_rejected_and_hourly_zero_price_allowed(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory); path=root/"fanza.json"

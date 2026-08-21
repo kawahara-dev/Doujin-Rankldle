@@ -181,6 +181,12 @@ def main():
  content_update=f'{ranking_type}:content:{content_key}'; processed=old['processed_updates']
  legacy_keys=([f'captured:{captured}'] if captured else [])+[f'content:{content_key}'] if ranking_type=='24h' else []
  duplicate=mode=='import' and (update_key in processed or content_update in processed or any(key in processed for key in legacy_keys))
+ if duplicate:
+  # A repeated manual import is only a heartbeat. In particular, do not persist the
+  # comparison performed above: doing so would advance streaks and could regenerate
+  # ranking, cross-trend, sale, achievement, or progression state.
+  status={**old,'last_run':stamp,'duplicate_import':True}
+  atomic_write(STATUS_PATH,status); print(f'0 件を収集しました ({stamp}, mode={mode}, ranking={ranking_type}, duplicate=true)'); return
  runs=old['total_runs']+(0 if duplicate else 1); total=old['total_items_collected']+(0 if duplicate else len(items)); new_trends=0 if duplicate else trends
  if not duplicate: processed=(processed+[update_key,content_update])[-200:]
  trend_total=old['trend_events']+new_trends; exp=experience(runs,total,trend_total); level,level_exp=level_progress(exp)
