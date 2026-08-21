@@ -8,9 +8,14 @@ from src.providers.fanza_public import FanzaAgeGateError, FanzaPublicProvider, p
 
 class V03Test(unittest.TestCase):
  def test_mode_priority(self):
-  self.assertEqual(collector.determine_mode({'PUBLIC_WATCH_ENABLED':'true'}),'public')
-  self.assertEqual(collector.determine_mode({'DMM_API_ID':'a','DMM_AFFILIATE_ID':'b','PUBLIC_WATCH_ENABLED':'true'}),'live')
-  self.assertEqual(collector.determine_mode({'DMM_API_ID':'a'}),'mock')
+  import tempfile
+  with tempfile.TemporaryDirectory() as directory:
+   missing=Path(directory)/'missing.json'; imported=Path(directory)/'fanza.json'; imported.write_text('[]')
+   self.assertEqual(collector.determine_mode({},missing),'mock')
+   self.assertEqual(collector.determine_mode({},imported),'import')
+   self.assertEqual(collector.determine_mode({'PUBLIC_WATCH_ENABLED':'true'},imported),'public')
+   self.assertEqual(collector.determine_mode({'DMM_API_ID':'a','DMM_AFFILIATE_ID':'b','PUBLIC_WATCH_ENABLED':'true'},imported),'live')
+   self.assertEqual(collector.determine_mode({'DMM_API_ID':'a'},missing),'mock')
  def test_parser(self):
   items=parse_ranking_html(Path('tests/fixtures/fanza_ranking.html').read_text(),'https://www.dmm.co.jp/rank/')
   self.assertEqual([(x['rank'],x['title'],x['price']) for x in items],[(1,'フィクスチャ作品A',1980),(12,'フィクスチャ作品B',980)])
@@ -34,7 +39,8 @@ class V03Test(unittest.TestCase):
   with tempfile.TemporaryDirectory() as directory:
    root=Path(directory); fanza=root/'fanza'; fanza.mkdir(); current=fanza/'current.json'; current.write_text('{"items":[{"id":"safe"}]}')
    latest=root/'latest.json'; latest.write_text('{"items":[{"id":"safe"}]}'); status=root/'status.json'
-   with patch.dict(os.environ,{'PUBLIC_WATCH_ENABLED':'true'},clear=True), patch.object(collector,'DATA_DIR',root), patch.object(collector,'FANZA_DIR',fanza), patch.object(collector,'LATEST_PATH',latest), patch.object(collector,'STATUS_PATH',status), patch.object(collector.FanzaPublicProvider,'fetch',side_effect=RuntimeError('HTTP 403')):
+   posts=root/'posts'/'candidates.json'; import_path=root/'import'/'fanza.json'
+   with patch.dict(os.environ,{'PUBLIC_WATCH_ENABLED':'true'},clear=True), patch.object(collector,'DATA_DIR',root), patch.object(collector,'FANZA_DIR',fanza), patch.object(collector,'LATEST_PATH',latest), patch.object(collector,'STATUS_PATH',status), patch.object(collector,'POSTS_PATH',posts), patch.object(collector,'IMPORT_PATH',import_path), patch.object(collector.FanzaPublicProvider,'fetch',side_effect=RuntimeError('HTTP 403')):
     collector.main()
    self.assertEqual(json.loads(current.read_text())['items'][0]['id'],'safe')
    self.assertEqual(json.loads(latest.read_text())['items'][0]['id'],'safe')

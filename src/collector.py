@@ -25,10 +25,11 @@ def read_json(path,default):
  try:return json.loads(path.read_text(encoding='utf-8'))
  except (FileNotFoundError,json.JSONDecodeError):return default
 def read_status(): return read_json(STATUS_PATH,{})
-def determine_mode(env=os.environ):
+def determine_mode(env=os.environ, import_path=None):
+ import_path=IMPORT_PATH if import_path is None else Path(import_path)
  if env.get('DMM_API_ID','').strip() and env.get('DMM_AFFILIATE_ID','').strip(): return 'live'
  if env.get('PUBLIC_WATCH_ENABLED','').lower()=='true': return 'public'
- if IMPORT_PATH.is_file(): return 'import'
+ if import_path.is_file(): return 'import'
  return 'mock'
 def normalize_status(s):
  runs=max(0,int(s.get('total_runs',0) or 0)); items=max(0,int(s.get('total_items_collected',s.get('items_collected',0)) or 0)); mode=s.get('mode','mock')

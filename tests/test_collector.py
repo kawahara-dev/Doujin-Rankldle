@@ -14,12 +14,19 @@ class CollectorModeTest(unittest.TestCase):
             data_dir = Path(directory)
             latest_path = data_dir / "latest.json"
             status_path = data_dir / "status.json"
+            fanza_dir = data_dir / "fanza"
+            posts_path = data_dir / "posts" / "candidates.json"
+            import_path = data_dir / "import" / "fanza.json"
             if old_status is not None:
+                status_path.parent.mkdir(parents=True, exist_ok=True)
                 status_path.write_text(json.dumps(old_status), encoding="utf-8")
             with (
                 patch.dict(os.environ, environment, clear=True),
                 patch.object(collector, "LATEST_PATH", latest_path),
                 patch.object(collector, "STATUS_PATH", status_path),
+                patch.object(collector, "FANZA_DIR", fanza_dir),
+                patch.object(collector, "POSTS_PATH", posts_path),
+                patch.object(collector, "IMPORT_PATH", import_path),
             ):
                 collector.main()
             return (
@@ -34,6 +41,22 @@ class CollectorModeTest(unittest.TestCase):
         fetch_items.assert_not_called()
         self.assertEqual(status["mode"], "mock")
         self.assertGreater(len(latest["items"]), 0)
+        self.assertTrue(all(item["id"].startswith("mock-") for item in latest["items"]))
+
+    def test_repository_import_does_not_affect_mock_statistics(self):
+        old = {"total_runs": 2, "total_items_collected": 10}
+        with tempfile.TemporaryDirectory() as directory:
+            repository_import = Path(directory) / "data" / "import" / "fanza.json"
+            repository_import.parent.mkdir(parents=True)
+            repository_import.write_text(
+                json.dumps({"items": [{"rank": rank} for rank in range(1, 21)]}),
+                encoding="utf-8",
+            )
+            with patch.object(collector, "IMPORT_PATH", repository_import):
+                latest, status = self.run_collector({}, old)
+
+        self.assertEqual(status["mode"], "mock")
+        self.assertEqual(status["total_items_collected"], 10 + len(latest["items"]))
         self.assertTrue(all(item["id"].startswith("mock-") for item in latest["items"]))
 
     def test_complete_credentials_use_live_api(self):
