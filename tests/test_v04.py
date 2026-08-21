@@ -1,4 +1,5 @@
 import json
+import re
 import subprocess
 import tempfile
 import unittest
@@ -65,6 +66,30 @@ class ManualImportV04Test(unittest.TestCase):
                       "DOM Order Fallback Used", "全商品の順位が同一です", "全商品の価格が同一です"):
             self.assertIn(guard, source)
 
+    def test_24_hour_fixture_has_twenty_explicit_ranked_products(self):
+        fixture = Path("tests/fixtures/fanza_ranking_24h.html").read_text(encoding="utf-8")
+        cards = re.findall(r'<article class="daily-card" data-rank="(\d+)">(.*?)</article>', fixture, re.S)
+        self.assertEqual(len(cards), 20)
+        self.assertEqual([int(rank) for rank, _ in cards], list(range(1, 21)))
+        self.assertTrue(all("販売数" in body and re.search(r"(?:¥[\d,]+|[\d,]+円)", body)
+                            for _, body in cards))
+
+    def test_1_hour_fixture_dom_order_matches_safe_partial_ranking(self):
+        source = Path("docs/bookmarklet.js").read_text(encoding="utf-8")
+        fixture = Path("tests/fixtures/fanza_ranking_1h.html").read_text(encoding="utf-8")
+        cards = re.findall(r'<article class="hourly-row(?: incomplete)?">(.*?)</article>', fixture, re.S)
+        safe_cids = [re.search(r"cid=(d_hourly\d+)", card).group(1)
+                     for card in cards if "販売数" in card]
+        self.assertEqual(len(cards), 21)
+        self.assertEqual(safe_cids, [f"d_hourly{i:03}" for i in range(1, 20)])
+        self.assertEqual(sum("販売数" not in card for card in cards), 2)
+        self.assertEqual(sum(not re.search(r"(?:¥[\d,]+|[\d,]+円)", card)
+                             for card in cards if "販売数" in card), 1)
+        for policy in ("out.length >= 10", "explicitRanks === 0", "stableDomOrder",
+                       "Missing Products:", "Price Missing:", "Sales Missing:",
+                       "Missing Product Diagnostics:"):
+            self.assertIn(policy, source)
+
     def test_bookmarklet_minifier_keeps_code_after_line_comments_and_is_valid_javascript(self):
         script = r'''const { minify } = require("./docs/bookmarklet-minifier.js");
 const fixture = `(() => {
@@ -85,6 +110,12 @@ const { minify } = require("./docs/bookmarklet-minifier.js");
 const output = minify(fs.readFileSync("docs/bookmarklet.js", "utf8"));
 if (!output.startsWith("javascript:(()=>{")) throw new Error("invalid prefix");
 new Function(output.slice("javascript:".length));'''
+        subprocess.run(["node", "-e", script], check=True)
+
+    def test_missing_prices_are_valid_after_card_confirmation(self):
+        script = r'''const { validate } = require("./docs/bookmarklet.js");
+const items = Array.from({length: 19}, (_, i) => ({rank: i + 1, title: `T${i}`, price: 0, url: `u${i}`}));
+if (validate(items) !== "") throw new Error(validate(items));'''
         subprocess.run(["node", "-e", script], check=True)
 
     def test_captured_at_prevents_double_counting(self):
