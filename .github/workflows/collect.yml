@@ -1,6 +1,11 @@
 name: Collect FANZA products
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/import/fanza.json"
   schedule:
     - cron: "17 3,9,14,22 * * *"
   workflow_dispatch:
