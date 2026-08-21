@@ -15,6 +15,8 @@ const SCHEDULE_UTC_HOURS = [3, 9, 14, 22];
 let nextScan = null;
 let knownLastRun = null;
 let loading = false;
+let selectedRanking = "24h";
+let rankingData = { "1h": { items: [] }, "24h": { items: [] } };
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -57,12 +59,13 @@ function renderAchievements(scans, items) {
   }));
 }
 
-function renderModules(mode) {
-  const modules = [{ name: mode === "public" ? "FANZA PUBLIC" : mode === "import" ? "FANZA MANUAL IMPORT" : mode === "live" ? "FANZA API" : "FANZA MOCK", enabled: true }];
+function renderModules(mode, rankings = {}) {
+  const modules = ["1h", "24h"].map(type => ({ name: `FANZA ${type.toUpperCase()}`, enabled: true, status: rankings[`fanza_${type}`] || {} }));
   el("modules").replaceChildren(...modules.filter((module) => module.enabled).map((module) => {
     const card = document.createElement("article");
     card.className = "module active";
-    card.textContent = `🟢 ${module.name}`;
+    const date = module.status.last_run ? new Date(module.status.last_run).toLocaleString("ja-JP") : "NO DATA";
+    card.innerHTML = `<strong>🟢 ${module.name}</strong><small>LAST SCAN ${date}<br>ITEMS ${number(module.status.items_collected)}<br>TREND EVENTS ${number(module.status.trend_events)}</small>`;
     return card;
   }));
 }
@@ -102,9 +105,19 @@ function renderItems(items) {
   }));
 }
 
+function selectRanking(type) {
+  selectedRanking = type;
+  document.querySelectorAll("[data-ranking]").forEach(button => button.classList.toggle("active", button.dataset.ranking === type));
+  el("trendLabel").textContent = type === "1h" ? "🔥 SHORT TREND / 1H RANKING" : "📊 DAILY TREND / 24H RANKING";
+  renderItems(rankingData[type]?.items || []);
+  const timestamp = rankingData[type]?.fetched_at;
+  el("updatedAt").textContent = timestamp ? `UPDATED ${new Date(timestamp).toLocaleString("ja-JP")}` : "未取得";
+}
+
 function validateImport(value) {
   let data; try { data = JSON.parse(value); } catch (_) { return { valid: false, errors: ["JSONを解析できません"], items: [] }; }
   const items = Array.isArray(data) ? data : data?.items;
+  if (!Array.isArray(data) && !["1h", "24h"].includes(data?.ranking_type)) return { valid: false, errors: ["ranking_typeは1hまたは24hが必要です"], items: [] };
   if (!Array.isArray(items) || !items.length) return { valid: false, errors: ["itemsが空です"], items: [] };
   const errors = [], ranks = new Set(), products = new Set();
   items.forEach((item, i) => {
@@ -140,11 +153,12 @@ async function loadDashboard() {
   if (loading) return;
   loading = true;
   try {
-    const [latestResponse, statusResponse, postsResponse] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/posts/candidates.json", { cache: "no-store" }).catch(() => null)]);
+    const [latestResponse, statusResponse, posts1h, posts24h, rank1h, rank24h] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/posts/fanza_1h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_24h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null)]);
     if (!latestResponse.ok || !statusResponse.ok) throw new Error("データ取得に失敗しました");
     const [latest, status] = await Promise.all([latestResponse.json(), statusResponse.json()]);
     const items = Array.isArray(latest.items) ? latest.items : [];
-    const candidates = postsResponse?.ok ? await postsResponse.json() : [];
+    rankingData = { "1h": rank1h?.ok ? await rank1h.json() : { items: [] }, "24h": rank24h?.ok ? await rank24h.json() : { items: [] } };
+    const candidates = [...(posts1h?.ok ? await posts1h.json() : []), ...(posts24h?.ok ? await posts24h.json() : [])];
     const scans = number(status.total_runs);
     const totalItems = number(status.total_items_collected ?? status.items_collected);
     const exp = number(status.exp ?? scans * 5 + totalItems);
@@ -162,7 +176,9 @@ async function loadDashboard() {
     const ageGate = mode === "public" && status.public_watch_status === "age_gate";
     el("modeBadge").textContent = ageGate ? "PUBLIC WATCH: AGE GATE" : publicError ? "PUBLIC WATCH ERROR" : mode === "live" ? "LIVE MODE" : mode === "import" ? "🟡 FANZA SEMI AUTO" : mode === "public" ? "PUBLIC WATCH" : "DEMO MODE";
     el("modeSubtitle").textContent = ageGate ? "FANZA AGE VERIFICATION REACHED / NO BYPASS" : mode === "live" ? "DMM API CONNECTED" : mode === "import" ? "MANUAL RANKING IMPORT" : mode === "public" ? "PUBLIC RANKING DATA" : "SAMPLE DATA"; el("modeBadge").className = `mode-badge ${mode}`; el("demoNote").hidden = mode !== "mock";
-    renderModules(mode); renderAchievements(scans, totalItems); renderItems(items); renderCandidates(candidates);
+    renderModules(mode, status.rankings); renderAchievements(scans, totalItems); selectRanking(selectedRanking); renderCandidates(candidates);
+    const signals = status.market_signals || {};
+    el("marketSignals").innerHTML = [["1H MAX RISE", signals["1h_max_rise"]], ["24H MAX RISE", signals["24h_max_rise"]], ["CROSS TREND", signals.cross_trend], ["NEW ENTRY", signals.new_entry]].map(([label,value]) => `<article><small>${label}</small><strong>${label.includes("RISE") && number(value) ? "+" : ""}${number(value)}</strong></article>`).join("");
     if (status.last_run || latest.updated_at) {
       const timestamp = status.last_run || latest.updated_at;
       const updated = new Date(timestamp);
@@ -176,4 +192,5 @@ async function loadDashboard() {
   } finally { loading = false; updateCountdown(); }
 }
 
+document.querySelectorAll("[data-ranking]").forEach(button => button.addEventListener("click", () => selectRanking(button.dataset.ranking)));
 updateCountdown(); setInterval(updateCountdown, 1000); setInterval(loadDashboard, POLL_INTERVAL); setupImportTools(); loadDashboard();

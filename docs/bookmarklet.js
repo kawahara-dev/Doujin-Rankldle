@@ -167,20 +167,28 @@
       `cid=${item.cid} links=${item.productLinks} depth=${item.parentDepth} sales=${item.sales ? "Yes" : "No"} price=${item.price ? "Yes" : "No"} unique_cids=${item.uniqueCidCount} text_length=${item.innerTextLength}`).join("\n");
     return `Links: ${debug.links || 0}\nProduct Links: ${debug.productLinks || 0}\nCandidate Cards: ${debug.candidateCards || 0}\nRanks Found: ${debug.ranksFound || 0}\nUnique Products: ${debug.uniqueProducts || 0}\nParsed Products: ${debug.parsedProducts || 0}\nMissing Products: ${debug.missingProducts || 0}\nCards with 1 CID: ${debug.cardsWithOneCid || 0}\nCards with multiple CID: ${debug.cardsWithMultipleCid || 0}\nPrice Missing: ${debug.priceMissing || 0}\nSales Missing: ${debug.salesMissing || 0}\nExplicit Ranks: ${debug.explicitRanks || 0}\nDOM Order Fallback Used: ${debug.domOrderFallbackUsed ? "Yes" : "No"}\nStable DOM Order: ${debug.stableDomOrder ? "Yes" : "No"}\nItems Parsed: ${debug.itemsParsed || 0}${missing ? `\nMissing Product Diagnostics:\n${missing}` : ""}`;
   };
+  const detectRankingType = (doc = document) => {
+    const selected = [...doc.querySelectorAll('[aria-selected="true"], .active, .selected')].map(node => compact(node.innerText)).join(" ");
+    const evidence = `${doc.title || ""} ${compact(doc.querySelector("h1,h2")?.innerText)} ${selected} ${doc.location?.href || location.href}`.toLowerCase();
+    if (/(1\s*時間|1hour|hourly|period=1h|type=hour)/.test(evidence)) return "1h";
+    if (/(24\s*時間|24hour|daily|デイリー|period=24h|type=day)/.test(evidence)) return "24h";
+    return "unknown";
+  };
+
   const run = async () => {
-    const debug = {}, items = extract(document, debug), problem = validate(items);
+    const debug = {}, items = extract(document, debug), problem = validate(items), rankingType = detectRankingType(document);
     if (problem) { alert(`${problem}\n\nRankIdle Import Debug\n\n${debugText(debug)}`); return; }
-    const json = JSON.stringify({ source: "fanza_manual", captured_at: new Date().toISOString(), items }, null, 2);
+    const json = JSON.stringify({ source: "fanza_manual", ranking_type: rankingType, captured_at: new Date().toISOString(), items }, null, 2);
     try {
       if (!navigator.clipboard?.writeText) throw new Error("clipboard unavailable");
-      await navigator.clipboard.writeText(json); alert(`ランキングを${items.length}件取得しました\nJSONをコピーしました`);
+      await navigator.clipboard.writeText(json); alert(`FANZA ${rankingType.toUpperCase()}\nランキングを${items.length}件取得しました\nJSONをコピーしました`);
     } catch (_) {
       const box = document.createElement("textarea"); box.value = json;
       box.setAttribute("style", "position:fixed;inset:5%;z-index:2147483647;width:90%;height:80%;padding:1em");
       document.body.append(box); box.select();
-      alert(`ランキングを${items.length}件取得しました\n表示されたJSONを手動でコピーしてください`);
+      alert(`FANZA ${rankingType.toUpperCase()}\nランキングを${items.length}件取得しました\n表示されたJSONを手動でコピーしてください`);
     }
   };
-  if (typeof module !== "undefined") module.exports = { extract, validate, productUrl, cidOf };
+  if (typeof module !== "undefined") module.exports = { extract, validate, productUrl, cidOf, detectRankingType };
   else run().catch(error => alert(`RankIdle Import Debug\n\n${error?.message || error}`));
 })();
