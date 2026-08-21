@@ -86,10 +86,38 @@
     return match ? Number((match[1] || match[2]).replace(/,/g, "")) : 0;
   };
 
+  const money = value => Number(String(value || "").replace(/,/g, "")) || 0;
+  const saleEndOf = (text, now = new Date()) => {
+    const raw = compact(text).match(/(?:\d{4}[/-])?\d{1,2}[/-]\d{1,2}\s*まで/)?.[0] || null;
+    if (!raw) return { sale_end_raw: null, sale_end: null };
+    const parts = raw.match(/(?:(\d{4})[/-])?(\d{1,2})[/-](\d{1,2})/);
+    if (!parts) return { sale_end_raw: raw, sale_end: null };
+    let year = parts[1] ? Number(parts[1]) : now.getFullYear();
+    const month = Number(parts[2]), day = Number(parts[3]);
+    if (month < 1 || month > 12 || day < 1 || day > 31) return { sale_end_raw: raw, sale_end: null };
+    if (!parts[1] && month < now.getMonth() + 1) year += 1;
+    const date = new Date(Date.UTC(year, month - 1, day));
+    if (date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return { sale_end_raw: raw, sale_end: null };
+    return { sale_end_raw: raw, sale_end: `${year}-${String(month).padStart(2,"0")}-${String(day).padStart(2,"0")}` };
+  };
+  const saleOf = card => {
+    if (productCids(card).size !== 1) return {};
+    const text = compact(card.innerText);
+    const current = priceOf(card);
+    const regularMatch = text.match(/(?:設定価格|通常価格|割引前(?:価格)?)\s*[（(]?\s*(?:[¥￥]\s*)?([\d,]+)\s*円?/i);
+    const regular = regularMatch ? money(regularMatch[1]) : null;
+    const rateMatch = text.match(/(\d{1,2})\s*%\s*OFF/i);
+    let rate = rateMatch ? Number(rateMatch[1]) : null;
+    if (rate == null && regular && current && regular > current) rate = Math.round((regular - current) / regular * 100);
+    const marker = /\bSALE\b|セール|キャンペーン|\d{1,2}\s*%\s*OFF|(?:設定価格|通常価格)/i.test(text);
+    const onSale = Boolean(marker && (rate || (regular && current < regular)));
+    return { regular_price: regular, discount_rate: rate, on_sale: onSale, ...saleEndOf(text) };
+  };
+
   const hasSales = element => /販売数/.test(compact(element.innerText));
   const hasPrice = element => /(?:[¥￥]\s*[\d,]+|[\d,]+\s*円)/.test(compact(element.innerText));
 
-  const extract = (doc = document, debug = {}) => {
+  const extract = (doc = document, debug = {}, rankingType = detectRankingType(doc)) => {
     const links = [...doc.querySelectorAll("a[href]")];
     const productLinks = links.filter(link => productUrl(link.href));
     const uniqueProducts = new Set(productLinks.map(link => cidOf(productUrl(link.href))).filter(Boolean));
@@ -109,8 +137,10 @@
         closestOneCid = card;
         if (!hasSales(card) || !titleOf(card, link, cid)) continue;
         oneCidCards.add(card);
-        out.push({ rank: rankOf(card), title: titleOf(card, link, cid), price: priceOf(card),
-          url: cleanUrl(url), id: cid, _card: card });
+        const item = { rank: rankOf(card), title: titleOf(card, link, cid), price: priceOf(card),
+          url: cleanUrl(url), id: cid, _card: card };
+        if (rankingType === "24h") Object.assign(item, saleOf(card));
+        out.push(item);
         seen.add(cid);
         break;
       }
@@ -176,7 +206,7 @@
   };
 
   const run = async () => {
-    const debug = {}, items = extract(document, debug), problem = validate(items), rankingType = detectRankingType(document);
+    const debug = {}, rankingType = detectRankingType(document), items = extract(document, debug, rankingType), problem = validate(items);
     if (problem) { alert(`${problem}\n\nRankIdle Import Debug\n\n${debugText(debug)}`); return; }
     const json = JSON.stringify({ source: "fanza_manual", ranking_type: rankingType, captured_at: new Date().toISOString(), items }, null, 2);
     try {
@@ -189,6 +219,6 @@
       alert(`FANZA ${rankingType.toUpperCase()}\nランキングを${items.length}件取得しました\n表示されたJSONを手動でコピーしてください`);
     }
   };
-  if (typeof module !== "undefined") module.exports = { extract, validate, productUrl, cidOf, detectRankingType };
+  if (typeof module !== "undefined") module.exports = { extract, validate, productUrl, cidOf, detectRankingType, saleOf, saleEndOf };
   else run().catch(error => alert(`RankIdle Import Debug\n\n${error?.message || error}`));
 })();

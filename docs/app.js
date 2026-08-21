@@ -101,8 +101,21 @@ function renderItems(items) {
     const rank = document.createElement("span"); rank.className = "rank"; rank.textContent = `#${item.rank}`;
     const title = document.createElement("span"); title.className = "title"; title.textContent = item.title;
     const price = document.createElement("span"); price.className = "price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
-    link.append(rank, title, price); return link;
+    link.append(rank, title);
+    if (selectedRanking === "24h" && item.on_sale) { const badge=document.createElement("b"); badge.className="sale-badge"; badge.textContent=`${number(item.discount_rate)}% OFF`; link.append(badge); }
+    link.append(price);
+    if (selectedRanking === "24h" && item.regular_price) { const regular=document.createElement("small"); regular.textContent=`通常 ¥${number(item.regular_price).toLocaleString("ja-JP")}`; link.append(regular); }
+    return link;
   }));
+}
+
+function renderSaleWatch(items) {
+  const active=items.filter(item=>item.on_sale), hot=active.filter(item=>item.hot_sale);
+  const soon=active.filter(item=>item.sale_end && new Date(`${item.sale_end}T23:59:59+09:00`)-Date.now()<=3*24*HOUR && new Date(`${item.sale_end}T23:59:59+09:00`)>Date.now());
+  el("saleMetrics").innerHTML=[["ACTIVE SALES",active.length],["MAX DISCOUNT",`${Math.max(0,...active.map(x=>number(x.discount_rate)))}%`],["HOT SALES",hot.length],["ENDING SOON",soon.length]].map(([l,v])=>`<article><small>${l}</small><strong>${v}</strong></article>`).join("");
+  const chosen=active.slice().sort((a,b)=>number(b.sale_score)-number(a.sale_score)).slice(0,5);
+  if (!chosen.length) return;
+  el("saleList").replaceChildren(...chosen.map(item=>{const card=document.createElement("article"); card.className="product sale-card"; const end=item.sale_end ? new Date(`${item.sale_end}T23:59:59+09:00`)-Date.now() : Infinity; card.textContent=`💸 ${number(item.discount_rate)}% OFF\n#${item.rank} ${item.title}\n${item.regular_price?`¥${number(item.regular_price).toLocaleString("ja-JP")} → `:""}¥${number(item.price).toLocaleString("ja-JP")}${item.hot_sale?"\n🔥 HOT SALE":""}${end<=24*HOUR?"\nENDING TODAY":end<=3*24*HOUR?"\nENDING SOON":""}`; return card;}));
 }
 
 function selectRanking(type) {
@@ -177,8 +190,9 @@ async function loadDashboard() {
     el("modeBadge").textContent = ageGate ? "PUBLIC WATCH: AGE GATE" : publicError ? "PUBLIC WATCH ERROR" : mode === "live" ? "LIVE MODE" : mode === "import" ? "🟡 FANZA SEMI AUTO" : mode === "public" ? "PUBLIC WATCH" : "DEMO MODE";
     el("modeSubtitle").textContent = ageGate ? "FANZA AGE VERIFICATION REACHED / NO BYPASS" : mode === "live" ? "DMM API CONNECTED" : mode === "import" ? "MANUAL RANKING IMPORT" : mode === "public" ? "PUBLIC RANKING DATA" : "SAMPLE DATA"; el("modeBadge").className = `mode-badge ${mode}`; el("demoNote").hidden = mode !== "mock";
     renderModules(mode, status.rankings); renderAchievements(scans, totalItems); selectRanking(selectedRanking); renderCandidates(candidates);
+    renderSaleWatch(rankingData["24h"]?.items || []);
     const signals = status.market_signals || {};
-    el("marketSignals").innerHTML = [["1H MAX RISE", signals["1h_max_rise"]], ["24H MAX RISE", signals["24h_max_rise"]], ["CROSS TREND", signals.cross_trend], ["NEW ENTRY", signals.new_entry]].map(([label,value]) => `<article><small>${label}</small><strong>${label.includes("RISE") && number(value) ? "+" : ""}${number(value)}</strong></article>`).join("");
+    el("marketSignals").innerHTML = [["1H MAX RISE", signals["1h_max_rise"]], ["24H MAX RISE", signals["24h_max_rise"]], ["CROSS TREND", signals.cross_trend], ["ACTIVE SALES",signals.active_sales],["HOT SALES",signals.hot_sales],["MAX DISCOUNT",`${number(signals.max_discount)}%`]].map(([label,value]) => `<article><small>${label}</small><strong>${label.includes("RISE") && number(value) ? "+" : ""}${value ?? 0}</strong></article>`).join("");
     if (status.last_run || latest.updated_at) {
       const timestamp = status.last_run || latest.updated_at;
       const updated = new Date(timestamp);
