@@ -74,6 +74,23 @@ class ManualImportV04Test(unittest.TestCase):
         self.assertTrue(all("販売数" in body and re.search(r"(?:¥[\d,]+|[\d,]+円)", body)
                             for _, body in cards))
 
+    def test_sale_scope_fixture_keeps_price_outside_ranking_card(self):
+        source = Path("docs/bookmarklet.js").read_text(encoding="utf-8")
+        fixture = Path("tests/fixtures/fanza_ranking_sale_scope.html").read_text(encoding="utf-8")
+        ranking_card = re.search(r'<div class="ranking-card">(.*?)</div>\s*<div class="sale-info">',
+                                 fixture, re.S).group(1)
+        self.assertIn("販売数：1,972", ranking_card)
+        self.assertIn("saleScopeテスト作品", ranking_card)
+        self.assertNotRegex(ranking_card, r"(?:[¥￥][\d,]+|[\d,]+円|%OFF)")
+        for expected in ("30%OFF", "3,080円", "設定価格4,400円", "9/18まで"):
+            self.assertIn(expected, fixture)
+        for behavior in ("saleScopeOf(card, cid)", "priceOf(saleScope.scope)",
+                         "saleOf(saleScope.scope)", "cids.size > 1", "depth <= 8"):
+            self.assertIn(behavior, source)
+        for debug_label in ("Price Found:", "Regular Price Found:", "Sale Scope Found:",
+                            "Sale Scope Depth:", "Sale Items:"):
+            self.assertIn(debug_label, source)
+
     def test_1_hour_fixture_dom_order_matches_safe_partial_ranking(self):
         source = Path("docs/bookmarklet.js").read_text(encoding="utf-8")
         fixture = Path("tests/fixtures/fanza_ranking_1h.html").read_text(encoding="utf-8")

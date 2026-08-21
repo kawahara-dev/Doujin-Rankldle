@@ -73,17 +73,25 @@
     return "";
   };
 
+  const PRICE_PATTERN = /(?:[¥￥]\s*([\d,]+)|([\d,]+)\s*円)/g;
+  const SALE_SCOPE_PATTERN = /(?:[¥￥]\s*[\d,]+|[\d,]+\s*円|\d{1,2}\s*%\s*OFF|設定価格|通常価格|\bSALE\b|セール|(?:\d{4}[/-])?\d{1,2}[/-]\d{1,2}\s*まで)/i;
+  const regularPriceNode = element => Boolean(element.closest(
+    "del,s,[class*='old' i],[class*='before' i],[class*='regular' i]"));
+
   const priceOf = card => {
     if (productCids(card).size !== 1) return 0;
-    const pattern = /(?:[¥￥]\s*([\d,]+)|([\d,]+)\s*円)/g;
-    const current = [...card.querySelectorAll("*")].filter(element => {
-      const text = ownText(element);
-      return /(?:[¥￥]\s*[\d,]+|[\d,]+\s*円)/.test(text) &&
-        !element.closest("del,s,[class*='old'],[class*='before'],[class*='regular']");
-    });
-    const text = compact((current.at(-1) || card).innerText);
-    const match = [...text.matchAll(pattern)].at(-1);
-    return match ? Number((match[1] || match[2]).replace(/,/g, "")) : 0;
+    const scope = card;
+    const candidates = [];
+    for (const element of [scope, ...scope.querySelectorAll("*")]) {
+      if (regularPriceNode(element)) continue;
+      const text = ownText(element) || (element.children.length === 0 ? compact(element.innerText) : "");
+      for (const match of text.matchAll(PRICE_PATTERN)) {
+        const before = text.slice(Math.max(0, match.index - 24), match.index);
+        if (/(?:設定価格|通常価格|割引前(?:価格)?)\s*[（(]?\s*$/i.test(before)) continue;
+        candidates.push(Number((match[1] || match[2]).replace(/,/g, "")));
+      }
+    }
+    return candidates.find(value => value > 0) || 0;
   };
 
   const money = value => Number(String(value || "").replace(/,/g, "")) || 0;
@@ -100,11 +108,11 @@
     if (date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return { sale_end_raw: raw, sale_end: null };
     return { sale_end_raw: raw, sale_end: `${year}-${String(month).padStart(2,"0")}-${String(day).padStart(2,"0")}` };
   };
-  const saleOf = card => {
-    if (productCids(card).size !== 1) return {};
-    const text = compact(card.innerText);
-    const current = priceOf(card);
-    const regularMatch = text.match(/(?:設定価格|通常価格|割引前(?:価格)?)\s*[（(]?\s*(?:[¥￥]\s*)?([\d,]+)\s*円?/i);
+  const saleOf = scope => {
+    if (productCids(scope).size !== 1) return {};
+    const text = compact(scope.innerText);
+    const current = priceOf(scope);
+    const regularMatch = text.match(/[（(]?\s*(?:設定価格|通常価格|割引前(?:価格)?)\s*(?:[¥￥]\s*)?([\d,]+)\s*円?/i);
     const regular = regularMatch ? money(regularMatch[1]) : null;
     const rateMatch = text.match(/(\d{1,2})\s*%\s*OFF/i);
     let rate = rateMatch ? Number(rateMatch[1]) : null;
@@ -116,13 +124,26 @@
 
   const hasSales = element => /販売数/.test(compact(element.innerText));
   const hasPrice = element => /(?:[¥￥]\s*[\d,]+|[\d,]+\s*円)/.test(compact(element.innerText));
+  const saleScopeOf = (card, cid) => {
+    let scope = null, depthFound = null, candidate = card;
+    for (let depth = 0; candidate && depth <= 8; depth += 1, candidate = candidate.parentElement) {
+      const cids = productCids(candidate);
+      if (cids.size > 1) break;
+      if (cids.size !== 1 || !cids.has(cid)) continue;
+      if (SALE_SCOPE_PATTERN.test(compact(candidate.innerText))) {
+        scope = candidate;
+        depthFound = depth;
+      }
+    }
+    return { scope: scope || card, found: Boolean(scope), depth: depthFound };
+  };
 
   const extract = (doc = document, debug = {}, rankingType = detectRankingType(doc)) => {
     const links = [...doc.querySelectorAll("a[href]")];
     const productLinks = links.filter(link => productUrl(link.href));
     const uniqueProducts = new Set(productLinks.map(link => cidOf(productUrl(link.href))).filter(Boolean));
     const oneCidCards = new Set(), multipleCidCards = new Set(), seen = new Set(), out = [];
-    const missingDiagnostics = [];
+    const missingDiagnostics = [], saleScopeDepths = [];
     for (const link of productLinks) {
       const url = productUrl(link.href), cid = cidOf(url);
       if (!cid || seen.has(cid)) continue;
@@ -137,9 +158,12 @@
         closestOneCid = card;
         if (!hasSales(card) || !titleOf(card, link, cid)) continue;
         oneCidCards.add(card);
-        const item = { rank: rankOf(card), title: titleOf(card, link, cid), price: priceOf(card),
+        const saleScope = rankingType === "24h" ? saleScopeOf(card, cid) : { scope: card, found: false, depth: null };
+        if (saleScope.found) saleScopeDepths.push(saleScope.depth);
+        const item = { rank: rankOf(card), title: titleOf(card, link, cid),
+          price: rankingType === "24h" ? priceOf(saleScope.scope) : priceOf(card),
           url: cleanUrl(url), id: cid, _card: card };
-        if (rankingType === "24h") Object.assign(item, saleOf(card));
+        if (rankingType === "24h") Object.assign(item, saleOf(saleScope.scope));
         out.push(item);
         seen.add(cid);
         break;
@@ -168,6 +192,8 @@
     }
     const priceMissing = out.filter(item => item.price === 0).length;
     const salesMissing = missingDiagnostics.filter(item => !item.sales).length;
+    const regularPriceFound = out.filter(item => item.regular_price > 0).length;
+    const saleItems = out.filter(item => item.on_sale).length;
     out.forEach(item => { delete item._card; });
     Object.assign(debug, { links: links.length, productLinks: productLinks.length,
       candidateCards: oneCidCards.size, ranksFound: explicitRanks,
@@ -175,6 +201,8 @@
       cardsWithMultipleCid: multipleCidCards.size, explicitRanks, domOrderFallbackUsed,
       itemsParsed: out.length, parsedProducts: out.length,
       missingProducts: uniqueProducts.size - out.length, priceMissing, salesMissing,
+      priceFound: out.length - priceMissing, regularPriceFound,
+      saleScopeFound: saleScopeDepths.length, saleScopeDepths, saleItems,
       stableDomOrder, missingDiagnostics });
     return out.sort((a, b) => a.rank - b.rank);
   };
@@ -195,7 +223,7 @@
   const debugText = debug => {
     const missing = (debug.missingDiagnostics || []).map(item =>
       `cid=${item.cid} links=${item.productLinks} depth=${item.parentDepth} sales=${item.sales ? "Yes" : "No"} price=${item.price ? "Yes" : "No"} unique_cids=${item.uniqueCidCount} text_length=${item.innerTextLength}`).join("\n");
-    return `Links: ${debug.links || 0}\nProduct Links: ${debug.productLinks || 0}\nCandidate Cards: ${debug.candidateCards || 0}\nRanks Found: ${debug.ranksFound || 0}\nUnique Products: ${debug.uniqueProducts || 0}\nParsed Products: ${debug.parsedProducts || 0}\nMissing Products: ${debug.missingProducts || 0}\nCards with 1 CID: ${debug.cardsWithOneCid || 0}\nCards with multiple CID: ${debug.cardsWithMultipleCid || 0}\nPrice Missing: ${debug.priceMissing || 0}\nSales Missing: ${debug.salesMissing || 0}\nExplicit Ranks: ${debug.explicitRanks || 0}\nDOM Order Fallback Used: ${debug.domOrderFallbackUsed ? "Yes" : "No"}\nStable DOM Order: ${debug.stableDomOrder ? "Yes" : "No"}\nItems Parsed: ${debug.itemsParsed || 0}${missing ? `\nMissing Product Diagnostics:\n${missing}` : ""}`;
+    return `Links: ${debug.links || 0}\nProduct Links: ${debug.productLinks || 0}\nCandidate Cards: ${debug.candidateCards || 0}\nRanks Found: ${debug.ranksFound || 0}\nUnique Products: ${debug.uniqueProducts || 0}\nParsed Products: ${debug.parsedProducts || 0}\nMissing Products: ${debug.missingProducts || 0}\nCards with 1 CID: ${debug.cardsWithOneCid || 0}\nCards with multiple CID: ${debug.cardsWithMultipleCid || 0}\nPrice Found: ${debug.priceFound || 0}\nRegular Price Found: ${debug.regularPriceFound || 0}\nSale Scope Found: ${debug.saleScopeFound || 0}\nSale Scope Depth: ${(debug.saleScopeDepths || []).join(", ") || "None"}\nSale Items: ${debug.saleItems || 0}\nPrice Missing: ${debug.priceMissing || 0} / ${debug.itemsParsed || 0}\nSales Missing: ${debug.salesMissing || 0}\nExplicit Ranks: ${debug.explicitRanks || 0}\nDOM Order Fallback Used: ${debug.domOrderFallbackUsed ? "Yes" : "No"}\nStable DOM Order: ${debug.stableDomOrder ? "Yes" : "No"}\nItems Parsed: ${debug.itemsParsed || 0}${missing ? `\nMissing Product Diagnostics:\n${missing}` : ""}`;
   };
   const detectRankingType = (doc = document) => {
     const selected = [...doc.querySelectorAll('[aria-selected="true"], .active, .selected')].map(node => compact(node.innerText)).join(" ");
@@ -207,6 +235,7 @@
 
   const run = async () => {
     const debug = {}, rankingType = detectRankingType(document), items = extract(document, debug, rankingType), problem = validate(items);
+    console.info(`RankIdle Import Debug\n\n${debugText(debug)}`);
     if (problem) { alert(`${problem}\n\nRankIdle Import Debug\n\n${debugText(debug)}`); return; }
     const json = JSON.stringify({ source: "fanza_manual", ranking_type: rankingType, captured_at: new Date().toISOString(), items }, null, 2);
     try {
