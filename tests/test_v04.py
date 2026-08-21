@@ -42,6 +42,14 @@ class ManualImportV04Test(unittest.TestCase):
         self.assertIn("navigator.clipboard", source); self.assertIn("textarea", source)
         for forbidden in ("cookie=", "captcha", "レビュー", "sampleImage"): self.assertNotIn(forbidden, source)
 
+    def test_bookmarklet_supports_mobile_card_discovery_and_debug_counts(self):
+        source = Path("docs/bookmarklet.js").read_text(encoding="utf-8")
+        fixture = Path("tests/fixtures/fanza_ranking_mobile.html").read_text(encoding="utf-8")
+        for marker in ("販売数", "depth < 10", "Product Links:", "Candidate Cards:", "Ranks Found:"):
+            self.assertIn(marker, source)
+        for expected in ("d_mobile001", "d_mobile002", "3,080円", "¥1,650", "販売数：1,972"):
+            self.assertIn(expected, fixture)
+
     def test_captured_at_prevents_double_counting(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory); import_path = root / "import" / "fanza.json"; import_path.parent.mkdir()
