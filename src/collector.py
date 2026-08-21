@@ -15,6 +15,7 @@ FANZA_DIR=DATA_DIR/'fanza'; POSTS_PATH=DATA_DIR/'posts'/'candidates.json'; JST=Z
 IMPORT_PATH=DATA_DIR/'import'/'fanza.json'
 EXP_PER_RUN=5; EXP_PER_ITEM=1; EXP_PER_TREND=10; EXP_PER_LEVEL=100; HISTORY_DAYS=90
 TREND={'new':20,'top10':20,'rise10':20,'rise20_extra':15,'rise50_extra':20,'streak3':10}
+RANKING_TYPES=('1h','24h'); CROSS_TREND_BONUS=20
 ACHIEVEMENTS=(("first_boot","FIRST BOOT","runs",1),("scanner_1","SCANNER I","runs",10),("scanner_2","SCANNER II","runs",100),("scanner_3","SCANNER III","runs",1000),("collector_1","DATA COLLECTOR I","items",100),("collector_2","DATA COLLECTOR II","items",1000),("collector_3","DATA COLLECTOR III","items",10000))
 
 def atomic_write(path:Path,payload:Any)->None:
@@ -48,8 +49,15 @@ def achievement_progress(runs,items):
 def fetch_items(): return FanzaApiProvider().fetch()
 def mock_items():
  return [{'id':f'mock-{r:03d}','title':t,'price':p,'url':f'https://example.com/mock-products/{r}','rank':r} for r,(t,p) in enumerate([('モック作品：真夏のランキング',1980),('モック作品：放課後コレクション',2480),('モック作品：秘密のスタジオ',2980),('モック作品：週末スペシャル',1480),('モック作品：プライベートタイム',3280)],1)]
+def ranking_type_from_import():
+ payload=read_json(IMPORT_PATH,None)
+ ranking_type=payload.get('ranking_type') if isinstance(payload,dict) else None
+ # Legacy array imports remain 24h-compatible; envelopes must be explicit from v0.5.
+ if isinstance(payload,list) or ranking_type is None: return '24h'
+ if ranking_type not in RANKING_TYPES: raise RuntimeError('manual FANZA ranking import: ranking_type must be 1h or 24h')
+ return ranking_type
 def import_items():
- payload=read_json(IMPORT_PATH,None); raw=payload.get('items') if isinstance(payload,dict) else payload
+ payload=read_json(IMPORT_PATH,None); ranking_type=ranking_type_from_import(); raw=payload.get('items') if isinstance(payload,dict) else payload
  if not isinstance(raw,list) or not raw: raise RuntimeError('manual FANZA ranking import has no items')
  result=[]; ranks=set(); products=set()
  for index,item in enumerate(raw,1):
@@ -83,23 +91,54 @@ def compare_rankings(items,previous,seen=None,streaks=None):
   if streak>=3:score+=TREND['streak3']
   x.update(key=key,current_rank=current,previous_rank=prev,rank_change=change,status=status,trend_score=min(100,score),consecutive_appearances=streak); result.append(x)
  return result
-def save_history(now,payload):
- path=FANZA_DIR/'history'/f'{now.date().isoformat()}.json'; entries=read_json(path,[])
- signature=[(x['key'],x['current_rank']) for x in payload['items']]
- if not entries or [(x['key'],x['current_rank']) for x in entries[-1]['items']]!=signature: entries.append(payload); atomic_write(path,entries[-4:])
+def ranking_dir(ranking_type): return FANZA_DIR/ranking_type
+def posts_path(ranking_type):
+ # Preserve callers which patch the historical POSTS_PATH test seam.
+ return POSTS_PATH.parent/f'fanza_{ranking_type}_candidates.json'
+def migrate_legacy_fanza():
+ """Copy v0.4 data into 24h storage. The legacy files are deliberately retained."""
+ target=ranking_dir('24h'); legacy_current=FANZA_DIR/'current.json'; target_current=target/'current.json'
+ if legacy_current.is_file() and not target_current.exists(): atomic_write(target_current,read_json(legacy_current,{}))
+ legacy_history=FANZA_DIR/'history'
+ if legacy_history.is_dir():
+  for source in legacy_history.glob('*.json'):
+   destination=target/'history'/source.name
+   if not destination.exists(): atomic_write(destination,read_json(source,[]))
+def save_history(now,payload,ranking_type='24h'):
+ path=ranking_dir(ranking_type)/'history'/f'{now.date().isoformat()}.json'; entries=read_json(path,[])
+ signature=[(stable_key(x),x.get('current_rank',x.get('rank'))) for x in payload['items']]
+ if not entries or [(stable_key(x),x.get('current_rank',x.get('rank'))) for x in entries[-1]['items']]!=signature: entries.append(payload); atomic_write(path,entries[-4:])
  files=sorted(path.parent.glob('*.json')); [p.unlink() for p in files[:-HISTORY_DAYS]]
+def add_cross_signals(items,other_items,ranking_type):
+ other={stable_key(x):x for x in other_items if x.get('rank_change',0)>0}; signals=[]
+ for item in items:
+  match=other.get(stable_key(item))
+  if item.get('rank_change',0)>0 and match:
+   item['cross_signal']=True; item['trend_score']=min(100,item.get('trend_score',0)+CROSS_TREND_BONUS)
+   one=item if ranking_type=='1h' else match; daily=match if ranking_type=='1h' else item
+   signals.append({'key':item['key'],'title':item['title'],'ranking_type':'cross','trend_score':item['trend_score'],
+    'previous_rank':item.get('previous_rank'),'current_rank':item['current_rank'],'rank_change':item['rank_change'],
+    'one_hour':{'previous_rank':one.get('previous_rank'),'current_rank':one['current_rank']},
+    'twenty_four_hour':{'previous_rank':daily.get('previous_rank'),'current_rank':daily['current_rank']}})
+ return signals
+def cross_candidate(signal,now):
+ one,daily=signal['one_hour'],signal['twenty_four_hour']
+ return {**signal,'generated_at':now.isoformat(),'text':f"【FANZA CROSS TREND】\n🔥 1H・24Hともに上昇\n\n「{signal['title']}」\n\n1H: #{one['previous_rank']} → #{one['current_rank']}\n24H: #{daily['previous_rank']} → #{daily['current_rank']}"}
 def main():
  now=datetime.now(JST).replace(microsecond=0); stamp=now.isoformat(); mode=determine_mode(); old=normalize_status(read_status()); age_gate=False
+ migrate_legacy_fanza()
  try:
   raw=fetch_items() if mode=='live' else FanzaPublicProvider().fetch() if mode=='public' else import_items() if mode=='import' else mock_items()
-  ranking_mode=mode in ('public','import'); previous=read_json(FANZA_DIR/'current.json',{}).get('items',[]) if ranking_mode else []
-  items=compare_rankings(raw,previous,old.get('seen_public_keys'),old.get('public_streaks')) if ranking_mode else raw
+  ranking_type=ranking_type_from_import() if mode=='import' else '24h'
+  ranking_mode=mode in ('public','import'); previous=read_json(ranking_dir(ranking_type)/'current.json',{}).get('items',[]) if ranking_mode else []
+  bucket=old.get('rankings',{}).get(f'fanza_{ranking_type}',{})
+  items=compare_rankings(raw,previous,bucket.get('seen_keys'),bucket.get('streaks')) if ranking_mode else raw
  except FanzaAgeGateError as exc:
   status={**old,'mode':'public','public_watch_status':'age_gate','last_public_watch_error':'FANZA age verification page reached','items_collected':0}
   atomic_write(STATUS_PATH,status); print(f'PUBLIC WATCH AGE GATE: {exc}')
   if not IMPORT_PATH.is_file(): return
-  age_gate=True; mode='import'; raw=import_items(); previous=read_json(FANZA_DIR/'current.json',{}).get('items',[])
-  items=compare_rankings(raw,previous,old.get('seen_public_keys'),old.get('public_streaks'))
+  age_gate=True; mode='import'; ranking_type=ranking_type_from_import(); raw=import_items(); bucket=old.get('rankings',{}).get(f'fanza_{ranking_type}',{})
+  previous=read_json(ranking_dir(ranking_type)/'current.json',{}).get('items',[]); items=compare_rankings(raw,previous,bucket.get('seen_keys'),bucket.get('streaks'))
  except Exception as exc:
   if mode!='public': raise
   status={**old,'mode':'public','public_watch_status':'error','last_public_watch_error':str(exc),'items_collected':0}
@@ -107,17 +146,26 @@ def main():
  run_date=stamp[:10]; trends=sum(x.get('trend_score',0)>=20 for x in items) if mode in ('public','import') else 0
  content_key='|'.join(f"{stable_key(x)}:{x.get('current_rank',x.get('rank'))}" for x in items)
  captured=str(import_metadata().get('captured_at','')).strip() if mode=='import' else ''
- update_key=f'captured:{captured}' if captured else f'content:{content_key}'
- processed=old['processed_updates']; duplicate=mode=='import' and (update_key in processed or f'content:{content_key}' in processed)
+ update_key=f'{ranking_type}:captured:{captured}' if captured else f'{ranking_type}:content:{content_key}'
+ content_update=f'{ranking_type}:content:{content_key}'; processed=old['processed_updates']
+ legacy_keys=([f'captured:{captured}'] if captured else [])+[f'content:{content_key}'] if ranking_type=='24h' else []
+ duplicate=mode=='import' and (update_key in processed or content_update in processed or any(key in processed for key in legacy_keys))
  runs=old['total_runs']+(0 if duplicate else 1); total=old['total_items_collected']+(0 if duplicate else len(items)); new_trends=0 if duplicate else trends
- if not duplicate: processed=(processed+[update_key,f'content:{content_key}'])[-100:]
+ if not duplicate: processed=(processed+[update_key,content_update])[-200:]
  trend_total=old['trend_events']+new_trends; exp=experience(runs,total,trend_total); level,level_exp=level_progress(exp)
- status={**old,'first_run':old['first_run'] or stamp,'last_run':stamp,'total_runs':runs,'total_items_collected':total,'items_collected':0 if duplicate else len(items),'run_date':run_date,'runs_today':old['runs_today']+(0 if duplicate else 1) if old.get('run_date')==run_date else (0 if duplicate else 1),'mode':mode,'exp':exp,'level':level,'level_exp':level_exp,'exp_to_next_level':100,'trend_events':trend_total,'processed_updates':processed,'duplicate_import':duplicate}
- latest={'updated_at':stamp,'items':items}
- if mode in ('public','import'):
-  payload={'fetched_at':stamp,'items':items}; atomic_write(FANZA_DIR/'current.json',payload); save_history(now,payload)
-  existing=read_json(POSTS_PATH,[]); atomic_write(POSTS_PATH,generate_candidates(items,existing,now,int(os.getenv('POST_COOLDOWN_HOURS','24'))))
+ rankings=dict(old.get('rankings',{})); name=f'fanza_{ranking_type}'; prior=dict(rankings.get(name,{}))
+ if ranking_mode:
+  prior.update(last_run=stamp,items_collected=0 if duplicate else len(items),total_runs=int(prior.get('total_runs',0))+(0 if duplicate else 1),total_items=int(prior.get('total_items',0))+(0 if duplicate else len(items)),trend_events=int(prior.get('trend_events',0))+(0 if duplicate else trends),seen_keys=sorted(set(prior.get('seen_keys',[]))|{x['key'] for x in items}),streaks={x['key']:x['consecutive_appearances'] for x in items})
+  rankings[name]=prior
+ status={**old,'first_run':old['first_run'] or stamp,'last_run':stamp,'total_runs':runs,'total_items_collected':total,'items_collected':0 if duplicate else len(items),'run_date':run_date,'runs_today':old['runs_today']+(0 if duplicate else 1) if old.get('run_date')==run_date else (0 if duplicate else 1),'mode':mode,'exp':exp,'level':level,'level_exp':level_exp,'exp_to_next_level':100,'trend_events':trend_total,'processed_updates':processed,'duplicate_import':duplicate,'ranking_type':ranking_type,'rankings':rankings}
+ latest={'updated_at':stamp,'ranking_type':ranking_type,'items':items}
+ if ranking_mode:
+  other_type='24h' if ranking_type=='1h' else '1h'; other=read_json(ranking_dir(other_type)/'current.json',{}).get('items',[])
+  crosses=add_cross_signals(items,other,ranking_type); payload={'fetched_at':stamp,'ranking_type':ranking_type,'items':items}; atomic_write(ranking_dir(ranking_type)/'current.json',payload); save_history(now,payload,ranking_type)
+  existing=read_json(posts_path(ranking_type),[]); candidates=generate_candidates(items,existing,now,int(os.getenv('POST_COOLDOWN_HOURS','24')),ranking_type)
+  candidates.extend(cross_candidate(x,now) for x in crosses); atomic_write(posts_path(ranking_type),candidates[-200:])
+  status['market_signals']={'1h_max_rise':max([x.get('rank_change',0) for x in (items if ranking_type=='1h' else other)]+[0]),'24h_max_rise':max([x.get('rank_change',0) for x in (items if ranking_type=='24h' else other)]+[0]),'cross_trend':len(crosses),'new_entry':sum(x.get('status') in ('new','reentry') for x in items)}
   watch_fields={'public_watch_status':'ok','last_public_watch_success':stamp,'last_public_watch_error':None} if mode=='public' else {'public_watch_status':'age_gate','last_public_watch_error':'FANZA age verification page reached'} if age_gate else {}
-  status.update(**watch_fields,input_source='manual_import' if mode=='import' else 'public_watch',seen_public_keys=sorted(set(old.get('seen_public_keys',[]))|{x['key'] for x in items}),public_streaks={x['key']:x['consecutive_appearances'] for x in items})
- atomic_write(LATEST_PATH,latest); atomic_write(STATUS_PATH,status); print(f'{len(items)} 件を収集しました ({stamp}, mode={mode})')
+  status.update(**watch_fields,input_source='manual_import' if mode=='import' else 'public_watch')
+ atomic_write(LATEST_PATH,latest); atomic_write(STATUS_PATH,status); print(f'{len(items)} 件を収集しました ({stamp}, mode={mode}, ranking={ranking_type})')
 if __name__=='__main__':main()
