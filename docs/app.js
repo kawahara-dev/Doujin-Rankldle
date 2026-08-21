@@ -102,6 +102,39 @@ function renderItems(items) {
   }));
 }
 
+function validateImport(value) {
+  let data; try { data = JSON.parse(value); } catch (_) { return { valid: false, errors: ["JSONを解析できません"], items: [] }; }
+  const items = Array.isArray(data) ? data : data?.items;
+  if (!Array.isArray(items) || !items.length) return { valid: false, errors: ["itemsが空です"], items: [] };
+  const errors = [], ranks = new Set(), products = new Set();
+  items.forEach((item, i) => {
+    const at = `Item ${i + 1}`;
+    if (!Number.isInteger(item?.rank) || item.rank < 1) errors.push(`${at}: rankは正の整数が必要です`);
+    else if (ranks.has(item.rank)) errors.push(`${at}: rank ${item.rank} が重複しています`); else ranks.add(item.rank);
+    if (!String(item?.title || "").trim()) errors.push(`${at}: titleが空です`);
+    if (!String(item?.url || "").trim()) errors.push(`${at}: URLが不足しています`);
+    if (!Number.isInteger(item?.price)) errors.push(`${at}: priceは整数が必要です`);
+    const key = String(item?.id || item?.url || "").split("?")[0];
+    if (key && products.has(key)) errors.push(`${at}: 同じ商品が重複しています`); else if (key) products.add(key);
+  });
+  return { valid: !errors.length, errors, items };
+}
+
+async function setupImportTools() {
+  el("copyBookmarklet").addEventListener("click", async () => {
+    const source = await fetch("bookmarklet.js").then((response) => response.text());
+    await copyPost(`javascript:${source.replace(/\s+/g, " ")}`, el("copyBookmarklet"));
+    el("bookmarkletResult").textContent = " ブックマークのURL欄へ貼り付けてください";
+  });
+  el("importJson").addEventListener("input", ({ target }) => {
+    if (!target.value.trim()) return;
+    const result = validateImport(target.value), box = el("validationResult"); box.className = `validation ${result.valid ? "valid" : "invalid"}`;
+    const ranks = result.items.map((item) => item.rank).filter(Number.isInteger);
+    box.textContent = result.valid ? `VALID / IMPORT READY\nItems: ${result.items.length}\nRank: ${Math.min(...ranks)} - ${Math.max(...ranks)}\nErrors: 0` : `INVALID\n${result.errors.join("\n")}`;
+    el("importPreview").replaceChildren(...(result.valid ? result.items : []).map((item) => { const card=document.createElement("article"); card.className="product"; card.textContent=`#${item.rank} ${item.title}\n¥${number(item.price).toLocaleString("ja-JP")}`; return card; }));
+  });
+}
+
 async function loadDashboard() {
   if (loading) return;
   loading = true;
@@ -125,9 +158,9 @@ async function loadDashboard() {
     el("totalExp").textContent = `TOTAL ${exp.toLocaleString("ja-JP")} EXP`; el("expBar").style.width = `${Math.min(100, levelExp / target * 100)}%`;
     const mode = ["live", "public", "import"].includes(status.mode) ? status.mode : "mock";
     const publicError = mode === "public" && status.public_watch_status === "error";
-    const ageGate = status.public_watch_status === "age_gate";
-    el("modeBadge").textContent = ageGate ? "PUBLIC WATCH: AGE GATE" : publicError ? "PUBLIC WATCH ERROR" : mode === "live" ? "LIVE MODE" : mode === "import" ? "MANUAL IMPORT" : mode === "public" ? "PUBLIC WATCH" : "DEMO MODE";
-    el("modeSubtitle").textContent = ageGate ? "FANZA AGE VERIFICATION REACHED / NO BYPASS" : mode === "live" ? "DMM API CONNECTED" : mode === "import" ? "MANUALLY SUPPLIED RANKING DATA" : mode === "public" ? "PUBLIC RANKING DATA" : "SAMPLE DATA"; el("modeBadge").className = `mode-badge ${mode}`; el("demoNote").hidden = mode !== "mock";
+    const ageGate = mode === "public" && status.public_watch_status === "age_gate";
+    el("modeBadge").textContent = ageGate ? "PUBLIC WATCH: AGE GATE" : publicError ? "PUBLIC WATCH ERROR" : mode === "live" ? "LIVE MODE" : mode === "import" ? "🟡 FANZA SEMI AUTO" : mode === "public" ? "PUBLIC WATCH" : "DEMO MODE";
+    el("modeSubtitle").textContent = ageGate ? "FANZA AGE VERIFICATION REACHED / NO BYPASS" : mode === "live" ? "DMM API CONNECTED" : mode === "import" ? "MANUAL RANKING IMPORT" : mode === "public" ? "PUBLIC RANKING DATA" : "SAMPLE DATA"; el("modeBadge").className = `mode-badge ${mode}`; el("demoNote").hidden = mode !== "mock";
     renderModules(mode); renderAchievements(scans, totalItems); renderItems(items); renderCandidates(candidates);
     if (status.last_run || latest.updated_at) {
       const timestamp = status.last_run || latest.updated_at;
@@ -142,4 +175,4 @@ async function loadDashboard() {
   } finally { loading = false; updateCountdown(); }
 }
 
-updateCountdown(); setInterval(updateCountdown, 1000); setInterval(loadDashboard, POLL_INTERVAL); loadDashboard();
+updateCountdown(); setInterval(updateCountdown, 1000); setInterval(loadDashboard, POLL_INTERVAL); setupImportTools(); loadDashboard();
