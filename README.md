@@ -71,4 +71,4 @@ only—there is no automatic posting.
 
 Pages最下部の **IMPORT TOOLS** で **COPY BOOKMARKLET** を押し、作成したブラウザのブックマークのURL欄へ貼り付けます。ユーザー自身が通常のブラウザでFANZAランキングを表示してからブックマークを実行すると、表示済みの商品について順位・タイトル・価格・商品URL・cidだけを含むJSONがコピーされます。年齢確認の同意、Cookie、ログイン情報、レビュー、画像にはアクセスしません。Clipboard APIが使えない場合は手動コピー欄が開きます。
 
-コピーしたJSONはPagesのValidator/Previewで確認後、`data/import/fanza.json`へ保存してActionsを実行してください。v0.4の `{ "source": "fanza_manual", "captured_at": "...", "items": [...] }` と従来の `{ "items": [...] }` / 配列形式を受け付けます。同じ`captured_at`または同一内容を再実行しても巡回数、商品数、EXP、Trendイベントは加算しません。Pagesは読み取り専用で、GitHubへの保存、PATの保持、Xへの投稿は行いません。
+コピーしたJSONはPagesのValidator/Previewで確認後、`data/import/fanza.json`へ保存してCommitしてください。CommitするとActionsが自動実行され、表示が更新されます。v0.4の `{ "source": "fanza_manual", "captured_at": "...", "items": [...] }` と従来の `{ "items": [...] }` / 配列形式を受け付けます。同じ`captured_at`または同一内容を再実行しても巡回数、商品数、EXP、Trendイベントは加算しません。Pagesは読み取り専用で、GitHubへの保存、PATの保持、Xへの投稿は行いません。

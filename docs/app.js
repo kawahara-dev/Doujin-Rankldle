@@ -115,7 +115,24 @@ function renderSaleWatch(items) {
   el("saleMetrics").innerHTML=[["ACTIVE SALES",active.length],["MAX DISCOUNT",`${Math.max(0,...active.map(x=>number(x.discount_rate)))}%`],["HOT SALES",hot.length],["ENDING SOON",soon.length]].map(([l,v])=>`<article><small>${l}</small><strong>${v}</strong></article>`).join("");
   const chosen=active.slice().sort((a,b)=>number(b.sale_score)-number(a.sale_score)).slice(0,5);
   if (!chosen.length) return;
-  el("saleList").replaceChildren(...chosen.map(item=>{const card=document.createElement("article"); card.className="product sale-card"; const end=item.sale_end ? new Date(`${item.sale_end}T23:59:59+09:00`)-Date.now() : Infinity; card.textContent=`💸 ${number(item.discount_rate)}% OFF\n#${item.rank} ${item.title}\n${item.regular_price?`¥${number(item.regular_price).toLocaleString("ja-JP")} → `:""}¥${number(item.price).toLocaleString("ja-JP")}${item.hot_sale?"\n🔥 HOT SALE":""}${end<=24*HOUR?"\nENDING TODAY":end<=3*24*HOUR?"\nENDING SOON":""}`; return card;}));
+  el("saleList").replaceChildren(...chosen.map((item) => {
+    const card=document.createElement("article"); card.className="sale-card";
+    const head=document.createElement("div"); head.className="sale-card-head";
+    const discount=document.createElement("b"); discount.className="sale-badge"; discount.textContent=`${number(item.discount_rate)}% OFF`; head.append(discount);
+    if (item.hot_sale) { const hotBadge=document.createElement("b"); hotBadge.className="hot-sale-badge"; hotBadge.textContent="🔥 HOT SALE"; head.append(hotBadge); }
+    const title=document.createElement("h3"); title.className="sale-card-title"; title.textContent=`#${item.rank} ${item.title}`;
+    const price=document.createElement("p"); price.className="sale-card-price";
+    price.textContent=item.regular_price ? `通常 ¥${number(item.regular_price).toLocaleString("ja-JP")} → ¥${number(item.price).toLocaleString("ja-JP")}` : `現在 ¥${number(item.price).toLocaleString("ja-JP")}`;
+    const meta=document.createElement("div"); meta.className="sale-card-meta";
+    if (item.sale_end) {
+      const [,month,day]=item.sale_end.split("-").map(Number);
+      const remaining=new Date(`${item.sale_end}T23:59:59+09:00`)-Date.now();
+      const end=document.createElement("span"); end.textContent=`END ${month}/${day}`; meta.append(end);
+      if (remaining<=24*HOUR && remaining>0) { const alert=document.createElement("strong"); alert.className="ending-alert"; alert.textContent="ENDING TODAY"; meta.append(alert); }
+      else if (remaining<=3*24*HOUR && remaining>0) { const alert=document.createElement("strong"); alert.className="ending-alert"; alert.textContent="ENDING SOON"; meta.append(alert); }
+    }
+    card.append(head,title,price,meta); return card;
+  }));
 }
 
 function selectRanking(type) {
