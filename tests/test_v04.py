@@ -51,6 +51,20 @@ class ManualImportV04Test(unittest.TestCase):
         for expected in ("d_mobile001", "d_mobile002", "3,080円", "¥1,650", "販売数：1,972"):
             self.assertIn(expected, fixture)
 
+    def test_notification_badge_regression_fixture_and_card_boundary_guards(self):
+        source = Path("docs/bookmarklet.js").read_text(encoding="utf-8")
+        fixture = Path("tests/fixtures/fanza_ranking_notification_badge.html").read_text(encoding="utf-8")
+        self.assertIn('class="badge">34', fixture)
+        for cid in ("d_badge001", "d_badge002", "d_badge003"):
+            self.assertEqual(fixture.count(cid), 2)
+        for rank in (1, 2, 3):
+            self.assertIn(f'class="rank">{rank}', fixture)
+        for price in ("880円", "1,100円", "1,320円"):
+            self.assertIn(price, fixture)
+        for guard in ("productCids(card).size !== 1", "cids.size > 1", "sales.previousElementSibling",
+                      "DOM Order Fallback Used", "全商品の順位が同一です", "全商品の価格が同一です"):
+            self.assertIn(guard, source)
+
     def test_bookmarklet_minifier_keeps_code_after_line_comments_and_is_valid_javascript(self):
         script = r'''const { minify } = require("./docs/bookmarklet-minifier.js");
 const fixture = `(() => {
