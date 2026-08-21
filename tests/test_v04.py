@@ -1,4 +1,5 @@
 import json
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -49,6 +50,28 @@ class ManualImportV04Test(unittest.TestCase):
             self.assertIn(marker, source)
         for expected in ("d_mobile001", "d_mobile002", "3,080円", "¥1,650", "販売数：1,972"):
             self.assertIn(expected, fixture)
+
+    def test_bookmarklet_minifier_keeps_code_after_line_comments_and_is_valid_javascript(self):
+        script = r'''const { minify } = require("./docs/bookmarklet-minifier.js");
+const fixture = `(() => {
+  const before = "// inside a string"; // an inline comment
+  // a whole-line comment
+  const after = 42;
+  alert(before + after);
+})();`;
+const output = minify(fixture);
+if (!output.startsWith("javascript:(()=>{")) throw new Error("invalid prefix: " + output);
+if (!output.includes("const after = 42")) throw new Error("code after comment was removed");
+new Function(output.slice("javascript:".length));'''
+        subprocess.run(["node", "-e", script], check=True)
+
+    def test_generated_bookmarklet_has_expected_prefix_and_valid_syntax(self):
+        script = r'''const fs = require("fs");
+const { minify } = require("./docs/bookmarklet-minifier.js");
+const output = minify(fs.readFileSync("docs/bookmarklet.js", "utf8"));
+if (!output.startsWith("javascript:(()=>{")) throw new Error("invalid prefix");
+new Function(output.slice("javascript:".length));'''
+        subprocess.run(["node", "-e", script], check=True)
 
     def test_captured_at_prevents_double_counting(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -32,9 +32,9 @@
     const explicit = attr.match(/\d{1,3}/) || compact(card.innerText).match(/(?:^|\s)(?:第\s*)?(\d{1,3})\s*(?:位|[.．])/);
     if (explicit) return Number(explicit[1] || explicit[0]);
 
-    // The mobile page renders the rank as a bare number.  It is only accepted
-    // at the beginning of a card and before a nearby sales-count label, so the
-    // price and the number following 販売数 can never become the rank.
+    /* The mobile page renders the rank as a bare number. It is only accepted
+       at the beginning of a card and before a nearby sales-count label, so the
+       price and the number following 販売数 can never become the rank. */
     const text = compact(card.innerText);
     const salesAt = text.indexOf("販売数");
     if (salesAt < 0 || salesAt > 80) return 0;
@@ -107,7 +107,7 @@
           out.push({ rank, title, price: priceOf(card), url: cleaned, id: cid });
           seen.add(key);
         }
-        break; // The first matching ancestor is the smallest product card.
+        break; /* The first matching ancestor is the smallest product card. */
       }
     }
     Object.assign(debug, { links: links.length, productLinks: productLinks.length,
@@ -137,5 +137,5 @@
     }
   };
   if (typeof module !== "undefined") module.exports = { extract, productUrl, cidOf };
-  else run();
+  else run().catch(error => alert(`RankIdle Import Debug\n\n${error?.message || error}`));
 })();
