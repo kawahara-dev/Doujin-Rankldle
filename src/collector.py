@@ -17,6 +17,7 @@ EXP_PER_RUN=5; EXP_PER_ITEM=1; EXP_PER_TREND=10; EXP_PER_LEVEL=100; HISTORY_DAYS
 TREND={'new':20,'top10':20,'rise10':20,'rise20_extra':15,'rise50_extra':20,'streak3':10}
 RANKING_TYPES=('1h','24h'); CROSS_TREND_BONUS=20
 ACHIEVEMENTS=(("first_boot","FIRST BOOT","runs",1),("scanner_1","SCANNER I","runs",10),("scanner_2","SCANNER II","runs",100),("scanner_3","SCANNER III","runs",1000),("collector_1","DATA COLLECTOR I","items",100),("collector_2","DATA COLLECTOR II","items",1000),("collector_3","DATA COLLECTOR III","items",10000))
+SALE_FIELDS=('regular_price','discount_rate','on_sale','sale_end_raw','sale_end')
 
 def atomic_write(path:Path,payload:Any)->None:
  path.parent.mkdir(parents=True,exist_ok=True)
@@ -91,6 +92,35 @@ def compare_rankings(items,previous,seen=None,streaks=None):
   if streak>=3:score+=TREND['streak3']
   x.update(key=key,current_rank=current,previous_rank=prev,rank_change=change,status=status,trend_score=min(100,score),consecutive_appearances=streak); result.append(x)
  return result
+def apply_sale_watch(items,previous):
+ old={stable_key(x):x for x in previous}; events=[]
+ for item in items:
+  item['regular_price']=item.get('regular_price'); item['discount_rate']=item.get('discount_rate'); item['on_sale']=bool(item.get('on_sale',False)); item['sale_end_raw']=item.get('sale_end_raw'); item['sale_end']=item.get('sale_end')
+  before=old.get(stable_key(item),{}); kinds=[]
+  if item['on_sale'] and not before.get('on_sale',False): kinds.append('sale_start')
+  if item.get('discount_rate') is not None and before.get('discount_rate') is not None and item['discount_rate']>before['discount_rate']: kinds.append('discount_up')
+  if item.get('price',0)>0 and before.get('price',0)>item['price']: kinds.append('price_drop')
+  if before.get('on_sale',False) and not item['on_sale']: kinds.append('sale_end')
+  hot=item['on_sale'] and (int(item.get('discount_rate') or 0)>=30 or item['current_rank']<=10 or item.get('rank_change',0)>=5)
+  strong=hot and int(item.get('discount_rate') or 0)>=30 and item['current_rank']<=10
+  score=(20 if 'sale_start' in kinds else 0)+(25 if int(item.get('discount_rate') or 0)>=50 else 15 if int(item.get('discount_rate') or 0)>=30 else 10 if int(item.get('discount_rate') or 0)>=20 else 0)+(20 if item['current_rank']<=10 and item['on_sale'] else 0)+(10 if item.get('rank_change',0)>=5 and item['on_sale'] else 0)+(20 if item.get('cross_signal') and item['on_sale'] else 0)
+  item.update(sale_events=kinds,hot_sale=hot,strong_hot_sale=strong,sale_score=min(100,score))
+  events.extend({'key':f"{stable_key(item)}:{kind}:{item.get('discount_rate')}:{item.get('price')}",'item_id':stable_key(item),'event_type':kind,'discount_rate':item.get('discount_rate'),'price':item.get('price')} for kind in kinds)
+ return events
+
+def sale_candidates(items,existing,now):
+ seen={x.get('event_key') for x in existing}; output=[]
+ priority={'cross':1,'discount50':2,'top10':3,'discount_up':4,'sale_start':5,'hot':6}
+ for item in items:
+  if not item.get('on_sale'): continue
+  types=(['cross'] if item.get('cross_signal') else [])+(['discount50'] if (item.get('discount_rate') or 0)>=50 else [])+(['top10'] if item['current_rank']<=10 else [])+([x for x in item.get('sale_events',[]) if x in ('discount_up','sale_start')])+(['hot'] if item.get('hot_sale') else [])
+  if not types: continue
+  event=min(types,key=lambda x:priority[x]); event_key=f"{stable_key(item)}:{event}:{item.get('discount_rate')}:{item.get('price')}"
+  if event_key in seen: continue
+  regular=f"通常 ¥{item['regular_price']:,}\n→ " if item.get('regular_price') else ''
+  text=f"【FANZA SALE WATCH】\n\n💸 {item.get('discount_rate') or 0}%OFF\n🔥 24時間ランキング #{item['current_rank']}\n\n「{item['title']}」\n\n{regular}¥{item['price']:,}"
+  output.append({'key':item['key'],'event_key':event_key,'event_type':event,'title':item['title'],'ranking_type':'24h','sale_score':item['sale_score'],'trend_score':item.get('trend_score',0),'current_rank':item['current_rank'],'previous_rank':item.get('previous_rank'),'rank_change':item.get('rank_change',0),'text':text,'generated_at':now.isoformat()})
+ return sorted(output,key=lambda x:(priority[x['event_type']],-x['sale_score']))[:5]
 def ranking_dir(ranking_type): return FANZA_DIR/ranking_type
 def posts_path(ranking_type):
  # Preserve callers which patch the historical POSTS_PATH test seam.
@@ -162,10 +192,19 @@ def main():
  latest={'updated_at':stamp,'ranking_type':ranking_type,'items':items}
  if ranking_mode:
   other_type='24h' if ranking_type=='1h' else '1h'; other=read_json(ranking_dir(other_type)/'current.json',{}).get('items',[])
-  crosses=add_cross_signals(items,other,ranking_type); payload={'fetched_at':stamp,'ranking_type':ranking_type,'items':items}; atomic_write(ranking_dir(ranking_type)/'current.json',payload); save_history(now,payload,ranking_type)
+  crosses=add_cross_signals(items,other,ranking_type)
+  sale_events=apply_sale_watch(items,previous) if ranking_type=='24h' else []
+  payload={'fetched_at':stamp,'ranking_type':ranking_type,'items':items}; atomic_write(ranking_dir(ranking_type)/'current.json',payload); save_history(now,payload,ranking_type)
   existing=read_json(posts_path(ranking_type),[]); candidates=generate_candidates(items,existing,now,int(os.getenv('POST_COOLDOWN_HOURS','24')),ranking_type)
-  candidates.extend(cross_candidate(x,now) for x in crosses); atomic_write(posts_path(ranking_type),candidates[-200:])
-  status['market_signals']={'1h_max_rise':max([x.get('rank_change',0) for x in (items if ranking_type=='1h' else other)]+[0]),'24h_max_rise':max([x.get('rank_change',0) for x in (items if ranking_type=='24h' else other)]+[0]),'cross_trend':len(crosses),'new_entry':sum(x.get('status') in ('new','reentry') for x in items)}
+  candidates.extend(cross_candidate(x,now) for x in crosses)
+  if ranking_type=='24h': candidates.extend(sale_candidates(items,candidates,now))
+  atomic_write(posts_path(ranking_type),candidates[-200:])
+  daily=items if ranking_type=='24h' else other; active=[x for x in daily if x.get('on_sale')]
+  sale_seen=set(old.get('sale_seen_events',[])); sale_seen.update(x['key'] for x in sale_events)
+  sale_products=set(old.get('sale_products_seen',[])); sale_products.update(stable_key(x) for x in active)
+  status['sale_seen_events']=sorted(sale_seen)[-1000:]; status['sale_products_seen']=sorted(sale_products)
+  status['sale_achievements']={'sale_hunter_1':len(sale_products)>=10,'sale_hunter_2':len(sale_products)>=100,'bargain_radar':any((x.get('discount_rate') or 0)>=50 for x in active) or old.get('sale_achievements',{}).get('bargain_radar',False),'hot_deal':any(x.get('strong_hot_sale') for x in active) or old.get('sale_achievements',{}).get('hot_deal',False)}
+  status['market_signals']={'1h_max_rise':max([x.get('rank_change',0) for x in (items if ranking_type=='1h' else other)]+[0]),'24h_max_rise':max([x.get('rank_change',0) for x in daily]+[0]),'cross_trend':len(crosses),'new_entry':sum(x.get('status') in ('new','reentry') for x in items),'active_sales':len(active),'hot_sales':sum(bool(x.get('hot_sale')) for x in active),'max_discount':max([int(x.get('discount_rate') or 0) for x in active]+[0])}
   watch_fields={'public_watch_status':'ok','last_public_watch_success':stamp,'last_public_watch_error':None} if mode=='public' else {'public_watch_status':'age_gate','last_public_watch_error':'FANZA age verification page reached'} if age_gate else {}
   status.update(**watch_fields,input_source='manual_import' if mode=='import' else 'public_watch')
  atomic_write(LATEST_PATH,latest); atomic_write(STATUS_PATH,status); print(f'{len(items)} 件を収集しました ({stamp}, mode={mode}, ranking={ranking_type})')
