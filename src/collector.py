@@ -50,13 +50,24 @@ def mock_items():
 def import_items():
  payload=read_json(IMPORT_PATH,None); raw=payload.get('items') if isinstance(payload,dict) else payload
  if not isinstance(raw,list) or not raw: raise RuntimeError('manual FANZA ranking import has no items')
- result=[]
+ result=[]; ranks=set(); products=set()
  for index,item in enumerate(raw,1):
   if not isinstance(item,dict): raise RuntimeError(f'manual FANZA ranking item {index} is not an object')
-  rank=int(item.get('rank',index)); title=str(item.get('title','')).strip(); key=str(item.get('id') or item.get('url','')).strip()
-  if rank<1 or not title or not key: raise RuntimeError(f'manual FANZA ranking item {index} requires rank, title, and id or url')
+  if 'rank' not in item or isinstance(item.get('rank'),bool) or not isinstance(item.get('rank'),int): raise RuntimeError(f'manual FANZA ranking item {index}: rank must be an integer')
+  rank=item['rank']; title=str(item.get('title','')).strip(); key=stable_key(item)
+  if rank<1: raise RuntimeError(f'manual FANZA ranking item {index}: rank must be positive')
+  if not title: raise RuntimeError(f'manual FANZA ranking item {index}: title is empty')
+  if not key: raise RuntimeError(f'manual FANZA ranking item {index}: id and url are both missing')
+  if rank in ranks: raise RuntimeError(f'manual FANZA ranking import has duplicate rank: {rank}')
+  if key in products: raise RuntimeError(f'manual FANZA ranking import has duplicate item: {key}')
+  price=item.get('price',0)
+  if isinstance(price,bool) or not isinstance(price,int): raise RuntimeError(f'manual FANZA ranking item {index}: price must be an integer')
+  ranks.add(rank); products.add(key)
   result.append({**item,'id':str(item.get('id',key)),'title':title,'url':str(item.get('url','')),'price':int(item.get('price',0) or 0),'rank':rank})
  return sorted(result,key=lambda item:item['rank'])
+def import_metadata():
+ payload=read_json(IMPORT_PATH,{})
+ return payload if isinstance(payload,dict) else {}
 def stable_key(item): return (item.get('id') or item.get('url','').split('?')[0]).strip()
 def compare_rankings(items,previous,seen=None,streaks=None):
  old={stable_key(x):int(x.get('current_rank',x.get('rank',0))) for x in previous}; seen=set(seen or []); streaks=streaks or {}; result=[]
@@ -92,10 +103,15 @@ def main():
   if mode!='public': raise
   status={**old,'mode':'public','public_watch_status':'error','last_public_watch_error':str(exc),'items_collected':0}
   atomic_write(STATUS_PATH,status); print(f'PUBLIC WATCH ERROR: {exc}'); return
- run_date=stamp[:10]; runs=old['total_runs']+1; total=old['total_items_collected']+len(items); trends=sum(x.get('trend_score',0)>=20 for x in items) if mode in ('public','import') else 0
- update_key='|'.join(f"{stable_key(x)}:{x.get('current_rank',x.get('rank'))}" for x in items); processed=old['processed_updates']; new_trends=trends if update_key not in processed else 0; processed=(processed+[update_key])[-100:]
+ run_date=stamp[:10]; trends=sum(x.get('trend_score',0)>=20 for x in items) if mode in ('public','import') else 0
+ content_key='|'.join(f"{stable_key(x)}:{x.get('current_rank',x.get('rank'))}" for x in items)
+ captured=str(import_metadata().get('captured_at','')).strip() if mode=='import' else ''
+ update_key=f'captured:{captured}' if captured else f'content:{content_key}'
+ processed=old['processed_updates']; duplicate=mode=='import' and (update_key in processed or f'content:{content_key}' in processed)
+ runs=old['total_runs']+(0 if duplicate else 1); total=old['total_items_collected']+(0 if duplicate else len(items)); new_trends=0 if duplicate else trends
+ if not duplicate: processed=(processed+[update_key,f'content:{content_key}'])[-100:]
  trend_total=old['trend_events']+new_trends; exp=experience(runs,total,trend_total); level,level_exp=level_progress(exp)
- status={**old,'first_run':old['first_run'] or stamp,'last_run':stamp,'total_runs':runs,'total_items_collected':total,'items_collected':len(items),'run_date':run_date,'runs_today':old['runs_today']+1 if old.get('run_date')==run_date else 1,'mode':mode,'exp':exp,'level':level,'level_exp':level_exp,'exp_to_next_level':100,'trend_events':trend_total,'processed_updates':processed}
+ status={**old,'first_run':old['first_run'] or stamp,'last_run':stamp,'total_runs':runs,'total_items_collected':total,'items_collected':0 if duplicate else len(items),'run_date':run_date,'runs_today':old['runs_today']+(0 if duplicate else 1) if old.get('run_date')==run_date else (0 if duplicate else 1),'mode':mode,'exp':exp,'level':level,'level_exp':level_exp,'exp_to_next_level':100,'trend_events':trend_total,'processed_updates':processed,'duplicate_import':duplicate}
  latest={'updated_at':stamp,'items':items}
  if mode in ('public','import'):
   payload={'fetched_at':stamp,'items':items}; atomic_write(FANZA_DIR/'current.json',payload); save_history(now,payload)

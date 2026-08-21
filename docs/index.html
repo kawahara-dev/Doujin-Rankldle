@@ -43,6 +43,15 @@
       <div id="productList" class="product-list"><p class="empty">データをロード中...</p></div>
     </section>
     <section class="products panel"><div class="section-title"><div><p class="eyebrow">HUMAN REVIEW / NO AUTO-POSTING</p><h2>POST CANDIDATES</h2></div></div><div id="postCandidates" class="product-list"><p class="empty">候補はまだないよ。</p></div></section>
+    <section class="panel import-tools">
+      <div class="section-title"><div><p class="eyebrow">IMPORT TOOLS</p><h2>FANZA SEMI AUTO IMPORT</h2></div></div>
+      <ol><li>FANZAランキングを開く</li><li>RankIdle Importerを実行</li><li>JSONをコピー</li><li><code>data/import/fanza.json</code>へ貼り付け</li><li>Actionsを実行</li></ol>
+      <button id="copyBookmarklet">COPY BOOKMARKLET</button><small id="bookmarkletResult"></small>
+      <h3>JSON VALIDATOR</h3><textarea id="importJson" rows="12" placeholder="ランキングJSONを貼り付け"></textarea>
+      <div id="validationResult" class="validation">JSONを貼り付けてください</div>
+      <h3>IMPORT DATA PREVIEW</h3><div id="importPreview" class="product-list"></div>
+      <p class="demo-note">GitHubへの書き込み、トークンの保存、自動投稿は行いません。</p>
+    </section>
   </main>
   <script src="app.js" defer></script>
 </body>
