@@ -123,7 +123,8 @@ function validateImport(value) {
 async function setupImportTools() {
   el("copyBookmarklet").addEventListener("click", async () => {
     const source = await fetch("bookmarklet.js").then((response) => response.text());
-    await copyPost(`javascript:${source.replace(/\s+/g, " ")}`, el("copyBookmarklet"));
+    const bookmarklet = RankIdleBookmarklet.minify(source);
+    await copyPost(bookmarklet, el("copyBookmarklet"));
     el("bookmarkletResult").textContent = " ブックマークのURL欄へ貼り付けてください";
   });
   el("importJson").addEventListener("input", ({ target }) => {
