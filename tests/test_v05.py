@@ -59,6 +59,8 @@ class RankingSeparationV05Test(unittest.TestCase):
                 root=Path(directory); items=[self.item(1)]
                 self.run_import(root,ranking_type,items,captured_at)
                 status_path=root/"status.json"; first_status=json.loads(status_path.read_text())
+                analytics_path=root/f"analytics/fanza_{ranking_type}.json"
+                first_analytics=analytics_path.read_bytes()
                 tracked={path.relative_to(root):path.read_bytes() for path in root.rglob("*")
                          if path.is_file() and path != status_path and "import" not in path.parts}
 
@@ -77,6 +79,7 @@ class RankingSeparationV05Test(unittest.TestCase):
                 self.assertEqual(second_status["rankings"][f"fanza_{ranking_type}"]["streaks"]["a"],1)
                 current=json.loads((root/f"fanza/{ranking_type}/current.json").read_text())
                 self.assertEqual(current["items"][0]["consecutive_appearances"],1)
+                self.assertEqual(analytics_path.read_bytes(),first_analytics)
                 self.assertEqual({path.relative_to(root):path.read_bytes() for path in root.rglob("*")
                                   if path.is_file() and path != status_path and "import" not in path.parts},tracked)
 

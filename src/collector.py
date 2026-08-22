@@ -11,7 +11,8 @@ from src.providers.fanza_api import FanzaApiProvider
 from src.providers.fanza_public import FanzaAgeGateError, FanzaPublicProvider
 
 ROOT=Path(__file__).resolve().parents[1]; DATA_DIR=ROOT/'data'; LATEST_PATH=DATA_DIR/'latest.json'; STATUS_PATH=DATA_DIR/'status.json'
-FANZA_DIR=DATA_DIR/'fanza'; POSTS_PATH=DATA_DIR/'posts'/'candidates.json'; JST=ZoneInfo('Asia/Tokyo')
+FANZA_DIR=DATA_DIR/'fanza'; DEFAULT_FANZA_DIR=FANZA_DIR; POSTS_PATH=DATA_DIR/'posts'/'candidates.json'; JST=ZoneInfo('Asia/Tokyo')
+ANALYTICS_DIR=DATA_DIR/'analytics'; ANALYTICS_SNAPSHOTS=10
 IMPORT_PATH=DATA_DIR/'import'/'fanza.json'
 EXP_PER_RUN=5; EXP_PER_ITEM=1; EXP_PER_TREND=10; EXP_PER_LEVEL=100; HISTORY_DAYS=90
 TREND={'new':20,'top10':20,'rise10':20,'rise20_extra':15,'rise50_extra':20,'streak3':10}
@@ -139,6 +140,41 @@ def save_history(now,payload,ranking_type='24h'):
  signature=[(stable_key(x),x.get('current_rank',x.get('rank'))) for x in payload['items']]
  if not entries or [(stable_key(x),x.get('current_rank',x.get('rank'))) for x in entries[-1]['items']]!=signature: entries.append(payload); atomic_write(path,entries[-4:])
  files=sorted(path.parent.glob('*.json')); [p.unlink() for p in files[:-HISTORY_DAYS]]
+def analytics_status(rate,sample_count):
+ if sample_count<2:return 'INSUFFICIENT DATA'
+ if rate>=80:return 'STABLE'
+ if rate>=50:return 'ACTIVE'
+ if rate>=20:return 'VOLATILE'
+ return 'SPIKE'
+def history_snapshots(ranking_type):
+ """Return the latest snapshots for one ranking, oldest first."""
+ snapshots=[]
+ for path in sorted((ranking_dir(ranking_type)/'history').glob('*.json')):
+  entries=read_json(path,[])
+  if isinstance(entries,list): snapshots.extend(x for x in entries if isinstance(x,dict) and isinstance(x.get('items'),list))
+ return snapshots[-ANALYTICS_SNAPSHOTS:]
+def generate_analytics(ranking_type,generated_at=None):
+ """Build the compact Pages payload without requiring history fetches in browsers."""
+ snapshots=history_snapshots(ranking_type); sample_count=len(snapshots); keys=[]; titles={}
+ for snapshot in snapshots:
+  for item in snapshot['items']:
+   key=stable_key(item)
+   if key and key not in titles: keys.append(key)
+   if key: titles[key]=str(item.get('title',''))
+ items=[]
+ for key in keys:
+  ranks=[]
+  for snapshot in snapshots:
+   match=next((x for x in snapshot['items'] if stable_key(x)==key),None)
+   rank=match.get('current_rank',match.get('rank')) if match else None
+   ranks.append(int(rank) if isinstance(rank,int) and not isinstance(rank,bool) and rank>0 else None)
+  top10=sum(rank is not None and rank<=10 for rank in ranks)
+  rate=round(top10/sample_count*100) if sample_count else 0
+  items.append({'key':key,'title':titles[key],'rank_history':ranks,'top10_count':top10,'sample_count':sample_count,'top10_rate':rate,'analytics_status':analytics_status(rate,sample_count)})
+ payload={'ranking_type':ranking_type,'generated_at':generated_at or datetime.now(JST).replace(microsecond=0).isoformat(),'snapshot_count':sample_count,'items':items}
+ output_dir=ANALYTICS_DIR if FANZA_DIR==DEFAULT_FANZA_DIR else FANZA_DIR.parent/'analytics'
+ atomic_write(output_dir/f'fanza_{ranking_type}.json',payload)
+ return payload
 def add_cross_signals(items,other_items,ranking_type):
  other={stable_key(x):x for x in other_items if x.get('rank_change',0)>0}; signals=[]
  for item in items:
@@ -201,6 +237,7 @@ def main():
   crosses=add_cross_signals(items,other,ranking_type)
   sale_events=apply_sale_watch(items,previous) if ranking_type=='24h' else []
   payload={'fetched_at':stamp,'ranking_type':ranking_type,'items':items}; atomic_write(ranking_dir(ranking_type)/'current.json',payload); save_history(now,payload,ranking_type)
+  generate_analytics(ranking_type,stamp)
   existing=read_json(posts_path(ranking_type),[]); candidates=generate_candidates(items,existing,now,int(os.getenv('POST_COOLDOWN_HOURS','24')),ranking_type)
   candidates.extend(cross_candidate(x,now) for x in crosses)
   if ranking_type=='24h': candidates.extend(sale_candidates(items,candidates,now))
