@@ -17,6 +17,7 @@ let knownLastRun = null;
 let loading = false;
 let selectedRanking = "24h";
 let rankingData = { "1h": { items: [] }, "24h": { items: [] } };
+let analyticsData = { "1h": { items: [] }, "24h": { items: [] } };
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -96,7 +97,9 @@ function renderCandidates(candidates) {
 
 function renderItems(items) {
   if (!items.length) { el("productList").innerHTML = '<p class="empty">まだ商品データがないよ。次回巡回を待ってね。</p>'; return; }
+  const analytics = new Map((analyticsData[selectedRanking]?.items || []).map(item => [item.key, item]));
   el("productList").replaceChildren(...items.map((item) => {
+    const row = document.createElement("article"); row.className = "product-row";
     const link = document.createElement("a"); link.className = "product"; link.href = item.url; link.target = "_blank"; link.rel = "noopener noreferrer sponsored";
     const rank = document.createElement("span"); rank.className = "rank"; rank.textContent = `#${item.rank}`;
     const title = document.createElement("span"); title.className = "title"; title.textContent = item.title;
@@ -105,7 +108,17 @@ function renderItems(items) {
     if (selectedRanking === "24h" && item.on_sale) { const badge=document.createElement("b"); badge.className="sale-badge"; badge.textContent=`${number(item.discount_rate)}% OFF`; link.append(badge); }
     link.append(price);
     if (selectedRanking === "24h" && item.regular_price) { const regular=document.createElement("small"); regular.textContent=`通常 ¥${number(item.regular_price).toLocaleString("ja-JP")}`; link.append(regular); }
-    return link;
+    const key = String(item.key || item.id || item.url || "").split("?")[0];
+    const insight = analytics.get(key);
+    const button = document.createElement("button"); button.className = "analytics-toggle"; button.type = "button"; button.textContent = "ANALYTICS"; button.setAttribute("aria-expanded", "false");
+    const detail = document.createElement("div"); detail.className = "analytics-detail"; detail.hidden = true;
+    if (insight) {
+      const history = insight.rank_history.map(rankValue => `<span>${rankValue ?? "OUT"}</span>`).join("<i>→</i>");
+      const statusClass = insight.analytics_status.toLowerCase().replaceAll(" ", "-");
+      detail.innerHTML = `<div><small>RANK HISTORY</small><div class="rank-history">${history}</div></div><div class="analytics-stay"><small>TOP10 STAY</small><strong>${insight.top10_count} / ${insight.sample_count}</strong><b>${insight.top10_rate}%</b></div><div><small>STATUS</small><strong class="analytics-status ${statusClass}">${insight.analytics_status}</strong></div>`;
+    } else detail.innerHTML = '<span class="analytics-status insufficient-data">INSUFFICIENT DATA</span>';
+    button.addEventListener("click", () => { detail.hidden = !detail.hidden; button.setAttribute("aria-expanded", String(!detail.hidden)); button.textContent = detail.hidden ? "ANALYTICS" : "CLOSE"; });
+    row.append(link, button, detail); return row;
   }));
 }
 
@@ -183,11 +196,12 @@ async function loadDashboard() {
   if (loading) return;
   loading = true;
   try {
-    const [latestResponse, statusResponse, posts1h, posts24h, rank1h, rank24h] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/posts/fanza_1h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_24h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null)]);
+    const [latestResponse, statusResponse, posts1h, posts24h, rank1h, rank24h, analytics1h, analytics24h] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/posts/fanza_1h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_24h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_1h.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_24h.json", { cache: "no-store" }).catch(() => null)]);
     if (!latestResponse.ok || !statusResponse.ok) throw new Error("データ取得に失敗しました");
     const [latest, status] = await Promise.all([latestResponse.json(), statusResponse.json()]);
     const items = Array.isArray(latest.items) ? latest.items : [];
     rankingData = { "1h": rank1h?.ok ? await rank1h.json() : { items: [] }, "24h": rank24h?.ok ? await rank24h.json() : { items: [] } };
+    analyticsData = { "1h": analytics1h?.ok ? await analytics1h.json() : { items: [] }, "24h": analytics24h?.ok ? await analytics24h.json() : { items: [] } };
     const candidates = [...(posts1h?.ok ? await posts1h.json() : []), ...(posts24h?.ok ? await posts24h.json() : [])];
     const scans = number(status.total_runs);
     const totalItems = number(status.total_items_collected ?? status.items_collected);
