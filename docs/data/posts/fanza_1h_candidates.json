@@ -575,5 +575,76 @@
     },
     "generated_at": "2026-08-22T13:08:05+09:00",
     "text": "【FANZA CROSS TREND】\n🔥 1H・24Hともに上昇\n\n「【スマホ対応】PORTRAIT GIRLS ―美術部のモデルになった少女たち―」\n\n1H: #19 → #17\n24H: #14 → #11"
+  },
+  {
+    "key": "d_802143",
+    "title": "Grand Order 戦記",
+    "ranking_type": "1h",
+    "trend_score": 60,
+    "previous_rank": 19,
+    "current_rank": 5,
+    "rank_change": 14,
+    "text": "【FANZA 1時間ランキング】\n🔥 TOP10入り\n\n「Grand Order 戦記」\n\n#19 → #5\n\n#FANZA #同人",
+    "generated_at": "2026-08-22T15:40:57+09:00"
+  },
+  {
+    "key": "d_649476",
+    "title": "破魔の巫女 淫獄に堕つ 2",
+    "ranking_type": "1h",
+    "trend_score": 30,
+    "previous_rank": 12,
+    "current_rank": 7,
+    "rank_change": 5,
+    "text": "【FANZA 1時間ランキング】\n🔥 TOP10入り\n\n「破魔の巫女 淫獄に堕つ 2」\n\n#12 → #7\n\n#FANZA #同人",
+    "generated_at": "2026-08-22T15:40:57+09:00"
+  },
+  {
+    "key": "d_805647",
+    "title": "サキュバス性徒会シコシコ執行部4前編",
+    "ranking_type": "1h",
+    "trend_score": 30,
+    "previous_rank": 11,
+    "current_rank": 8,
+    "rank_change": 3,
+    "text": "【FANZA 1時間ランキング】\n🔥 TOP10入り\n\n「サキュバス性徒会シコシコ執行部4前編」\n\n#11 → #8\n\n#FANZA #同人",
+    "generated_at": "2026-08-22T15:40:57+09:00"
+  },
+  {
+    "key": "d_802143",
+    "title": "Grand Order 戦記",
+    "ranking_type": "cross",
+    "trend_score": 60,
+    "previous_rank": 19,
+    "current_rank": 5,
+    "rank_change": 14,
+    "one_hour": {
+      "previous_rank": 19,
+      "current_rank": 5
+    },
+    "twenty_four_hour": {
+      "previous_rank": 9,
+      "current_rank": 7
+    },
+    "generated_at": "2026-08-22T15:40:57+09:00",
+    "text": "【FANZA CROSS TREND】\n🔥 1H・24Hともに上昇\n\n「Grand Order 戦記」\n\n1H: #19 → #5\n24H: #9 → #7"
+  },
+  {
+    "key": "d_805704",
+    "title": "ファンティアまとめ本",
+    "ranking_type": "cross",
+    "trend_score": 30,
+    "previous_rank": 14,
+    "current_rank": 13,
+    "rank_change": 1,
+    "one_hour": {
+      "previous_rank": 14,
+      "current_rank": 13
+    },
+    "twenty_four_hour": {
+      "previous_rank": 7,
+      "current_rank": 6
+    },
+    "generated_at": "2026-08-22T15:40:57+09:00",
+    "text": "【FANZA CROSS TREND】\n🔥 1H・24Hともに上昇\n\n「ファンティアまとめ本」\n\n1H: #14 → #13\n24H: #7 → #6"
   }
 ]
