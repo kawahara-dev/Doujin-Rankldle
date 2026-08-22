@@ -18,6 +18,7 @@ let loading = false;
 let selectedRanking = "24h";
 let rankingData = { "1h": { items: [] }, "24h": { items: [] } };
 let analyticsData = { "1h": { items: [] }, "24h": { items: [] } };
+const expandedAnalytics = { "1h": new Set(), "24h": new Set() };
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -110,14 +111,21 @@ function renderItems(items) {
     if (selectedRanking === "24h" && item.regular_price) { const regular=document.createElement("small"); regular.textContent=`通常 ¥${number(item.regular_price).toLocaleString("ja-JP")}`; link.append(regular); }
     const key = String(item.key || item.id || item.url || "").split("?")[0];
     const insight = analytics.get(key);
-    const button = document.createElement("button"); button.className = "analytics-toggle"; button.type = "button"; button.textContent = "ANALYTICS"; button.setAttribute("aria-expanded", "false");
-    const detail = document.createElement("div"); detail.className = "analytics-detail"; detail.hidden = true;
+    const expanded = expandedAnalytics[selectedRanking].has(key);
+    const button = document.createElement("button"); button.className = "analytics-toggle"; button.type = "button"; button.textContent = expanded ? "CLOSE" : "ANALYTICS"; button.setAttribute("aria-expanded", String(expanded));
+    const detail = document.createElement("div"); detail.className = "analytics-detail"; detail.hidden = !expanded;
     if (insight) {
       const history = insight.rank_history.map(rankValue => `<span>${rankValue ?? "OUT"}</span>`).join("<i>→</i>");
       const statusClass = insight.analytics_status.toLowerCase().replaceAll(" ", "-");
       detail.innerHTML = `<div><small>RANK HISTORY</small><div class="rank-history">${history}</div></div><div class="analytics-stay"><small>TOP10 STAY</small><strong>${insight.top10_count} / ${insight.sample_count}</strong><b>${insight.top10_rate}%</b></div><div><small>STATUS</small><strong class="analytics-status ${statusClass}">${insight.analytics_status}</strong></div>`;
     } else detail.innerHTML = '<span class="analytics-status insufficient-data">INSUFFICIENT DATA</span>';
-    button.addEventListener("click", () => { detail.hidden = !detail.hidden; button.setAttribute("aria-expanded", String(!detail.hidden)); button.textContent = detail.hidden ? "ANALYTICS" : "CLOSE"; });
+    button.addEventListener("click", () => {
+      detail.hidden = !detail.hidden;
+      if (detail.hidden) expandedAnalytics[selectedRanking].delete(key);
+      else expandedAnalytics[selectedRanking].add(key);
+      button.setAttribute("aria-expanded", String(!detail.hidden));
+      button.textContent = detail.hidden ? "ANALYTICS" : "CLOSE";
+    });
     row.append(link, button, detail); return row;
   }));
 }
