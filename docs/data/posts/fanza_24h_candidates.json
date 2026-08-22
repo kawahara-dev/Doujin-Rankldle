@@ -510,5 +510,55 @@
     "rank_change": -2,
     "text": "【FANZA SALE WATCH】\n\n💸 40%OFF\n🔥 24時間ランキング #20\n\n「言いなりアイドル 7日間でメス堕ち デビューのために犯〇れていくカラダ」\n\n通常 ¥3,300\n→ ¥1,980",
     "generated_at": "2026-08-22T05:26:52+09:00"
+  },
+  {
+    "key": "d_796508",
+    "title": "DECOY＊DAISY",
+    "ranking_type": "24h",
+    "trend_score": 20,
+    "previous_rank": 14,
+    "current_rank": 6,
+    "rank_change": 8,
+    "text": "【FANZA 24時間ランキング】\n🔥 TOP10入り\n\n「DECOY＊DAISY」\n\n#14 → #6\n\n#FANZA #同人",
+    "generated_at": "2026-08-22T15:43:45+09:00"
+  },
+  {
+    "key": "d_800289",
+    "title": "妻達は今、海外にいます 後編",
+    "ranking_type": "24h",
+    "trend_score": 20,
+    "previous_rank": null,
+    "current_rank": 15,
+    "rank_change": 0,
+    "text": "【FANZA 24時間ランキング】\n🆕 NEW ENTRY\n\n「妻達は今、海外にいます 後編」\n\n初登場 15位\n\nRankIdleが新規ランクインを検知しました📡\n\n#FANZA #同人",
+    "generated_at": "2026-08-22T15:43:45+09:00"
+  },
+  {
+    "key": "d_796508",
+    "event_key": "d_796508:top10:10:693",
+    "event_type": "top10",
+    "title": "DECOY＊DAISY",
+    "ranking_type": "24h",
+    "sale_score": 30,
+    "trend_score": 20,
+    "current_rank": 6,
+    "previous_rank": 14,
+    "rank_change": 8,
+    "text": "【FANZA SALE WATCH】\n\n💸 10%OFF\n🔥 24時間ランキング #6\n\n「DECOY＊DAISY」\n\n通常 ¥770\n→ ¥693",
+    "generated_at": "2026-08-22T15:43:45+09:00"
+  },
+  {
+    "key": "d_800289",
+    "event_key": "d_800289:sale_start:30:693",
+    "event_type": "sale_start",
+    "title": "妻達は今、海外にいます 後編",
+    "ranking_type": "24h",
+    "sale_score": 35,
+    "trend_score": 20,
+    "current_rank": 15,
+    "previous_rank": null,
+    "rank_change": 0,
+    "text": "【FANZA SALE WATCH】\n\n💸 30%OFF\n🔥 24時間ランキング #15\n\n「妻達は今、海外にいます 後編」\n\n通常 ¥990\n→ ¥693",
+    "generated_at": "2026-08-22T15:43:45+09:00"
   }
 ]
