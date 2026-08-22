@@ -1,7 +1,7 @@
 {
   "ranking_type": "1h",
-  "generated_at": "2026-08-23T01:00:25+09:00",
-  "snapshot_count": 9,
+  "generated_at": "2026-08-23T01:18:27+09:00",
+  "snapshot_count": 10,
   "items": [
     {
       "key": "d_761881",
@@ -15,10 +15,11 @@
         2,
         2,
         2,
-        3
+        3,
+        4
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -34,10 +35,11 @@
         3,
         3,
         3,
-        5
+        5,
+        6
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -53,11 +55,12 @@
         7,
         18,
         4,
-        8
+        8,
+        13
       ],
       "top10_count": 8,
-      "sample_count": 9,
-      "top10_rate": 89,
+      "sample_count": 10,
+      "top10_rate": 80,
       "analytics_status": "STABLE"
     },
     {
@@ -72,11 +75,12 @@
         20,
         6,
         14,
-        15
+        15,
+        19
       ],
       "top10_count": 5,
-      "sample_count": 9,
-      "top10_rate": 56,
+      "sample_count": 10,
+      "top10_rate": 50,
       "analytics_status": "ACTIVE"
     },
     {
@@ -91,11 +95,12 @@
         null,
         12,
         17,
-        20
+        20,
+        16
       ],
       "top10_count": 4,
-      "sample_count": 9,
-      "top10_rate": 44,
+      "sample_count": 10,
+      "top10_rate": 40,
       "analytics_status": "VOLATILE"
     },
     {
@@ -110,11 +115,12 @@
         null,
         15,
         20,
+        null,
         null
       ],
       "top10_count": 4,
-      "sample_count": 9,
-      "top10_rate": 44,
+      "sample_count": 10,
+      "top10_rate": 40,
       "analytics_status": "VOLATILE"
     },
     {
@@ -129,11 +135,12 @@
         4,
         9,
         null,
+        null,
         null
       ],
       "top10_count": 4,
-      "sample_count": 9,
-      "top10_rate": 44,
+      "sample_count": 10,
+      "top10_rate": 40,
       "analytics_status": "VOLATILE"
     },
     {
@@ -148,11 +155,12 @@
         16,
         10,
         10,
+        14,
         14
       ],
       "top10_count": 7,
-      "sample_count": 9,
-      "top10_rate": 78,
+      "sample_count": 10,
+      "top10_rate": 70,
       "analytics_status": "ACTIVE"
     },
     {
@@ -167,12 +175,13 @@
         11,
         8,
         9,
-        13
+        13,
+        10
       ],
-      "top10_count": 7,
-      "sample_count": 9,
-      "top10_rate": 78,
-      "analytics_status": "ACTIVE"
+      "top10_count": 8,
+      "sample_count": 10,
+      "top10_rate": 80,
+      "analytics_status": "STABLE"
     },
     {
       "key": "d_799677",
@@ -186,11 +195,12 @@
         14,
         19,
         null,
+        null,
         null
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -205,10 +215,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -224,11 +235,12 @@
         8,
         14,
         13,
+        null,
         null
       ],
       "top10_count": 3,
-      "sample_count": 9,
-      "top10_rate": 33,
+      "sample_count": 10,
+      "top10_rate": 30,
       "analytics_status": "VOLATILE"
     },
     {
@@ -243,10 +255,11 @@
         null,
         16,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -262,11 +275,12 @@
         9,
         7,
         8,
+        11,
         11
       ],
       "top10_count": 7,
-      "sample_count": 9,
-      "top10_rate": 78,
+      "sample_count": 10,
+      "top10_rate": 70,
       "analytics_status": "ACTIVE"
     },
     {
@@ -281,11 +295,12 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -300,10 +315,11 @@
         13,
         null,
         16,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -319,10 +335,11 @@
         null,
         17,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -338,10 +355,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -357,10 +375,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -376,10 +395,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -395,10 +415,11 @@
         null,
         null,
         15,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -414,10 +435,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -433,11 +455,12 @@
         10,
         5,
         7,
-        16
+        16,
+        20
       ],
       "top10_count": 4,
-      "sample_count": 9,
-      "top10_rate": 44,
+      "sample_count": 10,
+      "top10_rate": 40,
       "analytics_status": "VOLATILE"
     },
     {
@@ -452,10 +475,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -471,10 +495,11 @@
         15,
         20,
         11,
-        17
+        17,
+        18
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -490,11 +515,12 @@
         1,
         1,
         1,
+        1,
         1
       ],
-      "top10_count": 5,
-      "sample_count": 9,
-      "top10_rate": 56,
+      "top10_count": 6,
+      "sample_count": 10,
+      "top10_rate": 60,
       "analytics_status": "ACTIVE"
     },
     {
@@ -509,11 +535,12 @@
         5,
         4,
         5,
-        9
+        9,
+        12
       ],
       "top10_count": 5,
-      "sample_count": 9,
-      "top10_rate": 56,
+      "sample_count": 10,
+      "top10_rate": 50,
       "analytics_status": "ACTIVE"
     },
     {
@@ -528,11 +555,12 @@
         6,
         13,
         12,
-        19
+        19,
+        null
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -547,11 +575,12 @@
         12,
         11,
         6,
-        null
+        null,
+        15
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -566,10 +595,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -585,10 +615,11 @@
         17,
         null,
         18,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -604,10 +635,11 @@
         18,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -623,10 +655,11 @@
         19,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -642,10 +675,11 @@
         null,
         null,
         19,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -661,12 +695,13 @@
         null,
         null,
         null,
+        2,
         2
       ],
-      "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
-      "analytics_status": "SPIKE"
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_803148",
@@ -680,12 +715,13 @@
         null,
         null,
         null,
-        4
+        4,
+        3
       ],
-      "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
-      "analytics_status": "SPIKE"
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_762894",
@@ -699,12 +735,13 @@
         null,
         null,
         null,
-        6
+        6,
+        5
       ],
-      "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
-      "analytics_status": "SPIKE"
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_791340",
@@ -718,12 +755,13 @@
         null,
         null,
         null,
+        7,
         7
       ],
-      "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
-      "analytics_status": "SPIKE"
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_804222",
@@ -737,12 +775,13 @@
         null,
         null,
         null,
-        10
+        10,
+        8
       ],
-      "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
-      "analytics_status": "SPIKE"
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_804173",
@@ -756,11 +795,12 @@
         null,
         null,
         null,
-        12
+        12,
+        9
       ],
-      "top10_count": 0,
-      "sample_count": 9,
-      "top10_rate": 0,
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -775,10 +815,31 @@
         null,
         null,
         null,
-        18
+        18,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_802465",
+      "title": "妹ちゃんはわりとチョロい！",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        17
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     }
