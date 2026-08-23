@@ -1,7 +1,7 @@
 {
   "ranking_type": "24h",
-  "generated_at": "2026-08-23T12:16:19+09:00",
-  "snapshot_count": 9,
+  "generated_at": "2026-08-23T22:02:04+09:00",
+  "snapshot_count": 10,
   "items": [
     {
       "key": "d_761881",
@@ -15,10 +15,11 @@
         2,
         2,
         2,
+        2,
         2
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -34,10 +35,11 @@
         4,
         5,
         5,
-        5
+        5,
+        7
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -53,10 +55,11 @@
         3,
         3,
         3,
-        3
+        3,
+        4
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -72,11 +75,12 @@
         8,
         9,
         9,
-        11
+        11,
+        14
       ],
       "top10_count": 8,
-      "sample_count": 9,
-      "top10_rate": 89,
+      "sample_count": 10,
+      "top10_rate": 80,
       "analytics_status": "STABLE"
     },
     {
@@ -91,10 +95,11 @@
         7,
         8,
         7,
-        9
+        9,
+        10
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -110,11 +115,12 @@
         10,
         15,
         15,
+        null,
         null
       ],
       "top10_count": 6,
-      "sample_count": 9,
-      "top10_rate": 67,
+      "sample_count": 10,
+      "top10_rate": 60,
       "analytics_status": "ACTIVE"
     },
     {
@@ -129,10 +135,11 @@
         6,
         7,
         6,
-        8
+        8,
+        9
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -148,11 +155,12 @@
         9,
         10,
         10,
-        16
+        16,
+        19
       ],
       "top10_count": 8,
-      "sample_count": 9,
-      "top10_rate": 89,
+      "sample_count": 10,
+      "top10_rate": 80,
       "analytics_status": "STABLE"
     },
     {
@@ -167,11 +175,12 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -186,11 +195,12 @@
         14,
         13,
         12,
+        12,
         12
       ],
       "top10_count": 2,
-      "sample_count": 9,
-      "top10_rate": 22,
+      "sample_count": 10,
+      "top10_rate": 20,
       "analytics_status": "VOLATILE"
     },
     {
@@ -205,11 +215,12 @@
         13,
         12,
         11,
-        10
+        10,
+        11
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -224,10 +235,11 @@
         12,
         11,
         13,
-        15
+        15,
+        20
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -243,11 +255,12 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -262,11 +275,12 @@
         15,
         19,
         19,
+        null,
         null
       ],
       "top10_count": 3,
-      "sample_count": 9,
-      "top10_rate": 33,
+      "sample_count": 10,
+      "top10_rate": 30,
       "analytics_status": "VOLATILE"
     },
     {
@@ -281,10 +295,11 @@
         17,
         18,
         18,
-        19
+        19,
+        18
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -300,10 +315,11 @@
         16,
         17,
         16,
-        17
+        17,
+        15
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -319,10 +335,11 @@
         19,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -338,10 +355,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -357,10 +375,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -376,10 +395,11 @@
         null,
         20,
         20,
-        20
+        20,
+        17
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -395,11 +415,12 @@
         1,
         1,
         1,
+        1,
         1
       ],
-      "top10_count": 6,
-      "sample_count": 9,
-      "top10_rate": 67,
+      "top10_count": 7,
+      "sample_count": 10,
+      "top10_rate": 70,
       "analytics_status": "ACTIVE"
     },
     {
@@ -414,11 +435,12 @@
         5,
         4,
         4,
-        7
+        7,
+        13
       ],
       "top10_count": 5,
-      "sample_count": 9,
-      "top10_rate": 56,
+      "sample_count": 10,
+      "top10_rate": 50,
       "analytics_status": "ACTIVE"
     },
     {
@@ -433,11 +455,12 @@
         11,
         6,
         8,
-        13
+        13,
+        null
       ],
       "top10_count": 2,
-      "sample_count": 9,
-      "top10_rate": 22,
+      "sample_count": 10,
+      "top10_rate": 20,
       "analytics_status": "VOLATILE"
     },
     {
@@ -452,10 +475,11 @@
         18,
         14,
         14,
-        14
+        14,
+        16
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -471,10 +495,11 @@
         20,
         16,
         17,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -490,12 +515,13 @@
         null,
         null,
         null,
-        4
+        4,
+        3
       ],
-      "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
-      "analytics_status": "SPIKE"
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_803148",
@@ -509,12 +535,13 @@
         null,
         null,
         null,
-        6
+        6,
+        5
       ],
-      "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
-      "analytics_status": "SPIKE"
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_762894",
@@ -528,11 +555,32 @@
         null,
         null,
         null,
-        18
+        18,
+        6
       ],
-      "top10_count": 0,
-      "sample_count": 9,
-      "top10_rate": 0,
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_791340",
+      "title": "パコりたギャル総集編vol.01",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        8
+      ],
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     }
   ]
