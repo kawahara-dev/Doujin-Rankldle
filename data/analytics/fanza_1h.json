@@ -1,6 +1,6 @@
 {
   "ranking_type": "1h",
-  "generated_at": "2026-08-23T13:44:33+09:00",
+  "generated_at": "2026-08-23T16:51:02+09:00",
   "snapshot_count": 10,
   "items": [
     {
@@ -14,7 +14,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1,
         1
       ],
@@ -33,10 +33,10 @@
         3,
         3,
         3,
-        5,
         6,
         3,
-        3
+        3,
+        4
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -53,10 +53,10 @@
         7,
         18,
         4,
-        14,
         9,
         6,
-        4
+        4,
+        11
       ],
       "top10_count": 8,
       "sample_count": 10,
@@ -74,8 +74,8 @@
         6,
         14,
         null,
-        null,
         19,
+        null,
         null
       ],
       "top10_count": 3,
@@ -113,14 +113,14 @@
         11,
         8,
         9,
-        9,
         7,
         11,
-        14
+        14,
+        13
       ],
-      "top10_count": 7,
+      "top10_count": 6,
       "sample_count": 10,
-      "top10_rate": 70,
+      "top10_rate": 60,
       "analytics_status": "ACTIVE"
     },
     {
@@ -133,8 +133,8 @@
         16,
         10,
         10,
-        16,
         13,
+        null,
         null,
         null
       ],
@@ -153,10 +153,10 @@
         4,
         9,
         null,
-        15,
         null,
         null,
-        17
+        17,
+        20
       ],
       "top10_count": 3,
       "sample_count": 10,
@@ -173,10 +173,10 @@
         9,
         7,
         8,
-        8,
         12,
         13,
-        11
+        11,
+        6
       ],
       "top10_count": 7,
       "sample_count": 10,
@@ -196,7 +196,7 @@
         null,
         null,
         null,
-        null
+        12
       ],
       "top10_count": 2,
       "sample_count": 10,
@@ -213,14 +213,14 @@
         8,
         14,
         13,
-        null,
         11,
         12,
-        9
+        9,
+        7
       ],
-      "top10_count": 3,
+      "top10_count": 4,
       "sample_count": 10,
-      "top10_rate": 30,
+      "top10_rate": 40,
       "analytics_status": "VOLATILE"
     },
     {
@@ -253,10 +253,10 @@
         13,
         null,
         16,
-        17,
         18,
         17,
-        15
+        15,
+        16
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -273,10 +273,10 @@
         14,
         19,
         null,
-        13,
         10,
         20,
-        null
+        null,
+        19
       ],
       "top10_count": 1,
       "sample_count": 10,
@@ -293,8 +293,8 @@
         null,
         null,
         null,
-        null,
         20,
+        null,
         null,
         null
       ],
@@ -333,10 +333,10 @@
         10,
         5,
         7,
-        10,
         15,
         10,
-        12
+        12,
+        10
       ],
       "top10_count": 6,
       "sample_count": 10,
@@ -373,10 +373,10 @@
         null,
         16,
         null,
-        18,
         17,
         15,
-        16
+        16,
+        18
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -414,9 +414,9 @@
         20,
         11,
         null,
-        null,
         8,
-        8
+        8,
+        14
       ],
       "top10_count": 2,
       "sample_count": 10,
@@ -434,7 +434,7 @@
         1,
         1,
         1,
-        1,
+        2,
         2,
         2
       ],
@@ -454,9 +454,9 @@
         4,
         5,
         null,
-        null,
         18,
-        18
+        18,
+        null
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -474,9 +474,9 @@
         13,
         12,
         null,
-        null,
         14,
-        13
+        13,
+        null
       ],
       "top10_count": 1,
       "sample_count": 10,
@@ -654,9 +654,9 @@
         null,
         null,
         3,
-        3,
         5,
-        5
+        5,
+        3
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -675,8 +675,8 @@
         null,
         4,
         4,
-        4,
-        6
+        6,
+        5
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -693,10 +693,10 @@
         null,
         null,
         null,
-        6,
         5,
         7,
-        7
+        7,
+        8
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -713,55 +713,15 @@
         null,
         null,
         null,
-        7,
         8,
         9,
-        10
+        10,
+        9
       ],
       "top10_count": 4,
       "sample_count": 10,
       "top10_rate": 40,
       "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_802465",
-      "title": "妹ちゃんはわりとチョロい！",
-      "rank_history": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        11,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_804222",
-      "title": "エージェント・ジャック〜美人スパイを乗っ取りハック〜",
-      "rank_history": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        12,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
     },
     {
       "key": "d_616372",
@@ -773,29 +733,9 @@
         null,
         null,
         null,
-        19,
         14,
         null,
-        20
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_794508",
-      "title": "〜イかせて倒す性技のヒーロー！〜 ユキズリマン ヤギ怪人編",
-      "rank_history": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         20,
-        null,
-        null,
         null
       ],
       "top10_count": 0,
@@ -813,10 +753,10 @@
         null,
         null,
         null,
+        16,
+        16,
         null,
-        16,
-        16,
-        null
+        15
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -833,8 +773,8 @@
         null,
         null,
         null,
-        null,
         19,
+        null,
         null,
         null
       ],
@@ -855,8 +795,28 @@
         null,
         null,
         null,
+        19,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_799208",
+      "title": "【ゲーム】人見知り保育士ちゃんと、臨時職員の俺がコスプレ中出しするまでの14日間",
+      "rank_history": [
         null,
-        19
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        17
       ],
       "top10_count": 0,
       "sample_count": 10,
