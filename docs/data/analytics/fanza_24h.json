@@ -1,7 +1,7 @@
 {
   "ranking_type": "24h",
-  "generated_at": "2026-08-23T01:20:02+09:00",
-  "snapshot_count": 8,
+  "generated_at": "2026-08-23T12:16:19+09:00",
+  "snapshot_count": 9,
   "items": [
     {
       "key": "d_761881",
@@ -14,10 +14,11 @@
         2,
         2,
         2,
+        2,
         2
       ],
-      "top10_count": 8,
-      "sample_count": 8,
+      "top10_count": 9,
+      "sample_count": 9,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -32,10 +33,11 @@
         4,
         4,
         5,
+        5,
         5
       ],
-      "top10_count": 8,
-      "sample_count": 8,
+      "top10_count": 9,
+      "sample_count": 9,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -50,10 +52,11 @@
         3,
         3,
         3,
+        3,
         3
       ],
-      "top10_count": 8,
-      "sample_count": 8,
+      "top10_count": 9,
+      "sample_count": 9,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -68,11 +71,12 @@
         9,
         8,
         9,
-        9
+        9,
+        11
       ],
       "top10_count": 8,
-      "sample_count": 8,
-      "top10_rate": 100,
+      "sample_count": 9,
+      "top10_rate": 89,
       "analytics_status": "STABLE"
     },
     {
@@ -86,10 +90,11 @@
         7,
         7,
         8,
-        7
+        7,
+        9
       ],
-      "top10_count": 8,
-      "sample_count": 8,
+      "top10_count": 9,
+      "sample_count": 9,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -104,11 +109,12 @@
         5,
         10,
         15,
-        15
+        15,
+        null
       ],
       "top10_count": 6,
-      "sample_count": 8,
-      "top10_rate": 75,
+      "sample_count": 9,
+      "top10_rate": 67,
       "analytics_status": "ACTIVE"
     },
     {
@@ -122,10 +128,11 @@
         10,
         6,
         7,
-        6
+        6,
+        8
       ],
-      "top10_count": 8,
-      "sample_count": 8,
+      "top10_count": 9,
+      "sample_count": 9,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -140,11 +147,12 @@
         8,
         9,
         10,
-        10
+        10,
+        16
       ],
       "top10_count": 8,
-      "sample_count": 8,
-      "top10_rate": 100,
+      "sample_count": 9,
+      "top10_rate": 89,
       "analytics_status": "STABLE"
     },
     {
@@ -158,11 +166,12 @@
         20,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 1,
-      "sample_count": 8,
-      "top10_rate": 12,
+      "sample_count": 9,
+      "top10_rate": 11,
       "analytics_status": "SPIKE"
     },
     {
@@ -176,11 +185,12 @@
         13,
         14,
         13,
+        12,
         12
       ],
       "top10_count": 2,
-      "sample_count": 8,
-      "top10_rate": 25,
+      "sample_count": 9,
+      "top10_rate": 22,
       "analytics_status": "VOLATILE"
     },
     {
@@ -194,11 +204,12 @@
         14,
         13,
         12,
-        11
+        11,
+        10
       ],
-      "top10_count": 0,
-      "sample_count": 8,
-      "top10_rate": 0,
+      "top10_count": 1,
+      "sample_count": 9,
+      "top10_rate": 11,
       "analytics_status": "SPIKE"
     },
     {
@@ -212,10 +223,11 @@
         12,
         12,
         11,
-        13
+        13,
+        15
       ],
       "top10_count": 0,
-      "sample_count": 8,
+      "sample_count": 9,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -230,11 +242,12 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 1,
-      "sample_count": 8,
-      "top10_rate": 12,
+      "sample_count": 9,
+      "top10_rate": 11,
       "analytics_status": "SPIKE"
     },
     {
@@ -248,11 +261,12 @@
         11,
         15,
         19,
-        19
+        19,
+        null
       ],
       "top10_count": 3,
-      "sample_count": 8,
-      "top10_rate": 38,
+      "sample_count": 9,
+      "top10_rate": 33,
       "analytics_status": "VOLATILE"
     },
     {
@@ -266,10 +280,11 @@
         17,
         17,
         18,
-        18
+        18,
+        19
       ],
       "top10_count": 0,
-      "sample_count": 8,
+      "sample_count": 9,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -284,10 +299,11 @@
         16,
         16,
         17,
-        16
+        16,
+        17
       ],
       "top10_count": 0,
-      "sample_count": 8,
+      "sample_count": 9,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -302,10 +318,11 @@
         18,
         19,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 8,
+      "sample_count": 9,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -320,10 +337,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 8,
+      "sample_count": 9,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -338,10 +356,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 8,
+      "sample_count": 9,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -356,10 +375,11 @@
         19,
         null,
         20,
+        20,
         20
       ],
       "top10_count": 0,
-      "sample_count": 8,
+      "sample_count": 9,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -374,11 +394,12 @@
         1,
         1,
         1,
+        1,
         1
       ],
-      "top10_count": 5,
-      "sample_count": 8,
-      "top10_rate": 62,
+      "top10_count": 6,
+      "sample_count": 9,
+      "top10_rate": 67,
       "analytics_status": "ACTIVE"
     },
     {
@@ -392,11 +413,12 @@
         6,
         5,
         4,
-        4
+        4,
+        7
       ],
-      "top10_count": 4,
-      "sample_count": 8,
-      "top10_rate": 50,
+      "top10_count": 5,
+      "sample_count": 9,
+      "top10_rate": 56,
       "analytics_status": "ACTIVE"
     },
     {
@@ -410,11 +432,12 @@
         15,
         11,
         6,
-        8
+        8,
+        13
       ],
       "top10_count": 2,
-      "sample_count": 8,
-      "top10_rate": 25,
+      "sample_count": 9,
+      "top10_rate": 22,
       "analytics_status": "VOLATILE"
     },
     {
@@ -428,10 +451,11 @@
         null,
         18,
         14,
+        14,
         14
       ],
       "top10_count": 0,
-      "sample_count": 8,
+      "sample_count": 9,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -446,10 +470,68 @@
         null,
         20,
         16,
-        17
+        17,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 8,
+      "sample_count": 9,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_797711",
+      "title": "幼馴染が上京中に幼馴染の父と抱いた",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4
+      ],
+      "top10_count": 1,
+      "sample_count": 9,
+      "top10_rate": 11,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_803148",
+      "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        6
+      ],
+      "top10_count": 1,
+      "sample_count": 9,
+      "top10_rate": 11,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_762894",
+      "title": "その制服をめちゃくちゃにしたい2〜教え子たちと禁断の3Pセックス編",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        18
+      ],
+      "top10_count": 0,
+      "sample_count": 9,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     }
