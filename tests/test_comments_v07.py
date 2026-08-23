@@ -35,11 +35,14 @@ class RankIdleCommentTest(unittest.TestCase):
         self.assert_template("rise5")
         self.assert_template("new", self.item(status="new", previous_rank=None, current_rank=18, rank_change=0))
         self.assert_template("reentry", self.item(status="reentry", previous_rank=None, current_rank=18, rank_change=0))
+        self.assert_template("first", self.item(current_rank=1, previous_rank=1, rank_change=0))
+        self.assert_template("normal", self.item(rank_change=0))
 
     def test_sale_comment_categories(self):
         self.assert_template("sale50", self.item(discount_rate=50), signal_type="sale")
         self.assert_template("sale30", self.item(discount_rate=30), signal_type="sale")
         self.assert_template("sale_top10", self.item(current_rank=7, discount_rate=50), signal_type="sale")
+        self.assert_template("sale", self.item(discount_rate=20), signal_type="sale")
 
     def test_comments_are_deterministic_and_distributed(self):
         item = self.item()
@@ -50,7 +53,7 @@ class RankIdleCommentTest(unittest.TestCase):
     def test_all_templates_are_within_length_limit(self):
         for category, templates in COMMENT_TEMPLATES.items():
             with self.subTest(category=category):
-                self.assertGreaterEqual(len(templates), 4)
+                self.assertGreaterEqual(len(templates), 10)
                 self.assertTrue(all(len(comment) <= 60 for comment in templates))
 
     def test_candidates_save_comment_and_complete_post(self):
