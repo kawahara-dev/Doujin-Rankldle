@@ -85,7 +85,16 @@ async function copyPost(text, button) {
 }
 function renderCandidates(candidates) {
   if (!candidates.length) return;
-  el("postCandidates").replaceChildren(...candidates.slice(-10).reverse().map((item) => {
+  const priority = (item) => item.ranking_type === "cross" ? 5
+    : item.event_type || item.ranking_type === "sale" ? 1
+    : item.current_rank <= 10 && (item.previous_rank == null || item.previous_rank > 10) ? 4
+    : item.rank_change >= 5 ? 3
+    : item.status === "new" || item.status === "reentry" || item.previous_rank == null ? 2
+    : 0;
+  const featured = candidates.map((item, index) => ({ item, index }))
+    .sort((a, b) => priority(b.item) - priority(a.item) || b.index - a.index)
+    .slice(0, 3).map(({ item }) => item);
+  el("postCandidates").replaceChildren(...featured.map((item) => {
     const card = document.createElement("article"); card.className = "candidate";
     const heading = document.createElement("strong"); heading.textContent = `🔥 Trend Score ${item.trend_score}`;
     const title = document.createElement("p"); title.textContent = item.title;
