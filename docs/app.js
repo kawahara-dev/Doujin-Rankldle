@@ -83,17 +83,28 @@ async function copyPost(text, button) {
   catch (_) { const area = document.createElement("textarea"); area.value = text; document.body.append(area); area.select(); document.execCommand("copy"); area.remove(); }
   button.textContent = "COPIED!"; setTimeout(() => { button.textContent = "COPY POST"; }, 1500);
 }
-function renderCandidates(candidates) {
-  if (!candidates.length) return;
-  const priority = (item) => item.ranking_type === "cross" ? 5
+function candidatePriority(item) {
+  return item.ranking_type === "cross" ? 5
     : item.event_type || item.ranking_type === "sale" ? 1
     : item.current_rank <= 10 && (item.previous_rank == null || item.previous_rank > 10) ? 4
     : item.rank_change >= 5 ? 3
     : item.status === "new" || item.status === "reentry" || item.previous_rank == null ? 2
     : 0;
-  const featured = candidates.map((item, index) => ({ item, index }))
-    .sort((a, b) => priority(b.item) - priority(a.item) || b.index - a.index)
-    .slice(0, 3).map(({ item }) => item);
+}
+
+function selectCandidates(candidates) {
+  const isNewFormat = (item) => Object.prototype.hasOwnProperty.call(item, "comment")
+    || String(item.text || "").includes("💬 RankIdleメモ");
+  const byPostingValueAndDate = (a, b) => candidatePriority(b) - candidatePriority(a)
+    || (Date.parse(b.generated_at || 0) || 0) - (Date.parse(a.generated_at || 0) || 0);
+  const current = candidates.filter(isNewFormat).sort(byPostingValueAndDate);
+  const legacy = candidates.filter((item) => !isNewFormat(item)).sort(byPostingValueAndDate);
+  return current.concat(current.length < 3 ? legacy : []).slice(0, 3);
+}
+
+function renderCandidates(candidates) {
+  if (!candidates.length) return;
+  const featured = selectCandidates(candidates);
   el("postCandidates").replaceChildren(...featured.map((item) => {
     const card = document.createElement("article"); card.className = "candidate";
     const heading = document.createElement("strong"); heading.textContent = `🔥 Trend Score ${item.trend_score}`;
