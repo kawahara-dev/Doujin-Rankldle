@@ -1,6 +1,6 @@
 {
   "ranking_type": "1h",
-  "generated_at": "2026-08-23T08:15:25+09:00",
+  "generated_at": "2026-08-23T12:14:58+09:00",
   "snapshot_count": 10,
   "items": [
     {
@@ -13,8 +13,8 @@
         2,
         2,
         2,
-        3,
         4,
+        2,
         2,
         2
       ],
@@ -33,10 +33,10 @@
         3,
         3,
         3,
-        5,
         6,
         5,
-        5
+        5,
+        6
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -53,10 +53,10 @@
         7,
         18,
         4,
-        8,
         13,
         17,
-        14
+        14,
+        9
       ],
       "top10_count": 6,
       "sample_count": 10,
@@ -73,8 +73,8 @@
         20,
         6,
         14,
-        15,
         19,
+        null,
         null,
         null
       ],
@@ -94,8 +94,8 @@
         15,
         20,
         null,
-        null,
         20,
+        null,
         null
       ],
       "top10_count": 2,
@@ -113,14 +113,14 @@
         11,
         8,
         9,
-        13,
         10,
         10,
-        9
+        9,
+        7
       ],
-      "top10_count": 8,
+      "top10_count": 9,
       "sample_count": 10,
-      "top10_rate": 80,
+      "top10_rate": 90,
       "analytics_status": "STABLE"
     },
     {
@@ -135,8 +135,8 @@
         10,
         14,
         14,
-        14,
-        16
+        16,
+        13
       ],
       "top10_count": 5,
       "sample_count": 10,
@@ -154,9 +154,9 @@
         9,
         null,
         null,
-        null,
         9,
-        15
+        15,
+        null
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -174,9 +174,9 @@
         7,
         8,
         11,
-        11,
         8,
-        8
+        8,
+        12
       ],
       "top10_count": 8,
       "sample_count": 10,
@@ -193,8 +193,8 @@
         null,
         12,
         17,
-        20,
         16,
+        null,
         null,
         null
       ],
@@ -214,9 +214,9 @@
         14,
         13,
         null,
-        null,
         18,
-        null
+        null,
+        11
       ],
       "top10_count": 2,
       "sample_count": 10,
@@ -255,8 +255,8 @@
         16,
         null,
         null,
-        null,
-        17
+        17,
+        18
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -274,13 +274,13 @@
         19,
         null,
         null,
-        null,
         16,
-        13
+        13,
+        10
       ],
-      "top10_count": 0,
+      "top10_count": 1,
       "sample_count": 10,
-      "top10_rate": 0,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -296,7 +296,7 @@
         null,
         null,
         null,
-        null
+        20
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -333,10 +333,10 @@
         10,
         5,
         7,
-        16,
         20,
         13,
-        10
+        10,
+        15
       ],
       "top10_count": 5,
       "sample_count": 10,
@@ -375,8 +375,8 @@
         null,
         null,
         null,
-        null,
-        18
+        18,
+        17
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -413,8 +413,8 @@
         15,
         20,
         11,
-        17,
         18,
+        null,
         null,
         null
       ],
@@ -453,15 +453,15 @@
         5,
         4,
         5,
-        9,
         12,
+        null,
         null,
         null
       ],
-      "top10_count": 5,
+      "top10_count": 4,
       "sample_count": 10,
-      "top10_rate": 50,
-      "analytics_status": "ACTIVE"
+      "top10_rate": 40,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_649476",
@@ -473,7 +473,7 @@
         6,
         13,
         12,
-        19,
+        null,
         null,
         null,
         null
@@ -493,8 +493,8 @@
         12,
         11,
         6,
-        null,
         15,
+        null,
         null,
         null
       ],
@@ -574,8 +574,8 @@
         null,
         null,
         null,
-        null,
         19,
+        null,
         null
       ],
       "top10_count": 0,
@@ -654,7 +654,7 @@
         null,
         null,
         2,
-        2,
+        3,
         3,
         3
       ],
@@ -673,8 +673,8 @@
         null,
         null,
         null,
-        4,
         3,
+        4,
         4,
         4
       ],
@@ -693,10 +693,10 @@
         null,
         null,
         null,
-        6,
         5,
         6,
-        6
+        6,
+        5
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -716,7 +716,7 @@
         7,
         7,
         7,
-        7
+        8
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -733,15 +733,15 @@
         null,
         null,
         null,
-        10,
         8,
         11,
-        12
+        12,
+        null
       ],
-      "top10_count": 2,
+      "top10_count": 1,
       "sample_count": 10,
-      "top10_rate": 20,
-      "analytics_status": "VOLATILE"
+      "top10_rate": 10,
+      "analytics_status": "SPIKE"
     },
     {
       "key": "d_804173",
@@ -753,34 +753,14 @@
         null,
         null,
         null,
-        12,
         9,
+        null,
         null,
         null
       ],
       "top10_count": 1,
       "sample_count": 10,
       "top10_rate": 10,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_722571",
-      "title": "裏筋侍・大全ノ巻ー極意総伝ー",
-      "rank_history": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        18,
-        null,
-        15,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
     {
@@ -793,10 +773,30 @@
         null,
         null,
         null,
-        null,
         17,
         12,
-        11
+        11,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_722571",
+      "title": "裏筋侍・大全ノ巻ー極意総伝ー",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        15,
+        null,
+        16
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -815,8 +815,8 @@
         null,
         null,
         null,
-        null,
-        19
+        19,
+        14
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -835,8 +835,28 @@
         null,
         null,
         null,
+        20,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_731432",
+      "title": "その制服をめちゃくちゃにしたい〜教え子と初恋上書き本気セックス編〜",
+      "rank_history": [
         null,
-        20
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        19
       ],
       "top10_count": 0,
       "sample_count": 10,
