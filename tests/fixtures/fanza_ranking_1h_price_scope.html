@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja"><head><title>FANZA 1時間ランキング</title></head><body>
+  <section class="ranking-list">
+    <!-- Mobile: price is already inside the confirmed card. -->
+    <article class="product"><div class="ranking-card" data-rank="1">
+      <span>販売数：100</span><a href="/dc/doujin/-/detail/=/cid=d_mobile_price/">モバイル作品</a>
+      <strong>770円</strong>
+    </div></article>
+    <!-- PC: the price is a sibling of the card in a one-product wrapper. -->
+    <article class="product"><div class="ranking-card" data-rank="2">
+      <span>販売数：90</span><a href="/dc/doujin/-/detail/=/cid=d_pc_price/">PC作品</a>
+    </div><strong class="price">1,100円</strong></article>
+    <!-- This shared parent has two CIDs; neither price may cross that boundary. -->
+    <section class="unsafe-multi-product"><div class="ranking-card" data-rank="3">
+      <span>販売数：80</span><a href="/dc/doujin/-/detail/=/cid=d_no_price/">価格なし作品</a>
+    </div><div class="other-product">
+      <a href="/dc/doujin/-/detail/=/cid=d_other_price/">別作品</a><strong>9,999円</strong>
+    </div></section>
+  </section>
+</body></html>
