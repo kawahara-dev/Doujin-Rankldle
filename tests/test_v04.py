@@ -107,6 +107,23 @@ class ManualImportV04Test(unittest.TestCase):
                        "Missing Product Diagnostics:"):
             self.assertIn(policy, source)
 
+    def test_1_hour_price_scope_fixture_and_safety_guards(self):
+        source = Path("docs/bookmarklet.js").read_text(encoding="utf-8")
+        fixture = Path("tests/fixtures/fanza_ranking_1h_price_scope.html").read_text(encoding="utf-8")
+        self.assertRegex(fixture, r"d_mobile_price[\s\S]*770円")
+        pc_card = re.search(r'data-rank="2">(.*?)</div><strong class="price">1,100円', fixture, re.S)
+        self.assertIsNotNone(pc_card)
+        self.assertNotIn("1,100円", pc_card.group(1))
+        unsafe = re.search(r'unsafe-multi-product(.*?)</section>', fixture, re.S).group(1)
+        self.assertIn("d_no_price", unsafe)
+        self.assertIn("d_other_price", unsafe)
+        self.assertIn("9,999円", unsafe)
+        for behavior in ("priceScopeOf(card, cid)", "priceOf(priceScope.scope)",
+                         "cids.size > 1", "depth <= 8", "hasPrice(candidate)"):
+            self.assertIn(behavior, source)
+        for debug_label in ("Price Scope Found:", "Price Scope Depth:"):
+            self.assertIn(debug_label, source)
+
     def test_bookmarklet_minifier_keeps_code_after_line_comments_and_is_valid_javascript(self):
         script = r'''const { minify } = require("./docs/bookmarklet-minifier.js");
 const fixture = `(() => {

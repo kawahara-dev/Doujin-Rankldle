@@ -124,6 +124,17 @@
 
   const hasSales = element => /販売数/.test(compact(element.innerText));
   const hasPrice = element => /(?:[¥￥]\s*[\d,]+|[\d,]+\s*円)/.test(compact(element.innerText));
+  /* Use the closest priced one-product container; never cross a multi-product boundary. */
+  const priceScopeOf = (card, cid) => {
+    let candidate = card;
+    for (let depth = 0; candidate && depth <= 8; depth += 1, candidate = candidate.parentElement) {
+      const cids = productCids(candidate);
+      if (cids.size > 1) break;
+      if (cids.size === 1 && cids.has(cid) && hasPrice(candidate))
+        return { scope: candidate, found: true, depth };
+    }
+    return { scope: card, found: false, depth: null };
+  };
   const saleScopeOf = (card, cid) => {
     let scope = null, depthFound = null, candidate = card;
     for (let depth = 0; candidate && depth <= 8; depth += 1, candidate = candidate.parentElement) {
@@ -143,7 +154,7 @@
     const productLinks = links.filter(link => productUrl(link.href));
     const uniqueProducts = new Set(productLinks.map(link => cidOf(productUrl(link.href))).filter(Boolean));
     const oneCidCards = new Set(), multipleCidCards = new Set(), seen = new Set(), out = [];
-    const missingDiagnostics = [], saleScopeDepths = [];
+    const missingDiagnostics = [], priceScopeDepths = [], saleScopeDepths = [];
     for (const link of productLinks) {
       const url = productUrl(link.href), cid = cidOf(url);
       if (!cid || seen.has(cid)) continue;
@@ -159,9 +170,11 @@
         if (!hasSales(card) || !titleOf(card, link, cid)) continue;
         oneCidCards.add(card);
         const saleScope = rankingType === "24h" ? saleScopeOf(card, cid) : { scope: card, found: false, depth: null };
+        const priceScope = rankingType === "1h" ? priceScopeOf(card, cid) : { scope: card, found: false, depth: null };
         if (saleScope.found) saleScopeDepths.push(saleScope.depth);
+        if (priceScope.found) priceScopeDepths.push(priceScope.depth);
         const item = { rank: rankOf(card), title: titleOf(card, link, cid),
-          price: rankingType === "24h" ? priceOf(saleScope.scope) : priceOf(card),
+          price: rankingType === "24h" ? priceOf(saleScope.scope) : priceOf(priceScope.scope),
           url: cleanUrl(url), id: cid, _card: card };
         if (rankingType === "24h") Object.assign(item, saleOf(saleScope.scope));
         out.push(item);
@@ -202,6 +215,7 @@
       itemsParsed: out.length, parsedProducts: out.length,
       missingProducts: uniqueProducts.size - out.length, priceMissing, salesMissing,
       priceFound: out.length - priceMissing, regularPriceFound,
+      priceScopeFound: priceScopeDepths.length, priceScopeDepths,
       saleScopeFound: saleScopeDepths.length, saleScopeDepths, saleItems,
       stableDomOrder, missingDiagnostics });
     return out.sort((a, b) => a.rank - b.rank);
@@ -223,7 +237,7 @@
   const debugText = debug => {
     const missing = (debug.missingDiagnostics || []).map(item =>
       `cid=${item.cid} links=${item.productLinks} depth=${item.parentDepth} sales=${item.sales ? "Yes" : "No"} price=${item.price ? "Yes" : "No"} unique_cids=${item.uniqueCidCount} text_length=${item.innerTextLength}`).join("\n");
-    return `Links: ${debug.links || 0}\nProduct Links: ${debug.productLinks || 0}\nCandidate Cards: ${debug.candidateCards || 0}\nRanks Found: ${debug.ranksFound || 0}\nUnique Products: ${debug.uniqueProducts || 0}\nParsed Products: ${debug.parsedProducts || 0}\nMissing Products: ${debug.missingProducts || 0}\nCards with 1 CID: ${debug.cardsWithOneCid || 0}\nCards with multiple CID: ${debug.cardsWithMultipleCid || 0}\nPrice Found: ${debug.priceFound || 0}\nRegular Price Found: ${debug.regularPriceFound || 0}\nSale Scope Found: ${debug.saleScopeFound || 0}\nSale Scope Depth: ${(debug.saleScopeDepths || []).join(", ") || "None"}\nSale Items: ${debug.saleItems || 0}\nPrice Missing: ${debug.priceMissing || 0} / ${debug.itemsParsed || 0}\nSales Missing: ${debug.salesMissing || 0}\nExplicit Ranks: ${debug.explicitRanks || 0}\nDOM Order Fallback Used: ${debug.domOrderFallbackUsed ? "Yes" : "No"}\nStable DOM Order: ${debug.stableDomOrder ? "Yes" : "No"}\nItems Parsed: ${debug.itemsParsed || 0}${missing ? `\nMissing Product Diagnostics:\n${missing}` : ""}`;
+    return `Links: ${debug.links || 0}\nProduct Links: ${debug.productLinks || 0}\nCandidate Cards: ${debug.candidateCards || 0}\nRanks Found: ${debug.ranksFound || 0}\nUnique Products: ${debug.uniqueProducts || 0}\nParsed Products: ${debug.parsedProducts || 0}\nMissing Products: ${debug.missingProducts || 0}\nCards with 1 CID: ${debug.cardsWithOneCid || 0}\nCards with multiple CID: ${debug.cardsWithMultipleCid || 0}\nPrice Found: ${debug.priceFound || 0}\nPrice Scope Found: ${debug.priceScopeFound || 0}\nPrice Scope Depth: ${(debug.priceScopeDepths || []).join(", ") || "None"}\nRegular Price Found: ${debug.regularPriceFound || 0}\nSale Scope Found: ${debug.saleScopeFound || 0}\nSale Scope Depth: ${(debug.saleScopeDepths || []).join(", ") || "None"}\nSale Items: ${debug.saleItems || 0}\nPrice Missing: ${debug.priceMissing || 0} / ${debug.itemsParsed || 0}\nSales Missing: ${debug.salesMissing || 0}\nExplicit Ranks: ${debug.explicitRanks || 0}\nDOM Order Fallback Used: ${debug.domOrderFallbackUsed ? "Yes" : "No"}\nStable DOM Order: ${debug.stableDomOrder ? "Yes" : "No"}\nItems Parsed: ${debug.itemsParsed || 0}${missing ? `\nMissing Product Diagnostics:\n${missing}` : ""}`;
   };
   const detectRankingType = (doc = document) => {
     const selected = [...doc.querySelectorAll('[aria-selected="true"], .active, .selected')].map(node => compact(node.innerText)).join(" ");
@@ -248,6 +262,6 @@
       alert(`FANZA ${rankingType.toUpperCase()}\nランキングを${items.length}件取得しました\n表示されたJSONを手動でコピーしてください`);
     }
   };
-  if (typeof module !== "undefined") module.exports = { extract, validate, productUrl, cidOf, detectRankingType, saleOf, saleEndOf };
+  if (typeof module !== "undefined") module.exports = { extract, validate, productUrl, cidOf, detectRankingType, priceScopeOf, saleOf, saleEndOf };
   else run().catch(error => alert(`RankIdle Import Debug\n\n${error?.message || error}`));
 })();
