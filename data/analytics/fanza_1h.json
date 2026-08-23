@@ -1,6 +1,6 @@
 {
   "ranking_type": "1h",
-  "generated_at": "2026-08-23T12:14:58+09:00",
+  "generated_at": "2026-08-23T13:28:08+09:00",
   "snapshot_count": 10,
   "items": [
     {
@@ -13,10 +13,10 @@
         2,
         2,
         2,
-        4,
         2,
         2,
-        2
+        2,
+        1
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -33,10 +33,10 @@
         3,
         3,
         3,
+        5,
+        5,
         6,
-        5,
-        5,
-        6
+        3
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -53,14 +53,14 @@
         7,
         18,
         4,
-        13,
         17,
         14,
-        9
+        9,
+        6
       ],
-      "top10_count": 6,
+      "top10_count": 7,
       "sample_count": 10,
-      "top10_rate": 60,
+      "top10_rate": 70,
       "analytics_status": "ACTIVE"
     },
     {
@@ -73,10 +73,10 @@
         20,
         6,
         14,
-        19,
         null,
         null,
-        null
+        null,
+        19
       ],
       "top10_count": 3,
       "sample_count": 10,
@@ -93,8 +93,8 @@
         null,
         15,
         20,
-        null,
         20,
+        null,
         null,
         null
       ],
@@ -114,13 +114,13 @@
         8,
         9,
         10,
-        10,
         9,
-        7
+        7,
+        11
       ],
-      "top10_count": 9,
+      "top10_count": 8,
       "sample_count": 10,
-      "top10_rate": 90,
+      "top10_rate": 80,
       "analytics_status": "STABLE"
     },
     {
@@ -134,9 +134,9 @@
         10,
         10,
         14,
-        14,
         16,
-        13
+        13,
+        null
       ],
       "top10_count": 5,
       "sample_count": 10,
@@ -153,9 +153,9 @@
         4,
         9,
         null,
-        null,
         9,
         15,
+        null,
         null
       ],
       "top10_count": 4,
@@ -173,10 +173,10 @@
         9,
         7,
         8,
-        11,
         8,
         8,
-        12
+        12,
+        13
       ],
       "top10_count": 8,
       "sample_count": 10,
@@ -193,7 +193,7 @@
         null,
         12,
         17,
-        16,
+        null,
         null,
         null,
         null
@@ -213,10 +213,10 @@
         8,
         14,
         13,
-        null,
         18,
         null,
-        11
+        11,
+        12
       ],
       "top10_count": 2,
       "sample_count": 10,
@@ -254,9 +254,9 @@
         null,
         16,
         null,
-        null,
         17,
-        18
+        18,
+        17
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -273,10 +273,10 @@
         14,
         19,
         null,
-        null,
         16,
         13,
-        10
+        10,
+        20
       ],
       "top10_count": 1,
       "sample_count": 10,
@@ -295,8 +295,8 @@
         null,
         null,
         null,
-        null,
-        20
+        20,
+        null
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -333,14 +333,14 @@
         10,
         5,
         7,
-        20,
         13,
         10,
-        15
+        15,
+        10
       ],
-      "top10_count": 5,
+      "top10_count": 6,
       "sample_count": 10,
-      "top10_rate": 50,
+      "top10_rate": 60,
       "analytics_status": "ACTIVE"
     },
     {
@@ -374,9 +374,9 @@
         16,
         null,
         null,
-        null,
         18,
-        17
+        17,
+        15
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -413,14 +413,14 @@
         15,
         20,
         11,
-        18,
         null,
         null,
-        null
+        null,
+        8
       ],
-      "top10_count": 0,
+      "top10_count": 1,
       "sample_count": 10,
-      "top10_rate": 0,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -436,7 +436,7 @@
         1,
         1,
         1,
-        1
+        2
       ],
       "top10_count": 8,
       "sample_count": 10,
@@ -453,10 +453,10 @@
         5,
         4,
         5,
-        12,
         null,
         null,
-        null
+        null,
+        18
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -476,7 +476,7 @@
         null,
         null,
         null,
-        null
+        14
       ],
       "top10_count": 1,
       "sample_count": 10,
@@ -493,7 +493,7 @@
         12,
         11,
         6,
-        15,
+        null,
         null,
         null,
         null
@@ -573,8 +573,8 @@
         18,
         null,
         null,
-        null,
         19,
+        null,
         null,
         null
       ],
@@ -653,10 +653,10 @@
         null,
         null,
         null,
-        2,
         3,
         3,
-        3
+        3,
+        5
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -673,7 +673,7 @@
         null,
         null,
         null,
-        3,
+        4,
         4,
         4,
         4
@@ -693,10 +693,10 @@
         null,
         null,
         null,
+        6,
+        6,
         5,
-        6,
-        6,
-        5
+        7
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -715,8 +715,8 @@
         null,
         7,
         7,
-        7,
-        8
+        8,
+        9
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -733,34 +733,14 @@
         null,
         null,
         null,
-        8,
         11,
         12,
-        null
-      ],
-      "top10_count": 1,
-      "sample_count": 10,
-      "top10_rate": 10,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_804173",
-      "title": "目指せ！楽園計画RX vol.5",
-      "rank_history": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        9,
-        null,
         null,
         null
       ],
-      "top10_count": 1,
+      "top10_count": 0,
       "sample_count": 10,
-      "top10_rate": 10,
+      "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
     {
@@ -773,9 +753,9 @@
         null,
         null,
         null,
-        17,
         12,
         11,
+        null,
         null
       ],
       "top10_count": 0,
@@ -793,9 +773,9 @@
         null,
         null,
         null,
-        null,
         15,
         null,
+        16,
         16
       ],
       "top10_count": 0,
@@ -814,9 +794,9 @@
         null,
         null,
         null,
-        null,
         19,
-        14
+        14,
+        null
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -834,8 +814,8 @@
         null,
         null,
         null,
-        null,
         20,
+        null,
         null
       ],
       "top10_count": 0,
@@ -855,8 +835,8 @@
         null,
         null,
         null,
-        null,
-        19
+        19,
+        null
       ],
       "top10_count": 0,
       "sample_count": 10,
