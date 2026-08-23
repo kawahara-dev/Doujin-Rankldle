@@ -99,8 +99,10 @@ function renderCandidates(candidates) {
     const heading = document.createElement("strong"); heading.textContent = `🔥 Trend Score ${item.trend_score}`;
     const title = document.createElement("p"); title.textContent = item.title;
     const movement = document.createElement("p"); movement.textContent = `${item.previous_rank ?? "NEW"} → ${item.current_rank}  ${item.rank_change > 0 ? `+${item.rank_change}` : ""}`;
-    const pre = document.createElement("pre"); pre.textContent = item.text;
-    const button = document.createElement("button"); button.textContent = "COPY POST"; button.addEventListener("click", () => copyPost(item.text, button));
+    // New candidates already include their memo in text; legacy candidates remain safe.
+    const completedText = item.text || "";
+    const pre = document.createElement("pre"); pre.textContent = completedText;
+    const button = document.createElement("button"); button.textContent = "COPY POST"; button.addEventListener("click", () => copyPost(completedText, button));
     card.append(heading, title, movement, pre, button); return card;
   }));
 }

@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
-from src.post_generator import generate_candidates
+from src.post_generator import generate_candidates, generate_comment
 from src.providers.fanza_api import FanzaApiProvider
 from src.providers.fanza_public import FanzaAgeGateError, FanzaPublicProvider
 
@@ -120,8 +120,9 @@ def sale_candidates(items,existing,now):
   if event_key in seen: continue
   regular=f"通常 ¥{item['regular_price']:,}\n→ " if item.get('regular_price') else ''
   product=f"\n\n作品ページ👇\n{item['url']}" if item.get('url') else ''
-  text=f"【FANZA SALE WATCH】\n\n💸 {item.get('discount_rate') or 0}%OFF\n🔥 24時間ランキング #{item['current_rank']}\n\n「{item['title']}」\n\n{regular}¥{item['price']:,}{product}"
-  output.append({'key':item['key'],'event_key':event_key,'event_type':event,'title':item['title'],'url':item.get('url',''),'ranking_type':'24h','sale_score':item['sale_score'],'trend_score':item.get('trend_score',0),'current_rank':item['current_rank'],'previous_rank':item.get('previous_rank'),'rank_change':item.get('rank_change',0),'text':text,'generated_at':now.isoformat()})
+  comment=generate_comment(item,'24h','sale')
+  text=f"【FANZA SALE WATCH】\n\n💸 {item.get('discount_rate') or 0}%OFF\n🔥 24時間ランキング #{item['current_rank']}\n\n「{item['title']}」\n\n{regular}¥{item['price']:,}\n\n💬 RankIdleメモ\n{comment}{product}"
+  output.append({'key':item['key'],'event_key':event_key,'event_type':event,'title':item['title'],'url':item.get('url',''),'ranking_type':'24h','sale_score':item['sale_score'],'trend_score':item.get('trend_score',0),'current_rank':item['current_rank'],'previous_rank':item.get('previous_rank'),'rank_change':item.get('rank_change',0),'comment':comment,'text':text,'generated_at':now.isoformat()})
  return sorted(output,key=lambda x:(priority[x['event_type']],-x['sale_score']))[:5]
 def ranking_dir(ranking_type): return FANZA_DIR/ranking_type
 def posts_path(ranking_type):
@@ -191,7 +192,8 @@ def add_cross_signals(items,other_items,ranking_type):
 def cross_candidate(signal,now):
  one,daily=signal['one_hour'],signal['twenty_four_hour']
  product=f"\n\n作品ページ👇\n{signal['url']}" if signal.get('url') else ''
- return {**signal,'generated_at':now.isoformat(),'text':f"【FANZA CROSS TREND】\n🔥 1H・24Hともに上昇\n\n「{signal['title']}」\n\n1H: #{one['previous_rank']} → #{one['current_rank']}\n24H: #{daily['previous_rank']} → #{daily['current_rank']}{product}"}
+ comment=generate_comment(signal,'cross','cross')
+ return {**signal,'comment':comment,'generated_at':now.isoformat(),'text':f"【FANZA CROSS TREND】\n🔥 1H・24Hともに上昇\n\n「{signal['title']}」\n\n1H: #{one['previous_rank']} → #{one['current_rank']}\n24H: #{daily['previous_rank']} → #{daily['current_rank']}\n\n💬 RankIdleメモ\n{comment}{product}"}
 def main():
  now=datetime.now(JST).replace(microsecond=0); stamp=now.isoformat(); mode=determine_mode(); old=normalize_status(read_status()); age_gate=False
  ranking_mode=False; ranking_type='24h'
