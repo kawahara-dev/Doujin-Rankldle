@@ -1,13 +1,32 @@
 {
   "ranking_type": "1h",
-  "generated_at": "2026-08-24T12:18:39+09:00",
+  "generated_at": "2026-08-24T13:48:16+09:00",
   "snapshot_count": 10,
   "items": [
+    {
+      "key": "d_805485",
+      "title": "破魔の巫女 淫獄に堕つ 3",
+      "rank_history": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "top10_count": 10,
+      "sample_count": 10,
+      "top10_rate": 100,
+      "analytics_status": "STABLE"
+    },
     {
       "key": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
       "rank_history": [
-        1,
         2,
         2,
         2,
@@ -16,7 +35,8 @@
         1,
         2,
         2,
-        2
+        2,
+        1
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -27,7 +47,6 @@
       "key": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
       "rank_history": [
-        2,
         3,
         3,
         3,
@@ -36,7 +55,8 @@
         4,
         3,
         3,
-        5
+        5,
+        4
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -44,10 +64,69 @@
       "analytics_status": "STABLE"
     },
     {
+      "key": "d_804292",
+      "title": "となりのあやねさん 旅館でしっぽり編",
+      "rank_history": [
+        4,
+        9,
+        7,
+        8,
+        11,
+        6,
+        6,
+        8,
+        9,
+        17
+      ],
+      "top10_count": 8,
+      "sample_count": 10,
+      "top10_rate": 80,
+      "analytics_status": "STABLE"
+    },
+    {
+      "key": "d_796508",
+      "title": "DECOY＊DAISY",
+      "rank_history": [
+        5,
+        5,
+        4,
+        5,
+        18,
+        null,
+        null,
+        16,
+        null,
+        null
+      ],
+      "top10_count": 4,
+      "sample_count": 10,
+      "top10_rate": 40,
+      "analytics_status": "VOLATILE"
+    },
+    {
+      "key": "d_806152",
+      "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
+      "rank_history": [
+        6,
+        11,
+        8,
+        9,
+        14,
+        13,
+        18,
+        10,
+        10,
+        null
+      ],
+      "top10_count": 5,
+      "sample_count": 10,
+      "top10_rate": 50,
+      "analytics_status": "ACTIVE"
+    },
+    {
       "key": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
       "rank_history": [
-        3,
         7,
         7,
         18,
@@ -56,7 +135,28 @@
         11,
         10,
         7,
-        13
+        13,
+        20
+      ],
+      "top10_count": 6,
+      "sample_count": 10,
+      "top10_rate": 60,
+      "analytics_status": "ACTIVE"
+    },
+    {
+      "key": "d_801115",
+      "title": "【スマホ対応】PORTRAIT GIRLS ―美術部のモデルになった少女たち―",
+      "rank_history": [
+        8,
+        10,
+        5,
+        7,
+        12,
+        10,
+        7,
+        9,
+        12,
+        12
       ],
       "top10_count": 7,
       "sample_count": 10,
@@ -64,14 +164,94 @@
       "analytics_status": "ACTIVE"
     },
     {
-      "key": "d_755081",
-      "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
+      "key": "d_748896",
+      "title": "スパ・カイラクーア4",
       "rank_history": [
-        4,
+        9,
+        8,
+        14,
+        13,
+        9,
+        7,
+        12,
+        13,
+        7,
+        6
+      ],
+      "top10_count": 6,
+      "sample_count": 10,
+      "top10_rate": 60,
+      "analytics_status": "ACTIVE"
+    },
+    {
+      "key": "d_805647",
+      "title": "サキュバス性徒会シコシコ執行部4前編",
+      "rank_history": [
+        10,
+        16,
+        10,
+        10,
+        null,
+        null,
+        20,
+        20,
         18,
+        null
+      ],
+      "top10_count": 3,
+      "sample_count": 10,
+      "top10_rate": 30,
+      "analytics_status": "VOLATILE"
+    },
+    {
+      "key": "d_649476",
+      "title": "破魔の巫女 淫獄に堕つ 2",
+      "rank_history": [
+        11,
+        6,
+        13,
+        12,
+        13,
         null,
         15,
-        20,
+        6,
+        null,
+        null
+      ],
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
+    },
+    {
+      "key": "d_805704",
+      "title": "ファンティアまとめ本",
+      "rank_history": [
+        12,
+        null,
+        12,
+        17,
+        null,
+        12,
+        null,
+        null,
+        6,
+        8
+      ],
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
+    },
+    {
+      "key": "d_800289",
+      "title": "妻達は今、海外にいます 後編",
+      "rank_history": [
+        13,
+        12,
+        11,
+        6,
+        null,
         null,
         null,
         null,
@@ -87,7 +267,6 @@
       "key": "d_802143",
       "title": "Grand Order 戦記",
       "rank_history": [
-        5,
         14,
         20,
         6,
@@ -96,366 +275,7 @@
         null,
         16,
         19,
-        19
-      ],
-      "top10_count": 2,
-      "sample_count": 10,
-      "top10_rate": 20,
-      "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_806152",
-      "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
-      "rank_history": [
-        6,
-        6,
-        11,
-        8,
-        9,
-        14,
-        13,
-        18,
-        10,
-        10
-      ],
-      "top10_count": 6,
-      "sample_count": 10,
-      "top10_rate": 60,
-      "analytics_status": "ACTIVE"
-    },
-    {
-      "key": "d_805704",
-      "title": "ファンティアまとめ本",
-      "rank_history": [
-        7,
-        12,
-        null,
-        12,
-        17,
-        null,
-        12,
-        null,
-        null,
-        6
-      ],
-      "top10_count": 2,
-      "sample_count": 10,
-      "top10_rate": 20,
-      "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_804292",
-      "title": "となりのあやねさん 旅館でしっぽり編",
-      "rank_history": [
-        8,
-        4,
-        9,
-        7,
-        8,
-        11,
-        6,
-        6,
-        8,
-        9
-      ],
-      "top10_count": 9,
-      "sample_count": 10,
-      "top10_rate": 90,
-      "analytics_status": "STABLE"
-    },
-    {
-      "key": "d_805647",
-      "title": "サキュバス性徒会シコシコ執行部4前編",
-      "rank_history": [
-        9,
-        10,
-        16,
-        10,
-        10,
-        null,
-        null,
-        20,
-        20,
-        18
-      ],
-      "top10_count": 4,
-      "sample_count": 10,
-      "top10_rate": 40,
-      "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_757987",
-      "title": "追憶の淫魔サロン 〜搾り尽くされる記憶閲覧型VR風俗〜",
-      "rank_history": [
-        10,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 1,
-      "sample_count": 10,
-      "top10_rate": 10,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_806364",
-      "title": "WSS〜私が先に好きだったのに〜",
-      "rank_history": [
-        11,
-        20,
-        13,
-        null,
-        16,
-        15,
-        16,
-        14,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_802286",
-      "title": "雌ガチャIV",
-      "rank_history": [
-        12,
-        null,
-        4,
-        9,
-        null,
-        17,
-        20,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 2,
-      "sample_count": 10,
-      "top10_rate": 20,
-      "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_748896",
-      "title": "スパ・カイラクーア4",
-      "rank_history": [
-        13,
-        9,
-        8,
-        14,
-        13,
-        9,
-        7,
-        12,
-        13,
-        7
-      ],
-      "top10_count": 5,
-      "sample_count": 10,
-      "top10_rate": 50,
-      "analytics_status": "ACTIVE"
-    },
-    {
-      "key": "d_801115",
-      "title": "【スマホ対応】PORTRAIT GIRLS ―美術部のモデルになった少女たち―",
-      "rank_history": [
-        14,
-        8,
-        10,
-        5,
-        7,
-        12,
-        10,
-        7,
-        9,
-        12
-      ],
-      "top10_count": 7,
-      "sample_count": 10,
-      "top10_rate": 70,
-      "analytics_status": "ACTIVE"
-    },
-    {
-      "key": "d_788174",
-      "title": "種付ライセンス〜女上司わからせ編〜",
-      "rank_history": [
-        15,
-        null,
-        null,
-        16,
-        null,
-        16,
-        18,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_793664",
-      "title": "デリヘル呼んだら別れた彼女のママが来た",
-      "rank_history": [
-        16,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_799901",
-      "title": "お前の母ちゃんイクときの顔すげぇブスだぞw総集編",
-      "rank_history": [
-        17,
         19,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_798570",
-      "title": "言いなりアイドル 7日間でメス堕ち デビューのために犯〇れていくカラダ",
-      "rank_history": [
-        18,
-        null,
-        15,
-        20,
-        11,
-        8,
-        14,
-        13,
-        18,
-        17
-      ],
-      "top10_count": 1,
-      "sample_count": 10,
-      "top10_rate": 10,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_799677",
-      "title": "ボッチのモブ総集編 地域一の美女が清純ヅラしてパイズリするまでの軌跡",
-      "rank_history": [
-        19,
-        17,
-        14,
-        19,
-        null,
-        null,
-        19,
-        11,
-        17,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_805485",
-      "title": "破魔の巫女 淫獄に堕つ 3",
-      "rank_history": [
-        null,
-        1,
-        1,
-        1,
-        1,
-        2,
-        2,
-        1,
-        1,
-        3
-      ],
-      "top10_count": 9,
-      "sample_count": 10,
-      "top10_rate": 90,
-      "analytics_status": "STABLE"
-    },
-    {
-      "key": "d_796508",
-      "title": "DECOY＊DAISY",
-      "rank_history": [
-        null,
-        5,
-        5,
-        4,
-        5,
-        18,
-        null,
-        null,
-        16,
-        null
-      ],
-      "top10_count": 4,
-      "sample_count": 10,
-      "top10_rate": 40,
-      "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_649476",
-      "title": "破魔の巫女 淫獄に堕つ 2",
-      "rank_history": [
-        null,
-        11,
-        6,
-        13,
-        12,
-        13,
-        null,
-        15,
-        6,
-        null
-      ],
-      "top10_count": 2,
-      "sample_count": 10,
-      "top10_rate": 20,
-      "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_800289",
-      "title": "妻達は今、海外にいます 後編",
-      "rank_history": [
-        null,
-        13,
-        12,
-        11,
-        6,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "top10_count": 1,
@@ -467,8 +287,8 @@
       "key": "d_789610",
       "title": "王権簒奪II 〜おちんぽ一本で王国崩壊 王宮はちんぽの遊園地〜",
       "rank_history": [
-        null,
         15,
+        null,
         null,
         null,
         null,
@@ -487,10 +307,10 @@
       "key": "d_796610",
       "title": "雌ノ家III〜母娘ハ乱レ愛サレル〜",
       "rank_history": [
-        null,
         16,
         null,
         17,
+        null,
         null,
         null,
         null,
@@ -504,10 +324,129 @@
       "analytics_status": "SPIKE"
     },
     {
+      "key": "d_799677",
+      "title": "ボッチのモブ総集編 地域一の美女が清純ヅラしてパイズリするまでの軌跡",
+      "rank_history": [
+        17,
+        14,
+        19,
+        null,
+        null,
+        19,
+        11,
+        17,
+        null,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_755081",
+      "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
+      "rank_history": [
+        18,
+        null,
+        15,
+        20,
+        null,
+        null,
+        null,
+        null,
+        null,
+        16
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_799901",
+      "title": "お前の母ちゃんイクときの顔すげぇブスだぞw総集編",
+      "rank_history": [
+        19,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_806364",
+      "title": "WSS〜私が先に好きだったのに〜",
+      "rank_history": [
+        20,
+        13,
+        null,
+        16,
+        15,
+        16,
+        14,
+        null,
+        null,
+        19
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_802286",
+      "title": "雌ガチャIV",
+      "rank_history": [
+        null,
+        4,
+        9,
+        null,
+        17,
+        20,
+        null,
+        null,
+        null,
+        14
+      ],
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
+    },
+    {
+      "key": "d_798570",
+      "title": "言いなりアイドル 7日間でメス堕ち デビューのために犯〇れていくカラダ",
+      "rank_history": [
+        null,
+        15,
+        20,
+        11,
+        8,
+        14,
+        13,
+        18,
+        17,
+        13
+      ],
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
+      "analytics_status": "SPIKE"
+    },
+    {
       "key": "d_510867",
       "title": "破魔の巫女 淫獄に堕つ",
       "rank_history": [
-        null,
         null,
         17,
         null,
@@ -516,6 +455,7 @@
         null,
         null,
         12,
+        null,
         null
       ],
       "top10_count": 0,
@@ -528,8 +468,8 @@
       "title": "ヤリステメスブター ボクだけの謎ルール！女トレーナーに勝つとエッチあたりまえ 完全版",
       "rank_history": [
         null,
-        null,
         18,
+        null,
         null,
         null,
         null,
@@ -548,11 +488,31 @@
       "title": "姉の友達のギャルに脳破壊（NTR）されるショタ1",
       "rank_history": [
         null,
-        null,
         19,
         null,
         null,
         null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_788174",
+      "title": "種付ライセンス〜女上司わからせ編〜",
+      "rank_history": [
+        null,
+        null,
+        16,
+        null,
+        16,
+        18,
         null,
         null,
         null,
@@ -570,13 +530,13 @@
         null,
         null,
         null,
-        null,
         15,
         null,
         null,
         17,
         null,
-        null
+        null,
+        15
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -590,8 +550,8 @@
         null,
         null,
         null,
-        null,
         19,
+        null,
         null,
         null,
         null,
@@ -611,17 +571,17 @@
         null,
         null,
         null,
-        null,
         5,
         3,
         5,
         4,
-        15
+        15,
+        9
       ],
-      "top10_count": 4,
+      "top10_count": 5,
       "sample_count": 10,
-      "top10_rate": 40,
-      "analytics_status": "VOLATILE"
+      "top10_rate": 50,
+      "analytics_status": "ACTIVE"
     },
     {
       "key": "d_803148",
@@ -631,17 +591,17 @@
         null,
         null,
         null,
-        null,
         6,
         5,
         4,
         5,
-        16
+        16,
+        7
       ],
-      "top10_count": 4,
+      "top10_count": 5,
       "sample_count": 10,
-      "top10_rate": 40,
-      "analytics_status": "VOLATILE"
+      "top10_rate": 50,
+      "analytics_status": "ACTIVE"
     },
     {
       "key": "d_762894",
@@ -651,11 +611,11 @@
         null,
         null,
         null,
-        null,
         7,
         8,
         9,
         11,
+        null,
         null
       ],
       "top10_count": 3,
@@ -671,11 +631,11 @@
         null,
         null,
         null,
-        null,
         10,
         9,
         8,
         14,
+        null,
         null
       ],
       "top10_count": 3,
@@ -691,8 +651,8 @@
         null,
         null,
         null,
-        null,
         19,
+        null,
         null,
         null,
         null,
@@ -711,8 +671,8 @@
         null,
         null,
         null,
-        null,
         20,
+        null,
         null,
         null,
         null,
@@ -732,11 +692,11 @@
         null,
         null,
         null,
-        null,
         15,
         19,
         null,
-        11
+        11,
+        null
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -752,11 +712,11 @@
         null,
         null,
         null,
-        null,
         17,
         null,
         null,
-        null
+        null,
+        11
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -774,9 +734,9 @@
         null,
         null,
         null,
-        null,
         15,
-        14
+        14,
+        null
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -795,13 +755,13 @@
         null,
         null,
         null,
-        null,
-        1
+        1,
+        2
       ],
-      "top10_count": 1,
+      "top10_count": 2,
       "sample_count": 10,
-      "top10_rate": 10,
-      "analytics_status": "SPIKE"
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_583575",
@@ -815,13 +775,13 @@
         null,
         null,
         null,
-        null,
-        4
+        4,
+        5
       ],
-      "top10_count": 1,
+      "top10_count": 2,
       "sample_count": 10,
-      "top10_rate": 10,
-      "analytics_status": "SPIKE"
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_583742",
@@ -835,8 +795,8 @@
         null,
         null,
         null,
-        null,
-        8
+        8,
+        null
       ],
       "top10_count": 1,
       "sample_count": 10,
@@ -855,8 +815,48 @@
         null,
         null,
         null,
+        20,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_230061",
+      "title": "あなたが望むなら 総集編",
+      "rank_history": [
         null,
-        20
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10
+      ],
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_658585",
+      "title": "入り浸りギャルにま〇こ使わせて貰う話5",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        18
       ],
       "top10_count": 0,
       "sample_count": 10,

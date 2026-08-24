@@ -1,28 +1,28 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-24T13:03:10+09:00",
+  "generated_at": "2026-08-24T13:48:16+09:00",
   "data_status": "PARTIAL",
   "observed_days": 1,
   "expected_days": 1,
   "snapshot_counts": {
-    "1h": 1,
+    "1h": 2,
     "24h": 2
   },
   "market_overview": {
-    "unique_products": 26,
-    "top10_unique_products": 14,
-    "new_entries": 4,
-    "reentries": 3,
+    "unique_products": 32,
+    "top10_unique_products": 15,
+    "new_entries": 6,
+    "reentries": 8,
     "cross_trend_events": 0,
-    "max_rank_rise_1h": 6,
+    "max_rank_rise_1h": 9,
     "max_rank_rise_24h": 3
   },
   "price_analysis": {
-    "average_price": 1878,
-    "median_price": 1292,
-    "top10_average_price": 1530,
-    "top10_median_price": 1034,
+    "average_price": 1789,
+    "median_price": 1348,
+    "top10_average_price": 1545,
+    "top10_median_price": 1078,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -31,13 +31,13 @@
       },
       {
         "label": "500〜999円",
-        "count": 10,
+        "count": 12,
         "top10_count": 7
       },
       {
         "label": "1000〜1999円",
-        "count": 8,
-        "top10_count": 3
+        "count": 12,
+        "top10_count": 4
       },
       {
         "label": "2000〜2999円",
@@ -53,9 +53,9 @@
   },
   "sale_analysis": {
     "sale_product_count": 17,
-    "sale_share": 65,
+    "sale_share": 53,
     "top10_sale_count": 10,
-    "top10_sale_share": 71,
+    "top10_sale_share": 67,
     "average_discount_rate": 28,
     "max_discount_rate": 55,
     "discount_buckets": {
@@ -66,72 +66,72 @@
     }
   },
   "ranking_behavior": {
-    "top10_entry_events": 6,
-    "large_rise_5_plus": 1,
+    "top10_entry_events": 9,
+    "large_rise_5_plus": 3,
     "large_rise_10_plus": 0,
-    "new_entry_events": 4,
-    "reentry_events": 3
+    "new_entry_events": 6,
+    "reentry_events": 8
   },
   "top10_stays": [
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 3,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_804292",
-      "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
+    },
+    {
+      "id": "d_797711",
+      "title": "幼馴染が上京中に幼馴染の父と抱いた",
+      "top10_snapshots": 3,
+      "observation_rate": 75
+    },
+    {
+      "id": "d_803148",
+      "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
+      "top10_snapshots": 3,
+      "observation_rate": 75
+    },
+    {
+      "id": "d_804292",
+      "title": "となりのあやねさん 旅館でしっぽり編",
+      "top10_snapshots": 3,
+      "observation_rate": 75
     },
     {
       "id": "d_806152",
       "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
       "top10_snapshots": 3,
-      "observation_rate": 100
+      "observation_rate": 75
     },
     {
-      "id": "d_762894",
-      "title": "その制服をめちゃくちゃにしたい2〜教え子たちと禁断の3Pセックス編",
+      "id": "d_583575",
+      "title": "性格終わってる年下女上司を育休送り残業レ●プ",
       "top10_snapshots": 2,
-      "observation_rate": 67
+      "observation_rate": 50
     },
     {
-      "id": "d_782771",
-      "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
+      "id": "d_748896",
+      "title": "スパ・カイラクーア4",
       "top10_snapshots": 2,
-      "observation_rate": 67
-    },
-    {
-      "id": "d_797711",
-      "title": "幼馴染が上京中に幼馴染の父と抱いた",
-      "top10_snapshots": 2,
-      "observation_rate": 67
-    },
-    {
-      "id": "d_803148",
-      "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
-      "top10_snapshots": 2,
-      "observation_rate": 67
+      "observation_rate": 50
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
