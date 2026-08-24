@@ -1,7 +1,7 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-24T22:56:44+09:00",
+  "generated_at": "2026-08-24T22:57:36+09:00",
   "data_status": "PARTIAL",
   "observed_days": 1,
   "expected_days": 1,
@@ -12,7 +12,7 @@
   "market_overview": {
     "unique_products": 36,
     "top10_unique_products": 19,
-    "new_entries": 9,
+    "new_entries": 8,
     "reentries": 21,
     "cross_trend_events": 4,
     "max_rank_rise_1h": 9,
@@ -66,10 +66,10 @@
     }
   },
   "ranking_behavior": {
-    "top10_entry_events": 13,
+    "top10_entry_events": 12,
     "large_rise_5_plus": 6,
     "large_rise_10_plus": 0,
-    "new_entry_events": 9,
+    "new_entry_events": 8,
     "reentry_events": 21
   },
   "biggest_movers": [
@@ -138,28 +138,28 @@
       "observed_at": "2026-08-24T21:37:33+09:00"
     },
     {
-      "id": "d_805704",
-      "title": "ファンティアまとめ本",
-      "ranking_type": "24h",
-      "rank_change": 3,
-      "current_rank": 16,
-      "observed_at": "2026-08-24T10:54:53+09:00"
-    },
-    {
       "id": "d_805485",
       "title": "破魔の巫女 淫獄に堕つ 3",
       "ranking_type": "1h",
       "rank_change": 2,
       "current_rank": 1,
       "observed_at": "2026-08-24T17:45:09+09:00"
+    },
+    {
+      "id": "d_722335",
+      "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
+      "ranking_type": "24h",
+      "rank_change": 2,
+      "current_rank": 4,
+      "observed_at": "2026-08-24T12:17:35+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇は1Hランキングで+9でした。",
-    "NEWを9件、REENTRYを21件観測しました。",
+    "NEWを8件、REENTRYを21件観測しました。",
     "1Hの上昇後に24Hでも上昇したCROSSを4件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +9\n🆕 NEW 9件\n🔄 REENTRY 21件\n📡 CROSS 4件\n💸 SALE作品比率 53%\n💰 中央価格 ¥1,089\n\n1Hの上昇後に24Hでも上昇したCROSSを4件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +9\n🆕 NEW 8件\n🔄 REENTRY 21件\n📡 CROSS 4件\n💸 SALE作品比率 53%\n💰 中央価格 ¥1,089\n\n1Hの上昇後に24Hでも上昇したCROSSを4件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_722335",
@@ -198,22 +198,22 @@
       "observation_rate": 100
     },
     {
+      "id": "d_748896",
+      "title": "スパ・カイラクーア4",
+      "top10_snapshots": 6,
+      "observation_rate": 75
+    },
+    {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
       "top10_snapshots": 6,
       "observation_rate": 75
     },
     {
-      "id": "d_748896",
-      "title": "スパ・カイラクーア4",
-      "top10_snapshots": 5,
-      "observation_rate": 62
-    },
-    {
       "id": "d_649476",
       "title": "破魔の巫女 淫獄に堕つ 2",
-      "top10_snapshots": 4,
-      "observation_rate": 50
+      "top10_snapshots": 5,
+      "observation_rate": 62
     },
     {
       "id": "d_782771",
@@ -260,22 +260,22 @@
       "observation_rate": 100
     },
     {
+      "id": "d_748896",
+      "title": "スパ・カイラクーア4",
+      "top10_snapshots": 6,
+      "observation_rate": 75
+    },
+    {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
       "top10_snapshots": 6,
       "observation_rate": 75
     },
     {
-      "id": "d_748896",
-      "title": "スパ・カイラクーア4",
-      "top10_snapshots": 5,
-      "observation_rate": 62
-    },
-    {
       "id": "d_649476",
       "title": "破魔の巫女 淫獄に堕つ 2",
-      "top10_snapshots": 4,
-      "observation_rate": 50
+      "top10_snapshots": 5,
+      "observation_rate": 62
     },
     {
       "id": "d_782771",
