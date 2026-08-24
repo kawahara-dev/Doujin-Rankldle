@@ -35,6 +35,55 @@ def _rank(item): return int(item.get("current_rank", item.get("rank", 0)) or 0)
 def _percent(part, whole): return round(part / whole * 100) if whole else 0
 
 
+def _biggest_movers(observations, limit=10):
+ """Return the largest observed rises, once per work and ranking period."""
+ movers = {}
+ for kind, captured, item in observations:
+  change = int(item.get("rank_change") or 0)
+  if change <= 0: continue
+  identity = (kind, _key(item)); current = movers.get(identity)
+  candidate = {"id": identity[1], "title": item.get("title", ""), "ranking_type": kind,
+               "rank_change": change, "current_rank": _rank(item),
+               "observed_at": captured.isoformat()}
+  if current is None or (change, -_rank(item), captured) > (current[0], -current[1]["current_rank"], current[2]):
+   movers[identity] = (change, candidate, captured)
+ return [row[1] for row in sorted(movers.values(), key=lambda row: (-row[0], row[1]["current_rank"], row[1]["id"], row[1]["ranking_type"]))[:limit]]
+
+
+def _creator_insights(overview, price, sale):
+ """Create at most three deterministic observations without causal claims."""
+ insights = []
+ largest = max(overview["max_rank_rise_1h"], overview["max_rank_rise_24h"])
+ if largest:
+  period = "1H" if overview["max_rank_rise_1h"] >= overview["max_rank_rise_24h"] else "24H"
+  insights.append(f"今週の最大上昇は{period}ランキングで+{largest}でした。")
+ if overview["new_entries"] or overview["reentries"]:
+  insights.append(f"NEWを{overview['new_entries']}件、REENTRYを{overview['reentries']}件観測しました。")
+ if overview["cross_trend_events"]:
+  insights.append(f"1Hの上昇後に24Hでも上昇したCROSSを{overview['cross_trend_events']}件観測しました。")
+ elif sale["sale_product_count"]:
+  insights.append(f"観測作品のSALE作品比率は{sale['sale_share']}%でした。")
+ elif price["median_price"]:
+  insights.append(f"観測作品の価格中央値は¥{price['median_price']:,}でした。")
+ return insights[:3]
+
+
+def _x_post_text(status, overview, price, sale, insights):
+ heading = "今週途中の暫定集計だよ〜！" if status == "PARTIAL" else "1週間のランキングまとめたよ〜！"
+ largest = max(overview["max_rank_rise_1h"], overview["max_rank_rise_24h"])
+ highlight = insights[-1] if insights else "今週もランキングの動きを観測しました。"
+ return ("📊 今週のFANZA同人トレンド\n\n"
+         f"{heading}\n\n"
+         f"🔥 最大上昇 +{largest}\n"
+         f"🆕 NEW {overview['new_entries']}件\n"
+         f"🔄 REENTRY {overview['reentries']}件\n"
+         f"📡 CROSS {overview['cross_trend_events']}件\n"
+         f"💸 SALE作品比率 {sale['sale_share']}%\n"
+         f"💰 中央価格 ¥{price['median_price']:,}\n\n"
+         f"{highlight}ちょい注目だね👀\n\n"
+         "※RankIdle観測データによる集計")
+
+
 def week_bounds(now):
  local = now.astimezone(JST)
  start_date = local.date() - timedelta(days=local.weekday())
@@ -90,23 +139,34 @@ def generate_weekly_report(now=None, fanza_dir=FANZA_DIR, report_dir=REPORT_DIR,
  days = {captured.date() for snapshots in series.values() for captured, _ in snapshots}
  expected_days = min(7, (min(now.astimezone(JST), end).date() - start.date()).days + 1)
  complete = expected_days == 7 and len(days) == 7 and all(series.values())
- payload = {
-  "week_start": start.date().isoformat(), "week_end": end.date().isoformat(),
-  "generated_at": now.astimezone(JST).replace(microsecond=0).isoformat(), "data_status": "COMPLETE" if complete else "PARTIAL",
-  "observed_days": len(days), "expected_days": expected_days,
-  "snapshot_counts": {kind: len(rows) for kind, rows in series.items()},
-  "market_overview": {"unique_products": len(products), "top10_unique_products": len(top10), "new_entries": len(entries),
+ overview = {"unique_products": len(products), "top10_unique_products": len(top10), "new_entries": len(entries),
    "reentries": len(reentries), "cross_trend_events": len(propagation),
    "max_rank_rise_1h": max([int(x.get("rank_change") or 0) for _, items in series["1h"] for x in items] + [0]),
-   "max_rank_rise_24h": max([int(x.get("rank_change") or 0) for _, items in series["24h"] for x in items] + [0])},
-  "price_analysis": {"average_price": round(statistics.mean(prices)) if prices else 0, "median_price": round(statistics.median(prices)) if prices else 0,
-   "top10_average_price": round(statistics.mean(top_prices)) if top_prices else 0, "top10_median_price": round(statistics.median(top_prices)) if top_prices else 0, "price_buckets": buckets},
-  "sale_analysis": {"sale_product_count": len(sales), "sale_share": _percent(len(sales), len(market)), "top10_sale_count": len(top_sales),
+   "max_rank_rise_24h": max([int(x.get("rank_change") or 0) for _, items in series["24h"] for x in items] + [0])}
+ price_analysis = {"average_price": round(statistics.mean(prices)) if prices else 0, "median_price": round(statistics.median(prices)) if prices else 0,
+   "top10_average_price": round(statistics.mean(top_prices)) if top_prices else 0, "top10_median_price": round(statistics.median(top_prices)) if top_prices else 0, "price_buckets": buckets}
+ sale_analysis = {"sale_product_count": len(sales), "sale_share": _percent(len(sales), len(market)), "top10_sale_count": len(top_sales),
    "top10_sale_share": _percent(len(top_sales), len(top10)), "average_discount_rate": round(statistics.mean(discounts)) if discounts else 0,
-   "max_discount_rate": max(discounts + [0]), "discount_buckets": {"under_20": sum(0 < x < 20 for x in discounts), "20_29": sum(20 <= x < 30 for x in discounts), "30_49": sum(30 <= x < 50 for x in discounts), "50_plus": sum(x >= 50 for x in discounts)}},
+   "max_discount_rate": max(discounts + [0]), "discount_buckets": {"under_20": sum(0 < x < 20 for x in discounts), "20_29": sum(20 <= x < 30 for x in discounts), "30_49": sum(30 <= x < 50 for x in discounts), "50_plus": sum(x >= 50 for x in discounts)}}
+ status = "COMPLETE" if complete else "PARTIAL"
+ insights = _creator_insights(overview, price_analysis, sale_analysis)
+ stable_top10 = top_stays[:10]
+ payload = {
+  "week_start": start.date().isoformat(), "week_end": end.date().isoformat(),
+  "generated_at": now.astimezone(JST).replace(microsecond=0).isoformat(), "data_status": status,
+  "observed_days": len(days), "expected_days": expected_days,
+  "snapshot_counts": {kind: len(rows) for kind, rows in series.items()},
+  "market_overview": overview,
+  "price_analysis": price_analysis,
+  "sale_analysis": sale_analysis,
   "ranking_behavior": {"top10_entry_events": sum(_rank(x) <= 10 and (x.get("previous_rank") is None or int(x.get("previous_rank") or 0) > 10) for _, _, x in observations),
    "large_rise_5_plus": sum(x >= 5 for x in rises), "large_rise_10_plus": sum(x >= 10 for x in rises), "new_entry_events": len(entries), "reentry_events": len(reentries)},
-  "top10_stays": top_stays[:10],
+  "biggest_movers": _biggest_movers(observations),
+  "creator_insights": insights,
+  "x_post_text": _x_post_text(status, overview, price_analysis, sale_analysis, insights),
+  "stable_top10": stable_top10,
+  # Kept while deployed Pages clients transition to the specification name above.
+  "top10_stays": stable_top10,
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
  }
  for directory in (Path(report_dir), Path(pages_dir)):
