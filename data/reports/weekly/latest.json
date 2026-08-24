@@ -1,26 +1,26 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-24T21:37:33+09:00",
+  "generated_at": "2026-08-24T21:38:16+09:00",
   "data_status": "PARTIAL",
   "observed_days": 1,
   "expected_days": 1,
   "snapshot_counts": {
-    "1h": 3,
+    "1h": 4,
     "24h": 4
   },
   "market_overview": {
-    "unique_products": 38,
+    "unique_products": 39,
     "top10_unique_products": 19,
     "new_entries": 12,
-    "reentries": 13,
+    "reentries": 20,
     "cross_trend_events": 5,
     "max_rank_rise_1h": 9,
     "max_rank_rise_24h": 6
   },
   "price_analysis": {
-    "average_price": 2297,
-    "median_price": 1348,
+    "average_price": 2263,
+    "median_price": 1210,
     "top10_average_price": 1900,
     "top10_median_price": 1078,
     "price_buckets": [
@@ -31,7 +31,7 @@
       },
       {
         "label": "500〜999円",
-        "count": 14,
+        "count": 15,
         "top10_count": 7
       },
       {
@@ -53,7 +53,7 @@
   },
   "sale_analysis": {
     "sale_product_count": 19,
-    "sale_share": 50,
+    "sale_share": 49,
     "top10_sale_count": 14,
     "top10_sale_share": 74,
     "average_discount_rate": 29,
@@ -66,72 +66,72 @@
     }
   },
   "ranking_behavior": {
-    "top10_entry_events": 15,
-    "large_rise_5_plus": 5,
+    "top10_entry_events": 17,
+    "large_rise_5_plus": 6,
     "large_rise_10_plus": 0,
     "new_entry_events": 12,
-    "reentry_events": 13
+    "reentry_events": 20
   },
   "top10_stays": [
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_797711",
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
-      "top10_snapshots": 6,
-      "observation_rate": 86
+      "top10_snapshots": 7,
+      "observation_rate": 88
     },
     {
       "id": "d_803148",
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
-      "top10_snapshots": 6,
-      "observation_rate": 86
+      "top10_snapshots": 7,
+      "observation_rate": 88
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 5,
-      "observation_rate": 71
+      "top10_snapshots": 6,
+      "observation_rate": 75
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 5,
-      "observation_rate": 71
+      "top10_snapshots": 6,
+      "observation_rate": 75
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
       "top10_snapshots": 4,
-      "observation_rate": 57
+      "observation_rate": 50
     },
     {
-      "id": "d_806152",
-      "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
+      "id": "d_649476",
+      "title": "破魔の巫女 淫獄に堕つ 2",
       "top10_snapshots": 3,
-      "observation_rate": 43
+      "observation_rate": 38
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
