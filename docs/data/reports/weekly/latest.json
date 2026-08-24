@@ -1,28 +1,28 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-24T23:58:04+09:00",
+  "generated_at": "2026-08-25T06:02:47+09:00",
   "data_status": "PARTIAL",
-  "observed_days": 1,
-  "expected_days": 1,
+  "observed_days": 2,
+  "expected_days": 2,
   "snapshot_counts": {
     "1h": 4,
-    "24h": 4
+    "24h": 5
   },
   "market_overview": {
-    "unique_products": 36,
-    "top10_unique_products": 19,
-    "new_entries": 8,
+    "unique_products": 38,
+    "top10_unique_products": 20,
+    "new_entries": 11,
     "reentries": 21,
     "cross_trend_events": 4,
     "max_rank_rise_1h": 9,
     "max_rank_rise_24h": 6
   },
   "price_analysis": {
-    "average_price": 2220,
-    "median_price": 1089,
-    "top10_average_price": 1851,
-    "top10_median_price": 1078,
+    "average_price": 2146,
+    "median_price": 1034,
+    "top10_average_price": 1797,
+    "top10_median_price": 1034,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -31,8 +31,8 @@
       },
       {
         "label": "500〜999円",
-        "count": 15,
-        "top10_count": 7
+        "count": 17,
+        "top10_count": 8
       },
       {
         "label": "1000〜1999円",
@@ -52,24 +52,24 @@
     ]
   },
   "sale_analysis": {
-    "sale_product_count": 19,
+    "sale_product_count": 20,
     "sale_share": 53,
-    "top10_sale_count": 14,
-    "top10_sale_share": 74,
-    "average_discount_rate": 29,
+    "top10_sale_count": 15,
+    "top10_sale_share": 75,
+    "average_discount_rate": 30,
     "max_discount_rate": 55,
     "discount_buckets": {
       "under_20": 6,
       "20_29": 3,
       "30_49": 6,
-      "50_plus": 4
+      "50_plus": 5
     }
   },
   "ranking_behavior": {
-    "top10_entry_events": 12,
+    "top10_entry_events": 14,
     "large_rise_5_plus": 6,
     "large_rise_10_plus": 0,
-    "new_entry_events": 8,
+    "new_entry_events": 11,
     "reentry_events": 21
   },
   "biggest_movers": [
@@ -156,132 +156,132 @@
   ],
   "creator_insights": [
     "今週の最大上昇は1Hランキングで+9でした。",
-    "NEWを8件、REENTRYを21件観測しました。",
+    "NEWを11件、REENTRYを21件観測しました。",
     "1Hの上昇後に24Hでも上昇したCROSSを4件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +9\n🆕 NEW 8件\n🔄 REENTRY 21件\n📡 CROSS 4件\n💸 SALE作品比率 53%\n💰 中央価格 ¥1,089\n\n1Hの上昇後に24Hでも上昇したCROSSを4件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +9\n🆕 NEW 11件\n🔄 REENTRY 21件\n📡 CROSS 4件\n💸 SALE作品比率 53%\n💰 中央価格 ¥1,034\n\n1Hの上昇後に24Hでも上昇したCROSSを4件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
-      "top10_snapshots": 8,
+      "top10_snapshots": 9,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 8,
+      "top10_snapshots": 9,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 8,
+      "top10_snapshots": 9,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_803148",
+      "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
+      "top10_snapshots": 9,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_805485",
+      "title": "破魔の巫女 淫獄に堕つ 3",
+      "top10_snapshots": 9,
       "observation_rate": 100
     },
     {
       "id": "d_797711",
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_803148",
-      "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
-      "top10_snapshots": 8,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_805485",
-      "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 8,
-      "observation_rate": 100
+      "observation_rate": 89
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 6,
-      "observation_rate": 75
+      "top10_snapshots": 7,
+      "observation_rate": 78
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 6,
-      "observation_rate": 75
+      "top10_snapshots": 7,
+      "observation_rate": 78
     },
     {
       "id": "d_649476",
       "title": "破魔の巫女 淫獄に堕つ 2",
-      "top10_snapshots": 5,
-      "observation_rate": 62
+      "top10_snapshots": 6,
+      "observation_rate": 67
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
       "top10_snapshots": 4,
-      "observation_rate": 50
+      "observation_rate": 44
     }
   ],
   "top10_stays": [
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
-      "top10_snapshots": 8,
+      "top10_snapshots": 9,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 8,
+      "top10_snapshots": 9,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 8,
+      "top10_snapshots": 9,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_803148",
+      "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
+      "top10_snapshots": 9,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_805485",
+      "title": "破魔の巫女 淫獄に堕つ 3",
+      "top10_snapshots": 9,
       "observation_rate": 100
     },
     {
       "id": "d_797711",
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_803148",
-      "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
-      "top10_snapshots": 8,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_805485",
-      "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 8,
-      "observation_rate": 100
+      "observation_rate": 89
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 6,
-      "observation_rate": 75
+      "top10_snapshots": 7,
+      "observation_rate": 78
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 6,
-      "observation_rate": 75
+      "top10_snapshots": 7,
+      "observation_rate": 78
     },
     {
       "id": "d_649476",
       "title": "破魔の巫女 淫獄に堕つ 2",
-      "top10_snapshots": 5,
-      "observation_rate": 62
+      "top10_snapshots": 6,
+      "observation_rate": 67
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
       "top10_snapshots": 4,
-      "observation_rate": 50
+      "observation_rate": 44
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
