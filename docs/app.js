@@ -186,7 +186,7 @@ function renderWeekly(report) {
   const overview=report.market_overview||{}, sale=report.sale_analysis||{}, behavior=report.ranking_behavior||{};
   el("weeklyMetrics").innerHTML=[["OBSERVED WORKS",overview.unique_products],["TOP10 WORKS",overview.top10_unique_products],["SALE SHARE",`${number(sale.sale_share)}%`],["NEW / REENTRY",`${number(overview.new_entries)} / ${number(overview.reentries)}`],["1H → 24H",overview.cross_trend_events],["RISE 10+",behavior.large_rise_10_plus]].map(([label,value])=>`<article><small>${label}</small><strong>${value??0}</strong></article>`).join("");
   el("weeklyPrices").innerHTML=(report.price_analysis?.price_buckets||[]).map(bucket=>`<p><span>${bucket.label}</span><b>${bucket.count}</b><small>TOP10 ${bucket.top10_count}</small></p>`).join("");
-  const stays=report.top10_stays||[];
+  const stays=report.stable_top10||report.top10_stays||[];
   el("weeklyStays").innerHTML=stays.length?stays.map(item=>`<li><span>${item.title}</span><b>${item.top10_snapshots}回観測</b></li>`).join(""):"<li>観測データなし</li>";
 }
 
