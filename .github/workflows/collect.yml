@@ -30,7 +30,7 @@ jobs:
       - name: Run tests and syntax checks
         run: |
           python -m unittest discover -s tests -v
-          python -m py_compile src/collector.py tests/test_collector.py
+          python -m py_compile src/collector.py src/weekly_report.py tests/test_collector.py tests/test_weekly_report.py
           node --check docs/app.js
       - name: Collect products
         env:

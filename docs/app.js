@@ -178,6 +178,18 @@ function renderSaleWatch(items) {
   }));
 }
 
+function renderWeekly(report) {
+  const partial = report.data_status !== "COMPLETE";
+  el("weeklyStatus").textContent = partial ? "PARTIAL DATA" : "COMPLETE";
+  el("weeklyStatus").classList.toggle("partial", partial);
+  el("weeklyPeriod").textContent = `${report.week_start} — ${report.week_end} / 観測 ${number(report.observed_days)}日 / 1H ${number(report.snapshot_counts?.["1h"])}・24H ${number(report.snapshot_counts?.["24h"])} snapshots`;
+  const overview=report.market_overview||{}, sale=report.sale_analysis||{}, behavior=report.ranking_behavior||{};
+  el("weeklyMetrics").innerHTML=[["OBSERVED WORKS",overview.unique_products],["TOP10 WORKS",overview.top10_unique_products],["SALE SHARE",`${number(sale.sale_share)}%`],["NEW / REENTRY",`${number(overview.new_entries)} / ${number(overview.reentries)}`],["1H → 24H",overview.cross_trend_events],["RISE 10+",behavior.large_rise_10_plus]].map(([label,value])=>`<article><small>${label}</small><strong>${value??0}</strong></article>`).join("");
+  el("weeklyPrices").innerHTML=(report.price_analysis?.price_buckets||[]).map(bucket=>`<p><span>${bucket.label}</span><b>${bucket.count}</b><small>TOP10 ${bucket.top10_count}</small></p>`).join("");
+  const stays=report.top10_stays||[];
+  el("weeklyStays").innerHTML=stays.length?stays.map(item=>`<li><span>${item.title}</span><b>${item.top10_snapshots}回観測</b></li>`).join(""):"<li>観測データなし</li>";
+}
+
 function selectRanking(type) {
   selectedRanking = type;
   document.querySelectorAll("[data-ranking]").forEach(button => button.classList.toggle("active", button.dataset.ranking === type));
@@ -226,7 +238,7 @@ async function loadDashboard() {
   if (loading) return;
   loading = true;
   try {
-    const [latestResponse, statusResponse, posts1h, posts24h, rank1h, rank24h, analytics1h, analytics24h] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/posts/fanza_1h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_24h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_1h.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_24h.json", { cache: "no-store" }).catch(() => null)]);
+    const [latestResponse, statusResponse, posts1h, posts24h, rank1h, rank24h, analytics1h, analytics24h, weekly] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/posts/fanza_1h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_24h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_1h.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_24h.json", { cache: "no-store" }).catch(() => null), fetch("data/reports/weekly/latest.json", { cache: "no-store" }).catch(() => null)]);
     if (!latestResponse.ok || !statusResponse.ok) throw new Error("データ取得に失敗しました");
     const [latest, status] = await Promise.all([latestResponse.json(), statusResponse.json()]);
     const items = Array.isArray(latest.items) ? latest.items : [];
@@ -252,6 +264,7 @@ async function loadDashboard() {
     el("modeSubtitle").textContent = ageGate ? "FANZA AGE VERIFICATION REACHED / NO BYPASS" : mode === "live" ? "DMM API CONNECTED" : mode === "import" ? "MANUAL RANKING IMPORT" : mode === "public" ? "PUBLIC RANKING DATA" : "SAMPLE DATA"; el("modeBadge").className = `mode-badge ${mode}`; el("demoNote").hidden = mode !== "mock";
     renderModules(mode, status.rankings); renderAchievements(scans, totalItems); selectRanking(selectedRanking); renderCandidates(candidates);
     renderSaleWatch(rankingData["24h"]?.items || []);
+    if (weekly?.ok) renderWeekly(await weekly.json());
     const signals = status.market_signals || {};
     el("marketSignals").innerHTML = [["1H MAX RISE", signals["1h_max_rise"]], ["24H MAX RISE", signals["24h_max_rise"]], ["CROSS TREND", signals.cross_trend], ["ACTIVE SALES",signals.active_sales],["HOT SALES",signals.hot_sales],["MAX DISCOUNT",`${number(signals.max_discount)}%`]].map(([label,value]) => `<article><small>${label}</small><strong>${label.includes("RISE") && number(value) ? "+" : ""}${value ?? 0}</strong></article>`).join("");
     if (status.last_run || latest.updated_at) {

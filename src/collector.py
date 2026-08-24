@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 from src.post_generator import generate_candidates, generate_comment
 from src.providers.fanza_api import FanzaApiProvider
 from src.providers.fanza_public import FanzaAgeGateError, FanzaPublicProvider
+from src.weekly_report import generate_weekly_report
 
 ROOT=Path(__file__).resolve().parents[1]; DATA_DIR=ROOT/'data'; LATEST_PATH=DATA_DIR/'latest.json'; STATUS_PATH=DATA_DIR/'status.json'
 FANZA_DIR=DATA_DIR/'fanza'; DEFAULT_FANZA_DIR=FANZA_DIR; POSTS_PATH=DATA_DIR/'posts'/'candidates.json'; JST=ZoneInfo('Asia/Tokyo')
@@ -254,5 +255,7 @@ def main():
   status['market_signals']={'1h_max_rise':max([x.get('rank_change',0) for x in (items if ranking_type=='1h' else other)]+[0]),'24h_max_rise':max([x.get('rank_change',0) for x in daily]+[0]),'cross_trend':len(crosses),'new_entry':sum(x.get('status') in ('new','reentry') for x in items),'active_sales':len(active),'hot_sales':sum(bool(x.get('hot_sale')) for x in active),'max_discount':max([int(x.get('discount_rate') or 0) for x in active]+[0])}
   watch_fields={'public_watch_status':'ok','last_public_watch_success':stamp,'last_public_watch_error':None} if mode=='public' else {'public_watch_status':'age_gate','last_public_watch_error':'FANZA age verification page reached'} if age_gate else {}
   status.update(**watch_fields,input_source='manual_import' if mode=='import' else 'public_watch')
- atomic_write(LATEST_PATH,latest); atomic_write(STATUS_PATH,status); print(f'{len(items)} 件を収集しました ({stamp}, mode={mode}, ranking={ranking_type})')
+ atomic_write(LATEST_PATH,latest); atomic_write(STATUS_PATH,status)
+ if ranking_mode: generate_weekly_report(now)
+ print(f'{len(items)} 件を収集しました ({stamp}, mode={mode}, ranking={ranking_type})')
 if __name__=='__main__':main()
