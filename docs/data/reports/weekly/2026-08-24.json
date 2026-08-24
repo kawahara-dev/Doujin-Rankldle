@@ -1,7 +1,7 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-24T21:43:39+09:00",
+  "generated_at": "2026-08-24T22:56:44+09:00",
   "data_status": "PARTIAL",
   "observed_days": 1,
   "expected_days": 1,
@@ -10,18 +10,18 @@
     "24h": 4
   },
   "market_overview": {
-    "unique_products": 39,
+    "unique_products": 36,
     "top10_unique_products": 19,
-    "new_entries": 12,
-    "reentries": 20,
-    "cross_trend_events": 5,
+    "new_entries": 9,
+    "reentries": 21,
+    "cross_trend_events": 4,
     "max_rank_rise_1h": 9,
     "max_rank_rise_24h": 6
   },
   "price_analysis": {
-    "average_price": 2263,
-    "median_price": 1210,
-    "top10_average_price": 1900,
+    "average_price": 2220,
+    "median_price": 1089,
+    "top10_average_price": 1851,
     "top10_median_price": 1078,
     "price_buckets": [
       {
@@ -36,24 +36,24 @@
       },
       {
         "label": "1000〜1999円",
-        "count": 13,
-        "top10_count": 4
+        "count": 12,
+        "top10_count": 5
       },
       {
         "label": "2000〜2999円",
-        "count": 4,
-        "top10_count": 4
+        "count": 3,
+        "top10_count": 3
       },
       {
         "label": "3000円〜",
-        "count": 5,
+        "count": 4,
         "top10_count": 2
       }
     ]
   },
   "sale_analysis": {
     "sale_product_count": 19,
-    "sale_share": 49,
+    "sale_share": 53,
     "top10_sale_count": 14,
     "top10_sale_share": 74,
     "average_discount_rate": 29,
@@ -66,11 +66,11 @@
     }
   },
   "ranking_behavior": {
-    "top10_entry_events": 17,
+    "top10_entry_events": 13,
     "large_rise_5_plus": 6,
     "large_rise_10_plus": 0,
-    "new_entry_events": 12,
-    "reentry_events": 20
+    "new_entry_events": 9,
+    "reentry_events": 21
   },
   "biggest_movers": [
     {
@@ -88,14 +88,6 @@
       "rank_change": 7,
       "current_rank": 13,
       "observed_at": "2026-08-24T17:45:09+09:00"
-    },
-    {
-      "id": "d_748896",
-      "title": "スパ・カイラクーア4",
-      "ranking_type": "1h",
-      "rank_change": 6,
-      "current_rank": 7,
-      "observed_at": "2026-08-24T12:18:39+09:00"
     },
     {
       "id": "d_797711",
@@ -125,9 +117,9 @@
       "id": "d_798570",
       "title": "言いなりアイドル 7日間でメス堕ち デビューのために犯〇れていくカラダ",
       "ranking_type": "1h",
-      "rank_change": 4,
-      "current_rank": 13,
-      "observed_at": "2026-08-24T13:48:16+09:00"
+      "rank_change": 5,
+      "current_rank": 12,
+      "observed_at": "2026-08-24T22:56:44+09:00"
     },
     {
       "id": "d_801115",
@@ -152,14 +144,22 @@
       "rank_change": 3,
       "current_rank": 16,
       "observed_at": "2026-08-24T10:54:53+09:00"
+    },
+    {
+      "id": "d_805485",
+      "title": "破魔の巫女 淫獄に堕つ 3",
+      "ranking_type": "1h",
+      "rank_change": 2,
+      "current_rank": 1,
+      "observed_at": "2026-08-24T17:45:09+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇は1Hランキングで+9でした。",
-    "NEWを12件、REENTRYを20件観測しました。",
-    "1Hの上昇後に24Hでも上昇したCROSSを5件観測しました。"
+    "NEWを9件、REENTRYを21件観測しました。",
+    "1Hの上昇後に24Hでも上昇したCROSSを4件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +9\n🆕 NEW 12件\n🔄 REENTRY 20件\n📡 CROSS 5件\n💸 SALE作品比率 49%\n💰 中央価格 ¥1,210\n\n1Hの上昇後に24Hでも上昇したCROSSを5件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +9\n🆕 NEW 9件\n🔄 REENTRY 21件\n📡 CROSS 4件\n💸 SALE作品比率 53%\n💰 中央価格 ¥1,089\n\n1Hの上昇後に24Hでも上昇したCROSSを4件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_722335",
@@ -180,28 +180,22 @@
       "observation_rate": 100
     },
     {
-      "id": "d_805485",
-      "title": "破魔の巫女 淫獄に堕つ 3",
+      "id": "d_797711",
+      "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
-      "id": "d_797711",
-      "title": "幼馴染が上京中に幼馴染の父と抱いた",
-      "top10_snapshots": 7,
-      "observation_rate": 88
-    },
-    {
       "id": "d_803148",
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
-      "top10_snapshots": 7,
-      "observation_rate": 88
+      "top10_snapshots": 8,
+      "observation_rate": 100
     },
     {
-      "id": "d_748896",
-      "title": "スパ・カイラクーア4",
-      "top10_snapshots": 6,
-      "observation_rate": 75
+      "id": "d_805485",
+      "title": "破魔の巫女 淫獄に堕つ 3",
+      "top10_snapshots": 8,
+      "observation_rate": 100
     },
     {
       "id": "d_804292",
@@ -210,16 +204,22 @@
       "observation_rate": 75
     },
     {
-      "id": "d_782771",
-      "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 4,
-      "observation_rate": 50
+      "id": "d_748896",
+      "title": "スパ・カイラクーア4",
+      "top10_snapshots": 5,
+      "observation_rate": 62
     },
     {
       "id": "d_649476",
       "title": "破魔の巫女 淫獄に堕つ 2",
-      "top10_snapshots": 3,
-      "observation_rate": 38
+      "top10_snapshots": 4,
+      "observation_rate": 50
+    },
+    {
+      "id": "d_782771",
+      "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
+      "top10_snapshots": 4,
+      "observation_rate": 50
     }
   ],
   "top10_stays": [
@@ -242,28 +242,22 @@
       "observation_rate": 100
     },
     {
-      "id": "d_805485",
-      "title": "破魔の巫女 淫獄に堕つ 3",
+      "id": "d_797711",
+      "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
-      "id": "d_797711",
-      "title": "幼馴染が上京中に幼馴染の父と抱いた",
-      "top10_snapshots": 7,
-      "observation_rate": 88
-    },
-    {
       "id": "d_803148",
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
-      "top10_snapshots": 7,
-      "observation_rate": 88
+      "top10_snapshots": 8,
+      "observation_rate": 100
     },
     {
-      "id": "d_748896",
-      "title": "スパ・カイラクーア4",
-      "top10_snapshots": 6,
-      "observation_rate": 75
+      "id": "d_805485",
+      "title": "破魔の巫女 淫獄に堕つ 3",
+      "top10_snapshots": 8,
+      "observation_rate": 100
     },
     {
       "id": "d_804292",
@@ -272,16 +266,22 @@
       "observation_rate": 75
     },
     {
-      "id": "d_782771",
-      "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 4,
-      "observation_rate": 50
+      "id": "d_748896",
+      "title": "スパ・カイラクーア4",
+      "top10_snapshots": 5,
+      "observation_rate": 62
     },
     {
       "id": "d_649476",
       "title": "破魔の巫女 淫獄に堕つ 2",
-      "top10_snapshots": 3,
-      "observation_rate": 38
+      "top10_snapshots": 4,
+      "observation_rate": 50
+    },
+    {
+      "id": "d_782771",
+      "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
+      "top10_snapshots": 4,
+      "observation_rate": 50
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
