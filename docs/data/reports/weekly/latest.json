@@ -1,27 +1,27 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-26T05:46:48+09:00",
+  "generated_at": "2026-08-26T05:47:46+09:00",
   "data_status": "PARTIAL",
   "observed_days": 3,
   "expected_days": 3,
   "snapshot_counts": {
-    "1h": 8,
+    "1h": 9,
     "24h": 8
   },
   "market_overview": {
-    "unique_products": 45,
-    "top10_unique_products": 25,
-    "new_entries": 18,
-    "reentries": 38,
+    "unique_products": 50,
+    "top10_unique_products": 30,
+    "new_entries": 24,
+    "reentries": 40,
     "cross_trend_events": 9,
     "max_rank_rise_1h": 13,
     "max_rank_rise_24h": 8
   },
   "price_analysis": {
-    "average_price": 2126,
-    "median_price": 1078,
-    "top10_average_price": 2007,
+    "average_price": 1999,
+    "median_price": 990,
+    "top10_average_price": 1819,
     "top10_median_price": 990,
     "price_buckets": [
       {
@@ -31,8 +31,8 @@
       },
       {
         "label": "500〜999円",
-        "count": 20,
-        "top10_count": 11
+        "count": 25,
+        "top10_count": 16
       },
       {
         "label": "1000〜1999円",
@@ -53,9 +53,9 @@
   },
   "sale_analysis": {
     "sale_product_count": 22,
-    "sale_share": 49,
-    "top10_sale_count": 16,
-    "top10_sale_share": 64,
+    "sale_share": 44,
+    "top10_sale_count": 17,
+    "top10_sale_share": 57,
     "average_discount_rate": 29,
     "max_discount_rate": 55,
     "discount_buckets": {
@@ -66,11 +66,11 @@
     }
   },
   "ranking_behavior": {
-    "top10_entry_events": 29,
-    "large_rise_5_plus": 14,
+    "top10_entry_events": 34,
+    "large_rise_5_plus": 15,
     "large_rise_10_plus": 2,
-    "new_entry_events": 18,
-    "reentry_events": 38
+    "new_entry_events": 24,
+    "reentry_events": 40
   },
   "biggest_movers": [
     {
@@ -156,132 +156,132 @@
   ],
   "creator_insights": [
     "今週の最大上昇は1Hランキングで+13でした。",
-    "NEWを18件、REENTRYを38件観測しました。",
+    "NEWを24件、REENTRYを40件観測しました。",
     "1Hの上昇後に24Hでも上昇したCROSSを9件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +13\n🆕 NEW 18件\n🔄 REENTRY 38件\n📡 CROSS 9件\n💸 SALE作品比率 49%\n💰 中央価格 ¥1,078\n\n1Hの上昇後に24Hでも上昇したCROSSを9件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +13\n🆕 NEW 24件\n🔄 REENTRY 40件\n📡 CROSS 9件\n💸 SALE作品比率 44%\n💰 中央価格 ¥990\n\n1Hの上昇後に24Hでも上昇したCROSSを9件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 16,
+      "top10_snapshots": 17,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 16,
+      "top10_snapshots": 17,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 16,
+      "top10_snapshots": 17,
       "observation_rate": 100
     },
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
       "top10_snapshots": 13,
-      "observation_rate": 81
+      "observation_rate": 76
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
       "top10_snapshots": 12,
-      "observation_rate": 75
+      "observation_rate": 71
     },
     {
       "id": "d_803148",
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
       "top10_snapshots": 11,
-      "observation_rate": 69
+      "observation_rate": 65
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
       "top10_snapshots": 11,
-      "observation_rate": 69
+      "observation_rate": 65
+    },
+    {
+      "id": "d_799407",
+      "title": "友達のママが僕のデカチンでイキまくった夏祭り",
+      "top10_snapshots": 9,
+      "observation_rate": 53
+    },
+    {
+      "id": "d_791912",
+      "title": "夏と田舎と誘惑してくるでっかい教え子4",
+      "top10_snapshots": 8,
+      "observation_rate": 47
     },
     {
       "id": "d_797711",
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
-      "observation_rate": 50
-    },
-    {
-      "id": "d_799407",
-      "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 8,
-      "observation_rate": 50
-    },
-    {
-      "id": "d_649476",
-      "title": "破魔の巫女 淫獄に堕つ 2",
-      "top10_snapshots": 7,
-      "observation_rate": 44
+      "observation_rate": 47
     }
   ],
   "top10_stays": [
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 16,
+      "top10_snapshots": 17,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 16,
+      "top10_snapshots": 17,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 16,
+      "top10_snapshots": 17,
       "observation_rate": 100
     },
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
       "top10_snapshots": 13,
-      "observation_rate": 81
+      "observation_rate": 76
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
       "top10_snapshots": 12,
-      "observation_rate": 75
+      "observation_rate": 71
     },
     {
       "id": "d_803148",
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
       "top10_snapshots": 11,
-      "observation_rate": 69
+      "observation_rate": 65
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
       "top10_snapshots": 11,
-      "observation_rate": 69
+      "observation_rate": 65
+    },
+    {
+      "id": "d_799407",
+      "title": "友達のママが僕のデカチンでイキまくった夏祭り",
+      "top10_snapshots": 9,
+      "observation_rate": 53
+    },
+    {
+      "id": "d_791912",
+      "title": "夏と田舎と誘惑してくるでっかい教え子4",
+      "top10_snapshots": 8,
+      "observation_rate": 47
     },
     {
       "id": "d_797711",
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
-      "observation_rate": 50
-    },
-    {
-      "id": "d_799407",
-      "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 8,
-      "observation_rate": 50
-    },
-    {
-      "id": "d_649476",
-      "title": "破魔の巫女 淫獄に堕つ 2",
-      "top10_snapshots": 7,
-      "observation_rate": 44
+      "observation_rate": 47
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
