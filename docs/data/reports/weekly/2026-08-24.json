@@ -1,20 +1,20 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-25T21:22:11+09:00",
+  "generated_at": "2026-08-25T21:22:59+09:00",
   "data_status": "PARTIAL",
   "observed_days": 2,
   "expected_days": 2,
   "snapshot_counts": {
     "1h": 8,
-    "24h": 6
+    "24h": 7
   },
   "market_overview": {
     "unique_products": 44,
     "top10_unique_products": 25,
-    "new_entries": 15,
-    "reentries": 37,
-    "cross_trend_events": 6,
+    "new_entries": 16,
+    "reentries": 38,
+    "cross_trend_events": 9,
     "max_rank_rise_1h": 13,
     "max_rank_rise_24h": 8
   },
@@ -66,11 +66,11 @@
     }
   },
   "ranking_behavior": {
-    "top10_entry_events": 27,
+    "top10_entry_events": 28,
     "large_rise_5_plus": 12,
     "large_rise_10_plus": 2,
-    "new_entry_events": 15,
-    "reentry_events": 37
+    "new_entry_events": 16,
+    "reentry_events": 38
   },
   "biggest_movers": [
     {
@@ -156,132 +156,132 @@
   ],
   "creator_insights": [
     "今週の最大上昇は1Hランキングで+13でした。",
-    "NEWを15件、REENTRYを37件観測しました。",
-    "1Hの上昇後に24Hでも上昇したCROSSを6件観測しました。"
+    "NEWを16件、REENTRYを38件観測しました。",
+    "1Hの上昇後に24Hでも上昇したCROSSを9件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +13\n🆕 NEW 15件\n🔄 REENTRY 37件\n📡 CROSS 6件\n💸 SALE作品比率 48%\n💰 中央価格 ¥1,089\n\n1Hの上昇後に24Hでも上昇したCROSSを6件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +13\n🆕 NEW 16件\n🔄 REENTRY 38件\n📡 CROSS 9件\n💸 SALE作品比率 48%\n💰 中央価格 ¥1,089\n\n1Hの上昇後に24Hでも上昇したCROSSを9件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
-      "top10_snapshots": 11,
-      "observation_rate": 79
+      "top10_snapshots": 12,
+      "observation_rate": 80
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 10,
-      "observation_rate": 71
+      "top10_snapshots": 11,
+      "observation_rate": 73
     },
     {
       "id": "d_803148",
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
-      "top10_snapshots": 10,
-      "observation_rate": 71
+      "top10_snapshots": 11,
+      "observation_rate": 73
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 9,
-      "observation_rate": 64
+      "top10_snapshots": 10,
+      "observation_rate": 67
     },
     {
       "id": "d_797711",
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
-      "observation_rate": 57
+      "observation_rate": 53
     },
     {
       "id": "d_649476",
       "title": "破魔の巫女 淫獄に堕つ 2",
       "top10_snapshots": 7,
-      "observation_rate": 50
+      "observation_rate": 47
     },
     {
       "id": "d_799407",
       "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 6,
-      "observation_rate": 43
+      "top10_snapshots": 7,
+      "observation_rate": 47
     }
   ],
   "top10_stays": [
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
-      "top10_snapshots": 11,
-      "observation_rate": 79
+      "top10_snapshots": 12,
+      "observation_rate": 80
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 10,
-      "observation_rate": 71
+      "top10_snapshots": 11,
+      "observation_rate": 73
     },
     {
       "id": "d_803148",
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
-      "top10_snapshots": 10,
-      "observation_rate": 71
+      "top10_snapshots": 11,
+      "observation_rate": 73
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 9,
-      "observation_rate": 64
+      "top10_snapshots": 10,
+      "observation_rate": 67
     },
     {
       "id": "d_797711",
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
-      "observation_rate": 57
+      "observation_rate": 53
     },
     {
       "id": "d_649476",
       "title": "破魔の巫女 淫獄に堕つ 2",
       "top10_snapshots": 7,
-      "observation_rate": 50
+      "observation_rate": 47
     },
     {
       "id": "d_799407",
       "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 6,
-      "observation_rate": 43
+      "top10_snapshots": 7,
+      "observation_rate": 47
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"

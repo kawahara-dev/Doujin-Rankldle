@@ -1,6 +1,6 @@
 {
   "ranking_type": "24h",
-  "generated_at": "2026-08-25T13:28:44+09:00",
+  "generated_at": "2026-08-25T21:22:59+09:00",
   "snapshot_count": 10,
   "items": [
     {
@@ -16,7 +16,7 @@
         1,
         1,
         1,
-        1
+        3
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -49,14 +49,14 @@
       "rank_history": [
         3,
         3,
-        3,
         4,
         3,
         4,
         4,
         4,
         4,
-        5
+        5,
+        4
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -68,49 +68,9 @@
       "title": "DECOY＊DAISY",
       "rank_history": [
         4,
-        4,
         7,
         13,
         20,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 3,
-      "sample_count": 10,
-      "top10_rate": 30,
-      "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_782771",
-      "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "rank_history": [
-        5,
-        5,
-        5,
-        7,
-        7,
-        7,
-        7,
-        8,
-        12,
-        14
-      ],
-      "top10_count": 8,
-      "sample_count": 10,
-      "top10_rate": 80,
-      "analytics_status": "STABLE"
-    },
-    {
-      "key": "d_800289",
-      "title": "妻達は今、海外にいます 後編",
-      "rank_history": [
-        6,
-        8,
-        13,
-        null,
         null,
         null,
         null,
@@ -124,10 +84,29 @@
       "analytics_status": "VOLATILE"
     },
     {
+      "key": "d_782771",
+      "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
+      "rank_history": [
+        5,
+        5,
+        7,
+        7,
+        7,
+        7,
+        8,
+        12,
+        14,
+        11
+      ],
+      "top10_count": 7,
+      "sample_count": 10,
+      "top10_rate": 70,
+      "analytics_status": "ACTIVE"
+    },
+    {
       "key": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
       "rank_history": [
-        7,
         6,
         8,
         9,
@@ -135,6 +114,7 @@
         8,
         8,
         7,
+        8,
         8,
         8
       ],
@@ -147,7 +127,6 @@
       "key": "d_806152",
       "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
       "rank_history": [
-        8,
         7,
         9,
         10,
@@ -156,18 +135,38 @@
         12,
         13,
         15,
+        13,
         13
       ],
-      "top10_count": 5,
+      "top10_count": 4,
       "sample_count": 10,
-      "top10_rate": 50,
-      "analytics_status": "ACTIVE"
+      "top10_rate": 40,
+      "analytics_status": "VOLATILE"
+    },
+    {
+      "key": "d_800289",
+      "title": "妻達は今、海外にいます 後編",
+      "rank_history": [
+        8,
+        13,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
+      "analytics_status": "SPIKE"
     },
     {
       "key": "d_805647",
       "title": "サキュバス性徒会シコシコ執行部4前編",
       "rank_history": [
-        9,
         9,
         11,
         14,
@@ -176,18 +175,18 @@
         15,
         15,
         19,
-        null
+        null,
+        20
       ],
-      "top10_count": 2,
+      "top10_count": 1,
       "sample_count": 10,
-      "top10_rate": 20,
-      "analytics_status": "VOLATILE"
+      "top10_rate": 10,
+      "analytics_status": "SPIKE"
     },
     {
       "key": "d_805704",
       "title": "ファンティアまとめ本",
       "rank_history": [
-        10,
         10,
         16,
         19,
@@ -196,38 +195,18 @@
         14,
         14,
         16,
-        17
+        17,
+        16
       ],
-      "top10_count": 2,
+      "top10_count": 1,
       "sample_count": 10,
-      "top10_rate": 20,
-      "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_802286",
-      "title": "雌ガチャIV",
-      "rank_history": [
-        11,
-        13,
-        15,
-        20,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
       "key": "d_801115",
       "title": "【スマホ対応】PORTRAIT GIRLS ―美術部のモデルになった少女たち―",
       "rank_history": [
-        12,
         11,
         10,
         11,
@@ -236,6 +215,7 @@
         11,
         11,
         11,
+        12,
         12
       ],
       "top10_count": 2,
@@ -247,7 +227,6 @@
       "key": "d_748896",
       "title": "スパ・カイラクーア4",
       "rank_history": [
-        13,
         12,
         12,
         12,
@@ -256,40 +235,21 @@
         10,
         9,
         7,
-        7
+        7,
+        9
       ],
-      "top10_count": 5,
+      "top10_count": 6,
       "sample_count": 10,
-      "top10_rate": 50,
+      "top10_rate": 60,
       "analytics_status": "ACTIVE"
     },
     {
-      "key": "d_649476",
-      "title": "破魔の巫女 淫獄に堕つ 2",
+      "key": "d_802286",
+      "title": "雌ガチャIV",
       "rank_history": [
-        14,
-        14,
-        14,
-        16,
-        14,
-        12,
-        9,
-        10,
-        10,
-        9
-      ],
-      "top10_count": 4,
-      "sample_count": 10,
-      "top10_rate": 40,
-      "analytics_status": "VOLATILE"
-    },
-    {
-      "key": "d_755081",
-      "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
-      "rank_history": [
+        13,
         15,
-        15,
-        null,
+        20,
         null,
         null,
         null,
@@ -304,11 +264,31 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_777056",
-      "title": "姉の友達のギャルに脳破壊（NTR）されるショタ1",
+      "key": "d_649476",
+      "title": "破魔の巫女 淫獄に堕つ 2",
       "rank_history": [
+        14,
+        14,
         16,
-        17,
+        14,
+        12,
+        9,
+        10,
+        10,
+        9,
+        14
+      ],
+      "top10_count": 4,
+      "sample_count": 10,
+      "top10_rate": 40,
+      "analytics_status": "VOLATILE"
+    },
+    {
+      "key": "d_755081",
+      "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
+      "rank_history": [
+        15,
+        null,
         null,
         null,
         null,
@@ -327,7 +307,6 @@
       "key": "d_799677",
       "title": "ボッチのモブ総集編 地域一の美女が清純ヅラしてパイズリするまでの軌跡",
       "rank_history": [
-        17,
         16,
         17,
         15,
@@ -335,6 +314,27 @@
         17,
         19,
         19,
+        null,
+        null,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_777056",
+      "title": "姉の友達のギャルに脳破壊（NTR）されるショタ1",
+      "rank_history": [
+        17,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
@@ -348,11 +348,11 @@
       "title": "WSS〜私が先に好きだったのに〜",
       "rank_history": [
         18,
-        18,
         19,
         18,
         19,
         20,
+        null,
         null,
         null,
         null,
@@ -368,7 +368,7 @@
       "title": "Grand Order 戦記",
       "rank_history": [
         19,
-        19,
+        null,
         null,
         null,
         null,
@@ -389,14 +389,14 @@
       "rank_history": [
         20,
         20,
+        17,
+        17,
+        18,
+        17,
+        17,
+        18,
         20,
-        17,
-        17,
-        18,
-        17,
-        17,
-        18,
-        20
+        17
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -408,7 +408,6 @@
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "rank_history": [
         null,
-        null,
         4,
         3,
         5,
@@ -416,7 +415,8 @@
         6,
         6,
         13,
-        15
+        15,
+        18
       ],
       "top10_count": 6,
       "sample_count": 10,
@@ -428,7 +428,6 @@
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
       "rank_history": [
         null,
-        null,
         6,
         5,
         6,
@@ -436,11 +435,12 @@
         5,
         5,
         6,
+        10,
         10
       ],
-      "top10_count": 8,
+      "top10_count": 9,
       "sample_count": 10,
-      "top10_rate": 80,
+      "top10_rate": 90,
       "analytics_status": "STABLE"
     },
     {
@@ -448,13 +448,13 @@
       "title": "その制服をめちゃくちゃにしたい2〜教え子たちと禁断の3Pセックス編",
       "rank_history": [
         null,
-        null,
         18,
         6,
         10,
         13,
         16,
         16,
+        null,
         null,
         null
       ],
@@ -469,12 +469,12 @@
       "rank_history": [
         null,
         null,
-        null,
         8,
         13,
         14,
         18,
         18,
+        null,
         null,
         null
       ],
@@ -490,17 +490,17 @@
         null,
         null,
         null,
-        null,
         4,
         3,
         3,
         3,
         3,
-        4
+        4,
+        6
       ],
-      "top10_count": 6,
+      "top10_count": 7,
       "sample_count": 10,
-      "top10_rate": 60,
+      "top10_rate": 70,
       "analytics_status": "ACTIVE"
     },
     {
@@ -511,12 +511,12 @@
         null,
         null,
         null,
-        null,
         19,
         13,
         12,
         9,
-        18
+        18,
+        null
       ],
       "top10_count": 1,
       "sample_count": 10,
@@ -532,11 +532,11 @@
         null,
         null,
         null,
-        null,
         20,
         20,
         20,
-        19
+        19,
+        null
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -554,13 +554,13 @@
         null,
         null,
         null,
-        null,
         5,
-        3
+        3,
+        1
       ],
-      "top10_count": 2,
+      "top10_count": 3,
       "sample_count": 10,
-      "top10_rate": 20,
+      "top10_rate": 30,
       "analytics_status": "VOLATILE"
     },
     {
@@ -574,14 +574,14 @@
         null,
         null,
         null,
-        null,
         14,
-        6
+        6,
+        5
       ],
-      "top10_count": 1,
+      "top10_count": 2,
       "sample_count": 10,
-      "top10_rate": 10,
-      "analytics_status": "SPIKE"
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_802566",
@@ -594,9 +594,9 @@
         null,
         null,
         null,
-        null,
         17,
-        16
+        16,
+        15
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -615,8 +615,28 @@
         null,
         null,
         null,
+        11,
+        7
+      ],
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_805559",
+      "title": "生意気なギャル姉を『俺なりの方法』で分からせる話",
+      "rank_history": [
         null,
-        11
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        19
       ],
       "top10_count": 0,
       "sample_count": 10,
