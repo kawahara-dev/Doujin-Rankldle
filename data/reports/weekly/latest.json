@@ -1,10 +1,10 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-25T21:22:59+09:00",
+  "generated_at": "2026-08-26T00:02:34+09:00",
   "data_status": "PARTIAL",
   "observed_days": 2,
-  "expected_days": 2,
+  "expected_days": 3,
   "snapshot_counts": {
     "1h": 8,
     "24h": 7
