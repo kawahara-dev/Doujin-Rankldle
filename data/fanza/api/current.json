@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T21:25:59+09:00",
+  "fetched_at": "2026-08-26T21:25:59+09:00",
   "ranking_type": "api",
   "items": [
     {
@@ -12,7 +12,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_761881%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_761881/d_761881pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 1,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 2,
@@ -24,7 +32,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_805485%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_805485/d_805485pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 2,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 3,
@@ -36,7 +52,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_781867%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_781867/d_781867pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 3,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 4,
@@ -48,7 +72,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_806152%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_806152/d_806152pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 4,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 5,
@@ -60,7 +92,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_805647%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_805647/d_805647pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 5,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 6,
@@ -72,7 +112,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_782771%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_782771/d_782771pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 6,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 7,
@@ -84,7 +132,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_804292%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_804292/d_804292pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 7,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 8,
@@ -96,7 +152,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_748896%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_748896/d_748896pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 8,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 9,
@@ -108,7 +172,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_805704%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/cg/d_805704/d_805704pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 9,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 10,
@@ -120,7 +192,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_802286%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_802286/d_802286pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 10,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 40,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 11,
@@ -132,7 +212,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_755081%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_755081/d_755081pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 11,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 12,
@@ -144,7 +232,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_799677%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_799677/d_799677pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 12,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 13,
@@ -156,7 +252,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_806364%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_806364/d_806364pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 13,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 14,
@@ -168,7 +272,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_798570%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_798570/d_798570pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 14,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 15,
@@ -180,7 +292,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_793664%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_793664/d_793664pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 15,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 16,
@@ -192,7 +312,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_724291%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_724291/d_724291pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 16,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 17,
@@ -204,7 +332,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_797711%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_797711/d_797711pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 17,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 18,
@@ -216,7 +352,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_803148%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_803148/d_803148pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 18,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 19,
@@ -228,7 +372,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_788174%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_788174/d_788174pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 19,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 20,
@@ -240,7 +392,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_799407%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_799407/d_799407pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 20,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 21,
@@ -252,7 +412,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_796508%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_796508/d_796508pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 21,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 22,
@@ -264,7 +432,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_722335%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_722335/d_722335pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 22,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 23,
@@ -276,7 +452,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_803929%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_803929/d_803929pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 23,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 24,
@@ -288,7 +472,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_802143%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_802143/d_802143pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 24,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 25,
@@ -300,7 +492,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_649476%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_649476/d_649476pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 25,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 26,
@@ -312,7 +512,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_789610%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_789610/d_789610pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 26,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 27,
@@ -324,7 +532,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_806491%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_806491/d_806491pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 27,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 28,
@@ -336,7 +552,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_796610%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_796610/d_796610pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 28,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 29,
@@ -348,7 +572,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_722571%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_722571/d_722571pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 29,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 30,
@@ -360,7 +592,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_799901%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_799901/d_799901pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 30,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 31,
@@ -372,7 +612,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_804155%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_804155/d_804155pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 31,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 32,
@@ -384,7 +632,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_800289%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/cg/d_800289/d_800289pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 32,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 33,
@@ -396,7 +652,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_806846%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_806846/d_806846pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 33,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 34,
@@ -408,7 +672,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_762894%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_762894/d_762894pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 34,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 35,
@@ -420,7 +692,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_802808%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_802808/d_802808pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 35,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 36,
@@ -432,7 +712,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_799208%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_799208/d_799208pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 36,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 37,
@@ -444,7 +732,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_737431%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_737431/d_737431pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 37,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 38,
@@ -456,7 +752,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_802566%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_802566/d_802566pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 38,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 39,
@@ -468,7 +772,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_804087%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_804087/d_804087pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 39,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 40,
@@ -480,7 +792,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_717438%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_717438/d_717438pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 40,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 41,
@@ -492,7 +812,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_805559%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_805559/d_805559pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 41,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 42,
@@ -504,7 +832,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_510867%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_510867/d_510867pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 42,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 43,
@@ -516,7 +852,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_800575%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_800575/d_800575pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 43,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 44,
@@ -528,7 +872,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_583742%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_583742/d_583742pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 44,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 45,
@@ -540,7 +892,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_757987%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_757987/d_757987pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 45,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 46,
@@ -552,7 +912,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_802224%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_802224/d_802224pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 46,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 47,
@@ -564,7 +932,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_791912%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_791912/d_791912pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 47,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 48,
@@ -576,7 +952,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_791340%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_791340/d_791340pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 48,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 49,
@@ -588,7 +972,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_804751%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_804751/d_804751pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 49,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 50,
@@ -600,7 +992,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_783538%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_783538/d_783538pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 50,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 51,
@@ -612,7 +1012,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_798425%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_798425/d_798425pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 51,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 52,
@@ -624,7 +1032,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_777056%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_777056/d_777056pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 52,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 53,
@@ -636,7 +1052,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_701526%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_701526/d_701526pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 53,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 54,
@@ -648,7 +1072,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_804543%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_804543/d_804543pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 54,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 55,
@@ -660,7 +1092,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_732458%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_732458/d_732458pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 55,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 56,
@@ -672,7 +1112,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_765663%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_765663/d_765663pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 56,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 57,
@@ -684,7 +1132,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_798117%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_798117/d_798117pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 57,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 58,
@@ -696,7 +1152,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_649983%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_649983/d_649983pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 58,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 59,
@@ -708,7 +1172,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_801163%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_801163/d_801163pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 59,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 60,
@@ -720,7 +1192,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_809976%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_809976/d_809976pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 60,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 61,
@@ -732,7 +1212,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_633782%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_633782/d_633782pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 61,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 62,
@@ -744,7 +1232,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_329254%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_329254/d_329254pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 62,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 63,
@@ -756,7 +1252,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_808009%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_808009/d_808009pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 63,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 64,
@@ -768,7 +1272,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_804433%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_804433/d_804433pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 64,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 65,
@@ -780,7 +1292,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_759867%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_759867/d_759867pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 65,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 66,
@@ -792,7 +1312,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_780727%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_780727/d_780727pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 66,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 67,
@@ -804,7 +1332,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_646948%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_646948/d_646948pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 67,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 68,
@@ -816,7 +1352,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_809567%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_809567/d_809567pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 68,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 69,
@@ -828,7 +1372,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_429381%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_429381/d_429381pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 69,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 70,
@@ -840,7 +1392,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_285449%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_285449/d_285449pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 70,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 71,
@@ -852,7 +1412,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_798987%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_798987/d_798987pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 71,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 72,
@@ -864,7 +1432,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_799541%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/cg/d_799541/d_799541pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 72,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 73,
@@ -876,7 +1452,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_810654%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_810654/d_810654pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 73,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 74,
@@ -888,7 +1472,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_712405%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_712405/d_712405pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 74,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 75,
@@ -900,7 +1492,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_800258%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_800258/d_800258pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 75,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 76,
@@ -912,7 +1512,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_785457%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_785457/d_785457pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 76,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 77,
@@ -924,7 +1532,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_684224%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_684224/d_684224pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 77,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 78,
@@ -936,7 +1552,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_714174%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_714174/d_714174pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 78,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 79,
@@ -948,7 +1572,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_637221%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_637221/d_637221pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 79,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 80,
@@ -960,7 +1592,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_583575%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_583575/d_583575pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 80,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 81,
@@ -972,7 +1612,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_720757%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_720757/d_720757pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 81,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 82,
@@ -984,7 +1632,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_512883%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_512883/d_512883pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 82,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 83,
@@ -996,7 +1652,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_736274%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_736274/d_736274pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 83,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 84,
@@ -1008,7 +1672,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_716922%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_716922/d_716922pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 84,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 85,
@@ -1020,7 +1692,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_794386%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_794386/d_794386pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 85,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 86,
@@ -1032,7 +1712,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_804039%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_804039/d_804039pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 86,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 87,
@@ -1044,7 +1732,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_557408%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_557408/d_557408pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 87,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 88,
@@ -1056,7 +1752,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_756690%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_756690/d_756690pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 88,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 89,
@@ -1068,7 +1772,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_727934%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_727934/d_727934pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 89,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 90,
@@ -1080,7 +1792,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_658585%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_658585/d_658585pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 90,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 91,
@@ -1092,7 +1812,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_668335%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_668335/d_668335pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 91,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 92,
@@ -1104,7 +1832,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_649069%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/voice/d_649069/d_649069pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 92,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 93,
@@ -1116,7 +1852,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_805022%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_805022/d_805022pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 93,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 94,
@@ -1128,7 +1872,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_243361%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_243361/d_243361pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 94,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 95,
@@ -1140,7 +1892,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_712453%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_712453/d_712453pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 95,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 96,
@@ -1152,7 +1912,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_424924%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_424924/d_424924pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 96,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 97,
@@ -1164,7 +1932,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_448504%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_448504/d_448504pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 97,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 98,
@@ -1176,7 +1952,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_669478%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_669478/d_669478pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 98,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 99,
@@ -1188,7 +1972,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_432488%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_432488/d_432488pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 99,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     },
     {
       "rank": 100,
@@ -1200,7 +1992,15 @@
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_802465%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_802465/d_802465pl.jpg",
       "service": "doujin",
-      "floor": "digital_doujin"
+      "floor": "digital_doujin",
+      "current_rank": 100,
+      "previous_rank": null,
+      "rank_change": 0,
+      "status": "new",
+      "trend_score": 20,
+      "consecutive_appearances": 1,
+      "momentum": "NONE",
+      "strong_momentum": false
     }
   ]
 }
