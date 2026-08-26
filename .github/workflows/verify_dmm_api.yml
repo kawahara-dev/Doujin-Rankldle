@@ -36,12 +36,21 @@ jobs:
           DMM_AFFILIATE_ID: ${{ secrets.DMM_AFFILIATE_ID }}
         run: python -m src.verify_dmm_api
       - name: Ensure production data is unchanged
-        run: git diff --exit-code -- . ':(exclude)data/verify/**'
+        shell: bash
+        run: |
+          mapfile -t changed < <(git diff --name-only HEAD -- . ':(exclude)data/verify/**')
+          if (( ${#changed[@]} )); then
+            echo "::error::Tracked production files were modified outside data/verify/:"
+            printf '  - %s\n' "${changed[@]}"
+            exit 1
+          fi
+          echo "No tracked files outside data/verify/ were modified."
       - name: Upload floor inspection result
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: dmm-api-verification
           path: |
             data/verify/dmm_floors.json
             data/verify/dmm_api_latest.json
-          if-no-files-found: error
+          if-no-files-found: warn
