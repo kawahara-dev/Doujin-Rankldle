@@ -1,25 +1,25 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-26T07:43:21+09:00",
+  "generated_at": "2026-08-26T10:56:40+09:00",
   "data_status": "PARTIAL",
   "observed_days": 3,
   "expected_days": 3,
   "snapshot_counts": {
-    "1h": 9,
+    "1h": 10,
     "24h": 8
   },
   "market_overview": {
-    "unique_products": 50,
+    "unique_products": 51,
     "top10_unique_products": 30,
     "new_entries": 24,
-    "reentries": 40,
+    "reentries": 46,
     "cross_trend_events": 9,
     "max_rank_rise_1h": 13,
     "max_rank_rise_24h": 8
   },
   "price_analysis": {
-    "average_price": 1999,
+    "average_price": 2036,
     "median_price": 990,
     "top10_average_price": 1819,
     "top10_median_price": 990,
@@ -46,14 +46,14 @@
       },
       {
         "label": "3000円〜",
-        "count": 5,
+        "count": 6,
         "top10_count": 3
       }
     ]
   },
   "sale_analysis": {
     "sale_product_count": 22,
-    "sale_share": 44,
+    "sale_share": 43,
     "top10_sale_count": 17,
     "top10_sale_share": 57,
     "average_discount_rate": 29,
@@ -66,11 +66,11 @@
     }
   },
   "ranking_behavior": {
-    "top10_entry_events": 34,
-    "large_rise_5_plus": 15,
-    "large_rise_10_plus": 2,
+    "top10_entry_events": 37,
+    "large_rise_5_plus": 17,
+    "large_rise_10_plus": 3,
     "new_entry_events": 24,
-    "reentry_events": 40
+    "reentry_events": 46
   },
   "biggest_movers": [
     {
@@ -80,6 +80,14 @@
       "rank_change": 13,
       "current_rank": 6,
       "observed_at": "2026-08-25T15:02:51+09:00"
+    },
+    {
+      "id": "d_762894",
+      "title": "その制服をめちゃくちゃにしたい2〜教え子たちと禁断の3Pセックス編",
+      "ranking_type": "1h",
+      "rank_change": 11,
+      "current_rank": 7,
+      "observed_at": "2026-08-26T10:56:40+09:00"
     },
     {
       "id": "d_802566",
@@ -104,6 +112,14 @@
       "rank_change": 8,
       "current_rank": 6,
       "observed_at": "2026-08-25T13:28:44+09:00"
+    },
+    {
+      "id": "d_781867",
+      "title": "【スマホ対応×Live2D】パパ活無双",
+      "ranking_type": "1h",
+      "rank_change": 7,
+      "current_rank": 2,
+      "observed_at": "2026-08-26T10:56:40+09:00"
     },
     {
       "id": "d_805559",
@@ -136,152 +152,136 @@
       "rank_change": 6,
       "current_rank": 9,
       "observed_at": "2026-08-25T10:35:18+09:00"
-    },
-    {
-      "id": "d_583575",
-      "title": "性格終わってる年下女上司を育休送り残業レ●プ",
-      "ranking_type": "24h",
-      "rank_change": 6,
-      "current_rank": 13,
-      "observed_at": "2026-08-24T21:37:33+09:00"
-    },
-    {
-      "id": "d_802566",
-      "title": "催淫スマホで俺だけハーレム",
-      "ranking_type": "24h",
-      "rank_change": 5,
-      "current_rank": 10,
-      "observed_at": "2026-08-26T05:46:48+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇は1Hランキングで+13でした。",
-    "NEWを24件、REENTRYを40件観測しました。",
+    "NEWを24件、REENTRYを46件観測しました。",
     "1Hの上昇後に24Hでも上昇したCROSSを9件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +13\n🆕 NEW 24件\n🔄 REENTRY 40件\n📡 CROSS 9件\n💸 SALE作品比率 44%\n💰 中央価格 ¥990\n\n1Hの上昇後に24Hでも上昇したCROSSを9件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +13\n🆕 NEW 24件\n🔄 REENTRY 46件\n📡 CROSS 9件\n💸 SALE作品比率 43%\n💰 中央価格 ¥990\n\n1Hの上昇後に24Hでも上昇したCROSSを9件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
       "top10_snapshots": 13,
-      "observation_rate": 76
+      "observation_rate": 72
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
       "top10_snapshots": 12,
-      "observation_rate": 71
+      "observation_rate": 67
     },
     {
       "id": "d_803148",
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
       "top10_snapshots": 11,
-      "observation_rate": 65
+      "observation_rate": 61
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
       "top10_snapshots": 11,
-      "observation_rate": 65
+      "observation_rate": 61
     },
     {
       "id": "d_799407",
       "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 9,
-      "observation_rate": 53
+      "top10_snapshots": 10,
+      "observation_rate": 56
     },
     {
       "id": "d_791912",
       "title": "夏と田舎と誘惑してくるでっかい教え子4",
       "top10_snapshots": 8,
-      "observation_rate": 47
+      "observation_rate": 44
     },
     {
       "id": "d_797711",
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
-      "observation_rate": 47
+      "observation_rate": 44
     }
   ],
   "top10_stays": [
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女 淫獄に堕つ 3",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
       "top10_snapshots": 13,
-      "observation_rate": 76
+      "observation_rate": 72
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
       "top10_snapshots": 12,
-      "observation_rate": 71
+      "observation_rate": 67
     },
     {
       "id": "d_803148",
       "title": "婚約者の妹は顔SSR、性格最悪地獄のエロダンス女。2",
       "top10_snapshots": 11,
-      "observation_rate": 65
+      "observation_rate": 61
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
       "top10_snapshots": 11,
-      "observation_rate": 65
+      "observation_rate": 61
     },
     {
       "id": "d_799407",
       "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 9,
-      "observation_rate": 53
+      "top10_snapshots": 10,
+      "observation_rate": 56
     },
     {
       "id": "d_791912",
       "title": "夏と田舎と誘惑してくるでっかい教え子4",
       "top10_snapshots": 8,
-      "observation_rate": 47
+      "observation_rate": 44
     },
     {
       "id": "d_797711",
       "title": "幼馴染が上京中に幼馴染の父と抱いた",
       "top10_snapshots": 8,
-      "observation_rate": 47
+      "observation_rate": 44
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
