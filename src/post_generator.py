@@ -185,9 +185,11 @@ def generate_comment(item: dict[str, Any], ranking_type: str, signal_type: str |
 
 def post_text(item: dict[str, Any], ranking_type: str = "24h", comment: str | None = None) -> str:
     title, rank, previous = item["title"], item["current_rank"], item.get("previous_rank")
-    label = "1時間ランキング" if ranking_type == "1h" else "24時間ランキング"
+    label = "APIランキング" if ranking_type == "api" else "1時間ランキング" if ranking_type == "1h" else "24時間ランキング"
     note = comment or item.get("comment") or generate_comment(item, ranking_type)
-    product = f'\n\n作品ページ👇\n{item["url"]}' if item.get("url") else ""
+    product_url = item.get("affiliate_url") if ranking_type == "api" else item.get("url")
+    product_url = product_url or item.get("url")
+    product = f'\n\n作品ページ👇\n{product_url}' if product_url else ""
     memo = f"\n\n💬 RankIdleメモ\n{note}"
     if item["status"] in ("new", "reentry"):
         return f'【FANZA {label}】\n🆕 NEW ENTRY\n\n「{title}」\n\n初登場 {rank}位{memo}{product}\n\n#FANZA #同人'
@@ -202,11 +204,15 @@ def generate_candidates(items, existing, now: datetime, cooldown_hours: int = 24
         try: recent[candidate["key"]] = datetime.fromisoformat(candidate["generated_at"])
         except (KeyError, ValueError): pass
     output = list(existing)
-    for item in sorted(items, key=lambda x: x.get("trend_score", 0), reverse=True):
-        if item.get("trend_score", 0) < 20: continue
+    def priority(item):
+        previous=item.get("previous_rank")
+        return (6 if item.get("current_rank",999)<=10 and (previous is None or previous>10) else 5 if item.get("rank_change",0)>=10 else 4 if item.get("rank_change",0)>=5 else 3 if item.get("status")=="new" else 2 if item.get("status")=="reentry" else 1 if item.get("strong_momentum") else 0)
+    ordered=sorted(items,key=lambda x:(priority(x),x.get("trend_score",0)),reverse=True) if ranking_type=="api" else sorted(items,key=lambda x:x.get("trend_score",0),reverse=True)
+    for item in ordered:
+        if item.get("trend_score", 0) < 20 and not (ranking_type == "api" and item.get("strong_momentum")): continue
         key = item["key"]; important = item["current_rank"] == 1 or item.get("rank_change", 0) >= 50 or (item["current_rank"] <= 10 < (item.get("previous_rank") or 999))
         if key in recent and recent[key] > cutoff and not important: continue
         comment = generate_comment(item, ranking_type)
-        output.append({"key": key, "title": item["title"], "url": item.get("url", ""), "ranking_type": ranking_type, "status": item.get("status"), "trend_score": item["trend_score"], "previous_rank": item.get("previous_rank"),
+        output.append({"key": key, "title": item["title"], "url": item.get("url", ""), "affiliate_url": item.get("affiliate_url", ""), "ranking_type": ranking_type, "status": item.get("status"), "trend_score": item["trend_score"], "previous_rank": item.get("previous_rank"),
                        "current_rank": item["current_rank"], "rank_change": item.get("rank_change", 0), "comment": comment, "text": post_text(item, ranking_type, comment), "generated_at": now.isoformat()})
     return output[-200:]

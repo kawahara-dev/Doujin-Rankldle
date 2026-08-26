@@ -1,5 +1,16 @@
 # DOUJIN RANKIDLE
 
+## API RANKING
+
+RankIdleは現在、DMM Web Service APIの `site=FANZA` / `service=doujin` /
+`floor=digital_doujin` / `sort=rank` をメインランキングとして1日4回定期観測します。
+これはFANZA公式サイトの1時間・24時間ランキングとは別の指標です。既存の1H / 24Hデータと
+手動取得機能は削除せず、**SPECIAL OBSERVATION**として保存・表示を継続します。
+
+API取得結果は `data/fanza/api/current.json` と90日分のhistory、直近10 snapshotの
+`data/analytics/fanza_api.json`、人間確認用の `data/posts/fanza_api_candidates.json` に保存します。
+APIエラー時は処理を失敗させ、既存のcurrent、history、analytics、投稿候補を変更しません。
+
 ## FANZA 24H SALE WATCH
 
 24時間ランキングの確定済み商品カード内だけから現在価格、通常価格、割引率、終了表示を取得します。1時間ランキングではセール解析を実行せず、`price: 0` を引き続き許容します。通常価格と現在価格がある場合に限り割引率を補完し、前回24Hとの差から SALE START / DISCOUNT UP / PRICE DROP / SALE END を記録します。
@@ -18,7 +29,7 @@ FANZAモジュールの商品ランキングを1時間ごとに収集し、GitHu
 
 1. FANZA APIの実データを使う場合は、リポジトリの **Settings → Secrets and variables → Actions** に `DMM_API_ID` と `DMM_AFFILIATE_ID` を登録します。
 2. **Settings → Pages** の公開元を `Deploy from a branch`、対象を既定ブランチの `/docs` にします。
-3. Actionsの **Collect FANZA products** を手動実行します。以後は毎時17分に自動実行されます。
+3. Actionsの **Collect FANZA products** を手動実行します。以後はJST 03:17 / 09:17 / 14:17 / 22:17に自動実行されます。
 
 APIの対象を変更する場合は、Workflowの環境変数に `FANZA_SERVICE`、`FANZA_FLOOR`、`FANZA_HITS`（最大100）を追加してください。FANZA同人向けの既定値はDMM Web Serviceのフロア体系に合わせた `doujin` / `digital_doujin` / `100` です。
 

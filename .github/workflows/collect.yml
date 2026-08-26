@@ -7,7 +7,8 @@ on:
     paths:
       - "data/import/fanza.json"
   schedule:
-    - cron: "17 3,9,14,22 * * *"
+    # 03:17 / 09:17 / 14:17 / 22:17 JST
+    - cron: "17 0,5,13,18 * * *"
   workflow_dispatch:
 
 permissions:

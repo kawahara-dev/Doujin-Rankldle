@@ -16,8 +16,8 @@ FANZA_DIR=DATA_DIR/'fanza'; DEFAULT_FANZA_DIR=FANZA_DIR; POSTS_PATH=DATA_DIR/'po
 ANALYTICS_DIR=DATA_DIR/'analytics'; ANALYTICS_SNAPSHOTS=10
 IMPORT_PATH=DATA_DIR/'import'/'fanza.json'
 EXP_PER_RUN=5; EXP_PER_ITEM=1; EXP_PER_TREND=10; EXP_PER_LEVEL=100; HISTORY_DAYS=90
-TREND={'new':20,'top10':20,'rise10':20,'rise20_extra':15,'rise50_extra':20,'streak3':10}
-RANKING_TYPES=('1h','24h'); CROSS_TREND_BONUS=20
+TREND={'new':20,'top10':20,'rise5':20,'rise10':20,'rise20_extra':15,'rise50_extra':20,'streak3':10}
+RANKING_TYPES=('api','1h','24h'); CROSS_TREND_BONUS=20
 ACHIEVEMENTS=(("first_boot","FIRST BOOT","runs",1),("scanner_1","SCANNER I","runs",10),("scanner_2","SCANNER II","runs",100),("scanner_3","SCANNER III","runs",1000),("collector_1","DATA COLLECTOR I","items",100),("collector_2","DATA COLLECTOR II","items",1000),("collector_3","DATA COLLECTOR III","items",10000))
 SALE_FIELDS=('regular_price','discount_rate','on_sale','sale_end_raw','sale_end')
 
@@ -81,13 +81,14 @@ def import_metadata():
  payload=read_json(IMPORT_PATH,{})
  return payload if isinstance(payload,dict) else {}
 def stable_key(item): return (item.get('id') or item.get('url','').split('?')[0]).strip()
-def compare_rankings(items,previous,seen=None,streaks=None):
+def compare_rankings(items,previous,seen=None,streaks=None,ranking_type=None):
  old={stable_key(x):int(x.get('current_rank',x.get('rank',0))) for x in previous}; seen=set(seen or []); streaks=streaks or {}; result=[]
  for raw in items:
   x=dict(raw); key=stable_key(x); current=int(x.get('rank',0)); prev=old.get(key); change=(prev-current) if prev else 0
   status='new' if prev is None and key not in seen else ('reentry' if prev is None else ('up' if change>0 else 'down' if change<0 else 'stay'))
   streak=int(streaks.get(key,0))+1 if prev is not None else 1; score=TREND['new'] if status in ('new','reentry') else 0
   if current<=10 and (prev is None or prev>10):score+=TREND['top10']
+  if ranking_type=='api' and change>=5:score+=TREND['rise5']
   if change>=10:score+=TREND['rise10']
   if change>=20:score+=TREND['rise20_extra']
   if change>=50:score+=TREND['rise50_extra']
@@ -156,6 +157,20 @@ def history_snapshots(ranking_type):
   entries=read_json(path,[])
   if isinstance(entries,list): snapshots.extend(x for x in entries if isinstance(x,dict) and isinstance(x.get('items'),list))
  return snapshots[-ANALYTICS_SNAPSHOTS:]
+def apply_api_momentum(items):
+ """Annotate API items from the two preceding snapshots (three points total)."""
+ prior=history_snapshots('api')[-2:]
+ for item in items:
+  ranks=[]
+  for snapshot in prior:
+   match=next((x for x in snapshot['items'] if stable_key(x)==stable_key(item)),None)
+   ranks.append(int(match.get('current_rank',match.get('rank'))) if match else None)
+  ranks.append(item['current_rank'])
+  valid=[rank for rank in ranks if rank is not None]
+  rising=len(valid)==3 and valid[0]>valid[1]>valid[2]
+  item['momentum']='UP' if rising else 'NONE'
+  item['strong_momentum']=bool(rising and valid[0]-valid[2]>=10)
+ return items
 def generate_analytics(ranking_type,generated_at=None):
  """Build the compact Pages payload without requiring history fetches in browsers."""
  snapshots=history_snapshots(ranking_type); sample_count=len(snapshots); keys=[]; titles={}
@@ -206,32 +221,34 @@ def main():
  migrate_legacy_fanza()
  try:
   raw=fetch_items() if mode=='live' else FanzaPublicProvider().fetch() if mode=='public' else import_items() if mode=='import' else mock_items()
-  ranking_type=ranking_type_from_import() if mode=='import' else '24h'
-  ranking_mode=mode in ('public','import'); previous=read_json(ranking_dir(ranking_type)/'current.json',{}).get('items',[]) if ranking_mode else []
+  ranking_type='api' if mode=='live' else ranking_type_from_import() if mode=='import' else '24h'
+  ranking_mode=mode in ('live','public','import'); previous=read_json(ranking_dir(ranking_type)/'current.json',{}).get('items',[]) if ranking_mode else []
   bucket=old.get('rankings',{}).get(f'fanza_{ranking_type}',{})
-  items=compare_rankings(raw,previous,bucket.get('seen_keys'),bucket.get('streaks')) if ranking_mode else raw
+  items=compare_rankings(raw,previous,bucket.get('seen_keys'),bucket.get('streaks'),ranking_type) if ranking_mode else raw
+  if ranking_type=='api': apply_api_momentum(items)
  except FanzaAgeGateError as exc:
   status={**old,'mode':'public','public_watch_status':'age_gate','last_public_watch_error':'FANZA age verification page reached','items_collected':0}
   atomic_write(STATUS_PATH,status); print(f'PUBLIC WATCH AGE GATE: {exc}')
   if not IMPORT_PATH.is_file(): return
   age_gate=True; mode='import'; ranking_mode=True; ranking_type=ranking_type_from_import(); raw=import_items(); bucket=old.get('rankings',{}).get(f'fanza_{ranking_type}',{})
-  previous=read_json(ranking_dir(ranking_type)/'current.json',{}).get('items',[]); items=compare_rankings(raw,previous,bucket.get('seen_keys'),bucket.get('streaks'))
+  previous=read_json(ranking_dir(ranking_type)/'current.json',{}).get('items',[]); items=compare_rankings(raw,previous,bucket.get('seen_keys'),bucket.get('streaks'),ranking_type)
  except Exception as exc:
   if mode!='public': raise
   status={**old,'mode':'public','public_watch_status':'error','last_public_watch_error':str(exc),'items_collected':0}
   atomic_write(STATUS_PATH,status); print(f'PUBLIC WATCH ERROR: {exc}'); return
- run_date=stamp[:10]; trends=sum(x.get('trend_score',0)>=20 for x in items) if mode in ('public','import') else 0
+ run_date=stamp[:10]; trends=sum(x.get('trend_score',0)>=20 for x in items) if ranking_mode else 0
  content_key='|'.join(f"{stable_key(x)}:{x.get('current_rank',x.get('rank'))}" for x in items)
  captured=str(import_metadata().get('captured_at','')).strip() if mode=='import' else ''
  update_key=f'{ranking_type}:captured:{captured}' if captured else f'{ranking_type}:content:{content_key}'
  content_update=f'{ranking_type}:content:{content_key}'; processed=old['processed_updates']
  legacy_keys=([f'captured:{captured}'] if captured else [])+[f'content:{content_key}'] if ranking_type=='24h' else []
- duplicate=mode=='import' and (update_key in processed or content_update in processed or any(key in processed for key in legacy_keys))
+ duplicate=ranking_mode and (update_key in processed or content_update in processed or any(key in processed for key in legacy_keys))
  if duplicate:
   # A repeated manual import is only a heartbeat. In particular, do not persist the
   # comparison performed above: doing so would advance streaks and could regenerate
   # ranking, cross-trend, sale, achievement, or progression state.
-  status={**old,'last_run':stamp,'duplicate_import':True}
+  status={**old,'last_run':stamp,'duplicate_import':mode=='import'}
+  if mode=='live': status['duplicate_api_snapshot']=True
   atomic_write(STATUS_PATH,status); print(f'0 件を収集しました ({stamp}, mode={mode}, ranking={ranking_type}, duplicate=true)'); return
  runs=old['total_runs']+(0 if duplicate else 1); total=old['total_items_collected']+(0 if duplicate else len(items)); new_trends=0 if duplicate else trends
  if not duplicate: processed=(processed+[update_key,content_update])[-200:]
@@ -241,10 +258,11 @@ def main():
   prior.update(last_run=stamp,items_collected=0 if duplicate else len(items),total_runs=int(prior.get('total_runs',0))+(0 if duplicate else 1),total_items=int(prior.get('total_items',0))+(0 if duplicate else len(items)),trend_events=int(prior.get('trend_events',0))+(0 if duplicate else trends),seen_keys=sorted(set(prior.get('seen_keys',[]))|{x['key'] for x in items}),streaks={x['key']:x['consecutive_appearances'] for x in items})
   rankings[name]=prior
  status={**old,'first_run':old['first_run'] or stamp,'last_run':stamp,'total_runs':runs,'total_items_collected':total,'items_collected':0 if duplicate else len(items),'run_date':run_date,'runs_today':old['runs_today']+(0 if duplicate else 1) if old.get('run_date')==run_date else (0 if duplicate else 1),'mode':mode,'exp':exp,'level':level,'level_exp':level_exp,'exp_to_next_level':100,'trend_events':trend_total,'processed_updates':processed,'duplicate_import':duplicate,'ranking_type':ranking_type,'rankings':rankings}
- latest={'updated_at':stamp,'ranking_type':ranking_type,'items':items}
+ latest={'updated_at':stamp,'ranking_type':ranking_type,'items':raw if mode=='live' else items}
  if ranking_mode:
-  other_type='24h' if ranking_type=='1h' else '1h'; other=read_json(ranking_dir(other_type)/'current.json',{}).get('items',[])
-  crosses=add_cross_signals(items,other,ranking_type)
+  other_type=None if ranking_type=='api' else '24h' if ranking_type=='1h' else '1h'
+  other=[] if other_type is None else read_json(ranking_dir(other_type)/'current.json',{}).get('items',[])
+  crosses=[] if ranking_type=='api' else add_cross_signals(items,other,ranking_type)
   sale_events=apply_sale_watch(items,previous) if ranking_type=='24h' else []
   payload={'fetched_at':stamp,'ranking_type':ranking_type,'items':items}; atomic_write(ranking_dir(ranking_type)/'current.json',payload); save_history(now,payload,ranking_type)
   generate_analytics(ranking_type,stamp)
@@ -252,14 +270,17 @@ def main():
   candidates.extend(cross_candidate(x,now) for x in crosses)
   if ranking_type=='24h': candidates.extend(sale_candidates(items,candidates,now))
   atomic_write(posts_path(ranking_type),candidates[-200:])
-  daily=items if ranking_type=='24h' else other; active=[x for x in daily if x.get('on_sale')]
+  daily=[] if ranking_type=='api' else items if ranking_type=='24h' else other; active=[x for x in daily if x.get('on_sale')]
   sale_seen=set(old.get('sale_seen_events',[])); sale_seen.update(x['key'] for x in sale_events)
   sale_products=set(old.get('sale_products_seen',[])); sale_products.update(stable_key(x) for x in active)
   status['sale_seen_events']=sorted(sale_seen)[-1000:]; status['sale_products_seen']=sorted(sale_products)
   status['sale_achievements']={'sale_hunter_1':len(sale_products)>=10,'sale_hunter_2':len(sale_products)>=100,'bargain_radar':any((x.get('discount_rate') or 0)>=50 for x in active) or old.get('sale_achievements',{}).get('bargain_radar',False),'hot_deal':any(x.get('strong_hot_sale') for x in active) or old.get('sale_achievements',{}).get('hot_deal',False)}
-  status['market_signals']={'1h_max_rise':max([x.get('rank_change',0) for x in (items if ranking_type=='1h' else other)]+[0]),'24h_max_rise':max([x.get('rank_change',0) for x in daily]+[0]),'cross_trend':len(crosses),'new_entry':sum(x.get('status') in ('new','reentry') for x in items),'active_sales':len(active),'hot_sales':sum(bool(x.get('hot_sale')) for x in active),'max_discount':max([int(x.get('discount_rate') or 0) for x in active]+[0])}
+  if ranking_type=='api':
+   status['market_signals']={**old.get('market_signals',{}),'api_max_rise':max([x.get('rank_change',0) for x in items]+[0]),'api_new_entry':sum(x.get('status') in ('new','reentry') for x in items),'api_strong_momentum':sum(bool(x.get('strong_momentum')) for x in items)}
+  else:
+   status['market_signals']={'1h_max_rise':max([x.get('rank_change',0) for x in (items if ranking_type=='1h' else other)]+[0]),'24h_max_rise':max([x.get('rank_change',0) for x in daily]+[0]),'cross_trend':len(crosses),'new_entry':sum(x.get('status') in ('new','reentry') for x in items),'active_sales':len(active),'hot_sales':sum(bool(x.get('hot_sale')) for x in active),'max_discount':max([int(x.get('discount_rate') or 0) for x in active]+[0])}
   watch_fields={'public_watch_status':'ok','last_public_watch_success':stamp,'last_public_watch_error':None} if mode=='public' else {'public_watch_status':'age_gate','last_public_watch_error':'FANZA age verification page reached'} if age_gate else {}
-  status.update(**watch_fields,input_source='manual_import' if mode=='import' else 'public_watch')
+  status.update(**watch_fields,input_source='dmm_api_rank' if mode=='live' else 'manual_import' if mode=='import' else 'public_watch',api_auto_collection='ONLINE' if mode=='live' else old.get('api_auto_collection','WAITING'))
  atomic_write(LATEST_PATH,latest); atomic_write(STATUS_PATH,status)
  if ranking_mode:
   report_dir,pages_dir=weekly_report_dirs()
