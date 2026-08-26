@@ -1,6 +1,6 @@
 {
   "first_run": "2026-08-21T06:42:04+09:00",
-  "last_run": "2026-08-26T21:25:59+09:00",
+  "last_run": "2026-08-26T22:00:56+09:00",
   "total_runs": 73,
   "total_items_collected": 1281,
   "items_collected": 100,
@@ -652,5 +652,6 @@
     "bargain_radar": true,
     "hot_deal": true
   },
-  "api_auto_collection": "ONLINE"
+  "api_auto_collection": "ONLINE",
+  "duplicate_api_snapshot": true
 }
