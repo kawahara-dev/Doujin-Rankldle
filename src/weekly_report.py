@@ -50,13 +50,15 @@ def _biggest_movers(observations, limit=10):
  return [row[1] for row in sorted(movers.values(), key=lambda row: (-row[0], row[1]["current_rank"], row[1]["id"], row[1]["ranking_type"]))[:limit]]
 
 
-def _creator_insights(overview, price, sale):
+def _creator_insights(overview, price, sale, api_mode=False):
  """Create at most three deterministic observations without causal claims."""
  insights = []
- largest = max(overview["max_rank_rise_1h"], overview["max_rank_rise_24h"])
+ largest = overview.get("max_rank_rise_api",0) if api_mode else max(overview["max_rank_rise_1h"], overview["max_rank_rise_24h"])
  if largest:
-  period = "1H" if overview["max_rank_rise_1h"] >= overview["max_rank_rise_24h"] else "24H"
+  period = "API" if api_mode else "1H" if overview["max_rank_rise_1h"] >= overview["max_rank_rise_24h"] else "24H"
   insights.append(f"今週の最大上昇は{period}ランキングで+{largest}でした。")
+ if api_mode and overview["top10_unique_products"]:
+  insights.append(f"APIランキング上位で{overview['top10_unique_products']}作品を観測しました。")
  if overview["new_entries"] or overview["reentries"]:
   insights.append(f"NEWを{overview['new_entries']}件、REENTRYを{overview['reentries']}件観測しました。")
  if overview["cross_trend_events"]:
@@ -70,7 +72,7 @@ def _creator_insights(overview, price, sale):
 
 def _x_post_text(status, overview, price, sale, insights):
  heading = "今週途中の暫定集計だよ〜！" if status == "PARTIAL" else "1週間のランキングまとめたよ〜！"
- largest = max(overview["max_rank_rise_1h"], overview["max_rank_rise_24h"])
+ largest = max(overview.get("max_rank_rise_api",0),overview["max_rank_rise_1h"], overview["max_rank_rise_24h"])
  highlight = insights[-1] if insights else "今週もランキングの動きを観測しました。"
  return ("📊 今週のFANZA同人トレンド\n\n"
          f"{heading}\n\n"
@@ -102,7 +104,8 @@ def _snapshots(kind, start, end, fanza_dir):
 
 def generate_weekly_report(now=None, fanza_dir=FANZA_DIR, report_dir=REPORT_DIR, pages_dir=PAGES_DIR):
  now = now or datetime.now(JST); start, end = week_bounds(now)
- series = {kind: _snapshots(kind, start, end, Path(fanza_dir)) for kind in ("1h", "24h")}
+ api_rows=_snapshots("api",start,end,Path(fanza_dir)); api_mode=bool(api_rows)
+ series = {"api":api_rows} if api_mode else {kind: _snapshots(kind, start, end, Path(fanza_dir)) for kind in ("1h", "24h")}
  observations = [(kind, captured, item) for kind, snapshots in series.items() for captured, items in snapshots for item in items if _key(item)]
  products = {}; top10 = set()
  for kind, captured, item in observations:
@@ -110,7 +113,7 @@ def generate_weekly_report(now=None, fanza_dir=FANZA_DIR, report_dir=REPORT_DIR,
   if 0 < _rank(item) <= 10: top10.add(key)
  # Prefer the latest 24H observation for price/sale statistics and count each work once.
  market = {}
- for captured, items in series["1h"] + series["24h"]:
+ for captured, items in [row for snapshots in series.values() for row in snapshots]:
   for item in items:
    if _key(item): market[_key(item)] = item
  prices = [int(x.get("price")) for x in market.values() if isinstance(x.get("price"), int) and not isinstance(x.get("price"), bool) and x["price"] >= 0]
@@ -132,8 +135,8 @@ def generate_weekly_report(now=None, fanza_dir=FANZA_DIR, report_dir=REPORT_DIR,
  top_stays.sort(key=lambda x: (-x["top10_snapshots"], x["id"]))
  # A propagation is a positive 1H move followed by a positive 24H move for the same work.
  propagation = set()
- hourly_rises = [(at, _key(x)) for at, items in series["1h"] for x in items if int(x.get("rank_change") or 0) > 0]
- for at, items in series["24h"]:
+ hourly_rises = [(at, _key(x)) for at, items in series.get("1h",[]) for x in items if int(x.get("rank_change") or 0) > 0]
+ for at, items in series.get("24h",[]):
   daily = {_key(x) for x in items if int(x.get("rank_change") or 0) > 0}
   propagation.update(key for earlier, key in hourly_rises if earlier <= at and key in daily)
  days = {captured.date() for snapshots in series.values() for captured, _ in snapshots}
@@ -141,21 +144,23 @@ def generate_weekly_report(now=None, fanza_dir=FANZA_DIR, report_dir=REPORT_DIR,
  complete = expected_days == 7 and len(days) == 7 and all(series.values())
  overview = {"unique_products": len(products), "top10_unique_products": len(top10), "new_entries": len(entries),
    "reentries": len(reentries), "cross_trend_events": len(propagation),
-   "max_rank_rise_1h": max([int(x.get("rank_change") or 0) for _, items in series["1h"] for x in items] + [0]),
-   "max_rank_rise_24h": max([int(x.get("rank_change") or 0) for _, items in series["24h"] for x in items] + [0])}
+   "max_rank_rise_1h": max([int(x.get("rank_change") or 0) for _, items in series.get("1h",[]) for x in items] + [0]),
+   "max_rank_rise_24h": max([int(x.get("rank_change") or 0) for _, items in series.get("24h",[]) for x in items] + [0]),
+   "max_rank_rise_api": max([int(x.get("rank_change") or 0) for _, items in series.get("api",[]) for x in items] + [0])}
  price_analysis = {"average_price": round(statistics.mean(prices)) if prices else 0, "median_price": round(statistics.median(prices)) if prices else 0,
    "top10_average_price": round(statistics.mean(top_prices)) if top_prices else 0, "top10_median_price": round(statistics.median(top_prices)) if top_prices else 0, "price_buckets": buckets}
  sale_analysis = {"sale_product_count": len(sales), "sale_share": _percent(len(sales), len(market)), "top10_sale_count": len(top_sales),
    "top10_sale_share": _percent(len(top_sales), len(top10)), "average_discount_rate": round(statistics.mean(discounts)) if discounts else 0,
    "max_discount_rate": max(discounts + [0]), "discount_buckets": {"under_20": sum(0 < x < 20 for x in discounts), "20_29": sum(20 <= x < 30 for x in discounts), "30_49": sum(30 <= x < 50 for x in discounts), "50_plus": sum(x >= 50 for x in discounts)}}
  status = "COMPLETE" if complete else "PARTIAL"
- insights = _creator_insights(overview, price_analysis, sale_analysis)
+ insights = _creator_insights(overview, price_analysis, sale_analysis,api_mode)
  stable_top10 = top_stays[:10]
  payload = {
   "week_start": start.date().isoformat(), "week_end": end.date().isoformat(),
   "generated_at": now.astimezone(JST).replace(microsecond=0).isoformat(), "data_status": status,
   "observed_days": len(days), "expected_days": expected_days,
   "snapshot_counts": {kind: len(rows) for kind, rows in series.items()},
+  "ranking_source": "api" if api_mode else "legacy",
   "market_overview": overview,
   "price_analysis": price_analysis,
   "sale_analysis": sale_analysis,

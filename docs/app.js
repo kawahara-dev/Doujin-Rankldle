@@ -11,14 +11,14 @@ const ACHIEVEMENTS = [
   { name: "DATA COLLECTOR II", kind: "items", target: 1000 },
   { name: "DATA COLLECTOR III", kind: "items", target: 10000 },
 ];
-const SCHEDULE_UTC_HOURS = [3, 9, 14, 22];
+const SCHEDULE_UTC_HOURS = [0, 5, 13, 18];
 let nextScan = null;
 let knownLastRun = null;
 let loading = false;
-let selectedRanking = "24h";
-let rankingData = { "1h": { items: [] }, "24h": { items: [] } };
-let analyticsData = { "1h": { items: [] }, "24h": { items: [] } };
-const expandedAnalytics = { "1h": new Set(), "24h": new Set() };
+let selectedRanking = "api";
+let rankingData = { "api": { items: [] }, "1h": { items: [] }, "24h": { items: [] } };
+let analyticsData = { "api": { items: [] }, "1h": { items: [] }, "24h": { items: [] } };
+const expandedAnalytics = { "api": new Set(), "1h": new Set(), "24h": new Set() };
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -62,7 +62,7 @@ function renderAchievements(scans, items) {
 }
 
 function renderModules(mode, rankings = {}) {
-  const modules = ["1h", "24h"].map(type => ({ name: `FANZA ${type.toUpperCase()}`, enabled: true, status: rankings[`fanza_${type}`] || {} }));
+  const modules = ["api", "1h", "24h"].map(type => ({ name: type === "api" ? "FANZA API AUTO" : `FANZA ${type.toUpperCase()} · SPECIAL OBSERVATION`, enabled: true, status: rankings[`fanza_${type}`] || {} }));
   el("modules").replaceChildren(...modules.filter((module) => module.enabled).map((module) => {
     const card = document.createElement("article");
     card.className = "module active";
@@ -123,7 +123,7 @@ function renderItems(items) {
   const analytics = new Map((analyticsData[selectedRanking]?.items || []).map(item => [item.key, item]));
   el("productList").replaceChildren(...items.map((item) => {
     const row = document.createElement("article"); row.className = "product-row";
-    const link = document.createElement("a"); link.className = "product"; link.href = item.url; link.target = "_blank"; link.rel = "noopener noreferrer sponsored";
+    const link = document.createElement("a"); link.className = "product"; link.href = selectedRanking === "api" ? (item.affiliate_url || item.url) : item.url; link.target = "_blank"; link.rel = "noopener noreferrer sponsored";
     const rank = document.createElement("span"); rank.className = "rank"; rank.textContent = `#${item.rank}`;
     const title = document.createElement("span"); title.className = "title"; title.textContent = item.title;
     const price = document.createElement("span"); price.className = "price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
@@ -193,7 +193,7 @@ function renderWeekly(report) {
 function selectRanking(type) {
   selectedRanking = type;
   document.querySelectorAll("[data-ranking]").forEach(button => button.classList.toggle("active", button.dataset.ranking === type));
-  el("trendLabel").textContent = type === "1h" ? "🔥 SHORT TREND / 1H RANKING" : "📊 DAILY TREND / 24H RANKING";
+  el("trendLabel").textContent = type === "api" ? "📡 API RANKING / FANZA API 人気順" : type === "1h" ? "🔥 SPECIAL OBSERVATION / 1H" : "📊 SPECIAL OBSERVATION / 24H";
   renderItems(rankingData[type]?.items || []);
   const timestamp = rankingData[type]?.fetched_at;
   el("updatedAt").textContent = timestamp ? `UPDATED ${new Date(timestamp).toLocaleString("ja-JP")}` : "未取得";
@@ -238,13 +238,13 @@ async function loadDashboard() {
   if (loading) return;
   loading = true;
   try {
-    const [latestResponse, statusResponse, posts1h, posts24h, rank1h, rank24h, analytics1h, analytics24h, weekly] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/posts/fanza_1h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_24h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_1h.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_24h.json", { cache: "no-store" }).catch(() => null), fetch("data/reports/weekly/latest.json", { cache: "no-store" }).catch(() => null)]);
+    const [latestResponse, statusResponse, postsApi, posts1h, posts24h, rankApi, rank1h, rank24h, analyticsApi, analytics1h, analytics24h, weekly] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/posts/fanza_api_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_1h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_24h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/api/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_api.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_1h.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_24h.json", { cache: "no-store" }).catch(() => null), fetch("data/reports/weekly/latest.json", { cache: "no-store" }).catch(() => null)]);
     if (!latestResponse.ok || !statusResponse.ok) throw new Error("データ取得に失敗しました");
     const [latest, status] = await Promise.all([latestResponse.json(), statusResponse.json()]);
     const items = Array.isArray(latest.items) ? latest.items : [];
-    rankingData = { "1h": rank1h?.ok ? await rank1h.json() : { items: [] }, "24h": rank24h?.ok ? await rank24h.json() : { items: [] } };
-    analyticsData = { "1h": analytics1h?.ok ? await analytics1h.json() : { items: [] }, "24h": analytics24h?.ok ? await analytics24h.json() : { items: [] } };
-    const candidates = [...(posts1h?.ok ? await posts1h.json() : []), ...(posts24h?.ok ? await posts24h.json() : [])];
+    rankingData = { "api": rankApi?.ok ? await rankApi.json() : { items: [] }, "1h": rank1h?.ok ? await rank1h.json() : { items: [] }, "24h": rank24h?.ok ? await rank24h.json() : { items: [] } };
+    analyticsData = { "api": analyticsApi?.ok ? await analyticsApi.json() : { items: [] }, "1h": analytics1h?.ok ? await analytics1h.json() : { items: [] }, "24h": analytics24h?.ok ? await analytics24h.json() : { items: [] } };
+    const candidates = [...(postsApi?.ok ? await postsApi.json() : []), ...(posts1h?.ok ? await posts1h.json() : []), ...(posts24h?.ok ? await posts24h.json() : [])];
     const scans = number(status.total_runs);
     const totalItems = number(status.total_items_collected ?? status.items_collected);
     const exp = number(status.exp ?? scans * 5 + totalItems);
