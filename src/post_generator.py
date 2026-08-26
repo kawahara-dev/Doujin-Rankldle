@@ -207,7 +207,8 @@ def generate_candidates(items, existing, now: datetime, cooldown_hours: int = 24
     def priority(item):
         previous=item.get("previous_rank")
         return (6 if item.get("current_rank",999)<=10 and (previous is None or previous>10) else 5 if item.get("rank_change",0)>=10 else 4 if item.get("rank_change",0)>=5 else 3 if item.get("status")=="new" else 2 if item.get("status")=="reentry" else 1 if item.get("strong_momentum") else 0)
-    for item in sorted(items, key=lambda x: (priority(x),x.get("trend_score",0)), reverse=True):
+    ordered=sorted(items,key=lambda x:(priority(x),x.get("trend_score",0)),reverse=True) if ranking_type=="api" else sorted(items,key=lambda x:x.get("trend_score",0),reverse=True)
+    for item in ordered:
         if item.get("trend_score", 0) < 20 and not (ranking_type == "api" and item.get("strong_momentum")): continue
         key = item["key"]; important = item["current_rank"] == 1 or item.get("rank_change", 0) >= 50 or (item["current_rank"] <= 10 < (item.get("previous_rank") or 999))
         if key in recent and recent[key] > cutoff and not important: continue
