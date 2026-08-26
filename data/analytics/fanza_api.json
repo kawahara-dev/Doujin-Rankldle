@@ -1,7 +1,7 @@
 {
   "ranking_type": "api",
-  "generated_at": "2026-08-27T05:03:50+09:00",
-  "snapshot_count": 3,
+  "generated_at": "2026-08-27T07:14:24+09:00",
+  "snapshot_count": 4,
   "items": [
     {
       "key": "d_761881",
@@ -9,10 +9,11 @@
       "rank_history": [
         1,
         1,
+        1,
         1
       ],
-      "top10_count": 3,
-      "sample_count": 3,
+      "top10_count": 4,
+      "sample_count": 4,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -22,10 +23,11 @@
       "rank_history": [
         2,
         2,
+        2,
         2
       ],
-      "top10_count": 3,
-      "sample_count": 3,
+      "top10_count": 4,
+      "sample_count": 4,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -35,10 +37,11 @@
       "rank_history": [
         3,
         3,
+        3,
         3
       ],
-      "top10_count": 3,
-      "sample_count": 3,
+      "top10_count": 4,
+      "sample_count": 4,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -48,10 +51,11 @@
       "rank_history": [
         4,
         4,
+        5,
         5
       ],
-      "top10_count": 3,
-      "sample_count": 3,
+      "top10_count": 4,
+      "sample_count": 4,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -61,10 +65,11 @@
       "rank_history": [
         5,
         5,
+        6,
         6
       ],
-      "top10_count": 3,
-      "sample_count": 3,
+      "top10_count": 4,
+      "sample_count": 4,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -74,10 +79,11 @@
       "rank_history": [
         6,
         6,
+        4,
         4
       ],
-      "top10_count": 3,
-      "sample_count": 3,
+      "top10_count": 4,
+      "sample_count": 4,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -87,10 +93,11 @@
       "rank_history": [
         7,
         7,
+        7,
         7
       ],
-      "top10_count": 3,
-      "sample_count": 3,
+      "top10_count": 4,
+      "sample_count": 4,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -100,10 +107,11 @@
       "rank_history": [
         8,
         8,
+        8,
         8
       ],
-      "top10_count": 3,
-      "sample_count": 3,
+      "top10_count": 4,
+      "sample_count": 4,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -113,10 +121,11 @@
       "rank_history": [
         9,
         9,
+        9,
         9
       ],
-      "top10_count": 3,
-      "sample_count": 3,
+      "top10_count": 4,
+      "sample_count": 4,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -126,11 +135,12 @@
       "rank_history": [
         10,
         11,
+        15,
         15
       ],
       "top10_count": 1,
-      "sample_count": 3,
-      "top10_rate": 33,
+      "sample_count": 4,
+      "top10_rate": 25,
       "analytics_status": "VOLATILE"
     },
     {
@@ -139,11 +149,12 @@
       "rank_history": [
         11,
         10,
+        10,
         10
       ],
-      "top10_count": 2,
-      "sample_count": 3,
-      "top10_rate": 67,
+      "top10_count": 3,
+      "sample_count": 4,
+      "top10_rate": 75,
       "analytics_status": "ACTIVE"
     },
     {
@@ -152,10 +163,11 @@
       "rank_history": [
         12,
         12,
-        11
+        11,
+        14
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -165,10 +177,11 @@
       "rank_history": [
         13,
         13,
-        16
+        16,
+        17
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -178,10 +191,11 @@
       "rank_history": [
         14,
         14,
+        12,
         12
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -191,10 +205,11 @@
       "rank_history": [
         15,
         16,
+        21,
         21
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -204,10 +219,11 @@
       "rank_history": [
         16,
         15,
-        14
+        14,
+        13
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -217,10 +233,11 @@
       "rank_history": [
         17,
         17,
+        18,
         18
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -230,10 +247,11 @@
       "rank_history": [
         18,
         18,
-        17
+        17,
+        16
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -243,10 +261,11 @@
       "rank_history": [
         19,
         20,
+        22,
         22
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -256,10 +275,11 @@
       "rank_history": [
         20,
         19,
-        13
+        13,
+        11
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -269,10 +289,11 @@
       "rank_history": [
         21,
         21,
+        20,
         20
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -282,10 +303,11 @@
       "rank_history": [
         22,
         22,
+        19,
         19
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -295,10 +317,11 @@
       "rank_history": [
         23,
         24,
+        25,
         25
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -308,10 +331,11 @@
       "rank_history": [
         24,
         23,
+        23,
         23
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -321,10 +345,11 @@
       "rank_history": [
         25,
         25,
+        24,
         24
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -334,10 +359,11 @@
       "rank_history": [
         26,
         26,
+        32,
         32
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -347,10 +373,11 @@
       "rank_history": [
         27,
         27,
+        27,
         27
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -360,10 +387,11 @@
       "rank_history": [
         28,
         28,
+        28,
         28
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -373,10 +401,11 @@
       "rank_history": [
         29,
         29,
+        29,
         29
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -386,10 +415,11 @@
       "rank_history": [
         30,
         31,
+        33,
         33
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -399,10 +429,11 @@
       "rank_history": [
         31,
         32,
+        35,
         35
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -412,10 +443,11 @@
       "rank_history": [
         32,
         30,
+        26,
         26
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -425,10 +457,11 @@
       "rank_history": [
         33,
         34,
-        40
+        40,
+        43
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -438,10 +471,11 @@
       "rank_history": [
         34,
         33,
+        31,
         31
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -451,10 +485,11 @@
       "rank_history": [
         35,
         35,
-        39
+        39,
+        40
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -464,10 +499,11 @@
       "rank_history": [
         36,
         36,
+        34,
         34
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -477,10 +513,11 @@
       "rank_history": [
         37,
         38,
+        44,
         44
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -490,10 +527,11 @@
       "rank_history": [
         38,
         37,
+        30,
         30
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -503,10 +541,11 @@
       "rank_history": [
         39,
         40,
+        38,
         38
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -516,10 +555,11 @@
       "rank_history": [
         40,
         39,
-        36
+        36,
+        37
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -529,10 +569,11 @@
       "rank_history": [
         41,
         41,
+        46,
         46
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -542,10 +583,11 @@
       "rank_history": [
         42,
         42,
-        37
+        37,
+        36
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -555,10 +597,11 @@
       "rank_history": [
         43,
         45,
+        48,
         48
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -568,10 +611,11 @@
       "rank_history": [
         44,
         44,
+        47,
         47
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -581,10 +625,11 @@
       "rank_history": [
         45,
         43,
+        42,
         42
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -594,10 +639,11 @@
       "rank_history": [
         46,
         48,
+        49,
         49
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -607,10 +653,11 @@
       "rank_history": [
         47,
         46,
-        41
+        41,
+        39
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -620,10 +667,11 @@
       "rank_history": [
         48,
         47,
+        45,
         45
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -633,10 +681,11 @@
       "rank_history": [
         49,
         49,
+        53,
         53
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -646,10 +695,11 @@
       "rank_history": [
         50,
         50,
+        52,
         52
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -659,10 +709,11 @@
       "rank_history": [
         51,
         52,
+        54,
         54
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -672,10 +723,11 @@
       "rank_history": [
         52,
         51,
+        50,
         50
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -685,10 +737,11 @@
       "rank_history": [
         53,
         53,
+        51,
         51
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -698,10 +751,11 @@
       "rank_history": [
         54,
         55,
+        56,
         56
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -711,10 +765,11 @@
       "rank_history": [
         55,
         56,
+        55,
         55
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -724,10 +779,11 @@
       "rank_history": [
         56,
         57,
+        63,
         63
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -737,10 +793,11 @@
       "rank_history": [
         57,
         61,
-        68
+        68,
+        67
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -750,10 +807,11 @@
       "rank_history": [
         58,
         58,
+        57,
         57
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -763,10 +821,11 @@
       "rank_history": [
         59,
         54,
-        43
+        43,
+        41
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -776,10 +835,11 @@
       "rank_history": [
         60,
         59,
+        60,
         60
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -789,10 +849,11 @@
       "rank_history": [
         61,
         60,
+        64,
         64
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -802,10 +863,11 @@
       "rank_history": [
         62,
         62,
+        65,
         65
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -815,10 +877,11 @@
       "rank_history": [
         63,
         63,
+        61,
         61
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -828,10 +891,11 @@
       "rank_history": [
         64,
         64,
+        62,
         62
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -841,10 +905,11 @@
       "rank_history": [
         65,
         65,
-        69
+        69,
+        71
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -854,10 +919,11 @@
       "rank_history": [
         66,
         70,
-        71
+        71,
+        70
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -867,10 +933,11 @@
       "rank_history": [
         67,
         67,
+        66,
         66
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -880,10 +947,11 @@
       "rank_history": [
         68,
         66,
+        58,
         58
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -893,10 +961,11 @@
       "rank_history": [
         69,
         69,
-        67
+        67,
+        69
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -906,10 +975,11 @@
       "rank_history": [
         70,
         71,
+        72,
         72
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -919,10 +989,11 @@
       "rank_history": [
         71,
         74,
-        79
+        79,
+        80
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -932,10 +1003,11 @@
       "rank_history": [
         72,
         72,
-        70
+        70,
+        68
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -945,10 +1017,11 @@
       "rank_history": [
         73,
         68,
+        59,
         59
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -958,10 +1031,11 @@
       "rank_history": [
         74,
         76,
+        81,
         81
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -971,10 +1045,11 @@
       "rank_history": [
         75,
         73,
-        76
+        76,
+        78
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -984,10 +1059,11 @@
       "rank_history": [
         76,
         75,
+        74,
         74
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -997,10 +1073,11 @@
       "rank_history": [
         77,
         78,
-        80
+        80,
+        79
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1010,10 +1087,11 @@
       "rank_history": [
         78,
         77,
-        78
+        78,
+        77
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1023,10 +1101,11 @@
       "rank_history": [
         79,
         79,
-        77
+        77,
+        76
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1036,10 +1115,11 @@
       "rank_history": [
         80,
         80,
+        75,
         75
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1049,10 +1129,11 @@
       "rank_history": [
         81,
         81,
-        90
+        90,
+        92
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1062,10 +1143,11 @@
       "rank_history": [
         82,
         86,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1075,10 +1157,11 @@
       "rank_history": [
         83,
         83,
+        87,
         87
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1088,10 +1171,11 @@
       "rank_history": [
         84,
         82,
+        82,
         82
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1101,10 +1185,11 @@
       "rank_history": [
         85,
         89,
+        97,
         97
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1114,10 +1199,11 @@
       "rank_history": [
         86,
         84,
+        83,
         83
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1127,10 +1213,11 @@
       "rank_history": [
         87,
         85,
+        84,
         84
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1140,10 +1227,11 @@
       "rank_history": [
         88,
         90,
+        94,
         94
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1153,10 +1241,11 @@
       "rank_history": [
         89,
         92,
-        92
+        92,
+        90
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1166,10 +1255,11 @@
       "rank_history": [
         90,
         88,
+        91,
         91
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1179,10 +1269,11 @@
       "rank_history": [
         91,
         87,
+        86,
         86
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1192,10 +1283,11 @@
       "rank_history": [
         92,
         91,
+        93,
         93
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1205,10 +1297,11 @@
       "rank_history": [
         93,
         93,
+        85,
         85
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1218,10 +1311,11 @@
       "rank_history": [
         94,
         94,
-        88
+        88,
+        89
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1231,10 +1325,11 @@
       "rank_history": [
         95,
         95,
-        89
+        89,
+        88
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1244,10 +1339,11 @@
       "rank_history": [
         96,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1257,10 +1353,11 @@
       "rank_history": [
         97,
         98,
+        99,
         99
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1270,10 +1367,11 @@
       "rank_history": [
         98,
         97,
+        96,
         96
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1283,10 +1381,11 @@
       "rank_history": [
         99,
         99,
+        98,
         98
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1296,10 +1395,11 @@
       "rank_history": [
         100,
         100,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1309,10 +1409,11 @@
       "rank_history": [
         null,
         96,
+        73,
         73
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1322,10 +1423,11 @@
       "rank_history": [
         null,
         null,
+        95,
         95
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1335,10 +1437,11 @@
       "rank_history": [
         null,
         null,
+        100,
         100
       ],
       "top10_count": 0,
-      "sample_count": 3,
+      "sample_count": 4,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     }

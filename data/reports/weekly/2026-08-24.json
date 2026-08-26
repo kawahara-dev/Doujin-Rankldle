@@ -1,12 +1,12 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-27T05:03:50+09:00",
+  "generated_at": "2026-08-27T07:14:24+09:00",
   "data_status": "PARTIAL",
   "observed_days": 2,
   "expected_days": 4,
   "snapshot_counts": {
-    "api": 3
+    "api": 4
   },
   "ranking_source": "api",
   "market_overview": {
@@ -65,6 +65,67 @@
       "30_49": 0,
       "50_plus": 0
     }
+  },
+  "top_genres": [
+    {
+      "name": "成人向け",
+      "observed_products": 100,
+      "top10_products": 11
+    },
+    {
+      "name": "男性向け",
+      "observed_products": 100,
+      "top10_products": 11
+    },
+    {
+      "name": "中出し",
+      "observed_products": 78,
+      "top10_products": 9
+    },
+    {
+      "name": "専売",
+      "observed_products": 67,
+      "top10_products": 9
+    },
+    {
+      "name": "巨乳",
+      "observed_products": 67,
+      "top10_products": 10
+    },
+    {
+      "name": "おっぱい",
+      "observed_products": 66,
+      "top10_products": 7
+    },
+    {
+      "name": "フェラ",
+      "observed_products": 40,
+      "top10_products": 5
+    },
+    {
+      "name": "コミケ108（2026夏）",
+      "observed_products": 38,
+      "top10_products": 9
+    },
+    {
+      "name": "制服",
+      "observed_products": 33,
+      "top10_products": 4
+    },
+    {
+      "name": "パイズリ",
+      "observed_products": 29,
+      "top10_products": 4
+    }
+  ],
+  "top_circles": [],
+  "new_release_products": 35,
+  "new_release_share": 35,
+  "metadata_coverage": {
+    "genre": 100,
+    "circle": 0,
+    "release_date": 100,
+    "total_products": 103
   },
   "ranking_behavior": {
     "top10_entry_events": 11,
@@ -165,124 +226,124 @@
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_805647",
       "title": "サキュバス性徒会シコシコ執行部4前編",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_805704",
       "title": "ファンティアまとめ本",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_806152",
       "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_755081",
       "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
-      "top10_snapshots": 2,
-      "observation_rate": 67
+      "top10_snapshots": 3,
+      "observation_rate": 75
     }
   ],
   "top10_stays": [
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_805647",
       "title": "サキュバス性徒会シコシコ執行部4前編",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_805704",
       "title": "ファンティアまとめ本",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_806152",
       "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_755081",
       "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
-      "top10_snapshots": 2,
-      "observation_rate": 67
+      "top10_snapshots": 3,
+      "observation_rate": 75
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
