@@ -31,8 +31,20 @@ class StubProvider:
 class VerifyDmmApiTests(unittest.TestCase):
     def test_normalization_and_content_id_key(self):
         result = normalize_items([{"content_id": "d_1", "title": "作品", "prices": {"price": "1,200"}, "URL": "normal", "affiliateURL": "affiliate", "imageURL": {"large": "image"}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)
-        self.assertEqual(result[0], {"rank": 1, "id": "d_1", "key": "d_1", "title": "作品", "price": 1200, "url": "normal", "affiliate_url": "affiliate", "image_url": "image", "service": "doujin", "floor": "digital_doujin"})
+        self.assertEqual(result[0], {"rank": 1, "id": "d_1", "key": "d_1", "title": "作品", "price": 1200, "genres": [], "circle": None, "release_date": None, "url": "normal", "affiliate_url": "affiliate", "image_url": "image", "service": "doujin", "floor": "digital_doujin"})
         self.assertEqual(item_key({"content_id": "d_2"}), "d_2")
+
+    def test_optional_metadata_normalization(self):
+        raw={"content_id":"d_1","date":"2026-08-27T12:30:00+09:00","iteminfo":{"genre":[{"id":"2","name":" 人妻 "},{"id":"1","name":"巨乳"},{"id":"2","name":"人妻"},{"id":"x","name":""}],"circle":{"id":"c1","name":" Circle "}}}
+        item=normalize_items([raw],service=DOUJIN_SERVICE,floor=DOUJIN_FLOOR)[0]
+        self.assertEqual(item["genres"],[{"id":"2","name":"人妻"},{"id":"1","name":"巨乳"}])
+        self.assertEqual(item["circle"],{"id":"c1","name":"Circle"})
+        self.assertEqual(item["release_date"],"2026-08-27")
+
+    def test_missing_and_malformed_metadata_are_safe(self):
+        raw=[{"content_id":"a","date":"next Thursday"},{"content_id":"b","date":"","iteminfo":{"genre":{},"circle":{"name":""}}}]
+        items=normalize_items(raw,service=DOUJIN_SERVICE,floor=DOUJIN_FLOOR)
+        self.assertTrue(all(x["genres"] == [] and x["circle"] is None and x["release_date"] is None for x in items))
 
     def test_overlap_exact_and_average(self):
         result = compare(items(["a", "b", "c", "d"]), items(["a", "c", "b", "x"]))

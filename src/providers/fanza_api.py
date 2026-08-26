@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+from datetime import date, datetime
 from typing import Any
 from urllib.error import HTTPError
 from urllib.parse import urlencode
@@ -83,6 +84,43 @@ def _price(item: dict[str, Any]) -> int:
         return 0
 
 
+def _named(value: Any) -> dict[str, str | None] | None:
+    """Keep only a non-empty DMM id/name pair."""
+    if not isinstance(value, dict):
+        return None
+    name = str(value.get("name") or "").strip()
+    if not name:
+        return None
+    identifier = str(value.get("id") or "").strip() or None
+    return {"id": identifier, "name": name}
+
+
+def _genres(iteminfo: Any) -> list[dict[str, str | None]]:
+    values = iteminfo.get("genre") if isinstance(iteminfo, dict) else None
+    if isinstance(values, dict):
+        values = [values]
+    if not isinstance(values, list):
+        return []
+    unique: dict[tuple[str | None, str], dict[str, str | None]] = {}
+    for value in values:
+        genre = _named(value)
+        if genre:
+            unique[(genre["id"], genre["name"])] = genre
+    return sorted(unique.values(), key=lambda genre: (genre["name"], genre["id"] or ""))
+
+
+def _release_date(value: Any) -> str | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    text = value.strip()
+    # Accept an ISO calendar date, or the unambiguous date portion of an ISO timestamp.
+    try:
+        parsed = date.fromisoformat(text) if len(text) == 10 else datetime.fromisoformat(text.replace("Z", "+00:00")).date()
+    except ValueError:
+        return None
+    return parsed.isoformat()
+
+
 def normalize_items(raw: Any, *, service: str, floor: str) -> list[dict[str, Any]]:
     if not isinstance(raw, list) or not raw:
         raise RuntimeError("FANZA API response has no items")
@@ -93,6 +131,7 @@ def normalize_items(raw: Any, *, service: str, floor: str) -> list[dict[str, Any
         if not content_id:
             raise RuntimeError("FANZA API item has no content_id")
         images = item.get("imageURL") or {}
+        iteminfo = item.get("iteminfo") if isinstance(item.get("iteminfo"), dict) else {}
         normalized.append(
             {
                 "rank": rank,
@@ -100,6 +139,9 @@ def normalize_items(raw: Any, *, service: str, floor: str) -> list[dict[str, Any
                 "key": content_id,
                 "title": str(item.get("title") or ""),
                 "price": _price(item),
+                "genres": _genres(iteminfo),
+                "circle": _named(iteminfo.get("circle")),
+                "release_date": _release_date(item.get("date")),
                 "url": str(item.get("URL") or ""),
                 "affiliate_url": str(item.get("affiliateURL") or ""),
                 "image_url": str(images.get("large") or images.get("list") or images.get("small") or ""),

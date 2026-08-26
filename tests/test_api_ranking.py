@@ -67,6 +67,22 @@ class ApiRankingMigrationTest(unittest.TestCase):
    self.assertEqual(history.read_bytes(),before)
    self.assertTrue(json.loads((root/"status.json").read_text())["duplicate_api_snapshot"])
 
+ def test_api_metadata_refresh_only_updates_current_and_latest(self):
+  with tempfile.TemporaryDirectory() as directory:
+   root=Path(directory); initial=[self.item(1,genres=[],circle=None,release_date=None)]
+   self.run_api(root,initial)
+   history=next((root/"fanza/api/history").glob("*.json")); before=history.read_bytes()
+   status_before=json.loads((root/"status.json").read_text()); analytics=(root/"analytics/fanza_api.json").read_bytes(); posts=(root/"posts/fanza_api_candidates.json").read_bytes()
+   changed=[self.item(1,genres=[{"id":"1","name":"巨乳"}],circle={"id":"c","name":"Circle"},release_date="2026-08-26")]
+   self.run_api(root,changed)
+   current=json.loads((root/"fanza/api/current.json").read_text())["items"][0]
+   status=json.loads((root/"status.json").read_text())
+   self.assertEqual(current["genres"],changed[0]["genres"])
+   self.assertEqual(history.read_bytes(),before)
+   self.assertEqual((status["total_runs"],status["exp"]),(status_before["total_runs"],status_before["exp"]))
+   self.assertEqual((root/"analytics/fanza_api.json").read_bytes(),analytics)
+   self.assertEqual((root/"posts/fanza_api_candidates.json").read_bytes(),posts)
+
  def test_api_failure_preserves_all_outputs(self):
   with tempfile.TemporaryDirectory() as directory:
    root=Path(directory); paths=[root/"fanza/api/current.json",root/"fanza/api/history/day.json",

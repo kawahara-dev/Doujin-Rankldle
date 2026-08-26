@@ -52,3 +52,14 @@ class WeeklyReportTest(unittest.TestCase):
    self.assertTrue(all(isinstance(insight, str) for insight in report["creator_insights"]))
    forbidden=("販売数", "売上", "影響", "原因")
    self.assertFalse(any(word in " ".join(report["creator_insights"]) for word in forbidden))
+
+ def test_api_metadata_counts_unique_products_and_coverage(self):
+  with tempfile.TemporaryDirectory() as temporary:
+   root=Path(temporary); history=root/"fanza/api/history/2026-08-24.json"; history.parent.mkdir(parents=True)
+   item={"id":"a","rank":5,"genres":[{"name":"巨乳"},{"name":"巨乳"}],"circle":{"name":"C"},"release_date":"2026-08-20"}
+   history.write_text(json.dumps([{"fetched_at":"2026-08-24T10:00:00+09:00","items":[item]},{"fetched_at":"2026-08-24T12:00:00+09:00","items":[item,{"id":"b","rank":20}]}]))
+   report=generate_weekly_report(datetime(2026,8,24,15,tzinfo=ZoneInfo("Asia/Tokyo")),root/"fanza",root/"r",root/"p")
+   self.assertEqual(report["top_genres"],[{"name":"巨乳","observed_products":1,"top10_products":1}])
+   self.assertEqual(report["top_circles"][0]["observed_products"],1)
+   self.assertEqual(report["new_release_products"],1)
+   self.assertEqual(report["metadata_coverage"],{"genre":1,"circle":1,"release_date":1,"total_products":2})
