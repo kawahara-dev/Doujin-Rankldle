@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 from typing import Any
+from urllib.error import HTTPError
 from urllib.parse import urlencode
 from urllib.request import urlopen
 
@@ -13,6 +14,65 @@ SITE = "FANZA"
 # DMM Web Service's doujin service uses digital_doujin (not digital/videoa).
 DOUJIN_SERVICE = "doujin"
 DOUJIN_FLOOR = "digital_doujin"
+
+
+class DmmApiRequestError(RuntimeError):
+    """An API failure whose text is safe to print in CI logs."""
+
+
+def _redact(value: str, secrets: tuple[str, ...]) -> str:
+    for secret in secrets:
+        if secret:
+            value = value.replace(secret, "[REDACTED]")
+    return value
+
+
+def _error_details(body: bytes, secrets: tuple[str, ...]) -> str:
+    """Return useful API error fields without echoing credentials or a URL."""
+    text = body.decode("utf-8", errors="replace")
+    try:
+        payload = json.loads(text)
+    except json.JSONDecodeError:
+        return _redact(text.strip(), secrets) or "(empty response body)"
+
+    def safe(value: Any) -> Any:
+        if isinstance(value, dict):
+            return {
+                key: safe(item)
+                for key, item in value.items()
+                if key.lower() not in {"api_id", "affiliate_id", "url", "request"}
+            }
+        if isinstance(value, list):
+            return [safe(item) for item in value]
+        if isinstance(value, str):
+            return _redact(value, secrets)
+        return value
+
+    details: dict[str, Any] = {}
+    for key in ("message", "errors"):
+        if key in payload:
+            details[key] = safe(payload[key])
+    result = payload.get("result")
+    if isinstance(result, dict):
+        result_errors = {key: safe(result[key]) for key in ("message", "errors") if key in result}
+        if result_errors:
+            details["result"] = result_errors
+    if not details:
+        details = safe(payload)
+    return json.dumps(details, ensure_ascii=False, separators=(",", ":"))
+
+
+def request_json(api_url: str, params: dict[str, Any]) -> dict[str, Any]:
+    """Call a DMM endpoint and raise a credential-safe error on HTTP failure."""
+    secrets = (str(params.get("api_id") or ""), str(params.get("affiliate_id") or ""))
+    try:
+        with urlopen(f"{api_url}?{urlencode(params)}", timeout=30) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except HTTPError as error:
+        details = _error_details(error.read(), secrets)
+        raise DmmApiRequestError(
+            f"DMM API request failed\nstatus: {error.code}\nresponse: {details}"
+        ) from None
 
 
 def _price(item: dict[str, Any]) -> int:
@@ -72,8 +132,7 @@ class FanzaApiProvider(RankingProvider):
             "sort": "rank",
             "output": "json",
         }
-        with urlopen(f"{API_URL}?{urlencode(params)}", timeout=30) as response:
-            payload = json.loads(response.read().decode("utf-8"))
+        payload = request_json(API_URL, params)
         result = payload.get("result") or {}
         if result.get("errors") or payload.get("errors"):
             raise RuntimeError("FANZA API returned an error")

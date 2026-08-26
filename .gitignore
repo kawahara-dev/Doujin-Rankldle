@@ -1,3 +1,4 @@
 __pycache__/
 *.py[cod]
 data/verify/dmm_api_latest.json
+data/verify/dmm_floors.json
