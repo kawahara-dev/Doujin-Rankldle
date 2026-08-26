@@ -1,29 +1,29 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-26T21:25:59+09:00",
+  "generated_at": "2026-08-26T23:04:51+09:00",
   "data_status": "PARTIAL",
   "observed_days": 1,
   "expected_days": 3,
   "snapshot_counts": {
-    "api": 1
+    "api": 2
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 100,
-    "top10_unique_products": 10,
-    "new_entries": 100,
+    "unique_products": 101,
+    "top10_unique_products": 11,
+    "new_entries": 101,
     "reentries": 0,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
-    "max_rank_rise_api": 0
+    "max_rank_rise_api": 5
   },
   "price_analysis": {
-    "average_price": 1190,
+    "average_price": 1188,
     "median_price": 990,
-    "top10_average_price": 1700,
-    "top10_median_price": 1666,
+    "top10_average_price": 1625,
+    "top10_median_price": 1573,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -32,8 +32,8 @@
       },
       {
         "label": "500〜999円",
-        "count": 45,
-        "top10_count": 3
+        "count": 46,
+        "top10_count": 4
       },
       {
         "label": "1000〜1999円",
@@ -67,141 +67,222 @@
     }
   },
   "ranking_behavior": {
-    "top10_entry_events": 10,
-    "large_rise_5_plus": 0,
+    "top10_entry_events": 11,
+    "large_rise_5_plus": 2,
     "large_rise_10_plus": 0,
-    "new_entry_events": 100,
+    "new_entry_events": 101,
     "reentry_events": 0
   },
-  "biggest_movers": [],
-  "creator_insights": [
-    "APIランキング上位で10作品を観測しました。",
-    "NEWを100件、REENTRYを0件観測しました。",
-    "観測作品の価格中央値は¥990でした。"
+  "biggest_movers": [
+    {
+      "id": "d_801163",
+      "title": "陰キャな俺だけが知っている生徒会長の裏側2。  〜陥没乳首の先輩が快楽に屈服して堕ちるまで〜",
+      "ranking_type": "api",
+      "rank_change": 5,
+      "current_rank": 54,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    },
+    {
+      "id": "d_810654",
+      "title": "JK退魔師 VS 因習村〜寝取られ幼馴染は島の有力者のおまんこ契約に逆らえません〜",
+      "ranking_type": "api",
+      "rank_change": 5,
+      "current_rank": 68,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    },
+    {
+      "id": "d_668335",
+      "title": "距離感がバグってる義妹が一生イチャラブしてくる【フルカラー版】",
+      "ranking_type": "api",
+      "rank_change": 4,
+      "current_rank": 87,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    },
+    {
+      "id": "d_800289",
+      "title": "妻達は今、海外にいます  後編",
+      "ranking_type": "api",
+      "rank_change": 2,
+      "current_rank": 30,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    },
+    {
+      "id": "d_757987",
+      "title": "追憶の淫魔サロン  〜搾り尽くされる記憶閲覧型VR風俗〜",
+      "ranking_type": "api",
+      "rank_change": 2,
+      "current_rank": 43,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    },
+    {
+      "id": "d_809567",
+      "title": "現実改変アプリでハーレム学園を作ろう！",
+      "ranking_type": "api",
+      "rank_change": 2,
+      "current_rank": 66,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    },
+    {
+      "id": "d_800258",
+      "title": "退魔の母、禄  リマスター総集編",
+      "ranking_type": "api",
+      "rank_change": 2,
+      "current_rank": 73,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    },
+    {
+      "id": "d_716922",
+      "title": "SECRET DEBRIEFING",
+      "ranking_type": "api",
+      "rank_change": 2,
+      "current_rank": 82,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    },
+    {
+      "id": "d_804039",
+      "title": "パズルdeエッチ3 JKバニー110人の巨乳がぶるん揺れ！汗だく中出しセックス！",
+      "ranking_type": "api",
+      "rank_change": 2,
+      "current_rank": 84,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    },
+    {
+      "id": "d_557408",
+      "title": "幼なじみとえ乳なえっち。",
+      "ranking_type": "api",
+      "rank_change": 2,
+      "current_rank": 85,
+      "observed_at": "2026-08-26T23:04:51+09:00"
+    }
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +0\n🆕 NEW 100件\n🔄 REENTRY 0件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\n観測作品の価格中央値は¥990でした。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "creator_insights": [
+    "今週の最大上昇はAPIランキングで+5でした。",
+    "APIランキング上位で11作品を観測しました。",
+    "NEWを101件、REENTRYを0件観測しました。"
+  ],
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +5\n🆕 NEW 101件\n🔄 REENTRY 0件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを101件、REENTRYを0件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_802286",
-      "title": "雌ガチャIV",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_805647",
       "title": "サキュバス性徒会シコシコ執行部4前編",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_805704",
       "title": "ファンティアまとめ本",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_806152",
       "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
+    },
+    {
+      "id": "d_755081",
+      "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
+      "top10_snapshots": 1,
+      "observation_rate": 50
     }
   ],
   "top10_stays": [
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_802286",
-      "title": "雌ガチャIV",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_805647",
       "title": "サキュバス性徒会シコシコ執行部4前編",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_805704",
       "title": "ファンティアまとめ本",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_806152",
       "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
+    },
+    {
+      "id": "d_755081",
+      "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
+      "top10_snapshots": 1,
+      "observation_rate": 50
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
