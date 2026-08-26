@@ -20,7 +20,7 @@ FANZAモジュールの商品ランキングを1時間ごとに収集し、GitHu
 2. **Settings → Pages** の公開元を `Deploy from a branch`、対象を既定ブランチの `/docs` にします。
 3. Actionsの **Collect FANZA products** を手動実行します。以後は毎時17分に自動実行されます。
 
-APIの対象を変更する場合は、Workflowの環境変数に `FANZA_SERVICE`、`FANZA_FLOOR`、`FANZA_HITS`（最大100）を追加してください。既定値は `digital` / `videoa` / `100` です。
+APIの対象を変更する場合は、Workflowの環境変数に `FANZA_SERVICE`、`FANZA_FLOOR`、`FANZA_HITS`（最大100）を追加してください。FANZA同人向けの既定値はDMM Web Serviceのフロア体系に合わせた `doujin` / `digital_doujin` / `100` です。
 
 2つのAPI認証情報がともに設定されている場合だけFANZA APIを使用します。どちらかが未設定の場合は処理を失敗させず、開発用モックランキングを生成します。`status.json` とPagesのバッジで `mock` / `DEMO MODE` または `live` / `LIVE MODE` を確認できます。
 
@@ -38,6 +38,10 @@ python -m http.server 8000 -d docs
 ```
 
 ブラウザで <http://localhost:8000> を開いて確認できます。API認証情報がない場合はモックモードで実行します。認証情報があるときのAPIエラーは処理を失敗させ、既存JSONを上書きしません。
+
+### DMM APIランキング検証（dry run）
+
+`python -m src.verify_dmm_api` はDMM APIのFANZA同人TOP20と保存済みの1H・24H TOP20を比較し、`data/verify/dmm_api_latest.json` だけに結果を書き込みます。本番ランキング、履歴、分析、レポート、投稿候補、EXP、`docs/data` は更新しません。認証情報、手動ランキング、またはAPI項目が不足する場合は本番処理へフォールバックせず失敗します。Actionsではscheduleを持たない **Verify DMM API ranking** を手動実行し、結果をartifactとして取得できます。
 
 ## v0.3 modes
 
