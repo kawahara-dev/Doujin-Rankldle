@@ -1,6 +1,7 @@
 """Collect rankings in mock, public-watch, or authenticated API mode."""
 from __future__ import annotations
 import json, os, tempfile
+import hashlib
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -81,6 +82,15 @@ def import_metadata():
  payload=read_json(IMPORT_PATH,{})
  return payload if isinstance(payload,dict) else {}
 def stable_key(item): return (item.get('id') or item.get('url','').split('?')[0]).strip()
+def metadata_fingerprint(items):
+ def metadata(item):
+  genres=sorted((str(x.get('id') or ''),str(x.get('name') or '').strip()) for x in (item.get('genres') or []) if isinstance(x,dict) and str(x.get('name') or '').strip())
+  circle=item.get('circle') if isinstance(item.get('circle'),dict) else None
+  return {'key':stable_key(item),'title':item.get('title'),'price':item.get('price'),'genres':genres,
+   'circle':{'id':str(circle.get('id') or ''),'name':str(circle.get('name') or '').strip()} if circle and str(circle.get('name') or '').strip() else None,
+   'release_date':item.get('release_date'),'affiliate_url':item.get('affiliate_url'),'image_url':item.get('image_url')}
+ encoded=json.dumps([metadata(x) for x in items],ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()
+ return hashlib.sha256(encoded).hexdigest()
 def compare_rankings(items,previous,seen=None,streaks=None,ranking_type=None):
  old={stable_key(x):int(x.get('current_rank',x.get('rank',0))) for x in previous}; seen=set(seen or []); streaks=streaks or {}; result=[]
  for raw in items:
@@ -244,6 +254,18 @@ def main():
  legacy_keys=([f'captured:{captured}'] if captured else [])+[f'content:{content_key}'] if ranking_type=='24h' else []
  duplicate=ranking_mode and (update_key in processed or content_update in processed or any(key in processed for key in legacy_keys))
  if duplicate:
+  metadata_refresh=mode=='live' and metadata_fingerprint(raw)!=metadata_fingerprint(previous)
+  if metadata_refresh:
+   # Preserve all comparison/progression fields while refreshing display metadata only.
+   old_items={stable_key(x):x for x in previous}; refreshed=[]
+   for item in raw:
+    before=old_items.get(stable_key(item),{})
+    refreshed.append({**item,**{key:before[key] for key in ('current_rank','previous_rank','rank_change','status','trend_score','consecutive_appearances','momentum','strong_momentum') if key in before}})
+   payload={'fetched_at':stamp,'ranking_type':'api','items':refreshed}
+   atomic_write(ranking_dir('api')/'current.json',payload)
+   atomic_write(LATEST_PATH,{'updated_at':stamp,'ranking_type':'api','items':raw})
+   status={**old,'last_run':stamp,'duplicate_api_snapshot':False,'api_metadata_refresh':True}
+   atomic_write(STATUS_PATH,status); print(f'0 件を収集しました ({stamp}, mode={mode}, ranking=api, metadata_refresh=true)'); return
   # A repeated manual import is only a heartbeat. In particular, do not persist the
   # comparison performed above: doing so would advance streaks and could regenerate
   # ranking, cross-trend, sale, achievement, or progression state.

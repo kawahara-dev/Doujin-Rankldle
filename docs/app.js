@@ -22,6 +22,7 @@ const expandedAnalytics = { "api": new Set(), "1h": new Set(), "24h": new Set() 
 let apiExpanded = false;
 let apiFilter = "all";
 let apiPriceFilter = "all";
+let apiGenreFilter = "all";
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -151,7 +152,24 @@ function matchesApiPriceFilter(item) {
 }
 
 function matchesApiFilters(item) {
-  return matchesApiFilter(item) && matchesApiPriceFilter(item);
+  const genres = Array.isArray(item.genres) ? item.genres : [];
+  return matchesApiFilter(item) && matchesApiPriceFilter(item) && (apiGenreFilter === "all" || genres.some(genre => genre?.name === apiGenreFilter));
+}
+
+function metadataLines(item) {
+  const lines=[];
+  if (item.circle?.name) lines.push(`🎨 ${item.circle.name}`);
+  const names=[...new Set((Array.isArray(item.genres) ? item.genres : []).map(x=>String(x?.name || "").trim()).filter(Boolean))];
+  if (names.length) lines.push(`🏷 ${names.slice(0,3).join(" / ")}${names.length>3 ? ` +${names.length-3}` : ""}`);
+  if (item.release_date) lines.push(`📅 ${String(item.release_date).replaceAll("-",".")}`);
+  return lines;
+}
+
+function isNewRelease(value) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(value || ""))) return false;
+  const today=new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Tokyo"}));
+  const released=new Date(`${value}T00:00:00+09:00`); const days=(today-released)/HOUR/24;
+  return days>=0 && days<=7;
 }
 
 function renderRising(items) {
@@ -191,7 +209,9 @@ function renderItems(items) {
     const title = document.createElement("span"); title.className = "title"; title.textContent = item.title;
     const price = document.createElement("span"); price.className = "price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
     link.append(rank, title);
+    if (isApi) { const metadata=document.createElement("small"); metadata.className="product-metadata"; metadata.textContent=metadataLines(item).join("  "); if (metadata.textContent) link.append(metadata); }
     if (isApi && number(item.current_rank || item.rank) <= 10) { const badge=document.createElement("b"); badge.className="top10-badge"; badge.textContent="TOP10"; link.append(badge); }
+    if (isApi && isNewRelease(item.release_date)) { const badge=document.createElement("b"); badge.className="new-release-badge"; badge.textContent="🆕 NEW RELEASE"; link.append(badge); }
     if (selectedRanking === "24h" && item.on_sale) { const badge=document.createElement("b"); badge.className="sale-badge"; badge.textContent=`${number(item.discount_rate)}% OFF`; link.append(badge); }
     link.append(price);
     if (selectedRanking === "24h" && item.regular_price) { const regular=document.createElement("small"); regular.textContent=`通常 ¥${number(item.regular_price).toLocaleString("ja-JP")}`; link.append(regular); }
@@ -213,6 +233,7 @@ function renderItems(items) {
       const statusClass = insight.analytics_status.toLowerCase().replaceAll(" ", "-");
       detail.innerHTML = `<div><small>RANK HISTORY</small><div class="rank-history">${history}</div></div><div class="analytics-stay"><small>TOP10 / SAMPLES</small><strong>${insight.top10_count} / ${insight.sample_count}</strong><b>${insight.top10_rate}%</b></div><div><small>ANALYTICS STATUS</small><strong class="analytics-status ${statusClass}">${insight.analytics_status}</strong></div>`;
     } else detail.innerHTML = '<span class="analytics-status insufficient-data">INSUFFICIENT DATA</span>';
+    if (isApi) { const meta=document.createElement("div"); meta.className="analytics-metadata"; const lines=metadataLines(item); meta.textContent=lines.length ? lines.join("\n") : "METADATA NOT AVAILABLE"; detail.append(meta); }
     button.addEventListener("click", () => {
       detail.hidden = !detail.hidden;
       if (detail.hidden) expandedAnalytics[selectedRanking].delete(key); else expandedAnalytics[selectedRanking].add(key);
@@ -230,8 +251,12 @@ function updateApiControls(items) {
   el("observedCount").textContent = `観測中 ${items.length.toLocaleString("ja-JP")}作品`;
   document.querySelectorAll("[data-api-filter]").forEach(button => button.classList.toggle("active", button.dataset.apiFilter === apiFilter));
   document.querySelectorAll("[data-api-price-filter]").forEach(button => button.classList.toggle("active", button.dataset.apiPriceFilter === apiPriceFilter));
+  const counts=new Map(); items.forEach(item=>new Set((item.genres || []).map(x=>x?.name).filter(Boolean)).forEach(name=>counts.set(name,(counts.get(name)||0)+1)));
+  const choices=[...counts].sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0],"ja")).slice(0,10);
+  if (apiGenreFilter !== "all" && !counts.has(apiGenreFilter)) apiGenreFilter="all";
+  const genreBox=el("apiGenreFilters"); genreBox.replaceChildren(...[["all",null],...choices].map(([name,count])=>{ const button=document.createElement("button"); button.type="button"; button.dataset.apiGenreFilter=name; button.classList.toggle("active",name===apiGenreFilter); button.textContent=name==="all" ? "ALL" : `${name} ${count}`; button.addEventListener("click",()=>{apiGenreFilter=name;apiExpanded=false;updateApiControls(items);renderItems(items);}); return button; }));
   const matches = items.filter(matchesApiFilters).length;
-  const filtered = apiFilter !== "all" || apiPriceFilter !== "all";
+  const filtered = apiFilter !== "all" || apiPriceFilter !== "all" || apiGenreFilter !== "all";
   el("filteredCount").hidden = !isApi || !filtered;
   el("filteredCount").textContent = `FILTERED ${matches}`;
   el("rankingMore").hidden = !isApi || matches <= 20;
