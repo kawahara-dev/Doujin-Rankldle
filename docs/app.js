@@ -21,6 +21,7 @@ let analyticsData = { "api": { items: [] }, "1h": { items: [] }, "24h": { items:
 const expandedAnalytics = { "api": new Set(), "1h": new Set(), "24h": new Set() };
 let apiExpanded = false;
 let apiFilter = "all";
+let apiPriceFilter = "all";
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -137,10 +138,47 @@ function matchesApiFilter(item) {
   return true;
 }
 
+function matchesApiPriceFilter(item) {
+  if (apiPriceFilter === "all") return true;
+  if (item.price == null) return false;
+  const price = Number(item.price);
+  if (!Number.isFinite(price)) return false;
+  if (apiPriceFilter === "under1000") return price >= 0 && price <= 999;
+  if (apiPriceFilter === "1000to1999") return price >= 1000 && price <= 1999;
+  if (apiPriceFilter === "2000to2999") return price >= 2000 && price <= 2999;
+  if (apiPriceFilter === "3000plus") return price >= 3000;
+  return true;
+}
+
+function matchesApiFilters(item) {
+  return matchesApiFilter(item) && matchesApiPriceFilter(item);
+}
+
+function renderRising(items) {
+  const rising = items.filter((item) => item.status === "up" && Number(item.rank_change) > 0)
+    .sort((a, b) => Number(b.rank_change) - Number(a.rank_change)
+      || Number(a.current_rank) - Number(b.current_rank)
+      || String(a.title || "").localeCompare(String(b.title || ""), "ja"))
+    .slice(0, 5);
+  if (!rising.length) {
+    el("risingList").innerHTML = '<p class="rising-empty">まだ急上昇データはないよ。次の観測を待ってね📡</p>';
+    return;
+  }
+  el("risingList").replaceChildren(...rising.map((item, index) => {
+    const link = document.createElement("a"); link.className = "rising-item"; link.href = item.affiliate_url || item.url; link.target = "_blank"; link.rel = "noopener noreferrer sponsored";
+    const order = document.createElement("small"); order.className = "rising-order"; order.textContent = `${index + 1}.`;
+    const ranks = document.createElement("span"); ranks.className = "rising-ranks"; ranks.textContent = `#${item.previous_rank} → #${item.current_rank}`;
+    const change = document.createElement("strong"); change.className = "rising-change"; change.textContent = `↑ +${Number(item.rank_change)}`;
+    const title = document.createElement("span"); title.className = "rising-title"; title.textContent = item.title;
+    const price = document.createElement("span"); price.className = "rising-price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
+    link.append(order, ranks, change, title, price); return link;
+  }));
+}
+
 function renderItems(items) {
   if (!items.length) { el("productList").innerHTML = '<p class="empty">まだ商品データがないよ。次回巡回を待ってね。</p>'; return; }
   const isApi = selectedRanking === "api";
-  const filteredItems = isApi ? items.filter(matchesApiFilter) : items;
+  const filteredItems = isApi ? items.filter(matchesApiFilters) : items;
   const visibleItems = isApi && !apiExpanded ? filteredItems.slice(0, 20) : filteredItems;
   const analytics = new Map((analyticsData[selectedRanking]?.items || []).map(item => [item.key, item]));
   if (!visibleItems.length) { el("productList").innerHTML = '<p class="empty">この条件に一致する作品はないよ。</p>'; return; }
@@ -187,12 +225,17 @@ function renderItems(items) {
 function updateApiControls(items) {
   const isApi = selectedRanking === "api";
   el("apiFilters").hidden = !isApi;
+  el("risingSection").hidden = !isApi;
   el("observedCount").hidden = !isApi;
   el("observedCount").textContent = `観測中 ${items.length.toLocaleString("ja-JP")}作品`;
   document.querySelectorAll("[data-api-filter]").forEach(button => button.classList.toggle("active", button.dataset.apiFilter === apiFilter));
-  const matches = items.filter(matchesApiFilter).length;
+  document.querySelectorAll("[data-api-price-filter]").forEach(button => button.classList.toggle("active", button.dataset.apiPriceFilter === apiPriceFilter));
+  const matches = items.filter(matchesApiFilters).length;
+  const filtered = apiFilter !== "all" || apiPriceFilter !== "all";
+  el("filteredCount").hidden = !isApi || !filtered;
+  el("filteredCount").textContent = `FILTERED ${matches}`;
   el("rankingMore").hidden = !isApi || matches <= 20;
-  el("rankingMore").textContent = apiExpanded ? "閉じる" : `もっと見る（21〜${matches}位）`;
+  el("rankingMore").textContent = apiExpanded ? "閉じる" : `もっと見る（残り${matches - 20}件）`;
   el("rankingMore").setAttribute("aria-expanded", String(apiExpanded));
 }
 
@@ -240,6 +283,7 @@ function selectRanking(type) {
   el("trendLabel").textContent = type === "api" ? "📡 API RANKING / FANZA API 人気順" : type === "1h" ? "🔥 SPECIAL OBSERVATION / 1H" : "📊 SPECIAL OBSERVATION / 24H";
   const items = rankingData[type]?.items || [];
   updateApiControls(items);
+  if (type === "api") renderRising(rankingData.api.items || []);
   renderItems(items);
   const timestamp = rankingData[type]?.fetched_at;
   el("updatedAt").textContent = timestamp ? `UPDATED ${new Date(timestamp).toLocaleString("ja-JP")}` : "未取得";
@@ -327,6 +371,7 @@ async function loadDashboard() {
 }
 
 document.querySelectorAll("[data-ranking]").forEach(button => button.addEventListener("click", () => selectRanking(button.dataset.ranking)));
-document.querySelectorAll("[data-api-filter]").forEach(button => button.addEventListener("click", () => { apiFilter = button.dataset.apiFilter; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); }));
+document.querySelectorAll("[data-api-filter]").forEach(button => button.addEventListener("click", () => { apiFilter = button.dataset.apiFilter; apiExpanded = false; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); }));
+document.querySelectorAll("[data-api-price-filter]").forEach(button => button.addEventListener("click", () => { apiPriceFilter = button.dataset.apiPriceFilter; apiExpanded = false; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); }));
 el("rankingMore").addEventListener("click", () => { apiExpanded = !apiExpanded; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); if (!apiExpanded) el("trendLabel").scrollIntoView({ behavior: "smooth", block: "start" }); });
 updateCountdown(); setInterval(updateCountdown, 1000); setInterval(loadDashboard, POLL_INTERVAL); setupImportTools(); loadDashboard();
