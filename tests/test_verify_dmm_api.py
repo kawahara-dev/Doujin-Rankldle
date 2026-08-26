@@ -7,7 +7,7 @@ from pathlib import Path
 from unittest.mock import patch
 from urllib.error import HTTPError
 
-from src.inspect_dmm_floors import normalize_floors
+from src.inspect_dmm_floors import normalize_floors, run as inspect_floors
 from src.providers.fanza_api import (
     DOUJIN_FLOOR,
     DOUJIN_SERVICE,
@@ -118,6 +118,19 @@ class VerifyDmmApiTests(unittest.TestCase):
                 ],
             },
         )
+
+    def test_floor_inspection_writes_only_injected_artifact(self):
+        payload = {"result": {"site": [{"code": "FANZA", "service": []}]}}
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "data/verify/dmm_floors.json"
+            with (
+                patch.dict(os.environ, {"DMM_API_ID": "api", "DMM_AFFILIATE_ID": "affiliate"}, clear=True),
+                patch("src.inspect_dmm_floors.request_json", return_value=payload),
+            ):
+                result = inspect_floors(output=output)
+
+            self.assertEqual(json.loads(output.read_text(encoding="utf-8")), result)
+            self.assertEqual([path for path in Path(directory).rglob("*") if path.is_file()], [output])
 
     def test_run_only_writes_verify_output(self):
         api = items([f"p{i}" for i in range(20)])

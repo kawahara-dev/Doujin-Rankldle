@@ -93,6 +93,15 @@ class CollectorModeTest(unittest.TestCase):
 
 
 class GameSystemTest(unittest.TestCase):
+    def test_injected_fanza_directory_also_isolates_weekly_reports(self):
+        with tempfile.TemporaryDirectory() as directory:
+            data_dir = Path(directory)
+            with patch.object(collector, "FANZA_DIR", data_dir / "fanza"):
+                report_dir, pages_dir = collector.weekly_report_dirs()
+
+        self.assertEqual(report_dir, data_dir / "reports" / "weekly")
+        self.assertEqual(pages_dir, data_dir / "docs" / "data" / "reports" / "weekly")
+
     def test_experience_and_level_calculation(self):
         self.assertEqual(collector.experience(10, 25), 75)
         self.assertEqual(collector.level_progress(75), (1, 75))

@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo
 from src.post_generator import generate_candidates, generate_comment
 from src.providers.fanza_api import FanzaApiProvider
 from src.providers.fanza_public import FanzaAgeGateError, FanzaPublicProvider
-from src.weekly_report import generate_weekly_report
+from src.weekly_report import PAGES_DIR, REPORT_DIR, generate_weekly_report
 
 ROOT=Path(__file__).resolve().parents[1]; DATA_DIR=ROOT/'data'; LATEST_PATH=DATA_DIR/'latest.json'; STATUS_PATH=DATA_DIR/'status.json'
 FANZA_DIR=DATA_DIR/'fanza'; DEFAULT_FANZA_DIR=FANZA_DIR; POSTS_PATH=DATA_DIR/'posts'/'candidates.json'; JST=ZoneInfo('Asia/Tokyo')
@@ -178,6 +178,11 @@ def generate_analytics(ranking_type,generated_at=None):
  output_dir=ANALYTICS_DIR if FANZA_DIR==DEFAULT_FANZA_DIR else FANZA_DIR.parent/'analytics'
  atomic_write(output_dir/f'fanza_{ranking_type}.json',payload)
  return payload
+def weekly_report_dirs():
+ """Keep reports beside an injected FANZA directory during isolated runs."""
+ if FANZA_DIR==DEFAULT_FANZA_DIR:return REPORT_DIR,PAGES_DIR
+ data_dir=FANZA_DIR.parent
+ return data_dir/'reports'/'weekly',data_dir/'docs'/'data'/'reports'/'weekly'
 def add_cross_signals(items,other_items,ranking_type):
  other={stable_key(x):x for x in other_items if x.get('rank_change',0)>0}; signals=[]
  for item in items:
@@ -256,6 +261,8 @@ def main():
   watch_fields={'public_watch_status':'ok','last_public_watch_success':stamp,'last_public_watch_error':None} if mode=='public' else {'public_watch_status':'age_gate','last_public_watch_error':'FANZA age verification page reached'} if age_gate else {}
   status.update(**watch_fields,input_source='manual_import' if mode=='import' else 'public_watch')
  atomic_write(LATEST_PATH,latest); atomic_write(STATUS_PATH,status)
- if ranking_mode: generate_weekly_report(now)
+ if ranking_mode:
+  report_dir,pages_dir=weekly_report_dirs()
+  generate_weekly_report(now,FANZA_DIR,report_dir,pages_dir)
  print(f'{len(items)} 件を収集しました ({stamp}, mode={mode}, ranking={ranking_type})')
 if __name__=='__main__':main()
