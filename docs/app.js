@@ -19,6 +19,8 @@ let selectedRanking = "api";
 let rankingData = { "api": { items: [] }, "1h": { items: [] }, "24h": { items: [] } };
 let analyticsData = { "api": { items: [] }, "1h": { items: [] }, "24h": { items: [] } };
 const expandedAnalytics = { "api": new Set(), "1h": new Set(), "24h": new Set() };
+let apiExpanded = false;
+let apiFilter = "all";
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -118,19 +120,51 @@ function renderCandidates(candidates) {
   }));
 }
 
+function movementFor(item) {
+  const status = String(item.status || "stay").toLowerCase();
+  const change = Math.abs(Number(item.rank_change) || 0);
+  if (status === "up") return { status, label: `↑ +${change}` };
+  if (status === "down") return { status, label: `↓ -${change}` };
+  if (status === "new") return { status, label: "NEW" };
+  if (status === "reentry") return { status, label: "REENTRY" };
+  return { status: "stay", label: "STAY" };
+}
+
+function matchesApiFilter(item) {
+  if (apiFilter === "up") return item.status === "up";
+  if (apiFilter === "new") return item.status === "new" || item.status === "reentry";
+  if (apiFilter === "momentum") return item.momentum === "UP" || item.strong_momentum === true;
+  return true;
+}
+
 function renderItems(items) {
   if (!items.length) { el("productList").innerHTML = '<p class="empty">まだ商品データがないよ。次回巡回を待ってね。</p>'; return; }
+  const isApi = selectedRanking === "api";
+  const filteredItems = isApi ? items.filter(matchesApiFilter) : items;
+  const visibleItems = isApi && !apiExpanded ? filteredItems.slice(0, 20) : filteredItems;
   const analytics = new Map((analyticsData[selectedRanking]?.items || []).map(item => [item.key, item]));
-  el("productList").replaceChildren(...items.map((item) => {
-    const row = document.createElement("article"); row.className = "product-row";
-    const link = document.createElement("a"); link.className = "product"; link.href = selectedRanking === "api" ? (item.affiliate_url || item.url) : item.url; link.target = "_blank"; link.rel = "noopener noreferrer sponsored";
-    const rank = document.createElement("span"); rank.className = "rank"; rank.textContent = `#${item.rank}`;
+  if (!visibleItems.length) { el("productList").innerHTML = '<p class="empty">この条件に一致する作品はないよ。</p>'; return; }
+  el("productList").replaceChildren(...visibleItems.map((item) => {
+    const movement = movementFor(item);
+    const row = document.createElement("article");
+    row.className = `product-row${isApi ? ` api-product-row rank-${movement.status}` : ""}${isApi && number(item.current_rank || item.rank) <= 10 ? " top10" : ""}`;
+    const link = document.createElement("a"); link.className = "product"; link.href = isApi ? (item.affiliate_url || item.url) : item.url; link.target = "_blank"; link.rel = "noopener noreferrer sponsored";
+    const rank = document.createElement("span"); rank.className = "rank"; rank.textContent = `#${item.current_rank || item.rank}`;
     const title = document.createElement("span"); title.className = "title"; title.textContent = item.title;
     const price = document.createElement("span"); price.className = "price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
     link.append(rank, title);
+    if (isApi && number(item.current_rank || item.rank) <= 10) { const badge=document.createElement("b"); badge.className="top10-badge"; badge.textContent="TOP10"; link.append(badge); }
     if (selectedRanking === "24h" && item.on_sale) { const badge=document.createElement("b"); badge.className="sale-badge"; badge.textContent=`${number(item.discount_rate)}% OFF`; link.append(badge); }
     link.append(price);
     if (selectedRanking === "24h" && item.regular_price) { const regular=document.createElement("small"); regular.textContent=`通常 ¥${number(item.regular_price).toLocaleString("ja-JP")}`; link.append(regular); }
+    row.append(link);
+    if (isApi) {
+      const signals=document.createElement("div"); signals.className="api-signals";
+      const change=document.createElement("strong"); change.className=`rank-change rank-${movement.status}`; change.textContent=movement.label; signals.append(change);
+      if (item.strong_momentum === true) { const momentum=document.createElement("b"); momentum.className="momentum-badge strong"; momentum.textContent="🔥 MOMENTUM"; signals.append(momentum); }
+      else if (item.momentum === "UP") { const momentum=document.createElement("small"); momentum.className="momentum-badge"; momentum.textContent="MOMENTUM ↑"; signals.append(momentum); }
+      row.append(signals);
+    }
     const key = String(item.key || item.id || item.url || "").split("?")[0];
     const insight = analytics.get(key);
     const expanded = expandedAnalytics[selectedRanking].has(key);
@@ -139,17 +173,27 @@ function renderItems(items) {
     if (insight) {
       const history = insight.rank_history.map(rankValue => `<span>${rankValue ?? "OUT"}</span>`).join("<i>→</i>");
       const statusClass = insight.analytics_status.toLowerCase().replaceAll(" ", "-");
-      detail.innerHTML = `<div><small>RANK HISTORY</small><div class="rank-history">${history}</div></div><div class="analytics-stay"><small>TOP10 STAY</small><strong>${insight.top10_count} / ${insight.sample_count}</strong><b>${insight.top10_rate}%</b></div><div><small>STATUS</small><strong class="analytics-status ${statusClass}">${insight.analytics_status}</strong></div>`;
+      detail.innerHTML = `<div><small>RANK HISTORY</small><div class="rank-history">${history}</div></div><div class="analytics-stay"><small>TOP10 / SAMPLES</small><strong>${insight.top10_count} / ${insight.sample_count}</strong><b>${insight.top10_rate}%</b></div><div><small>ANALYTICS STATUS</small><strong class="analytics-status ${statusClass}">${insight.analytics_status}</strong></div>`;
     } else detail.innerHTML = '<span class="analytics-status insufficient-data">INSUFFICIENT DATA</span>';
     button.addEventListener("click", () => {
       detail.hidden = !detail.hidden;
-      if (detail.hidden) expandedAnalytics[selectedRanking].delete(key);
-      else expandedAnalytics[selectedRanking].add(key);
-      button.setAttribute("aria-expanded", String(!detail.hidden));
-      button.textContent = detail.hidden ? "ANALYTICS" : "CLOSE";
+      if (detail.hidden) expandedAnalytics[selectedRanking].delete(key); else expandedAnalytics[selectedRanking].add(key);
+      button.setAttribute("aria-expanded", String(!detail.hidden)); button.textContent = detail.hidden ? "ANALYTICS" : "CLOSE";
     });
-    row.append(link, button, detail); return row;
+    row.append(button, detail); return row;
   }));
+}
+
+function updateApiControls(items) {
+  const isApi = selectedRanking === "api";
+  el("apiFilters").hidden = !isApi;
+  el("observedCount").hidden = !isApi;
+  el("observedCount").textContent = `観測中 ${items.length.toLocaleString("ja-JP")}作品`;
+  document.querySelectorAll("[data-api-filter]").forEach(button => button.classList.toggle("active", button.dataset.apiFilter === apiFilter));
+  const matches = items.filter(matchesApiFilter).length;
+  el("rankingMore").hidden = !isApi || matches <= 20;
+  el("rankingMore").textContent = apiExpanded ? "閉じる" : `もっと見る（21〜${matches}位）`;
+  el("rankingMore").setAttribute("aria-expanded", String(apiExpanded));
 }
 
 function renderSaleWatch(items) {
@@ -194,7 +238,9 @@ function selectRanking(type) {
   selectedRanking = type;
   document.querySelectorAll("[data-ranking]").forEach(button => button.classList.toggle("active", button.dataset.ranking === type));
   el("trendLabel").textContent = type === "api" ? "📡 API RANKING / FANZA API 人気順" : type === "1h" ? "🔥 SPECIAL OBSERVATION / 1H" : "📊 SPECIAL OBSERVATION / 24H";
-  renderItems(rankingData[type]?.items || []);
+  const items = rankingData[type]?.items || [];
+  updateApiControls(items);
+  renderItems(items);
   const timestamp = rankingData[type]?.fetched_at;
   el("updatedAt").textContent = timestamp ? `UPDATED ${new Date(timestamp).toLocaleString("ja-JP")}` : "未取得";
 }
@@ -281,4 +327,6 @@ async function loadDashboard() {
 }
 
 document.querySelectorAll("[data-ranking]").forEach(button => button.addEventListener("click", () => selectRanking(button.dataset.ranking)));
+document.querySelectorAll("[data-api-filter]").forEach(button => button.addEventListener("click", () => { apiFilter = button.dataset.apiFilter; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); }));
+el("rankingMore").addEventListener("click", () => { apiExpanded = !apiExpanded; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); if (!apiExpanded) el("trendLabel").scrollIntoView({ behavior: "smooth", block: "start" }); });
 updateCountdown(); setInterval(updateCountdown, 1000); setInterval(loadDashboard, POLL_INTERVAL); setupImportTools(); loadDashboard();
