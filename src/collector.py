@@ -271,7 +271,13 @@ def main():
   # ranking, cross-trend, sale, achievement, or progression state.
   status={**old,'last_run':stamp,'duplicate_import':mode=='import'}
   if mode=='live': status['duplicate_api_snapshot']=True
-  atomic_write(STATUS_PATH,status); print(f'0 件を収集しました ({stamp}, mode={mode}, ranking={ranking_type}, duplicate=true)'); return
+  atomic_write(STATUS_PATH,status)
+  # Weekly reports are derived exclusively from persisted current/history data.
+  # Rebuild them even for an otherwise no-op duplicate so aggregation changes can
+  # be published without advancing any ranking, analytics, post, or game state.
+  report_dir,pages_dir=weekly_report_dirs()
+  generate_weekly_report(now,FANZA_DIR,report_dir,pages_dir)
+  print(f'0 件を収集しました ({stamp}, mode={mode}, ranking={ranking_type}, duplicate=true)'); return
  runs=old['total_runs']+(0 if duplicate else 1); total=old['total_items_collected']+(0 if duplicate else len(items)); new_trends=0 if duplicate else trends
  if not duplicate: processed=(processed+[update_key,content_update])[-200:]
  trend_total=old['trend_events']+new_trends; exp=experience(runs,total,trend_total); level,level_exp=level_progress(exp)
