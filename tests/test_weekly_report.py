@@ -6,6 +6,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from src.weekly_report import generate_weekly_report
+from src.metadata import meaningful_genres
 
 
 class WeeklyReportTest(unittest.TestCase):
@@ -62,4 +63,30 @@ class WeeklyReportTest(unittest.TestCase):
    self.assertEqual(report["top_genres"],[{"name":"巨乳","observed_products":1,"top10_products":1}])
    self.assertEqual(report["top_circles"][0]["observed_products"],1)
    self.assertEqual(report["new_release_products"],1)
-   self.assertEqual(report["metadata_coverage"],{"genre":1,"circle":1,"release_date":1,"total_products":2})
+   self.assertEqual(report["metadata_coverage"],{"genre":1,"meaningful_genre":1,"circle":1,"release_date":1,"total_products":2})
+
+ def test_meaningful_genres_preserve_raw_and_exclude_by_id_or_name(self):
+  raw=[{"id":"156023","name":"renamed"},{"id":"x","name":"男性向け"},
+       {"id":"156021","name":"専売"},{"id":"2001","name":"巨乳"},
+       {"id":"new","name":"未知タグ"}]
+  before=json.dumps(raw,ensure_ascii=False)
+  self.assertEqual([x["name"] for x in meaningful_genres(raw)],["巨乳","未知タグ"])
+  self.assertEqual(json.dumps(raw,ensure_ascii=False),before)
+
+ def test_api_metadata_uses_meaningful_genres_and_positive_prices(self):
+  with tempfile.TemporaryDirectory() as temporary:
+   root=Path(temporary); history=root/"fanza/api/history/2026-08-24.json"; history.parent.mkdir(parents=True)
+   generic=[{"id":"156023","name":"成人向け"},{"name":"男性向け"},{"name":"専売"}]
+   items=[{"id":"a","rank":5,"price":990,"genres":generic+[{"name":"巨乳"}],"release_date":"2026-08-22"},
+          {"id":"b","rank":15,"price":0,"genres":generic+[{"name":"巨乳"}],"circle":None},
+          {"id":"c","rank":8,"price":770,"genres":generic,"release_date":"2026-08-01"}]
+   history.write_text(json.dumps([{"fetched_at":"2026-08-24T12:00:00+09:00","items":items}]))
+   report=generate_weekly_report(datetime(2026,8,24,15,tzinfo=ZoneInfo("Asia/Tokyo")),root/"fanza",root/"r",root/"p")
+   self.assertEqual(report["top_genres"],[{"name":"巨乳","observed_products":2,"top10_products":1}])
+   self.assertEqual(report["genre_price_summary"],[{"name":"巨乳","product_count":2,"median_price":990}])
+   self.assertEqual(report["new_release_products"],1)
+   self.assertEqual(report["new_release_top10_products"],1)
+   self.assertEqual(report["top_circles"],[])
+   self.assertEqual(report["metadata_coverage"]["genre"],3)
+   self.assertEqual(report["metadata_coverage"]["meaningful_genre"],2)
+   self.assertEqual(report["metadata_coverage"]["circle"],0)

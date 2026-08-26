@@ -8,6 +8,8 @@ from datetime import datetime, time, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from src.metadata import meaningful_genres
+
 JST = ZoneInfo("Asia/Tokyo")
 ROOT = Path(__file__).resolve().parents[1]
 FANZA_DIR = ROOT / "data" / "fanza"
@@ -37,7 +39,7 @@ def _percent(part, whole): return round(part / whole * 100) if whole else 0
 def _metadata_analysis(market, top10, observations):
  genres, circles = {}, {}
  for key, item in market.items():
-  names={str(x.get("name") or "").strip() for x in (item.get("genres") or []) if isinstance(x,dict)}-{""}
+  names={str(x.get("name") or "").strip() for x in meaningful_genres(item.get("genres"))}
   for name in names: genres.setdefault(name, set()).add(key)
   circle=item.get("circle") if isinstance(item.get("circle"),dict) else None
   name=str((circle or {}).get("name") or "").strip()
@@ -48,11 +50,21 @@ def _metadata_analysis(market, top10, observations):
  new_releases=set()
  for _,captured,item in observations:
   try: released=datetime.fromisoformat(str(item.get("release_date"))).date()
-  except ValueError: continue
+  except (TypeError, ValueError): continue
   if timedelta(0) <= captured.date()-released <= timedelta(days=7): new_releases.add(_key(item))
  total=len(market)
+ genre_price_summary=[]
+ for row in rows(genres):
+  values=[item.get("price") for key,item in market.items() if key in genres[row["name"]]
+          and isinstance(item.get("price"),int) and not isinstance(item.get("price"),bool) and item["price"] > 0]
+  genre_price_summary.append({"name":row["name"],"product_count":row["observed_products"],
+                              "median_price":round(statistics.median(values)) if values else 0})
  return {"top_genres":rows(genres),"top_circles":rows(circles),"new_release_products":len(new_releases),
-  "new_release_share":_percent(len(new_releases),len(release_keys)),"metadata_coverage":{"genre":sum(bool(x.get('genres')) for x in market.values()),"circle":sum(bool(x.get('circle')) for x in market.values()),"release_date":len(release_keys),"total_products":total}}
+  "new_release_share":_percent(len(new_releases),len(release_keys)),
+  "new_release_top10_products":len(new_releases & top10),"genre_price_summary":genre_price_summary,
+  "metadata_coverage":{"genre":sum(bool(x.get('genres')) for x in market.values()),
+   "meaningful_genre":sum(bool(meaningful_genres(x.get('genres'))) for x in market.values()),
+   "circle":sum(bool(x.get('circle')) for x in market.values()),"release_date":len(release_keys),"total_products":total}}
 
 
 def _biggest_movers(observations, limit=10):
@@ -174,7 +186,7 @@ def generate_weekly_report(now=None, fanza_dir=FANZA_DIR, report_dir=REPORT_DIR,
    "max_discount_rate": max(discounts + [0]), "discount_buckets": {"under_20": sum(0 < x < 20 for x in discounts), "20_29": sum(20 <= x < 30 for x in discounts), "30_49": sum(30 <= x < 50 for x in discounts), "50_plus": sum(x >= 50 for x in discounts)}}
  status = "COMPLETE" if complete else "PARTIAL"
  insights = _creator_insights(overview, price_analysis, sale_analysis,api_mode)
- metadata = _metadata_analysis(market,top10,observations) if api_mode else {"top_genres":[],"top_circles":[],"new_release_products":0,"new_release_share":0,"metadata_coverage":{"genre":0,"circle":0,"release_date":0,"total_products":len(market)}}
+ metadata = _metadata_analysis(market,top10,observations) if api_mode else {"top_genres":[],"top_circles":[],"new_release_products":0,"new_release_share":0,"new_release_top10_products":0,"genre_price_summary":[],"metadata_coverage":{"genre":0,"meaningful_genre":0,"circle":0,"release_date":0,"total_products":len(market)}}
  if api_mode and metadata["top_genres"] and len(insights)<3: insights.append(f"APIランキングでは『{metadata['top_genres'][0]['name']}』タグ作品を{metadata['top_genres'][0]['observed_products']}作品観測しました。")
  stable_top10 = top_stays[:10]
  payload = {
