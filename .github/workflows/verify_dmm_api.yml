@@ -2,6 +2,12 @@ name: Verify DMM API ranking
 
 on:
   workflow_dispatch:
+    inputs:
+      verify_ranking:
+        description: "Run ranking verification after inspecting the available floor codes"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -18,16 +24,24 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Run tests
         run: python -m unittest discover -s tests -v
-      - name: Verify DMM API ranking
+      - name: STEP 1 - Inspect DMM floors
+        env:
+          DMM_API_ID: ${{ secrets.DMM_API_ID }}
+          DMM_AFFILIATE_ID: ${{ secrets.DMM_AFFILIATE_ID }}
+        run: python -m src.inspect_dmm_floors
+      - name: STEP 2 - Verify DMM ranking
+        if: ${{ inputs.verify_ranking }}
         env:
           DMM_API_ID: ${{ secrets.DMM_API_ID }}
           DMM_AFFILIATE_ID: ${{ secrets.DMM_AFFILIATE_ID }}
         run: python -m src.verify_dmm_api
       - name: Ensure production data is unchanged
-        run: git diff --exit-code -- . ':(exclude)data/verify/dmm_api_latest.json'
-      - name: Upload verification result
+        run: git diff --exit-code -- . ':(exclude)data/verify/**'
+      - name: Upload floor inspection result
         uses: actions/upload-artifact@v4
         with:
           name: dmm-api-verification
-          path: data/verify/dmm_api_latest.json
+          path: |
+            data/verify/dmm_floors.json
+            data/verify/dmm_api_latest.json
           if-no-files-found: error
