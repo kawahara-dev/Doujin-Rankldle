@@ -61,11 +61,23 @@ class ApiRankingMigrationTest(unittest.TestCase):
  def test_api_duplicate_does_not_append_history(self):
   with tempfile.TemporaryDirectory() as directory:
    root=Path(directory); items=[self.item(1)]
-   self.run_api(root,items)
-   history=next((root/"fanza/api/history").glob("*.json")); before=history.read_bytes()
-   self.run_api(root,items)
-   self.assertEqual(history.read_bytes(),before)
-   self.assertTrue(json.loads((root/"status.json").read_text())["duplicate_api_snapshot"])
+   with patch.object(collector,"generate_weekly_report",wraps=generate_weekly_report) as weekly:
+    self.run_api(root,items)
+    history=next((root/"fanza/api/history").glob("*.json"))
+    current=root/"fanza/api/current.json"; analytics=root/"analytics/fanza_api.json"
+    posts=root/"posts/fanza_api_candidates.json"
+    before={path:path.read_bytes() for path in (history,current,analytics,posts)}
+    status_before=json.loads((root/"status.json").read_text())
+
+    self.run_api(root,items)
+
+   self.assertEqual(weekly.call_count,2)
+   self.assertEqual(weekly.call_args.args[1:],(root/"fanza",root/"reports/weekly",root/"docs/data/reports/weekly"))
+   for path,contents in before.items(): self.assertEqual(path.read_bytes(),contents)
+   status=json.loads((root/"status.json").read_text())
+   self.assertTrue(status["duplicate_api_snapshot"])
+   for field in ("total_runs","total_items_collected","trend_events","exp","rankings"):
+    self.assertEqual(status[field],status_before[field])
 
  def test_api_metadata_refresh_only_updates_current_and_latest(self):
   with tempfile.TemporaryDirectory() as directory:
