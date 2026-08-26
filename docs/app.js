@@ -151,15 +151,30 @@ function matchesApiPriceFilter(item) {
   return true;
 }
 
+const GENRE_ANALYTICS_EXCLUDE_IDS = new Set(["156023", "156022", "156021"]);
+const GENRE_ANALYTICS_EXCLUDE_NAMES = new Set(["成人向け", "男性向け", "専売"]);
+
+function meaningfulGenres(item) {
+  return (Array.isArray(item?.genres) ? item.genres : []).filter((genre) => {
+    const name = String(genre?.name || "").trim();
+    return name && !GENRE_ANALYTICS_EXCLUDE_IDS.has(String(genre?.id || "")) && !GENRE_ANALYTICS_EXCLUDE_NAMES.has(name);
+  });
+}
+
+function uniqueGenreNames(genres) {
+  return [...new Set(genres.map((genre) => String(genre?.name || "").trim()).filter(Boolean))];
+}
+
 function matchesApiFilters(item) {
-  const genres = Array.isArray(item.genres) ? item.genres : [];
+  const genres = meaningfulGenres(item);
   return matchesApiFilter(item) && matchesApiPriceFilter(item) && (apiGenreFilter === "all" || genres.some(genre => genre?.name === apiGenreFilter));
 }
 
 function metadataLines(item) {
   const lines=[];
   if (item.circle?.name) lines.push(`🎨 ${item.circle.name}`);
-  const names=[...new Set((Array.isArray(item.genres) ? item.genres : []).map(x=>String(x?.name || "").trim()).filter(Boolean))];
+  const meaningful=uniqueGenreNames(meaningfulGenres(item));
+  const names=meaningful.length ? meaningful : uniqueGenreNames(Array.isArray(item.genres) ? item.genres : []);
   if (names.length) lines.push(`🏷 ${names.slice(0,3).join(" / ")}${names.length>3 ? ` +${names.length-3}` : ""}`);
   if (item.release_date) lines.push(`📅 ${String(item.release_date).replaceAll("-",".")}`);
   return lines;
@@ -188,8 +203,9 @@ function renderRising(items) {
     const ranks = document.createElement("span"); ranks.className = "rising-ranks"; ranks.textContent = `#${item.previous_rank} → #${item.current_rank}`;
     const change = document.createElement("strong"); change.className = "rising-change"; change.textContent = `↑ +${Number(item.rank_change)}`;
     const title = document.createElement("span"); title.className = "rising-title"; title.textContent = item.title;
+    const genres = document.createElement("small"); genres.className = "rising-genres"; const genreNames=uniqueGenreNames(meaningfulGenres(item)).slice(0,2); genres.textContent=genreNames.length ? `🏷 ${genreNames.join(" / ")}` : "";
     const price = document.createElement("span"); price.className = "rising-price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
-    link.append(order, ranks, change, title, price); return link;
+    link.append(order, ranks, change, title); if (genres.textContent) link.append(genres); link.append(price); return link;
   }));
 }
 
@@ -251,7 +267,7 @@ function updateApiControls(items) {
   el("observedCount").textContent = `観測中 ${items.length.toLocaleString("ja-JP")}作品`;
   document.querySelectorAll("[data-api-filter]").forEach(button => button.classList.toggle("active", button.dataset.apiFilter === apiFilter));
   document.querySelectorAll("[data-api-price-filter]").forEach(button => button.classList.toggle("active", button.dataset.apiPriceFilter === apiPriceFilter));
-  const counts=new Map(); items.forEach(item=>new Set((item.genres || []).map(x=>x?.name).filter(Boolean)).forEach(name=>counts.set(name,(counts.get(name)||0)+1)));
+  const counts=new Map(); items.forEach(item=>new Set(uniqueGenreNames(meaningfulGenres(item))).forEach(name=>counts.set(name,(counts.get(name)||0)+1)));
   const choices=[...counts].sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0],"ja")).slice(0,10);
   if (apiGenreFilter !== "all" && !counts.has(apiGenreFilter)) apiGenreFilter="all";
   const genreBox=el("apiGenreFilters"); genreBox.replaceChildren(...[["all",null],...choices].map(([name,count])=>{ const button=document.createElement("button"); button.type="button"; button.dataset.apiGenreFilter=name; button.classList.toggle("active",name===apiGenreFilter); button.textContent=name==="all" ? "ALL" : `${name} ${count}`; button.addEventListener("click",()=>{apiGenreFilter=name;apiExpanded=false;updateApiControls(items);renderItems(items);}); return button; }));
