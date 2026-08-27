@@ -2,7 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#11131a"><title>DOUJIN RANKIDLE</title>
+  <meta name="theme-color" content="#11131a">
+  <meta name="description" content="FANZA Web Service APIランキングを定期観測し、順位変動・ジャンル・価格帯・新作傾向を可視化する非公式ランキング観測サイト。">
+  <title>DOUJIN RANKIDLE</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,6 +13,39 @@
       <div><p class="eyebrow">AUTONOMOUS DOUJIN WATCHER</p><h1>DOUJIN <span>RANKIDLE</span></h1><p class="bot-level">RANKIDLE BOT <strong>Lv. <span id="level">1</span></strong></p></div>
       <div><div class="mode-badge mock" id="modeBadge">DEMO MODE</div><p class="demo-note" id="modeSubtitle">SAMPLE DATA</p></div>
     </header>
+
+    <section class="onboarding panel" aria-labelledby="onboardingTitle">
+      <div class="onboarding-summary">
+        <div>
+          <p class="eyebrow">UNOFFICIAL OBSERVATION TOOL</p>
+          <h2 id="onboardingTitle">RankIdleとは？</h2>
+          <p>FANZA Web Service APIのランキングを定期観測し、順位変動・ジャンル・価格帯・新作傾向を可視化する<strong>非公式サイト</strong>です。</p>
+          <small>販売数・売上・閲覧数を示すものではありません。</small>
+        </div>
+        <button id="onboardingToggle" class="onboarding-toggle" type="button" aria-expanded="false" aria-controls="onboardingGuide">HOW TO READ</button>
+      </div>
+      <div id="onboardingGuide" class="onboarding-guide" aria-hidden="true" hidden>
+        <div class="guide-intro">
+          <p><strong>API RANKING</strong> — FANZA Web Service APIの <code>sort=rank</code> を定期観測。FANZA公式サイトの1時間 / 24時間ランキングとは別の観測値です。</p>
+        </div>
+        <div class="term-grid">
+          <article><h3>RISING TOP5</h3><p>前回観測から順位が上昇した作品を、上昇幅順に最大5件表示。NEW / REENTRYは単純比較できないため含みません。</p></article>
+          <article><h3>UP / DOWN / STAY</h3><p><b>UP</b> 順位上昇　<b>DOWN</b> 順位下降　<b>STAY</b> 変化なし。いずれも前回観測との比較です。</p></article>
+          <article><h3>NEW</h3><p>RankIdleのAPI観測上、今回初めて観測された作品。発売直後という意味ではありません。</p></article>
+          <article><h3>REENTRY</h3><p>一度観測外になった後、再びランキング内で観測された作品です。</p></article>
+          <article><h3>NEW RELEASE</h3><p><code>release_date</code>をもとにした発売7日以内の作品。ランキングstatusのNEWとは別です。</p></article>
+          <article><h3>MOMENTUM</h3><p>直近複数回の観測で継続して順位が上昇している場合に表示。売上増加を意味しません。</p></article>
+          <article><h3>TOP10観測率</h3><p>週次観測期間中、対象ジャンル作品のうちTOP10で観測された作品数の比率。販売率・購入率ではありません。</p></article>
+          <article><h3>WEEKLY GENRE WATCH</h3><p>保存したAPIランキングsnapshotから、ジャンル、新作比率、TOP10観測数、ジャンル別価格中央値などを集計します。</p></article>
+          <article><h3>PRICE</h3><p>DMM/FANZA APIから取得した商品価格。価格中央値は観測作品の価格中央値です。</p></article>
+        </div>
+        <aside class="guide-notice" aria-label="ランキング観測データについての注意">
+          <strong>NOTICE</strong>
+          <p>RankIdleが扱うのはランキング観測データです。販売数・売上・閲覧数・購入率は取得、表示していません。「売れている」「人気が高い」「このジャンルなら売れる」ことを示すものではありません。</p>
+        </aside>
+        <button id="onboardingClose" class="onboarding-close" type="button">HIDE GUIDE</button>
+      </div>
+    </section>
 
     <section class="status-panel panel">
       <div><p class="label">BOT STATUS</p><p class="online" id="botStatus"><i></i><span>CHECKING</span></p><p class="demo-note" id="demoNote">SAMPLE DATA / NOT LIVE</p></div>
@@ -71,6 +106,7 @@
       <h3>IMPORT DATA PREVIEW</h3><div id="importPreview" class="product-list"></div>
       <p class="demo-note">GitHubへの書き込み、トークンの保存、自動投稿は行いません。</p>
     </section>
+    <footer><strong>UNOFFICIAL OBSERVATION TOOL</strong><br>RankIdle is an unofficial observation tool. Ranking observations do not represent sales or views.<br>ランキング観測は販売数・売上・閲覧数を示すものではありません。</footer>
   </main>
   <script src="bookmarklet-minifier.js" defer></script>
   <script src="app.js" defer></script>
