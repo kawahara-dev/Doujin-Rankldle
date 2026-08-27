@@ -1,26 +1,26 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-27T07:14:24+09:00",
+  "generated_at": "2026-08-27T12:20:06+09:00",
   "data_status": "PARTIAL",
   "observed_days": 2,
   "expected_days": 4,
   "snapshot_counts": {
-    "api": 4
+    "api": 5
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 103,
+    "unique_products": 104,
     "top10_unique_products": 11,
-    "new_entries": 103,
-    "reentries": 0,
+    "new_entries": 104,
+    "reentries": 1,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 23
   },
   "price_analysis": {
-    "average_price": 1272,
+    "average_price": 1269,
     "median_price": 990,
     "top10_average_price": 1625,
     "top10_median_price": 1573,
@@ -32,7 +32,7 @@
       },
       {
         "label": "500〜999円",
-        "count": 46,
+        "count": 47,
         "top10_count": 4
       },
       {
@@ -68,33 +68,18 @@
   },
   "top_genres": [
     {
-      "name": "成人向け",
-      "observed_products": 100,
-      "top10_products": 11
-    },
-    {
-      "name": "男性向け",
-      "observed_products": 100,
-      "top10_products": 11
-    },
-    {
       "name": "中出し",
-      "observed_products": 78,
-      "top10_products": 9
-    },
-    {
-      "name": "専売",
-      "observed_products": 67,
+      "observed_products": 79,
       "top10_products": 9
     },
     {
       "name": "巨乳",
-      "observed_products": 67,
+      "observed_products": 68,
       "top10_products": 10
     },
     {
       "name": "おっぱい",
-      "observed_products": 66,
+      "observed_products": 67,
       "top10_products": 7
     },
     {
@@ -104,35 +89,104 @@
     },
     {
       "name": "コミケ108（2026夏）",
-      "observed_products": 38,
+      "observed_products": 39,
       "top10_products": 9
     },
     {
       "name": "制服",
-      "observed_products": 33,
+      "observed_products": 34,
       "top10_products": 4
     },
     {
       "name": "パイズリ",
       "observed_products": 29,
       "top10_products": 4
+    },
+    {
+      "name": "寝取り・寝取られ・NTR",
+      "observed_products": 22,
+      "top10_products": 1
+    },
+    {
+      "name": "人妻・主婦",
+      "observed_products": 21,
+      "top10_products": 3
+    },
+    {
+      "name": "処女",
+      "observed_products": 20,
+      "top10_products": 2
     }
   ],
   "top_circles": [],
-  "new_release_products": 35,
-  "new_release_share": 35,
+  "new_release_products": 37,
+  "new_release_share": 36,
+  "new_release_top10_products": 7,
+  "genre_price_summary": [
+    {
+      "name": "中出し",
+      "product_count": 79,
+      "median_price": 990
+    },
+    {
+      "name": "巨乳",
+      "product_count": 68,
+      "median_price": 990
+    },
+    {
+      "name": "おっぱい",
+      "product_count": 67,
+      "median_price": 990
+    },
+    {
+      "name": "フェラ",
+      "product_count": 40,
+      "median_price": 990
+    },
+    {
+      "name": "コミケ108（2026夏）",
+      "product_count": 39,
+      "median_price": 990
+    },
+    {
+      "name": "制服",
+      "product_count": 34,
+      "median_price": 908
+    },
+    {
+      "name": "パイズリ",
+      "product_count": 29,
+      "median_price": 990
+    },
+    {
+      "name": "寝取り・寝取られ・NTR",
+      "product_count": 22,
+      "median_price": 990
+    },
+    {
+      "name": "人妻・主婦",
+      "product_count": 21,
+      "median_price": 990
+    },
+    {
+      "name": "処女",
+      "product_count": 20,
+      "median_price": 1045
+    }
+  ],
   "metadata_coverage": {
-    "genre": 100,
+    "genre": 102,
+    "meaningful_genre": 102,
     "circle": 0,
-    "release_date": 100,
-    "total_products": 103
+    "release_date": 102,
+    "total_products": 104
   },
   "ranking_behavior": {
     "top10_entry_events": 11,
-    "large_rise_5_plus": 14,
+    "large_rise_5_plus": 18,
     "large_rise_10_plus": 2,
-    "new_entry_events": 103,
-    "reentry_events": 0
+    "new_entry_events": 104,
+    "reentry_events": 1
   },
   "biggest_movers": [
     {
@@ -219,131 +273,131 @@
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+23でした。",
     "APIランキング上位で11作品を観測しました。",
-    "NEWを103件、REENTRYを0件観測しました。"
+    "NEWを104件、REENTRYを1件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +23\n🆕 NEW 103件\n🔄 REENTRY 0件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを103件、REENTRYを0件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +23\n🆕 NEW 104件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを104件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_805647",
       "title": "サキュバス性徒会シコシコ執行部4前編",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_805704",
       "title": "ファンティアまとめ本",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_806152",
       "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_755081",
       "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
-      "top10_snapshots": 3,
-      "observation_rate": 75
+      "top10_snapshots": 4,
+      "observation_rate": 80
     }
   ],
   "top10_stays": [
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_805647",
       "title": "サキュバス性徒会シコシコ執行部4前編",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_805704",
       "title": "ファンティアまとめ本",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_806152",
       "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
-      "top10_snapshots": 4,
+      "top10_snapshots": 5,
       "observation_rate": 100
     },
     {
       "id": "d_755081",
       "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
-      "top10_snapshots": 3,
-      "observation_rate": 75
+      "top10_snapshots": 4,
+      "observation_rate": 80
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
