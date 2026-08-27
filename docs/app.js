@@ -24,6 +24,7 @@ let apiFilter = "all";
 let apiPriceFilter = "all";
 let apiGenreFilter = "all";
 let weeklyGenreExpanded = false;
+let mobileGenresExpanded = false;
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -204,7 +205,8 @@ function renderRising(items) {
     const ranks = document.createElement("span"); ranks.className = "rising-ranks"; ranks.textContent = `#${item.previous_rank} → #${item.current_rank}`;
     const change = document.createElement("strong"); change.className = "rising-change"; change.textContent = `↑ +${Number(item.rank_change)}`;
     const title = document.createElement("span"); title.className = "rising-title"; title.textContent = item.title;
-    const genres = document.createElement("small"); genres.className = "rising-genres"; const genreNames=uniqueGenreNames(meaningfulGenres(item)).slice(0,2); genres.textContent=genreNames.length ? `🏷 ${genreNames.join(" / ")}` : "";
+    const genres = document.createElement("small"); genres.className = "rising-genres"; const genreNames=uniqueGenreNames(meaningfulGenres(item)); genres.textContent=genreNames.length ? `🏷 ${genreNames.slice(0,2).join(" / ")}` : "";
+    if (genreNames.length) genres.dataset.mobileText = `🏷 ${genreNames[0]}`;
     const price = document.createElement("span"); price.className = "rising-price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
     link.append(order, ranks, change, title); if (genres.textContent) link.append(genres); link.append(price); return link;
   }));
@@ -226,7 +228,19 @@ function renderItems(items) {
     const title = document.createElement("span"); title.className = "title"; title.textContent = item.title;
     const price = document.createElement("span"); price.className = "price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
     link.append(rank, title);
-    if (isApi) { const metadata=document.createElement("small"); metadata.className="product-metadata"; metadata.textContent=metadataLines(item).join("  "); if (metadata.textContent) link.append(metadata); }
+    if (isApi) {
+      const metadata=document.createElement("small"); metadata.className="product-metadata";
+      if (item.circle?.name) { const circle=document.createElement("span"); circle.className="metadata-circle"; circle.textContent=`🎨 ${item.circle.name}`; metadata.append(circle); }
+      const meaningful=uniqueGenreNames(meaningfulGenres(item));
+      const genreNames=meaningful.length ? meaningful : uniqueGenreNames(Array.isArray(item.genres) ? item.genres : []);
+      if (genreNames.length) {
+        const genres=document.createElement("span"); genres.className="metadata-genres desktop-genres"; genres.textContent=`🏷 ${genreNames.slice(0,3).join(" / ")}${genreNames.length>3 ? ` +${genreNames.length-3}` : ""}`;
+        const mobileGenres=document.createElement("span"); mobileGenres.className="metadata-genres mobile-genres"; mobileGenres.textContent=`🏷 ${genreNames.slice(0,2).join(" / ")}${genreNames.length>2 ? ` +${genreNames.length-2}` : ""}`;
+        metadata.append(genres,mobileGenres);
+      }
+      if (item.release_date) { const release=document.createElement("span"); release.className="metadata-release"; release.textContent=`📅 ${String(item.release_date).replaceAll("-", ".")}`; metadata.append(release); }
+      if (metadata.childElementCount) link.append(metadata);
+    }
     if (isApi && number(item.current_rank || item.rank) <= 10) { const badge=document.createElement("b"); badge.className="top10-badge"; badge.textContent="TOP10"; link.append(badge); }
     if (isApi && isNewRelease(item.release_date)) { const badge=document.createElement("b"); badge.className="new-release-badge"; badge.textContent="🆕 NEW RELEASE"; link.append(badge); }
     if (selectedRanking === "24h" && item.on_sale) { const badge=document.createElement("b"); badge.className="sale-badge"; badge.textContent=`${number(item.discount_rate)}% OFF`; link.append(badge); }
@@ -272,7 +286,10 @@ function updateApiControls(items) {
   const counts=new Map(); items.forEach(item=>new Set(uniqueGenreNames(meaningfulGenres(item))).forEach(name=>counts.set(name,(counts.get(name)||0)+1)));
   const choices=[...counts].sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0],"ja")).slice(0,10);
   if (apiGenreFilter !== "all" && !counts.has(apiGenreFilter)) apiGenreFilter="all";
-  const genreBox=el("apiGenreFilters"); genreBox.replaceChildren(...[["all",null],...choices].map(([name,count])=>{ const button=document.createElement("button"); button.type="button"; button.dataset.apiGenreFilter=name; button.classList.toggle("active",name===apiGenreFilter); button.textContent=name==="all" ? "ALL" : `${name} ${count}`; button.addEventListener("click",()=>{apiGenreFilter=name;apiExpanded=false;updateApiControls(items);renderItems(items);}); return button; }));
+  const genreBox=el("apiGenreFilters");
+  const genreButtons=[["all",null],...choices].map(([name,count],index)=>{ const button=document.createElement("button"); button.type="button"; button.dataset.apiGenreFilter=name; button.classList.toggle("active",name===apiGenreFilter); if(index>5) button.classList.add("mobile-extra-genre"); button.hidden=index>5&&!mobileGenresExpanded; button.textContent=name==="all" ? "ALL" : `${name} ${count}`; button.addEventListener("click",()=>{apiGenreFilter=name;apiExpanded=false;updateApiControls(items);renderItems(items);}); return button; });
+  if(choices.length>5) { const more=document.createElement("button"); more.type="button"; more.className="more-genres"; more.textContent=mobileGenresExpanded?"FEWER GENRES":"MORE GENRES"; more.setAttribute("aria-expanded",String(mobileGenresExpanded)); more.addEventListener("click",()=>{mobileGenresExpanded=!mobileGenresExpanded;updateApiControls(items);}); genreButtons.push(more); }
+  genreBox.replaceChildren(...genreButtons);
   const matches = items.filter(matchesApiFilters).length;
   const filtered = apiFilter !== "all" || apiPriceFilter !== "all" || apiGenreFilter !== "all";
   el("filteredCount").hidden = !isApi || !filtered;
