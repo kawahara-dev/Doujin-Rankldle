@@ -25,6 +25,7 @@ let apiPriceFilter = "all";
 let apiGenreFilter = "all";
 let weeklyGenreExpanded = false;
 let mobileGenresExpanded = false;
+let onboardingExpanded = false;
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -467,4 +468,13 @@ document.querySelectorAll("[data-api-filter]").forEach(button => button.addEvent
 document.querySelectorAll("[data-api-price-filter]").forEach(button => button.addEventListener("click", () => { apiPriceFilter = button.dataset.apiPriceFilter; apiExpanded = false; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); }));
 el("rankingMore").addEventListener("click", () => { apiExpanded = !apiExpanded; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); if (!apiExpanded) el("trendLabel").scrollIntoView({ behavior: "smooth", block: "start" }); });
 el("weeklyGenreDetailsButton").addEventListener("click", () => { weeklyGenreExpanded=!weeklyGenreExpanded; el("weeklyGenreDetails").hidden=!weeklyGenreExpanded; el("weeklyGenreDetailsButton").textContent=weeklyGenreExpanded?"HIDE DETAILS":"DETAILS"; el("weeklyGenreDetailsButton").setAttribute("aria-expanded",String(weeklyGenreExpanded)); });
+function setOnboardingExpanded(expanded) {
+  onboardingExpanded = expanded;
+  el("onboardingGuide").hidden = !expanded;
+  el("onboardingGuide").setAttribute("aria-hidden", String(!expanded));
+  el("onboardingToggle").setAttribute("aria-expanded", String(expanded));
+  el("onboardingToggle").textContent = expanded ? "HIDE GUIDE" : "HOW TO READ";
+}
+el("onboardingToggle").addEventListener("click", () => setOnboardingExpanded(!onboardingExpanded));
+el("onboardingClose").addEventListener("click", () => setOnboardingExpanded(false));
 updateCountdown(); setInterval(updateCountdown, 1000); setInterval(loadDashboard, POLL_INTERVAL); setupImportTools(); loadDashboard();
