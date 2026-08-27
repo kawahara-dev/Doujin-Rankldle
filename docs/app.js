@@ -23,6 +23,7 @@ let apiExpanded = false;
 let apiFilter = "all";
 let apiPriceFilter = "all";
 let apiGenreFilter = "all";
+let weeklyGenreExpanded = false;
 
 const el = (id) => document.getElementById(id);
 const pad = (number) => String(number).padStart(2, "0");
@@ -263,6 +264,7 @@ function updateApiControls(items) {
   const isApi = selectedRanking === "api";
   el("apiFilters").hidden = !isApi;
   el("risingSection").hidden = !isApi;
+  el("weeklyGenreWatch").hidden = !isApi;
   el("observedCount").hidden = !isApi;
   el("observedCount").textContent = `観測中 ${items.length.toLocaleString("ja-JP")}作品`;
   document.querySelectorAll("[data-api-filter]").forEach(button => button.classList.toggle("active", button.dataset.apiFilter === apiFilter));
@@ -316,6 +318,25 @@ function renderWeekly(report) {
   el("weeklyPrices").innerHTML=(report.price_analysis?.price_buckets||[]).map(bucket=>`<p><span>${bucket.label}</span><b>${bucket.count}</b><small>TOP10 ${bucket.top10_count}</small></p>`).join("");
   const stays=report.stable_top10||report.top10_stays||[];
   el("weeklyStays").innerHTML=stays.length?stays.map(item=>`<li><span>${item.title}</span><b>${item.top10_snapshots}回観測</b></li>`).join(""):"<li>観測データなし</li>";
+}
+
+function renderWeeklyGenreWatch(report) {
+  if (!report || typeof report !== "object") {
+    el("weeklyGenreContent").innerHTML = '<p class="genre-watch-empty">まだ週次データがないよ。<br>観測データが溜まるのを待ってね📡</p>';
+    el("weeklyGenreStatus").hidden = true; el("weeklyGenrePartial").hidden = true;
+    el("weeklyGenrePeriod").textContent = ""; el("weeklyGenreUpdated").textContent = "";
+    el("weeklyGenreDetailsButton").hidden = true; el("weeklyGenreDetails").hidden = true; return;
+  }
+  const partial=report.data_status==="PARTIAL"; el("weeklyGenreStatus").hidden=!partial; el("weeklyGenrePartial").hidden=!partial;
+  el("weeklyGenrePeriod").textContent=report.week_start&&report.week_end?`${report.week_start} → ${report.week_end}`:"";
+  const generated=report.generated_at?new Date(report.generated_at):null; el("weeklyGenreUpdated").textContent=generated&&!Number.isNaN(generated.getTime())?`UPDATED ${generated.toLocaleString("ja-JP",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"})}`:"";
+  const genres=(Array.isArray(report.top_genres)?report.top_genres:[]).slice(0,5),group=document.createElement("div"),heading=document.createElement("h4"),list=document.createElement("div"); group.className="genre-watch-group"; heading.textContent="🏷 TOP GENRES"; list.className="genre-watch-list"; group.append(heading);
+  if(genres.length)list.append(...genres.map((genre,index)=>{const observed=number(genre?.observed_products),top10=number(genre?.top10_products),card=document.createElement("article"),rank=document.createElement("b"),name=document.createElement("strong"),counts=document.createElement("span"),top=document.createElement("small");rank.textContent=`#${index+1}`;name.textContent=String(genre?.name||"名称不明");counts.textContent=`${observed.toLocaleString("ja-JP")}作品観測`;top.textContent=`TOP10で${top10.toLocaleString("ja-JP")}作品観測`;card.append(rank,name,counts,top);if(observed>0){const rate=document.createElement("small");rate.textContent=`TOP10観測率 ${(top10/observed*100).toFixed(1)}%`;card.append(rate);}return card;}));else{const empty=document.createElement("p");empty.className="genre-watch-empty compact";empty.textContent="ジャンル観測データなし";list.append(empty);}group.append(list);
+  const summary=document.createElement("div");summary.className="genre-watch-summary";[["🆕 NEW RELEASE",`${number(report.new_release_products).toLocaleString("ja-JP")}作品`,`発売7日以内 / 今週観測作品の${number(report.new_release_share).toLocaleString("ja-JP")}%`],["🔥 NEW × TOP10",`${number(report.new_release_top10_products).toLocaleString("ja-JP")}作品`,"発売7日以内かつTOP10で観測された作品数"]].forEach(([title,value,note])=>{const card=document.createElement("article"),h=document.createElement("h4"),strong=document.createElement("strong"),small=document.createElement("small");h.textContent=title;strong.textContent=value;small.textContent=note;card.append(h,strong,small);summary.append(card);});el("weeklyGenreContent").replaceChildren(group,summary);
+  const prices=(Array.isArray(report.genre_price_summary)?report.genre_price_summary:[]).slice(0,5);el("weeklyGenrePrices").replaceChildren(...prices.map(item=>{const row=document.createElement("p"),name=document.createElement("span"),price=document.createElement("b");name.textContent=String(item?.name||"名称不明");price.textContent=`価格中央値 ¥${number(item?.median_price).toLocaleString("ja-JP")}`;row.append(name,price);return row;}));
+  const coverage=report.metadata_coverage||{},total=number(coverage.total_products);el("weeklyGenreCoverage").replaceChildren(...[["GENRE",coverage.genre],["RELEASE DATE",coverage.release_date]].map(([label,value])=>{const row=document.createElement("p"),name=document.createElement("span"),count=document.createElement("b");name.textContent=label;count.textContent=`${number(value).toLocaleString("ja-JP")} / ${total.toLocaleString("ja-JP")}`;row.append(name,count);return row;}));
+  const hasDetails=prices.length>0||total>0;el("weeklyGenreDetailsButton").hidden=!hasDetails;el("weeklyGenreDetailsButton").textContent=weeklyGenreExpanded?"CLOSE":"DETAILS";el("weeklyGenreDetailsButton").setAttribute("aria-expanded",String(weeklyGenreExpanded));el("weeklyGenreDetails").hidden=!hasDetails||!weeklyGenreExpanded;
+  el("weeklyGenreMethodology").textContent=report.methodology_note?String(report.methodology_note):"※RankIdleが保存したFANZA APIランキング観測データによる集計です。\n販売数・売上を示すものではありません。";
 }
 
 function selectRanking(type) {
@@ -395,7 +416,10 @@ async function loadDashboard() {
     el("modeSubtitle").textContent = ageGate ? "FANZA AGE VERIFICATION REACHED / NO BYPASS" : mode === "live" ? "DMM API CONNECTED" : mode === "import" ? "MANUAL RANKING IMPORT" : mode === "public" ? "PUBLIC RANKING DATA" : "SAMPLE DATA"; el("modeBadge").className = `mode-badge ${mode}`; el("demoNote").hidden = mode !== "mock";
     renderModules(mode, status.rankings); renderAchievements(scans, totalItems); selectRanking(selectedRanking); renderCandidates(candidates);
     renderSaleWatch(rankingData["24h"]?.items || []);
-    if (weekly?.ok) renderWeekly(await weekly.json());
+    let weeklyReport = null;
+    if (weekly?.ok) { try { weeklyReport = await weekly.json(); } catch (_) { weeklyReport = null; } }
+    if (weeklyReport) renderWeekly(weeklyReport);
+    renderWeeklyGenreWatch(weeklyReport);
     const signals = status.market_signals || {};
     el("marketSignals").innerHTML = [["1H MAX RISE", signals["1h_max_rise"]], ["24H MAX RISE", signals["24h_max_rise"]], ["CROSS TREND", signals.cross_trend], ["ACTIVE SALES",signals.active_sales],["HOT SALES",signals.hot_sales],["MAX DISCOUNT",`${number(signals.max_discount)}%`]].map(([label,value]) => `<article><small>${label}</small><strong>${label.includes("RISE") && number(value) ? "+" : ""}${value ?? 0}</strong></article>`).join("");
     if (status.last_run || latest.updated_at) {
@@ -415,4 +439,5 @@ document.querySelectorAll("[data-ranking]").forEach(button => button.addEventLis
 document.querySelectorAll("[data-api-filter]").forEach(button => button.addEventListener("click", () => { apiFilter = button.dataset.apiFilter; apiExpanded = false; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); }));
 document.querySelectorAll("[data-api-price-filter]").forEach(button => button.addEventListener("click", () => { apiPriceFilter = button.dataset.apiPriceFilter; apiExpanded = false; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); }));
 el("rankingMore").addEventListener("click", () => { apiExpanded = !apiExpanded; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); if (!apiExpanded) el("trendLabel").scrollIntoView({ behavior: "smooth", block: "start" }); });
+el("weeklyGenreDetailsButton").addEventListener("click", () => { weeklyGenreExpanded=!weeklyGenreExpanded; el("weeklyGenreDetails").hidden=!weeklyGenreExpanded; el("weeklyGenreDetailsButton").textContent=weeklyGenreExpanded?"CLOSE":"DETAILS"; el("weeklyGenreDetailsButton").setAttribute("aria-expanded",String(weeklyGenreExpanded)); });
 updateCountdown(); setInterval(updateCountdown, 1000); setInterval(loadDashboard, POLL_INTERVAL); setupImportTools(); loadDashboard();
