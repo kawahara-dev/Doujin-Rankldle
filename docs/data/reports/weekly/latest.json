@@ -1,29 +1,29 @@
 {
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "generated_at": "2026-08-28T07:58:03+09:00",
+  "generated_at": "2026-08-28T20:25:10+09:00",
   "data_status": "PARTIAL",
   "observed_days": 3,
   "expected_days": 5,
   "snapshot_counts": {
-    "api": 7
+    "api": 8
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 110,
-    "top10_unique_products": 12,
-    "new_entries": 110,
+    "unique_products": 115,
+    "top10_unique_products": 14,
+    "new_entries": 115,
     "reentries": 1,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
-    "max_rank_rise_api": 23
+    "max_rank_rise_api": 41
   },
   "price_analysis": {
-    "average_price": 1239,
+    "average_price": 1227,
     "median_price": 990,
-    "top10_average_price": 1554,
-    "top10_median_price": 1336,
+    "top10_average_price": 1461,
+    "top10_median_price": 1045,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -32,12 +32,12 @@
       },
       {
         "label": "500〜999円",
-        "count": 51,
-        "top10_count": 5
+        "count": 55,
+        "top10_count": 7
       },
       {
         "label": "1000〜1999円",
-        "count": 28,
+        "count": 29,
         "top10_count": 4
       },
       {
@@ -69,43 +69,43 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 84,
-      "top10_products": 10
+      "observed_products": 86,
+      "top10_products": 12
     },
     {
       "name": "巨乳",
-      "observed_products": 73,
-      "top10_products": 11
+      "observed_products": 78,
+      "top10_products": 12
     },
     {
       "name": "おっぱい",
-      "observed_products": 70,
-      "top10_products": 8
+      "observed_products": 72,
+      "top10_products": 10
+    },
+    {
+      "name": "コミケ108（2026夏）",
+      "observed_products": 43,
+      "top10_products": 10
     },
     {
       "name": "フェラ",
       "observed_products": 43,
-      "top10_products": 6
-    },
-    {
-      "name": "コミケ108（2026夏）",
-      "observed_products": 41,
-      "top10_products": 9
+      "top10_products": 7
     },
     {
       "name": "制服",
-      "observed_products": 36,
+      "observed_products": 37,
       "top10_products": 4
     },
     {
       "name": "パイズリ",
-      "observed_products": 32,
-      "top10_products": 4
+      "observed_products": 33,
+      "top10_products": 5
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 24,
-      "top10_products": 1
+      "observed_products": 25,
+      "top10_products": 2
     },
     {
       "name": "処女",
@@ -119,24 +119,29 @@
     }
   ],
   "top_circles": [],
-  "new_release_products": 40,
-  "new_release_share": 37,
-  "new_release_top10_products": 8,
+  "new_release_products": 44,
+  "new_release_share": 39,
+  "new_release_top10_products": 10,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 84,
+      "product_count": 86,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 73,
+      "product_count": 78,
       "median_price": 990
     },
     {
       "name": "おっぱい",
-      "product_count": 70,
+      "product_count": 72,
       "median_price": 960
+    },
+    {
+      "name": "コミケ108（2026夏）",
+      "product_count": 43,
+      "median_price": 990
     },
     {
       "name": "フェラ",
@@ -144,23 +149,18 @@
       "median_price": 990
     },
     {
-      "name": "コミケ108（2026夏）",
-      "product_count": 41,
-      "median_price": 990
-    },
-    {
       "name": "制服",
-      "product_count": 36,
+      "product_count": 37,
       "median_price": 891
     },
     {
       "name": "パイズリ",
-      "product_count": 32,
+      "product_count": 33,
       "median_price": 990
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 24,
+      "product_count": 25,
       "median_price": 990
     },
     {
@@ -175,20 +175,28 @@
     }
   ],
   "metadata_coverage": {
-    "genre": 108,
-    "meaningful_genre": 108,
+    "genre": 113,
+    "meaningful_genre": 113,
     "circle": 0,
-    "release_date": 108,
-    "total_products": 110
+    "release_date": 113,
+    "total_products": 115
   },
   "ranking_behavior": {
-    "top10_entry_events": 12,
-    "large_rise_5_plus": 34,
-    "large_rise_10_plus": 3,
-    "new_entry_events": 110,
+    "top10_entry_events": 14,
+    "large_rise_5_plus": 45,
+    "large_rise_10_plus": 8,
+    "new_entry_events": 115,
     "reentry_events": 1
   },
   "biggest_movers": [
+    {
+      "id": "d_770285",
+      "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
+      "ranking_type": "api",
+      "rank_change": 41,
+      "current_rank": 17,
+      "observed_at": "2026-08-28T20:25:10+09:00"
+    },
     {
       "id": "d_773978",
       "title": "多分オレはもうすぐ死ぬので憧れの上司にSEXお願いしたら叶えてくれた話",
@@ -196,6 +204,30 @@
       "rank_change": 23,
       "current_rank": 73,
       "observed_at": "2026-08-27T05:03:50+09:00"
+    },
+    {
+      "id": "d_804455",
+      "title": "好きなんだって！",
+      "ranking_type": "api",
+      "rank_change": 21,
+      "current_rank": 52,
+      "observed_at": "2026-08-28T20:25:10+09:00"
+    },
+    {
+      "id": "d_709018",
+      "title": "陰キャな俺だけが知っている生徒会長の裏側。 〜隠れ巨乳の先輩が快楽に屈服して堕ちるまで〜",
+      "ranking_type": "api",
+      "rank_change": 15,
+      "current_rank": 85,
+      "observed_at": "2026-08-28T20:25:10+09:00"
+    },
+    {
+      "id": "d_712453",
+      "title": "久しぶりに帰省したら幼馴染が父に抱かれてた",
+      "ranking_type": "api",
+      "rank_change": 12,
+      "current_rank": 71,
+      "observed_at": "2026-08-28T20:25:10+09:00"
     },
     {
       "id": "d_801163",
@@ -206,12 +238,20 @@
       "observed_at": "2026-08-27T05:03:50+09:00"
     },
     {
+      "id": "d_808215",
+      "title": "催●洗脳支配学園II〜逆襲のデブオ〜",
+      "ranking_type": "api",
+      "rank_change": 10,
+      "current_rank": 72,
+      "observed_at": "2026-08-28T20:25:10+09:00"
+    },
+    {
       "id": "d_810654",
       "title": "JK退魔師 VS 因習村〜寝取られ幼馴染は島の有力者のおまんこ契約に逆らえません〜",
       "ranking_type": "api",
       "rank_change": 9,
-      "current_rank": 59,
-      "observed_at": "2026-08-27T05:03:50+09:00"
+      "current_rank": 38,
+      "observed_at": "2026-08-28T20:25:10+09:00"
     },
     {
       "id": "d_780727",
@@ -222,182 +262,142 @@
       "observed_at": "2026-08-28T07:58:03+09:00"
     },
     {
-      "id": "d_809567",
-      "title": "現実改変アプリでハーレム学園を作ろう！",
+      "id": "d_731432",
+      "title": "その制服をめちゃくちゃにしたい〜教え子と初恋上書き本気セックス編〜",
       "ranking_type": "api",
-      "rank_change": 8,
-      "current_rank": 58,
-      "observed_at": "2026-08-27T05:03:50+09:00"
-    },
-    {
-      "id": "d_805022",
-      "title": "催●回覧板（アプリ）は巨乳（デカパイ）に",
-      "ranking_type": "api",
-      "rank_change": 8,
-      "current_rank": 85,
-      "observed_at": "2026-08-27T05:03:50+09:00"
-    },
-    {
-      "id": "d_802566",
-      "title": "催淫スマホで俺だけハーレム",
-      "ranking_type": "api",
-      "rank_change": 7,
-      "current_rank": 30,
-      "observed_at": "2026-08-27T05:03:50+09:00"
-    },
-    {
-      "id": "d_583575",
-      "title": "性格終わってる年下女上司を育休送り残業レ●プ",
-      "ranking_type": "api",
-      "rank_change": 7,
-      "current_rank": 65,
-      "observed_at": "2026-08-28T07:58:03+09:00"
-    },
-    {
-      "id": "d_808215",
-      "title": "催●洗脳支配学園II〜逆襲のデブオ〜",
-      "ranking_type": "api",
-      "rank_change": 7,
-      "current_rank": 88,
-      "observed_at": "2026-08-27T18:51:14+09:00"
-    },
-    {
-      "id": "d_799407",
-      "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "ranking_type": "api",
-      "rank_change": 6,
-      "current_rank": 13,
-      "observed_at": "2026-08-27T05:03:50+09:00"
+      "rank_change": 9,
+      "current_rank": 80,
+      "observed_at": "2026-08-28T20:25:10+09:00"
     }
   ],
   "creator_insights": [
-    "今週の最大上昇はAPIランキングで+23でした。",
-    "APIランキング上位で12作品を観測しました。",
-    "NEWを110件、REENTRYを1件観測しました。"
+    "今週の最大上昇はAPIランキングで+41でした。",
+    "APIランキング上位で14作品を観測しました。",
+    "NEWを115件、REENTRYを1件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +23\n🆕 NEW 110件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを110件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +41\n🆕 NEW 115件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを115件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_806152",
+      "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_805647",
       "title": "サキュバス性徒会シコシコ執行部4前編",
       "top10_snapshots": 7,
-      "observation_rate": 100
+      "observation_rate": 88
     },
     {
       "id": "d_805704",
       "title": "ファンティアまとめ本",
       "top10_snapshots": 7,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_806152",
-      "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
-      "top10_snapshots": 7,
-      "observation_rate": 100
+      "observation_rate": 88
     },
     {
       "id": "d_755081",
       "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
       "top10_snapshots": 5,
-      "observation_rate": 71
+      "observation_rate": 62
     }
   ],
   "top10_stays": [
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_782771",
       "title": "【早期購入特典有】女絵師 ＋ ノンフィクションレポ漫画まとめ 2025-2026上半期",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_804292",
       "title": "となりのあやねさん 旅館でしっぽり編",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_806152",
+      "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_805647",
       "title": "サキュバス性徒会シコシコ執行部4前編",
       "top10_snapshots": 7,
-      "observation_rate": 100
+      "observation_rate": 88
     },
     {
       "id": "d_805704",
       "title": "ファンティアまとめ本",
       "top10_snapshots": 7,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_806152",
-      "title": "勃禁村 〜勃起したら抜いてもらわないといけない村〜第3話",
-      "top10_snapshots": 7,
-      "observation_rate": 100
+      "observation_rate": 88
     },
     {
       "id": "d_755081",
       "title": "下の階の欲求不満なむっちむちママさんからのアプローチが凄い",
       "top10_snapshots": 5,
-      "observation_rate": 71
+      "observation_rate": 62
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
