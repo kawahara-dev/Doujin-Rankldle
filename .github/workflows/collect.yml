@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: fanza-collector
+  group: ranking-data-writer
   cancel-in-progress: false
 
 jobs:
