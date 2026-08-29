@@ -27,13 +27,13 @@ jobs:
         run: python -m src.dlsite_collector
       - name: Commit updated data
         run: |
-          if git diff --quiet -- data/dlsite docs/data/dlsite; then
+          git add data/dlsite docs/data/dlsite
+          if git diff --cached --quiet; then
             echo "No DLsite data changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dlsite docs/data/dlsite
           git commit -m "chore: update DLsite ranking snapshot"
           git pull --rebase
           git push
