@@ -45,6 +45,17 @@ def test_provider_rejects_empty_ranking_and_block(monkeypatch):
         DLsiteRankingProvider().fetch()
 
 
+def test_collector_rejects_duplicate_ranks_from_normal_parser(monkeypatch, tmp_path):
+    html = ranking_html(20).replace('data-rank="20"', 'data-rank="5"')
+    access = {"http_status": 200, "final_url": "https://www.dlsite.com/maniax/ranking"}
+    monkeypatch.setattr(dlsite_ranking, "fetch", lambda *_: (access, html))
+
+    status = collect(DLsiteRankingProvider(), data_dir=tmp_path / "data", docs_dir=tmp_path / "docs")
+
+    assert status["last_error"] == "parser failure: duplicate ranks"
+    assert not (tmp_path / "data" / "current.json").exists()
+
+
 def test_parser_preserves_ranked_item_with_missing_product_id(monkeypatch):
     html = ranking_html(19) + '<li data-rank="20"><a href="/maniax/work/sample.html">No ID</a></li>'
     access = {"http_status": 200, "final_url": "https://www.dlsite.com/maniax/ranking"}
