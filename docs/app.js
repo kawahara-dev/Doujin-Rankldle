@@ -190,6 +190,27 @@ function isNewRelease(value) {
   return days>=0 && days<=7;
 }
 
+function safeImageUrl(value) {
+  if (typeof value !== "string" || !value.trim()) return null;
+  try {
+    const url = new URL(value.trim());
+    return ["http:", "https:"].includes(url.protocol) ? url.href : null;
+  } catch (_) { return null; }
+}
+
+function createThumbnail(item) {
+  const thumbnail = document.createElement("span"); thumbnail.className = "product-thumbnail no-image";
+  const placeholder = document.createElement("span"); placeholder.className = "thumbnail-placeholder"; placeholder.textContent = "NO IMAGE"; thumbnail.append(placeholder);
+  const source = safeImageUrl(item.image_url);
+  if (!source) return thumbnail;
+  const image = document.createElement("img"); image.src = source;
+  image.alt = String(item.title || "").trim() ? `${String(item.title).trim()} サムネイル` : "";
+  image.loading = "lazy"; image.decoding = "async";
+  image.addEventListener("load", () => thumbnail.classList.remove("no-image"), { once: true });
+  image.addEventListener("error", () => image.remove(), { once: true });
+  thumbnail.append(image); return thumbnail;
+}
+
 function renderRising(items) {
   const rising = items.filter((item) => item.status === "up" && Number(item.rank_change) > 0)
     .sort((a, b) => Number(b.rank_change) - Number(a.rank_change)
@@ -225,10 +246,12 @@ function renderItems(items) {
     const row = document.createElement("article");
     row.className = `product-row${isApi ? ` api-product-row rank-${movement.status}` : ""}${isApi && number(item.current_rank || item.rank) <= 10 ? " top10" : ""}`;
     const link = document.createElement("a"); link.className = "product"; link.href = isApi ? (item.affiliate_url || item.url) : item.url; link.target = "_blank"; link.rel = "noopener noreferrer sponsored";
+    const content = document.createElement("span"); content.className = "product-content";
+    const productBody = isApi ? content : link;
     const rank = document.createElement("span"); rank.className = "rank"; rank.textContent = `#${item.current_rank || item.rank}`;
     const title = document.createElement("span"); title.className = "title"; title.textContent = item.title;
     const price = document.createElement("span"); price.className = "price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
-    link.append(rank, title);
+    productBody.append(rank, title);
     if (isApi) {
       const metadata=document.createElement("small"); metadata.className="product-metadata";
       if (item.circle?.name) { const circle=document.createElement("span"); circle.className="metadata-circle"; circle.textContent=`🎨 ${item.circle.name}`; metadata.append(circle); }
@@ -240,13 +263,14 @@ function renderItems(items) {
         metadata.append(genres,mobileGenres);
       }
       if (item.release_date) { const release=document.createElement("span"); release.className="metadata-release"; release.textContent=`📅 ${String(item.release_date).replaceAll("-", ".")}`; metadata.append(release); }
-      if (metadata.childElementCount) link.append(metadata);
+      if (metadata.childElementCount) productBody.append(metadata);
     }
-    if (isApi && number(item.current_rank || item.rank) <= 10) { const badge=document.createElement("b"); badge.className="top10-badge"; badge.textContent="TOP10"; link.append(badge); }
-    if (isApi && isNewRelease(item.release_date)) { const badge=document.createElement("b"); badge.className="new-release-badge"; badge.textContent="🆕 NEW RELEASE"; link.append(badge); }
+    if (isApi && number(item.current_rank || item.rank) <= 10) { const badge=document.createElement("b"); badge.className="top10-badge"; badge.textContent="TOP10"; productBody.append(badge); }
+    if (isApi && isNewRelease(item.release_date)) { const badge=document.createElement("b"); badge.className="new-release-badge"; badge.textContent="🆕 NEW RELEASE"; productBody.append(badge); }
     if (selectedRanking === "24h" && item.on_sale) { const badge=document.createElement("b"); badge.className="sale-badge"; badge.textContent=`${number(item.discount_rate)}% OFF`; link.append(badge); }
-    link.append(price);
+    productBody.append(price);
     if (selectedRanking === "24h" && item.regular_price) { const regular=document.createElement("small"); regular.textContent=`通常 ¥${number(item.regular_price).toLocaleString("ja-JP")}`; link.append(regular); }
+    if (isApi) link.append(createThumbnail(item), content);
     row.append(link);
     if (isApi) {
       const signals=document.createElement("div"); signals.className="api-signals";
