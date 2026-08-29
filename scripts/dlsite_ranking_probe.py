@@ -106,7 +106,11 @@ def parse_ranking(html: str, base_url: str, limit: int = 20) -> tuple[list[dict]
     items: list[dict] = []
     seen: set[str] = set()
     evidence = {"product": set(), "title": set(), "url_pattern": set(), "data_attributes": set()}
+    if limit <= 0:
+        return items, {}
     for anchor in (node for node in walk(parser.root) if node.tag == "a"):
+        if len(items) >= limit:
+            break
         href = anchor.attrs.get("href", "")
         match = ID_RE.search(href) or ID_RE.search(" ".join(anchor.attrs.values()))
         if not match:
@@ -134,25 +138,30 @@ def parse_ranking(html: str, base_url: str, limit: int = 20) -> tuple[list[dict]
             break
     # Keep explicitly ranked public work links even when DLsite does not expose a
     # supported RJ/BJ/VJ identifier.  They remain intentionally identity-less.
-    known_urls = {item["url"] for item in items}
-    for anchor in (node for node in walk(parser.root) if node.tag == "a"):
-        href = anchor.attrs.get("href", "")
-        url = urljoin(base_url, href)
-        if url in known_urls or "/work/" not in urlsplit(url).path:
-            continue
-        container = _container(anchor)
-        rank = _explicit_rank(container)
-        title = anchor.attrs.get("title", "").strip() or anchor.text().strip() or None
-        if rank is None or not title:
-            continue
-        price_match = PRICE_RE.search(container.text())
-        price = int((price_match.group(1) or price_match.group(2)).replace(",", "")) if price_match else None
-        items.append({"rank": rank, "dom_position": len(items) + 1, "product_id": None,
-                      "title": title, "url": url, "price": price, "circle": None,
-                      "maker": None, "release_date": None, "genres": None})
-        known_urls.add(url)
-        if len(items) >= limit:
-            break
+    if len(items) < limit:
+        known_urls = {item["url"] for item in items}
+        used_ranks = {
+            item["rank"] for item in items if isinstance(item.get("rank"), int)
+        }
+        for anchor in (node for node in walk(parser.root) if node.tag == "a"):
+            if len(items) >= limit:
+                break
+            href = anchor.attrs.get("href", "")
+            url = urljoin(base_url, href)
+            if url in known_urls or "/work/" not in urlsplit(url).path:
+                continue
+            container = _container(anchor)
+            rank = _explicit_rank(container)
+            title = anchor.attrs.get("title", "").strip() or anchor.text().strip() or None
+            if rank is None or rank in used_ranks or not title:
+                continue
+            price_match = PRICE_RE.search(container.text())
+            price = int((price_match.group(1) or price_match.group(2)).replace(",", "")) if price_match else None
+            items.append({"rank": rank, "dom_position": len(items) + 1, "product_id": None,
+                          "title": title, "url": url, "price": price, "circle": None,
+                          "maker": None, "release_date": None, "genres": None})
+            known_urls.add(url)
+            used_ranks.add(rank)
     return items, {key: sorted(value)[:10] for key, value in evidence.items() if value}
 
 

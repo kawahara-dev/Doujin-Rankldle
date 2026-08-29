@@ -6,6 +6,13 @@ from scripts.dlsite_ranking_probe import build_result, parse_ranking
 FIXTURE = Path(__file__).parent / "fixtures" / "dlsite_ranking_probe.html"
 
 
+def ranking_rows(count: int) -> str:
+    return "".join(
+        f'<li data-rank="{rank}"><a href="/maniax/work/=/product_id/RJ{100000 + rank}.html">Title {rank}</a></li>'
+        for rank in range(1, count + 1)
+    )
+
+
 def test_parser_extracts_explicit_fields_without_inventing_missing_values():
     items, selectors = parse_ranking(FIXTURE.read_text(), "https://example.test/ranking")
     assert [item["rank"] for item in items] == [1, 2, None]
@@ -37,3 +44,39 @@ def test_access_block_stops_parsing():
     assert result["access"]["status"] == "ACCESS_BLOCKED"
     assert result["ranking"]["items_detected"] == 0
     assert result["assessment"]["confidence"] == "BLOCKED"
+
+
+def test_full_normal_ranking_does_not_start_fallback():
+    html = ranking_rows(20) + '<li data-rank="20"><a href="/maniax/work/no-id.html">Fallback</a></li>'
+
+    items, _ = parse_ranking(html, "https://www.dlsite.com/maniax/ranking", limit=20)
+
+    assert len(items) == 20
+    assert all(item["product_id"] is not None for item in items)
+    assert len({item["rank"] for item in items}) == 20
+
+
+def test_fallback_completes_partial_ranking_up_to_limit():
+    html = ranking_rows(19) + '<li data-rank="20"><a href="/maniax/work/no-id.html">Fallback 20</a></li>'
+
+    items, _ = parse_ranking(html, "https://www.dlsite.com/maniax/ranking", limit=20)
+
+    assert len(items) == 20
+    assert items[-1]["product_id"] is None
+    assert {item["rank"] for item in items} == set(range(1, 21))
+
+
+def test_fallback_skips_an_already_used_explicit_rank():
+    html = ranking_rows(19) + '<li data-rank="5"><a href="/maniax/work/no-id.html">Duplicate 5</a></li>'
+
+    items, _ = parse_ranking(html, "https://www.dlsite.com/maniax/ranking", limit=20)
+
+    assert len(items) == 19
+    assert all(item["product_id"] is not None for item in items)
+    assert len({item["rank"] for item in items}) == 19
+
+
+def test_parser_never_exceeds_requested_limit():
+    items, _ = parse_ranking(ranking_rows(21), "https://www.dlsite.com/maniax/ranking", limit=20)
+
+    assert len(items) == 20
