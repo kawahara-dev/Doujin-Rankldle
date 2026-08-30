@@ -10,8 +10,7 @@
 <body>
   <main class="shell">
     <header>
-      <div><p class="eyebrow">AUTONOMOUS DOUJIN WATCHER</p><h1>DOUJIN <span>RANKIDLE</span></h1><p class="bot-level">RANKIDLE BOT <strong>Lv. <span id="level">1</span></strong></p></div>
-      <div><div class="mode-badge mock" id="modeBadge">DEMO MODE</div><p class="demo-note" id="modeSubtitle">SAMPLE DATA</p></div>
+      <div><p class="eyebrow">AUTONOMOUS DOUJIN WATCHER</p><h1>DOUJIN <span>RANKIDLE</span></h1></div>
     </header>
 
     <section class="onboarding panel" aria-labelledby="onboardingTitle">
@@ -52,30 +51,9 @@
       <div class="scan"><p class="label">NEXT SCAN</p><strong id="countdown">--:--:--</strong><small id="scanState">SCHEDULED</small></div>
     </section>
 
-    <section class="exp-panel panel">
-      <div><p class="label">BOT EXPERIENCE</p><strong>EXP <span id="levelExp">0</span> / <span id="expTarget">100</span></strong></div>
-      <span id="totalExp">TOTAL 0 EXP</span>
-      <div class="progress"><i id="expBar"></i></div>
-    </section>
 
-    <section class="metrics today">
-      <article class="panel"><p class="label">本日の巡回</p><strong id="runs">0</strong><small>SCANS</small></article>
-      <article class="panel"><p class="label">今回の取得</p><strong id="itemCount">0</strong><small>ITEMS</small></article>
-      <article class="panel"><p class="label">最終巡回</p><strong id="lastRun">--:--</strong><small id="lastDate">NO DATA</small></article>
-    </section>
 
-    <section class="metrics totals">
-      <article class="panel"><p class="label">TOTAL SCANS</p><strong id="totalRuns">0</strong></article>
-      <article class="panel"><p class="label">TOTAL ITEMS</p><strong id="totalItems">0</strong></article>
-      <article class="panel"><p class="label">BOT AGE</p><strong id="botAge">0h</strong></article>
-    </section>
 
-    <section class="panel game-section"><div class="section-title"><div><p class="eyebrow">LIVE MOMENTUM</p><h2>MARKET SIGNALS</h2></div></div><div id="marketSignals" class="metrics signals"></div></section>
-    <section class="panel game-section sale-watch"><div class="section-title"><div><p class="eyebrow">24H MARKET</p><h2>SALE WATCH</h2></div></div><div id="saleMetrics" class="metrics signals"></div><div id="saleList" class="sale-list"><p class="empty">セール情報はまだないよ。</p></div></section>
-    <section class="panel game-section weekly-report"><div class="section-title"><div><p class="eyebrow">CREATOR INSIGHTS / JST</p><h2>WEEKLY TREND REPORT</h2></div><b id="weeklyStatus" class="weekly-status">LOADING</b></div><p id="weeklyPeriod" class="weekly-period"></p><div id="weeklyMetrics" class="metrics signals"></div><div class="weekly-columns"><div><h3>PRICE BUCKETS</h3><div id="weeklyPrices"></div></div><div><h3>TOP10 STAY</h3><ol id="weeklyStays"></ol></div></div><p class="weekly-note">販売数・売上ではなく、保存されたランキングで観測した傾向です。</p></section>
-
-    <section class="panel game-section"><div class="section-title"><div><p class="eyebrow">MILESTONES</p><h2>ACHIEVEMENTS</h2></div></div><div id="achievements" class="achievements"></div></section>
-    <section class="panel game-section"><div class="section-title"><div><p class="eyebrow">DATA COLLECTORS</p><h2>MODULES</h2></div></div><div id="modules" class="modules"></div></section>
 
     <section class="products panel">
       <div class="section-title"><div><p class="eyebrow" id="trendLabel">📡 API RANKING / FANZA API 人気順</p><div class="ranking-heading"><h2>商品ランキング</h2><div class="ranking-counts"><strong id="observedCount" class="observed-count">観測中 0作品</strong><small id="filteredCount" class="filtered-count" hidden>FILTERED 0</small></div></div><div class="ranking-tabs"><button data-ranking="api" class="active">API</button><button data-ranking="1h" hidden>1H</button><button data-ranking="24h" hidden>24H</button></div><p class="weekly-note"><strong>API RANKING</strong><br>DMM Web Service APIの <code>sort=rank</code> を定期観測しています。<br>※FANZA公式サイトの1時間 / 24時間ランキングとは別のランキング指標です。1H / 24HはSPECIAL OBSERVATIONです。</p></div><span id="updatedAt">未取得</span></div>
@@ -96,19 +74,12 @@
       <div id="productList" class="product-list"><p class="empty">データをロード中...</p></div>
       <button id="rankingMore" class="ranking-more" type="button">もっと見る（21〜100位）</button>
     </section>
-    <section class="products panel"><div class="section-title"><div><p class="eyebrow">HUMAN REVIEW / NO AUTO-POSTING</p><h2>POST CANDIDATES</h2></div></div><div id="postCandidates" class="product-list"><p class="empty">候補はまだないよ。</p></div></section>
-    <section class="panel import-tools">
-      <div class="section-title"><div><p class="eyebrow">IMPORT TOOLS</p><h2>FANZA SEMI AUTO IMPORT</h2></div></div>
-      <ol><li>FANZAランキングを開く</li><li>RankIdle Importerを実行</li><li>JSONをコピー</li><li><code>data/import/fanza.json</code>へ貼り付け</li><li>Commitすると自動更新</li></ol>
-      <button id="copyBookmarklet">COPY BOOKMARKLET</button><small id="bookmarkletResult"></small>
-      <h3>JSON VALIDATOR</h3><textarea id="importJson" rows="12" placeholder="ランキングJSONを貼り付け"></textarea>
-      <div id="validationResult" class="validation">JSONを貼り付けてください</div>
-      <h3>IMPORT DATA PREVIEW</h3><div id="importPreview" class="product-list"></div>
-      <p class="demo-note">GitHubへの書き込み、トークンの保存、自動投稿は行いません。</p>
-    </section>
+    <section class="panel game-section"><div class="section-title"><div><p class="eyebrow">LIVE MOMENTUM</p><h2>MARKET SIGNALS</h2></div></div><div id="marketSignals" class="metrics signals"></div></section>
+    <section class="panel game-section sale-watch"><div class="section-title"><div><p class="eyebrow">24H MARKET</p><h2>SALE WATCH</h2></div></div><div id="saleMetrics" class="metrics signals"></div><div id="saleList" class="sale-list"><p class="empty">セール情報はまだないよ。</p></div></section>
+    <section class="panel game-section weekly-report"><div class="section-title"><div><p class="eyebrow">CREATOR INSIGHTS / JST</p><h2>WEEKLY TREND REPORT</h2></div><b id="weeklyStatus" class="weekly-status">LOADING</b></div><p id="weeklyPeriod" class="weekly-period"></p><div id="weeklyMetrics" class="metrics signals"></div><div class="weekly-columns"><div><h3>PRICE BUCKETS</h3><div id="weeklyPrices"></div></div><div><h3>TOP10 STAY</h3><ol id="weeklyStays"></ol></div></div><p class="weekly-note">販売数・売上ではなく、保存されたランキングで観測した傾向です。</p></section>
+
     <footer><strong>UNOFFICIAL OBSERVATION TOOL</strong><br>RankIdle is an unofficial observation tool. Ranking observations do not represent sales or views.<br>ランキング観測は販売数・売上・閲覧数を示すものではありません。</footer>
   </main>
-  <script src="bookmarklet-minifier.js" defer></script>
   <script src="app.js" defer></script>
 </body>
 </html>

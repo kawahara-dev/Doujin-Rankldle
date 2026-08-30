@@ -1,16 +1,6 @@
 const HOUR = 60 * 60 * 1000;
 const SCANNING_TIME = 5000;
 const POLL_INTERVAL = 15000;
-const EXP_PER_LEVEL = 100;
-const ACHIEVEMENTS = [
-  { name: "FIRST BOOT", kind: "scans", target: 1 },
-  { name: "SCANNER I", kind: "scans", target: 10 },
-  { name: "SCANNER II", kind: "scans", target: 100 },
-  { name: "SCANNER III", kind: "scans", target: 1000 },
-  { name: "DATA COLLECTOR I", kind: "items", target: 100 },
-  { name: "DATA COLLECTOR II", kind: "items", target: 1000 },
-  { name: "DATA COLLECTOR III", kind: "items", target: 10000 },
-];
 const SCHEDULE_UTC_HOURS = [0, 5, 13, 18];
 let nextScan = null;
 let knownLastRun = null;
@@ -47,49 +37,13 @@ function updateCountdown() {
   }
 }
 
-function botAge(firstRun) {
-  const elapsed = firstRun ? Math.max(0, Date.now() - new Date(firstRun).getTime()) : 0;
-  const hours = Math.floor(elapsed / HOUR);
-  return hours >= 24 ? `${Math.floor(hours / 24)}d ${hours % 24}h` : `${hours}h`;
-}
-
-function renderAchievements(scans, items) {
-  el("achievements").replaceChildren(...ACHIEVEMENTS.map((achievement) => {
-    const current = achievement.kind === "scans" ? scans : items;
-    const unlocked = current >= achievement.target;
-    const card = document.createElement("article");
-    card.className = `achievement ${unlocked ? "unlocked" : "locked"}`;
-    const title = document.createElement("strong");
-    title.textContent = `${unlocked ? "🏆" : "🔒"} ${achievement.name}`;
-    const progress = document.createElement("small");
-    progress.textContent = unlocked ? "UNLOCKED" : `${Math.min(current, achievement.target).toLocaleString("ja-JP")} / ${achievement.target.toLocaleString("ja-JP")} ${achievement.kind}`;
-    card.append(title, progress);
-    return card;
-  }));
-}
-
-function renderModules(mode, rankings = {}) {
-  const modules = ["api", "1h", "24h"].map(type => ({ name: type === "api" ? "FANZA API AUTO" : `FANZA ${type.toUpperCase()} · SPECIAL OBSERVATION`, enabled: true, status: rankings[`fanza_${type}`] || {} }));
-  el("modules").replaceChildren(...modules.filter((module) => module.enabled).map((module) => {
-    const card = document.createElement("article");
-    card.className = "module active";
-    const date = module.status.last_run ? new Date(module.status.last_run).toLocaleString("ja-JP") : "NO DATA";
-    card.innerHTML = `<strong>🟢 ${module.name}</strong><small>LAST SCAN ${date}<br>ITEMS ${number(module.status.items_collected)}<br>TREND EVENTS ${number(module.status.trend_events)}</small>`;
-    return card;
-  }));
-}
-
 function nextScheduledRun(now = new Date()) {
   for (let day = 0; day < 2; day += 1) for (const hour of SCHEDULE_UTC_HOURS) {
     const candidate = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + day, hour, 17));
     if (candidate > now) return candidate.getTime();
   }
 }
-async function copyPost(text, button) {
-  try { if (!navigator.clipboard) throw new Error(); await navigator.clipboard.writeText(text); }
-  catch (_) { const area = document.createElement("textarea"); area.value = text; document.body.append(area); area.select(); document.execCommand("copy"); area.remove(); }
-  button.textContent = "COPIED!"; setTimeout(() => { button.textContent = "COPY POST"; }, 1500);
-}
+// Kept as pure compatibility helpers for candidate-generation tests; rendering lives in ops.js.
 function candidatePriority(item) {
   return item.ranking_type === "cross" ? 5
     : item.event_type || item.ranking_type === "sale" ? 1
@@ -98,17 +52,13 @@ function candidatePriority(item) {
     : item.status === "new" || item.status === "reentry" || item.previous_rank == null ? 2
     : 0;
 }
-
 function selectCandidates(candidates) {
-  const isNewFormat = (item) => Object.prototype.hasOwnProperty.call(item, "comment")
-    || String(item.text || "").includes("💬 RankIdleメモ");
-  const byPostingValueAndDate = (a, b) => candidatePriority(b) - candidatePriority(a)
-    || (Date.parse(b.generated_at || 0) || 0) - (Date.parse(a.generated_at || 0) || 0);
+  const isNewFormat = (item) => Object.prototype.hasOwnProperty.call(item, "comment") || String(item.text || "").includes("💬 RankIdleメモ");
+  const byPostingValueAndDate = (a, b) => candidatePriority(b) - candidatePriority(a) || (Date.parse(b.generated_at || 0) || 0) - (Date.parse(a.generated_at || 0) || 0);
   const current = candidates.filter(isNewFormat).sort(byPostingValueAndDate);
   const legacy = candidates.filter((item) => !isNewFormat(item)).sort(byPostingValueAndDate);
   return current.concat(current.length < 3 ? legacy : []).slice(0, 3);
 }
-
 function renderCandidates(candidates) {
   if (!candidates.length) return;
   const featured = selectCandidates(candidates);
@@ -117,10 +67,9 @@ function renderCandidates(candidates) {
     const heading = document.createElement("strong"); heading.textContent = `🔥 Trend Score ${item.trend_score}`;
     const title = document.createElement("p"); title.textContent = item.title;
     const movement = document.createElement("p"); movement.textContent = `${item.previous_rank ?? "NEW"} → ${item.current_rank}  ${item.rank_change > 0 ? `+${item.rank_change}` : ""}`;
-    // New candidates already include their memo in text; legacy candidates remain safe.
     const completedText = item.text || "";
     const pre = document.createElement("pre"); pre.textContent = completedText;
-    const button = document.createElement("button"); button.textContent = "COPY POST"; button.addEventListener("click", () => copyPost(completedText, button));
+    const button = document.createElement("button"); button.textContent = "COPY POST";
     card.append(heading, title, movement, pre, button); return card;
   }));
 }
@@ -403,70 +352,17 @@ function selectRanking(type) {
   el("updatedAt").textContent = timestamp ? `UPDATED ${new Date(timestamp).toLocaleString("ja-JP")}` : "未取得";
 }
 
-function validateImport(value) {
-  let data; try { data = JSON.parse(value); } catch (_) { return { valid: false, errors: ["JSONを解析できません"], items: [] }; }
-  const items = Array.isArray(data) ? data : data?.items;
-  if (!Array.isArray(data) && !["1h", "24h"].includes(data?.ranking_type)) return { valid: false, errors: ["ranking_typeは1hまたは24hが必要です"], items: [] };
-  if (!Array.isArray(items) || !items.length) return { valid: false, errors: ["itemsが空です"], items: [] };
-  const errors = [], ranks = new Set(), products = new Set();
-  items.forEach((item, i) => {
-    const at = `Item ${i + 1}`;
-    if (!Number.isInteger(item?.rank) || item.rank < 1) errors.push(`${at}: rankは正の整数が必要です`);
-    else if (ranks.has(item.rank)) errors.push(`${at}: rank ${item.rank} が重複しています`); else ranks.add(item.rank);
-    if (!String(item?.title || "").trim()) errors.push(`${at}: titleが空です`);
-    if (!String(item?.url || "").trim()) errors.push(`${at}: URLが不足しています`);
-    if (!Number.isInteger(item?.price)) errors.push(`${at}: priceは整数が必要です`);
-    const key = String(item?.id || item?.url || "").split("?")[0];
-    if (key && products.has(key)) errors.push(`${at}: 同じ商品が重複しています`); else if (key) products.add(key);
-  });
-  return { valid: !errors.length, errors, items };
-}
-
-async function setupImportTools() {
-  el("copyBookmarklet").addEventListener("click", async () => {
-    const source = await fetch("bookmarklet.js").then((response) => response.text());
-    const bookmarklet = RankIdleBookmarklet.minify(source);
-    await copyPost(bookmarklet, el("copyBookmarklet"));
-    el("bookmarkletResult").textContent = " ブックマークのURL欄へ貼り付けてください";
-  });
-  el("importJson").addEventListener("input", ({ target }) => {
-    if (!target.value.trim()) return;
-    const result = validateImport(target.value), box = el("validationResult"); box.className = `validation ${result.valid ? "valid" : "invalid"}`;
-    const ranks = result.items.map((item) => item.rank).filter(Number.isInteger);
-    box.textContent = result.valid ? `VALID / IMPORT READY\nItems: ${result.items.length}\nRank: ${Math.min(...ranks)} - ${Math.max(...ranks)}\nErrors: 0` : `INVALID\n${result.errors.join("\n")}`;
-    el("importPreview").replaceChildren(...(result.valid ? result.items : []).map((item) => { const card=document.createElement("article"); card.className="product"; card.textContent=`#${item.rank} ${item.title}\n¥${number(item.price).toLocaleString("ja-JP")}`; return card; }));
-  });
-}
-
 async function loadDashboard() {
   if (loading) return;
   loading = true;
   try {
-    const [latestResponse, statusResponse, postsApi, posts1h, posts24h, rankApi, rank1h, rank24h, analyticsApi, analytics1h, analytics24h, weekly] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/posts/fanza_api_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_1h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/posts/fanza_24h_candidates.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/api/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_api.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_1h.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_24h.json", { cache: "no-store" }).catch(() => null), fetch("data/reports/weekly/latest.json", { cache: "no-store" }).catch(() => null)]);
+    const [latestResponse, statusResponse, rankApi, rank1h, rank24h, analyticsApi, analytics1h, analytics24h, weekly] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/fanza/api/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_api.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_1h.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_24h.json", { cache: "no-store" }).catch(() => null), fetch("data/reports/weekly/latest.json", { cache: "no-store" }).catch(() => null)]);
     if (!latestResponse.ok || !statusResponse.ok) throw new Error("データ取得に失敗しました");
     const [latest, status] = await Promise.all([latestResponse.json(), statusResponse.json()]);
     const items = Array.isArray(latest.items) ? latest.items : [];
     rankingData = { "api": rankApi?.ok ? await rankApi.json() : { items: [] }, "1h": rank1h?.ok ? await rank1h.json() : { items: [] }, "24h": rank24h?.ok ? await rank24h.json() : { items: [] } };
     analyticsData = { "api": analyticsApi?.ok ? await analyticsApi.json() : { items: [] }, "1h": analytics1h?.ok ? await analytics1h.json() : { items: [] }, "24h": analytics24h?.ok ? await analytics24h.json() : { items: [] } };
-    const candidates = [...(postsApi?.ok ? await postsApi.json() : []), ...(posts1h?.ok ? await posts1h.json() : []), ...(posts24h?.ok ? await posts24h.json() : [])];
-    const scans = number(status.total_runs);
-    const totalItems = number(status.total_items_collected ?? status.items_collected);
-    const exp = number(status.exp ?? scans * 5 + totalItems);
-    const level = number(status.level) || Math.floor(exp / EXP_PER_LEVEL) + 1;
-    const levelExp = status.level_exp == null ? exp % EXP_PER_LEVEL : number(status.level_exp);
-    const target = number(status.exp_to_next_level) || EXP_PER_LEVEL;
-    el("runs").textContent = number(status.runs_today).toLocaleString("ja-JP");
-    el("itemCount").textContent = number(status.items_collected ?? items.length).toLocaleString("ja-JP");
-    el("totalRuns").textContent = scans.toLocaleString("ja-JP"); el("totalItems").textContent = totalItems.toLocaleString("ja-JP");
-    el("botAge").textContent = botAge(status.first_run || status.last_run);
-    el("level").textContent = level; el("levelExp").textContent = levelExp; el("expTarget").textContent = target;
-    el("totalExp").textContent = `TOTAL ${exp.toLocaleString("ja-JP")} EXP`; el("expBar").style.width = `${Math.min(100, levelExp / target * 100)}%`;
-    const mode = ["live", "public", "import"].includes(status.mode) ? status.mode : "mock";
-    const publicError = mode === "public" && status.public_watch_status === "error";
-    const ageGate = mode === "public" && status.public_watch_status === "age_gate";
-    el("modeBadge").textContent = ageGate ? "PUBLIC WATCH: AGE GATE" : publicError ? "PUBLIC WATCH ERROR" : mode === "live" ? "LIVE MODE" : mode === "import" ? "🟡 FANZA SEMI AUTO" : mode === "public" ? "PUBLIC WATCH" : "DEMO MODE";
-    el("modeSubtitle").textContent = ageGate ? "FANZA AGE VERIFICATION REACHED / NO BYPASS" : mode === "live" ? "DMM API CONNECTED" : mode === "import" ? "MANUAL RANKING IMPORT" : mode === "public" ? "PUBLIC RANKING DATA" : "SAMPLE DATA"; el("modeBadge").className = `mode-badge ${mode}`; el("demoNote").hidden = mode !== "mock";
-    renderModules(mode, status.rankings); renderAchievements(scans, totalItems); selectRanking(selectedRanking); renderCandidates(candidates);
+    selectRanking(selectedRanking);
     renderSaleWatch(rankingData["24h"]?.items || []);
     let weeklyReport = null;
     if (weekly?.ok) { try { weeklyReport = await weekly.json(); } catch (_) { weeklyReport = null; } }
@@ -477,7 +373,7 @@ async function loadDashboard() {
     if (status.last_run || latest.updated_at) {
       const timestamp = status.last_run || latest.updated_at;
       const updated = new Date(timestamp);
-      el("lastRun").textContent = updated.toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit" }); el("lastDate").textContent = updated.toLocaleDateString("ja-JP"); el("updatedAt").textContent = `UPDATED ${updated.toLocaleString("ja-JP")}`;
+      el("updatedAt").textContent = `UPDATED ${updated.toLocaleString("ja-JP")}`;
       if (timestamp !== knownLastRun) { knownLastRun = timestamp; nextScan = nextScheduledRun(); }
       el("botStatus").classList.add("active"); el("botStatus").querySelector("span").textContent = "ONLINE";
     }
@@ -501,4 +397,4 @@ function setOnboardingExpanded(expanded) {
 }
 el("onboardingToggle").addEventListener("click", () => setOnboardingExpanded(!onboardingExpanded));
 el("onboardingClose").addEventListener("click", () => setOnboardingExpanded(false));
-updateCountdown(); setInterval(updateCountdown, 1000); setInterval(loadDashboard, POLL_INTERVAL); setupImportTools(); loadDashboard();
+updateCountdown(); setInterval(updateCountdown, 1000); setInterval(loadDashboard, POLL_INTERVAL); loadDashboard();

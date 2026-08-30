@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11131a">
+  <meta name="description" content="RankIdle operator dashboard">
+  <title>RANKIDLE CONTROL ROOM</title>
+  <link rel="stylesheet" href="../style.css"><link rel="stylesheet" href="../ops.css">
+</head>
+<body class="ops-page"><main class="shell">
+  <header><div><p class="eyebrow">OPERATOR DASHBOARD</p><h1>RANKIDLE <span>CONTROL ROOM</span></h1><p class="bot-level">INTERNAL OPERATIONS VIEW</p></div><div id="modeBadge" class="mode-badge mock">CHECKING</div></header>
+  <section class="panel ops-section"><div class="section-title"><div><p class="eyebrow">COLLECTOR HEALTH</p><h2>SYSTEM STATUS</h2></div><b id="systemState" class="weekly-status">LOADING</b></div><div id="collectorStatus" class="collector-grid"></div><dl id="diagnostics" class="diagnostics"></dl></section>
+  <section class="exp-panel panel ops-exp"><div><p class="label">LEVEL / EXP</p><strong>LEVEL <span id="level">1</span> · EXP <span id="levelExp">0</span> / <span id="expTarget">100</span></strong></div><span id="totalExp">TOTAL 0 EXP</span><div class="progress"><i id="expBar"></i></div></section>
+  <section class="panel ops-section"><div class="section-title"><div><p class="eyebrow">RUN / COLLECTION COUNTERS</p><h2>COLLECTION STATS</h2></div></div><div id="collectionStats" class="metrics ops-metrics"></div></section>
+  <section class="panel game-section"><div class="section-title"><div><p class="eyebrow">MILESTONES</p><h2>ACHIEVEMENTS</h2></div></div><div id="achievements" class="achievements"></div></section>
+  <section class="panel game-section"><div class="section-title"><div><p class="eyebrow">DATA COLLECTORS</p><h2>MODULES</h2></div></div><div id="modules" class="modules"></div></section>
+  <section class="products panel"><div class="section-title"><div><p class="eyebrow">HUMAN REVIEW / NO AUTO-POSTING</p><h2>POST CANDIDATES</h2></div></div><div id="postCandidates" class="product-list"><p class="empty">候補はまだないよ。</p></div></section>
+  <section class="panel import-tools ops-section"><div class="section-title"><div><p class="eyebrow">OPERATOR UTILITIES</p><h2>TOOLS</h2></div></div><h3>FANZA SEMI AUTO IMPORT</h3><ol><li>FANZAランキングを開く</li><li>RankIdle Importerを実行</li><li>JSONをコピー</li><li><code>data/import/fanza.json</code>へ貼り付け</li><li>Commitすると自動更新</li></ol><button id="copyBookmarklet">COPY BOOKMARKLET</button><small id="bookmarkletResult"></small><h3>JSON VALIDATOR</h3><textarea id="importJson" rows="12" placeholder="ランキングJSONを貼り付け"></textarea><div id="validationResult" class="validation">JSONを貼り付けてください</div><h3>IMPORT DATA PREVIEW</h3><div id="importPreview" class="product-list"></div><p class="demo-note">GitHubへの書き込み、トークンの保存、自動投稿は行いません。</p></section>
+  <footer><strong>RANKIDLE OPS</strong><br>Direct URL access is not authentication. Protect <code>/ops/*</code> with Cloudflare Access before operational use.</footer>
+</main><script src="../bookmarklet-minifier.js" defer></script><script src="../ops.js" defer></script></body>
+</html>
