@@ -10,6 +10,22 @@ from src.providers.fanza_public import FanzaAgeGateError
 
 
 class RankingSeparationV05Test(unittest.TestCase):
+    @staticmethod
+    def persistent_state(root, status_path):
+        """Read state while ignoring only documented derived report timestamps."""
+        state = {}
+        for path in root.rglob("*"):
+            if not path.is_file() or path == status_path or "import" in path.parts:
+                continue
+            relative = path.relative_to(root)
+            if "reports" in path.parts and path.suffix == ".json":
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                payload.pop("generated_at", None)
+                state[relative] = payload
+            else:
+                state[relative] = path.read_bytes()
+        return state
+
     def sandbox(self, root):
         return (patch.object(collector, "FANZA_DIR", root / "fanza"),
                 patch.object(collector, "LATEST_PATH", root / "latest.json"),
@@ -61,8 +77,7 @@ class RankingSeparationV05Test(unittest.TestCase):
                 status_path=root/"status.json"; first_status=json.loads(status_path.read_text())
                 analytics_path=root/f"analytics/fanza_{ranking_type}.json"
                 first_analytics=analytics_path.read_bytes()
-                tracked={path.relative_to(root):path.read_bytes() for path in root.rglob("*")
-                         if path.is_file() and path != status_path and "import" not in path.parts}
+                tracked=self.persistent_state(root,status_path)
 
                 # 1h exercises duplicate captured_at detection; 24h exercises identical
                 # ranking-content detection even when captured_at differs.
@@ -80,8 +95,7 @@ class RankingSeparationV05Test(unittest.TestCase):
                 current=json.loads((root/f"fanza/{ranking_type}/current.json").read_text())
                 self.assertEqual(current["items"][0]["consecutive_appearances"],1)
                 self.assertEqual(analytics_path.read_bytes(),first_analytics)
-                self.assertEqual({path.relative_to(root):path.read_bytes() for path in root.rglob("*")
-                                  if path.is_file() and path != status_path and "import" not in path.parts},tracked)
+                self.assertEqual(self.persistent_state(root,status_path),tracked)
 
     def test_unknown_rejected_and_hourly_zero_price_allowed(self):
         with tempfile.TemporaryDirectory() as directory:
