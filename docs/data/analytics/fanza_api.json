@@ -1,7 +1,7 @@
 {
   "ranking_type": "api",
-  "generated_at": "2026-08-29T08:03:07+09:00",
-  "snapshot_count": 9,
+  "generated_at": "2026-08-30T11:01:30+09:00",
+  "snapshot_count": 10,
   "items": [
     {
       "key": "d_761881",
@@ -15,10 +15,11 @@
         1,
         2,
         2,
-        2
+        2,
+        1
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -34,10 +35,11 @@
         2,
         1,
         1,
-        1
+        1,
+        3
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -53,10 +55,11 @@
         3,
         3,
         3,
-        3
+        3,
+        5
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -72,11 +75,12 @@
         5,
         6,
         8,
-        11
+        11,
+        17
       ],
       "top10_count": 8,
-      "sample_count": 9,
-      "top10_rate": 89,
+      "sample_count": 10,
+      "top10_rate": 80,
       "analytics_status": "STABLE"
     },
     {
@@ -91,11 +95,12 @@
         7,
         10,
         14,
-        18
+        18,
+        25
       ],
       "top10_count": 7,
-      "sample_count": 9,
-      "top10_rate": 78,
+      "sample_count": 10,
+      "top10_rate": 70,
       "analytics_status": "ACTIVE"
     },
     {
@@ -110,11 +115,12 @@
         4,
         4,
         4,
-        7
+        7,
+        13
       ],
       "top10_count": 9,
-      "sample_count": 9,
-      "top10_rate": 100,
+      "sample_count": 10,
+      "top10_rate": 90,
       "analytics_status": "STABLE"
     },
     {
@@ -129,11 +135,12 @@
         6,
         5,
         5,
-        8
+        8,
+        11
       ],
       "top10_count": 9,
-      "sample_count": 9,
-      "top10_rate": 100,
+      "sample_count": 10,
+      "top10_rate": 90,
       "analytics_status": "STABLE"
     },
     {
@@ -148,10 +155,11 @@
         8,
         7,
         6,
-        6
+        6,
+        8
       ],
-      "top10_count": 9,
-      "sample_count": 9,
+      "top10_count": 10,
+      "sample_count": 10,
       "top10_rate": 100,
       "analytics_status": "STABLE"
     },
@@ -167,11 +175,12 @@
         9,
         9,
         12,
-        16
+        16,
+        18
       ],
       "top10_count": 7,
-      "sample_count": 9,
-      "top10_rate": 78,
+      "sample_count": 10,
+      "top10_rate": 70,
       "analytics_status": "ACTIVE"
     },
     {
@@ -186,11 +195,12 @@
         19,
         21,
         23,
-        27
+        27,
+        42
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -205,11 +215,12 @@
         10,
         13,
         20,
-        24
+        24,
+        34
       ],
       "top10_count": 5,
-      "sample_count": 9,
-      "top10_rate": 56,
+      "sample_count": 10,
+      "top10_rate": 50,
       "analytics_status": "ACTIVE"
     },
     {
@@ -224,10 +235,11 @@
         16,
         18,
         19,
-        19
+        19,
+        22
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -243,10 +255,11 @@
         20,
         20,
         22,
-        23
+        23,
+        28
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -262,10 +275,11 @@
         13,
         15,
         15,
-        14
+        14,
+        15
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -281,10 +295,11 @@
         23,
         26,
         30,
-        31
+        31,
+        36
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -300,11 +315,12 @@
         12,
         11,
         10,
-        13
+        13,
+        19
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -319,11 +335,12 @@
         15,
         14,
         11,
-        10
+        10,
+        12
       ],
       "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -338,11 +355,12 @@
         14,
         12,
         9,
+        9,
         9
       ],
-      "top10_count": 2,
-      "sample_count": 9,
-      "top10_rate": 22,
+      "top10_count": 3,
+      "sample_count": 10,
+      "top10_rate": 30,
       "analytics_status": "VOLATILE"
     },
     {
@@ -357,10 +375,11 @@
         24,
         24,
         27,
-        29
+        29,
+        40
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -376,11 +395,12 @@
         11,
         8,
         7,
-        5
+        5,
+        6
       ],
-      "top10_count": 3,
-      "sample_count": 9,
-      "top10_rate": 33,
+      "top10_count": 4,
+      "sample_count": 10,
+      "top10_rate": 40,
       "analytics_status": "VOLATILE"
     },
     {
@@ -395,10 +415,11 @@
         18,
         17,
         16,
-        20
+        20,
+        37
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -414,11 +435,12 @@
         17,
         16,
         13,
-        12
+        12,
+        7
       ],
-      "top10_count": 0,
-      "sample_count": 9,
-      "top10_rate": 0,
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -433,10 +455,11 @@
         25,
         25,
         29,
-        30
+        30,
+        26
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -452,10 +475,11 @@
         21,
         22,
         25,
-        38
+        38,
+        44
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -471,10 +495,11 @@
         22,
         19,
         18,
-        17
+        17,
+        21
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -490,10 +515,11 @@
         34,
         37,
         39,
-        45
+        45,
+        61
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -509,10 +535,11 @@
         26,
         30,
         31,
+        33,
         33
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -528,10 +555,11 @@
         31,
         35,
         37,
-        42
+        42,
+        56
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -547,10 +575,11 @@
         30,
         31,
         34,
-        34
+        34,
+        30
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -566,10 +595,11 @@
         36,
         38,
         40,
-        48
+        48,
+        60
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -585,10 +615,11 @@
         39,
         41,
         46,
-        53
+        53,
+        66
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -604,10 +635,11 @@
         28,
         27,
         26,
-        35
+        35,
+        58
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -623,10 +655,11 @@
         49,
         70,
         81,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -642,10 +675,11 @@
         29,
         29,
         28,
-        22
+        22,
+        24
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -661,10 +695,11 @@
         42,
         43,
         47,
-        52
+        52,
+        70
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -680,10 +715,11 @@
         33,
         32,
         35,
-        37
+        37,
+        32
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -699,10 +735,11 @@
         47,
         56,
         66,
-        75
+        75,
+        86
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -718,11 +755,12 @@
         27,
         23,
         21,
-        15
+        15,
+        10
       ],
-      "top10_count": 0,
-      "sample_count": 9,
-      "top10_rate": 0,
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -737,10 +775,11 @@
         53,
         87,
         null,
-        null
+        null,
+        71
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -756,10 +795,11 @@
         41,
         40,
         44,
-        46
+        46,
+        48
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -775,10 +815,11 @@
         43,
         42,
         45,
-        47
+        47,
+        45
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -794,10 +835,11 @@
         35,
         34,
         33,
-        32
+        32,
+        38
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -813,10 +855,11 @@
         48,
         52,
         57,
-        69
+        69,
+        89
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -832,10 +875,11 @@
         44,
         46,
         49,
-        51
+        51,
+        55
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -851,10 +895,11 @@
         38,
         45,
         55,
-        67
+        67,
+        81
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -870,10 +915,11 @@
         50,
         53,
         58,
-        70
+        70,
+        94
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -889,10 +935,11 @@
         37,
         33,
         32,
-        25
+        25,
+        20
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -908,10 +955,11 @@
         40,
         36,
         36,
-        36
+        36,
+        35
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -927,10 +975,11 @@
         64,
         91,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -946,10 +995,11 @@
         62,
         80,
         90,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -965,10 +1015,11 @@
         55,
         59,
         65,
-        71
+        71,
+        90
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -984,10 +1035,11 @@
         46,
         44,
         43,
-        54
+        54,
+        99
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1003,10 +1055,11 @@
         45,
         39,
         41,
-        50
+        50,
+        49
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1022,10 +1075,11 @@
         57,
         55,
         59,
-        57
+        57,
+        73
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1041,10 +1095,11 @@
         52,
         50,
         53,
-        64
+        64,
+        80
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1060,10 +1115,11 @@
         68,
         72,
         74,
-        80
+        80,
+        97
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1079,10 +1135,11 @@
         75,
         85,
         89,
-        95
+        95,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1098,10 +1155,11 @@
         56,
         51,
         51,
-        60
+        60,
+        75
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1117,10 +1175,11 @@
         32,
         28,
         24,
-        21
+        21,
+        16
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1136,10 +1195,11 @@
         58,
         54,
         54,
-        68
+        68,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1155,10 +1215,11 @@
         63,
         61,
         62,
-        59
+        59,
+        65
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1174,10 +1235,11 @@
         69,
         71,
         70,
-        74
+        74,
+        78
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1193,10 +1255,11 @@
         59,
         63,
         79,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1212,10 +1275,11 @@
         60,
         67,
         87,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1231,10 +1295,11 @@
         70,
         66,
         67,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1250,10 +1315,11 @@
         71,
         62,
         64,
-        61
+        61,
+        72
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1269,10 +1335,11 @@
         65,
         60,
         60,
-        55
+        55,
+        53
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1288,10 +1355,11 @@
         54,
         49,
         48,
-        43
+        43,
+        39
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1307,10 +1375,11 @@
         73,
         78,
         78,
-        79
+        79,
+        87
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1326,10 +1395,11 @@
         67,
         64,
         63,
-        58
+        58,
+        63
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1345,10 +1415,11 @@
         85,
         99,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1364,10 +1435,11 @@
         66,
         68,
         75,
-        91
+        91,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1383,10 +1455,11 @@
         51,
         47,
         38,
-        39
+        39,
+        27
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1402,10 +1475,11 @@
         87,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1421,10 +1495,11 @@
         96,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1440,10 +1515,11 @@
         76,
         77,
         77,
+        77,
         77
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1459,10 +1535,11 @@
         77,
         84,
         84,
-        84
+        84,
+        85
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1478,10 +1555,11 @@
         78,
         88,
         91,
-        96
+        96,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1497,10 +1575,11 @@
         74,
         69,
         69,
-        87
+        87,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1516,10 +1595,11 @@
         72,
         65,
         61,
-        56
+        56,
+        50
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1535,10 +1615,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1554,10 +1635,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1573,10 +1655,11 @@
         92,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1592,10 +1675,11 @@
         80,
         75,
         68,
-        73
+        73,
+        91
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1611,10 +1695,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1630,10 +1715,11 @@
         79,
         74,
         76,
-        85
+        85,
+        95
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1649,10 +1735,11 @@
         82,
         76,
         83,
-        98
+        98,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1668,10 +1755,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1687,10 +1775,11 @@
         94,
         97,
         99,
-        92
+        92,
+        98
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1706,10 +1795,11 @@
         95,
         96,
         96,
-        82
+        82,
+        52
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1725,10 +1815,11 @@
         83,
         81,
         86,
-        100
+        100,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1744,10 +1835,11 @@
         91,
         null,
         null,
-        97
+        97,
+        92
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1763,10 +1855,11 @@
         81,
         79,
         82,
-        86
+        86,
+        83
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1782,10 +1875,11 @@
         86,
         86,
         92,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1801,10 +1895,11 @@
         84,
         83,
         71,
+        62,
         62
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1820,10 +1915,11 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1839,10 +1935,11 @@
         99,
         94,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1858,10 +1955,11 @@
         90,
         90,
         95,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1877,10 +1975,11 @@
         93,
         92,
         100,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1896,10 +1995,11 @@
         98,
         93,
         88,
-        78
+        78,
+        96
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1915,10 +2015,11 @@
         61,
         48,
         42,
-        40
+        40,
+        31
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1934,10 +2035,11 @@
         89,
         89,
         80,
-        72
+        72,
+        64
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1953,10 +2055,11 @@
         97,
         null,
         null,
-        null
+        null,
+        79
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1972,10 +2075,11 @@
         88,
         82,
         72,
-        63
+        63,
+        57
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -1991,10 +2095,11 @@
         100,
         95,
         null,
+        null,
         null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2010,10 +2115,11 @@
         null,
         57,
         50,
-        49
+        49,
+        41
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2029,12 +2135,13 @@
         null,
         58,
         17,
+        4,
         4
       ],
-      "top10_count": 1,
-      "sample_count": 9,
-      "top10_rate": 11,
-      "analytics_status": "SPIKE"
+      "top10_count": 2,
+      "sample_count": 10,
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_804455",
@@ -2048,10 +2155,11 @@
         null,
         73,
         52,
-        44
+        44,
+        29
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2067,10 +2175,11 @@
         null,
         98,
         98,
-        94
+        94,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2086,10 +2195,11 @@
         null,
         100,
         85,
-        66
+        66,
+        47
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2105,10 +2215,11 @@
         null,
         null,
         56,
-        28
+        28,
+        14
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2124,10 +2235,11 @@
         null,
         null,
         73,
-        41
+        41,
+        23
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2143,10 +2255,11 @@
         null,
         null,
         93,
-        65
+        65,
+        46
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2162,10 +2275,11 @@
         null,
         null,
         94,
-        90
+        90,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2181,10 +2295,11 @@
         null,
         null,
         97,
-        88
+        88,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2200,11 +2315,12 @@
         null,
         null,
         null,
-        26
+        26,
+        2
       ],
-      "top10_count": 0,
-      "sample_count": 9,
-      "top10_rate": 0,
+      "top10_count": 1,
+      "sample_count": 10,
+      "top10_rate": 10,
       "analytics_status": "SPIKE"
     },
     {
@@ -2219,10 +2335,11 @@
         null,
         null,
         null,
-        76
+        76,
+        59
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2238,10 +2355,11 @@
         null,
         null,
         null,
-        81
+        81,
+        43
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2257,10 +2375,11 @@
         null,
         null,
         null,
-        83
+        83,
+        68
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2276,10 +2395,11 @@
         null,
         null,
         null,
-        89
+        89,
+        51
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2295,10 +2415,11 @@
         null,
         null,
         null,
-        93
+        93,
+        74
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     },
@@ -2314,10 +2435,191 @@
         null,
         null,
         null,
-        99
+        99,
+        null
       ],
       "top10_count": 0,
-      "sample_count": 9,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_748171",
+      "title": "HOME",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        54
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_713504",
+      "title": "クール系男装女に彼女寝取られたから、わからせてやった",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        67
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_752471",
+      "title": "引きこもりのジト目巨乳妹に「学校行く代わりに毎日セックスして」と言われたので汗だく交尾しまくる話",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        69
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_808337",
+      "title": "【職場で本番】派遣先で出会う制服美女40人 〜お願いしてそのまま濃厚セックス〜『職業図鑑 〜魅惑の派遣ガチャ〜』",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        76
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_809873",
+      "title": "ついてるメス 2",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        82
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_801486",
+      "title": "ギャル娘が父親との愛情ックス4",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        84
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_796955",
+      "title": "空想実験Isー狙われたアイドルー",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        88
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_230061",
+      "title": "あなたが望むなら 総集編",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        93
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_812699",
+      "title": "お仕置きLesson",
+      "rank_history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        100
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
       "top10_rate": 0,
       "analytics_status": "SPIKE"
     }
