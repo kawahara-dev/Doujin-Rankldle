@@ -1,0 +1,25 @@
+name: DLsite Thumbnail Probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe one ranking response (no image or product requests)
+        run: python -m scripts.dlsite_thumbnail_probe --output tmp/dlsite_thumbnail_probe.json
+      - name: Upload URL-only report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dlsite-thumbnail-probe
+          path: tmp/dlsite_thumbnail_probe.json
+          if-no-files-found: warn
