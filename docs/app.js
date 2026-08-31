@@ -6,6 +6,12 @@ let nextScan = null;
 let knownLastRun = null;
 let loading = false;
 let selectedRanking = "api";
+let selectedStore = "fanza";
+let dlsiteData = { items: [] };
+let dlsiteStatus = null;
+let dlsiteAvailable = true;
+let dlsiteFilter = "all";
+let dlsitePriceFilter = "all";
 let rankingData = { "api": { items: [] }, "1h": { items: [] }, "24h": { items: [] } };
 let analyticsData = { "api": { items: [] }, "1h": { items: [] }, "24h": { items: [] } };
 const expandedAnalytics = { "api": new Set(), "1h": new Set(), "24h": new Set() };
@@ -82,6 +88,39 @@ function movementFor(item) {
   if (status === "new") return { status, label: "NEW" };
   if (status === "reentry") return { status, label: "REENTRY" };
   return { status: "stay", label: "STAY" };
+}
+
+function formatPrice(value) {
+  return value == null || !Number.isFinite(Number(value)) ? null : `¥${Number(value).toLocaleString("ja-JP")}`;
+}
+
+function normalizeDlsiteItem(item) {
+  return { ...item, rank: Number(item.rank), current_rank: Number(item.rank), rank_change: item.rank_change == null ? null : Number(item.rank_change), previous_rank: item.previous_rank == null ? null : Number(item.previous_rank), status: String(item.status || "stay").toLowerCase() };
+}
+
+function matchesDlsiteFilters(item) {
+  if (dlsiteFilter !== "all" && item.status !== dlsiteFilter) return false;
+  if (dlsitePriceFilter === "all") return true;
+  const price = Number(item.price);
+  if (item.price == null || !Number.isFinite(price)) return false;
+  return dlsitePriceFilter === "under1000" ? price <= 999 : dlsitePriceFilter === "1000to1999" ? price >= 1000 && price <= 1999 : dlsitePriceFilter === "2000to2999" ? price >= 2000 && price <= 2999 : price >= 3000;
+}
+
+function renderDlsiteItems() {
+  if (!dlsiteAvailable) { el("productList").innerHTML = '<p class="empty">DLsite ranking temporarily unavailable.</p>'; return; }
+  const items = (dlsiteData.items || []).map(normalizeDlsiteItem).filter(matchesDlsiteFilters);
+  el("filteredCount").hidden = dlsiteFilter === "all" && dlsitePriceFilter === "all";
+  el("filteredCount").textContent = `FILTERED ${items.length}`;
+  if (!items.length) { el("productList").innerHTML = '<p class="empty">この条件に一致する作品はありません。</p>'; return; }
+  el("productList").replaceChildren(...items.map(item => {
+    const movement = movementFor(item), row = document.createElement("article"), link = document.createElement("a");
+    row.className = `dlsite-product-row rank-${movement.status}`; link.className = "dlsite-product"; link.href = item.url; link.target = "_blank"; link.rel = "noopener noreferrer";
+    const rank=document.createElement("b"), body=document.createElement("span"), title=document.createElement("strong"), meta=document.createElement("small"), change=document.createElement("b"), price=document.createElement("span");
+    rank.className="rank"; rank.textContent=`#${item.rank}`; body.className="dlsite-product-body"; title.className="dlsite-title"; title.textContent=item.title;
+    meta.textContent=[item.product_id, item.previous_rank == null ? null : `前回 #${item.previous_rank}`].filter(Boolean).join("  ·  ");
+    change.className=`rank-change rank-${movement.status}`; change.textContent=movement.label; price.className="price"; price.textContent=formatPrice(item.price) || "PRICE N/A";
+    body.append(title,meta); link.append(rank,change,body,price); row.append(link); return row;
+  }));
 }
 
 function matchesApiFilter(item) {
@@ -167,19 +206,19 @@ function renderRising(items) {
       || String(a.title || "").localeCompare(String(b.title || ""), "ja"))
     .slice(0, 5);
   if (!rising.length) {
-    el("risingList").innerHTML = '<p class="rising-empty">まだ急上昇データはないよ。次の観測を待ってね📡</p>';
+    el("risingList").innerHTML = selectedStore === "dlsite" ? '<p class="rising-empty">NO RISING ITEMS THIS SCAN</p>' : '<p class="rising-empty">まだ急上昇データはないよ。次の観測を待ってね📡</p>';
     return;
   }
   el("risingList").replaceChildren(...rising.map((item, index) => {
-    const link = document.createElement("a"); link.className = "rising-item"; link.href = item.affiliate_url || item.url; link.target = "_blank"; link.rel = "noopener noreferrer sponsored";
+    const link = document.createElement("a"); link.className = "rising-item"; link.href = item.affiliate_url || item.url; link.target = "_blank"; link.rel = selectedStore === "dlsite" ? "noopener noreferrer" : "noopener noreferrer sponsored";
     const order = document.createElement("small"); order.className = "rising-order"; order.textContent = `${index + 1}.`;
     const ranks = document.createElement("span"); ranks.className = "rising-ranks"; ranks.textContent = `#${item.previous_rank} → #${item.current_rank}`;
     const change = document.createElement("strong"); change.className = "rising-change"; change.textContent = `↑ +${Number(item.rank_change)}`;
     const title = document.createElement("span"); title.className = "rising-title"; title.textContent = item.title;
     const genres = document.createElement("small"); genres.className = "rising-genres"; const genreNames=uniqueGenreNames(meaningfulGenres(item)); genres.textContent=genreNames.length ? `🏷 ${genreNames.slice(0,2).join(" / ")}` : "";
     if (genreNames.length) genres.dataset.mobileText = `🏷 ${genreNames[0]}`;
-    const price = document.createElement("span"); price.className = "rising-price"; price.textContent = `¥${number(item.price).toLocaleString("ja-JP")}`;
-    link.append(order, ranks, change, title); if (genres.textContent) link.append(genres); link.append(price); return link;
+    const price = document.createElement("span"); price.className = "rising-price"; price.textContent = formatPrice(item.price) || "";
+    link.append(order, ranks, change, title); if (genres.textContent) link.append(genres); if (price.textContent) link.append(price); return link;
   }));
 }
 
@@ -352,17 +391,37 @@ function selectRanking(type) {
   el("updatedAt").textContent = timestamp ? `UPDATED ${new Date(timestamp).toLocaleString("ja-JP")}` : "未取得";
 }
 
+function updateDlsiteSummary() {
+  const timestamp = dlsiteStatus?.last_success || dlsiteData.fetched_at;
+  const date = timestamp ? new Date(timestamp) : null;
+  el("dlsiteLastScan").textContent = date && !Number.isNaN(date.getTime()) ? date.toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit" }) : "--:--";
+  el("dlsiteItems").textContent = Number(dlsiteStatus?.items ?? dlsiteData.items?.length ?? 0).toLocaleString("ja-JP");
+  const online = dlsiteAvailable && dlsiteStatus?.last_error == null && Number(dlsiteStatus?.http_status) === 200;
+  el("dlsiteStatus").textContent = online ? "ONLINE" : "UNAVAILABLE"; el("dlsiteStatus").classList.toggle("online-text", online);
+}
+
+function selectStore(store) {
+  selectedStore = store === "dlsite" ? "dlsite" : "fanza";
+  document.querySelectorAll("[data-store]").forEach(button => { const active=button.dataset.store===selectedStore; button.classList.toggle("active",active); button.setAttribute("aria-pressed",String(active)); });
+  const dlsite = selectedStore === "dlsite";
+  document.querySelector(".ranking-tabs").hidden=dlsite; document.querySelector(".weekly-note").hidden=dlsite; el("dlsiteIntro").hidden=!dlsite; el("apiFilters").hidden=dlsite; el("dlsiteFilters").hidden=!dlsite; el("weeklyGenreWatch").hidden=dlsite; el("rankingMore").hidden=dlsite;
+  el("risingHeading").textContent=dlsite ? "📈 DLSITE RISING TOP5" : "📈 RISING TOP5"; el("trendLabel").textContent=dlsite ? "📡 DLSITE / 公開ランキング TOP20" : "📡 API RANKING / FANZA API 人気順";
+  if (dlsite) { el("observedCount").hidden=false; el("observedCount").textContent=`観測中 ${(dlsiteData.items||[]).length}作品`; updateDlsiteSummary(); renderRising((dlsiteData.items||[]).map(normalizeDlsiteItem)); renderDlsiteItems(); el("updatedAt").textContent=dlsiteData.fetched_at ? `UPDATED ${new Date(dlsiteData.fetched_at).toLocaleString("ja-JP")}` : "未取得"; }
+  else selectRanking(selectedRanking);
+}
+
 async function loadDashboard() {
   if (loading) return;
   loading = true;
   try {
-    const [latestResponse, statusResponse, rankApi, rank1h, rank24h, analyticsApi, analytics1h, analytics24h, weekly] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/fanza/api/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_api.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_1h.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_24h.json", { cache: "no-store" }).catch(() => null), fetch("data/reports/weekly/latest.json", { cache: "no-store" }).catch(() => null)]);
+    const [latestResponse, statusResponse, rankApi, rank1h, rank24h, analyticsApi, analytics1h, analytics24h, weekly, dlCurrent, dlStatus] = await Promise.all([fetch("data/latest.json", { cache: "no-store" }), fetch("data/status.json", { cache: "no-store" }), fetch("data/fanza/api/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/1h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/fanza/24h/current.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_api.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_1h.json", { cache: "no-store" }).catch(() => null), fetch("data/analytics/fanza_24h.json", { cache: "no-store" }).catch(() => null), fetch("data/reports/weekly/latest.json", { cache: "no-store" }).catch(() => null), fetch("data/dlsite/current.json", {cache:"no-store"}).catch(()=>null), fetch("data/dlsite/status.json", {cache:"no-store"}).catch(()=>null)]);
     if (!latestResponse.ok || !statusResponse.ok) throw new Error("データ取得に失敗しました");
     const [latest, status] = await Promise.all([latestResponse.json(), statusResponse.json()]);
     const items = Array.isArray(latest.items) ? latest.items : [];
     rankingData = { "api": rankApi?.ok ? await rankApi.json() : { items: [] }, "1h": rank1h?.ok ? await rank1h.json() : { items: [] }, "24h": rank24h?.ok ? await rank24h.json() : { items: [] } };
     analyticsData = { "api": analyticsApi?.ok ? await analyticsApi.json() : { items: [] }, "1h": analytics1h?.ok ? await analytics1h.json() : { items: [] }, "24h": analytics24h?.ok ? await analytics24h.json() : { items: [] } };
-    selectRanking(selectedRanking);
+    dlsiteAvailable=Boolean(dlCurrent?.ok); dlsiteData=dlCurrent?.ok ? await dlCurrent.json() : {items:[]}; dlsiteStatus=dlStatus?.ok ? await dlStatus.json() : null;
+    selectStore(selectedStore);
     renderSaleWatch(rankingData["24h"]?.items || []);
     let weeklyReport = null;
     if (weekly?.ok) { try { weeklyReport = await weekly.json(); } catch (_) { weeklyReport = null; } }
@@ -373,7 +432,7 @@ async function loadDashboard() {
     if (status.last_run || latest.updated_at) {
       const timestamp = status.last_run || latest.updated_at;
       const updated = new Date(timestamp);
-      el("updatedAt").textContent = `UPDATED ${updated.toLocaleString("ja-JP")}`;
+      if (selectedStore === "fanza") el("updatedAt").textContent = `UPDATED ${updated.toLocaleString("ja-JP")}`;
       if (timestamp !== knownLastRun) { knownLastRun = timestamp; nextScan = nextScheduledRun(); }
       el("botStatus").classList.add("active"); el("botStatus").querySelector("span").textContent = "ONLINE";
     }
@@ -384,6 +443,9 @@ async function loadDashboard() {
 }
 
 document.querySelectorAll("[data-ranking]").forEach(button => button.addEventListener("click", () => selectRanking(button.dataset.ranking)));
+document.querySelectorAll("[data-store]").forEach(button => button.addEventListener("click",()=>selectStore(button.dataset.store)));
+document.querySelectorAll("[data-dlsite-filter]").forEach(button=>button.addEventListener("click",()=>{dlsiteFilter=button.dataset.dlsiteFilter;document.querySelectorAll("[data-dlsite-filter]").forEach(b=>b.classList.toggle("active",b.dataset.dlsiteFilter===dlsiteFilter));renderDlsiteItems();}));
+document.querySelectorAll("[data-dlsite-price]").forEach(button=>button.addEventListener("click",()=>{dlsitePriceFilter=button.dataset.dlsitePrice;document.querySelectorAll("[data-dlsite-price]").forEach(b=>b.classList.toggle("active",b.dataset.dlsitePrice===dlsitePriceFilter));renderDlsiteItems();}));
 document.querySelectorAll("[data-api-filter]").forEach(button => button.addEventListener("click", () => { apiFilter = button.dataset.apiFilter; apiExpanded = false; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); }));
 document.querySelectorAll("[data-api-price-filter]").forEach(button => button.addEventListener("click", () => { apiPriceFilter = button.dataset.apiPriceFilter; apiExpanded = false; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); }));
 el("rankingMore").addEventListener("click", () => { apiExpanded = !apiExpanded; updateApiControls(rankingData.api.items || []); renderItems(rankingData.api.items || []); if (!apiExpanded) el("trendLabel").scrollIntoView({ behavior: "smooth", block: "start" }); });
