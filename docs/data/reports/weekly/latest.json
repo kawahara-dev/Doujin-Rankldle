@@ -1,49 +1,49 @@
 {
   "week_start": "2026-08-31",
   "week_end": "2026-09-06",
-  "generated_at": "2026-08-31T14:37:55+09:00",
+  "generated_at": "2026-09-01T04:30:55+09:00",
   "data_status": "PARTIAL",
-  "observed_days": 1,
-  "expected_days": 1,
+  "observed_days": 2,
+  "expected_days": 2,
   "snapshot_counts": {
-    "api": 3
+    "api": 4
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 103,
+    "unique_products": 109,
     "top10_unique_products": 11,
-    "new_entries": 11,
+    "new_entries": 17,
     "reentries": 0,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
-    "max_rank_rise_api": 30
+    "max_rank_rise_api": 39
   },
   "price_analysis": {
-    "average_price": 1349,
+    "average_price": 1348,
     "median_price": 990,
-    "top10_average_price": 1459,
+    "top10_average_price": 1519,
     "top10_median_price": 1078,
     "price_buckets": [
       {
         "label": "〜499円",
-        "count": 12,
+        "count": 13,
         "top10_count": 0
       },
       {
         "label": "500〜999円",
-        "count": 51,
+        "count": 54,
         "top10_count": 5
       },
       {
         "label": "1000〜1999円",
-        "count": 28,
-        "top10_count": 4
+        "count": 27,
+        "top10_count": 3
       },
       {
         "label": "2000〜2999円",
-        "count": 7,
-        "top10_count": 1
+        "count": 10,
+        "top10_count": 2
       },
       {
         "label": "3000円〜",
@@ -69,47 +69,47 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 81,
+      "observed_products": 87,
       "top10_products": 11
     },
     {
       "name": "巨乳",
-      "observed_products": 73,
+      "observed_products": 78,
       "top10_products": 11
     },
     {
       "name": "おっぱい",
-      "observed_products": 58,
+      "observed_products": 63,
       "top10_products": 6
     },
     {
       "name": "コミケ108（2026夏）",
-      "observed_products": 41,
+      "observed_products": 45,
       "top10_products": 6
     },
     {
       "name": "フェラ",
-      "observed_products": 41,
+      "observed_products": 45,
       "top10_products": 5
     },
     {
       "name": "制服",
-      "observed_products": 36,
+      "observed_products": 40,
       "top10_products": 4
     },
     {
-      "name": "パイズリ",
-      "observed_products": 27,
-      "top10_products": 3
-    },
-    {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 26,
+      "observed_products": 29,
       "top10_products": 1
     },
     {
+      "name": "パイズリ",
+      "observed_products": 28,
+      "top10_products": 3
+    },
+    {
       "name": "人妻・主婦",
-      "observed_products": 19,
+      "observed_products": 20,
       "top10_products": 3
     },
     {
@@ -119,54 +119,54 @@
     }
   ],
   "top_circles": [],
-  "new_release_products": 33,
-  "new_release_share": 32,
+  "new_release_products": 38,
+  "new_release_share": 35,
   "new_release_top10_products": 6,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 81,
+      "product_count": 87,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 73,
-      "median_price": 990
-    },
-    {
-      "name": "おっぱい",
-      "product_count": 58,
+      "product_count": 78,
       "median_price": 960
     },
     {
+      "name": "おっぱい",
+      "product_count": 63,
+      "median_price": 929
+    },
+    {
       "name": "コミケ108（2026夏）",
-      "product_count": 41,
+      "product_count": 45,
       "median_price": 990
     },
     {
       "name": "フェラ",
-      "product_count": 41,
-      "median_price": 990
-    },
-    {
-      "name": "制服",
-      "product_count": 36,
+      "product_count": 45,
       "median_price": 891
     },
     {
-      "name": "パイズリ",
-      "product_count": 27,
-      "median_price": 990
+      "name": "制服",
+      "product_count": 40,
+      "median_price": 891
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 26,
-      "median_price": 1045
+      "product_count": 29,
+      "median_price": 990
+    },
+    {
+      "name": "パイズリ",
+      "product_count": 28,
+      "median_price": 990
     },
     {
       "name": "人妻・主婦",
-      "product_count": 19,
-      "median_price": 1078
+      "product_count": 20,
+      "median_price": 1034
     },
     {
       "name": "処女",
@@ -175,20 +175,28 @@
     }
   ],
   "metadata_coverage": {
-    "genre": 103,
-    "meaningful_genre": 103,
+    "genre": 109,
+    "meaningful_genre": 109,
     "circle": 0,
-    "release_date": 103,
-    "total_products": 103
+    "release_date": 109,
+    "total_products": 109
   },
   "ranking_behavior": {
     "top10_entry_events": 2,
-    "large_rise_5_plus": 18,
-    "large_rise_10_plus": 7,
-    "new_entry_events": 11,
+    "large_rise_5_plus": 31,
+    "large_rise_10_plus": 13,
+    "new_entry_events": 17,
     "reentry_events": 0
   },
   "biggest_movers": [
+    {
+      "id": "d_805689",
+      "title": "密偵アリカの受難  中",
+      "ranking_type": "api",
+      "rank_change": 39,
+      "current_rank": 28,
+      "observed_at": "2026-09-01T04:30:55+09:00"
+    },
     {
       "id": "d_801486",
       "title": "ギャル娘が父親との愛情ックス4",
@@ -230,6 +238,14 @@
       "observed_at": "2026-08-31T02:30:51+09:00"
     },
     {
+      "id": "d_812735",
+      "title": "後輩女子×初コス  〜作品のこと1ミリも知らないおんなのこがしてくれる初々しいコスプレからしか摂れない栄養素ってあるよね〜",
+      "ranking_type": "api",
+      "rank_change": 12,
+      "current_rank": 85,
+      "observed_at": "2026-09-01T04:30:55+09:00"
+    },
+    {
       "id": "d_730395",
       "title": "クール系男装女に彼女取られたから、わからせてやった2",
       "ranking_type": "api",
@@ -242,162 +258,146 @@
       "title": "黒ギャルJKで射精したい",
       "ranking_type": "api",
       "rank_change": 10,
-      "current_rank": 80,
-      "observed_at": "2026-08-31T14:37:55+09:00"
+      "current_rank": 70,
+      "observed_at": "2026-09-01T04:30:55+09:00"
     },
     {
-      "id": "d_799502",
-      "title": "オタクの僕にも中出しさせてくれる優しいヤリマンビッチギャル3",
+      "id": "d_812039",
+      "title": "僕の彼女は元カレクズ男のオナホでした",
       "ranking_type": "api",
-      "rank_change": 7,
-      "current_rank": 41,
-      "observed_at": "2026-08-31T02:30:51+09:00"
-    },
-    {
-      "id": "d_804449",
-      "title": "まんきつちゅう6自宅編",
-      "ranking_type": "api",
-      "rank_change": 7,
-      "current_rank": 54,
-      "observed_at": "2026-08-31T06:07:49+09:00"
-    },
-    {
-      "id": "d_758347",
-      "title": "友達のママが僕のデカチンでイキまくった思い出",
-      "ranking_type": "api",
-      "rank_change": 7,
-      "current_rank": 68,
-      "observed_at": "2026-08-31T02:30:51+09:00"
+      "rank_change": 10,
+      "current_rank": 74,
+      "observed_at": "2026-09-01T04:30:55+09:00"
     }
   ],
   "creator_insights": [
-    "今週の最大上昇はAPIランキングで+30でした。",
+    "今週の最大上昇はAPIランキングで+39でした。",
     "APIランキング上位で11作品を観測しました。",
-    "NEWを11件、REENTRYを0件観測しました。"
+    "NEWを17件、REENTRYを0件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +30\n🆕 NEW 11件\n🔄 REENTRY 0件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを11件、REENTRYを0件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +39\n🆕 NEW 17件\n🔄 REENTRY 0件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを17件、REENTRYを0件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_799407",
       "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
       "top10_snapshots": 2,
-      "observation_rate": 67
+      "observation_rate": 50
     }
   ],
   "top10_stays": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_799407",
       "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
-      "top10_snapshots": 3,
+      "top10_snapshots": 4,
       "observation_rate": 100
     },
     {
       "id": "d_722335",
       "title": "あなたが望むなら7〜背徳の既婚者マチアプ＆いいなり野外＆ドスケベカーSEX編〜",
       "top10_snapshots": 2,
-      "observation_rate": 67
+      "observation_rate": 50
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
