@@ -87,7 +87,7 @@ function movementFor(item) {
   if (status === "down") return { status, label: `↓ -${change}` };
   if (status === "new") return { status, label: "NEW" };
   if (status === "reentry") return { status, label: "REENTRY" };
-  return { status: "stay", label: "STAY" };
+  return { status: "stay", label: "→" };
 }
 
 function formatPrice(value) {
@@ -114,12 +114,12 @@ function renderDlsiteItems() {
   if (!items.length) { el("productList").innerHTML = '<p class="empty">この条件に一致する作品はありません。</p>'; return; }
   el("productList").replaceChildren(...items.map(item => {
     const movement = movementFor(item), row = document.createElement("article"), link = document.createElement("a");
-    row.className = `dlsite-product-row rank-${movement.status}`; link.className = "dlsite-product"; link.href = item.url; link.target = "_blank"; link.rel = "noopener noreferrer";
-    const rank=document.createElement("b"), body=document.createElement("span"), title=document.createElement("strong"), meta=document.createElement("small"), change=document.createElement("b"), price=document.createElement("span");
-    rank.className="rank"; rank.textContent=`#${item.rank}`; body.className="dlsite-product-body"; title.className="dlsite-title"; title.textContent=item.title;
-    meta.textContent=[item.product_id, item.previous_rank == null ? null : `前回 #${item.previous_rank}`].filter(Boolean).join("  ·  ");
+    row.className = `dlsite-product-row rank-${movement.status}${item.rank <= 3 ? " top-three" : ""}`; link.className = "dlsite-product"; link.href = item.url; link.target = "_blank"; link.rel = "noopener noreferrer";
+    const rank=document.createElement("b"), title=document.createElement("strong"), meta=document.createElement("small"), change=document.createElement("b"), price=document.createElement("span");
+    rank.className="rank"; rank.textContent=`#${String(item.rank).padStart(2, "0")}`; title.className="dlsite-title"; title.textContent=item.title;
+    meta.className="dlsite-meta"; meta.textContent=[item.previous_rank != null && (movement.status === "up" || movement.status === "down") ? `PREV #${item.previous_rank}` : null, item.product_id].filter(Boolean).join(" · ");
     change.className=`rank-change rank-${movement.status}`; change.textContent=movement.label; price.className="price"; price.textContent=formatPrice(item.price) || "PRICE N/A";
-    body.append(title,meta); link.append(rank,change,body,price); row.append(link); return row;
+    link.append(rank,change,title,price,meta); row.append(link); return row;
   }));
 }
 
@@ -210,15 +210,16 @@ function renderRising(items) {
     return;
   }
   el("risingList").replaceChildren(...rising.map((item, index) => {
-    const link = document.createElement("a"); link.className = "rising-item"; link.href = item.affiliate_url || item.url; link.target = "_blank"; link.rel = selectedStore === "dlsite" ? "noopener noreferrer" : "noopener noreferrer sponsored";
+    const isDlsite = selectedStore === "dlsite";
+    const link = document.createElement("a"); link.className = `rising-item${isDlsite ? " dlsite-rising-item" : ""}`; link.href = item.affiliate_url || item.url; link.target = "_blank"; link.rel = isDlsite ? "noopener noreferrer" : "noopener noreferrer sponsored";
     const order = document.createElement("small"); order.className = "rising-order"; order.textContent = `${index + 1}.`;
-    const ranks = document.createElement("span"); ranks.className = "rising-ranks"; ranks.textContent = `#${item.previous_rank} → #${item.current_rank}`;
+    const ranks = document.createElement("span"); ranks.className = "rising-ranks"; ranks.textContent = isDlsite ? `#${String(item.current_rank).padStart(2, "0")}` : `#${item.previous_rank} → #${item.current_rank}`;
     const change = document.createElement("strong"); change.className = "rising-change"; change.textContent = `↑ +${Number(item.rank_change)}`;
     const title = document.createElement("span"); title.className = "rising-title"; title.textContent = item.title;
     const genres = document.createElement("small"); genres.className = "rising-genres"; const genreNames=uniqueGenreNames(meaningfulGenres(item)); genres.textContent=genreNames.length ? `🏷 ${genreNames.slice(0,2).join(" / ")}` : "";
     if (genreNames.length) genres.dataset.mobileText = `🏷 ${genreNames[0]}`;
-    const price = document.createElement("span"); price.className = "rising-price"; price.textContent = formatPrice(item.price) || "";
-    link.append(order, ranks, change, title); if (genres.textContent) link.append(genres); if (price.textContent) link.append(price); return link;
+    const price = document.createElement("span"); price.className = "rising-price"; price.textContent = formatPrice(item.price) || (isDlsite ? "PRICE N/A" : "");
+    link.append(order, ranks, change, title); if (!isDlsite && genres.textContent) link.append(genres); if (price.textContent) link.append(price); return link;
   }));
 }
 
