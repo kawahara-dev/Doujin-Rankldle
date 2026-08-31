@@ -18,7 +18,7 @@
         <div>
           <p class="eyebrow">UNOFFICIAL OBSERVATION TOOL</p>
           <h2 id="onboardingTitle">RankIdleとは？</h2>
-          <p>FANZA Web Service APIのランキングを定期観測し、順位変動・ジャンル・価格帯・新作傾向を可視化する<strong>非公式サイト</strong>です。</p>
+          <p>FANZA Web Service APIとDLsite公開ランキングを定期観測し、順位変動などを可視化する<strong>非公式サイト</strong>です。</p>
           <small>販売数・売上・閲覧数を示すものではありません。</small>
         </div>
         <button id="onboardingToggle" class="onboarding-toggle" type="button" aria-expanded="false" aria-controls="onboardingGuide">HOW TO READ</button>
@@ -37,6 +37,7 @@
           <article><h3>TOP10観測率</h3><p>週次観測期間中、対象ジャンル作品のうちTOP10で観測された作品数の比率。販売率・購入率ではありません。</p></article>
           <article><h3>WEEKLY GENRE WATCH</h3><p>保存したAPIランキングsnapshotから、ジャンル、新作比率、TOP10観測数、ジャンル別価格中央値などを集計します。</p></article>
           <article><h3>PRICE</h3><p>DMM/FANZA APIから取得した商品価格。価格中央値は観測作品の価格中央値です。</p></article>
+          <article><h3>DLSITE RANKING</h3><p>DLsiteの公開ランキングTOP20を定期観測しています。UP / DOWN / STAYは前回観測との順位差、NEWは初観測、REENTRYは一度TOP20外になった後の再登場です。FANZA APIランキングとは別の観測ソースです。</p></article>
         </div>
         <aside class="guide-notice" aria-label="ランキング観測データについての注意">
           <strong>NOTICE</strong>
@@ -56,7 +57,9 @@
 
 
     <section class="products panel">
+      <nav class="store-switch" aria-label="ストア切り替え"><span>STORE</span><button type="button" data-store="fanza" class="active" aria-pressed="true">FANZA API</button><button type="button" data-store="dlsite" aria-pressed="false">DLsite</button></nav>
       <div class="section-title"><div><p class="eyebrow" id="trendLabel">📡 API RANKING / FANZA API 人気順</p><div class="ranking-heading"><h2>商品ランキング</h2><div class="ranking-counts"><strong id="observedCount" class="observed-count">観測中 0作品</strong><small id="filteredCount" class="filtered-count" hidden>FILTERED 0</small></div></div><div class="ranking-tabs"><button data-ranking="api" class="active">API</button><button data-ranking="1h" hidden>1H</button><button data-ranking="24h" hidden>24H</button></div><p class="weekly-note"><strong>API RANKING</strong><br>DMM Web Service APIの <code>sort=rank</code> を定期観測しています。<br>※FANZA公式サイトの1時間 / 24時間ランキングとは別のランキング指標です。1H / 24HはSPECIAL OBSERVATIONです。</p></div><span id="updatedAt">未取得</span></div>
+      <section id="dlsiteIntro" class="dlsite-intro" hidden><p>DLsite公開ランキングTOP20を定期観測しています。順位変動はRankIdleが前回snapshotとの差から算出しています。</p><strong>販売数・売上・閲覧数を示すものではありません。</strong><div class="dlsite-summary"><span><small>LAST SCAN</small><b id="dlsiteLastScan">--:--</b></span><span><small>ITEMS</small><b id="dlsiteItems">0</b></span><span><small>STATUS</small><b id="dlsiteStatus">CHECKING</b></span></div></section>
       <section id="risingSection" class="rising-section" aria-labelledby="risingHeading"><h3 id="risingHeading">📈 RISING TOP5</h3><div id="risingList" class="rising-list"><p class="rising-empty">まだ急上昇データはないよ。次の観測を待ってね📡</p></div></section>
       <section id="weeklyGenreWatch" class="weekly-genre-watch" aria-labelledby="weeklyGenreHeading">
         <div class="genre-watch-head"><div><div class="genre-watch-title"><h3 id="weeklyGenreHeading">📊 WEEKLY GENRE WATCH</h3><b id="weeklyGenreStatus" class="weekly-status partial" hidden>PARTIAL DATA</b></div><p>今週のAPIランキング観測傾向</p></div></div>
@@ -71,6 +74,7 @@
         </div>
       </section>
       <div id="apiFilters" class="api-filter-groups"><div class="filter-group"><span>STATUS</span><div class="ranking-filters" aria-label="APIランキングステータスフィルター"><button type="button" data-api-filter="all" class="active">ALL</button><button type="button" data-api-filter="up">UP</button><button type="button" data-api-filter="new">NEW</button><button type="button" data-api-filter="momentum">MOMENTUM</button></div></div><div class="filter-group"><span>PRICE</span><div class="ranking-filters price-filters" aria-label="APIランキング価格帯フィルター"><button type="button" data-api-price-filter="all" class="active">ALL</button><button type="button" data-api-price-filter="under1000">～999円</button><button type="button" data-api-price-filter="1000to1999">1,000～1,999円</button><button type="button" data-api-price-filter="2000to2999">2,000～2,999円</button><button type="button" data-api-price-filter="3000plus">3,000円～</button></div></div><div class="filter-group"><span>GENRE</span><div id="apiGenreFilters" class="ranking-filters genre-filters" aria-label="APIランキングジャンルフィルター"></div></div></div>
+      <div id="dlsiteFilters" class="api-filter-groups" hidden><div class="filter-group"><span>STATUS</span><div class="ranking-filters" aria-label="DLsiteランキングステータスフィルター"><button type="button" data-dlsite-filter="all" class="active">ALL</button><button type="button" data-dlsite-filter="up">UP</button><button type="button" data-dlsite-filter="down">DOWN</button><button type="button" data-dlsite-filter="stay">STAY</button><button type="button" data-dlsite-filter="new">NEW</button><button type="button" data-dlsite-filter="reentry">REENTRY</button></div></div><div class="filter-group"><span>PRICE</span><div class="ranking-filters price-filters"><button type="button" data-dlsite-price="all" class="active">ALL</button><button type="button" data-dlsite-price="under1000">≤999</button><button type="button" data-dlsite-price="1000to1999">1000–1999</button><button type="button" data-dlsite-price="2000to2999">2000–2999</button><button type="button" data-dlsite-price="3000plus">3000+</button></div></div></div>
       <div id="productList" class="product-list"><p class="empty">データをロード中...</p></div>
       <button id="rankingMore" class="ranking-more" type="button">もっと見る（21〜100位）</button>
     </section>
