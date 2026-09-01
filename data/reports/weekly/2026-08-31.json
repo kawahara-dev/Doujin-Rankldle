@@ -1,18 +1,18 @@
 {
   "week_start": "2026-08-31",
   "week_end": "2026-09-06",
-  "generated_at": "2026-09-01T14:11:23+09:00",
+  "generated_at": "2026-09-01T19:08:36+09:00",
   "data_status": "PARTIAL",
   "observed_days": 2,
   "expected_days": 2,
   "snapshot_counts": {
-    "api": 5
+    "api": 6
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 111,
+    "unique_products": 112,
     "top10_unique_products": 11,
-    "new_entries": 19,
+    "new_entries": 20,
     "reentries": 1,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
@@ -20,7 +20,7 @@
     "max_rank_rise_api": 43
   },
   "price_analysis": {
-    "average_price": 1338,
+    "average_price": 1343,
     "median_price": 990,
     "top10_average_price": 1519,
     "top10_median_price": 1078,
@@ -37,7 +37,7 @@
       },
       {
         "label": "1000〜1999円",
-        "count": 27,
+        "count": 28,
         "top10_count": 3
       },
       {
@@ -69,7 +69,7 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 89,
+      "observed_products": 90,
       "top10_products": 11
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "name": "おっぱい",
-      "observed_products": 65,
+      "observed_products": 66,
       "top10_products": 6
     },
     {
@@ -125,8 +125,8 @@
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 89,
-      "median_price": 929
+      "product_count": 90,
+      "median_price": 960
     },
     {
       "name": "巨乳",
@@ -135,8 +135,8 @@
     },
     {
       "name": "おっぱい",
-      "product_count": 65,
-      "median_price": 924
+      "product_count": 66,
+      "median_price": 926
     },
     {
       "name": "フェラ",
@@ -175,17 +175,17 @@
     }
   ],
   "metadata_coverage": {
-    "genre": 111,
-    "meaningful_genre": 111,
+    "genre": 112,
+    "meaningful_genre": 112,
     "circle": 0,
-    "release_date": 111,
-    "total_products": 111
+    "release_date": 112,
+    "total_products": 112
   },
   "ranking_behavior": {
     "top10_entry_events": 2,
-    "large_rise_5_plus": 34,
+    "large_rise_5_plus": 35,
     "large_rise_10_plus": 14,
-    "new_entry_events": 19,
+    "new_entry_events": 20,
     "reentry_events": 1
   },
   "biggest_movers": [
@@ -273,131 +273,131 @@
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+43でした。",
     "APIランキング上位で11作品を観測しました。",
-    "NEWを19件、REENTRYを1件観測しました。"
+    "NEWを20件、REENTRYを1件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +43\n🆕 NEW 19件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを19件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +43\n🆕 NEW 20件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを20件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_799407",
       "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_801163",
       "title": "陰キャな俺だけが知っている生徒会長の裏側2。  〜陥没乳首の先輩が快楽に屈服して堕ちるまで〜",
-      "top10_snapshots": 3,
-      "observation_rate": 60
+      "top10_snapshots": 4,
+      "observation_rate": 67
     }
   ],
   "top10_stays": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_799407",
       "title": "友達のママが僕のデカチンでイキまくった夏祭り",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_801163",
       "title": "陰キャな俺だけが知っている生徒会長の裏側2。  〜陥没乳首の先輩が快楽に屈服して堕ちるまで〜",
-      "top10_snapshots": 3,
-      "observation_rate": 60
+      "top10_snapshots": 4,
+      "observation_rate": 67
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
