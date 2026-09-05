@@ -1,18 +1,18 @@
 {
   "week_start": "2026-08-31",
   "week_end": "2026-09-06",
-  "generated_at": "2026-09-05T13:31:51+09:00",
+  "generated_at": "2026-09-05T18:06:44+09:00",
   "data_status": "PARTIAL",
   "observed_days": 6,
   "expected_days": 6,
   "snapshot_counts": {
-    "api": 21
+    "api": 22
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 132,
+    "unique_products": 135,
     "top10_unique_products": 16,
-    "new_entries": 39,
+    "new_entries": 42,
     "reentries": 7,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
@@ -20,7 +20,7 @@
     "max_rank_rise_api": 44
   },
   "price_analysis": {
-    "average_price": 1321,
+    "average_price": 1317,
     "median_price": 990,
     "top10_average_price": 1461,
     "top10_median_price": 1034,
@@ -32,12 +32,12 @@
       },
       {
         "label": "500〜999円",
-        "count": 69,
+        "count": 71,
         "top10_count": 8
       },
       {
         "label": "1000〜1999円",
-        "count": 34,
+        "count": 35,
         "top10_count": 4
       },
       {
@@ -69,27 +69,27 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 107,
+      "observed_products": 110,
       "top10_products": 15
     },
     {
       "name": "巨乳",
-      "observed_products": 93,
+      "observed_products": 96,
       "top10_products": 15
     },
     {
       "name": "おっぱい",
-      "observed_products": 78,
+      "observed_products": 80,
       "top10_products": 9
     },
     {
       "name": "フェラ",
-      "observed_products": 57,
+      "observed_products": 59,
       "top10_products": 5
     },
     {
       "name": "コミケ108（2026夏）",
-      "observed_products": 55,
+      "observed_products": 57,
       "top10_products": 8
     },
     {
@@ -99,53 +99,53 @@
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 34,
+      "observed_products": 36,
       "top10_products": 3
     },
     {
       "name": "パイズリ",
-      "observed_products": 33,
+      "observed_products": 35,
+      "top10_products": 5
+    },
+    {
+      "name": "人妻・主婦",
+      "observed_products": 23,
       "top10_products": 5
     },
     {
       "name": "処女",
       "observed_products": 23,
       "top10_products": 3
-    },
-    {
-      "name": "人妻・主婦",
-      "observed_products": 22,
-      "top10_products": 5
     }
   ],
   "top_circles": [],
-  "new_release_products": 55,
+  "new_release_products": 57,
   "new_release_share": 42,
   "new_release_top10_products": 11,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 107,
+      "product_count": 110,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 93,
-      "median_price": 929
+      "product_count": 96,
+      "median_price": 948
     },
     {
       "name": "おっぱい",
-      "product_count": 78,
+      "product_count": 80,
       "median_price": 926
     },
     {
       "name": "フェラ",
-      "product_count": 57,
+      "product_count": 59,
       "median_price": 891
     },
     {
       "name": "コミケ108（2026夏）",
-      "product_count": 55,
+      "product_count": 57,
       "median_price": 990
     },
     {
@@ -155,37 +155,37 @@
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 34,
+      "product_count": 36,
       "median_price": 1100
     },
     {
       "name": "パイズリ",
-      "product_count": 33,
+      "product_count": 35,
+      "median_price": 990
+    },
+    {
+      "name": "人妻・主婦",
+      "product_count": 23,
       "median_price": 990
     },
     {
       "name": "処女",
       "product_count": 23,
       "median_price": 990
-    },
-    {
-      "name": "人妻・主婦",
-      "product_count": 22,
-      "median_price": 990
     }
   ],
   "metadata_coverage": {
-    "genre": 132,
-    "meaningful_genre": 132,
+    "genre": 135,
+    "meaningful_genre": 135,
     "circle": 0,
-    "release_date": 132,
-    "total_products": 132
+    "release_date": 135,
+    "total_products": 135
   },
   "ranking_behavior": {
     "top10_entry_events": 8,
-    "large_rise_5_plus": 127,
+    "large_rise_5_plus": 129,
     "large_rise_10_plus": 37,
-    "new_entry_events": 39,
+    "new_entry_events": 42,
     "reentry_events": 7
   },
   "biggest_movers": [
@@ -273,131 +273,131 @@
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+44でした。",
     "APIランキング上位で16作品を観測しました。",
-    "NEWを39件、REENTRYを7件観測しました。"
+    "NEWを42件、REENTRYを7件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +44\n🆕 NEW 39件\n🔄 REENTRY 7件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを39件、REENTRYを7件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +44\n🆕 NEW 42件\n🔄 REENTRY 7件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを42件、REENTRYを7件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
       "top10_snapshots": 19,
-      "observation_rate": 90
+      "observation_rate": 86
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
       "top10_snapshots": 14,
-      "observation_rate": 67
+      "observation_rate": 64
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
-      "top10_snapshots": 13,
-      "observation_rate": 62
+      "top10_snapshots": 14,
+      "observation_rate": 64
     },
     {
       "id": "d_810949",
       "title": "ギャル上等〜「セックスOK」の恋愛リアリティーショーで童貞がハーレム王になる話〜",
       "top10_snapshots": 13,
-      "observation_rate": 62
+      "observation_rate": 59
     }
   ],
   "top10_stays": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_781867",
       "title": "【スマホ対応×Live2D】パパ活無双",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
-      "top10_snapshots": 21,
+      "top10_snapshots": 22,
       "observation_rate": 100
     },
     {
       "id": "d_805485",
       "title": "破魔の巫女  淫獄に堕つ  3",
       "top10_snapshots": 19,
-      "observation_rate": 90
+      "observation_rate": 86
     },
     {
       "id": "d_748896",
       "title": "スパ・カイラクーア4",
       "top10_snapshots": 14,
-      "observation_rate": 67
+      "observation_rate": 64
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
-      "top10_snapshots": 13,
-      "observation_rate": 62
+      "top10_snapshots": 14,
+      "observation_rate": 64
     },
     {
       "id": "d_810949",
       "title": "ギャル上等〜「セックスOK」の恋愛リアリティーショーで童貞がハーレム王になる話〜",
       "top10_snapshots": 13,
-      "observation_rate": 62
+      "observation_rate": 59
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
