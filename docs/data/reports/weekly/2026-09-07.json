@@ -1,26 +1,26 @@
 {
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
-  "generated_at": "2026-09-08T13:39:03+09:00",
+  "generated_at": "2026-09-08T18:42:54+09:00",
   "data_status": "PARTIAL",
   "observed_days": 2,
   "expected_days": 2,
   "snapshot_counts": {
-    "api": 7
+    "api": 8
   },
   "ranking_source": "api",
   "market_overview": {
     "unique_products": 113,
     "top10_unique_products": 12,
     "new_entries": 16,
-    "reentries": 1,
+    "reentries": 2,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 35
   },
   "price_analysis": {
-    "average_price": 1558,
+    "average_price": 1567,
     "median_price": 990,
     "top10_average_price": 1722,
     "top10_median_price": 1221,
@@ -37,12 +37,12 @@
       },
       {
         "label": "1000〜1999円",
-        "count": 27,
+        "count": 26,
         "top10_count": 3
       },
       {
         "label": "2000〜2999円",
-        "count": 11,
+        "count": 12,
         "top10_count": 2
       },
       {
@@ -183,12 +183,20 @@
   },
   "ranking_behavior": {
     "top10_entry_events": 2,
-    "large_rise_5_plus": 37,
-    "large_rise_10_plus": 7,
+    "large_rise_5_plus": 38,
+    "large_rise_10_plus": 8,
     "new_entry_events": 16,
-    "reentry_events": 1
+    "reentry_events": 2
   },
   "biggest_movers": [
+    {
+      "id": "d_793160",
+      "title": "「世界の終わりックス」をしよう",
+      "ranking_type": "api",
+      "rank_change": 35,
+      "current_rank": 51,
+      "observed_at": "2026-09-08T18:42:54+09:00"
+    },
     {
       "id": "d_810215",
       "title": "認識阻害！未来百貨店から贈られてきた「塵くずぐすり」で誰もボクに気付かない",
@@ -260,144 +268,136 @@
       "rank_change": 8,
       "current_rank": 48,
       "observed_at": "2026-09-08T03:15:34+09:00"
-    },
-    {
-      "id": "d_799481",
-      "title": "生意気ギャルがわからせられる本3.0",
-      "ranking_type": "api",
-      "rank_change": 8,
-      "current_rank": 70,
-      "observed_at": "2026-09-08T03:15:34+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+35でした。",
     "APIランキング上位で12作品を観測しました。",
-    "NEWを16件、REENTRYを1件観測しました。"
+    "NEWを16件、REENTRYを2件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +35\n🆕 NEW 16件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを16件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +35\n🆕 NEW 16件\n🔄 REENTRY 2件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを16件、REENTRYを2件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_778317",
       "title": "生意気ギャルがおじさんのデカチンに逆らえなくなった日",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_796691",
       "title": "やっぱり君を孕ませたい",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 6,
-      "observation_rate": 86
+      "top10_snapshots": 7,
+      "observation_rate": 88
     },
     {
-      "id": "d_781867",
-      "title": "【スマホ対応×Live2D】パパ活無双",
+      "id": "d_538848",
+      "title": "【超総集編】日向恭介1500ページ超え！！",
       "top10_snapshots": 4,
-      "observation_rate": 57
+      "observation_rate": 50
     }
   ],
   "top10_stays": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_778317",
       "title": "生意気ギャルがおじさんのデカチンに逆らえなくなった日",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_796691",
       "title": "やっぱり君を孕ませたい",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 6,
-      "observation_rate": 86
+      "top10_snapshots": 7,
+      "observation_rate": 88
     },
     {
-      "id": "d_781867",
-      "title": "【スマホ対応×Live2D】パパ活無双",
+      "id": "d_538848",
+      "title": "【超総集編】日向恭介1500ページ超え！！",
       "top10_snapshots": 4,
-      "observation_rate": 57
+      "observation_rate": 50
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
