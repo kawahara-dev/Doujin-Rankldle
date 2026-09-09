@@ -1,18 +1,18 @@
 {
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
-  "generated_at": "2026-09-09T13:44:55+09:00",
+  "generated_at": "2026-09-09T18:47:53+09:00",
   "data_status": "PARTIAL",
   "observed_days": 3,
   "expected_days": 3,
   "snapshot_counts": {
-    "api": 11
+    "api": 12
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 121,
+    "unique_products": 122,
     "top10_unique_products": 13,
-    "new_entries": 24,
+    "new_entries": 25,
     "reentries": 2,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
@@ -20,7 +20,7 @@
     "max_rank_rise_api": 58
   },
   "price_analysis": {
-    "average_price": 1508,
+    "average_price": 1502,
     "median_price": 990,
     "top10_average_price": 1649,
     "top10_median_price": 1210,
@@ -32,7 +32,7 @@
       },
       {
         "label": "500〜999円",
-        "count": 67,
+        "count": 68,
         "top10_count": 6
       },
       {
@@ -114,12 +114,12 @@
     },
     {
       "name": "ぶっかけ",
-      "observed_products": 21,
+      "observed_products": 22,
       "top10_products": 2
     }
   ],
   "top_circles": [],
-  "new_release_products": 47,
+  "new_release_products": 48,
   "new_release_share": 39,
   "new_release_top10_products": 6,
   "genre_price_summary": [
@@ -170,22 +170,22 @@
     },
     {
       "name": "ぶっかけ",
-      "product_count": 21,
-      "median_price": 968
+      "product_count": 22,
+      "median_price": 880
     }
   ],
   "metadata_coverage": {
-    "genre": 121,
-    "meaningful_genre": 121,
+    "genre": 122,
+    "meaningful_genre": 122,
     "circle": 0,
-    "release_date": 121,
-    "total_products": 121
+    "release_date": 122,
+    "total_products": 122
   },
   "ranking_behavior": {
     "top10_entry_events": 3,
-    "large_rise_5_plus": 60,
-    "large_rise_10_plus": 12,
-    "new_entry_events": 24,
+    "large_rise_5_plus": 64,
+    "large_rise_10_plus": 14,
+    "new_entry_events": 25,
     "reentry_events": 2
   },
   "biggest_movers": [
@@ -220,6 +220,14 @@
       "rank_change": 25,
       "current_rank": 32,
       "observed_at": "2026-09-08T03:15:34+09:00"
+    },
+    {
+      "id": "d_814057",
+      "title": "ハレンチ教育",
+      "ranking_type": "api",
+      "rank_change": 15,
+      "current_rank": 85,
+      "observed_at": "2026-09-09T18:47:53+09:00"
     },
     {
       "id": "d_635393",
@@ -260,144 +268,136 @@
       "rank_change": 10,
       "current_rank": 79,
       "observed_at": "2026-09-08T03:15:34+09:00"
-    },
-    {
-      "id": "d_791850",
-      "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "ranking_type": "api",
-      "rank_change": 9,
-      "current_rank": 11,
-      "observed_at": "2026-09-07T01:18:10+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+58でした。",
     "APIランキング上位で13作品を観測しました。",
-    "NEWを24件、REENTRYを2件観測しました。"
+    "NEWを25件、REENTRYを2件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +58\n🆕 NEW 24件\n🔄 REENTRY 2件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを24件、REENTRYを2件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +58\n🆕 NEW 25件\n🔄 REENTRY 2件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを25件、REENTRYを2件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_778317",
       "title": "生意気ギャルがおじさんのデカチンに逆らえなくなった日",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_796691",
       "title": "やっぱり君を孕ませたい",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 10,
-      "observation_rate": 91
+      "top10_snapshots": 11,
+      "observation_rate": 92
+    },
+    {
+      "id": "d_538848",
+      "title": "【超総集編】日向恭介1500ページ超え！！",
+      "top10_snapshots": 8,
+      "observation_rate": 67
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
       "top10_snapshots": 8,
-      "observation_rate": 73
-    },
-    {
-      "id": "d_538848",
-      "title": "【超総集編】日向恭介1500ページ超え！！",
-      "top10_snapshots": 7,
-      "observation_rate": 64
+      "observation_rate": 67
     }
   ],
   "top10_stays": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい  総集編I",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_778317",
       "title": "生意気ギャルがおじさんのデカチンに逆らえなくなった日",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_796691",
       "title": "やっぱり君を孕ませたい",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
-      "top10_snapshots": 11,
+      "top10_snapshots": 12,
       "observation_rate": 100
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 10,
-      "observation_rate": 91
+      "top10_snapshots": 11,
+      "observation_rate": 92
+    },
+    {
+      "id": "d_538848",
+      "title": "【超総集編】日向恭介1500ページ超え！！",
+      "top10_snapshots": 8,
+      "observation_rate": 67
     },
     {
       "id": "d_807332",
       "title": "聖女の祈りは届かない",
       "top10_snapshots": 8,
-      "observation_rate": 73
-    },
-    {
-      "id": "d_538848",
-      "title": "【超総集編】日向恭介1500ページ超え！！",
-      "top10_snapshots": 7,
-      "observation_rate": 64
+      "observation_rate": 67
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
