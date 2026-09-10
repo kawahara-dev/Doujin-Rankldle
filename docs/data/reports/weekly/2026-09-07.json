@@ -1,18 +1,18 @@
 {
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
-  "generated_at": "2026-09-11T02:00:54+09:00",
+  "generated_at": "2026-09-11T05:53:09+09:00",
   "data_status": "PARTIAL",
   "observed_days": 5,
   "expected_days": 5,
   "snapshot_counts": {
-    "api": 17
+    "api": 18
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 131,
-    "top10_unique_products": 17,
-    "new_entries": 34,
+    "unique_products": 133,
+    "top10_unique_products": 18,
+    "new_entries": 36,
     "reentries": 3,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
@@ -20,9 +20,9 @@
     "max_rank_rise_api": 58
   },
   "price_analysis": {
-    "average_price": 1459,
+    "average_price": 1451,
     "median_price": 990,
-    "top10_average_price": 1483,
+    "top10_average_price": 1444,
     "top10_median_price": 990,
     "price_buckets": [
       {
@@ -32,12 +32,12 @@
       },
       {
         "label": "500〜999円",
-        "count": 75,
-        "top10_count": 10
+        "count": 76,
+        "top10_count": 11
       },
       {
         "label": "1000〜1999円",
-        "count": 28,
+        "count": 29,
         "top10_count": 3
       },
       {
@@ -69,98 +69,98 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 106,
+      "observed_products": 108,
       "top10_products": 14
     },
     {
       "name": "巨乳",
-      "observed_products": 93,
-      "top10_products": 14
+      "observed_products": 94,
+      "top10_products": 15
     },
     {
       "name": "おっぱい",
-      "observed_products": 79,
-      "top10_products": 8
+      "observed_products": 80,
+      "top10_products": 9
     },
     {
       "name": "フェラ",
-      "observed_products": 61,
-      "top10_products": 7
+      "observed_products": 62,
+      "top10_products": 8
     },
     {
       "name": "コミケ108（2026夏）",
-      "observed_products": 49,
+      "observed_products": 50,
       "top10_products": 9
     },
     {
       "name": "制服",
-      "observed_products": 46,
+      "observed_products": 47,
       "top10_products": 6
     },
     {
       "name": "パイズリ",
-      "observed_products": 39,
-      "top10_products": 3
+      "observed_products": 40,
+      "top10_products": 4
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 29,
+      "observed_products": 31,
       "top10_products": 5
     },
     {
       "name": "処女",
       "observed_products": 26,
-      "top10_products": 2
+      "top10_products": 3
     },
     {
       "name": "ぶっかけ",
       "observed_products": 23,
-      "top10_products": 4
+      "top10_products": 5
     }
   ],
   "top_circles": [],
-  "new_release_products": 53,
-  "new_release_share": 40,
-  "new_release_top10_products": 10,
+  "new_release_products": 54,
+  "new_release_share": 41,
+  "new_release_top10_products": 11,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 106,
+      "product_count": 108,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 93,
-      "median_price": 968
+      "product_count": 94,
+      "median_price": 948
     },
     {
       "name": "おっぱい",
-      "product_count": 79,
+      "product_count": 80,
       "median_price": 968
     },
     {
       "name": "フェラ",
-      "product_count": 61,
-      "median_price": 968
+      "product_count": 62,
+      "median_price": 946
     },
     {
       "name": "コミケ108（2026夏）",
-      "product_count": 49,
+      "product_count": 50,
       "median_price": 990
     },
     {
       "name": "制服",
-      "product_count": 46,
+      "product_count": 47,
       "median_price": 891
     },
     {
       "name": "パイズリ",
-      "product_count": 39,
-      "median_price": 990
+      "product_count": 40,
+      "median_price": 979
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 29,
+      "product_count": 31,
       "median_price": 990
     },
     {
@@ -175,17 +175,17 @@
     }
   ],
   "metadata_coverage": {
-    "genre": 131,
-    "meaningful_genre": 131,
+    "genre": 133,
+    "meaningful_genre": 133,
     "circle": 0,
-    "release_date": 131,
-    "total_products": 131
+    "release_date": 133,
+    "total_products": 133
   },
   "ranking_behavior": {
-    "top10_entry_events": 7,
-    "large_rise_5_plus": 98,
-    "large_rise_10_plus": 23,
-    "new_entry_events": 34,
+    "top10_entry_events": 8,
+    "large_rise_5_plus": 107,
+    "large_rise_10_plus": 25,
+    "new_entry_events": 36,
     "reentry_events": 3
   },
   "biggest_movers": [
@@ -246,6 +246,14 @@
       "observed_at": "2026-09-10T02:10:01+09:00"
     },
     {
+      "id": "d_812809",
+      "title": "転生して雑魚ゴブリンになった俺、欲求不満聖女に精力尽きるまで搾られた件",
+      "ranking_type": "api",
+      "rank_change": 22,
+      "current_rank": 58,
+      "observed_at": "2026-09-11T05:53:09+09:00"
+    },
+    {
       "id": "d_813898",
       "title": "囮捜査官キョウカ 学園潜入編",
       "ranking_type": "api",
@@ -260,144 +268,136 @@
       "rank_change": 18,
       "current_rank": 26,
       "observed_at": "2026-09-11T02:00:54+09:00"
-    },
-    {
-      "id": "d_635393",
-      "title": "不愛想な隠れ巨乳ボーイッシュ彼女と退屈なデート",
-      "ranking_type": "api",
-      "rank_change": 13,
-      "current_rank": 75,
-      "observed_at": "2026-09-09T02:15:53+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+58でした。",
-    "APIランキング上位で17作品を観測しました。",
-    "NEWを34件、REENTRYを3件観測しました。"
+    "APIランキング上位で18作品を観測しました。",
+    "NEWを36件、REENTRYを3件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +58\n🆕 NEW 34件\n🔄 REENTRY 3件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを34件、REENTRYを3件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +58\n🆕 NEW 36件\n🔄 REENTRY 3件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを36件、REENTRYを3件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_796691",
+      "title": "やっぱり君を孕ませたい",
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
       "top10_snapshots": 17,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_796691",
-      "title": "やっぱり君を孕ませたい",
-      "top10_snapshots": 17,
-      "observation_rate": 100
+      "observation_rate": 94
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 16,
+      "top10_snapshots": 17,
       "observation_rate": 94
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
       "top10_snapshots": 16,
-      "observation_rate": 94
+      "observation_rate": 89
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
       "top10_snapshots": 14,
-      "observation_rate": 82
+      "observation_rate": 78
     },
     {
       "id": "d_778317",
       "title": "生意気ギャルがおじさんのデカチンに逆らえなくなった日",
       "top10_snapshots": 12,
-      "observation_rate": 71
+      "observation_rate": 67
     },
     {
       "id": "d_742834",
       "title": "不愛想な隠れ巨乳ボーイッシュ彼女と退屈なデート2",
-      "top10_snapshots": 9,
-      "observation_rate": 53
+      "top10_snapshots": 10,
+      "observation_rate": 56
     },
     {
       "id": "d_538848",
       "title": "【超総集編】日向恭介1500ページ超え！！",
       "top10_snapshots": 8,
-      "observation_rate": 47
+      "observation_rate": 44
     }
   ],
   "top10_stays": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "top10_snapshots": 17,
+      "top10_snapshots": 18,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_796691",
+      "title": "やっぱり君を孕ませたい",
+      "top10_snapshots": 18,
       "observation_rate": 100
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
       "top10_snapshots": 17,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_796691",
-      "title": "やっぱり君を孕ませたい",
-      "top10_snapshots": 17,
-      "observation_rate": 100
+      "observation_rate": 94
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 16,
+      "top10_snapshots": 17,
       "observation_rate": 94
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
       "top10_snapshots": 16,
-      "observation_rate": 94
+      "observation_rate": 89
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
       "top10_snapshots": 14,
-      "observation_rate": 82
+      "observation_rate": 78
     },
     {
       "id": "d_778317",
       "title": "生意気ギャルがおじさんのデカチンに逆らえなくなった日",
       "top10_snapshots": 12,
-      "observation_rate": 71
+      "observation_rate": 67
     },
     {
       "id": "d_742834",
       "title": "不愛想な隠れ巨乳ボーイッシュ彼女と退屈なデート2",
-      "top10_snapshots": 9,
-      "observation_rate": 53
+      "top10_snapshots": 10,
+      "observation_rate": 56
     },
     {
       "id": "d_538848",
       "title": "【超総集編】日向恭介1500ページ超え！！",
       "top10_snapshots": 8,
-      "observation_rate": 47
+      "observation_rate": 44
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
