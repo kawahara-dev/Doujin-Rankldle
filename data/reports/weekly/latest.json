@@ -1,28 +1,28 @@
 {
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
-  "generated_at": "2026-09-12T05:59:07+09:00",
+  "generated_at": "2026-09-12T13:37:24+09:00",
   "data_status": "PARTIAL",
   "observed_days": 6,
   "expected_days": 6,
   "snapshot_counts": {
-    "api": 22
+    "api": 23
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 144,
-    "top10_unique_products": 18,
-    "new_entries": 46,
-    "reentries": 4,
+    "unique_products": 148,
+    "top10_unique_products": 19,
+    "new_entries": 49,
+    "reentries": 5,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 58
   },
   "price_analysis": {
-    "average_price": 1413,
+    "average_price": 1399,
     "median_price": 990,
-    "top10_average_price": 1444,
+    "top10_average_price": 1420,
     "top10_median_price": 990,
     "price_buckets": [
       {
@@ -32,12 +32,12 @@
       },
       {
         "label": "500〜999円",
-        "count": 84,
-        "top10_count": 11
+        "count": 87,
+        "top10_count": 12
       },
       {
         "label": "1000〜1999円",
-        "count": 31,
+        "count": 32,
         "top10_count": 3
       },
       {
@@ -69,43 +69,43 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 116,
-      "top10_products": 14
-    },
-    {
-      "name": "巨乳",
-      "observed_products": 104,
+      "observed_products": 119,
       "top10_products": 15
     },
     {
+      "name": "巨乳",
+      "observed_products": 108,
+      "top10_products": 16
+    },
+    {
       "name": "おっぱい",
-      "observed_products": 86,
-      "top10_products": 9
+      "observed_products": 88,
+      "top10_products": 10
     },
     {
       "name": "フェラ",
-      "observed_products": 67,
-      "top10_products": 8
+      "observed_products": 69,
+      "top10_products": 9
     },
     {
       "name": "コミケ108（2026夏）",
       "observed_products": 55,
-      "top10_products": 9
+      "top10_products": 10
     },
     {
       "name": "制服",
-      "observed_products": 49,
-      "top10_products": 6
+      "observed_products": 51,
+      "top10_products": 7
     },
     {
       "name": "パイズリ",
-      "observed_products": 42,
+      "observed_products": 43,
       "top10_products": 4
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 34,
-      "top10_products": 5
+      "observed_products": 36,
+      "top10_products": 6
     },
     {
       "name": "処女",
@@ -114,33 +114,33 @@
     },
     {
       "name": "ぶっかけ",
-      "observed_products": 24,
+      "observed_products": 25,
       "top10_products": 5
     }
   ],
   "top_circles": [],
-  "new_release_products": 63,
-  "new_release_share": 44,
-  "new_release_top10_products": 11,
+  "new_release_products": 66,
+  "new_release_share": 45,
+  "new_release_top10_products": 12,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 116,
+      "product_count": 119,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 104,
-      "median_price": 926
+      "product_count": 108,
+      "median_price": 908
     },
     {
       "name": "おっぱい",
-      "product_count": 86,
+      "product_count": 88,
       "median_price": 948
     },
     {
       "name": "フェラ",
-      "product_count": 67,
+      "product_count": 69,
       "median_price": 924
     },
     {
@@ -150,18 +150,18 @@
     },
     {
       "name": "制服",
-      "product_count": 49,
+      "product_count": 51,
       "median_price": 924
     },
     {
       "name": "パイズリ",
-      "product_count": 42,
-      "median_price": 979
+      "product_count": 43,
+      "median_price": 990
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 34,
-      "median_price": 990
+      "product_count": 36,
+      "median_price": 979
     },
     {
       "name": "処女",
@@ -170,23 +170,23 @@
     },
     {
       "name": "ぶっかけ",
-      "product_count": 24,
-      "median_price": 781
+      "product_count": 25,
+      "median_price": 792
     }
   ],
   "metadata_coverage": {
-    "genre": 144,
-    "meaningful_genre": 144,
+    "genre": 148,
+    "meaningful_genre": 148,
     "circle": 0,
-    "release_date": 144,
-    "total_products": 144
+    "release_date": 148,
+    "total_products": 148
   },
   "ranking_behavior": {
-    "top10_entry_events": 8,
-    "large_rise_5_plus": 129,
-    "large_rise_10_plus": 32,
-    "new_entry_events": 46,
-    "reentry_events": 4
+    "top10_entry_events": 9,
+    "large_rise_5_plus": 140,
+    "large_rise_10_plus": 38,
+    "new_entry_events": 49,
+    "reentry_events": 5
   },
   "biggest_movers": [
     {
@@ -254,150 +254,150 @@
       "observed_at": "2026-09-10T13:44:55+09:00"
     },
     {
+      "id": "d_781049",
+      "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
+      "ranking_type": "api",
+      "rank_change": 26,
+      "current_rank": 10,
+      "observed_at": "2026-09-12T13:37:24+09:00"
+    },
+    {
       "id": "d_785490",
       "title": "妻がおっさんに寝取られた話",
       "ranking_type": "api",
       "rank_change": 25,
       "current_rank": 32,
       "observed_at": "2026-09-08T03:15:34+09:00"
-    },
-    {
-      "id": "d_817743",
-      "title": "本番解禁ダウナー少女",
-      "ranking_type": "api",
-      "rank_change": 24,
-      "current_rank": 18,
-      "observed_at": "2026-09-10T02:10:01+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+58でした。",
-    "APIランキング上位で18作品を観測しました。",
-    "NEWを46件、REENTRYを4件観測しました。"
+    "APIランキング上位で19作品を観測しました。",
+    "NEWを49件、REENTRYを5件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +58\n🆕 NEW 46件\n🔄 REENTRY 4件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを46件、REENTRYを4件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +58\n🆕 NEW 49件\n🔄 REENTRY 5件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを49件、REENTRYを5件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 22,
+      "top10_snapshots": 23,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_796691",
+      "title": "やっぱり君を孕ませたい",
+      "top10_snapshots": 23,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
       "top10_snapshots": 22,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_796691",
-      "title": "やっぱり君を孕ませたい",
-      "top10_snapshots": 22,
-      "observation_rate": 100
+      "observation_rate": 96
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 21,
-      "observation_rate": 95
+      "top10_snapshots": 22,
+      "observation_rate": 96
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
       "top10_snapshots": 17,
-      "observation_rate": 77
+      "observation_rate": 74
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
       "top10_snapshots": 16,
-      "observation_rate": 73
+      "observation_rate": 70
     },
     {
       "id": "d_742834",
       "title": "不愛想な隠れ巨乳ボーイッシュ彼女と退屈なデート2",
-      "top10_snapshots": 14,
-      "observation_rate": 64
+      "top10_snapshots": 15,
+      "observation_rate": 65
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
       "top10_snapshots": 14,
-      "observation_rate": 64
+      "observation_rate": 61
     },
     {
       "id": "d_778317",
       "title": "生意気ギャルがおじさんのデカチンに逆らえなくなった日",
       "top10_snapshots": 12,
-      "observation_rate": 55
+      "observation_rate": 52
     },
     {
       "id": "d_756329",
       "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
-      "top10_snapshots": 10,
-      "observation_rate": 45
+      "top10_snapshots": 11,
+      "observation_rate": 48
     }
   ],
   "top10_stays": [
     {
       "id": "d_727885",
       "title": "二次元オタクの俺が転校してきた巨乳アイドルに堕とされるまで",
-      "top10_snapshots": 22,
+      "top10_snapshots": 23,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_796691",
+      "title": "やっぱり君を孕ませたい",
+      "top10_snapshots": 23,
       "observation_rate": 100
     },
     {
       "id": "d_761881",
       "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
       "top10_snapshots": 22,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_796691",
-      "title": "やっぱり君を孕ませたい",
-      "top10_snapshots": 22,
-      "observation_rate": 100
+      "observation_rate": 96
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 21,
-      "observation_rate": 95
+      "top10_snapshots": 22,
+      "observation_rate": 96
     },
     {
       "id": "d_770285",
       "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
       "top10_snapshots": 17,
-      "observation_rate": 77
+      "observation_rate": 74
     },
     {
       "id": "d_802566",
       "title": "催淫スマホで俺だけハーレム",
       "top10_snapshots": 16,
-      "observation_rate": 73
+      "observation_rate": 70
     },
     {
       "id": "d_742834",
       "title": "不愛想な隠れ巨乳ボーイッシュ彼女と退屈なデート2",
-      "top10_snapshots": 14,
-      "observation_rate": 64
+      "top10_snapshots": 15,
+      "observation_rate": 65
     },
     {
       "id": "d_777542",
       "title": "催〇学園風俗ひゅぷらば5母娘丼編",
       "top10_snapshots": 14,
-      "observation_rate": 64
+      "observation_rate": 61
     },
     {
       "id": "d_778317",
       "title": "生意気ギャルがおじさんのデカチンに逆らえなくなった日",
       "top10_snapshots": 12,
-      "observation_rate": 55
+      "observation_rate": 52
     },
     {
       "id": "d_756329",
       "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
-      "top10_snapshots": 10,
-      "observation_rate": 45
+      "top10_snapshots": 11,
+      "observation_rate": 48
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
