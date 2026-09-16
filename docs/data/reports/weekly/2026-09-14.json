@@ -1,23 +1,23 @@
 {
   "week_start": "2026-09-14",
   "week_end": "2026-09-20",
-  "generated_at": "2026-09-16T06:23:17+09:00",
+  "generated_at": "2026-09-16T13:51:20+09:00",
   "data_status": "PARTIAL",
   "observed_days": 3,
   "expected_days": 3,
   "snapshot_counts": {
-    "api": 9
+    "api": 10
   },
   "ranking_source": "api",
   "market_overview": {
     "unique_products": 117,
     "top10_unique_products": 12,
     "new_entries": 24,
-    "reentries": 1,
+    "reentries": 2,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
-    "max_rank_rise_api": 39
+    "max_rank_rise_api": 54
   },
   "price_analysis": {
     "average_price": 1183,
@@ -183,12 +183,20 @@
   },
   "ranking_behavior": {
     "top10_entry_events": 2,
-    "large_rise_5_plus": 51,
-    "large_rise_10_plus": 16,
+    "large_rise_5_plus": 58,
+    "large_rise_10_plus": 18,
     "new_entry_events": 24,
-    "reentry_events": 1
+    "reentry_events": 2
   },
   "biggest_movers": [
+    {
+      "id": "d_781692",
+      "title": "異世界催●おじさん  〜催●ギフトでエルフ達をチンポハメ〜",
+      "ranking_type": "api",
+      "rank_change": 54,
+      "current_rank": 43,
+      "observed_at": "2026-09-16T13:51:20+09:00"
+    },
     {
       "id": "d_806927",
       "title": "盗まれた人妻",
@@ -260,144 +268,136 @@
       "rank_change": 15,
       "current_rank": 69,
       "observed_at": "2026-09-14T01:58:08+09:00"
-    },
-    {
-      "id": "d_478267",
-      "title": "アニメ版「ゴムをつけてといいましたよね...＃2」",
-      "ranking_type": "api",
-      "rank_change": 14,
-      "current_rank": 60,
-      "observed_at": "2026-09-14T01:58:08+09:00"
     }
   ],
   "creator_insights": [
-    "今週の最大上昇はAPIランキングで+39でした。",
+    "今週の最大上昇はAPIランキングで+54でした。",
     "APIランキング上位で12作品を観測しました。",
-    "NEWを24件、REENTRYを1件観測しました。"
+    "NEWを24件、REENTRYを2件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +39\n🆕 NEW 24件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥891\n\nNEWを24件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +54\n🆕 NEW 24件\n🔄 REENTRY 2件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥891\n\nNEWを24件、REENTRYを2件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_756329",
       "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_781049",
       "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_794588",
       "title": "鍵キャッチチャレンジ",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_797463",
       "title": "弟の身代わりになった姉3",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_797607",
       "title": "剣道部主将で幼馴染の美人で強い僕の彼女が、チャラ男にあっさり堕とされるわけがない",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_813898",
       "title": "囮捜査官キョウカ 学園潜入編",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_817743",
       "title": "本番解禁ダウナー少女",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
+    },
+    {
+      "id": "d_806583",
+      "title": "タワーレジデンス接遇課対応中3",
+      "top10_snapshots": 8,
+      "observation_rate": 80
     },
     {
       "id": "d_793160",
       "title": "「世界の終わりックス」をしよう",
       "top10_snapshots": 7,
-      "observation_rate": 78
-    },
-    {
-      "id": "d_806583",
-      "title": "タワーレジデンス接遇課対応中3",
-      "top10_snapshots": 7,
-      "observation_rate": 78
+      "observation_rate": 70
     }
   ],
   "top10_stays": [
     {
       "id": "d_756329",
       "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_781049",
       "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_791850",
       "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_794588",
       "title": "鍵キャッチチャレンジ",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_797463",
       "title": "弟の身代わりになった姉3",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_797607",
       "title": "剣道部主将で幼馴染の美人で強い僕の彼女が、チャラ男にあっさり堕とされるわけがない",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_813898",
       "title": "囮捜査官キョウカ 学園潜入編",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_817743",
       "title": "本番解禁ダウナー少女",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
+    },
+    {
+      "id": "d_806583",
+      "title": "タワーレジデンス接遇課対応中3",
+      "top10_snapshots": 8,
+      "observation_rate": 80
     },
     {
       "id": "d_793160",
       "title": "「世界の終わりックス」をしよう",
       "top10_snapshots": 7,
-      "observation_rate": 78
-    },
-    {
-      "id": "d_806583",
-      "title": "タワーレジデンス接遇課対応中3",
-      "top10_snapshots": 7,
-      "observation_rate": 78
+      "observation_rate": 70
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
