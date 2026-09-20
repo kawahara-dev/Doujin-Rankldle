@@ -1,54 +1,54 @@
 {
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "generated_at": "2026-09-20T18:49:29+09:00",
-  "data_status": "COMPLETE",
-  "observed_days": 7,
-  "expected_days": 7,
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "generated_at": "2026-09-21T01:49:08+09:00",
+  "data_status": "PARTIAL",
+  "observed_days": 1,
+  "expected_days": 1,
   "snapshot_counts": {
-    "api": 27
+    "api": 1
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 152,
-    "top10_unique_products": 19,
-    "new_entries": 59,
-    "reentries": 7,
+    "unique_products": 100,
+    "top10_unique_products": 10,
+    "new_entries": 2,
+    "reentries": 0,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
-    "max_rank_rise_api": 54
+    "max_rank_rise_api": 37
   },
   "price_analysis": {
-    "average_price": 1164,
+    "average_price": 1236,
     "median_price": 880,
-    "top10_average_price": 1367,
-    "top10_median_price": 891,
+    "top10_average_price": 1393,
+    "top10_median_price": 908,
     "price_buckets": [
       {
         "label": "〜499円",
-        "count": 9,
+        "count": 4,
         "top10_count": 0
       },
       {
         "label": "500〜999円",
-        "count": 100,
-        "top10_count": 14
+        "count": 67,
+        "top10_count": 8
       },
       {
         "label": "1000〜1999円",
-        "count": 24,
-        "top10_count": 3
+        "count": 14,
+        "top10_count": 1
       },
       {
         "label": "2000〜2999円",
-        "count": 13,
+        "count": 9,
         "top10_count": 0
       },
       {
         "label": "3000円〜",
         "count": 6,
-        "top10_count": 2
+        "top10_count": 1
       }
     ]
   },
@@ -69,335 +69,335 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 125,
-      "top10_products": 15
-    },
-    {
-      "name": "巨乳",
-      "observed_products": 119,
-      "top10_products": 15
-    },
-    {
-      "name": "おっぱい",
-      "observed_products": 92,
-      "top10_products": 13
-    },
-    {
-      "name": "フェラ",
-      "observed_products": 85,
-      "top10_products": 12
-    },
-    {
-      "name": "パイズリ",
-      "observed_products": 51,
-      "top10_products": 6
-    },
-    {
-      "name": "制服",
-      "observed_products": 51,
-      "top10_products": 4
-    },
-    {
-      "name": "コミケ108（2026夏）",
-      "observed_products": 48,
+      "observed_products": 82,
       "top10_products": 8
     },
     {
-      "name": "寝取り・寝取られ・NTR",
-      "observed_products": 40,
-      "top10_products": 6
+      "name": "巨乳",
+      "observed_products": 81,
+      "top10_products": 7
+    },
+    {
+      "name": "おっぱい",
+      "observed_products": 63,
+      "top10_products": 9
+    },
+    {
+      "name": "フェラ",
+      "observed_products": 61,
+      "top10_products": 9
+    },
+    {
+      "name": "パイズリ",
+      "observed_products": 33,
+      "top10_products": 4
+    },
+    {
+      "name": "制服",
+      "observed_products": 33,
+      "top10_products": 3
+    },
+    {
+      "name": "コミケ108（2026夏）",
+      "observed_products": 27,
+      "top10_products": 5
+    },
+    {
+      "name": "野外・露出",
+      "observed_products": 23,
+      "top10_products": 1
     },
     {
       "name": "ぶっかけ",
-      "observed_products": 30,
-      "top10_products": 6
+      "observed_products": 21,
+      "top10_products": 2
     },
     {
-      "name": "人妻・主婦",
-      "observed_products": 28,
-      "top10_products": 5
+      "name": "寝取り・寝取られ・NTR",
+      "observed_products": 20,
+      "top10_products": 3
     }
   ],
   "top_circles": [],
-  "new_release_products": 69,
-  "new_release_share": 45,
-  "new_release_top10_products": 17,
+  "new_release_products": 33,
+  "new_release_share": 33,
+  "new_release_top10_products": 5,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 125,
+      "product_count": 82,
       "median_price": 880
     },
     {
       "name": "巨乳",
-      "product_count": 119,
+      "product_count": 81,
       "median_price": 880
     },
     {
       "name": "おっぱい",
-      "product_count": 92,
-      "median_price": 820
+      "product_count": 63,
+      "median_price": 792
     },
     {
       "name": "フェラ",
-      "product_count": 85,
+      "product_count": 61,
       "median_price": 880
     },
     {
       "name": "パイズリ",
-      "product_count": 51,
+      "product_count": 33,
       "median_price": 880
     },
     {
       "name": "制服",
-      "product_count": 51,
-      "median_price": 880
+      "product_count": 33,
+      "median_price": 847
     },
     {
       "name": "コミケ108（2026夏）",
-      "product_count": 48,
-      "median_price": 891
+      "product_count": 27,
+      "median_price": 792
     },
     {
-      "name": "寝取り・寝取られ・NTR",
-      "product_count": 40,
-      "median_price": 926
+      "name": "野外・露出",
+      "product_count": 23,
+      "median_price": 990
     },
     {
       "name": "ぶっかけ",
-      "product_count": 30,
-      "median_price": 781
+      "product_count": 21,
+      "median_price": 792
     },
     {
-      "name": "人妻・主婦",
-      "product_count": 28,
-      "median_price": 930
+      "name": "寝取り・寝取られ・NTR",
+      "product_count": 20,
+      "median_price": 924
     }
   ],
   "metadata_coverage": {
-    "genre": 152,
-    "meaningful_genre": 152,
+    "genre": 100,
+    "meaningful_genre": 100,
     "circle": 0,
-    "release_date": 152,
-    "total_products": 152
+    "release_date": 100,
+    "total_products": 100
   },
   "ranking_behavior": {
-    "top10_entry_events": 10,
-    "large_rise_5_plus": 162,
-    "large_rise_10_plus": 51,
-    "new_entry_events": 59,
-    "reentry_events": 7
+    "top10_entry_events": 0,
+    "large_rise_5_plus": 21,
+    "large_rise_10_plus": 5,
+    "new_entry_events": 2,
+    "reentry_events": 0
   },
   "biggest_movers": [
     {
-      "id": "d_781692",
-      "title": "異世界催●おじさん  〜催●ギフトでエルフ達をチンポハメ〜",
+      "id": "d_801207",
+      "title": "転校先のド田舎でクラスの彼女候補たちが全員発情期すぎる2",
       "ranking_type": "api",
-      "rank_change": 54,
-      "current_rank": 43,
-      "observed_at": "2026-09-16T13:51:20+09:00"
+      "rank_change": 37,
+      "current_rank": 45,
+      "observed_at": "2026-09-21T01:49:08+09:00"
     },
     {
-      "id": "d_806927",
-      "title": "盗まれた人妻",
+      "id": "d_434182",
+      "title": "幼馴染で恋人の彼女の総集編",
       "ranking_type": "api",
-      "rank_change": 39,
-      "current_rank": 48,
-      "observed_at": "2026-09-16T02:40:44+09:00"
+      "rank_change": 16,
+      "current_rank": 64,
+      "observed_at": "2026-09-21T01:49:08+09:00"
+    },
+    {
+      "id": "d_663773",
+      "title": "うちのバイトのクールでHカップのでか乳ちゃんは弱者男性とでもヤラせてくれるって！",
+      "ranking_type": "api",
+      "rank_change": 12,
+      "current_rank": 78,
+      "observed_at": "2026-09-21T01:49:08+09:00"
+    },
+    {
+      "id": "d_797497",
+      "title": "山羊野メェ吉全作品集2011-2026",
+      "ranking_type": "api",
+      "rank_change": 10,
+      "current_rank": 27,
+      "observed_at": "2026-09-21T01:49:08+09:00"
+    },
+    {
+      "id": "d_810380",
+      "title": "陰キャ女子犯したらセフレになった件3",
+      "ranking_type": "api",
+      "rank_change": 10,
+      "current_rank": 43,
+      "observed_at": "2026-09-21T01:49:08+09:00"
+    },
+    {
+      "id": "d_743314",
+      "title": "拾った猫がギャルで極道の娘だった話",
+      "ranking_type": "api",
+      "rank_change": 9,
+      "current_rank": 40,
+      "observed_at": "2026-09-21T01:49:08+09:00"
+    },
+    {
+      "id": "d_804200",
+      "title": "姉友ギャルハーレム",
+      "ranking_type": "api",
+      "rank_change": 9,
+      "current_rank": 91,
+      "observed_at": "2026-09-21T01:49:08+09:00"
     },
     {
       "id": "d_798010",
       "title": "おにーさん、私達とお茶しませんかぁ？14【電子特装版】",
       "ranking_type": "api",
-      "rank_change": 30,
-      "current_rank": 65,
-      "observed_at": "2026-09-20T01:31:47+09:00"
+      "rank_change": 8,
+      "current_rank": 37,
+      "observed_at": "2026-09-21T01:49:08+09:00"
+    },
+    {
+      "id": "d_810762",
+      "title": "非モテの僕にこんな誘い断れるはずがない 3",
+      "ranking_type": "api",
+      "rank_change": 8,
+      "current_rank": 49,
+      "observed_at": "2026-09-21T01:49:08+09:00"
+    },
+    {
+      "id": "d_791345",
+      "title": "爆乳優等生に必要なちんぽのお勉強後編",
+      "ranking_type": "api",
+      "rank_change": 8,
+      "current_rank": 59,
+      "observed_at": "2026-09-21T01:49:08+09:00"
+    }
+  ],
+  "creator_insights": [
+    "今週の最大上昇はAPIランキングで+37でした。",
+    "APIランキング上位で10作品を観測しました。",
+    "NEWを2件、REENTRYを0件観測しました。"
+  ],
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +37\n🆕 NEW 2件\n🔄 REENTRY 0件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥880\n\nNEWを2件、REENTRYを0件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "stable_top10": [
+    {
+      "id": "d_213575",
+      "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_756329",
+      "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
+      "top10_snapshots": 1,
+      "observation_rate": 100
     },
     {
       "id": "d_757110",
       "title": "風習セックスにハマった女の子",
-      "ranking_type": "api",
-      "rank_change": 29,
-      "current_rank": 29,
-      "observed_at": "2026-09-16T02:40:44+09:00"
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_766017",
+      "title": "退廃妻2 退廃系人妻を家賃代わりにコキ使える話",
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_781049",
+      "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_781692",
+      "title": "異世界催●おじさん  〜催●ギフトでエルフ達をチンポハメ〜",
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_793160",
+      "title": "「世界の終わりックス」をしよう",
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_797607",
+      "title": "剣道部主将で幼馴染の美人で強い僕の彼女が、チャラ男にあっさり堕とされるわけがない",
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_806583",
+      "title": "タワーレジデンス接遇課対応中3",
+      "top10_snapshots": 1,
+      "observation_rate": 100
     },
     {
       "id": "d_810515",
       "title": "実はむっつり弓道部の先輩が俺にだけHをシかけてくる2立目",
-      "ranking_type": "api",
-      "rank_change": 25,
-      "current_rank": 29,
-      "observed_at": "2026-09-15T03:39:11+09:00"
-    },
-    {
-      "id": "d_810138",
-      "title": "CIRCLEMATE サークルメイト",
-      "ranking_type": "api",
-      "rank_change": 25,
-      "current_rank": 58,
-      "observed_at": "2026-09-14T01:58:08+09:00"
-    },
-    {
-      "id": "d_715865",
-      "title": "へいろー＆てーる〜でかぱい悪魔ちゃんはふたなり天使のオナペット〜",
-      "ranking_type": "api",
-      "rank_change": 25,
-      "current_rank": 67,
-      "observed_at": "2026-09-18T02:38:13+09:00"
-    },
-    {
-      "id": "d_580141",
-      "title": "【ゲーム】あの日見た種付けプレスを僕はまだ忘れられない",
-      "ranking_type": "api",
-      "rank_change": 20,
-      "current_rank": 43,
-      "observed_at": "2026-09-18T02:38:13+09:00"
-    },
-    {
-      "id": "d_804033",
-      "title": "Hとメイドと無人島",
-      "ranking_type": "api",
-      "rank_change": 20,
-      "current_rank": 52,
-      "observed_at": "2026-09-20T01:31:47+09:00"
-    },
-    {
-      "id": "d_236682",
-      "title": "性教育シリーズ総集編1",
-      "ranking_type": "api",
-      "rank_change": 20,
-      "current_rank": 77,
-      "observed_at": "2026-09-19T02:05:46+09:00"
-    }
-  ],
-  "creator_insights": [
-    "今週の最大上昇はAPIランキングで+54でした。",
-    "APIランキング上位で19作品を観測しました。",
-    "NEWを59件、REENTRYを7件観測しました。"
-  ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n1週間のランキングまとめたよ〜！\n\n🔥 最大上昇 +54\n🆕 NEW 59件\n🔄 REENTRY 7件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥880\n\nNEWを59件、REENTRYを7件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
-  "stable_top10": [
-    {
-      "id": "d_756329",
-      "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
-      "top10_snapshots": 27,
+      "top10_snapshots": 1,
       "observation_rate": 100
-    },
-    {
-      "id": "d_781049",
-      "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 27,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_797607",
-      "title": "剣道部主将で幼馴染の美人で強い僕の彼女が、チャラ男にあっさり堕とされるわけがない",
-      "top10_snapshots": 27,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_806583",
-      "title": "タワーレジデンス接遇課対応中3",
-      "top10_snapshots": 25,
-      "observation_rate": 93
-    },
-    {
-      "id": "d_793160",
-      "title": "「世界の終わりックス」をしよう",
-      "top10_snapshots": 22,
-      "observation_rate": 81
-    },
-    {
-      "id": "d_794588",
-      "title": "鍵キャッチチャレンジ",
-      "top10_snapshots": 22,
-      "observation_rate": 81
-    },
-    {
-      "id": "d_791850",
-      "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 21,
-      "observation_rate": 78
-    },
-    {
-      "id": "d_793627",
-      "title": "私は絶対不倫なんかしない。〜勝ち気な人妻が、他人棒でドM堕ち〜",
-      "top10_snapshots": 17,
-      "observation_rate": 63
-    },
-    {
-      "id": "d_817743",
-      "title": "本番解禁ダウナー少女",
-      "top10_snapshots": 17,
-      "observation_rate": 63
-    },
-    {
-      "id": "d_797463",
-      "title": "弟の身代わりになった姉3",
-      "top10_snapshots": 14,
-      "observation_rate": 52
     }
   ],
   "top10_stays": [
     {
+      "id": "d_213575",
+      "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
       "id": "d_756329",
       "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
-      "top10_snapshots": 27,
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_757110",
+      "title": "風習セックスにハマった女の子",
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_766017",
+      "title": "退廃妻2 退廃系人妻を家賃代わりにコキ使える話",
+      "top10_snapshots": 1,
       "observation_rate": 100
     },
     {
       "id": "d_781049",
       "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 27,
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_781692",
+      "title": "異世界催●おじさん  〜催●ギフトでエルフ達をチンポハメ〜",
+      "top10_snapshots": 1,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_793160",
+      "title": "「世界の終わりックス」をしよう",
+      "top10_snapshots": 1,
       "observation_rate": 100
     },
     {
       "id": "d_797607",
       "title": "剣道部主将で幼馴染の美人で強い僕の彼女が、チャラ男にあっさり堕とされるわけがない",
-      "top10_snapshots": 27,
+      "top10_snapshots": 1,
       "observation_rate": 100
     },
     {
       "id": "d_806583",
       "title": "タワーレジデンス接遇課対応中3",
-      "top10_snapshots": 25,
-      "observation_rate": 93
+      "top10_snapshots": 1,
+      "observation_rate": 100
     },
     {
-      "id": "d_793160",
-      "title": "「世界の終わりックス」をしよう",
-      "top10_snapshots": 22,
-      "observation_rate": 81
-    },
-    {
-      "id": "d_794588",
-      "title": "鍵キャッチチャレンジ",
-      "top10_snapshots": 22,
-      "observation_rate": 81
-    },
-    {
-      "id": "d_791850",
-      "title": "田舎にはこれくらいしか娯楽がない  総集編  2",
-      "top10_snapshots": 21,
-      "observation_rate": 78
-    },
-    {
-      "id": "d_793627",
-      "title": "私は絶対不倫なんかしない。〜勝ち気な人妻が、他人棒でドM堕ち〜",
-      "top10_snapshots": 17,
-      "observation_rate": 63
-    },
-    {
-      "id": "d_817743",
-      "title": "本番解禁ダウナー少女",
-      "top10_snapshots": 17,
-      "observation_rate": 63
-    },
-    {
-      "id": "d_797463",
-      "title": "弟の身代わりになった姉3",
-      "top10_snapshots": 14,
-      "observation_rate": 52
+      "id": "d_810515",
+      "title": "実はむっつり弓道部の先輩が俺にだけHをシかけてくる2立目",
+      "top10_snapshots": 1,
+      "observation_rate": 100
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
