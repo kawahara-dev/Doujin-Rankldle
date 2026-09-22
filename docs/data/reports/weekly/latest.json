@@ -1,29 +1,29 @@
 {
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-22T13:59:07+09:00",
+  "generated_at": "2026-09-22T18:58:57+09:00",
   "data_status": "PARTIAL",
   "observed_days": 2,
   "expected_days": 2,
   "snapshot_counts": {
-    "api": 6
+    "api": 7
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 113,
-    "top10_unique_products": 12,
-    "new_entries": 15,
-    "reentries": 1,
+    "unique_products": 114,
+    "top10_unique_products": 13,
+    "new_entries": 16,
+    "reentries": 2,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 45
   },
   "price_analysis": {
-    "average_price": 1218,
-    "median_price": 880,
-    "top10_average_price": 1359,
-    "top10_median_price": 957,
+    "average_price": 1223,
+    "median_price": 886,
+    "top10_average_price": 1348,
+    "top10_median_price": 990,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -38,11 +38,11 @@
       {
         "label": "1000〜1999円",
         "count": 20,
-        "top10_count": 3
+        "top10_count": 4
       },
       {
         "label": "2000〜2999円",
-        "count": 9,
+        "count": 10,
         "top10_count": 0
       },
       {
@@ -69,33 +69,33 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 93,
-      "top10_products": 10
+      "observed_products": 94,
+      "top10_products": 11
     },
     {
       "name": "巨乳",
-      "observed_products": 91,
-      "top10_products": 7
+      "observed_products": 92,
+      "top10_products": 8
     },
     {
       "name": "おっぱい",
-      "observed_products": 71,
-      "top10_products": 10
+      "observed_products": 72,
+      "top10_products": 11
     },
     {
       "name": "フェラ",
-      "observed_products": 68,
-      "top10_products": 10
+      "observed_products": 69,
+      "top10_products": 11
     },
     {
       "name": "制服",
-      "observed_products": 38,
+      "observed_products": 39,
       "top10_products": 4
     },
     {
       "name": "パイズリ",
       "observed_products": 37,
-      "top10_products": 5
+      "top10_products": 6
     },
     {
       "name": "コミケ108（2026夏）",
@@ -110,7 +110,7 @@
     {
       "name": "ぶっかけ",
       "observed_products": 25,
-      "top10_products": 3
+      "top10_products": 4
     },
     {
       "name": "寝取り・寝取られ・NTR",
@@ -119,33 +119,33 @@
     }
   ],
   "top_circles": [],
-  "new_release_products": 44,
+  "new_release_products": 45,
   "new_release_share": 39,
-  "new_release_top10_products": 7,
+  "new_release_top10_products": 8,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 93,
+      "product_count": 94,
       "median_price": 880
     },
     {
       "name": "巨乳",
-      "product_count": 91,
+      "product_count": 92,
       "median_price": 880
     },
     {
       "name": "おっぱい",
-      "product_count": 71,
+      "product_count": 72,
       "median_price": 880
     },
     {
       "name": "フェラ",
-      "product_count": 68,
+      "product_count": 69,
       "median_price": 880
     },
     {
       "name": "制服",
-      "product_count": 38,
+      "product_count": 39,
       "median_price": 880
     },
     {
@@ -175,18 +175,18 @@
     }
   ],
   "metadata_coverage": {
-    "genre": 113,
-    "meaningful_genre": 113,
+    "genre": 114,
+    "meaningful_genre": 114,
     "circle": 0,
-    "release_date": 113,
-    "total_products": 113
+    "release_date": 114,
+    "total_products": 114
   },
   "ranking_behavior": {
-    "top10_entry_events": 2,
-    "large_rise_5_plus": 66,
+    "top10_entry_events": 3,
+    "large_rise_5_plus": 70,
     "large_rise_10_plus": 16,
-    "new_entry_events": 15,
-    "reentry_events": 1
+    "new_entry_events": 16,
+    "reentry_events": 2
   },
   "biggest_movers": [
     {
@@ -272,132 +272,132 @@
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+45でした。",
-    "APIランキング上位で12作品を観測しました。",
-    "NEWを15件、REENTRYを1件観測しました。"
+    "APIランキング上位で13作品を観測しました。",
+    "NEWを16件、REENTRYを2件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +45\n🆕 NEW 15件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥880\n\nNEWを15件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +45\n🆕 NEW 16件\n🔄 REENTRY 2件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥886\n\nNEWを16件、REENTRYを2件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_213575",
       "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_757110",
+      "title": "風習セックスにハマった女の子",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_766017",
+      "title": "退廃妻2 退廃系人妻を家賃代わりにコキ使える話",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_781049",
+      "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_781692",
+      "title": "異世界催●おじさん  〜催●ギフトでエルフ達をチンポハメ〜",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_793160",
+      "title": "「世界の終わりックス」をしよう",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_797607",
+      "title": "剣道部主将で幼馴染の美人で強い僕の彼女が、チャラ男にあっさり堕とされるわけがない",
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_756329",
       "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
       "top10_snapshots": 6,
-      "observation_rate": 100
+      "observation_rate": 86
     },
     {
-      "id": "d_757110",
-      "title": "風習セックスにハマった女の子",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_766017",
-      "title": "退廃妻2 退廃系人妻を家賃代わりにコキ使える話",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_781049",
-      "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_781692",
-      "title": "異世界催●おじさん  〜催●ギフトでエルフ達をチンポハメ〜",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_793160",
-      "title": "「世界の終わりックス」をしよう",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_797607",
-      "title": "剣道部主将で幼馴染の美人で強い僕の彼女が、チャラ男にあっさり堕とされるわけがない",
-      "top10_snapshots": 6,
-      "observation_rate": 100
+      "id": "d_787347",
+      "title": "夏妻3",
+      "top10_snapshots": 4,
+      "observation_rate": 57
     },
     {
       "id": "d_810515",
       "title": "実はむっつり弓道部の先輩が俺にだけHをシかけてくる2立目",
       "top10_snapshots": 4,
-      "observation_rate": 67
-    },
-    {
-      "id": "d_787347",
-      "title": "夏妻3",
-      "top10_snapshots": 3,
-      "observation_rate": 50
+      "observation_rate": 57
     }
   ],
   "top10_stays": [
     {
       "id": "d_213575",
       "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_757110",
+      "title": "風習セックスにハマった女の子",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_766017",
+      "title": "退廃妻2 退廃系人妻を家賃代わりにコキ使える話",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_781049",
+      "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_781692",
+      "title": "異世界催●おじさん  〜催●ギフトでエルフ達をチンポハメ〜",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_793160",
+      "title": "「世界の終わりックス」をしよう",
+      "top10_snapshots": 7,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_797607",
+      "title": "剣道部主将で幼馴染の美人で強い僕の彼女が、チャラ男にあっさり堕とされるわけがない",
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_756329",
       "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
       "top10_snapshots": 6,
-      "observation_rate": 100
+      "observation_rate": 86
     },
     {
-      "id": "d_757110",
-      "title": "風習セックスにハマった女の子",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_766017",
-      "title": "退廃妻2 退廃系人妻を家賃代わりにコキ使える話",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_781049",
-      "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_781692",
-      "title": "異世界催●おじさん  〜催●ギフトでエルフ達をチンポハメ〜",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_793160",
-      "title": "「世界の終わりックス」をしよう",
-      "top10_snapshots": 6,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_797607",
-      "title": "剣道部主将で幼馴染の美人で強い僕の彼女が、チャラ男にあっさり堕とされるわけがない",
-      "top10_snapshots": 6,
-      "observation_rate": 100
+      "id": "d_787347",
+      "title": "夏妻3",
+      "top10_snapshots": 4,
+      "observation_rate": 57
     },
     {
       "id": "d_810515",
       "title": "実はむっつり弓道部の先輩が俺にだけHをシかけてくる2立目",
       "top10_snapshots": 4,
-      "observation_rate": 67
-    },
-    {
-      "id": "d_787347",
-      "title": "夏妻3",
-      "top10_snapshots": 3,
-      "observation_rate": 50
+      "observation_rate": 57
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
