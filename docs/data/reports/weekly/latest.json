@@ -1,29 +1,29 @@
 {
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-09-30T14:34:38+09:00",
+  "generated_at": "2026-10-01T03:27:19+09:00",
   "data_status": "PARTIAL",
-  "observed_days": 3,
-  "expected_days": 3,
+  "observed_days": 4,
+  "expected_days": 4,
   "snapshot_counts": {
-    "api": 7
+    "api": 8
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 121,
-    "top10_unique_products": 13,
-    "new_entries": 25,
-    "reentries": 3,
+    "unique_products": 126,
+    "top10_unique_products": 14,
+    "new_entries": 28,
+    "reentries": 5,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 62
   },
   "price_analysis": {
-    "average_price": 1295,
+    "average_price": 1309,
     "median_price": 990,
-    "top10_average_price": 1426,
-    "top10_median_price": 1100,
+    "top10_average_price": 1438,
+    "top10_median_price": 1122,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -32,17 +32,17 @@
       },
       {
         "label": "500〜999円",
-        "count": 59,
-        "top10_count": 4
+        "count": 60,
+        "top10_count": 3
       },
       {
         "label": "1000〜1999円",
-        "count": 32,
-        "top10_count": 8
+        "count": 35,
+        "top10_count": 10
       },
       {
         "label": "2000〜2999円",
-        "count": 13,
+        "count": 14,
         "top10_count": 0
       },
       {
@@ -69,124 +69,124 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 95,
-      "top10_products": 9
+      "observed_products": 100,
+      "top10_products": 10
     },
     {
       "name": "巨乳",
-      "observed_products": 95,
-      "top10_products": 8
+      "observed_products": 99,
+      "top10_products": 9
     },
     {
       "name": "おっぱい",
-      "observed_products": 70,
-      "top10_products": 11
+      "observed_products": 73,
+      "top10_products": 12
     },
     {
       "name": "フェラ",
-      "observed_products": 68,
-      "top10_products": 7
+      "observed_products": 69,
+      "top10_products": 8
     },
     {
       "name": "制服",
-      "observed_products": 43,
-      "top10_products": 5
+      "observed_products": 44,
+      "top10_products": 6
     },
     {
       "name": "パイズリ",
-      "observed_products": 35,
-      "top10_products": 5
+      "observed_products": 36,
+      "top10_products": 6
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 30,
-      "top10_products": 5
+      "observed_products": 31,
+      "top10_products": 6
     },
     {
       "name": "学園もの",
-      "observed_products": 27,
+      "observed_products": 28,
       "top10_products": 3
     },
     {
       "name": "人妻・主婦",
-      "observed_products": 26,
+      "observed_products": 27,
       "top10_products": 5
     },
     {
       "name": "処女",
-      "observed_products": 25,
-      "top10_products": 2
+      "observed_products": 26,
+      "top10_products": 3
     }
   ],
   "top_circles": [],
-  "new_release_products": 46,
+  "new_release_products": 48,
   "new_release_share": 38,
-  "new_release_top10_products": 11,
+  "new_release_top10_products": 12,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 95,
+      "product_count": 100,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 95,
+      "product_count": 99,
       "median_price": 990
     },
     {
       "name": "おっぱい",
-      "product_count": 70,
+      "product_count": 73,
       "median_price": 990
     },
     {
       "name": "フェラ",
-      "product_count": 68,
+      "product_count": 69,
       "median_price": 990
     },
     {
       "name": "制服",
-      "product_count": 43,
+      "product_count": 44,
       "median_price": 990
     },
     {
       "name": "パイズリ",
-      "product_count": 35,
+      "product_count": 36,
       "median_price": 1100
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 30,
+      "product_count": 31,
       "median_price": 990
     },
     {
       "name": "学園もの",
-      "product_count": 27,
+      "product_count": 28,
       "median_price": 990
     },
     {
       "name": "人妻・主婦",
-      "product_count": 26,
+      "product_count": 27,
       "median_price": 990
     },
     {
       "name": "処女",
-      "product_count": 25,
+      "product_count": 26,
       "median_price": 990
     }
   ],
   "metadata_coverage": {
-    "genre": 121,
-    "meaningful_genre": 121,
+    "genre": 126,
+    "meaningful_genre": 126,
     "circle": 0,
-    "release_date": 121,
-    "total_products": 121
+    "release_date": 126,
+    "total_products": 126
   },
   "ranking_behavior": {
-    "top10_entry_events": 5,
-    "large_rise_5_plus": 83,
-    "large_rise_10_plus": 26,
-    "new_entry_events": 25,
-    "reentry_events": 3
+    "top10_entry_events": 6,
+    "large_rise_5_plus": 105,
+    "large_rise_10_plus": 36,
+    "new_entry_events": 28,
+    "reentry_events": 5
   },
   "biggest_movers": [
     {
@@ -204,6 +204,14 @@
       "rank_change": 44,
       "current_rank": 33,
       "observed_at": "2026-09-28T02:45:18+09:00"
+    },
+    {
+      "id": "d_813229",
+      "title": "友達のママが僕のデカチンでイキまくったハロウィン",
+      "ranking_type": "api",
+      "rank_change": 42,
+      "current_rank": 20,
+      "observed_at": "2026-10-01T03:27:19+09:00"
     },
     {
       "id": "d_423264",
@@ -246,158 +254,150 @@
       "observed_at": "2026-09-30T03:39:12+09:00"
     },
     {
+      "id": "d_813212",
+      "title": "僕の催●ハーレム4 〜女教師編 厳しい先生も優しい人妻先生もまとめて僕の生オナホ〜",
+      "ranking_type": "api",
+      "rank_change": 17,
+      "current_rank": 65,
+      "observed_at": "2026-10-01T03:27:19+09:00"
+    },
+    {
       "id": "d_791517",
       "title": "卒業式の夜",
       "ranking_type": "api",
       "rank_change": 17,
       "current_rank": 72,
       "observed_at": "2026-09-28T14:26:03+09:00"
-    },
-    {
-      "id": "d_814758",
-      "title": "小悪魔妹との30日間",
-      "ranking_type": "api",
-      "rank_change": 16,
-      "current_rank": 59,
-      "observed_at": "2026-09-28T02:45:18+09:00"
-    },
-    {
-      "id": "d_812360",
-      "title": "千鶴ちゃん開発日記  スワッピングバトル編 カラー版",
-      "ranking_type": "api",
-      "rank_change": 16,
-      "current_rank": 74,
-      "observed_at": "2026-09-29T05:07:44+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+62でした。",
-    "APIランキング上位で13作品を観測しました。",
-    "NEWを25件、REENTRYを3件観測しました。"
+    "APIランキング上位で14作品を観測しました。",
+    "NEWを28件、REENTRYを5件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +62\n🆕 NEW 25件\n🔄 REENTRY 3件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを25件、REENTRYを3件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +62\n🆕 NEW 28件\n🔄 REENTRY 5件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを28件、REENTRYを5件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_213575",
       "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_636363",
       "title": "爆乳 アイドル淫魔忍 蜜里  其の一  『淫魔ちんぽになんて負ける訳ないもん。』上巻＋下巻",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_682863",
       "title": "少子化対策×モテアプリがヤバい件について",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_769283",
       "title": "火野ナツキ（39）エロ○○の奴●オナホにされた一か月間の調教記録",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_783279",
       "title": "自治会の人妻はとてもHでした。5 中原恵子の不倫中出しSEX編",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_814731",
+      "title": "FGO総集編",
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_785965",
       "title": "罰カノ2〜ムッツリ広瀬ちゃんの逆襲〜",
       "top10_snapshots": 7,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_814731",
-      "title": "FGO総集編",
-      "top10_snapshots": 7,
-      "observation_rate": 100
+      "observation_rate": 88
     },
     {
       "id": "d_787347",
       "title": "夏妻3",
       "top10_snapshots": 5,
-      "observation_rate": 71
+      "observation_rate": 62
     },
     {
       "id": "d_812875",
       "title": "オトシゴロ",
       "top10_snapshots": 5,
-      "observation_rate": 71
+      "observation_rate": 62
     },
     {
       "id": "d_818978",
       "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
-      "top10_snapshots": 4,
-      "observation_rate": 57
+      "top10_snapshots": 5,
+      "observation_rate": 62
     }
   ],
   "top10_stays": [
     {
       "id": "d_213575",
       "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_636363",
       "title": "爆乳 アイドル淫魔忍 蜜里  其の一  『淫魔ちんぽになんて負ける訳ないもん。』上巻＋下巻",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_682863",
       "title": "少子化対策×モテアプリがヤバい件について",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_769283",
       "title": "火野ナツキ（39）エロ○○の奴●オナホにされた一か月間の調教記録",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_783279",
       "title": "自治会の人妻はとてもHでした。5 中原恵子の不倫中出しSEX編",
-      "top10_snapshots": 7,
+      "top10_snapshots": 8,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_814731",
+      "title": "FGO総集編",
+      "top10_snapshots": 8,
       "observation_rate": 100
     },
     {
       "id": "d_785965",
       "title": "罰カノ2〜ムッツリ広瀬ちゃんの逆襲〜",
       "top10_snapshots": 7,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_814731",
-      "title": "FGO総集編",
-      "top10_snapshots": 7,
-      "observation_rate": 100
+      "observation_rate": 88
     },
     {
       "id": "d_787347",
       "title": "夏妻3",
       "top10_snapshots": 5,
-      "observation_rate": 71
+      "observation_rate": 62
     },
     {
       "id": "d_812875",
       "title": "オトシゴロ",
       "top10_snapshots": 5,
-      "observation_rate": 71
+      "observation_rate": 62
     },
     {
       "id": "d_818978",
       "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
-      "top10_snapshots": 4,
-      "observation_rate": 57
+      "top10_snapshots": 5,
+      "observation_rate": 62
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
