@@ -1,18 +1,18 @@
 {
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
-  "generated_at": "2026-10-05T06:27:54+09:00",
+  "generated_at": "2026-10-05T14:43:17+09:00",
   "data_status": "PARTIAL",
   "observed_days": 1,
   "expected_days": 1,
   "snapshot_counts": {
-    "api": 2
+    "api": 3
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 101,
+    "unique_products": 102,
     "top10_unique_products": 10,
-    "new_entries": 13,
+    "new_entries": 14,
     "reentries": 1,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
@@ -20,7 +20,7 @@
     "max_rank_rise_api": 24
   },
   "price_analysis": {
-    "average_price": 1272,
+    "average_price": 1273,
     "median_price": 990,
     "top10_average_price": 1518,
     "top10_median_price": 1072,
@@ -37,7 +37,7 @@
       },
       {
         "label": "1000〜1999円",
-        "count": 20,
+        "count": 21,
         "top10_count": 4
       },
       {
@@ -69,12 +69,12 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 81,
+      "observed_products": 82,
       "top10_products": 8
     },
     {
       "name": "巨乳",
-      "observed_products": 72,
+      "observed_products": 73,
       "top10_products": 8
     },
     {
@@ -120,17 +120,17 @@
   ],
   "top_circles": [],
   "new_release_products": 32,
-  "new_release_share": 32,
+  "new_release_share": 31,
   "new_release_top10_products": 5,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 81,
+      "product_count": 82,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 72,
+      "product_count": 73,
       "median_price": 990
     },
     {
@@ -175,17 +175,17 @@
     }
   ],
   "metadata_coverage": {
-    "genre": 101,
-    "meaningful_genre": 101,
+    "genre": 102,
+    "meaningful_genre": 102,
     "circle": 0,
-    "release_date": 101,
-    "total_products": 101
+    "release_date": 102,
+    "total_products": 102
   },
   "ranking_behavior": {
     "top10_entry_events": 0,
-    "large_rise_5_plus": 25,
-    "large_rise_10_plus": 8,
-    "new_entry_events": 13,
+    "large_rise_5_plus": 35,
+    "large_rise_10_plus": 10,
+    "new_entry_events": 14,
     "reentry_events": 1
   },
   "biggest_movers": [
@@ -246,6 +246,14 @@
       "observed_at": "2026-10-05T02:35:44+09:00"
     },
     {
+      "id": "d_729171",
+      "title": "【続編:妹〇〇3】ラブドール頼んだら、ド変態妹〇〇が来た3",
+      "ranking_type": "api",
+      "rank_change": 13,
+      "current_rank": 84,
+      "observed_at": "2026-10-05T14:43:17+09:00"
+    },
+    {
       "id": "d_729245",
       "title": "オナホ合宿なつまつり・香椎紗季はサルオナホ",
       "ranking_type": "api",
@@ -254,87 +262,79 @@
       "observed_at": "2026-10-05T02:35:44+09:00"
     },
     {
-      "id": "d_763153",
-      "title": "魔法少女WISHES 搾乳牧場編 笑花＆叶BAD",
+      "id": "d_804584",
+      "title": "エロカワ陽キャの天瀬さんは陰キャオタクの僕にしか興味がない",
       "ranking_type": "api",
-      "rank_change": 9,
-      "current_rank": 51,
-      "observed_at": "2026-10-05T02:35:44+09:00"
-    },
-    {
-      "id": "d_643155",
-      "title": "となりの席の友達と一緒にオナニーする話",
-      "ranking_type": "api",
-      "rank_change": 9,
-      "current_rank": 61,
-      "observed_at": "2026-10-05T02:35:44+09:00"
+      "rank_change": 10,
+      "current_rank": 31,
+      "observed_at": "2026-10-05T14:43:17+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+24でした。",
     "APIランキング上位で10作品を観測しました。",
-    "NEWを13件、REENTRYを1件観測しました。"
+    "NEWを14件、REENTRYを1件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +24\n🆕 NEW 13件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを13件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +24\n🆕 NEW 14件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを14件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_213575",
       "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_636363",
       "title": "爆乳 アイドル淫魔忍 蜜里  其の一  『淫魔ちんぽになんて負ける訳ないもん。』上巻＋下巻",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_682863",
       "title": "少子化対策×モテアプリがヤバい件について",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_781049",
       "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_782160",
       "title": "いつも眉間にシワを寄せている性格のキツいババア先輩（29）は酔うとドスケベ痴女になる",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_813229",
       "title": "友達のママが僕のデカチンでイキまくったハロウィン",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_814203",
       "title": "みんなが誰かと付き合えるまでの話",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_814731",
       "title": "FGO総集編",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_818978",
       "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_822811",
       "title": "ママさんバレーでママオナホ・開幕戦と決勝戦！",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     }
   ],
@@ -342,61 +342,61 @@
     {
       "id": "d_213575",
       "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_636363",
       "title": "爆乳 アイドル淫魔忍 蜜里  其の一  『淫魔ちんぽになんて負ける訳ないもん。』上巻＋下巻",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_682863",
       "title": "少子化対策×モテアプリがヤバい件について",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_781049",
       "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_782160",
       "title": "いつも眉間にシワを寄せている性格のキツいババア先輩（29）は酔うとドスケベ痴女になる",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_813229",
       "title": "友達のママが僕のデカチンでイキまくったハロウィン",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_814203",
       "title": "みんなが誰かと付き合えるまでの話",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_814731",
       "title": "FGO総集編",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_818978",
       "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     },
     {
       "id": "d_822811",
       "title": "ママさんバレーでママオナホ・開幕戦と決勝戦！",
-      "top10_snapshots": 2,
+      "top10_snapshots": 3,
       "observation_rate": 100
     }
   ],
