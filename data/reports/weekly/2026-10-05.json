@@ -1,18 +1,18 @@
 {
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
-  "generated_at": "2026-10-07T03:54:54+09:00",
+  "generated_at": "2026-10-07T15:02:29+09:00",
   "data_status": "PARTIAL",
   "observed_days": 3,
   "expected_days": 3,
   "snapshot_counts": {
-    "api": 6
+    "api": 7
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 112,
+    "unique_products": 114,
     "top10_unique_products": 11,
-    "new_entries": 24,
+    "new_entries": 26,
     "reentries": 1,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
@@ -20,7 +20,7 @@
     "max_rank_rise_api": 59
   },
   "price_analysis": {
-    "average_price": 1297,
+    "average_price": 1289,
     "median_price": 990,
     "top10_average_price": 1580,
     "top10_median_price": 1155,
@@ -32,7 +32,7 @@
       },
       {
         "label": "500〜999円",
-        "count": 57,
+        "count": 59,
         "top10_count": 5
       },
       {
@@ -69,12 +69,12 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 90,
+      "observed_products": 91,
       "top10_products": 9
     },
     {
       "name": "巨乳",
-      "observed_products": 81,
+      "observed_products": 82,
       "top10_products": 9
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "name": "フェラ",
-      "observed_products": 63,
+      "observed_products": 65,
       "top10_products": 8
     },
     {
@@ -99,38 +99,38 @@
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 32,
+      "observed_products": 33,
       "top10_products": 5
     },
     {
       "name": "処女",
-      "observed_products": 28,
+      "observed_products": 29,
       "top10_products": 2
     },
     {
       "name": "人妻・主婦",
-      "observed_products": 27,
+      "observed_products": 28,
       "top10_products": 4
     },
     {
       "name": "ぶっかけ",
-      "observed_products": 23,
+      "observed_products": 24,
       "top10_products": 2
     }
   ],
   "top_circles": [],
-  "new_release_products": 42,
-  "new_release_share": 38,
+  "new_release_products": 44,
+  "new_release_share": 39,
   "new_release_top10_products": 6,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 90,
+      "product_count": 91,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 81,
+      "product_count": 82,
       "median_price": 990
     },
     {
@@ -140,8 +140,8 @@
     },
     {
       "name": "フェラ",
-      "product_count": 63,
-      "median_price": 990
+      "product_count": 65,
+      "median_price": 924
     },
     {
       "name": "制服",
@@ -155,37 +155,37 @@
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 32,
+      "product_count": 33,
       "median_price": 990
     },
     {
       "name": "処女",
-      "product_count": 28,
+      "product_count": 29,
       "median_price": 990
     },
     {
       "name": "人妻・主婦",
-      "product_count": 27,
+      "product_count": 28,
       "median_price": 990
     },
     {
       "name": "ぶっかけ",
-      "product_count": 23,
-      "median_price": 990
+      "product_count": 24,
+      "median_price": 935
     }
   ],
   "metadata_coverage": {
-    "genre": 112,
-    "meaningful_genre": 112,
+    "genre": 114,
+    "meaningful_genre": 114,
     "circle": 0,
-    "release_date": 112,
-    "total_products": 112
+    "release_date": 114,
+    "total_products": 114
   },
   "ranking_behavior": {
     "top10_entry_events": 1,
-    "large_rise_5_plus": 67,
-    "large_rise_10_plus": 18,
-    "new_entry_events": 24,
+    "large_rise_5_plus": 76,
+    "large_rise_10_plus": 23,
+    "new_entry_events": 26,
     "reentry_events": 1
   },
   "biggest_movers": [
@@ -220,6 +220,14 @@
       "rank_change": 20,
       "current_rank": 70,
       "observed_at": "2026-10-05T02:35:44+09:00"
+    },
+    {
+      "id": "d_822496",
+      "title": "合鍵をくれる人妻 〜欲求不満社員寮ハーレム〜",
+      "ranking_type": "api",
+      "rank_change": 19,
+      "current_rank": 81,
+      "observed_at": "2026-10-07T15:02:29+09:00"
     },
     {
       "id": "d_692091",
@@ -260,144 +268,136 @@
       "rank_change": 14,
       "current_rank": 55,
       "observed_at": "2026-10-05T02:35:44+09:00"
-    },
-    {
-      "id": "d_748220",
-      "title": "水泳部の無口でおとなしい月島さんはHに興味津々ー総集編ー",
-      "ranking_type": "api",
-      "rank_change": 14,
-      "current_rank": 56,
-      "observed_at": "2026-10-06T06:12:16+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+59でした。",
     "APIランキング上位で11作品を観測しました。",
-    "NEWを24件、REENTRYを1件観測しました。"
+    "NEWを26件、REENTRYを1件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +59\n🆕 NEW 24件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを24件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +59\n🆕 NEW 26件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを26件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_636363",
       "title": "爆乳 アイドル淫魔忍 蜜里  其の一  『淫魔ちんぽになんて負ける訳ないもん。』上巻＋下巻",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_682863",
       "title": "少子化対策×モテアプリがヤバい件について",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_781049",
       "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_782160",
       "title": "いつも眉間にシワを寄せている性格のキツいババア先輩（29）は酔うとドスケベ痴女になる",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_813229",
       "title": "友達のママが僕のデカチンでイキまくったハロウィン",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_814203",
       "title": "みんなが誰かと付き合えるまでの話",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_814731",
       "title": "FGO総集編",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_818978",
       "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_822811",
       "title": "ママさんバレーでママオナホ・開幕戦と決勝戦！",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
-      "id": "d_213575",
-      "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
-      "top10_snapshots": 3,
-      "observation_rate": 50
+      "id": "d_821996",
+      "title": "なのはなジャム大全〜100作品コンプリート〜",
+      "top10_snapshots": 4,
+      "observation_rate": 57
     }
   ],
   "top10_stays": [
     {
       "id": "d_636363",
       "title": "爆乳 アイドル淫魔忍 蜜里  其の一  『淫魔ちんぽになんて負ける訳ないもん。』上巻＋下巻",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_682863",
       "title": "少子化対策×モテアプリがヤバい件について",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_781049",
       "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_782160",
       "title": "いつも眉間にシワを寄せている性格のキツいババア先輩（29）は酔うとドスケベ痴女になる",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_813229",
       "title": "友達のママが僕のデカチンでイキまくったハロウィン",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_814203",
       "title": "みんなが誰かと付き合えるまでの話",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_814731",
       "title": "FGO総集編",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_818978",
       "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
       "id": "d_822811",
       "title": "ママさんバレーでママオナホ・開幕戦と決勝戦！",
-      "top10_snapshots": 6,
+      "top10_snapshots": 7,
       "observation_rate": 100
     },
     {
-      "id": "d_213575",
-      "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
-      "top10_snapshots": 3,
-      "observation_rate": 50
+      "id": "d_821996",
+      "title": "なのはなジャム大全〜100作品コンプリート〜",
+      "top10_snapshots": 4,
+      "observation_rate": 57
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
