@@ -1,38 +1,38 @@
 {
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-15T03:01:19+09:00",
+  "generated_at": "2026-10-15T06:42:27+09:00",
   "data_status": "PARTIAL",
   "observed_days": 4,
   "expected_days": 4,
   "snapshot_counts": {
-    "api": 9
+    "api": 10
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 124,
+    "unique_products": 126,
     "top10_unique_products": 15,
-    "new_entries": 31,
+    "new_entries": 33,
     "reentries": 5,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
-    "max_rank_rise_api": 44
+    "max_rank_rise_api": 49
   },
   "price_analysis": {
-    "average_price": 1292,
+    "average_price": 1284,
     "median_price": 990,
     "top10_average_price": 1206,
     "top10_median_price": 990,
     "price_buckets": [
       {
         "label": "〜499円",
-        "count": 10,
+        "count": 11,
         "top10_count": 0
       },
       {
         "label": "500〜999円",
-        "count": 58,
+        "count": 59,
         "top10_count": 9
       },
       {
@@ -69,48 +69,48 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 100,
+      "observed_products": 102,
       "top10_products": 12
     },
     {
       "name": "巨乳",
-      "observed_products": 91,
+      "observed_products": 93,
       "top10_products": 10
     },
     {
       "name": "おっぱい",
-      "observed_products": 86,
+      "observed_products": 88,
       "top10_products": 11
     },
     {
       "name": "フェラ",
-      "observed_products": 69,
+      "observed_products": 71,
       "top10_products": 9
     },
     {
       "name": "パイズリ",
-      "observed_products": 42,
+      "observed_products": 43,
       "top10_products": 6
     },
     {
       "name": "制服",
-      "observed_products": 42,
+      "observed_products": 43,
       "top10_products": 8
     },
     {
       "name": "ぶっかけ",
-      "observed_products": 31,
+      "observed_products": 32,
       "top10_products": 6
+    },
+    {
+      "name": "処女",
+      "observed_products": 31,
+      "top10_products": 3
     },
     {
       "name": "寝取り・寝取られ・NTR",
       "observed_products": 31,
       "top10_products": 4
-    },
-    {
-      "name": "処女",
-      "observed_products": 29,
-      "top10_products": 3
     },
     {
       "name": "人妻・主婦",
@@ -119,54 +119,54 @@
     }
   ],
   "top_circles": [],
-  "new_release_products": 48,
+  "new_release_products": 49,
   "new_release_share": 39,
   "new_release_top10_products": 8,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 100,
+      "product_count": 102,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 91,
+      "product_count": 93,
       "median_price": 990
     },
     {
       "name": "おっぱい",
-      "product_count": 86,
+      "product_count": 88,
       "median_price": 990
     },
     {
       "name": "フェラ",
-      "product_count": 69,
+      "product_count": 71,
       "median_price": 990
     },
     {
       "name": "パイズリ",
-      "product_count": 42,
-      "median_price": 957
+      "product_count": 43,
+      "median_price": 924
     },
     {
       "name": "制服",
-      "product_count": 42,
-      "median_price": 946
+      "product_count": 43,
+      "median_price": 924
     },
     {
       "name": "ぶっかけ",
-      "product_count": 31,
+      "product_count": 32,
       "median_price": 891
+    },
+    {
+      "name": "処女",
+      "product_count": 31,
+      "median_price": 1078
     },
     {
       "name": "寝取り・寝取られ・NTR",
       "product_count": 31,
       "median_price": 990
-    },
-    {
-      "name": "処女",
-      "product_count": 29,
-      "median_price": 1089
     },
     {
       "name": "人妻・主婦",
@@ -175,20 +175,28 @@
     }
   ],
   "metadata_coverage": {
-    "genre": 124,
-    "meaningful_genre": 124,
+    "genre": 126,
+    "meaningful_genre": 126,
     "circle": 0,
-    "release_date": 124,
-    "total_products": 124
+    "release_date": 126,
+    "total_products": 126
   },
   "ranking_behavior": {
     "top10_entry_events": 6,
-    "large_rise_5_plus": 98,
-    "large_rise_10_plus": 33,
-    "new_entry_events": 31,
+    "large_rise_5_plus": 100,
+    "large_rise_10_plus": 34,
+    "new_entry_events": 33,
     "reentry_events": 5
   },
   "biggest_movers": [
+    {
+      "id": "d_828591",
+      "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
+      "ranking_type": "api",
+      "rank_change": 49,
+      "current_rank": 19,
+      "observed_at": "2026-10-15T06:42:27+09:00"
+    },
     {
       "id": "d_820128",
       "title": "デカチンになったら巨乳幼馴染とその巨乳友達たちが発情してハーレムになった！！伝説総集編I",
@@ -260,144 +268,136 @@
       "rank_change": 17,
       "current_rank": 67,
       "observed_at": "2026-10-13T06:44:44+09:00"
-    },
-    {
-      "id": "d_556442",
-      "title": "彼女催●リベンジ",
-      "ranking_type": "api",
-      "rank_change": 17,
-      "current_rank": 83,
-      "observed_at": "2026-10-13T06:44:44+09:00"
     }
   ],
   "creator_insights": [
-    "今週の最大上昇はAPIランキングで+44でした。",
+    "今週の最大上昇はAPIランキングで+49でした。",
     "APIランキング上位で15作品を観測しました。",
-    "NEWを31件、REENTRYを5件観測しました。"
+    "NEWを33件、REENTRYを5件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +44\n🆕 NEW 31件\n🔄 REENTRY 5件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを31件、REENTRYを5件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +49\n🆕 NEW 33件\n🔄 REENTRY 5件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを33件、REENTRYを5件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_628142",
       "title": "無防備だった頃2 一線を越えたあの日から…ふたりの眩しくも危うい夏",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_710464",
       "title": "飯犯トラベラーズ 京都百合へし折り輪●快楽堕落編",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_787103",
       "title": "ヤらせてやるって言ってんの！2",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_814203",
       "title": "みんなが誰かと付き合えるまでの話",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_823213",
       "title": "新人生〜陸上部女子編〜",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_818978",
       "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
       "top10_snapshots": 8,
-      "observation_rate": 89
+      "observation_rate": 80
     },
     {
       "id": "d_830408",
       "title": "ヤリ上がりアイランド！",
-      "top10_snapshots": 7,
-      "observation_rate": 78
+      "top10_snapshots": 8,
+      "observation_rate": 80
     },
     {
       "id": "d_603636",
       "title": "こえだしちゃだめ",
-      "top10_snapshots": 5,
-      "observation_rate": 56
+      "top10_snapshots": 6,
+      "observation_rate": 60
     },
     {
       "id": "d_822811",
       "title": "ママさんバレーでママオナホ・開幕戦と決勝戦！",
       "top10_snapshots": 4,
-      "observation_rate": 44
+      "observation_rate": 40
     }
   ],
   "top10_stays": [
     {
       "id": "d_628142",
       "title": "無防備だった頃2 一線を越えたあの日から…ふたりの眩しくも危うい夏",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_710464",
       "title": "飯犯トラベラーズ 京都百合へし折り輪●快楽堕落編",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_787103",
       "title": "ヤらせてやるって言ってんの！2",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_814203",
       "title": "みんなが誰かと付き合えるまでの話",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_823213",
       "title": "新人生〜陸上部女子編〜",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
-      "top10_snapshots": 9,
+      "top10_snapshots": 10,
       "observation_rate": 100
     },
     {
       "id": "d_818978",
       "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
       "top10_snapshots": 8,
-      "observation_rate": 89
+      "observation_rate": 80
     },
     {
       "id": "d_830408",
       "title": "ヤリ上がりアイランド！",
-      "top10_snapshots": 7,
-      "observation_rate": 78
+      "top10_snapshots": 8,
+      "observation_rate": 80
     },
     {
       "id": "d_603636",
       "title": "こえだしちゃだめ",
-      "top10_snapshots": 5,
-      "observation_rate": 56
+      "top10_snapshots": 6,
+      "observation_rate": 60
     },
     {
       "id": "d_822811",
       "title": "ママさんバレーでママオナホ・開幕戦と決勝戦！",
       "top10_snapshots": 4,
-      "observation_rate": 44
+      "observation_rate": 40
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
