@@ -1,6 +1,6 @@
 {
   "ranking_type": "api",
-  "generated_at": "2026-10-16T02:46:53+09:00",
+  "generated_at": "2026-10-16T06:24:36+09:00",
   "snapshot_count": 10,
   "items": [
     {
@@ -36,7 +36,7 @@
         2,
         2,
         2,
-        2
+        3
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -56,27 +56,7 @@
         3,
         3,
         3,
-        3
-      ],
-      "top10_count": 10,
-      "sample_count": 10,
-      "top10_rate": 100,
-      "analytics_status": "STABLE"
-    },
-    {
-      "key": "d_814203",
-      "title": "みんなが誰かと付き合えるまでの話",
-      "rank_history": [
-        4,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        8,
-        9,
-        9
+        2
       ],
       "top10_count": 10,
       "sample_count": 10,
@@ -87,15 +67,15 @@
       "key": "d_787103",
       "title": "ヤらせてやるって言ってんの！2",
       "rank_history": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
         5,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
         5
       ],
       "top10_count": 10,
@@ -107,15 +87,15 @@
       "key": "d_823213",
       "title": "新人生〜陸上部女子編〜",
       "rank_history": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
         6,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
         6
       ],
       "top10_count": 10,
@@ -124,30 +104,29 @@
       "analytics_status": "STABLE"
     },
     {
-      "key": "d_818978",
-      "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
+      "key": "d_814203",
+      "title": "みんなが誰かと付き合えるまでの話",
       "rank_history": [
-        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
         8,
-        10,
-        10,
         9,
-        12,
-        12,
-        13,
-        13,
-        14
+        9,
+        9
       ],
-      "top10_count": 5,
+      "top10_count": 10,
       "sample_count": 10,
-      "top10_rate": 50,
-      "analytics_status": "ACTIVE"
+      "top10_rate": 100,
+      "analytics_status": "STABLE"
     },
     {
       "key": "d_831446",
       "title": "家出〇〇ちゃんを泊めてあげたら僕の家がヤリ部屋に総集編",
       "rank_history": [
-        8,
         7,
         8,
         9,
@@ -156,7 +135,28 @@
         13,
         14,
         14,
+        17,
         17
+      ],
+      "top10_count": 3,
+      "sample_count": 10,
+      "top10_rate": 30,
+      "analytics_status": "VOLATILE"
+    },
+    {
+      "key": "d_818978",
+      "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
+      "rank_history": [
+        8,
+        10,
+        10,
+        9,
+        12,
+        12,
+        13,
+        13,
+        14,
+        16
       ],
       "top10_count": 4,
       "sample_count": 10,
@@ -169,39 +169,39 @@
       "rank_history": [
         9,
         9,
-        9,
         8,
         8,
         9,
         9,
         10,
         10,
+        11,
         11
       ],
-      "top10_count": 9,
+      "top10_count": 8,
       "sample_count": 10,
-      "top10_rate": 90,
+      "top10_rate": 80,
       "analytics_status": "STABLE"
     },
     {
-      "key": "d_822811",
-      "title": "ママさんバレーでママオナホ・開幕戦と決勝戦！",
+      "key": "d_603636",
+      "title": "こえだしちゃだめ",
       "rank_history": [
         10,
-        12,
-        13,
-        13,
-        13,
-        15,
-        16,
-        18,
-        20,
-        22
+        7,
+        7,
+        7,
+        7,
+        8,
+        7,
+        8,
+        8,
+        8
       ],
-      "top10_count": 1,
+      "top10_count": 10,
       "sample_count": 10,
-      "top10_rate": 10,
-      "analytics_status": "SPIKE"
+      "top10_rate": 100,
+      "analytics_status": "STABLE"
     },
     {
       "key": "d_821996",
@@ -210,12 +210,12 @@
         11,
         11,
         11,
-        11,
         10,
         10,
         10,
         12,
         12,
+        13,
         13
       ],
       "top10_count": 3,
@@ -224,19 +224,19 @@
       "analytics_status": "VOLATILE"
     },
     {
-      "key": "d_738506",
-      "title": "姉弟でシたらいけません",
+      "key": "d_822811",
+      "title": "ママさんバレーでママオナホ・開幕戦と決勝戦！",
       "rank_history": [
         12,
+        13,
+        13,
+        13,
         15,
-        32,
-        41,
-        45,
-        52,
-        55,
-        57,
-        58,
-        76
+        16,
+        18,
+        20,
+        22,
+        22
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -244,30 +244,9 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_603636",
-      "title": "こえだしちゃだめ",
-      "rank_history": [
-        13,
-        10,
-        7,
-        7,
-        7,
-        7,
-        8,
-        7,
-        8,
-        8
-      ],
-      "top10_count": 9,
-      "sample_count": 10,
-      "top10_rate": 90,
-      "analytics_status": "STABLE"
-    },
-    {
       "key": "d_821908",
       "title": "騒音被害 2人目",
       "rank_history": [
-        14,
         13,
         12,
         12,
@@ -276,6 +255,7 @@
         11,
         11,
         11,
+        12,
         12
       ],
       "top10_count": 0,
@@ -287,7 +267,6 @@
       "key": "d_709204",
       "title": "金髪巨乳アニヲタ留学生ちょろすぎwww",
       "rank_history": [
-        15,
         14,
         15,
         15,
@@ -296,7 +275,8 @@
         20,
         21,
         22,
-        24
+        24,
+        25
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -304,19 +284,39 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_284908",
-      "title": "クレイジースイマーSS Another",
+      "key": "d_738506",
+      "title": "姉弟でシたらいけません",
+      "rank_history": [
+        15,
+        32,
+        41,
+        45,
+        52,
+        55,
+        57,
+        58,
+        76,
+        78
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_780676",
+      "title": "勃起みせつけいいなり村〜勃起ちんぽを見せつければなんでも言うこと聞いてくれる村",
       "rank_history": [
         16,
-        18,
-        29,
-        32,
-        32,
-        36,
-        38,
-        40,
-        41,
-        40
+        14,
+        14,
+        14,
+        14,
+        14,
+        15,
+        15,
+        16,
+        15
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -328,7 +328,6 @@
       "title": "爆乳 アイドル淫魔忍 蜜里  其の一  『淫魔ちんぽになんて負ける訳ないもん。』上巻＋下巻",
       "rank_history": [
         17,
-        17,
         16,
         19,
         21,
@@ -336,7 +335,28 @@
         25,
         25,
         26,
-        29
+        29,
+        30
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_284908",
+      "title": "クレイジースイマーSS Another",
+      "rank_history": [
+        18,
+        29,
+        32,
+        32,
+        36,
+        38,
+        40,
+        41,
+        40,
+        41
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -347,7 +367,6 @@
       "key": "d_828017",
       "title": "憧れの爆乳奥さんに生でびゅるびゅるする中出し不倫生活",
       "rank_history": [
-        18,
         19,
         18,
         21,
@@ -356,47 +375,8 @@
         27,
         28,
         29,
+        31,
         31
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_780676",
-      "title": "勃起みせつけいいなり村〜勃起ちんぽを見せつければなんでも言うこと聞いてくれる村",
-      "rank_history": [
-        19,
-        16,
-        14,
-        14,
-        14,
-        14,
-        14,
-        15,
-        15,
-        16
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_213575",
-      "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
-      "rank_history": [
-        20,
-        21,
-        22,
-        23,
-        25,
-        24,
-        24,
-        24,
-        24,
-        23
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -407,7 +387,6 @@
       "key": "d_811449",
       "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について【早期購入＆レビュー特典あり】",
       "rank_history": [
-        21,
         20,
         19,
         20,
@@ -416,7 +395,8 @@
         23,
         23,
         25,
-        26
+        26,
+        27
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -424,19 +404,19 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_781049",
-      "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
+      "key": "d_213575",
+      "title": "カルティベーター 〜引退騎士とモン娘のにぎやか開拓記〜",
       "rank_history": [
+        21,
         22,
         23,
-        26,
-        27,
-        28,
-        29,
-        29,
-        31,
-        31,
-        35
+        25,
+        24,
+        24,
+        24,
+        24,
+        23,
+        23
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -447,7 +427,6 @@
       "key": "d_804584",
       "title": "エロカワ陽キャの天瀬さんは陰キャオタクの僕にしか興味がない",
       "rank_history": [
-        23,
         22,
         24,
         26,
@@ -456,7 +435,28 @@
         31,
         30,
         30,
-        32
+        32,
+        33
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_781049",
+      "title": "バツイチおばさんと説教人妻、ワケあり熟れまんオナホにします。",
+      "rank_history": [
+        23,
+        26,
+        27,
+        28,
+        29,
+        29,
+        31,
+        31,
+        35,
+        35
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -468,7 +468,6 @@
       "title": "クールな長身イケメン銀髪爆乳黒ギャルのメスの顔",
       "rank_history": [
         24,
-        24,
         21,
         18,
         19,
@@ -476,27 +475,8 @@
         26,
         32,
         37,
-        50
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_805714",
-      "title": "パパ活パンデミクス - 女子大生ビッチ化計画 -",
-      "rank_history": [
-        25,
-        27,
-        30,
-        29,
-        31,
-        32,
-        33,
-        35,
-        35,
-        36
+        50,
+        53
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -507,7 +487,6 @@
       "key": "d_814731",
       "title": "FGO総集編",
       "rank_history": [
-        26,
         25,
         27,
         28,
@@ -516,47 +495,8 @@
         32,
         33,
         32,
-        34
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_805006",
-      "title": "メイドで生ハメ練習したらお嬢様のコキ穴を攻略だ！",
-      "rank_history": [
-        27,
-        37,
-        56,
-        64,
-        68,
-        80,
-        85,
-        87,
-        90,
-        98
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_830850",
-      "title": "クリムゾン短編集",
-      "rank_history": [
-        28,
-        29,
-        25,
-        25,
-        26,
-        21,
-        22,
-        22,
-        23,
-        21
+        34,
+        32
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -567,7 +507,6 @@
       "key": "d_735427",
       "title": "ヤらせてやるって言ってんの！",
       "rank_history": [
-        29,
         26,
         17,
         16,
@@ -576,7 +515,8 @@
         15,
         16,
         16,
-        15
+        15,
+        14
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -584,59 +524,19 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_813229",
-      "title": "友達のママが僕のデカチンでイキまくったハロウィン",
+      "key": "d_805714",
+      "title": "パパ活パンデミクス - 女子大生ビッチ化計画 -",
       "rank_history": [
+        27,
         30,
-        32,
-        33,
-        33,
-        35,
-        39,
-        41,
-        44,
-        44,
-        45
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_822496",
-      "title": "合鍵をくれる人妻 〜欲求不満社員寮ハーレム〜",
-      "rank_history": [
+        29,
         31,
-        42,
-        64,
-        71,
-        74,
-        87,
-        90,
-        91,
-        92,
-        94
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_809235",
-      "title": "隣の席のダウナーギャルは僕のことを独占したい！",
-      "rank_history": [
         32,
         33,
-        34,
         35,
-        39,
-        43,
-        44,
-        46,
-        49,
-        54
+        35,
+        36,
+        36
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -647,7 +547,6 @@
       "key": "d_756003",
       "title": "彼女のママとのセフレ契約 3 〜ママと海水浴編〜",
       "rank_history": [
-        33,
         28,
         20,
         17,
@@ -656,7 +555,28 @@
         18,
         19,
         18,
+        19,
         19
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_830850",
+      "title": "クリムゾン短編集",
+      "rank_history": [
+        29,
+        25,
+        25,
+        26,
+        21,
+        22,
+        22,
+        23,
+        21,
+        21
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -667,7 +587,6 @@
       "key": "d_828172",
       "title": "『エロスタグラム』 美女50人のDMを口説き堕とせ 脱ぎ・オナニー・フェラ・本番 全200動画【AI実写ゲーム】",
       "rank_history": [
-        34,
         30,
         23,
         22,
@@ -676,27 +595,8 @@
         21,
         20,
         21,
+        20,
         20
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_298288",
-      "title": "【40時間/15作品収録】大人赤ちゃんのためのエッチな○○○甘園房 シリーズ総集編",
-      "rank_history": [
-        35,
-        34,
-        36,
-        39,
-        37,
-        37,
-        37,
-        38,
-        39,
-        39
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -707,16 +607,76 @@
       "key": "d_758663",
       "title": "【大型アプデ実施！アニメ・フルボイス対応！】チョロすぎ天才エルフのHな受難 Ver2.1.1",
       "rank_history": [
+        31,
+        31,
+        30,
+        30,
+        27,
+        28,
+        27,
+        28,
+        27,
+        28
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_813229",
+      "title": "友達のママが僕のデカチンでイキまくったハロウィン",
+      "rank_history": [
+        32,
+        33,
+        33,
+        35,
+        39,
+        41,
+        44,
+        44,
+        45,
+        47
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_809235",
+      "title": "隣の席のダウナーギャルは僕のことを独占したい！",
+      "rank_history": [
+        33,
+        34,
+        35,
+        39,
+        43,
+        44,
+        46,
+        49,
+        54,
+        56
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_298288",
+      "title": "【40時間/15作品収録】大人赤ちゃんのためのエッチな○○○甘園房 シリーズ総集編",
+      "rank_history": [
+        34,
         36,
-        31,
-        31,
-        30,
-        30,
-        27,
-        28,
-        27,
-        28,
-        27
+        39,
+        37,
+        37,
+        37,
+        38,
+        39,
+        39,
+        40
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -727,7 +687,6 @@
       "key": "d_823235",
       "title": "俺しか勃起できない世界4  〜Kカップ爆乳ギャル生徒寝取り＆生オナホ化〜",
       "rank_history": [
-        37,
         35,
         41,
         44,
@@ -736,7 +695,48 @@
         45,
         47,
         48,
+        52,
         52
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_817601",
+      "title": "ミガワリ総集編 ＋ 描き下ろし漫画21ページ",
+      "rank_history": [
+        36,
+        37,
+        38,
+        40,
+        38,
+        40,
+        42,
+        42,
+        44,
+        45
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_805006",
+      "title": "メイドで生ハメ練習したらお嬢様のコキ穴を攻略だ！",
+      "rank_history": [
+        37,
+        56,
+        64,
+        68,
+        80,
+        85,
+        87,
+        90,
+        98,
+        99
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -748,7 +748,6 @@
       "title": "叔母真奈美  家族の前で孕ませ牝交尾  あこがれの叔母を寝取る4最終章",
       "rank_history": [
         38,
-        38,
         46,
         46,
         47,
@@ -756,47 +755,8 @@
         50,
         51,
         52,
-        56
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_817601",
-      "title": "ミガワリ総集編 ＋ 描き下ろし漫画21ページ",
-      "rank_history": [
-        39,
-        36,
-        37,
-        38,
-        40,
-        38,
-        40,
-        42,
-        42,
-        44
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_821645",
-      "title": "生意気な孫娘をわからせて無理やり孕ませた話",
-      "rank_history": [
-        40,
-        44,
-        49,
-        53,
-        53,
-        59,
-        63,
-        68,
-        71,
-        81
+        56,
+        57
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -807,7 +767,6 @@
       "key": "d_798570",
       "title": "言いなりアイドル  7日間でメス堕ち デビューのために犯〇れていくカラダ",
       "rank_history": [
-        41,
         39,
         42,
         42,
@@ -816,7 +775,28 @@
         42,
         43,
         43,
-        41
+        41,
+        43
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_403406",
+      "title": "無防備だった頃 片田舎でひっそりと始まった不器用な性春",
+      "rank_history": [
+        40,
+        35,
+        34,
+        34,
+        33,
+        35,
+        36,
+        34,
+        33,
+        34
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -827,7 +807,6 @@
       "key": "d_820392",
       "title": "【探索育成型シミュレーション】背徳物件 〜生意気な住人を寝取り＆分からせでメス堕ちさせるマンション育成型ゲーム〜",
       "rank_history": [
-        42,
         41,
         40,
         43,
@@ -836,7 +815,28 @@
         43,
         45,
         45,
-        43
+        43,
+        44
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_822496",
+      "title": "合鍵をくれる人妻 〜欲求不満社員寮ハーレム〜",
+      "rank_history": [
+        42,
+        64,
+        71,
+        74,
+        87,
+        90,
+        91,
+        92,
+        94,
+        95
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -848,7 +848,6 @@
       "title": "ダウナー水泳部さんはおじさんの反応が見たい",
       "rank_history": [
         43,
-        43,
         45,
         50,
         52,
@@ -856,6 +855,7 @@
         79,
         88,
         96,
+        null,
         null
       ],
       "top10_count": 0,
@@ -864,79 +864,19 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_800899",
-      "title": "【KU100】ドスケベビキニハーレムボート！ ハメっぱなし2泊3日Cruisin’♪ 船上ハーレムビキニ4Pパーティー♪",
+      "key": "d_821645",
+      "title": "生意気な孫娘をわからせて無理やり孕ませた話",
       "rank_history": [
         44,
-        46,
-        48,
-        48,
-        48,
         49,
-        52,
         53,
-        54,
-        60
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_403406",
-      "title": "無防備だった頃 片田舎でひっそりと始まった不器用な性春",
-      "rank_history": [
-        45,
-        40,
-        35,
-        34,
-        34,
-        33,
-        35,
-        36,
-        34,
-        33
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_682863",
-      "title": "少子化対策×モテアプリがヤバい件について",
-      "rank_history": [
-        46,
-        47,
-        47,
-        49,
-        49,
-        54,
-        56,
-        56,
-        55,
-        63
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_829237",
-      "title": "孕ませ団地妻〜孕むまで中出しして〜",
-      "rank_history": [
-        47,
-        51,
-        50,
-        52,
-        57,
-        64,
-        69,
-        69,
-        70,
-        80
+        53,
+        59,
+        63,
+        68,
+        71,
+        81,
+        85
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -947,7 +887,6 @@
       "key": "d_823846",
       "title": "ハーレム世界のサマーリゾート",
       "rank_history": [
-        48,
         45,
         38,
         36,
@@ -956,7 +895,68 @@
         36,
         37,
         36,
-        37
+        37,
+        38
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_800899",
+      "title": "【KU100】ドスケベビキニハーレムボート！ ハメっぱなし2泊3日Cruisin’♪ 船上ハーレムビキニ4Pパーティー♪",
+      "rank_history": [
+        46,
+        48,
+        48,
+        48,
+        49,
+        52,
+        53,
+        54,
+        60,
+        62
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_682863",
+      "title": "少子化対策×モテアプリがヤバい件について",
+      "rank_history": [
+        47,
+        47,
+        49,
+        49,
+        54,
+        56,
+        56,
+        55,
+        63,
+        65
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_768304",
+      "title": "ほろよいせっくす〜酔ったお兄ちゃんが×××すぎる〜",
+      "rank_history": [
+        48,
+        43,
+        45,
+        43,
+        44,
+        47,
+        55,
+        65,
+        97,
+        null
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -968,7 +968,6 @@
       "title": "いつも眉間にシワを寄せている性格のキツいババア先輩（29）は酔うとドスケベ痴女になる",
       "rank_history": [
         49,
-        49,
         52,
         54,
         55,
@@ -976,6 +975,47 @@
         60,
         64,
         67,
+        83,
+        84
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_703287",
+      "title": "新人生〜憧れのクラスメイト編〜",
+      "rank_history": [
+        50,
+        39,
+        37,
+        36,
+        34,
+        34,
+        34,
+        33,
+        30,
+        29
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_829237",
+      "title": "孕ませ団地妻〜孕むまで中出しして〜",
+      "rank_history": [
+        51,
+        50,
+        52,
+        57,
+        64,
+        69,
+        69,
+        70,
+        80,
         83
       ],
       "top10_count": 0,
@@ -984,35 +1024,15 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_768304",
-      "title": "ほろよいせっくす〜酔ったお兄ちゃんが×××すぎる〜",
+      "key": "d_816712",
+      "title": "ハツイキ  イブのP活 前編",
       "rank_history": [
-        50,
-        48,
-        43,
-        45,
-        43,
-        44,
-        47,
-        55,
-        65,
-        97
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_789035",
-      "title": "元カレに妻を貸したらドMになって帰ってきた",
-      "rank_history": [
-        51,
-        55,
-        80,
-        86,
-        87,
-        98,
+        52,
+        54,
+        72,
+        77,
+        100,
+        null,
         null,
         null,
         null,
@@ -1027,7 +1047,6 @@
       "key": "d_423264",
       "title": "夏休みのハーレム・妹〜田舎で姉妹ハーレム！ベタ甘な妹といちゃラブえっち〜",
       "rank_history": [
-        52,
         53,
         55,
         58,
@@ -1036,7 +1055,8 @@
         68,
         66,
         68,
-        77
+        77,
+        80
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1044,15 +1064,35 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_816712",
-      "title": "ハツイキ  イブのP活 前編",
+      "key": "d_748220",
+      "title": "水泳部の無口でおとなしい月島さんはHに興味津々ー総集編ー",
       "rank_history": [
-        53,
-        52,
         54,
-        72,
-        77,
-        100,
+        58,
+        60,
+        60,
+        62,
+        65,
+        60,
+        59,
+        64,
+        63
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_789035",
+      "title": "元カレに妻を貸したらドMになって帰ってきた",
+      "rank_history": [
+        55,
+        80,
+        86,
+        87,
+        98,
+        null,
         null,
         null,
         null,
@@ -1064,30 +1104,9 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_703287",
-      "title": "新人生〜憧れのクラスメイト編〜",
-      "rank_history": [
-        54,
-        50,
-        39,
-        37,
-        36,
-        34,
-        34,
-        34,
-        33,
-        30
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
       "key": "d_725751",
       "title": "夏休みのハーレム2・姉〜田舎で姉妹ハーレム！優等生な姉に甘やかされH〜",
       "rank_history": [
-        55,
         56,
         65,
         66,
@@ -1096,27 +1115,8 @@
         77,
         79,
         80,
-        87
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_748220",
-      "title": "水泳部の無口でおとなしい月島さんはHに興味津々ー総集編ー",
-      "rank_history": [
-        56,
-        54,
-        58,
-        60,
-        60,
-        62,
-        65,
-        60,
-        59,
-        64
+        87,
+        88
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1128,7 +1128,6 @@
       "title": "オタクの僕が一軍ギャルと付き合えるまでの話3",
       "rank_history": [
         57,
-        57,
         60,
         61,
         63,
@@ -1136,7 +1135,28 @@
         61,
         62,
         62,
+        67,
         67
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_804473",
+      "title": "ママが夢中な娘のカレシ3 このチ◯ポは教育上よろしくないのでママが処理します。",
+      "rank_history": [
+        58,
+        28,
+        24,
+        23,
+        18,
+        17,
+        17,
+        17,
+        18,
+        18
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1147,7 +1167,6 @@
       "key": "d_827081",
       "title": "Re:Sister―妹とふたり、ひみつの同棲生活―【DLC】",
       "rank_history": [
-        58,
         59,
         53,
         51,
@@ -1156,47 +1175,8 @@
         49,
         49,
         47,
-        49
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_831194",
-      "title": "湯けむり桃源郷",
-      "rank_history": [
-        59,
-        64,
-        70,
-        73,
-        72,
-        78,
-        78,
-        80,
-        83,
-        79
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_812875",
-      "title": "オトシゴロ",
-      "rank_history": [
-        60,
-        61,
-        72,
-        75,
-        75,
-        81,
-        82,
-        82,
-        84,
-        86
+        49,
+        54
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1207,7 +1187,6 @@
       "key": "d_827849",
       "title": "兄の彼女を僕のオナペットにした話",
       "rank_history": [
-        61,
         60,
         57,
         55,
@@ -1216,6 +1195,7 @@
         58,
         73,
         81,
+        null,
         null
       ],
       "top10_count": 0,
@@ -1224,39 +1204,19 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_760708",
-      "title": "IF:ご近所様に種まきできる世界線の話 〜同級生の母親編〜",
+      "key": "d_812875",
+      "title": "オトシゴロ",
       "rank_history": [
-        62,
-        68,
-        69,
-        68,
-        70,
-        69,
-        70,
-        70,
-        69,
-        70
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_829378",
-      "title": "泥〇妻されるがママ（後編）",
-      "rank_history": [
-        63,
-        83,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        61,
+        72,
+        75,
+        75,
+        81,
+        82,
+        82,
+        84,
+        86,
+        87
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1267,7 +1227,6 @@
       "key": "d_643155",
       "title": "となりの席の友達と一緒にオナニーする話",
       "rank_history": [
-        64,
         62,
         62,
         62,
@@ -1276,7 +1235,48 @@
         57,
         58,
         57,
-        57
+        57,
+        60
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_832408",
+      "title": "【スマホ対応】To L〇VE 校内ハンティング〜捕まえて・犯しつくせ！【全34シーンCC617枚以上】",
+      "rank_history": [
+        63,
+        51,
+        47,
+        46,
+        40,
+        39,
+        39,
+        40,
+        38,
+        37
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_831194",
+      "title": "湯けむり桃源郷",
+      "rank_history": [
+        64,
+        70,
+        73,
+        72,
+        78,
+        78,
+        80,
+        83,
+        79,
+        81
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1288,7 +1288,6 @@
       "title": "看護師さんがチンコ洗うついでにヌいてくれる話",
       "rank_history": [
         65,
-        65,
         68,
         65,
         64,
@@ -1296,67 +1295,8 @@
         66,
         65,
         63,
-        66
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_761881",
-      "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "rank_history": [
         66,
-        67,
-        74,
-        74,
-        73,
-        72,
-        74,
-        72,
-        74,
-        75
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_832408",
-      "title": "【スマホ対応】To L〇VE 校内ハンティング〜捕まえて・犯しつくせ！【全34シーンCC617枚以上】",
-      "rank_history": [
-        67,
-        63,
-        51,
-        47,
-        46,
-        40,
-        39,
-        39,
-        40,
-        38
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_819394",
-      "title": "新妻の秘め事〜元彼の誘惑に堕ちていく体〜",
-      "rank_history": [
-        68,
-        73,
-        88,
-        93,
-        95,
-        null,
-        null,
-        null,
-        null,
-        null
+        69
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1367,7 +1307,6 @@
       "key": "d_829755",
       "title": "学園サポウェディングifヨシダ編",
       "rank_history": [
-        69,
         66,
         59,
         57,
@@ -1376,7 +1315,48 @@
         51,
         50,
         50,
-        47
+        47,
+        49
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_761881",
+      "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
+      "rank_history": [
+        67,
+        74,
+        74,
+        73,
+        72,
+        74,
+        72,
+        74,
+        75,
+        76
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_760708",
+      "title": "IF:ご近所様に種まきできる世界線の話 〜同級生の母親編〜",
+      "rank_history": [
+        68,
+        69,
+        68,
+        70,
+        69,
+        70,
+        70,
+        69,
+        70,
+        72
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1387,7 +1367,6 @@
       "key": "d_362679",
       "title": "彼女催●3",
       "rank_history": [
-        70,
         69,
         67,
         67,
@@ -1396,27 +1375,8 @@
         73,
         76,
         77,
-        78
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_729245",
-      "title": "オナホ合宿なつまつり・香椎紗季はサルオナホ",
-      "rank_history": [
-        71,
-        72,
-        75,
         78,
-        80,
-        83,
-        83,
-        84,
-        87,
-        88
+        79
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1427,7 +1387,6 @@
       "key": "d_832059",
       "title": "【4Kアニメ】神ビジュ＆鬼ピストン 運動部の巨乳JK225人と中出し乱交【114分】",
       "rank_history": [
-        72,
         70,
         61,
         59,
@@ -1436,7 +1395,8 @@
         53,
         52,
         51,
-        46
+        46,
+        50
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1447,7 +1407,6 @@
       "key": "d_815319",
       "title": "オフ会で初めて会った爆乳天使女子を濃厚中出し露出Hで雌堕ちさせちゃう話",
       "rank_history": [
-        73,
         71,
         66,
         63,
@@ -1456,6 +1415,7 @@
         54,
         54,
         53,
+        51,
         51
       ],
       "top10_count": 0,
@@ -1464,39 +1424,19 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_746887",
-      "title": "とある夏休みの膣内放尿練習日誌――僕の大好きな瀬尾さんを小便器として使用した28日間",
+      "key": "d_729245",
+      "title": "オナホ合宿なつまつり・香椎紗季はサルオナホ",
       "rank_history": [
-        74,
-        80,
-        87,
-        87,
-        89,
-        95,
-        98,
-        99,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_723918",
-      "title": "ギャルハーレムがデキるまで〜オタクのち◯こはウチらで共有するって決めたから〜",
-      "rank_history": [
+        72,
         75,
-        76,
+        78,
+        80,
+        83,
         83,
         84,
-        85,
-        79,
-        80,
-        78,
-        76,
-        73
+        87,
+        88,
+        89
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1504,19 +1444,39 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_809121",
-      "title": "エロ物件 逃げ場のない部屋",
+      "key": "d_819394",
+      "title": "新妻の秘め事〜元彼の誘惑に堕ちていく体〜",
       "rank_history": [
-        76,
-        98,
-        null,
-        null,
+        73,
+        88,
+        93,
+        95,
         null,
         null,
         null,
         null,
         null,
         null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_723482",
+      "title": "再会した年上幼馴染女教師に勉強からセックスまで徹底指導される話。",
+      "rank_history": [
+        74,
+        63,
+        56,
+        51,
+        47,
+        48,
+        48,
+        46,
+        42,
+        42
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1527,7 +1487,6 @@
       "key": "d_621923",
       "title": "強気だけど実はチョロすぎる幼馴染ギャル ―最終章・遠距離でもイチャラブHは止まらない編―",
       "rank_history": [
-        77,
         75,
         71,
         69,
@@ -1536,7 +1495,8 @@
         62,
         61,
         60,
-        58
+        58,
+        59
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1544,19 +1504,19 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_765363",
-      "title": "女子ヤリ部屋部の男根 〜痴女ハーレム〜 総集編",
+      "key": "d_723918",
+      "title": "ギャルハーレムがデキるまで〜オタクのち◯こはウチらで共有するって決めたから〜",
       "rank_history": [
+        76,
+        83,
+        84,
+        85,
+        79,
+        80,
         78,
-        90,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        76,
+        73,
+        73
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1567,7 +1527,6 @@
       "key": "d_728516",
       "title": "【大型アプデ・アニメ対応！】この宿に魔女を泊めるな ver1.1.1",
       "rank_history": [
-        79,
         77,
         79,
         77,
@@ -1576,7 +1535,8 @@
         75,
         74,
         73,
-        72
+        72,
+        74
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1587,7 +1547,6 @@
       "key": "d_297590",
       "title": "彼女催●2",
       "rank_history": [
-        80,
         78,
         77,
         79,
@@ -1596,6 +1555,7 @@
         88,
         86,
         88,
+        90,
         90
       ],
       "top10_count": 0,
@@ -1607,7 +1567,6 @@
       "key": "d_244475",
       "title": "彼女催●",
       "rank_history": [
-        81,
         79,
         78,
         80,
@@ -1616,7 +1575,8 @@
         89,
         89,
         89,
-        91
+        91,
+        93
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1624,16 +1584,16 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_802566",
-      "title": "催淫スマホで俺だけハーレム",
+      "key": "d_746887",
+      "title": "とある夏休みの膣内放尿練習日誌――僕の大好きな瀬尾さんを小便器として使用した28日間",
       "rank_history": [
-        82,
-        85,
-        94,
+        80,
+        87,
+        87,
+        89,
+        95,
         98,
-        null,
-        null,
-        null,
+        99,
         null,
         null,
         null
@@ -1647,7 +1607,6 @@
       "key": "d_556442",
       "title": "彼女催●リベンジ",
       "rank_history": [
-        83,
         81,
         76,
         81,
@@ -1656,7 +1615,8 @@
         87,
         85,
         86,
-        89
+        89,
+        91
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1664,11 +1624,31 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_785965",
-      "title": "罰カノ2〜ムッツリ広瀬ちゃんの逆襲〜",
+      "key": "d_832178",
+      "title": "【淫スタグラム】絶倫ハゲデブキモオヤジ、SNSで無双する。",
       "rank_history": [
-        84,
-        89,
+        82,
+        73,
+        70,
+        65,
+        66,
+        67,
+        63,
+        61,
+        62,
+        64
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_829378",
+      "title": "泥〇妻されるがママ（後編）",
+      "rank_history": [
+        83,
+        null,
         null,
         null,
         null,
@@ -1687,7 +1667,6 @@
       "key": "d_674651",
       "title": "オナホ合宿ドスケベインタビュー・ふけいさんかん！",
       "rank_history": [
-        85,
         84,
         89,
         89,
@@ -1696,7 +1675,28 @@
         96,
         97,
         100,
+        100,
         100
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_802566",
+      "title": "催淫スマホで俺だけハーレム",
+      "rank_history": [
+        85,
+        94,
+        98,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1708,7 +1708,6 @@
       "title": "退廃妻2 退廃系人妻を家賃代わりにコキ使える話",
       "rank_history": [
         86,
-        86,
         91,
         91,
         92,
@@ -1716,7 +1715,8 @@
         93,
         95,
         95,
-        93
+        93,
+        94
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1728,7 +1728,6 @@
       "title": "山羊野メェ吉全作品集2011-2026",
       "rank_history": [
         87,
-        87,
         86,
         88,
         86,
@@ -1736,7 +1735,8 @@
         94,
         94,
         97,
-        95
+        95,
+        97
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1744,19 +1744,19 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_832178",
-      "title": "【淫スタグラム】絶倫ハゲデブキモオヤジ、SNSで無双する。",
+      "key": "d_820128",
+      "title": "デカチンになったら巨乳幼馴染とその巨乳友達たちが発情してハーレムになった！！伝説総集編I",
       "rank_history": [
         88,
-        82,
-        73,
-        70,
-        65,
-        66,
-        67,
-        63,
-        61,
-        62
+        44,
+        40,
+        33,
+        30,
+        30,
+        29,
+        27,
+        25,
+        24
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -1764,11 +1764,11 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_769283",
-      "title": "火野ナツキ（39）エロ○○の奴●オナホにされた一か月間の調教記録",
+      "key": "d_785965",
+      "title": "罰カノ2〜ムッツリ広瀬ちゃんの逆襲〜",
       "rank_history": [
         89,
-        96,
+        null,
         null,
         null,
         null,
@@ -1784,14 +1784,134 @@
       "analytics_status": "SPIKE"
     },
     {
+      "key": "d_765363",
+      "title": "女子ヤリ部屋部の男根 〜痴女ハーレム〜 総集編",
+      "rank_history": [
+        90,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_254335",
+      "title": "騒音被害",
+      "rank_history": [
+        91,
+        82,
+        82,
+        78,
+        73,
+        72,
+        71,
+        66,
+        65,
+        68
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
       "key": "d_756329",
       "title": "カースト最上位ギャルが元陰キャの幼馴染だったので教育する",
       "rank_history": [
-        90,
         92,
         92,
         94,
         97,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_831690",
+      "title": "コンビニのバイト〇〇はXXLサイズのコンドームを買うお客さんが気になって仕方ない2",
+      "rank_history": [
+        93,
+        85,
+        85,
+        84,
+        77,
+        76,
+        75,
+        72,
+        69,
+        70
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_793490",
+      "title": "〇超密着密閉141分＋8特典〇スケベダウナー＆甘やかし上手なメイド姉妹とだらだら汗だくえっち【スローH/オホ声/汗臭ドスケベ添い寝ロール/連続豪快中出し】",
+      "rank_history": [
+        94,
+        95,
+        99,
+        99,
+        99,
+        100,
+        null,
+        null,
+        null,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_783554",
+      "title": "嘘だと言ってよ堀北さん！！片思い中の地味系女子は意外と男性経験豊富で全然地味じゃなかった話",
+      "rank_history": [
+        95,
+        81,
+        76,
+        71,
+        63,
+        59,
+        59,
+        56,
+        55,
+        55
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_769283",
+      "title": "火野ナツキ（39）エロ○○の奴●オナホにされた一か月間の調教記録",
+      "rank_history": [
+        96,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -1807,7 +1927,6 @@
       "key": "d_800157",
       "title": "セフレ妻ゆかりVol.04（上）",
       "rank_history": [
-        91,
         97,
         null,
         null,
@@ -1816,25 +1935,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_793490",
-      "title": "〇超密着密閉141分＋8特典〇スケベダウナー＆甘やかし上手なメイド姉妹とだらだら汗だくえっち【スローH/オホ声/汗臭ドスケベ添い寝ロール/連続豪快中出し】",
-      "rank_history": [
-        92,
-        94,
-        95,
-        99,
-        99,
-        99,
-        100,
-        null,
         null,
         null
       ],
@@ -1844,12 +1944,12 @@
       "analytics_status": "SPIKE"
     },
     {
-      "key": "d_739696",
-      "title": "IF:ご近所様に種まきできる世界線の話 〜昔なじみ同級生の場合〜",
+      "key": "d_809121",
+      "title": "エロ物件 逃げ場のない部屋",
       "rank_history": [
-        93,
-        null,
         98,
+        null,
+        null,
         null,
         null,
         null,
@@ -1867,7 +1967,6 @@
       "key": "d_748896",
       "title": "スパ・カイラクーア4",
       "rank_history": [
-        94,
         99,
         97,
         96,
@@ -1876,187 +1975,8 @@
         null,
         null,
         null,
-        99
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_254335",
-      "title": "騒音被害",
-      "rank_history": [
-        95,
-        91,
-        82,
-        82,
-        78,
-        73,
-        72,
-        71,
-        66,
-        65
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_657180",
-      "title": "クール系店員さんをお持ち帰りしちゃった話4",
-      "rank_history": [
-        96,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_663611",
-      "title": "廃墟で地雷女子と夜中じゅう中出しセックスした話3",
-      "rank_history": [
-        97,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_831690",
-      "title": "コンビニのバイト〇〇はXXLサイズのコンドームを買うお客さんが気になって仕方ない2",
-      "rank_history": [
-        98,
-        93,
-        85,
-        85,
-        84,
-        77,
-        76,
-        75,
-        72,
-        69
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_723482",
-      "title": "再会した年上幼馴染女教師に勉強からセックスまで徹底指導される話。",
-      "rank_history": [
         99,
-        74,
-        63,
-        56,
-        51,
-        47,
-        48,
-        48,
-        46,
-        42
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_802808",
-      "title": "メギツネ",
-      "rank_history": [
-        100,
-        null,
-        96,
-        97,
-        96,
-        97,
-        97,
-        98,
-        null,
-        null
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_804473",
-      "title": "ママが夢中な娘のカレシ3 このチ◯ポは教育上よろしくないのでママが処理します。",
-      "rank_history": [
-        null,
-        58,
-        28,
-        24,
-        23,
-        18,
-        17,
-        17,
-        17,
-        18
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_820128",
-      "title": "デカチンになったら巨乳幼馴染とその巨乳友達たちが発情してハーレムになった！！伝説総集編I",
-      "rank_history": [
-        null,
-        88,
-        44,
-        40,
-        33,
-        30,
-        30,
-        29,
-        27,
-        25
-      ],
-      "top10_count": 0,
-      "sample_count": 10,
-      "top10_rate": 0,
-      "analytics_status": "SPIKE"
-    },
-    {
-      "key": "d_783554",
-      "title": "嘘だと言ってよ堀北さん！！片思い中の地味系女子は意外と男性経験豊富で全然地味じゃなかった話",
-      "rank_history": [
-        null,
-        95,
-        81,
-        76,
-        71,
-        63,
-        59,
-        59,
-        56,
-        55
+        96
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2067,7 +1987,6 @@
       "key": "d_703033",
       "title": "友達のママが僕のデカチンでイキまくった産後性活  総集編2",
       "rank_history": [
-        null,
         100,
         90,
         90,
@@ -2076,7 +1995,8 @@
         91,
         93,
         93,
-        96
+        96,
+        98
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2088,7 +2008,6 @@
       "title": "【早期購入特典付き】イイナリ ―裏配信― 〜生意気ギャルを洗脳アプリで命令どおりにして配信で稼ぐADV〜",
       "rank_history": [
         null,
-        null,
         84,
         83,
         79,
@@ -2096,7 +2015,8 @@
         71,
         67,
         64,
-        59
+        59,
+        61
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2108,7 +2028,6 @@
       "title": "通学痴●車両〜純情JK、淫欲に堕つ〜",
       "rank_history": [
         null,
-        null,
         93,
         92,
         88,
@@ -2116,7 +2035,48 @@
         84,
         81,
         78,
+        71,
         71
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_802808",
+      "title": "メギツネ",
+      "rank_history": [
+        null,
+        96,
+        97,
+        96,
+        97,
+        97,
+        98,
+        null,
+        null,
+        null
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_739696",
+      "title": "IF:ご近所様に種まきできる世界線の話 〜昔なじみ同級生の場合〜",
+      "rank_history": [
+        null,
+        98,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2128,7 +2088,6 @@
       "title": "10人の爆乳人妻訪問催●",
       "rank_history": [
         null,
-        null,
         99,
         95,
         93,
@@ -2136,7 +2095,8 @@
         86,
         83,
         82,
-        74
+        74,
+        75
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2148,7 +2108,6 @@
       "title": "【大型アプデ・アニメ対応！】ダンジョンなんて行かなければよかった Ver2.0.3",
       "rank_history": [
         null,
-        null,
         100,
         100,
         98,
@@ -2156,6 +2115,7 @@
         95,
         96,
         94,
+        92,
         92
       ],
       "top10_count": 0,
@@ -2169,18 +2129,18 @@
       "rank_history": [
         null,
         null,
-        null,
         31,
         15,
         8,
         7,
         6,
         6,
+        7,
         7
       ],
-      "top10_count": 5,
+      "top10_count": 6,
       "sample_count": 10,
-      "top10_rate": 50,
+      "top10_rate": 60,
       "analytics_status": "ACTIVE"
     },
     {
@@ -2190,13 +2150,13 @@
         null,
         null,
         null,
-        null,
         94,
         82,
         81,
         77,
         75,
-        68
+        68,
+        66
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2210,13 +2170,13 @@
         null,
         null,
         null,
-        null,
         100,
         93,
         92,
         92,
         91,
-        85
+        85,
+        86
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2231,12 +2191,12 @@
         null,
         null,
         null,
-        null,
         51,
         46,
         41,
         38,
-        28
+        28,
+        26
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2251,16 +2211,16 @@
         null,
         null,
         null,
-        null,
         68,
         19,
         9,
         7,
+        4,
         4
       ],
-      "top10_count": 3,
+      "top10_count": 4,
       "sample_count": 10,
-      "top10_rate": 30,
+      "top10_rate": 40,
       "analytics_status": "VOLATILE"
     },
     {
@@ -2272,16 +2232,16 @@
         null,
         null,
         null,
-        null,
         64,
         26,
         19,
+        10,
         10
       ],
-      "top10_count": 1,
+      "top10_count": 2,
       "sample_count": 10,
-      "top10_rate": 10,
-      "analytics_status": "SPIKE"
+      "top10_rate": 20,
+      "analytics_status": "VOLATILE"
     },
     {
       "key": "d_742827",
@@ -2292,11 +2252,11 @@
         null,
         null,
         null,
-        null,
         99,
         90,
         79,
-        61
+        61,
+        58
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2313,10 +2273,10 @@
         null,
         null,
         null,
-        null,
         100,
         99,
-        84
+        84,
+        82
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2334,9 +2294,9 @@
         null,
         null,
         null,
-        null,
         85,
-        48
+        48,
+        46
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2354,9 +2314,9 @@
         null,
         null,
         null,
-        null,
         98,
-        82
+        82,
+        77
       ],
       "top10_count": 0,
       "sample_count": 10,
@@ -2375,8 +2335,28 @@
         null,
         null,
         null,
+        53,
+        48
+      ],
+      "top10_count": 0,
+      "sample_count": 10,
+      "top10_rate": 0,
+      "analytics_status": "SPIKE"
+    },
+    {
+      "key": "d_812259",
+      "title": "◯徒に住所がバレたんだが終わったかもしれん",
+      "rank_history": [
         null,
-        53
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        39
       ],
       "top10_count": 0,
       "sample_count": 10,
