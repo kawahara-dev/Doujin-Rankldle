@@ -1,26 +1,26 @@
 {
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-17T06:11:06+09:00",
+  "generated_at": "2026-10-17T13:28:59+09:00",
   "data_status": "PARTIAL",
   "observed_days": 6,
   "expected_days": 6,
   "snapshot_counts": {
-    "api": 18
+    "api": 19
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 143,
+    "unique_products": 147,
     "top10_unique_products": 18,
-    "new_entries": 49,
-    "reentries": 8,
+    "new_entries": 52,
+    "reentries": 9,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 49
   },
   "price_analysis": {
-    "average_price": 1337,
+    "average_price": 1326,
     "median_price": 990,
     "top10_average_price": 1224,
     "top10_median_price": 990,
@@ -32,7 +32,7 @@
       },
       {
         "label": "500〜999円",
-        "count": 65,
+        "count": 69,
         "top10_count": 10
       },
       {
@@ -69,27 +69,27 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 117,
+      "observed_products": 121,
       "top10_products": 14
     },
     {
       "name": "巨乳",
-      "observed_products": 106,
+      "observed_products": 108,
       "top10_products": 12
     },
     {
       "name": "おっぱい",
-      "observed_products": 98,
+      "observed_products": 101,
       "top10_products": 12
     },
     {
       "name": "フェラ",
-      "observed_products": 82,
+      "observed_products": 84,
       "top10_products": 10
     },
     {
       "name": "パイズリ",
-      "observed_products": 51,
+      "observed_products": 52,
       "top10_products": 6
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 36,
+      "observed_products": 37,
       "top10_products": 4
     },
     {
@@ -114,38 +114,38 @@
     },
     {
       "name": "人妻・主婦",
-      "observed_products": 29,
+      "observed_products": 30,
       "top10_products": 2
     }
   ],
   "top_circles": [],
-  "new_release_products": 58,
+  "new_release_products": 61,
   "new_release_share": 41,
   "new_release_top10_products": 11,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 117,
+      "product_count": 121,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 106,
+      "product_count": 108,
       "median_price": 990
     },
     {
       "name": "おっぱい",
-      "product_count": 98,
+      "product_count": 101,
       "median_price": 990
     },
     {
       "name": "フェラ",
-      "product_count": 82,
+      "product_count": 84,
       "median_price": 990
     },
     {
       "name": "パイズリ",
-      "product_count": 51,
+      "product_count": 52,
       "median_price": 990
     },
     {
@@ -160,7 +160,7 @@
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 36,
+      "product_count": 37,
       "median_price": 990
     },
     {
@@ -170,23 +170,23 @@
     },
     {
       "name": "人妻・主婦",
-      "product_count": 29,
+      "product_count": 30,
       "median_price": 990
     }
   ],
   "metadata_coverage": {
-    "genre": 143,
-    "meaningful_genre": 143,
+    "genre": 147,
+    "meaningful_genre": 147,
     "circle": 0,
-    "release_date": 143,
-    "total_products": 143
+    "release_date": 147,
+    "total_products": 147
   },
   "ranking_behavior": {
     "top10_entry_events": 9,
-    "large_rise_5_plus": 150,
-    "large_rise_10_plus": 50,
-    "new_entry_events": 49,
-    "reentry_events": 8
+    "large_rise_5_plus": 159,
+    "large_rise_10_plus": 51,
+    "new_entry_events": 52,
+    "reentry_events": 9
   },
   "biggest_movers": [
     {
@@ -273,131 +273,131 @@
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+49でした。",
     "APIランキング上位で18作品を観測しました。",
-    "NEWを49件、REENTRYを8件観測しました。"
+    "NEWを52件、REENTRYを9件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +49\n🆕 NEW 49件\n🔄 REENTRY 8件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを49件、REENTRYを8件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +49\n🆕 NEW 52件\n🔄 REENTRY 9件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを52件、REENTRYを9件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_628142",
       "title": "無防備だった頃2 一線を越えたあの日から…ふたりの眩しくも危うい夏",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_710464",
       "title": "飯犯トラベラーズ 京都百合へし折り輪●快楽堕落編",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_787103",
       "title": "ヤらせてやるって言ってんの！2",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_823213",
       "title": "新人生〜陸上部女子編〜",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_814203",
       "title": "みんなが誰かと付き合えるまでの話",
       "top10_snapshots": 16,
-      "observation_rate": 89
+      "observation_rate": 84
     },
     {
       "id": "d_603636",
       "title": "こえだしちゃだめ",
-      "top10_snapshots": 14,
-      "observation_rate": 78
+      "top10_snapshots": 15,
+      "observation_rate": 79
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
-      "top10_snapshots": 10,
-      "observation_rate": 56
+      "top10_snapshots": 11,
+      "observation_rate": 58
     },
     {
       "id": "d_830408",
       "title": "ヤリ上がりアイランド！",
       "top10_snapshots": 10,
-      "observation_rate": 56
+      "observation_rate": 53
     },
     {
-      "id": "d_818978",
-      "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
-      "top10_snapshots": 8,
-      "observation_rate": 44
+      "id": "d_828591",
+      "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
+      "top10_snapshots": 9,
+      "observation_rate": 47
     }
   ],
   "top10_stays": [
     {
       "id": "d_628142",
       "title": "無防備だった頃2 一線を越えたあの日から…ふたりの眩しくも危うい夏",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_710464",
       "title": "飯犯トラベラーズ 京都百合へし折り輪●快楽堕落編",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_787103",
       "title": "ヤらせてやるって言ってんの！2",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_823213",
       "title": "新人生〜陸上部女子編〜",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 100
     },
     {
       "id": "d_814203",
       "title": "みんなが誰かと付き合えるまでの話",
       "top10_snapshots": 16,
-      "observation_rate": 89
+      "observation_rate": 84
     },
     {
       "id": "d_603636",
       "title": "こえだしちゃだめ",
-      "top10_snapshots": 14,
-      "observation_rate": 78
+      "top10_snapshots": 15,
+      "observation_rate": 79
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
-      "top10_snapshots": 10,
-      "observation_rate": 56
+      "top10_snapshots": 11,
+      "observation_rate": 58
     },
     {
       "id": "d_830408",
       "title": "ヤリ上がりアイランド！",
       "top10_snapshots": 10,
-      "observation_rate": 56
+      "observation_rate": 53
     },
     {
-      "id": "d_818978",
-      "title": "どうやら僕は「性欲があることが異常すぎて死ぬほど心配される世界線」にやってきたらしい",
-      "top10_snapshots": 8,
-      "observation_rate": 44
+      "id": "d_828591",
+      "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
+      "top10_snapshots": 9,
+      "observation_rate": 47
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
