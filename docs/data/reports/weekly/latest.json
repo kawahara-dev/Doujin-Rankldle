@@ -1,12 +1,12 @@
 {
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-22T06:44:17+09:00",
+  "generated_at": "2026-10-22T13:49:47+09:00",
   "data_status": "PARTIAL",
   "observed_days": 4,
   "expected_days": 4,
   "snapshot_counts": {
-    "api": 12
+    "api": 13
   },
   "ranking_source": "api",
   "market_overview": {
@@ -20,7 +20,7 @@
     "max_rank_rise_api": 38
   },
   "price_analysis": {
-    "average_price": 1341,
+    "average_price": 1355,
     "median_price": 990,
     "top10_average_price": 1590,
     "top10_median_price": 1023,
@@ -32,12 +32,12 @@
       },
       {
         "label": "500〜999円",
-        "count": 61,
+        "count": 58,
         "top10_count": 7
       },
       {
         "label": "1000〜1999円",
-        "count": 35,
+        "count": 38,
         "top10_count": 5
       },
       {
@@ -136,7 +136,7 @@
     {
       "name": "おっぱい",
       "product_count": 87,
-      "median_price": 924
+      "median_price": 968
     },
     {
       "name": "フェラ",
@@ -146,12 +146,12 @@
     {
       "name": "制服",
       "product_count": 45,
-      "median_price": 880
+      "median_price": 891
     },
     {
       "name": "パイズリ",
       "product_count": 42,
-      "median_price": 990
+      "median_price": 1072
     },
     {
       "name": "寝取り・寝取られ・NTR",
@@ -166,7 +166,7 @@
     {
       "name": "学園もの",
       "product_count": 31,
-      "median_price": 847
+      "median_price": 891
     },
     {
       "name": "辱め",
@@ -183,8 +183,8 @@
   },
   "ranking_behavior": {
     "top10_entry_events": 5,
-    "large_rise_5_plus": 93,
-    "large_rise_10_plus": 24,
+    "large_rise_5_plus": 97,
+    "large_rise_10_plus": 25,
     "new_entry_events": 33,
     "reentry_events": 3
   },
@@ -280,124 +280,124 @@
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_821574",
       "title": "【アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver1.4.0",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_828591",
       "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_834015",
       "title": "異世界ハーレム物語10",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_803160",
       "title": "ケツ穴カツアゲに夢中なギャルさんはイラムラアナニーが止まらない！",
-      "top10_snapshots": 9,
-      "observation_rate": 75
+      "top10_snapshots": 10,
+      "observation_rate": 77
+    },
+    {
+      "id": "d_833309",
+      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
+      "top10_snapshots": 8,
+      "observation_rate": 62
     },
     {
       "id": "d_787103",
       "title": "ヤらせてやるって言ってんの！2",
       "top10_snapshots": 7,
-      "observation_rate": 58
-    },
-    {
-      "id": "d_833309",
-      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 7,
-      "observation_rate": 58
+      "observation_rate": 54
     }
   ],
   "top10_stays": [
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_821574",
       "title": "【アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver1.4.0",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_828591",
       "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_834015",
       "title": "異世界ハーレム物語10",
-      "top10_snapshots": 12,
+      "top10_snapshots": 13,
       "observation_rate": 100
     },
     {
       "id": "d_803160",
       "title": "ケツ穴カツアゲに夢中なギャルさんはイラムラアナニーが止まらない！",
-      "top10_snapshots": 9,
-      "observation_rate": 75
+      "top10_snapshots": 10,
+      "observation_rate": 77
+    },
+    {
+      "id": "d_833309",
+      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
+      "top10_snapshots": 8,
+      "observation_rate": 62
     },
     {
       "id": "d_787103",
       "title": "ヤらせてやるって言ってんの！2",
       "top10_snapshots": 7,
-      "observation_rate": 58
-    },
-    {
-      "id": "d_833309",
-      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 7,
-      "observation_rate": 58
+      "observation_rate": 54
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
