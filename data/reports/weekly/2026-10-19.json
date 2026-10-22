@@ -1,43 +1,43 @@
 {
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-22T19:12:54+09:00",
+  "generated_at": "2026-10-23T02:59:19+09:00",
   "data_status": "PARTIAL",
-  "observed_days": 4,
-  "expected_days": 4,
+  "observed_days": 5,
+  "expected_days": 5,
   "snapshot_counts": {
-    "api": 14
+    "api": 15
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 134,
-    "top10_unique_products": 15,
-    "new_entries": 35,
-    "reentries": 3,
+    "unique_products": 138,
+    "top10_unique_products": 16,
+    "new_entries": 38,
+    "reentries": 4,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 38
   },
   "price_analysis": {
-    "average_price": 1346,
+    "average_price": 1328,
     "median_price": 990,
-    "top10_average_price": 1542,
+    "top10_average_price": 1508,
     "top10_median_price": 990,
     "price_buckets": [
       {
         "label": "〜499円",
-        "count": 15,
+        "count": 17,
         "top10_count": 0
       },
       {
         "label": "500〜999円",
-        "count": 60,
-        "top10_count": 8
+        "count": 61,
+        "top10_count": 9
       },
       {
         "label": "1000〜1999円",
-        "count": 38,
+        "count": 39,
         "top10_count": 5
       },
       {
@@ -69,124 +69,124 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 109,
-      "top10_products": 11
+      "observed_products": 112,
+      "top10_products": 12
     },
     {
       "name": "巨乳",
-      "observed_products": 104,
+      "observed_products": 108,
       "top10_products": 11
     },
     {
       "name": "おっぱい",
-      "observed_products": 88,
+      "observed_products": 90,
       "top10_products": 9
     },
     {
       "name": "フェラ",
-      "observed_products": 77,
-      "top10_products": 6
+      "observed_products": 80,
+      "top10_products": 7
     },
     {
       "name": "制服",
-      "observed_products": 45,
+      "observed_products": 46,
       "top10_products": 8
     },
     {
       "name": "パイズリ",
-      "observed_products": 44,
-      "top10_products": 4
+      "observed_products": 45,
+      "top10_products": 5
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 35,
+      "observed_products": 38,
       "top10_products": 4
     },
     {
       "name": "ぶっかけ",
-      "observed_products": 34,
+      "observed_products": 35,
       "top10_products": 2
     },
     {
       "name": "学園もの",
-      "observed_products": 31,
-      "top10_products": 4
+      "observed_products": 32,
+      "top10_products": 5
     },
     {
       "name": "辱め",
-      "observed_products": 28,
+      "observed_products": 29,
       "top10_products": 3
     }
   ],
   "top_circles": [],
-  "new_release_products": 54,
-  "new_release_share": 40,
-  "new_release_top10_products": 9,
+  "new_release_products": 57,
+  "new_release_share": 41,
+  "new_release_top10_products": 10,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 109,
+      "product_count": 112,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 104,
+      "product_count": 108,
       "median_price": 990
     },
     {
       "name": "おっぱい",
-      "product_count": 88,
-      "median_price": 952
+      "product_count": 90,
+      "median_price": 930
     },
     {
       "name": "フェラ",
-      "product_count": 77,
+      "product_count": 80,
       "median_price": 990
     },
     {
       "name": "制服",
-      "product_count": 45,
-      "median_price": 891
+      "product_count": 46,
+      "median_price": 908
     },
     {
       "name": "パイズリ",
-      "product_count": 44,
+      "product_count": 45,
       "median_price": 990
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 35,
+      "product_count": 38,
       "median_price": 990
     },
     {
       "name": "ぶっかけ",
-      "product_count": 34,
+      "product_count": 35,
       "median_price": 990
     },
     {
       "name": "学園もの",
-      "product_count": 31,
-      "median_price": 891
+      "product_count": 32,
+      "median_price": 886
     },
     {
       "name": "辱め",
-      "product_count": 28,
+      "product_count": 29,
       "median_price": 990
     }
   ],
   "metadata_coverage": {
-    "genre": 134,
-    "meaningful_genre": 134,
+    "genre": 138,
+    "meaningful_genre": 138,
     "circle": 0,
-    "release_date": 134,
-    "total_products": 134
+    "release_date": 138,
+    "total_products": 138
   },
   "ranking_behavior": {
-    "top10_entry_events": 6,
-    "large_rise_5_plus": 97,
-    "large_rise_10_plus": 25,
-    "new_entry_events": 35,
-    "reentry_events": 3
+    "top10_entry_events": 7,
+    "large_rise_5_plus": 109,
+    "large_rise_10_plus": 26,
+    "new_entry_events": 38,
+    "reentry_events": 4
   },
   "biggest_movers": [
     {
@@ -230,6 +230,14 @@
       "observed_at": "2026-10-21T02:59:45+09:00"
     },
     {
+      "id": "d_814437",
+      "title": "尻穴便女 壊  【総集編 過去作3本】",
+      "ranking_type": "api",
+      "rank_change": 15,
+      "current_rank": 42,
+      "observed_at": "2026-10-23T02:59:19+09:00"
+    },
+    {
       "id": "d_829129",
       "title": "Bunny Slave Complete Archive",
       "ranking_type": "api",
@@ -260,144 +268,136 @@
       "rank_change": 13,
       "current_rank": 72,
       "observed_at": "2026-10-19T01:33:13+09:00"
-    },
-    {
-      "id": "d_755814",
-      "title": "家出美少女〇〇を生オナホとして飼う話〜迷い猫の拾い方〜",
-      "ranking_type": "api",
-      "rank_change": 12,
-      "current_rank": 71,
-      "observed_at": "2026-10-19T13:42:42+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+38でした。",
-    "APIランキング上位で15作品を観測しました。",
-    "NEWを35件、REENTRYを3件観測しました。"
+    "APIランキング上位で16作品を観測しました。",
+    "NEWを38件、REENTRYを4件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +38\n🆕 NEW 35件\n🔄 REENTRY 3件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを35件、REENTRYを3件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +38\n🆕 NEW 38件\n🔄 REENTRY 4件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを38件、REENTRYを4件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_821574",
       "title": "【アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver1.4.0",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_828591",
       "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_834015",
       "title": "異世界ハーレム物語10",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
       "top10_snapshots": 13,
-      "observation_rate": 93
+      "observation_rate": 87
     },
     {
       "id": "d_803160",
       "title": "ケツ穴カツアゲに夢中なギャルさんはイラムラアナニーが止まらない！",
-      "top10_snapshots": 11,
-      "observation_rate": 79
+      "top10_snapshots": 12,
+      "observation_rate": 80
     },
     {
       "id": "d_833309",
       "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 9,
-      "observation_rate": 64
+      "top10_snapshots": 10,
+      "observation_rate": 67
     },
     {
       "id": "d_787103",
       "title": "ヤらせてやるって言ってんの！2",
       "top10_snapshots": 7,
-      "observation_rate": 50
+      "observation_rate": 47
     }
   ],
   "top10_stays": [
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_821574",
       "title": "【アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver1.4.0",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_828591",
       "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_834015",
       "title": "異世界ハーレム物語10",
-      "top10_snapshots": 14,
+      "top10_snapshots": 15,
       "observation_rate": 100
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
       "top10_snapshots": 13,
-      "observation_rate": 93
+      "observation_rate": 87
     },
     {
       "id": "d_803160",
       "title": "ケツ穴カツアゲに夢中なギャルさんはイラムラアナニーが止まらない！",
-      "top10_snapshots": 11,
-      "observation_rate": 79
+      "top10_snapshots": 12,
+      "observation_rate": 80
     },
     {
       "id": "d_833309",
       "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 9,
-      "observation_rate": 64
+      "top10_snapshots": 10,
+      "observation_rate": 67
     },
     {
       "id": "d_787103",
       "title": "ヤらせてやるって言ってんの！2",
       "top10_snapshots": 7,
-      "observation_rate": 50
+      "observation_rate": 47
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
