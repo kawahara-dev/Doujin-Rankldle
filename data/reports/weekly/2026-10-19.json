@@ -1,18 +1,18 @@
 {
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-24T06:25:46+09:00",
+  "generated_at": "2026-10-24T13:38:56+09:00",
   "data_status": "PARTIAL",
   "observed_days": 6,
   "expected_days": 6,
   "snapshot_counts": {
-    "api": 20
+    "api": 21
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 148,
-    "top10_unique_products": 18,
-    "new_entries": 46,
+    "unique_products": 149,
+    "top10_unique_products": 19,
+    "new_entries": 47,
     "reentries": 7,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
@@ -20,9 +20,9 @@
     "max_rank_rise_api": 44
   },
   "price_analysis": {
-    "average_price": 1320,
+    "average_price": 1316,
     "median_price": 990,
-    "top10_average_price": 1502,
+    "top10_average_price": 1487,
     "top10_median_price": 990,
     "price_buckets": [
       {
@@ -32,13 +32,13 @@
       },
       {
         "label": "500〜999円",
-        "count": 67,
+        "count": 68,
         "top10_count": 10
       },
       {
         "label": "1000〜1999円",
         "count": 41,
-        "top10_count": 6
+        "top10_count": 7
       },
       {
         "label": "2000〜2999円",
@@ -69,33 +69,33 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 121,
-      "top10_products": 13
+      "observed_products": 122,
+      "top10_products": 14
     },
     {
       "name": "巨乳",
-      "observed_products": 116,
-      "top10_products": 13
+      "observed_products": 117,
+      "top10_products": 14
     },
     {
       "name": "おっぱい",
       "observed_products": 96,
-      "top10_products": 9
+      "top10_products": 10
     },
     {
       "name": "フェラ",
-      "observed_products": 84,
-      "top10_products": 8
+      "observed_products": 85,
+      "top10_products": 9
+    },
+    {
+      "name": "パイズリ",
+      "observed_products": 48,
+      "top10_products": 5
     },
     {
       "name": "制服",
       "observed_products": 48,
       "top10_products": 8
-    },
-    {
-      "name": "パイズリ",
-      "observed_products": 47,
-      "top10_products": 5
     },
     {
       "name": "寝取り・寝取られ・NTR",
@@ -119,18 +119,18 @@
     }
   ],
   "top_circles": [],
-  "new_release_products": 62,
+  "new_release_products": 63,
   "new_release_share": 42,
-  "new_release_top10_products": 12,
+  "new_release_top10_products": 13,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 121,
+      "product_count": 122,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 116,
+      "product_count": 117,
       "median_price": 990
     },
     {
@@ -140,18 +140,18 @@
     },
     {
       "name": "フェラ",
-      "product_count": 84,
+      "product_count": 85,
+      "median_price": 990
+    },
+    {
+      "name": "パイズリ",
+      "product_count": 48,
       "median_price": 990
     },
     {
       "name": "制服",
       "product_count": 48,
       "median_price": 908
-    },
-    {
-      "name": "パイズリ",
-      "product_count": 47,
-      "median_price": 990
     },
     {
       "name": "寝取り・寝取られ・NTR",
@@ -175,17 +175,17 @@
     }
   ],
   "metadata_coverage": {
-    "genre": 148,
-    "meaningful_genre": 148,
+    "genre": 149,
+    "meaningful_genre": 149,
     "circle": 0,
-    "release_date": 148,
-    "total_products": 148
+    "release_date": 149,
+    "total_products": 149
   },
   "ranking_behavior": {
-    "top10_entry_events": 11,
-    "large_rise_5_plus": 132,
-    "large_rise_10_plus": 32,
-    "new_entry_events": 46,
+    "top10_entry_events": 12,
+    "large_rise_5_plus": 139,
+    "large_rise_10_plus": 34,
+    "new_entry_events": 47,
     "reentry_events": 7
   },
   "biggest_movers": [
@@ -272,132 +272,132 @@
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+44でした。",
-    "APIランキング上位で18作品を観測しました。",
-    "NEWを46件、REENTRYを7件観測しました。"
+    "APIランキング上位で19作品を観測しました。",
+    "NEWを47件、REENTRYを7件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +44\n🆕 NEW 46件\n🔄 REENTRY 7件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを46件、REENTRYを7件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +44\n🆕 NEW 47件\n🔄 REENTRY 7件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを47件、REENTRYを7件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_821574",
       "title": "【アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver1.4.0",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_828591",
       "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_803160",
       "title": "ケツ穴カツアゲに夢中なギャルさんはイラムラアナニーが止まらない！",
-      "top10_snapshots": 17,
-      "observation_rate": 85
+      "top10_snapshots": 18,
+      "observation_rate": 86
     },
     {
       "id": "d_833309",
       "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 15,
-      "observation_rate": 75
+      "top10_snapshots": 16,
+      "observation_rate": 76
     },
     {
       "id": "d_834015",
       "title": "異世界ハーレム物語10",
       "top10_snapshots": 15,
-      "observation_rate": 75
+      "observation_rate": 71
+    },
+    {
+      "id": "d_819250",
+      "title": "ズブ濡れギャル膣洗濯槽を白濁マン汁洗剤と肉棒でランドリーされちゃう話",
+      "top10_snapshots": 13,
+      "observation_rate": 62
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
       "top10_snapshots": 13,
-      "observation_rate": 65
-    },
-    {
-      "id": "d_819250",
-      "title": "ズブ濡れギャル膣洗濯槽を白濁マン汁洗剤と肉棒でランドリーされちゃう話",
-      "top10_snapshots": 12,
-      "observation_rate": 60
+      "observation_rate": 62
     }
   ],
   "top10_stays": [
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_821574",
       "title": "【アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver1.4.0",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_828591",
       "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
-      "top10_snapshots": 20,
+      "top10_snapshots": 21,
       "observation_rate": 100
     },
     {
       "id": "d_803160",
       "title": "ケツ穴カツアゲに夢中なギャルさんはイラムラアナニーが止まらない！",
-      "top10_snapshots": 17,
-      "observation_rate": 85
+      "top10_snapshots": 18,
+      "observation_rate": 86
     },
     {
       "id": "d_833309",
       "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 15,
-      "observation_rate": 75
+      "top10_snapshots": 16,
+      "observation_rate": 76
     },
     {
       "id": "d_834015",
       "title": "異世界ハーレム物語10",
       "top10_snapshots": 15,
-      "observation_rate": 75
+      "observation_rate": 71
+    },
+    {
+      "id": "d_819250",
+      "title": "ズブ濡れギャル膣洗濯槽を白濁マン汁洗剤と肉棒でランドリーされちゃう話",
+      "top10_snapshots": 13,
+      "observation_rate": 62
     },
     {
       "id": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
       "top10_snapshots": 13,
-      "observation_rate": 65
-    },
-    {
-      "id": "d_819250",
-      "title": "ズブ濡れギャル膣洗濯槽を白濁マン汁洗剤と肉棒でランドリーされちゃう話",
-      "top10_snapshots": 12,
-      "observation_rate": 60
+      "observation_rate": 62
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
