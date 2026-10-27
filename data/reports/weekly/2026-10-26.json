@@ -1,29 +1,29 @@
 {
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-27T04:20:45+09:00",
+  "generated_at": "2026-10-27T14:08:21+09:00",
   "data_status": "PARTIAL",
   "observed_days": 2,
   "expected_days": 2,
   "snapshot_counts": {
-    "api": 5
+    "api": 6
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 108,
-    "top10_unique_products": 11,
-    "new_entries": 11,
-    "reentries": 1,
+    "unique_products": 111,
+    "top10_unique_products": 12,
+    "new_entries": 13,
+    "reentries": 2,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 33
   },
   "price_analysis": {
-    "average_price": 1396,
+    "average_price": 1412,
     "median_price": 990,
-    "top10_average_price": 1647,
-    "top10_median_price": 1400,
+    "top10_average_price": 1592,
+    "top10_median_price": 1305,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -32,8 +32,8 @@
       },
       {
         "label": "500〜999円",
-        "count": 44,
-        "top10_count": 4
+        "count": 45,
+        "top10_count": 5
       },
       {
         "label": "1000〜1999円",
@@ -42,7 +42,7 @@
       },
       {
         "label": "2000〜2999円",
-        "count": 11,
+        "count": 13,
         "top10_count": 0
       },
       {
@@ -69,22 +69,22 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 89,
-      "top10_products": 8
-    },
-    {
-      "name": "巨乳",
-      "observed_products": 86,
+      "observed_products": 92,
       "top10_products": 9
     },
     {
+      "name": "巨乳",
+      "observed_products": 88,
+      "top10_products": 10
+    },
+    {
       "name": "フェラ",
-      "observed_products": 66,
+      "observed_products": 68,
       "top10_products": 4
     },
     {
       "name": "おっぱい",
-      "observed_products": 60,
+      "observed_products": 62,
       "top10_products": 4
     },
     {
@@ -94,13 +94,13 @@
     },
     {
       "name": "制服",
-      "observed_products": 37,
-      "top10_products": 5
+      "observed_products": 38,
+      "top10_products": 6
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 32,
-      "top10_products": 2
+      "observed_products": 33,
+      "top10_products": 3
     },
     {
       "name": "ぶっかけ",
@@ -108,39 +108,39 @@
       "top10_products": 2
     },
     {
-      "name": "学園もの",
+      "name": "人妻・主婦",
       "observed_products": 24,
-      "top10_products": 2
+      "top10_products": 3
     },
     {
-      "name": "人妻・主婦",
-      "observed_products": 23,
+      "name": "学園もの",
+      "observed_products": 24,
       "top10_products": 2
     }
   ],
   "top_circles": [],
-  "new_release_products": 33,
-  "new_release_share": 31,
-  "new_release_top10_products": 4,
+  "new_release_products": 35,
+  "new_release_share": 32,
+  "new_release_top10_products": 5,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 89,
+      "product_count": 92,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 86,
+      "product_count": 88,
       "median_price": 990
     },
     {
       "name": "フェラ",
-      "product_count": 66,
+      "product_count": 68,
       "median_price": 990
     },
     {
       "name": "おっぱい",
-      "product_count": 60,
+      "product_count": 62,
       "median_price": 990
     },
     {
@@ -150,12 +150,12 @@
     },
     {
       "name": "制服",
-      "product_count": 37,
+      "product_count": 38,
       "median_price": 990
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 32,
+      "product_count": 33,
       "median_price": 990
     },
     {
@@ -164,29 +164,29 @@
       "median_price": 1072
     },
     {
-      "name": "学園もの",
+      "name": "人妻・主婦",
       "product_count": 24,
       "median_price": 990
     },
     {
-      "name": "人妻・主婦",
-      "product_count": 23,
+      "name": "学園もの",
+      "product_count": 24,
       "median_price": 990
     }
   ],
   "metadata_coverage": {
-    "genre": 108,
-    "meaningful_genre": 108,
+    "genre": 111,
+    "meaningful_genre": 111,
     "circle": 0,
-    "release_date": 108,
-    "total_products": 108
+    "release_date": 111,
+    "total_products": 111
   },
   "ranking_behavior": {
-    "top10_entry_events": 2,
-    "large_rise_5_plus": 51,
+    "top10_entry_events": 3,
+    "large_rise_5_plus": 54,
     "large_rise_10_plus": 7,
-    "new_entry_events": 11,
-    "reentry_events": 1
+    "new_entry_events": 13,
+    "reentry_events": 2
   },
   "biggest_movers": [
     {
@@ -272,132 +272,132 @@
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+33でした。",
-    "APIランキング上位で11作品を観測しました。",
-    "NEWを11件、REENTRYを1件観測しました。"
+    "APIランキング上位で12作品を観測しました。",
+    "NEWを13件、REENTRYを2件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +33\n🆕 NEW 11件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを11件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +33\n🆕 NEW 13件\n🔄 REENTRY 2件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを13件、REENTRYを2件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_795389",
       "title": "私のアナルは弱くないっ！！2  〜女騎士様がふたたびアナルゼリーに屈するまで…〜",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_796059",
       "title": "今泉ん家はどうやらギャルの溜まり場になってるらしい8",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_821574",
       "title": "【アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver1.4.0",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_825560",
       "title": "武田弘光のSS＋ラクガキまとめ本",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_827757",
       "title": "ママさんバレーなのにママじゃないからママにしてっ！！",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_828591",
       "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_833309",
       "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
       "top10_snapshots": 3,
-      "observation_rate": 60
+      "observation_rate": 50
     }
   ],
   "top10_stays": [
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_795389",
       "title": "私のアナルは弱くないっ！！2  〜女騎士様がふたたびアナルゼリーに屈するまで…〜",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_796059",
       "title": "今泉ん家はどうやらギャルの溜まり場になってるらしい8",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_821574",
       "title": "【アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver1.4.0",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_825560",
       "title": "武田弘光のSS＋ラクガキまとめ本",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_827757",
       "title": "ママさんバレーなのにママじゃないからママにしてっ！！",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_828591",
       "title": "ヤリステナイメスブター  世界を救った後の  ボクの日常『性』活",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_833309",
       "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 5,
+      "top10_snapshots": 6,
       "observation_rate": 100
     },
     {
       "id": "d_815699",
       "title": "転校先の学校で女子生徒の性欲を解消する係になった話。",
       "top10_snapshots": 3,
-      "observation_rate": 60
+      "observation_rate": 50
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
