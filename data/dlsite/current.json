@@ -2,7 +2,7 @@
   "source": "dlsite",
   "ranking_type": "public_ranking",
   "category": "maniax",
-  "fetched_at": "2026-10-28T22:31:03+09:00",
+  "fetched_at": "2026-10-29T07:50:54+09:00",
   "items": [
     {
       "rank": 1,
@@ -19,7 +19,7 @@
       "product_id": "RJ01192934",
       "title": "ようこそ!潮吹きエステへ",
       "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01192934.html",
-      "price": 2079,
+      "price": 2970,
       "previous_rank": 2,
       "rank_change": 0,
       "status": "stay"
@@ -30,9 +30,9 @@
       "title": "理性の帆が裂けるとき",
       "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01751584.html",
       "price": 2079,
-      "previous_rank": 9,
-      "rank_change": 6,
-      "status": "up"
+      "previous_rank": 3,
+      "rank_change": 0,
+      "status": "stay"
     },
     {
       "rank": 4,
@@ -40,68 +40,68 @@
       "title": "【12時間の癒し】夢見ぐらし。～コンプリートセット～",
       "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01687946.html",
       "price": 8800,
-      "previous_rank": 3,
-      "rank_change": -1,
-      "status": "down"
+      "previous_rank": 4,
+      "rank_change": 0,
+      "status": "stay"
     },
     {
       "rank": 5,
+      "product_id": "RJ01722990",
+      "title": "ふれあいミイちゃん【おさわりゲーム/リアルタイムアニメーション】",
+      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01722990.html",
+      "price": 1650,
+      "previous_rank": 6,
+      "rank_change": 1,
+      "status": "up"
+    },
+    {
+      "rank": 6,
       "product_id": "RJ416750",
       "title": "新・ねこぐらし。〜コンプリートセット〜",
       "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ416750.html",
       "price": 11000,
       "previous_rank": 5,
-      "rank_change": 0,
-      "status": "stay"
-    },
-    {
-      "rank": 6,
-      "product_id": "RJ01722990",
-      "title": "ふれあいミイちゃん【おさわりゲーム/リアルタイムアニメーション】",
-      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01722990.html",
-      "price": 990,
-      "previous_rank": 14,
-      "rank_change": 8,
-      "status": "up"
-    },
-    {
-      "rank": 7,
-      "product_id": "RJ332920",
-      "title": "ねこぐらし。3〜コンプリートセット〜",
-      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ332920.html",
-      "price": 11000,
-      "previous_rank": 4,
-      "rank_change": -3,
-      "status": "down"
-    },
-    {
-      "rank": 8,
-      "product_id": "RJ01404735",
-      "title": "ねこぐらし。第壱回おもてなしロワイヤル ～コンプリートセット～",
-      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01404735.html",
-      "price": 11000,
-      "previous_rank": 7,
       "rank_change": -1,
       "status": "down"
     },
     {
-      "rank": 9,
+      "rank": 7,
       "product_id": "RJ01531623",
       "title": "【22時間】いえカノ コンプリートパック",
       "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01531623.html",
       "price": 11000,
-      "previous_rank": 8,
-      "rank_change": -1,
+      "previous_rank": 9,
+      "rank_change": 2,
+      "status": "up"
+    },
+    {
+      "rank": 8,
+      "product_id": "RJ01175290",
+      "title": "存在感薄い妹との簡単生活",
+      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01175290.html",
+      "price": 2046,
+      "previous_rank": 14,
+      "rank_change": 6,
+      "status": "up"
+    },
+    {
+      "rank": 9,
+      "product_id": "RJ332920",
+      "title": "ねこぐらし。3〜コンプリートセット〜",
+      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ332920.html",
+      "price": 11000,
+      "previous_rank": 7,
+      "rank_change": -2,
       "status": "down"
     },
     {
       "rank": 10,
-      "product_id": "RJ315642",
-      "title": "ねこぐらし。2〜コンプリートセット〜",
-      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ315642.html",
+      "product_id": "RJ01404735",
+      "title": "ねこぐらし。第壱回おもてなしロワイヤル ～コンプリートセット～",
+      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01404735.html",
       "price": 11000,
-      "previous_rank": 6,
-      "rank_change": -4,
+      "previous_rank": 8,
+      "rank_change": -2,
       "status": "down"
     },
     {
@@ -116,9 +116,9 @@
     },
     {
       "rank": 12,
-      "product_id": "RJ300607",
-      "title": "ねこぐらし。〜コンプリートセット〜",
-      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ300607.html",
+      "product_id": "RJ315642",
+      "title": "ねこぐらし。2〜コンプリートセット〜",
+      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ315642.html",
       "price": 11000,
       "previous_rank": 10,
       "rank_change": -2,
@@ -126,30 +126,30 @@
     },
     {
       "rank": 13,
-      "product_id": "RJ310954",
-      "title": "【58時間の癒し】蓄音レヱル コンプリートセット",
-      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ310954.html",
-      "price": 11000,
-      "previous_rank": 12,
-      "rank_change": -1,
-      "status": "down"
-    },
-    {
-      "rank": 14,
-      "product_id": "RJ01175290",
-      "title": "存在感薄い妹との簡単生活",
-      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01175290.html",
-      "price": 2046,
-      "previous_rank": 16,
-      "rank_change": 2,
-      "status": "up"
-    },
-    {
-      "rank": 15,
       "product_id": "RJ01485652",
       "title": "終末のオルターエゴイズム",
       "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01485652.html",
       "price": 5148,
+      "previous_rank": 15,
+      "rank_change": 2,
+      "status": "up"
+    },
+    {
+      "rank": 14,
+      "product_id": "RJ300607",
+      "title": "ねこぐらし。〜コンプリートセット〜",
+      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ300607.html",
+      "price": 11000,
+      "previous_rank": 12,
+      "rank_change": -2,
+      "status": "down"
+    },
+    {
+      "rank": 15,
+      "product_id": "RJ310954",
+      "title": "【58時間の癒し】蓄音レヱル コンプリートセット",
+      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ310954.html",
+      "price": 11000,
       "previous_rank": 13,
       "rank_change": -2,
       "status": "down"
@@ -160,29 +160,29 @@
       "title": "『ゼロ距離ガール』5作品パック【Season02】",
       "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01515566.html",
       "price": 7700,
-      "previous_rank": 17,
-      "rank_change": 1,
-      "status": "up"
+      "previous_rank": 16,
+      "rank_change": 0,
+      "status": "stay"
     },
     {
       "rank": 17,
-      "product_id": "RJ01715118",
-      "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
-      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01715118.html",
-      "price": 2860,
-      "previous_rank": 20,
-      "rank_change": 3,
-      "status": "up"
-    },
-    {
-      "rank": 18,
       "product_id": "RJ01676747",
       "title": "【KU100】トリプルビキニボディJDパラダイス! 女友達JD3人と無人島デート&ビーチビキニ野外ハーレム4P♪",
       "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01676747.html",
       "price": 1870,
       "previous_rank": 18,
-      "rank_change": 0,
-      "status": "stay"
+      "rank_change": 1,
+      "status": "up"
+    },
+    {
+      "rank": 18,
+      "product_id": "RJ01715118",
+      "title": "オタク友達とのセックスは最高に気持ちいい 総集編I",
+      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01715118.html",
+      "price": 2860,
+      "previous_rank": 17,
+      "rank_change": -1,
+      "status": "down"
     },
     {
       "rank": 19,
@@ -190,16 +190,16 @@
       "title": "ガールズクラブ",
       "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01660877.html",
       "price": 2673,
-      "previous_rank": 15,
-      "rank_change": -4,
-      "status": "down"
+      "previous_rank": 19,
+      "rank_change": 0,
+      "status": "stay"
     },
     {
       "rank": 20,
-      "product_id": "RJ01660384",
-      "title": "抱き枕カノジョ-Melty Heart-～ぎゅ～っと密着しながら添い寝エッチしてくれるゆる甘後輩ちゃん～",
-      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01660384.html",
-      "price": 1188,
+      "product_id": "RJ01724797",
+      "title": "見習いサキュバス リリア〜人間界搾精日誌〜",
+      "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ01724797.html",
+      "price": 2640,
       "previous_rank": null,
       "rank_change": null,
       "status": "reentry"
