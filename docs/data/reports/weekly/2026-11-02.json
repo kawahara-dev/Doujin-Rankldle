@@ -1,29 +1,29 @@
 {
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-02T03:25:56+09:00",
+  "generated_at": "2026-11-02T15:07:39+09:00",
   "data_status": "PARTIAL",
   "observed_days": 1,
   "expected_days": 1,
   "snapshot_counts": {
-    "api": 1
+    "api": 2
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 100,
-    "top10_unique_products": 10,
-    "new_entries": 6,
-    "reentries": 0,
+    "unique_products": 104,
+    "top10_unique_products": 11,
+    "new_entries": 9,
+    "reentries": 1,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 40
   },
   "price_analysis": {
-    "average_price": 1535,
+    "average_price": 1510,
     "median_price": 990,
-    "top10_average_price": 1974,
-    "top10_median_price": 1705,
+    "top10_average_price": 1905,
+    "top10_median_price": 1540,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -32,13 +32,13 @@
       },
       {
         "label": "500〜999円",
-        "count": 48,
+        "count": 52,
         "top10_count": 2
       },
       {
         "label": "1000〜1999円",
         "count": 31,
-        "top10_count": 6
+        "top10_count": 7
       },
       {
         "label": "2000〜2999円",
@@ -69,27 +69,27 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 82,
+      "observed_products": 85,
       "top10_products": 7
     },
     {
       "name": "巨乳",
-      "observed_products": 75,
+      "observed_products": 77,
       "top10_products": 8
     },
     {
       "name": "フェラ",
-      "observed_products": 65,
-      "top10_products": 7
+      "observed_products": 68,
+      "top10_products": 8
     },
     {
       "name": "おっぱい",
-      "observed_products": 62,
+      "observed_products": 65,
       "top10_products": 5
     },
     {
       "name": "パイズリ",
-      "observed_products": 39,
+      "observed_products": 41,
       "top10_products": 5
     },
     {
@@ -105,47 +105,47 @@
     {
       "name": "ぶっかけ",
       "observed_products": 26,
-      "top10_products": 3
+      "top10_products": 4
+    },
+    {
+      "name": "学園もの",
+      "observed_products": 23,
+      "top10_products": 2
     },
     {
       "name": "人妻・主婦",
       "observed_products": 22,
       "top10_products": 3
-    },
-    {
-      "name": "学園もの",
-      "observed_products": 22,
-      "top10_products": 2
     }
   ],
   "top_circles": [],
-  "new_release_products": 32,
+  "new_release_products": 33,
   "new_release_share": 32,
-  "new_release_top10_products": 4,
+  "new_release_top10_products": 5,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 82,
+      "product_count": 85,
       "median_price": 990
     },
     {
       "name": "巨乳",
-      "product_count": 75,
+      "product_count": 77,
       "median_price": 990
     },
     {
       "name": "フェラ",
-      "product_count": 65,
+      "product_count": 68,
       "median_price": 990
     },
     {
       "name": "おっぱい",
-      "product_count": 62,
+      "product_count": 65,
       "median_price": 990
     },
     {
       "name": "パイズリ",
-      "product_count": 39,
+      "product_count": 41,
       "median_price": 990
     },
     {
@@ -164,29 +164,29 @@
       "median_price": 1072
     },
     {
-      "name": "人妻・主婦",
-      "product_count": 22,
+      "name": "学園もの",
+      "product_count": 23,
       "median_price": 990
     },
     {
-      "name": "学園もの",
+      "name": "人妻・主婦",
       "product_count": 22,
       "median_price": 990
     }
   ],
   "metadata_coverage": {
-    "genre": 100,
-    "meaningful_genre": 100,
+    "genre": 104,
+    "meaningful_genre": 104,
     "circle": 0,
-    "release_date": 100,
-    "total_products": 100
+    "release_date": 104,
+    "total_products": 104
   },
   "ranking_behavior": {
-    "top10_entry_events": 1,
-    "large_rise_5_plus": 22,
-    "large_rise_10_plus": 9,
-    "new_entry_events": 6,
-    "reentry_events": 0
+    "top10_entry_events": 2,
+    "large_rise_5_plus": 41,
+    "large_rise_10_plus": 14,
+    "new_entry_events": 9,
+    "reentry_events": 1
   },
   "biggest_movers": [
     {
@@ -212,6 +212,22 @@
       "rank_change": 28,
       "current_rank": 63,
       "observed_at": "2026-11-02T03:25:56+09:00"
+    },
+    {
+      "id": "d_840812",
+      "title": "放課後奉仕部（仮）〜なんでも出来ちゃう天才ギャル〜",
+      "ranking_type": "api",
+      "rank_change": 20,
+      "current_rank": 67,
+      "observed_at": "2026-11-02T15:07:39+09:00"
+    },
+    {
+      "id": "d_738103",
+      "title": "家出娘、拾いました。",
+      "ranking_type": "api",
+      "rank_change": 17,
+      "current_rank": 71,
+      "observed_at": "2026-11-02T15:07:39+09:00"
     },
     {
       "id": "d_597172",
@@ -252,152 +268,136 @@
       "rank_change": 10,
       "current_rank": 44,
       "observed_at": "2026-11-02T03:25:56+09:00"
-    },
-    {
-      "id": "d_771042",
-      "title": "アイブゲーム3",
-      "ranking_type": "api",
-      "rank_change": 10,
-      "current_rank": 75,
-      "observed_at": "2026-11-02T03:25:56+09:00"
-    },
-    {
-      "id": "d_811449",
-      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について【早期購入＆レビュー特典あり】",
-      "ranking_type": "api",
-      "rank_change": 9,
-      "current_rank": 27,
-      "observed_at": "2026-11-02T03:25:56+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+40でした。",
-    "APIランキング上位で10作品を観測しました。",
-    "NEWを6件、REENTRYを0件観測しました。"
+    "APIランキング上位で11作品を観測しました。",
+    "NEWを9件、REENTRYを1件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +40\n🆕 NEW 6件\n🔄 REENTRY 0件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを6件、REENTRYを0件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +40\n🆕 NEW 9件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥990\n\nNEWを9件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_712596",
       "title": "ヤリサーエロコスハロウィンに男は僕一人",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_796059",
       "title": "今泉ん家はどうやらギャルの溜まり場になってるらしい8",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_821574",
+      "title": "【大型アプデ実施！アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver2.0.0",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_825560",
+      "title": "武田弘光のSS＋ラクガキまとめ本",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_826288",
+      "title": "Trop 2 〜内定祝いは人妻のはじめてアナル〜",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_833309",
+      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_835463",
+      "title": "100日後に妊娠するOLさん！2",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_837399",
+      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について2【早期購入＆レビュー特典あり】",
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
       "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_821574",
-      "title": "【大型アプデ実施！アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver2.0.0",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_825560",
-      "title": "武田弘光のSS＋ラクガキまとめ本",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_826288",
-      "title": "Trop 2 〜内定祝いは人妻のはじめてアナル〜",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_833309",
-      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_835463",
-      "title": "100日後に妊娠するOLさん！2",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_837399",
-      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について2【早期購入＆レビュー特典あり】",
-      "top10_snapshots": 1,
-      "observation_rate": 100
+      "observation_rate": 50
     }
   ],
   "top10_stays": [
     {
       "id": "d_461871",
       "title": "にぎりうさぎ総集編",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_712596",
       "title": "ヤリサーエロコスハロウィンに男は僕一人",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_796059",
       "title": "今泉ん家はどうやらギャルの溜まり場になってるらしい8",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_821574",
+      "title": "【大型アプデ実施！アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver2.0.0",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_825560",
+      "title": "武田弘光のSS＋ラクガキまとめ本",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_826288",
+      "title": "Trop 2 〜内定祝いは人妻のはじめてアナル〜",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_833309",
+      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_835463",
+      "title": "100日後に妊娠するOLさん！2",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_837399",
+      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について2【早期購入＆レビュー特典あり】",
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_812259",
       "title": "◯徒に住所がバレたんだが終わったかもしれん",
       "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_821574",
-      "title": "【大型アプデ実施！アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver2.0.0",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_825560",
-      "title": "武田弘光のSS＋ラクガキまとめ本",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_826288",
-      "title": "Trop 2 〜内定祝いは人妻のはじめてアナル〜",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_833309",
-      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_835463",
-      "title": "100日後に妊娠するOLさん！2",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_837399",
-      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について2【早期購入＆レビュー特典あり】",
-      "top10_snapshots": 1,
-      "observation_rate": 100
+      "observation_rate": 50
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
