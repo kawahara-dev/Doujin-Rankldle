@@ -1,29 +1,29 @@
 {
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
-  "generated_at": "2026-11-09T03:21:55+09:00",
+  "generated_at": "2026-11-09T15:33:30+09:00",
   "data_status": "PARTIAL",
   "observed_days": 1,
   "expected_days": 1,
   "snapshot_counts": {
-    "api": 1
+    "api": 2
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 100,
-    "top10_unique_products": 10,
-    "new_entries": 8,
-    "reentries": 1,
+    "unique_products": 103,
+    "top10_unique_products": 12,
+    "new_entries": 10,
+    "reentries": 2,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
     "max_rank_rise_api": 30
   },
   "price_analysis": {
-    "average_price": 1451,
-    "median_price": 1072,
-    "top10_average_price": 1803,
-    "top10_median_price": 1150,
+    "average_price": 1450,
+    "median_price": 1089,
+    "top10_average_price": 1787,
+    "top10_median_price": 1320,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -32,17 +32,17 @@
       },
       {
         "label": "500〜999円",
-        "count": 43,
+        "count": 44,
         "top10_count": 4
       },
       {
         "label": "1000〜1999円",
-        "count": 36,
-        "top10_count": 3
+        "count": 37,
+        "top10_count": 5
       },
       {
         "label": "2000〜2999円",
-        "count": 10,
+        "count": 11,
         "top10_count": 1
       },
       {
@@ -69,43 +69,43 @@
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 79,
-      "top10_products": 7
-    },
-    {
-      "name": "巨乳",
-      "observed_products": 74,
-      "top10_products": 7
-    },
-    {
-      "name": "おっぱい",
-      "observed_products": 60,
+      "observed_products": 81,
       "top10_products": 9
     },
     {
+      "name": "巨乳",
+      "observed_products": 76,
+      "top10_products": 9
+    },
+    {
+      "name": "おっぱい",
+      "observed_products": 61,
+      "top10_products": 10
+    },
+    {
       "name": "フェラ",
-      "observed_products": 56,
-      "top10_products": 7
+      "observed_products": 58,
+      "top10_products": 8
+    },
+    {
+      "name": "制服",
+      "observed_products": 32,
+      "top10_products": 2
     },
     {
       "name": "パイズリ",
       "observed_products": 31,
-      "top10_products": 3
-    },
-    {
-      "name": "制服",
-      "observed_products": 31,
-      "top10_products": 2
+      "top10_products": 4
     },
     {
       "name": "寝取り・寝取られ・NTR",
-      "observed_products": 28,
-      "top10_products": 2
+      "observed_products": 30,
+      "top10_products": 3
     },
     {
       "name": "人妻・主婦",
-      "observed_products": 24,
-      "top10_products": 4
+      "observed_products": 25,
+      "top10_products": 5
     },
     {
       "name": "ぶっかけ",
@@ -119,29 +119,34 @@
     }
   ],
   "top_circles": [],
-  "new_release_products": 28,
-  "new_release_share": 28,
-  "new_release_top10_products": 4,
+  "new_release_products": 30,
+  "new_release_share": 29,
+  "new_release_top10_products": 5,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 79,
-      "median_price": 1056
+      "product_count": 81,
+      "median_price": 1089
     },
     {
       "name": "巨乳",
-      "product_count": 74,
-      "median_price": 1023
+      "product_count": 76,
+      "median_price": 1056
     },
     {
       "name": "おっぱい",
-      "product_count": 60,
+      "product_count": 61,
       "median_price": 990
     },
     {
       "name": "フェラ",
-      "product_count": 56,
+      "product_count": 58,
       "median_price": 990
+    },
+    {
+      "name": "制服",
+      "product_count": 32,
+      "median_price": 1072
     },
     {
       "name": "パイズリ",
@@ -149,18 +154,13 @@
       "median_price": 1155
     },
     {
-      "name": "制服",
-      "product_count": 31,
-      "median_price": 990
-    },
-    {
       "name": "寝取り・寝取られ・NTR",
-      "product_count": 28,
-      "median_price": 990
+      "product_count": 30,
+      "median_price": 1023
     },
     {
       "name": "人妻・主婦",
-      "product_count": 24,
+      "product_count": 25,
       "median_price": 990
     },
     {
@@ -175,18 +175,18 @@
     }
   ],
   "metadata_coverage": {
-    "genre": 100,
-    "meaningful_genre": 100,
+    "genre": 103,
+    "meaningful_genre": 103,
     "circle": 0,
-    "release_date": 100,
-    "total_products": 100
+    "release_date": 103,
+    "total_products": 103
   },
   "ranking_behavior": {
-    "top10_entry_events": 1,
-    "large_rise_5_plus": 14,
-    "large_rise_10_plus": 7,
-    "new_entry_events": 8,
-    "reentry_events": 1
+    "top10_entry_events": 3,
+    "large_rise_5_plus": 27,
+    "large_rise_10_plus": 12,
+    "new_entry_events": 10,
+    "reentry_events": 2
   },
   "biggest_movers": [
     {
@@ -222,6 +222,30 @@
       "observed_at": "2026-11-09T03:21:55+09:00"
     },
     {
+      "id": "d_845337",
+      "title": "コスプレアイランド 〜童貞カメラマンと6人のレイヤー、30着の撮影合宿〜",
+      "ranking_type": "api",
+      "rank_change": 15,
+      "current_rank": 80,
+      "observed_at": "2026-11-09T15:33:30+09:00"
+    },
+    {
+      "id": "d_472626",
+      "title": "完全同意型性風俗SS株式会社",
+      "ranking_type": "api",
+      "rank_change": 13,
+      "current_rank": 71,
+      "observed_at": "2026-11-09T15:33:30+09:00"
+    },
+    {
+      "id": "d_839446",
+      "title": "5人部屋",
+      "ranking_type": "api",
+      "rank_change": 12,
+      "current_rank": 23,
+      "observed_at": "2026-11-09T15:33:30+09:00"
+    },
+    {
       "id": "d_567776",
       "title": "完全同意型性風俗SS株式会社【インターンシップ編】",
       "ranking_type": "api",
@@ -244,160 +268,136 @@
       "rank_change": 11,
       "current_rank": 72,
       "observed_at": "2026-11-09T03:21:55+09:00"
-    },
-    {
-      "id": "d_780112",
-      "title": "僕のことが好きすぎる陰キャストーカー女子になら何をヤってもいいよね？",
-      "ranking_type": "api",
-      "rank_change": 9,
-      "current_rank": 65,
-      "observed_at": "2026-11-09T03:21:55+09:00"
-    },
-    {
-      "id": "d_837945",
-      "title": "蒼き少女と青い龍",
-      "ranking_type": "api",
-      "rank_change": 8,
-      "current_rank": 58,
-      "observed_at": "2026-11-09T03:21:55+09:00"
-    },
-    {
-      "id": "d_836995",
-      "title": "昼下がりのマッサージ〜夫に秘密で溶かされて〜",
-      "ranking_type": "api",
-      "rank_change": 6,
-      "current_rank": 25,
-      "observed_at": "2026-11-09T03:21:55+09:00"
     }
   ],
   "creator_insights": [
     "今週の最大上昇はAPIランキングで+30でした。",
-    "APIランキング上位で10作品を観測しました。",
-    "NEWを8件、REENTRYを1件観測しました。"
+    "APIランキング上位で12作品を観測しました。",
+    "NEWを10件、REENTRYを2件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +30\n🆕 NEW 8件\n🔄 REENTRY 1件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥1,072\n\nNEWを8件、REENTRYを1件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +30\n🆕 NEW 10件\n🔄 REENTRY 2件\n📡 CROSS 0件\n💸 SALE作品比率 0%\n💰 中央価格 ¥1,089\n\nNEWを10件、REENTRYを2件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_523257",
       "title": "サンドプレイユートピア ［Act1. 僕の知らない妻に焦がれて / 妻の鍵穴］",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_712596",
       "title": "ヤリサーエロコスハロウィンに男は僕一人",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_718395",
       "title": "完全同意型性風俗SS株式会社《ぐらんデトックス！》",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_774080",
       "title": "家出ギャルな先輩は簡単にヤらせてくれる7",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_823392",
+      "title": "逆襲のオーク X",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_833309",
+      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_835463",
+      "title": "100日後に妊娠するOLさん！2",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_837399",
+      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について2【早期購入＆レビュー特典あり】",
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_796059",
       "title": "今泉ん家はどうやらギャルの溜まり場になってるらしい8",
       "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_823392",
-      "title": "逆襲のオーク X",
-      "top10_snapshots": 1,
-      "observation_rate": 100
+      "observation_rate": 50
     },
     {
       "id": "d_826288",
       "title": "Trop 2 〜内定祝いは人妻のはじめてアナル〜",
       "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_833309",
-      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_835463",
-      "title": "100日後に妊娠するOLさん！2",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_837399",
-      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について2【早期購入＆レビュー特典あり】",
-      "top10_snapshots": 1,
-      "observation_rate": 100
+      "observation_rate": 50
     }
   ],
   "top10_stays": [
     {
       "id": "d_523257",
       "title": "サンドプレイユートピア ［Act1. 僕の知らない妻に焦がれて / 妻の鍵穴］",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_712596",
       "title": "ヤリサーエロコスハロウィンに男は僕一人",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_718395",
       "title": "完全同意型性風俗SS株式会社《ぐらんデトックス！》",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_774080",
       "title": "家出ギャルな先輩は簡単にヤらせてくれる7",
-      "top10_snapshots": 1,
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_823392",
+      "title": "逆襲のオーク X",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_833309",
+      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_835463",
+      "title": "100日後に妊娠するOLさん！2",
+      "top10_snapshots": 2,
+      "observation_rate": 100
+    },
+    {
+      "id": "d_837399",
+      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について2【早期購入＆レビュー特典あり】",
+      "top10_snapshots": 2,
       "observation_rate": 100
     },
     {
       "id": "d_796059",
       "title": "今泉ん家はどうやらギャルの溜まり場になってるらしい8",
       "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_823392",
-      "title": "逆襲のオーク X",
-      "top10_snapshots": 1,
-      "observation_rate": 100
+      "observation_rate": 50
     },
     {
       "id": "d_826288",
       "title": "Trop 2 〜内定祝いは人妻のはじめてアナル〜",
       "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_833309",
-      "title": "孕ませコンカフェ生活シミュレーター 〜悪魔と賭けて、推しを嫁にする100日間〜",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_835463",
-      "title": "100日後に妊娠するOLさん！2",
-      "top10_snapshots": 1,
-      "observation_rate": 100
-    },
-    {
-      "id": "d_837399",
-      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について2【早期購入＆レビュー特典あり】",
-      "top10_snapshots": 1,
-      "observation_rate": 100
+      "observation_rate": 50
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
