@@ -95,6 +95,29 @@ def _named(value: Any) -> dict[str, str | None] | None:
     return {"id": identifier, "name": name}
 
 
+def _named_first(value: Any) -> dict[str, str | None] | None:
+    """Return the first usable id/name pair from a dict or a list of dicts."""
+    if isinstance(value, dict):
+        return _named(value)
+    if isinstance(value, list):
+        for entry in value:
+            named = _named(entry)
+            if named:
+                return named
+    return None
+
+
+def _circle(iteminfo: dict[str, Any]) -> dict[str, str | None] | None:
+    """Resolve the circle for a normalized item.
+
+    The DMM Web Service API has no ``circle`` key in ``iteminfo``; for the
+    doujin floor the circle is returned as ``iteminfo.maker`` (a list of
+    id/name pairs). Prefer an explicit ``circle`` entry when one is present
+    so older fixtures and any future API change keep working.
+    """
+    return _named_first(iteminfo.get("circle")) or _named_first(iteminfo.get("maker"))
+
+
 def _genres(iteminfo: Any) -> list[dict[str, str | None]]:
     values = iteminfo.get("genre") if isinstance(iteminfo, dict) else None
     if isinstance(values, dict):
@@ -140,7 +163,7 @@ def normalize_items(raw: Any, *, service: str, floor: str) -> list[dict[str, Any
                 "title": str(item.get("title") or ""),
                 "price": _price(item),
                 "genres": _genres(iteminfo),
-                "circle": _named(iteminfo.get("circle")),
+                "circle": _circle(iteminfo),
                 "release_date": _release_date(item.get("date")),
                 "url": str(item.get("URL") or ""),
                 "affiliate_url": str(item.get("affiliateURL") or ""),

@@ -41,6 +41,22 @@ class VerifyDmmApiTests(unittest.TestCase):
         self.assertEqual(item["circle"],{"id":"c1","name":"Circle"})
         self.assertEqual(item["release_date"],"2026-08-27")
 
+    def test_circle_falls_back_to_maker_list(self):
+        raw={"content_id":"d_1","iteminfo":{"maker":[{"id":"m1","name":" Maker Circle "},{"id":"m2","name":"Second"}]}}
+        item=normalize_items([raw],service=DOUJIN_SERVICE,floor=DOUJIN_FLOOR)[0]
+        self.assertEqual(item["circle"],{"id":"m1","name":"Maker Circle"})
+
+    def test_circle_key_takes_precedence_over_maker(self):
+        raw={"content_id":"d_1","iteminfo":{"circle":{"id":"c1","name":"Circle"},"maker":[{"id":"m1","name":"Maker"}]}}
+        item=normalize_items([raw],service=DOUJIN_SERVICE,floor=DOUJIN_FLOOR)[0]
+        self.assertEqual(item["circle"],{"id":"c1","name":"Circle"})
+
+    def test_maker_dict_and_blank_maker_are_safe(self):
+        raw=[{"content_id":"a","iteminfo":{"maker":{"id":"m9","name":" Dict Maker "}}},{"content_id":"b","iteminfo":{"maker":[{"name":""}]}}]
+        items=normalize_items(raw,service=DOUJIN_SERVICE,floor=DOUJIN_FLOOR)
+        self.assertEqual(items[0]["circle"],{"id":"m9","name":"Dict Maker"})
+        self.assertIsNone(items[1]["circle"])
+
     def test_missing_and_malformed_metadata_are_safe(self):
         raw=[{"content_id":"a","date":"next Thursday"},{"content_id":"b","date":"","iteminfo":{"genre":{},"circle":{"name":""}}}]
         items=normalize_items(raw,service=DOUJIN_SERVICE,floor=DOUJIN_FLOOR)
