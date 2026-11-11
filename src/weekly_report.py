@@ -36,16 +36,62 @@ def _key(item): return str(item.get("key") or item.get("id") or item.get("url", 
 def _rank(item): return int(item.get("current_rank", item.get("rank", 0)) or 0)
 def _percent(part, whole): return round(part / whole * 100) if whole else 0
 
+def _circle_name(item):
+ circle = item.get("circle") if isinstance(item.get("circle"), dict) else None
+ return str((circle or {}).get("name") or "").strip()
+
+
 def _metadata_analysis(market, top10, observations):
  genres, circles = {}, {}
  for key, item in market.items():
   names={str(x.get("name") or "").strip() for x in meaningful_genres(item.get("genres"))}
   for name in names: genres.setdefault(name, set()).add(key)
-  circle=item.get("circle") if isinstance(item.get("circle"),dict) else None
-  name=str((circle or {}).get("name") or "").strip()
-  if name: circles.setdefault(name,set()).add(key)
+  name = _circle_name(item)
+  if name: circles.setdefault(name, set()).add(key)
  def rows(values):
   return [{"name":name,"observed_products":len(keys),"top10_products":len(keys & top10)} for name,keys in sorted(values.items(),key=lambda row:(-len(row[1]),row[0]))[:10]]
+ # Observation-based circle stats: appearances, best rank and flagship title.
+ # A circle that only appears in observations (e.g. renamed since) is still counted.
+ snapshots = {(kind, captured) for kind, captured, _ in observations}
+ circle_snapshots = set()
+ circle_stats = {}
+ first_circle_at = None
+ for kind, captured, item in observations:
+  name = _circle_name(item)
+  if not name: continue
+  circle_snapshots.add((kind, captured))
+  if first_circle_at is None or captured < first_circle_at: first_circle_at = captured
+  rank = _rank(item)
+  stats = circle_stats.setdefault(name, {"products": {}, "total_appearances": 0, "top10_appearances": 0})
+  stats["total_appearances"] += 1
+  if 0 < rank <= 10: stats["top10_appearances"] += 1
+  product = stats["products"].setdefault(_key(item), {"appearances": 0, "best_rank": 0, "title": ""})
+  product["appearances"] += 1
+  if rank > 0 and (product["best_rank"] == 0 or rank < product["best_rank"]):
+   product["best_rank"] = rank
+   product["title"] = item.get("title", "")
+ def circle_rows():
+  rows_out = []
+  for name in set(circles) | set(circle_stats):
+   stats = circle_stats.get(name, {"products": {}, "total_appearances": 0, "top10_appearances": 0})
+   keys = circles.get(name, set()) | set(stats["products"])
+   best_rank = min((p["best_rank"] for p in stats["products"].values() if p["best_rank"] > 0), default=0)
+   flagship = None
+   for key, p in stats["products"].items():
+    if p["best_rank"] <= 0: continue
+    candidate = (p["best_rank"], -p["appearances"], key)
+    if flagship is None or candidate < flagship[0]: flagship = (candidate, p["title"], p["best_rank"])
+   rows_out.append({"name": name, "observed_products": len(keys), "top10_products": len(keys & top10),
+                    "total_appearances": stats["total_appearances"], "best_rank": best_rank,
+                    "top10_appearances": stats["top10_appearances"],
+                    "flagship_title": flagship[1] if flagship else "",
+                    "flagship_best_rank": flagship[2] if flagship else 0})
+  rows_out.sort(key=lambda r: (-r["top10_appearances"], -r["total_appearances"], r["best_rank"] or 10 ** 9,
+                               -r["observed_products"], r["name"]))
+  return rows_out[:10]
+ circle_coverage = {"snapshots_with_circle": len(circle_snapshots), "total_snapshots": len(snapshots),
+                    "coverage_share": _percent(len(circle_snapshots), len(snapshots)),
+                    "first_circle_snapshot": first_circle_at.isoformat() if first_circle_at else None}
  release_keys={key for key,item in market.items() if item.get("release_date")}
  new_releases=set()
  for _,captured,item in observations:
@@ -59,9 +105,10 @@ def _metadata_analysis(market, top10, observations):
           and isinstance(item.get("price"),int) and not isinstance(item.get("price"),bool) and item["price"] > 0]
   genre_price_summary.append({"name":row["name"],"product_count":row["observed_products"],
                               "median_price":round(statistics.median(values)) if values else 0})
- return {"top_genres":rows(genres),"top_circles":rows(circles),"new_release_products":len(new_releases),
+ return {"top_genres":rows(genres),"top_circles":circle_rows(),"new_release_products":len(new_releases),
   "new_release_share":_percent(len(new_releases),len(release_keys)),
   "new_release_top10_products":len(new_releases & top10),"genre_price_summary":genre_price_summary,
+  "circle_coverage": circle_coverage,
   "metadata_coverage":{"genre":sum(bool(x.get('genres')) for x in market.values()),
    "meaningful_genre":sum(bool(meaningful_genres(x.get('genres'))) for x in market.values()),
    "circle":sum(bool(x.get('circle')) for x in market.values()),"release_date":len(release_keys),"total_products":total}}
@@ -186,7 +233,7 @@ def generate_weekly_report(now=None, fanza_dir=FANZA_DIR, report_dir=REPORT_DIR,
    "max_discount_rate": max(discounts + [0]), "discount_buckets": {"under_20": sum(0 < x < 20 for x in discounts), "20_29": sum(20 <= x < 30 for x in discounts), "30_49": sum(30 <= x < 50 for x in discounts), "50_plus": sum(x >= 50 for x in discounts)}}
  status = "COMPLETE" if complete else "PARTIAL"
  insights = _creator_insights(overview, price_analysis, sale_analysis,api_mode)
- metadata = _metadata_analysis(market,top10,observations) if api_mode else {"top_genres":[],"top_circles":[],"new_release_products":0,"new_release_share":0,"new_release_top10_products":0,"genre_price_summary":[],"metadata_coverage":{"genre":0,"meaningful_genre":0,"circle":0,"release_date":0,"total_products":len(market)}}
+ metadata = _metadata_analysis(market,top10,observations) if api_mode else {"top_genres":[],"top_circles":[],"new_release_products":0,"new_release_share":0,"new_release_top10_products":0,"genre_price_summary":[],"circle_coverage":{"snapshots_with_circle":0,"total_snapshots":0,"coverage_share":0,"first_circle_snapshot":None},"metadata_coverage":{"genre":0,"meaningful_genre":0,"circle":0,"release_date":0,"total_products":len(market)}}
  if api_mode and metadata["top_genres"] and len(insights)<3: insights.append(f"APIランキングでは『{metadata['top_genres'][0]['name']}』タグ作品を{metadata['top_genres'][0]['observed_products']}作品観測しました。")
  stable_top10 = top_stays[:10]
  payload = {

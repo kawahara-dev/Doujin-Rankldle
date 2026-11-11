@@ -65,6 +65,47 @@ class WeeklyReportTest(unittest.TestCase):
    self.assertEqual(report["new_release_products"],1)
    self.assertEqual(report["metadata_coverage"],{"genre":1,"meaningful_genre":1,"circle":1,"release_date":1,"total_products":2})
 
+ def test_api_circle_ranking_counts_appearances_best_rank_and_flagship(self):
+  with tempfile.TemporaryDirectory() as temporary:
+   root=Path(temporary); history=root/"fanza/api/history/2026-08-24.json"; history.parent.mkdir(parents=True)
+   snapshots=[{"fetched_at":"2026-08-24T10:00:00+09:00","items":[
+     {"id":"a","title":"A","rank":3,"circle":{"name":"C1"}},
+     {"id":"b","title":"B","rank":15,"circle":{"name":"C1"}},
+     {"id":"c","title":"C","rank":8,"circle":{"name":"C2"}}]},
+    {"fetched_at":"2026-08-24T12:00:00+09:00","items":[
+     {"id":"a","title":"A","rank":5,"circle":{"name":"C1"}},
+     {"id":"b","title":"B","rank":9,"circle":{"name":"C1"}},
+     {"id":"c","title":"C","rank":20,"circle":{"name":"C2"}}]}]
+   history.write_text(json.dumps(snapshots), encoding="utf-8")
+   report=generate_weekly_report(datetime(2026,8,24,15,tzinfo=ZoneInfo("Asia/Tokyo")),root/"fanza",root/"r",root/"p")
+   self.assertEqual(report["top_circles"],[
+    {"name":"C1","observed_products":2,"top10_products":2,"total_appearances":4,"best_rank":3,
+     "top10_appearances":3,"flagship_title":"A","flagship_best_rank":3},
+    {"name":"C2","observed_products":1,"top10_products":1,"total_appearances":2,"best_rank":8,
+     "top10_appearances":1,"flagship_title":"C","flagship_best_rank":8}])
+   self.assertEqual(report["circle_coverage"],{"snapshots_with_circle":2,"total_snapshots":2,
+    "coverage_share":100,"first_circle_snapshot":"2026-08-24T10:00:00+09:00"})
+
+ def test_api_circle_partial_coverage_counts_only_circle_snapshots(self):
+  with tempfile.TemporaryDirectory() as temporary:
+   root=Path(temporary); history=root/"fanza/api/history/2026-08-24.json"; history.parent.mkdir(parents=True)
+   snapshots=[{"fetched_at":"2026-08-24T10:00:00+09:00","items":[
+     {"id":"a","title":"A","rank":2},{"id":"b","title":"B","rank":4}]},
+    {"fetched_at":"2026-08-24T12:00:00+09:00","items":[
+     {"id":"a","title":"A","rank":2,"circle":{"name":"C1"}},
+     {"id":"b","title":"B","rank":4,"circle":{"name":"C1"}}]},
+    {"fetched_at":"2026-08-24T14:00:00+09:00","items":[
+     {"id":"a","title":"A","rank":1,"circle":{"name":"C1"}},
+     {"id":"b","title":"B","rank":30,"circle":{"name":"C1"}}]}]
+   history.write_text(json.dumps(snapshots), encoding="utf-8")
+   report=generate_weekly_report(datetime(2026,8,24,15,tzinfo=ZoneInfo("Asia/Tokyo")),root/"fanza",root/"r",root/"p")
+   self.assertEqual(report["top_circles"],[
+    {"name":"C1","observed_products":2,"top10_products":2,"total_appearances":4,"best_rank":1,
+     "top10_appearances":3,"flagship_title":"A","flagship_best_rank":1}])
+   self.assertEqual(report["circle_coverage"],{"snapshots_with_circle":2,"total_snapshots":3,
+    "coverage_share":67,"first_circle_snapshot":"2026-08-24T12:00:00+09:00"})
+   self.assertEqual(report["metadata_coverage"]["circle"],2)
+
  def test_meaningful_genres_preserve_raw_and_exclude_by_id_or_name(self):
   raw=[{"id":"156023","name":"renamed"},{"id":"x","name":"男性向け"},
        {"id":"156021","name":"専売"},{"id":"2001","name":"巨乳"},
