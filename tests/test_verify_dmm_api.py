@@ -31,8 +31,45 @@ class StubProvider:
 class VerifyDmmApiTests(unittest.TestCase):
     def test_normalization_and_content_id_key(self):
         result = normalize_items([{"content_id": "d_1", "title": "作品", "prices": {"price": "1,200"}, "URL": "normal", "affiliateURL": "affiliate", "imageURL": {"large": "image"}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)
-        self.assertEqual(result[0], {"rank": 1, "id": "d_1", "key": "d_1", "title": "作品", "price": 1200, "genres": [], "circle": None, "release_date": None, "url": "normal", "affiliate_url": "affiliate", "image_url": "image", "service": "doujin", "floor": "digital_doujin"})
+        self.assertEqual(result[0], {"rank": 1, "id": "d_1", "key": "d_1", "title": "作品", "price": 1200, "regular_price": None, "discount_rate": None, "on_sale": False, "campaign": None, "sale_end_raw": None, "sale_end": None, "genres": [], "circle": None, "release_date": None, "url": "normal", "affiliate_url": "affiliate", "image_url": "image", "service": "doujin", "floor": "digital_doujin"})
         self.assertEqual(item_key({"content_id": "d_2"}), "d_2")
+
+    def test_list_price_marks_sale_and_discount_rate(self):
+        raw = {"content_id": "d_1", "title": "作品", "prices": {"price": "2,200", "list_price": "4,400"},
+               "campaign": {"title": "セール", "date_begin": "2026-11-01", "date_end": "2026-11-30"}}
+        item = normalize_items([raw], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertEqual(item["regular_price"], 4400)
+        self.assertEqual(item["discount_rate"], 50)
+        self.assertTrue(item["on_sale"])
+        self.assertEqual(item["campaign"], {"title": "セール", "date_begin": "2026-11-01", "date_end": "2026-11-30"})
+        self.assertEqual(item["sale_end_raw"], "2026-11-30")
+        self.assertEqual(item["sale_end"], "2026-11-30")
+
+    def test_list_price_missing_or_equal_is_not_a_sale(self):
+        missing = normalize_items([{"content_id": "a", "prices": {"price": "1,000"}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertIsNone(missing["regular_price"])
+        self.assertIsNone(missing["discount_rate"])
+        self.assertFalse(missing["on_sale"])
+        equal = normalize_items([{"content_id": "b", "prices": {"price": "1,000", "list_price": "1,000"},
+                                  "campaign": {"title": "C", "date_end": "2026-11-30"}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertEqual(equal["regular_price"], 1000)
+        self.assertIsNone(equal["discount_rate"])
+        self.assertFalse(equal["on_sale"])
+        # The campaign is kept for reference, but without a discount it does
+        # not bound a sale.
+        self.assertEqual(equal["campaign"], {"title": "C", "date_begin": None, "date_end": "2026-11-30"})
+        self.assertIsNone(equal["sale_end_raw"])
+        self.assertIsNone(equal["sale_end"])
+
+    def test_malformed_list_price_and_campaign_are_safe(self):
+        raw = {"content_id": "d_1", "prices": {"price": "1,000", "list_price": "free"},
+               "campaign": {"title": "  ", "date_end": "not a date"}}
+        item = normalize_items([raw], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertIsNone(item["regular_price"])
+        self.assertFalse(item["on_sale"])
+        self.assertIsNone(item["campaign"])
+        self.assertIsNone(item["sale_end_raw"])
+        self.assertIsNone(item["sale_end"])
 
     def test_optional_metadata_normalization(self):
         raw={"content_id":"d_1","date":"2026-08-27T12:30:00+09:00","iteminfo":{"genre":[{"id":"2","name":" 人妻 "},{"id":"1","name":"巨乳"},{"id":"2","name":"人妻"},{"id":"x","name":""}],"circle":{"id":"c1","name":" Circle "}}}

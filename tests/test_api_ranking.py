@@ -111,14 +111,37 @@ class ApiRankingMigrationTest(unittest.TestCase):
   with tempfile.TemporaryDirectory() as directory:
    root=Path(directory); (root/"fanza/1h").mkdir(parents=True)
    (root/"fanza/1h/current.json").write_text(json.dumps({"items":[self.item(2,rank_change=5)]}))
-   legacy={"1h_max_rise":9,"24h_max_rise":7,"cross_trend":2,"active_sales":3}
+   legacy={"1h_max_rise":9,"24h_max_rise":7,"cross_trend":2,"active_sales":3,"hot_sales":2,"max_discount":50}
    (root/"status.json").write_text(json.dumps({"market_signals":legacy}))
    self.run_api(root,[self.item(1)])
    current=json.loads((root/"fanza/api/current.json").read_text())["items"][0]
    signals=json.loads((root/"status.json").read_text())["market_signals"]
    self.assertNotIn("cross_signal",current)
-   self.assertEqual({key:signals[key] for key in legacy},legacy)
+   # Legacy 1h/24h/cross signals are preserved, but the stale 2026-08-26
+   # sale signals are recomputed from the live API ranking (backlog item 6):
+   # no on-sale item in this run, so they reset to zero.
+   self.assertEqual({key:signals[key] for key in ("1h_max_rise","24h_max_rise","cross_trend")},
+                    {"1h_max_rise":9,"24h_max_rise":7,"cross_trend":2})
+   self.assertEqual((signals["active_sales"],signals["hot_sales"],signals["max_discount"]),(0,0,0))
    self.assertEqual(signals["api_new_entry"],1)
+
+ def test_api_sale_detection_updates_signals_and_candidates(self):
+  with tempfile.TemporaryDirectory() as directory:
+   root=Path(directory)
+   legacy={"1h_max_rise":9,"24h_max_rise":7,"cross_trend":2,"active_sales":15,"hot_sales":13,"max_discount":50}
+   (root/"status.json").write_text(json.dumps({"market_signals":legacy}))
+   sale=self.item(1,on_sale=True,discount_rate=50,regular_price=4000,price=2000)
+   self.run_api(root,[sale,self.item(2)])
+   signals=json.loads((root/"status.json").read_text())["market_signals"]
+   self.assertEqual((signals["active_sales"],signals["hot_sales"],signals["max_discount"]),(1,1,50))
+   self.assertEqual({key:signals[key] for key in ("1h_max_rise","24h_max_rise","cross_trend")},
+                    {"1h_max_rise":9,"24h_max_rise":7,"cross_trend":2})
+   candidates=json.loads((root/"posts/fanza_api_candidates.json").read_text())
+   sale_posts=[c for c in candidates if "SALE WATCH" in c.get("text","")]
+   self.assertTrue(sale_posts)
+   self.assertEqual(sale_posts[0]["ranking_type"],"api")
+   self.assertIn("FANZAランキング #1",sale_posts[0]["text"])
+   self.assertNotIn("24時間ランキング",sale_posts[0]["text"])
 
  def test_existing_cross_trend_remains(self):
   one=collector.compare_rankings([self.item(5)],[self.item(10,current_rank=10)],ranking_type="1h")

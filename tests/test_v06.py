@@ -32,6 +32,15 @@ class SaleWatchV06Test(unittest.TestCase):
   candidate=collector.sale_candidates([item],[],datetime.now())[0]
   self.assertEqual(candidate["url"],item["url"])
   self.assertIn(f'作品ページ👇\n{item["url"]}',candidate["text"])
+ def test_sale_candidate_uses_api_ranking_label(self):
+  item=self.item(url="https://example.test/product/a"); collector.apply_sale_watch([item],[self.item(on_sale=False)])
+  candidate=collector.sale_candidates([item],[],datetime.now(),ranking_type="api")[0]
+  self.assertEqual(candidate["ranking_type"],"api")
+  self.assertIn("FANZAランキング #7",candidate["text"])
+  self.assertNotIn("24時間ランキング",candidate["text"])
+  legacy=collector.sale_candidates([item],[],datetime.now())[0]
+  self.assertEqual(legacy["ranking_type"],"24h")
+  self.assertIn("24時間ランキング #7",legacy["text"])
  def test_missing_legacy_candidate_url_is_safe_and_pages_limit_is_three(self):
   # Legacy candidates are rendered from their completed text, without reading url.
   source=Path("docs/app.js").read_text(encoding="utf-8")
