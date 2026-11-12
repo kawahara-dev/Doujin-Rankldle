@@ -84,6 +84,41 @@ def _price(item: dict[str, Any]) -> int:
         return 0
 
 
+def _list_price(item: dict[str, Any]) -> int | None:
+    """Return the DMM ``prices.list_price`` (regular price), if present.
+
+    The field is optional in the ItemList schema and may be absent on some
+    floors; a missing, blank, malformed, or non-positive value means the
+    regular price is unknown (``None``), never a sale.
+    """
+    prices = item.get("prices")
+    value = prices.get("list_price") if isinstance(prices, dict) else None
+    if value is None:
+        return None
+    try:
+        parsed = int(str(value).replace(",", ""))
+    except (TypeError, ValueError):
+        return None
+    return parsed if parsed > 0 else None
+
+
+def _campaign(item: dict[str, Any]) -> dict[str, str | None] | None:
+    """Return the DMM ``campaign`` block (title + period), if any is present.
+
+    A campaign is not itself a discount (it can be point-back etc.), so this
+    is kept as auxiliary info; only a ``list_price`` discount marks a sale.
+    """
+    value = item.get("campaign")
+    if not isinstance(value, dict):
+        return None
+    title = str(value.get("title") or "").strip() or None
+    date_begin = _release_date(value.get("date_begin"))
+    date_end = _release_date(value.get("date_end"))
+    if title is None and date_begin is None and date_end is None:
+        return None
+    return {"title": title, "date_begin": date_begin, "date_end": date_end}
+
+
 def _named(value: Any) -> dict[str, str | None] | None:
     """Keep only a non-empty DMM id/name pair."""
     if not isinstance(value, dict):
@@ -155,13 +190,29 @@ def normalize_items(raw: Any, *, service: str, floor: str) -> list[dict[str, Any
             raise RuntimeError("FANZA API item has no content_id")
         images = item.get("imageURL") or {}
         iteminfo = item.get("iteminfo") if isinstance(item.get("iteminfo"), dict) else {}
+        price = _price(item)
+        regular_price = _list_price(item)
+        on_sale = regular_price is not None and regular_price > price
+        discount_rate = round((regular_price - price) / regular_price * 100) if on_sale else None
+        campaign = _campaign(item)
+        # A campaign period only bounds a sale when the price is actually
+        # discounted; otherwise it is kept in ``campaign`` for reference.
+        sale_end_raw = None
+        if on_sale and isinstance(item.get("campaign"), dict):
+            sale_end_raw = str(item["campaign"].get("date_end") or "").strip() or None
         normalized.append(
             {
                 "rank": rank,
                 "id": content_id,
                 "key": content_id,
                 "title": str(item.get("title") or ""),
-                "price": _price(item),
+                "price": price,
+                "regular_price": regular_price,
+                "discount_rate": discount_rate,
+                "on_sale": on_sale,
+                "campaign": campaign,
+                "sale_end_raw": sale_end_raw,
+                "sale_end": _release_date(sale_end_raw),
                 "genres": _genres(iteminfo),
                 "circle": _circle(iteminfo),
                 "release_date": _release_date(item.get("date")),
