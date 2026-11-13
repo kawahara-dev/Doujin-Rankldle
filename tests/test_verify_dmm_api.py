@@ -31,7 +31,7 @@ class StubProvider:
 class VerifyDmmApiTests(unittest.TestCase):
     def test_normalization_and_content_id_key(self):
         result = normalize_items([{"content_id": "d_1", "title": "作品", "prices": {"price": "1,200"}, "URL": "normal", "affiliateURL": "affiliate", "imageURL": {"large": "image"}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)
-        self.assertEqual(result[0], {"rank": 1, "id": "d_1", "key": "d_1", "title": "作品", "price": 1200, "regular_price": None, "discount_rate": None, "on_sale": False, "campaign": None, "sale_end_raw": None, "sale_end": None, "genres": [], "circle": None, "release_date": None, "url": "normal", "affiliate_url": "affiliate", "image_url": "image", "service": "doujin", "floor": "digital_doujin"})
+        self.assertEqual(result[0], {"rank": 1, "id": "d_1", "key": "d_1", "title": "作品", "price": 1200, "regular_price": None, "discount_rate": None, "on_sale": False, "campaign": None, "sale_end_raw": None, "sale_end": None, "review_count": None, "review_average": None, "genres": [], "circle": None, "release_date": None, "url": "normal", "affiliate_url": "affiliate", "image_url": "image", "service": "doujin", "floor": "digital_doujin"})
         self.assertEqual(item_key({"content_id": "d_2"}), "d_2")
 
     def test_list_price_marks_sale_and_discount_rate(self):
@@ -60,6 +60,30 @@ class VerifyDmmApiTests(unittest.TestCase):
         self.assertEqual(equal["campaign"], {"title": "C", "date_begin": None, "date_end": "2026-11-30"})
         self.assertIsNone(equal["sale_end_raw"])
         self.assertIsNone(equal["sale_end"])
+
+    def test_review_count_and_average_are_collected(self):
+        raw = {"content_id": "d_1", "prices": {"price": "1,000"},
+               "review": {"count": 128, "average": "4.5"}}
+        item = normalize_items([raw], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertEqual(item["review_count"], 128)
+        self.assertEqual(item["review_average"], 4.5)
+        stringy = normalize_items([{"content_id": "d_2", "review": {"count": "42", "average": "3"}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertEqual(stringy["review_count"], 42)
+        self.assertEqual(stringy["review_average"], 3.0)
+
+    def test_review_missing_or_malformed_is_safe(self):
+        missing = normalize_items([{"content_id": "a", "prices": {"price": "1,000"}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertIsNone(missing["review_count"])
+        self.assertIsNone(missing["review_average"])
+        malformed = normalize_items([{"content_id": "b", "review": {"count": "many", "average": "good"}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertIsNone(malformed["review_count"])
+        self.assertIsNone(malformed["review_average"])
+        out_of_range = normalize_items([{"content_id": "c", "review": {"count": -3, "average": "6.0"}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertIsNone(out_of_range["review_count"])
+        self.assertIsNone(out_of_range["review_average"])
+        blank = normalize_items([{"content_id": "d", "review": {"count": "", "average": " "}}], service=DOUJIN_SERVICE, floor=DOUJIN_FLOOR)[0]
+        self.assertIsNone(blank["review_count"])
+        self.assertIsNone(blank["review_average"])
 
     def test_malformed_list_price_and_campaign_are_safe(self):
         raw = {"content_id": "d_1", "prices": {"price": "1,000", "list_price": "free"},
