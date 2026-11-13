@@ -65,6 +65,61 @@ function selectCandidates(candidates) {
   const legacy = candidates.filter((item) => !isNewFormat(item)).sort(byPostingValueAndDate);
   return current.concat(current.length < 3 ? legacy : []).slice(0, 3);
 }
+
+const SPARKLINE_WIDTH = 76;
+const SPARKLINE_HEIGHT = 22;
+const SPARKLINE_PAD = 2;
+
+function sparklineGeometry(rankHistory, width = SPARKLINE_WIDTH, height = SPARKLINE_HEIGHT) {
+  const history = Array.isArray(rankHistory) ? rankHistory : [];
+  const ranks = history.map((rank) => {
+    const value = Number(rank);
+    return Number.isFinite(value) && value > 0 ? value : null;
+  });
+  const values = ranks.filter((rank) => rank != null);
+  if (values.length < 2) return null;
+  const maxRank = Math.max(...values);
+  const range = Math.max(1, maxRank - 1);
+  const round1 = (value) => Math.round(value * 10) / 10;
+  const point = (index, rank) => {
+    const x = SPARKLINE_PAD + (history.length > 1 ? index / (history.length - 1) : 0) * (width - SPARKLINE_PAD * 2);
+    const y = SPARKLINE_PAD + ((rank - 1) / range) * (height - SPARKLINE_PAD * 2);
+    return `${round1(x)},${round1(y)}`;
+  };
+  const segments = [];
+  let current = [];
+  ranks.forEach((rank, index) => {
+    if (rank == null) {
+      if (current.length >= 2) segments.push(current);
+      current = [];
+      return;
+    }
+    current.push(point(index, rank));
+  });
+  if (current.length >= 2) segments.push(current);
+  if (!segments.length) return null;
+  const first = values[0], last = values[values.length - 1];
+  return { segments, trend: last < first ? "up" : last > first ? "down" : "flat", first, last, samples: values.length };
+}
+
+function createSparkline(rankHistory) {
+  const geometry = sparklineGeometry(rankHistory);
+  if (!geometry) return null;
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", `rank-sparkline trend-${geometry.trend}`);
+  svg.setAttribute("width", String(SPARKLINE_WIDTH));
+  svg.setAttribute("height", String(SPARKLINE_HEIGHT));
+  svg.setAttribute("viewBox", `0 0 ${SPARKLINE_WIDTH} ${SPARKLINE_HEIGHT}`);
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", `順位推移（直近${geometry.samples}回）: ${geometry.first}位 → ${geometry.last}位`);
+  for (const points of geometry.segments) {
+    const line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+    line.setAttribute("points", points.join(" "));
+    svg.append(line);
+  }
+  return svg;
+}
+
 function renderCandidates(candidates) {
   if (!candidates.length) return;
   const featured = selectCandidates(candidates);
@@ -261,15 +316,17 @@ function renderItems(items) {
     if (selectedRanking === "24h" && item.regular_price) { const regular=document.createElement("small"); regular.textContent=`通常 ¥${number(item.regular_price).toLocaleString("ja-JP")}`; link.append(regular); }
     if (isApi) link.append(createThumbnail(item), content);
     row.append(link);
+    const key = String(item.key || item.id || item.url || "").split("?")[0];
+    const insight = analytics.get(key);
     if (isApi) {
       const signals=document.createElement("div"); signals.className="api-signals";
       const change=document.createElement("strong"); change.className=`rank-change rank-${movement.status}`; change.textContent=movement.label; signals.append(change);
       if (item.strong_momentum === true) { const momentum=document.createElement("b"); momentum.className="momentum-badge strong"; momentum.textContent="🔥 MOMENTUM"; signals.append(momentum); }
       else if (item.momentum === "UP") { const momentum=document.createElement("small"); momentum.className="momentum-badge"; momentum.textContent="MOMENTUM ↑"; signals.append(momentum); }
+      const sparkline = insight ? createSparkline(insight.rank_history) : null;
+      if (sparkline) signals.append(sparkline);
       row.append(signals);
     }
-    const key = String(item.key || item.id || item.url || "").split("?")[0];
-    const insight = analytics.get(key);
     const expanded = expandedAnalytics[selectedRanking].has(key);
     const button = document.createElement("button"); button.className = "analytics-toggle"; button.type = "button"; button.textContent = expanded ? "CLOSE" : "ANALYTICS"; button.setAttribute("aria-expanded", String(expanded));
     const detail = document.createElement("div"); detail.className = "analytics-detail"; detail.hidden = !expanded;
