@@ -120,6 +120,25 @@ function createSparkline(rankHistory) {
   return svg;
 }
 
+function reviewValue(value) {
+  if (value == null || value === "") return null;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function reviewLabel(item) {
+  const average = reviewValue(item?.review_average);
+  const count = reviewValue(item?.review_count);
+  const hasAverage = average != null && average >= 0 && average <= 5;
+  const hasCount = count != null && count >= 0;
+  if (!hasAverage && !hasCount) return null;
+  const stars = hasAverage ? `★${average.toFixed(1)}` : null;
+  const reviews = hasCount ? `${Math.trunc(count).toLocaleString("ja-JP")}件` : null;
+  if (stars && reviews) return `${stars} (${reviews})`;
+  if (stars) return stars;
+  return `レビュー ${reviews}`;
+}
+
 function renderCandidates(candidates) {
   if (!candidates.length) return;
   const featured = selectCandidates(candidates);
@@ -323,6 +342,8 @@ function renderItems(items) {
       const change=document.createElement("strong"); change.className=`rank-change rank-${movement.status}`; change.textContent=movement.label; signals.append(change);
       if (item.strong_momentum === true) { const momentum=document.createElement("b"); momentum.className="momentum-badge strong"; momentum.textContent="🔥 MOMENTUM"; signals.append(momentum); }
       else if (item.momentum === "UP") { const momentum=document.createElement("small"); momentum.className="momentum-badge"; momentum.textContent="MOMENTUM ↑"; signals.append(momentum); }
+      const review = reviewLabel(item);
+      if (review) { const badge=document.createElement("small"); badge.className="review-badge"; badge.textContent=review; signals.append(badge); }
       const sparkline = insight ? createSparkline(insight.rank_history) : null;
       if (sparkline) signals.append(sparkline);
       row.append(signals);
