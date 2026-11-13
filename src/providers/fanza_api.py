@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import math
 import os
 from datetime import date, datetime
 from typing import Any
@@ -100,6 +101,48 @@ def _list_price(item: dict[str, Any]) -> int | None:
     except (TypeError, ValueError):
         return None
     return parsed if parsed > 0 else None
+
+
+def _review_block(item: dict[str, Any]) -> dict[str, Any]:
+    value = item.get("review")
+    return value if isinstance(value, dict) else {}
+
+
+def _review_count(item: dict[str, Any]) -> int | None:
+    """Return the DMM ``review.count`` (number of reviews), if present.
+
+    The field is optional in the ItemList schema and may be absent on some
+    floors; a missing, blank, malformed, or negative value means the count
+    is unknown (``None``). Accepts an int or a numeric string, like the
+    price helpers above.
+    """
+    value = _review_block(item).get("count")
+    if value is None or isinstance(value, bool):
+        return None
+    try:
+        parsed = int(str(value).replace(",", ""))
+    except (TypeError, ValueError):
+        return None
+    return parsed if parsed >= 0 else None
+
+
+def _review_average(item: dict[str, Any]) -> float | None:
+    """Return the DMM ``review.average`` (mean score), if present.
+
+    DMM scores reviews on a 5-point scale and returns the average as a
+    numeric string; a missing, blank, malformed, or out-of-scale value
+    means the average is unknown (``None``).
+    """
+    value = _review_block(item).get("average")
+    if value is None or isinstance(value, bool):
+        return None
+    try:
+        parsed = float(str(value).replace(",", ""))
+    except (TypeError, ValueError):
+        return None
+    if not math.isfinite(parsed):
+        return None
+    return parsed if 0 <= parsed <= 5 else None
 
 
 def _campaign(item: dict[str, Any]) -> dict[str, str | None] | None:
@@ -213,6 +256,8 @@ def normalize_items(raw: Any, *, service: str, floor: str) -> list[dict[str, Any
                 "campaign": campaign,
                 "sale_end_raw": sale_end_raw,
                 "sale_end": _release_date(sale_end_raw),
+                "review_count": _review_count(item),
+                "review_average": _review_average(item),
                 "genres": _genres(iteminfo),
                 "circle": _circle(iteminfo),
                 "release_date": _release_date(item.get("date")),
