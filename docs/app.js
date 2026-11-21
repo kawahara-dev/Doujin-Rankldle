@@ -201,6 +201,7 @@ function matchesApiFilter(item) {
   if (apiFilter === "up") return item.status === "up";
   if (apiFilter === "new") return item.status === "new" || item.status === "reentry";
   if (apiFilter === "momentum") return item.momentum === "UP" || item.strong_momentum === true;
+  if (apiFilter === "sale") return item.on_sale === true;
   return true;
 }
 
@@ -332,6 +333,22 @@ function renderItems(items) {
     if (isApi && isNewRelease(item.release_date)) { const badge=document.createElement("b"); badge.className="new-release-badge"; badge.textContent="🆕 NEW RELEASE"; productBody.append(badge); }
     if (selectedRanking === "24h" && item.on_sale) { const badge=document.createElement("b"); badge.className="sale-badge"; badge.textContent=`${number(item.discount_rate)}% OFF`; link.append(badge); }
     productBody.append(price);
+    if (isApi && item.on_sale === true) {
+      const discountRate = number(item.discount_rate);
+      const regularPrice = number(item.regular_price);
+      if (discountRate > 0) {
+        const badge = document.createElement("b");
+        badge.className = "sale-badge";
+        badge.textContent = `${discountRate}% OFF`;
+        productBody.append(badge);
+      }
+      if (item.regular_price != null && regularPrice > number(item.price)) {
+        const regular = document.createElement("small");
+        regular.className = "regular-price";
+        regular.textContent = `通常 ¥${regularPrice.toLocaleString("ja-JP")}`;
+        productBody.append(regular);
+      }
+    }
     if (selectedRanking === "24h" && item.regular_price) { const regular=document.createElement("small"); regular.textContent=`通常 ¥${number(item.regular_price).toLocaleString("ja-JP")}`; link.append(regular); }
     if (isApi) link.append(createThumbnail(item), content);
     row.append(link);
@@ -398,7 +415,10 @@ function renderSaleWatch(items) {
   const chosen=active.slice().sort((a,b)=>number(b.sale_score)-number(a.sale_score)).slice(0,5);
   if (!chosen.length) return;
   el("saleList").replaceChildren(...chosen.map((item) => {
-    const card=document.createElement("article"); card.className="sale-card";
+    const card=document.createElement("a"); card.className="sale-card";
+    card.href = item.affiliate_url || item.url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer sponsored";
     const head=document.createElement("div"); head.className="sale-card-head";
     const discount=document.createElement("b"); discount.className="sale-badge"; discount.textContent=`${number(item.discount_rate)}% OFF`; head.append(discount);
     if (item.hot_sale) { const hotBadge=document.createElement("b"); hotBadge.className="hot-sale-badge"; hotBadge.textContent="🔥 HOT SALE"; head.append(hotBadge); }
@@ -501,7 +521,7 @@ async function loadDashboard() {
     analyticsData = { "api": analyticsApi?.ok ? await analyticsApi.json() : { items: [] }, "1h": analytics1h?.ok ? await analytics1h.json() : { items: [] }, "24h": analytics24h?.ok ? await analytics24h.json() : { items: [] } };
     dlsiteAvailable=Boolean(dlCurrent?.ok); dlsiteData=dlCurrent?.ok ? await dlCurrent.json() : {items:[]}; dlsiteStatus=dlStatus?.ok ? await dlStatus.json() : null;
     selectStore(selectedStore);
-    renderSaleWatch(rankingData["24h"]?.items || []);
+    renderSaleWatch(rankingData["api"]?.items || []);
     let weeklyReport = null;
     if (weekly?.ok) { try { weeklyReport = await weekly.json(); } catch (_) { weeklyReport = null; } }
     if (weeklyReport) renderWeekly(weeklyReport);

@@ -47,6 +47,7 @@
           <article><h3>NEW RELEASE</h3><p><code>release_date</code>をもとにした発売7日以内の作品。ランキングstatusのNEWとは別です。</p></article>
           <article><h3>MOMENTUM</h3><p>直近複数回の観測で継続して順位が上昇している場合に表示。売上増加を意味しません。</p></article>
         <article><h3>RANK SPARKLINE</h3><p>商品ごとの直近10回の順位推移を小さな折れ線で表示。右上がり（シアン）は順位上昇、右下がり（ピンク）は順位下降。途切れている部分は観測外だった回です。</p></article>
+          <article><h3>SALE / % OFF</h3><p>DMM APIの価格情報でセール中と判定された作品です。% OFFは通常価格との割引率で、取り消し線の価格が通常価格です。</p></article>
           <article><h3>REVIEW ★</h3><p>商品ごとの★評価とレビュー件数（DMM APIのレビュー情報）。レビューがない作品には表示されません。</p></article>
           <article><h3>TOP10観測率</h3><p>週次観測期間中、対象ジャンル作品のうちTOP10で観測された作品数の比率。販売率・購入率ではありません。</p></article>
           <article><h3>WEEKLY GENRE WATCH</h3><p>保存したAPIランキングsnapshotから、ジャンル、新作比率、TOP10観測数、ジャンル別価格中央値などを集計します。</p></article>
@@ -66,9 +67,13 @@
       <div class="scan"><p class="label">NEXT SCAN</p><strong id="countdown">--:--:--</strong><small id="scanState">SCHEDULED</small></div>
     </section>
 
-
-
-
+    <section class="note-banner panel">
+      <div>
+        <p class="eyebrow">WEEKLY REPORT ON NOTE</p>
+        <p>1週間のランキング動向・サークル分析・ジャンル×価格分析をまとめた<strong>週次レポート（¥100）</strong>をnoteで販売中です。</p>
+      </div>
+      <a class="note-banner-link" href="https://note.com/doujinrankidle/n/n4fb2d7195d81" target="_blank" rel="noopener">noteで読む</a>
+    </section>
 
     <section class="products panel">
       <nav class="store-switch" aria-label="ストア切り替え"><span>STORE</span><button type="button" data-store="fanza" class="active" aria-pressed="true">FANZA API</button><button type="button" data-store="dlsite" aria-pressed="false">DLsite</button></nav>
@@ -87,16 +92,16 @@
           <p id="weeklyGenreMethodology" class="genre-watch-methodology">※RankIdleが保存したFANZA APIランキング観測データによる集計です。<br>販売数・売上を示すものではありません。</p>
         </div>
       </section>
-      <div id="apiFilters" class="api-filter-groups"><div class="filter-group"><span>STATUS</span><div class="ranking-filters" aria-label="APIランキングステータスフィルター"><button type="button" data-api-filter="all" class="active">ALL</button><button type="button" data-api-filter="up">UP</button><button type="button" data-api-filter="new">NEW</button><button type="button" data-api-filter="momentum">MOMENTUM</button></div></div><div class="filter-group"><span>PRICE</span><div class="ranking-filters price-filters" aria-label="APIランキング価格帯フィルター"><button type="button" data-api-price-filter="all" class="active">ALL</button><button type="button" data-api-price-filter="under1000">～999円</button><button type="button" data-api-price-filter="1000to1999">1,000～1,999円</button><button type="button" data-api-price-filter="2000to2999">2,000～2,999円</button><button type="button" data-api-price-filter="3000plus">3,000円～</button></div></div><div class="filter-group"><span>GENRE</span><div id="apiGenreFilters" class="ranking-filters genre-filters" aria-label="APIランキングジャンルフィルター"></div></div></div>
+      <div id="apiFilters" class="api-filter-groups"><div class="filter-group"><span>STATUS</span><div class="ranking-filters" aria-label="APIランキングステータスフィルター"><button type="button" data-api-filter="all" class="active">ALL</button><button type="button" data-api-filter="up">UP</button><button type="button" data-api-filter="new">NEW</button><button type="button" data-api-filter="momentum">MOMENTUM</button><button type="button" data-api-filter="sale">SALE</button></div></div><div class="filter-group"><span>PRICE</span><div class="ranking-filters price-filters" aria-label="APIランキング価格帯フィルター"><button type="button" data-api-price-filter="all" class="active">ALL</button><button type="button" data-api-price-filter="under1000">～999円</button><button type="button" data-api-price-filter="1000to1999">1,000～1,999円</button><button type="button" data-api-price-filter="2000to2999">2,000～2,999円</button><button type="button" data-api-price-filter="3000plus">3,000円～</button></div></div><div class="filter-group"><span>GENRE</span><div id="apiGenreFilters" class="ranking-filters genre-filters" aria-label="APIランキングジャンルフィルター"></div></div></div>
       <div id="dlsiteFilters" class="api-filter-groups" hidden><div class="filter-group"><span>STATUS</span><div class="ranking-filters" aria-label="DLsiteランキングステータスフィルター"><button type="button" data-dlsite-filter="all" class="active">ALL</button><button type="button" data-dlsite-filter="up">UP</button><button type="button" data-dlsite-filter="down">DOWN</button><button type="button" data-dlsite-filter="stay">STAY</button><button type="button" data-dlsite-filter="new">NEW</button><button type="button" data-dlsite-filter="reentry">REENTRY</button></div></div><div class="filter-group"><span>PRICE</span><div class="ranking-filters price-filters"><button type="button" data-dlsite-price="all" class="active">ALL</button><button type="button" data-dlsite-price="under1000">≤999</button><button type="button" data-dlsite-price="1000to1999">1000–1999</button><button type="button" data-dlsite-price="2000to2999">2000–2999</button><button type="button" data-dlsite-price="3000plus">3000+</button></div></div></div>
       <div id="productList" class="product-list"><p class="empty">データをロード中...</p></div>
       <button id="rankingMore" class="ranking-more" type="button">もっと見る（21〜100位）</button>
     </section>
     <section class="panel game-section"><div class="section-title"><div><p class="eyebrow">LIVE MOMENTUM</p><h2>MARKET SIGNALS</h2></div></div><div id="marketSignals" class="metrics signals"></div></section>
-    <section class="panel game-section sale-watch"><div class="section-title"><div><p class="eyebrow">24H MARKET</p><h2>SALE WATCH</h2></div></div><div id="saleMetrics" class="metrics signals"></div><div id="saleList" class="sale-list"><p class="empty">セール情報はまだないよ。</p></div></section>
+    <section class="panel game-section sale-watch"><div class="section-title"><div><p class="eyebrow">SALE ITEMS</p><h2>SALE WATCH</h2></div></div><div id="saleMetrics" class="metrics signals"></div><div id="saleList" class="sale-list"><p class="empty">セール情報はまだないよ。</p></div></section>
     <section class="panel game-section weekly-report"><div class="section-title"><div><p class="eyebrow">CREATOR INSIGHTS / JST</p><h2>WEEKLY TREND REPORT</h2></div><b id="weeklyStatus" class="weekly-status">LOADING</b></div><p id="weeklyPeriod" class="weekly-period"></p><div id="weeklyMetrics" class="metrics signals"></div><div class="weekly-columns"><div><h3>PRICE BUCKETS</h3><div id="weeklyPrices"></div></div><div><h3>TOP10 STAY</h3><ol id="weeklyStays"></ol></div></div><p class="weekly-note">販売数・売上ではなく、保存されたランキングで観測した傾向です。</p></section>
 
-    <footer><strong>UNOFFICIAL OBSERVATION TOOL</strong><br>RankIdle is an unofficial observation tool. Ranking observations do not represent sales or views.<br>ランキング観測は販売数・売上・閲覧数を示すものではありません。<br>FANZA商品へのリンクにはアフィリエイトリンクが含まれます（広告）。<p class="follow-links">毎日のランキング速報はBlueskyで配信中📈 <a href="https://bsky.app/profile/doujinrankidle.bsky.social" target="_blank" rel="noopener">Bluesky｜同人ランク観測所｜RankIdle</a></p></footer>
+    <footer><strong>UNOFFICIAL OBSERVATION TOOL</strong><br>RankIdle is an unofficial observation tool. Ranking observations do not represent sales or views.<br>ランキング観測は販売数・売上・閲覧数を示すものではありません。<br>FANZA商品へのリンクにはアフィリエイトリンクが含まれます（広告）。<p class="follow-links">毎日のランキング速報はBlueskyで配信中📈 <a href="https://bsky.app/profile/doujinrankidle.bsky.social" target="_blank" rel="noopener">Bluesky｜同人ランク観測所｜RankIdle</a> ・ <a href="https://note.com/doujinrankidle" target="_blank" rel="noopener">note｜週次レポート</a></p></footer>
   </main>
   <script src="app.js" defer></script>
 </body>
