@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T04:25:47+09:00",
+  "updated_at": "2026-11-24T09:52:49+09:00",
   "ranking_type": "api",
   "items": [
     {
@@ -14,7 +14,7 @@
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 3880,
+      "review_count": 3898,
       "review_average": 4.73,
       "genres": [
         {
@@ -557,85 +557,6 @@
     },
     {
       "rank": 8,
-      "id": "d_822071",
-      "key": "d_822071",
-      "title": "あの日、素直に好きと言えたなら  サマーホリック",
-      "price": 891,
-      "regular_price": 990,
-      "discount_rate": 10,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 153,
-      "review_average": 4.42,
-      "genres": [
-        {
-          "id": "160206",
-          "name": "BSS"
-        },
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "1034",
-          "name": "ギャル"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "553",
-          "name": "学園もの"
-        },
-        {
-          "id": "4111",
-          "name": "寝取り・寝取られ・NTR"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "1083",
-          "name": "幼なじみ"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "160035",
-          "name": "独占"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "153019",
-          "name": "脚"
-        }
-      ],
-      "circle": {
-        "id": "79380",
-        "name": "SMUGGLER"
-      },
-      "release_date": "2026-11-15",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_822071/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_822071%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_822071/d_822071pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 9,
       "id": "d_797041",
       "key": "d_797041",
       "title": "完全痴●2 清楚なJKを汚し尽くす",
@@ -714,6 +635,85 @@
       "floor": "digital_doujin"
     },
     {
+      "rank": 9,
+      "id": "d_822071",
+      "key": "d_822071",
+      "title": "あの日、素直に好きと言えたなら  サマーホリック",
+      "price": 891,
+      "regular_price": 990,
+      "discount_rate": 10,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 154,
+      "review_average": 4.4,
+      "genres": [
+        {
+          "id": "160206",
+          "name": "BSS"
+        },
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "1034",
+          "name": "ギャル"
+        },
+        {
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "553",
+          "name": "学園もの"
+        },
+        {
+          "id": "4111",
+          "name": "寝取り・寝取られ・NTR"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "1083",
+          "name": "幼なじみ"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160035",
+          "name": "独占"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "153019",
+          "name": "脚"
+        }
+      ],
+      "circle": {
+        "id": "79380",
+        "name": "SMUGGLER"
+      },
+      "release_date": "2026-11-15",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_822071/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_822071%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_822071/d_822071pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
       "rank": 10,
       "id": "d_835500",
       "key": "d_835500",
@@ -788,7 +788,7 @@
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 211,
+      "review_count": 212,
       "review_average": 4.64,
       "genres": [
         {
@@ -940,6 +940,61 @@
     },
     {
       "rank": 13,
+      "id": "d_831360",
+      "key": "d_831360",
+      "title": "らぶらぶ夫婦アンソロジー",
+      "price": 1694,
+      "regular_price": 2420,
+      "discount_rate": 30,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 8,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "6071",
+          "name": "アンソロジー"
+        },
+        {
+          "id": "152004",
+          "name": "ラブラブ・あまあま"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        }
+      ],
+      "circle": {
+        "id": "238181",
+        "name": "ぽちたろ企画"
+      },
+      "release_date": "2026-11-20",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_831360/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_831360%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_831360/d_831360pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 14,
       "id": "d_849682",
       "key": "d_849682",
       "title": "大切に人間として育てていただいたのにオナホでごめんなさい",
@@ -1018,141 +1073,7 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 14,
-      "id": "d_831360",
-      "key": "d_831360",
-      "title": "らぶらぶ夫婦アンソロジー",
-      "price": 1694,
-      "regular_price": 2420,
-      "discount_rate": 30,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 8,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "6071",
-          "name": "アンソロジー"
-        },
-        {
-          "id": "152004",
-          "name": "ラブラブ・あまあま"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        }
-      ],
-      "circle": {
-        "id": "238181",
-        "name": "ぽちたろ企画"
-      },
-      "release_date": "2026-11-20",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_831360/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_831360%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_831360/d_831360pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
       "rank": 15,
-      "id": "d_842918",
-      "key": "d_842918",
-      "title": "ネトラレ従者2",
-      "price": 880,
-      "regular_price": 880,
-      "discount_rate": null,
-      "on_sale": false,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 4,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "160099",
-          "name": "オホ声"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "160213",
-          "name": "体格差"
-        },
-        {
-          "id": "160222",
-          "name": "寝取られ・NTR"
-        },
-        {
-          "id": "4111",
-          "name": "寝取り・寝取られ・NTR"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "155018",
-          "name": "搾乳"
-        },
-        {
-          "id": "5060",
-          "name": "母乳"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "160161",
-          "name": "種付けプレス"
-        }
-      ],
-      "circle": {
-        "id": "77541",
-        "name": "猫八営業部  猫サム雷"
-      },
-      "release_date": "2026-11-17",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_842918/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_842918%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_842918/d_842918pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 16,
       "id": "d_779379",
       "key": "d_779379",
       "title": "男女の貞操逆転世界〜陰キャの俺が誰とでもヤるビッチになる話〜",
@@ -1231,6 +1152,85 @@
       "floor": "digital_doujin"
     },
     {
+      "rank": 16,
+      "id": "d_842918",
+      "key": "d_842918",
+      "title": "ネトラレ従者2",
+      "price": 880,
+      "regular_price": 880,
+      "discount_rate": null,
+      "on_sale": false,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 4,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "160099",
+          "name": "オホ声"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "160213",
+          "name": "体格差"
+        },
+        {
+          "id": "160222",
+          "name": "寝取られ・NTR"
+        },
+        {
+          "id": "4111",
+          "name": "寝取り・寝取られ・NTR"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "155018",
+          "name": "搾乳"
+        },
+        {
+          "id": "5060",
+          "name": "母乳"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "160161",
+          "name": "種付けプレス"
+        }
+      ],
+      "circle": {
+        "id": "77541",
+        "name": "猫八営業部  猫サム雷"
+      },
+      "release_date": "2026-11-17",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_842918/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_842918%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_842918/d_842918pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
       "rank": 17,
       "id": "d_837399",
       "key": "d_837399",
@@ -1242,7 +1242,7 @@
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 1685,
+      "review_count": 1687,
       "review_average": 4.74,
       "genres": [
         {
@@ -1552,6 +1552,89 @@
     },
     {
       "rank": 21,
+      "id": "d_830731",
+      "key": "d_830731",
+      "title": "レス妻 初めての玩具を買う。",
+      "price": 654,
+      "regular_price": 770,
+      "discount_rate": 15,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 7,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "160134",
+          "name": "イチオシ"
+        },
+        {
+          "id": "160145",
+          "name": "クリ責め"
+        },
+        {
+          "id": "5018",
+          "name": "ローター"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160058",
+          "name": "潮吹き"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "153022",
+          "name": "純愛"
+        },
+        {
+          "id": "28",
+          "name": "羞恥"
+        },
+        {
+          "id": "160048",
+          "name": "連続絶頂"
+        },
+        {
+          "id": "154019",
+          "name": "陰毛・腋毛"
+        }
+      ],
+      "circle": {
+        "id": "208718",
+        "name": "ぽちたろ"
+      },
+      "release_date": "2026-11-20",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_830731/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_830731%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_830731/d_830731pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 22,
       "id": "d_835854",
       "key": "d_835854",
       "title": "近所のあの子と、パンツな関係",
@@ -1626,89 +1709,6 @@
       "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_835854/",
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_835854%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_835854/d_835854pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 22,
-      "id": "d_830731",
-      "key": "d_830731",
-      "title": "レス妻 初めての玩具を買う。",
-      "price": 654,
-      "regular_price": 770,
-      "discount_rate": 15,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 6,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "160134",
-          "name": "イチオシ"
-        },
-        {
-          "id": "160145",
-          "name": "クリ責め"
-        },
-        {
-          "id": "5018",
-          "name": "ローター"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "160058",
-          "name": "潮吹き"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "153022",
-          "name": "純愛"
-        },
-        {
-          "id": "28",
-          "name": "羞恥"
-        },
-        {
-          "id": "160048",
-          "name": "連続絶頂"
-        },
-        {
-          "id": "154019",
-          "name": "陰毛・腋毛"
-        }
-      ],
-      "circle": {
-        "id": "208718",
-        "name": "ぽちたろ"
-      },
-      "release_date": "2026-11-20",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_830731/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_830731%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_830731/d_830731pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -1807,7 +1807,7 @@
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 670,
+      "review_count": 677,
       "review_average": 4.79,
       "genres": [
         {
@@ -2500,6 +2500,164 @@
     },
     {
       "rank": 33,
+      "id": "d_814780",
+      "key": "d_814780",
+      "title": "一年後、俺の子を孕む妹の記録。4",
+      "price": 792,
+      "regular_price": 990,
+      "discount_rate": 20,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 4,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "160213",
+          "name": "体格差"
+        },
+        {
+          "id": "160106",
+          "name": "女性優位"
+        },
+        {
+          "id": "1016",
+          "name": "女教師"
+        },
+        {
+          "id": "160223",
+          "name": "寝取り・NTR"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "152016",
+          "name": "浮気"
+        },
+        {
+          "id": "155021",
+          "name": "焦らし"
+        },
+        {
+          "id": "160093",
+          "name": "狂気"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "153033",
+          "name": "鬱"
+        }
+      ],
+      "circle": {
+        "id": "72483",
+        "name": "ひょこ道"
+      },
+      "release_date": "2026-11-23",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_814780/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_814780%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_814780/d_814780pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 34,
+      "id": "d_766939",
+      "key": "d_766939",
+      "title": "旧帝大卒のクールな人妻同僚は、俺の雌になります。【2話】 ―勤務中でも、我慢できません―",
+      "price": 891,
+      "regular_price": 990,
+      "discount_rate": 10,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 3,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "1001",
+          "name": "OL"
+        },
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "152001",
+          "name": "オフィス・職場"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "1039",
+          "name": "人妻・主婦"
+        },
+        {
+          "id": "160220",
+          "name": "密室"
+        },
+        {
+          "id": "4111",
+          "name": "寝取り・寝取られ・NTR"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "4020",
+          "name": "野外・露出"
+        }
+      ],
+      "circle": {
+        "id": "201077",
+        "name": "鬼塚クリス"
+      },
+      "release_date": "2026-11-21",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_766939/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_766939%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_766939/d_766939pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 35,
       "id": "d_646552",
       "key": "d_646552",
       "title": "頼めばヤらせてくれるクールな先輩荻野さん。",
@@ -2582,86 +2740,7 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 34,
-      "id": "d_814780",
-      "key": "d_814780",
-      "title": "一年後、俺の子を孕む妹の記録。4",
-      "price": 792,
-      "regular_price": 990,
-      "discount_rate": 20,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 4,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "160213",
-          "name": "体格差"
-        },
-        {
-          "id": "160106",
-          "name": "女性優位"
-        },
-        {
-          "id": "1016",
-          "name": "女教師"
-        },
-        {
-          "id": "160223",
-          "name": "寝取り・NTR"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "152016",
-          "name": "浮気"
-        },
-        {
-          "id": "155021",
-          "name": "焦らし"
-        },
-        {
-          "id": "160093",
-          "name": "狂気"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "153033",
-          "name": "鬱"
-        }
-      ],
-      "circle": {
-        "id": "72483",
-        "name": "ひょこ道"
-      },
-      "release_date": "2026-11-23",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_814780/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_814780%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_814780/d_814780pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 35,
+      "rank": 36,
       "id": "d_821574",
       "key": "d_821574",
       "title": "【大型アプデ実施！アニメ・フルボイス対応！】無防備すぎるボクっ娘のHな受難 Ver2.3.0",
@@ -2740,85 +2819,6 @@
       "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_821574/",
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_821574%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_821574/d_821574pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 36,
-      "id": "d_766939",
-      "key": "d_766939",
-      "title": "旧帝大卒のクールな人妻同僚は、俺の雌になります。【2話】 ―勤務中でも、我慢できません―",
-      "price": 891,
-      "regular_price": 990,
-      "discount_rate": 10,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 3,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "1001",
-          "name": "OL"
-        },
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "152001",
-          "name": "オフィス・職場"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "1039",
-          "name": "人妻・主婦"
-        },
-        {
-          "id": "160220",
-          "name": "密室"
-        },
-        {
-          "id": "4111",
-          "name": "寝取り・寝取られ・NTR"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "4020",
-          "name": "野外・露出"
-        }
-      ],
-      "circle": {
-        "id": "201077",
-        "name": "鬼塚クリス"
-      },
-      "release_date": "2026-11-21",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_766939/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_766939%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_766939/d_766939pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -2903,85 +2903,6 @@
     },
     {
       "rank": 38,
-      "id": "d_667623",
-      "key": "d_667623",
-      "title": "ドピュっとゴルフ伝説〜完全版〜！",
-      "price": 4070,
-      "regular_price": 4070,
-      "discount_rate": null,
-      "on_sale": false,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 23,
-      "review_average": 3.7,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "5003",
-          "name": "ぶっかけ"
-        },
-        {
-          "id": "4096",
-          "name": "スポーツ"
-        },
-        {
-          "id": "5002",
-          "name": "フェラ"
-        },
-        {
-          "id": "153016",
-          "name": "ロールプレイング"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "55",
-          "name": "処女"
-        },
-        {
-          "id": "3036",
-          "name": "女装・男の娘"
-        },
-        {
-          "id": "1029",
-          "name": "妊婦"
-        },
-        {
-          "id": "4111",
-          "name": "寝取り・寝取られ・NTR"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "153022",
-          "name": "純愛"
-        }
-      ],
-      "circle": {
-        "id": "200561",
-        "name": "たぬきハウス"
-      },
-      "release_date": "2025-09-30",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_667623/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_667623%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_667623/d_667623pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 39,
       "id": "d_778609",
       "key": "d_778609",
       "title": "人妻ゴロしの魔眼3 村で唯一の学校の先生:上杉凛（34）の場合─",
@@ -3060,7 +2981,7 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 40,
+      "rank": 39,
       "id": "d_824853",
       "key": "d_824853",
       "title": "バレンタインにダウナー系銀髪ギャルから魔法のオナホをもらったから使い倒してイチャラブセックスしまくる。",
@@ -3135,59 +3056,59 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 41,
-      "id": "d_787833",
-      "key": "d_787833",
-      "title": "攻略本を手に入れた猿山が主人公になりました-ダークネス-",
-      "price": 880,
-      "regular_price": 1760,
-      "discount_rate": 50,
-      "on_sale": true,
+      "rank": 40,
+      "id": "d_667623",
+      "key": "d_667623",
+      "title": "ドピュっとゴルフ伝説〜完全版〜！",
+      "price": 4070,
+      "regular_price": 4070,
+      "discount_rate": null,
+      "on_sale": false,
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 56,
-      "review_average": 4.8,
+      "review_count": 23,
+      "review_average": 3.7,
       "genres": [
         {
           "id": "153003",
           "name": "おっぱい"
         },
         {
-          "id": "5009",
-          "name": "ごっくん"
+          "id": "5003",
+          "name": "ぶっかけ"
         },
         {
-          "id": "160036",
-          "name": "わからせ"
-        },
-        {
-          "id": "5071",
-          "name": "ハーレム"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
+          "id": "4096",
+          "name": "スポーツ"
         },
         {
           "id": "5002",
           "name": "フェラ"
         },
         {
+          "id": "153016",
+          "name": "ロールプレイング"
+        },
+        {
           "id": "5001",
           "name": "中出し"
         },
         {
-          "id": "553",
-          "name": "学園もの"
+          "id": "55",
+          "name": "処女"
         },
         {
-          "id": "2001",
-          "name": "巨乳"
+          "id": "3036",
+          "name": "女装・男の娘"
         },
         {
-          "id": "160146",
-          "name": "快楽堕ち"
+          "id": "1029",
+          "name": "妊婦"
+        },
+        {
+          "id": "4111",
+          "name": "寝取り・寝取られ・NTR"
         },
         {
           "id": "156023",
@@ -3196,16 +3117,83 @@
         {
           "id": "156022",
           "name": "男性向け"
+        },
+        {
+          "id": "153022",
+          "name": "純愛"
         }
       ],
       "circle": {
-        "id": "234205",
-        "name": "みたらしパンナコッタ"
+        "id": "200561",
+        "name": "たぬきハウス"
       },
-      "release_date": "2026-11-15",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_787833/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_787833%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_787833/d_787833pl.jpg",
+      "release_date": "2025-09-30",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_667623/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_667623%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_667623/d_667623pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 41,
+      "id": "d_844894",
+      "key": "d_844894",
+      "title": "隣のバツイチ美人ママは底なしの性欲で…！",
+      "price": 792,
+      "regular_price": 880,
+      "discount_rate": 10,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 1,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "155026",
+          "name": "和姦"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "3008",
+          "name": "水着"
+        },
+        {
+          "id": "1014",
+          "name": "熟女"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        }
+      ],
+      "circle": {
+        "id": "24710",
+        "name": "フリーハンド魂"
+      },
+      "release_date": "2026-11-19",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_844894/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_844894%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_844894/d_844894pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -3294,89 +3282,34 @@
     },
     {
       "rank": 43,
-      "id": "d_844894",
-      "key": "d_844894",
-      "title": "隣のバツイチ美人ママは底なしの性欲で…！",
-      "price": 792,
-      "regular_price": 880,
-      "discount_rate": 10,
+      "id": "d_787833",
+      "key": "d_787833",
+      "title": "攻略本を手に入れた猿山が主人公になりました-ダークネス-",
+      "price": 880,
+      "regular_price": 1760,
+      "discount_rate": 50,
       "on_sale": true,
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 1,
-      "review_average": 5.0,
+      "review_count": 56,
+      "review_average": 4.8,
       "genres": [
         {
           "id": "153003",
           "name": "おっぱい"
         },
         {
-          "id": "5001",
-          "name": "中出し"
+          "id": "5009",
+          "name": "ごっくん"
         },
         {
-          "id": "155026",
-          "name": "和姦"
+          "id": "160036",
+          "name": "わからせ"
         },
         {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "3008",
-          "name": "水着"
-        },
-        {
-          "id": "1014",
-          "name": "熟女"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        }
-      ],
-      "circle": {
-        "id": "24710",
-        "name": "フリーハンド魂"
-      },
-      "release_date": "2026-11-19",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_844894/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_844894%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_844894/d_844894pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 44,
-      "id": "d_844841",
-      "key": "d_844841",
-      "title": "怒らないで星川さん総集編",
-      "price": 2090,
-      "regular_price": 2090,
-      "discount_rate": null,
-      "on_sale": false,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 7,
-      "review_average": 4.86,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "5005",
-          "name": "アナル"
+          "id": "5071",
+          "name": "ハーレム"
         },
         {
           "id": "5019",
@@ -3395,47 +3328,35 @@
           "name": "学園もの"
         },
         {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
           "id": "2001",
           "name": "巨乳"
+        },
+        {
+          "id": "160146",
+          "name": "快楽堕ち"
         },
         {
           "id": "156023",
           "name": "成人向け"
         },
         {
-          "id": "160044",
-          "name": "汁/液大量"
-        },
-        {
           "id": "156022",
           "name": "男性向け"
-        },
-        {
-          "id": "155017",
-          "name": "言葉責め"
-        },
-        {
-          "id": "4020",
-          "name": "野外・露出"
         }
       ],
       "circle": {
-        "id": "25530",
-        "name": "STUDIOふあん"
+        "id": "234205",
+        "name": "みたらしパンナコッタ"
       },
-      "release_date": "2026-11-17",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_844841/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_844841%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_844841/d_844841pl.jpg",
+      "release_date": "2026-11-15",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_787833/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_787833%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_787833/d_787833pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
     {
-      "rank": 45,
+      "rank": 44,
       "id": "d_850971",
       "key": "d_850971",
       "title": "俺だけが常識改変できるテレビ番組 〜生放送のまま、女子アナもお天気お姉さんも脱がせてハメて生放送〜",
@@ -3446,7 +3367,7 @@
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 121,
+      "review_count": 124,
       "review_average": 4.73,
       "genres": [
         {
@@ -3518,7 +3439,7 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 46,
+      "rank": 45,
       "id": "d_718117",
       "key": "d_718117",
       "title": "完全ヌキ無し人妻マッサージ店で、フル勃起して裏オプ中出ししまくった話。 2",
@@ -3601,6 +3522,85 @@
       "floor": "digital_doujin"
     },
     {
+      "rank": 46,
+      "id": "d_844841",
+      "key": "d_844841",
+      "title": "怒らないで星川さん総集編",
+      "price": 2090,
+      "regular_price": 2090,
+      "discount_rate": null,
+      "on_sale": false,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 7,
+      "review_average": 4.86,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "5005",
+          "name": "アナル"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "553",
+          "name": "学園もの"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160044",
+          "name": "汁/液大量"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "155017",
+          "name": "言葉責め"
+        },
+        {
+          "id": "4020",
+          "name": "野外・露出"
+        }
+      ],
+      "circle": {
+        "id": "25530",
+        "name": "STUDIOふあん"
+      },
+      "release_date": "2026-11-17",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_844841/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_844841%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_844841/d_844841pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
       "rank": 47,
       "id": "d_849597",
       "key": "d_849597",
@@ -3612,8 +3612,8 @@
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 35,
-      "review_average": 4.83,
+      "review_count": 39,
+      "review_average": 4.82,
       "genres": [
         {
           "id": "153003",
@@ -3685,89 +3685,6 @@
     },
     {
       "rank": 48,
-      "id": "d_837339",
-      "key": "d_837339",
-      "title": "ご当地のおんな 〜ダーツで行く47都道府県〜 刺さった県の美女と本番！ AI動画464本・3時間超え",
-      "price": 1540,
-      "regular_price": 3080,
-      "discount_rate": 50,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 126,
-      "review_average": 4.68,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "5003",
-          "name": "ぶっかけ"
-        },
-        {
-          "id": "153016",
-          "name": "ロールプレイング"
-        },
-        {
-          "id": "154042",
-          "name": "不良・ヤンキー"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "1039",
-          "name": "人妻・主婦"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "13",
-          "name": "動画・アニメーション"
-        },
-        {
-          "id": "4111",
-          "name": "寝取り・寝取られ・NTR"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "4020",
-          "name": "野外・露出"
-        }
-      ],
-      "circle": {
-        "id": "234880",
-        "name": "アワイ"
-      },
-      "release_date": "2026-11-15",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_837339/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_837339%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_837339/d_837339pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 49,
       "id": "d_490199",
       "key": "d_490199",
       "title": "S級女子たちとエッチな動画を撮ることになった僕",
@@ -3838,6 +3755,89 @@
       "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_490199/",
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_490199%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_490199/d_490199pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 49,
+      "id": "d_837339",
+      "key": "d_837339",
+      "title": "ご当地のおんな 〜ダーツで行く47都道府県〜 刺さった県の美女と本番！ AI動画464本・3時間超え",
+      "price": 1540,
+      "regular_price": 3080,
+      "discount_rate": 50,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 127,
+      "review_average": 4.68,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "5003",
+          "name": "ぶっかけ"
+        },
+        {
+          "id": "153016",
+          "name": "ロールプレイング"
+        },
+        {
+          "id": "154042",
+          "name": "不良・ヤンキー"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "1039",
+          "name": "人妻・主婦"
+        },
+        {
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "13",
+          "name": "動画・アニメーション"
+        },
+        {
+          "id": "4111",
+          "name": "寝取り・寝取られ・NTR"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "4020",
+          "name": "野外・露出"
+        }
+      ],
+      "circle": {
+        "id": "234880",
+        "name": "アワイ"
+      },
+      "release_date": "2026-11-15",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_837339/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_837339%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_837339/d_837339pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -4092,85 +4092,6 @@
     },
     {
       "rank": 53,
-      "id": "d_849007",
-      "key": "d_849007",
-      "title": "ヴァージンリベンジャー5",
-      "price": 1144,
-      "regular_price": 1430,
-      "discount_rate": 20,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 20,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "156001",
-          "name": "シリーズもの"
-        },
-        {
-          "id": "37",
-          "name": "デモ・体験版あり"
-        },
-        {
-          "id": "5002",
-          "name": "フェラ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "55",
-          "name": "処女"
-        },
-        {
-          "id": "153024",
-          "name": "女性視点"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "15",
-          "name": "音声付き"
-        },
-        {
-          "id": "160017",
-          "name": "黒髪"
-        }
-      ],
-      "circle": {
-        "id": "20002",
-        "name": "クリムゾン"
-      },
-      "release_date": "2026-11-15",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_849007/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_849007%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_849007/d_849007pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 54,
       "id": "d_833650",
       "key": "d_833650",
       "title": "種付け自由学園6",
@@ -4249,7 +4170,7 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 55,
+      "rank": 54,
       "id": "d_850970",
       "key": "d_850970",
       "title": "超高級マンション清掃員の俺、仕事ついでにハイスペ美人居住者たちの愚痴を聞いていたら完全合意の中出しハーレム生活を送ってしまう4",
@@ -4324,6 +4245,85 @@
       "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_850970/",
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_850970%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_850970/d_850970pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 55,
+      "id": "d_849007",
+      "key": "d_849007",
+      "title": "ヴァージンリベンジャー5",
+      "price": 1144,
+      "regular_price": 1430,
+      "discount_rate": 20,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 20,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "156001",
+          "name": "シリーズもの"
+        },
+        {
+          "id": "37",
+          "name": "デモ・体験版あり"
+        },
+        {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "55",
+          "name": "処女"
+        },
+        {
+          "id": "153024",
+          "name": "女性視点"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "15",
+          "name": "音声付き"
+        },
+        {
+          "id": "160017",
+          "name": "黒髪"
+        }
+      ],
+      "circle": {
+        "id": "20002",
+        "name": "クリムゾン"
+      },
+      "release_date": "2026-11-15",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_849007/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_849007%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_849007/d_849007pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -4799,164 +4799,6 @@
     },
     {
       "rank": 62,
-      "id": "d_664289",
-      "key": "d_664289",
-      "title": "委員長は催●アプリを信じてる。総集編",
-      "price": 2640,
-      "regular_price": 6600,
-      "discount_rate": 60,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 8,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "5005",
-          "name": "アナル"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "5002",
-          "name": "フェラ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "55",
-          "name": "処女"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "154018",
-          "name": "委員長"
-        },
-        {
-          "id": "553",
-          "name": "学園もの"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "4020",
-          "name": "野外・露出"
-        }
-      ],
-      "circle": {
-        "id": "25530",
-        "name": "STUDIOふあん"
-      },
-      "release_date": "2025-09-27",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_664289/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_664289%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_664289/d_664289pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 63,
-      "id": "d_841494",
-      "key": "d_841494",
-      "title": "ボナポリックス〜ボーイッシュな幼馴染とポリネシアンセックスする話〜",
-      "price": 1056,
-      "regular_price": 1320,
-      "discount_rate": 20,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 7,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "5002",
-          "name": "フェラ"
-        },
-        {
-          "id": "160215",
-          "name": "ボーイッシュ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "55",
-          "name": "処女"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "553",
-          "name": "学園もの"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "1083",
-          "name": "幼なじみ"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "155021",
-          "name": "焦らし"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        }
-      ],
-      "circle": {
-        "id": "71369",
-        "name": "チンジャオ娘。"
-      },
-      "release_date": "2026-11-13",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_841494/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_841494%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_841494/d_841494pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 64,
       "id": "d_842406",
       "key": "d_842406",
       "title": "まおくんとサキュバスメイドさん〜メイドさんにいたずらする探索系RPG2〜",
@@ -5019,6 +4861,164 @@
       "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_842406/",
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_842406%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_842406/d_842406pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 63,
+      "id": "d_694992",
+      "key": "d_694992",
+      "title": "妹孕ませないと出られない島2",
+      "price": 660,
+      "regular_price": 1320,
+      "discount_rate": 50,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 21,
+      "review_average": 4.81,
+      "genres": [
+        {
+          "id": "5022",
+          "name": "3P・4P"
+        },
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "160099",
+          "name": "オホ声"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "160018",
+          "name": "妊娠・孕ませ"
+        },
+        {
+          "id": "154029",
+          "name": "実妹"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160058",
+          "name": "潮吹き"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "160161",
+          "name": "種付けプレス"
+        },
+        {
+          "id": "4002",
+          "name": "近親相姦"
+        }
+      ],
+      "circle": {
+        "id": "201241",
+        "name": "あいらんどう"
+      },
+      "release_date": "2026-04-12",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_694992/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_694992%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_694992/d_694992pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 64,
+      "id": "d_641324",
+      "key": "d_641324",
+      "title": "（自称）ヤリマンのナマイキ後輩と付き合うまでの話。",
+      "price": 500,
+      "regular_price": 1320,
+      "discount_rate": 62,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 19,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "160144",
+          "name": "乳首責め"
+        },
+        {
+          "id": "55",
+          "name": "処女"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "154026",
+          "name": "後輩"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160165",
+          "name": "授乳手コキ"
+        },
+        {
+          "id": "160218",
+          "name": "生意気"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "153022",
+          "name": "純愛"
+        },
+        {
+          "id": "160048",
+          "name": "連続絶頂"
+        }
+      ],
+      "circle": {
+        "id": "221526",
+        "name": "IRIGA"
+      },
+      "release_date": "2026-03-18",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_641324/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_641324%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_641324/d_641324pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -5099,96 +5099,17 @@
     },
     {
       "rank": 66,
-      "id": "d_694992",
-      "key": "d_694992",
-      "title": "妹孕ませないと出られない島2",
-      "price": 660,
+      "id": "d_841494",
+      "key": "d_841494",
+      "title": "ボナポリックス〜ボーイッシュな幼馴染とポリネシアンセックスする話〜",
+      "price": 1056,
       "regular_price": 1320,
-      "discount_rate": 50,
+      "discount_rate": 20,
       "on_sale": true,
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 21,
-      "review_average": 4.81,
-      "genres": [
-        {
-          "id": "5022",
-          "name": "3P・4P"
-        },
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "160099",
-          "name": "オホ声"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "160018",
-          "name": "妊娠・孕ませ"
-        },
-        {
-          "id": "154029",
-          "name": "実妹"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "160058",
-          "name": "潮吹き"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "160161",
-          "name": "種付けプレス"
-        },
-        {
-          "id": "4002",
-          "name": "近親相姦"
-        }
-      ],
-      "circle": {
-        "id": "201241",
-        "name": "あいらんどう"
-      },
-      "release_date": "2026-04-12",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_694992/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_694992%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_694992/d_694992pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 67,
-      "id": "d_641324",
-      "key": "d_641324",
-      "title": "（自称）ヤリマンのナマイキ後輩と付き合うまでの話。",
-      "price": 500,
-      "regular_price": 1320,
-      "discount_rate": 62,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 19,
+      "review_count": 7,
       "review_average": 5.0,
       "genres": [
         {
@@ -5196,16 +5117,28 @@
           "name": "おっぱい"
         },
         {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
+          "id": "160215",
+          "name": "ボーイッシュ"
+        },
+        {
           "id": "5001",
           "name": "中出し"
         },
         {
-          "id": "160144",
-          "name": "乳首責め"
-        },
-        {
           "id": "55",
           "name": "処女"
+        },
+        {
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "553",
+          "name": "学園もの"
         },
         {
           "id": "156021",
@@ -5216,146 +5149,51 @@
           "name": "巨乳"
         },
         {
-          "id": "154026",
-          "name": "後輩"
+          "id": "1083",
+          "name": "幼なじみ"
         },
         {
           "id": "156023",
           "name": "成人向け"
         },
         {
-          "id": "160165",
-          "name": "授乳手コキ"
-        },
-        {
-          "id": "160218",
-          "name": "生意気"
+          "id": "155021",
+          "name": "焦らし"
         },
         {
           "id": "156022",
           "name": "男性向け"
-        },
-        {
-          "id": "153022",
-          "name": "純愛"
-        },
-        {
-          "id": "160048",
-          "name": "連続絶頂"
         }
       ],
       "circle": {
-        "id": "221526",
-        "name": "IRIGA"
+        "id": "71369",
+        "name": "チンジャオ娘。"
       },
-      "release_date": "2026-03-18",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_641324/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_641324%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_641324/d_641324pl.jpg",
+      "release_date": "2026-11-13",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_841494/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_841494%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_841494/d_841494pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
     {
-      "rank": 68,
-      "id": "d_836995",
-      "key": "d_836995",
-      "title": "昼下がりのマッサージ〜夫に秘密で溶かされて〜",
-      "price": 1650,
-      "regular_price": 3300,
-      "discount_rate": 50,
+      "rank": 67,
+      "id": "d_664289",
+      "key": "d_664289",
+      "title": "委員長は催●アプリを信じてる。総集編",
+      "price": 2640,
+      "regular_price": 6600,
+      "discount_rate": 60,
       "on_sale": true,
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 262,
-      "review_average": 4.7,
+      "review_count": 8,
+      "review_average": 5.0,
       "genres": [
         {
-          "id": "155001",
-          "name": "おさわり"
-        },
-        {
-          "id": "5003",
-          "name": "ぶっかけ"
-        },
-        {
-          "id": "7110",
-          "name": "シミュレーション"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "160253",
-          "name": "マッサージ"
-        },
-        {
-          "id": "160201",
-          "name": "ヨガ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "1039",
-          "name": "人妻・主婦"
-        },
-        {
-          "id": "4111",
-          "name": "寝取り・寝取られ・NTR"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "15",
-          "name": "音声付き"
-        }
-      ],
-      "circle": {
-        "id": "215588",
-        "name": "もみじもみもみ工房"
-      },
-      "release_date": "2026-11-06",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_836995/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_836995%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_836995/d_836995pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 69,
-      "id": "d_849767",
-      "key": "d_849767",
-      "title": "【早期購入特典つき】【英語・中国語対応】身体で返します。〜上京して稼いだ金で、東京の女26人の借金を肩代わりしたら、中出し返済で全員孕ませる〜",
-      "price": 1650,
-      "regular_price": 3300,
-      "discount_rate": 50,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 181,
-      "review_average": 4.4,
-      "genres": [
-        {
-          "id": "1034",
-          "name": "ギャル"
-        },
-        {
-          "id": "7110",
-          "name": "シミュレーション"
+          "id": "5005",
+          "name": "アナル"
         },
         {
           "id": "5019",
@@ -5370,12 +5208,20 @@
           "name": "中出し"
         },
         {
-          "id": "1039",
-          "name": "人妻・主婦"
+          "id": "55",
+          "name": "処女"
         },
         {
-          "id": "1029",
-          "name": "妊婦"
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "154018",
+          "name": "委員長"
+        },
+        {
+          "id": "553",
+          "name": "学園もの"
         },
         {
           "id": "156021",
@@ -5390,35 +5236,98 @@
           "name": "成人向け"
         },
         {
-          "id": "160157",
-          "name": "正常位"
-        },
-        {
           "id": "156022",
           "name": "男性向け"
         },
         {
           "id": "4020",
           "name": "野外・露出"
-        },
-        {
-          "id": "160158",
-          "name": "騎乗位"
         }
       ],
       "circle": {
-        "id": "226872",
-        "name": "パパイヤブロー"
+        "id": "25530",
+        "name": "STUDIOふあん"
       },
-      "release_date": "2026-11-11",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_849767/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_849767%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_849767/d_849767pl.jpg",
+      "release_date": "2025-09-27",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_664289/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_664289%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_664289/d_664289pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
     {
-      "rank": 70,
+      "rank": 68,
+      "id": "d_377375",
+      "key": "d_377375",
+      "title": "奴◯を調教してハーレム作る〜育てた奴◯たちと純愛ハーレムHするまでの話〜",
+      "price": 500,
+      "regular_price": 1540,
+      "discount_rate": 68,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 38,
+      "review_average": 4.79,
+      "genres": [
+        {
+          "id": "153015",
+          "name": "ほのぼの"
+        },
+        {
+          "id": "5008",
+          "name": "オナニー"
+        },
+        {
+          "id": "153001",
+          "name": "オールハッピー"
+        },
+        {
+          "id": "5071",
+          "name": "ハーレム"
+        },
+        {
+          "id": "17",
+          "name": "ファンタジー"
+        },
+        {
+          "id": "152004",
+          "name": "ラブラブ・あまあま"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160012",
+          "name": "手コキ"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "160008",
+          "name": "耳舐め"
+        }
+      ],
+      "circle": {
+        "id": "71124",
+        "name": "軒下の猫屋"
+      },
+      "release_date": "2024-06-02",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_377375/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_377375%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_377375/d_377375pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 69,
       "id": "d_837979",
       "key": "d_837979",
       "title": "【フルモーション×フルボイス】人妻寝取られ調教〜夫に差し出された巨乳妻を14日間で俺専用肉便器にするまで〜【早期購入特典あり】",
@@ -5505,73 +5414,164 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 71,
-      "id": "d_377375",
-      "key": "d_377375",
-      "title": "奴◯を調教してハーレム作る〜育てた奴◯たちと純愛ハーレムHするまでの話〜",
-      "price": 500,
-      "regular_price": 1540,
-      "discount_rate": 68,
+      "rank": 70,
+      "id": "d_836995",
+      "key": "d_836995",
+      "title": "昼下がりのマッサージ〜夫に秘密で溶かされて〜",
+      "price": 1650,
+      "regular_price": 3300,
+      "discount_rate": 50,
       "on_sale": true,
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 38,
-      "review_average": 4.79,
+      "review_count": 263,
+      "review_average": 4.7,
       "genres": [
         {
-          "id": "153015",
-          "name": "ほのぼの"
+          "id": "155001",
+          "name": "おさわり"
         },
         {
-          "id": "5008",
-          "name": "オナニー"
+          "id": "5003",
+          "name": "ぶっかけ"
         },
         {
-          "id": "153001",
-          "name": "オールハッピー"
+          "id": "7110",
+          "name": "シミュレーション"
         },
         {
-          "id": "5071",
-          "name": "ハーレム"
+          "id": "5019",
+          "name": "パイズリ"
         },
         {
-          "id": "17",
-          "name": "ファンタジー"
+          "id": "160253",
+          "name": "マッサージ"
         },
         {
-          "id": "152004",
-          "name": "ラブラブ・あまあま"
+          "id": "160201",
+          "name": "ヨガ"
         },
         {
           "id": "5001",
           "name": "中出し"
         },
         {
-          "id": "156023",
-          "name": "成人向け"
+          "id": "1039",
+          "name": "人妻・主婦"
         },
         {
-          "id": "160012",
-          "name": "手コキ"
+          "id": "4111",
+          "name": "寝取り・寝取られ・NTR"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
         },
         {
           "id": "156022",
           "name": "男性向け"
         },
         {
-          "id": "160008",
-          "name": "耳舐め"
+          "id": "15",
+          "name": "音声付き"
         }
       ],
       "circle": {
-        "id": "71124",
-        "name": "軒下の猫屋"
+        "id": "215588",
+        "name": "もみじもみもみ工房"
       },
-      "release_date": "2024-06-02",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_377375/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_377375%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_377375/d_377375pl.jpg",
+      "release_date": "2026-11-06",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_836995/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_836995%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_836995/d_836995pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 71,
+      "id": "d_849767",
+      "key": "d_849767",
+      "title": "【早期購入特典つき】【英語・中国語対応】身体で返します。〜上京して稼いだ金で、東京の女26人の借金を肩代わりしたら、中出し返済で全員孕ませる〜",
+      "price": 1650,
+      "regular_price": 3300,
+      "discount_rate": 50,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 181,
+      "review_average": 4.4,
+      "genres": [
+        {
+          "id": "1034",
+          "name": "ギャル"
+        },
+        {
+          "id": "7110",
+          "name": "シミュレーション"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "1039",
+          "name": "人妻・主婦"
+        },
+        {
+          "id": "1029",
+          "name": "妊婦"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160157",
+          "name": "正常位"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "4020",
+          "name": "野外・露出"
+        },
+        {
+          "id": "160158",
+          "name": "騎乗位"
+        }
+      ],
+      "circle": {
+        "id": "226872",
+        "name": "パパイヤブロー"
+      },
+      "release_date": "2026-11-11",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_849767/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_849767%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_849767/d_849767pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -5660,152 +5660,6 @@
     },
     {
       "rank": 73,
-      "id": "d_788009",
-      "key": "d_788009",
-      "title": "彼女の妹が巨乳ミニスカ〇〇で小悪魔系7",
-      "price": 891,
-      "regular_price": 990,
-      "discount_rate": 10,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 10,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "4031",
-          "name": "コスプレ"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "4111",
-          "name": "寝取り・寝取られ・NTR"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        }
-      ],
-      "circle": {
-        "id": "76690",
-        "name": "アオヒモファミリア"
-      },
-      "release_date": "2026-11-12",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_788009/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_788009%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_788009/d_788009pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 74,
-      "id": "d_743313",
-      "key": "d_743313",
-      "title": "地元の同級生ギャルが 人妻になってて 生種付けさせられてる。",
-      "price": 396,
-      "regular_price": 990,
-      "discount_rate": 60,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 16,
-      "review_average": 4.88,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "1034",
-          "name": "ギャル"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "5002",
-          "name": "フェラ"
-        },
-        {
-          "id": "152004",
-          "name": "ラブラブ・あまあま"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "1039",
-          "name": "人妻・主婦"
-        },
-        {
-          "id": "4111",
-          "name": "寝取り・寝取られ・NTR"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "152016",
-          "name": "浮気"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        }
-      ],
-      "circle": {
-        "id": "25530",
-        "name": "STUDIOふあん"
-      },
-      "release_date": "2026-07-18",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_743313/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_743313%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_743313/d_743313pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 75,
       "id": "d_809680",
       "key": "d_809680",
       "title": "ギャルを嫁にしたら毎日がエロ最高だった。4",
@@ -5884,7 +5738,74 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 76,
+      "rank": 74,
+      "id": "d_788009",
+      "key": "d_788009",
+      "title": "彼女の妹が巨乳ミニスカ〇〇で小悪魔系7",
+      "price": 891,
+      "regular_price": 990,
+      "discount_rate": 10,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 10,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "4031",
+          "name": "コスプレ"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "4111",
+          "name": "寝取り・寝取られ・NTR"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        }
+      ],
+      "circle": {
+        "id": "76690",
+        "name": "アオヒモファミリア"
+      },
+      "release_date": "2026-11-12",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_788009/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_788009%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_788009/d_788009pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 75,
       "id": "d_850572",
       "key": "d_850572",
       "title": "裏アカがバレた水泳部マネージャー",
@@ -5967,7 +5888,7 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 77,
+      "rank": 76,
       "id": "d_445868",
       "key": "d_445868",
       "title": "婚期ぎりぎりシスター、せめて処女を捨てたい。",
@@ -6046,7 +5967,7 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 78,
+      "rank": 77,
       "id": "d_251432",
       "key": "d_251432",
       "title": "カルデア性活最高です-魔力供給まとめ本-",
@@ -6097,6 +6018,85 @@
       "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_251432/",
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_251432%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_251432/d_251432pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 78,
+      "id": "d_743313",
+      "key": "d_743313",
+      "title": "地元の同級生ギャルが 人妻になってて 生種付けさせられてる。",
+      "price": 396,
+      "regular_price": 990,
+      "discount_rate": 60,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 16,
+      "review_average": 4.88,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "1034",
+          "name": "ギャル"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
+          "id": "152004",
+          "name": "ラブラブ・あまあま"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "1039",
+          "name": "人妻・主婦"
+        },
+        {
+          "id": "4111",
+          "name": "寝取り・寝取られ・NTR"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "152016",
+          "name": "浮気"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        }
+      ],
+      "circle": {
+        "id": "25530",
+        "name": "STUDIOふあん"
+      },
+      "release_date": "2026-07-18",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_743313/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_743313%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_743313/d_743313pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -6185,42 +6185,46 @@
     },
     {
       "rank": 80,
-      "id": "d_803146",
-      "key": "d_803146",
-      "title": "どスケベギャルがでかチンオタク君とやりたくて3ヶ月がまんする話",
-      "price": 693,
-      "regular_price": 990,
-      "discount_rate": 30,
-      "on_sale": true,
+      "id": "d_840592",
+      "key": "d_840592",
+      "title": "オタクな彼女のエロ倫理観はブッッッ壊れてる",
+      "price": 660,
+      "regular_price": 660,
+      "discount_rate": null,
+      "on_sale": false,
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 3,
+      "review_count": 6,
       "review_average": 5.0,
       "genres": [
         {
-          "id": "5008",
-          "name": "オナニー"
+          "id": "153003",
+          "name": "おっぱい"
         },
         {
-          "id": "1034",
-          "name": "ギャル"
+          "id": "153004",
+          "name": "お尻・ヒップ"
         },
         {
-          "id": "5019",
-          "name": "パイズリ"
+          "id": "5003",
+          "name": "ぶっかけ"
         },
         {
-          "id": "6164",
-          "name": "ビッチ"
+          "id": "4031",
+          "name": "コスプレ"
         },
         {
-          "id": "152004",
-          "name": "ラブラブ・あまあま"
+          "id": "5001",
+          "name": "中出し"
         },
         {
           "id": "48",
           "name": "制服"
+        },
+        {
+          "id": "553",
+          "name": "学園もの"
         },
         {
           "id": "156021",
@@ -6231,38 +6235,30 @@
           "name": "巨乳"
         },
         {
-          "id": "154024",
-          "name": "巨根"
-        },
-        {
           "id": "156023",
           "name": "成人向け"
-        },
-        {
-          "id": "160035",
-          "name": "独占"
         },
         {
           "id": "156022",
           "name": "男性向け"
         },
         {
-          "id": "154025",
-          "name": "金髪"
+          "id": "4020",
+          "name": "野外・露出"
         },
         {
-          "id": "160089",
-          "name": "長身"
+          "id": "160037",
+          "name": "陰キャ・地味"
         }
       ],
       "circle": {
-        "id": "76434",
-        "name": "KANIKORO"
+        "id": "25530",
+        "name": "STUDIOふあん"
       },
-      "release_date": "2026-11-17",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_803146/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_803146%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_803146/d_803146pl.jpg",
+      "release_date": "2026-11-21",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_840592/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_840592%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_840592/d_840592pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -6351,322 +6347,6 @@
     },
     {
       "rank": 82,
-      "id": "d_840592",
-      "key": "d_840592",
-      "title": "オタクな彼女のエロ倫理観はブッッッ壊れてる",
-      "price": 660,
-      "regular_price": 660,
-      "discount_rate": null,
-      "on_sale": false,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 6,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "153004",
-          "name": "お尻・ヒップ"
-        },
-        {
-          "id": "5003",
-          "name": "ぶっかけ"
-        },
-        {
-          "id": "4031",
-          "name": "コスプレ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "553",
-          "name": "学園もの"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "4020",
-          "name": "野外・露出"
-        },
-        {
-          "id": "160037",
-          "name": "陰キャ・地味"
-        }
-      ],
-      "circle": {
-        "id": "25530",
-        "name": "STUDIOふあん"
-      },
-      "release_date": "2026-11-21",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_840592/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_840592%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_840592/d_840592pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 83,
-      "id": "d_811449",
-      "key": "d_811449",
-      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について【早期購入＆レビュー特典あり】",
-      "price": 1485,
-      "regular_price": 2970,
-      "discount_rate": 50,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 1141,
-      "review_average": 4.63,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "7110",
-          "name": "シミュレーション"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "5002",
-          "name": "フェラ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "13",
-          "name": "動画・アニメーション"
-        },
-        {
-          "id": "553",
-          "name": "学園もの"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "152011",
-          "name": "退廃・背徳・インモラル"
-        },
-        {
-          "id": "15",
-          "name": "音声付き"
-        }
-      ],
-      "circle": {
-        "id": "232656",
-        "name": "セフィロンソフト"
-      },
-      "release_date": "2026-08-25",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_811449/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_811449%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_811449/d_811449pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 84,
-      "id": "d_406521",
-      "key": "d_406521",
-      "title": "行き遅れ231歳ちょろエルフ戦線",
-      "price": 528,
-      "regular_price": 1320,
-      "discount_rate": 60,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 31,
-      "review_average": 4.71,
-      "genres": [
-        {
-          "id": "5003",
-          "name": "ぶっかけ"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "17",
-          "name": "ファンタジー"
-        },
-        {
-          "id": "5002",
-          "name": "フェラ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "55",
-          "name": "処女"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "27",
-          "name": "辱め"
-        },
-        {
-          "id": "160226",
-          "name": "逆NTR"
-        },
-        {
-          "id": "4020",
-          "name": "野外・露出"
-        }
-      ],
-      "circle": {
-        "id": "25530",
-        "name": "STUDIOふあん"
-      },
-      "release_date": "2026-07-11",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_406521/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_406521%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_406521/d_406521pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 85,
-      "id": "d_690440",
-      "key": "d_690440",
-      "title": "陸上部女子は俺の生オナホ！！！大総集編",
-      "price": 3960,
-      "regular_price": 9900,
-      "discount_rate": 60,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 5,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "5003",
-          "name": "ぶっかけ"
-        },
-        {
-          "id": "5005",
-          "name": "アナル"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "5002",
-          "name": "フェラ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "3001",
-          "name": "体操着・ブルマ"
-        },
-        {
-          "id": "55",
-          "name": "処女"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "553",
-          "name": "学園もの"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "4020",
-          "name": "野外・露出"
-        }
-      ],
-      "circle": {
-        "id": "25530",
-        "name": "STUDIOふあん"
-      },
-      "release_date": "2025-11-07",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_690440/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_690440%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_690440/d_690440pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 86,
       "id": "d_836477",
       "key": "d_836477",
       "title": "幼なじみ母姉妹（おやこ）とのハーレム性活〜幼馴染の母親と生ハメ本気セックスした一日〜",
@@ -6745,7 +6425,90 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 87,
+      "rank": 83,
+      "id": "d_811449",
+      "key": "d_811449",
+      "title": "【スマホ対応】時間停止催●でJKにいたずらし放題な件について【早期購入＆レビュー特典あり】",
+      "price": 1485,
+      "regular_price": 2970,
+      "discount_rate": 50,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 1143,
+      "review_average": 4.63,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "7110",
+          "name": "シミュレーション"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "13",
+          "name": "動画・アニメーション"
+        },
+        {
+          "id": "553",
+          "name": "学園もの"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "152011",
+          "name": "退廃・背徳・インモラル"
+        },
+        {
+          "id": "15",
+          "name": "音声付き"
+        }
+      ],
+      "circle": {
+        "id": "232656",
+        "name": "セフィロンソフト"
+      },
+      "release_date": "2026-08-25",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_811449/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_811449%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_811449/d_811449pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 84,
       "id": "d_841044",
       "key": "d_841044",
       "title": "おじさん、抜かないで…",
@@ -6812,47 +6575,130 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 88,
-      "id": "d_842930",
-      "key": "d_842930",
-      "title": "【4本セット】ギャルサバッ！〜無人島でもクラフトしながらハーレムな笑〜",
-      "price": 5456,
-      "regular_price": 6820,
-      "discount_rate": 20,
+      "rank": 85,
+      "id": "d_803146",
+      "key": "d_803146",
+      "title": "どスケベギャルがでかチンオタク君とやりたくて3ヶ月がまんする話",
+      "price": 693,
+      "regular_price": 990,
+      "discount_rate": 30,
       "on_sale": true,
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 12,
+      "review_count": 3,
       "review_average": 5.0,
       "genres": [
         {
-          "id": "155001",
-          "name": "おさわり"
+          "id": "5008",
+          "name": "オナニー"
         },
         {
-          "id": "153003",
-          "name": "おっぱい"
+          "id": "1034",
+          "name": "ギャル"
         },
         {
-          "id": "5005",
-          "name": "アナル"
+          "id": "5019",
+          "name": "パイズリ"
         },
         {
-          "id": "160134",
-          "name": "イチオシ"
-        },
-        {
-          "id": "7110",
-          "name": "シミュレーション"
+          "id": "6164",
+          "name": "ビッチ"
         },
         {
           "id": "152004",
           "name": "ラブラブ・あまあま"
         },
         {
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "154024",
+          "name": "巨根"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160035",
+          "name": "独占"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "154025",
+          "name": "金髪"
+        },
+        {
+          "id": "160089",
+          "name": "長身"
+        }
+      ],
+      "circle": {
+        "id": "76434",
+        "name": "KANIKORO"
+      },
+      "release_date": "2026-11-17",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_803146/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_803146%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_803146/d_803146pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 86,
+      "id": "d_406521",
+      "key": "d_406521",
+      "title": "行き遅れ231歳ちょろエルフ戦線",
+      "price": 528,
+      "regular_price": 1320,
+      "discount_rate": 60,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 31,
+      "review_average": 4.71,
+      "genres": [
+        {
+          "id": "5003",
+          "name": "ぶっかけ"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "17",
+          "name": "ファンタジー"
+        },
+        {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
           "id": "5001",
           "name": "中出し"
+        },
+        {
+          "id": "55",
+          "name": "処女"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
         },
         {
           "id": "2001",
@@ -6867,8 +6713,12 @@
           "name": "男性向け"
         },
         {
-          "id": "28",
-          "name": "羞恥"
+          "id": "27",
+          "name": "辱め"
+        },
+        {
+          "id": "160226",
+          "name": "逆NTR"
         },
         {
           "id": "4020",
@@ -6876,18 +6726,18 @@
         }
       ],
       "circle": {
-        "id": "202625",
-        "name": "たわわデリバリー"
+        "id": "25530",
+        "name": "STUDIOふあん"
       },
-      "release_date": "2026-11-13",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_842930/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_842930%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_842930/d_842930pl.jpg",
+      "release_date": "2026-07-11",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_406521/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_406521%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_406521/d_406521pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
     {
-      "rank": 89,
+      "rank": 87,
       "id": "d_832280",
       "key": "d_832280",
       "title": "【総集編】幼馴染彼女が道場破りにお持ち帰りされて、一ヶ月間ガッツリ種付けされるお話。",
@@ -6966,7 +6816,240 @@
       "floor": "digital_doujin"
     },
     {
+      "rank": 88,
+      "id": "d_690440",
+      "key": "d_690440",
+      "title": "陸上部女子は俺の生オナホ！！！大総集編",
+      "price": 3960,
+      "regular_price": 9900,
+      "discount_rate": 60,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 5,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "5003",
+          "name": "ぶっかけ"
+        },
+        {
+          "id": "5005",
+          "name": "アナル"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "3001",
+          "name": "体操着・ブルマ"
+        },
+        {
+          "id": "55",
+          "name": "処女"
+        },
+        {
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "553",
+          "name": "学園もの"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "4020",
+          "name": "野外・露出"
+        }
+      ],
+      "circle": {
+        "id": "25530",
+        "name": "STUDIOふあん"
+      },
+      "release_date": "2025-11-07",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_690440/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_690440%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_690440/d_690440pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 89,
+      "id": "d_842930",
+      "key": "d_842930",
+      "title": "【4本セット】ギャルサバッ！〜無人島でもクラフトしながらハーレムな笑〜",
+      "price": 5456,
+      "regular_price": 6820,
+      "discount_rate": 20,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 12,
+      "review_average": 5.0,
+      "genres": [
+        {
+          "id": "155001",
+          "name": "おさわり"
+        },
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "5005",
+          "name": "アナル"
+        },
+        {
+          "id": "160134",
+          "name": "イチオシ"
+        },
+        {
+          "id": "7110",
+          "name": "シミュレーション"
+        },
+        {
+          "id": "152004",
+          "name": "ラブラブ・あまあま"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "28",
+          "name": "羞恥"
+        },
+        {
+          "id": "4020",
+          "name": "野外・露出"
+        }
+      ],
+      "circle": {
+        "id": "202625",
+        "name": "たわわデリバリー"
+      },
+      "release_date": "2026-11-13",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_842930/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_842930%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_842930/d_842930pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
       "rank": 90,
+      "id": "d_841706",
+      "key": "d_841706",
+      "title": "とらぶる20人Hハーレム 〜夜の裏オプ彩南祭〜【HCG1000枚超・180Hシーン超】",
+      "price": 500,
+      "regular_price": 1980,
+      "discount_rate": 75,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": null,
+      "review_average": null,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "5003",
+          "name": "ぶっかけ"
+        },
+        {
+          "id": "153012",
+          "name": "デジタルノベル"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "55",
+          "name": "処女"
+        },
+        {
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "553",
+          "name": "学園もの"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "15",
+          "name": "音声付き"
+        }
+      ],
+      "circle": {
+        "id": "208120",
+        "name": "とらぶる本舗"
+      },
+      "release_date": "2026-10-24",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_841706/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_841706%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_841706/d_841706pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 91,
       "id": "d_813249",
       "key": "d_813249",
       "title": "孕ませナンパ転生ローグライト〜悪魔と契約して寿命を使って女とセックスしまくって100万の子種を作れ！〜",
@@ -7049,122 +7132,47 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 91,
-      "id": "d_840705",
-      "key": "d_840705",
-      "title": "Chill PC Club 〜作業とHの日々〜",
-      "price": 605,
-      "regular_price": 1210,
-      "discount_rate": 50,
+      "rank": 92,
+      "id": "d_803160",
+      "key": "d_803160",
+      "title": "ケツ穴カツアゲに夢中なギャルさんはイラムラアナニーが止まらない！",
+      "price": 693,
+      "regular_price": 990,
+      "discount_rate": 30,
       "on_sale": true,
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 2,
-      "review_average": 5.0,
-      "genres": [
-        {
-          "id": "2004",
-          "name": "めがね"
-        },
-        {
-          "id": "7110",
-          "name": "シミュレーション"
-        },
-        {
-          "id": "160088",
-          "name": "ショートカット"
-        },
-        {
-          "id": "37",
-          "name": "デモ・体験版あり"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "160249",
-          "name": "主観視点"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "152014",
-          "name": "日常・生活"
-        },
-        {
-          "id": "160058",
-          "name": "潮吹き"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "153022",
-          "name": "純愛"
-        },
-        {
-          "id": "154019",
-          "name": "陰毛・腋毛"
-        }
-      ],
-      "circle": {
-        "id": "238728",
-        "name": "ビッグボーイ"
-      },
-      "release_date": "2026-11-08",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_840705/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_840705%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_840705/d_840705pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 92,
-      "id": "d_839446",
-      "key": "d_839446",
-      "title": "5人部屋",
-      "price": 990,
-      "regular_price": 990,
-      "discount_rate": null,
-      "on_sale": false,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 12,
-      "review_average": 4.83,
+      "review_count": 19,
+      "review_average": 4.74,
       "genres": [
         {
           "id": "153003",
           "name": "おっぱい"
         },
         {
-          "id": "5002",
-          "name": "フェラ"
+          "id": "5005",
+          "name": "アナル"
         },
         {
-          "id": "5001",
-          "name": "中出し"
+          "id": "160272",
+          "name": "コミケ108（2026夏）"
         },
         {
-          "id": "3001",
-          "name": "体操着・ブルマ"
+          "id": "2019",
+          "name": "ツンデレ"
         },
         {
-          "id": "55",
-          "name": "処女"
+          "id": "152004",
+          "name": "ラブラブ・あまあま"
         },
         {
-          "id": "160079",
-          "name": "同級生/同僚"
+          "id": "48",
+          "name": "制服"
+        },
+        {
+          "id": "553",
+          "name": "学園もの"
         },
         {
           "id": "156021",
@@ -7179,30 +7187,30 @@
           "name": "成人向け"
         },
         {
-          "id": "160157",
-          "name": "正常位"
-        },
-        {
           "id": "156022",
           "name": "男性向け"
         },
         {
-          "id": "160161",
-          "name": "種付けプレス"
+          "id": "154021",
+          "name": "褐色・日焼け"
         },
         {
-          "id": "160037",
-          "name": "陰キャ・地味"
+          "id": "154025",
+          "name": "金髪"
+        },
+        {
+          "id": "160227",
+          "name": "黒ギャル"
         }
       ],
       "circle": {
-        "id": "202968",
-        "name": "UDS"
+        "id": "223574",
+        "name": "がくがく屋さん"
       },
-      "release_date": "2026-11-08",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_839446/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_839446%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_839446/d_839446pl.jpg",
+      "release_date": "2026-10-18",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_803160/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_803160%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_803160/d_803160pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
@@ -7291,65 +7299,6 @@
     },
     {
       "rank": 94,
-      "id": "d_285449",
-      "key": "d_285449",
-      "title": "ヤリステメスブター ボクだけの謎ルール！女トレーナーに勝つとエッチあたりまえ 完全版",
-      "price": 2640,
-      "regular_price": 5280,
-      "discount_rate": 50,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 326,
-      "review_average": 4.87,
-      "genres": [
-        {
-          "id": "160045",
-          "name": "ツクール"
-        },
-        {
-          "id": "37",
-          "name": "デモ・体験版あり"
-        },
-        {
-          "id": "153016",
-          "name": "ロールプレイング"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "55",
-          "name": "処女"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "27",
-          "name": "辱め"
-        }
-      ],
-      "circle": {
-        "id": "29143",
-        "name": "にゅう工房"
-      },
-      "release_date": "2023-09-01",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_285449/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_285449%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_285449/d_285449pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 95,
       "id": "d_811954",
       "key": "d_811954",
       "title": "隣室の子持ちシンママギャルと汗だく濃厚なお付き合いをしたら本当のパパになってしまいました",
@@ -7428,173 +7377,7 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 96,
-      "id": "d_803160",
-      "key": "d_803160",
-      "title": "ケツ穴カツアゲに夢中なギャルさんはイラムラアナニーが止まらない！",
-      "price": 693,
-      "regular_price": 990,
-      "discount_rate": 30,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": 19,
-      "review_average": 4.74,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "5005",
-          "name": "アナル"
-        },
-        {
-          "id": "160272",
-          "name": "コミケ108（2026夏）"
-        },
-        {
-          "id": "2019",
-          "name": "ツンデレ"
-        },
-        {
-          "id": "152004",
-          "name": "ラブラブ・あまあま"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "553",
-          "name": "学園もの"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "154021",
-          "name": "褐色・日焼け"
-        },
-        {
-          "id": "154025",
-          "name": "金髪"
-        },
-        {
-          "id": "160227",
-          "name": "黒ギャル"
-        }
-      ],
-      "circle": {
-        "id": "223574",
-        "name": "がくがく屋さん"
-      },
-      "release_date": "2026-10-18",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_803160/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_803160%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_803160/d_803160pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 97,
-      "id": "d_841706",
-      "key": "d_841706",
-      "title": "とらぶる20人Hハーレム 〜夜の裏オプ彩南祭〜【HCG1000枚超・180Hシーン超】",
-      "price": 500,
-      "regular_price": 1980,
-      "discount_rate": 75,
-      "on_sale": true,
-      "campaign": null,
-      "sale_end_raw": null,
-      "sale_end": null,
-      "review_count": null,
-      "review_average": null,
-      "genres": [
-        {
-          "id": "153003",
-          "name": "おっぱい"
-        },
-        {
-          "id": "5003",
-          "name": "ぶっかけ"
-        },
-        {
-          "id": "153012",
-          "name": "デジタルノベル"
-        },
-        {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "5002",
-          "name": "フェラ"
-        },
-        {
-          "id": "5001",
-          "name": "中出し"
-        },
-        {
-          "id": "55",
-          "name": "処女"
-        },
-        {
-          "id": "48",
-          "name": "制服"
-        },
-        {
-          "id": "553",
-          "name": "学園もの"
-        },
-        {
-          "id": "156021",
-          "name": "専売"
-        },
-        {
-          "id": "2001",
-          "name": "巨乳"
-        },
-        {
-          "id": "156023",
-          "name": "成人向け"
-        },
-        {
-          "id": "156022",
-          "name": "男性向け"
-        },
-        {
-          "id": "15",
-          "name": "音声付き"
-        }
-      ],
-      "circle": {
-        "id": "208120",
-        "name": "とらぶる本舗"
-      },
-      "release_date": "2026-10-24",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_841706/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_841706%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_841706/d_841706pl.jpg",
-      "service": "doujin",
-      "floor": "digital_doujin"
-    },
-    {
-      "rank": 98,
+      "rank": 95,
       "id": "d_831752",
       "key": "d_831752",
       "title": "陰キャ爆乳にチンポ生やしてみたドッキリ",
@@ -7605,7 +7388,7 @@
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 1,
+      "review_count": 2,
       "review_average": 5.0,
       "genres": [
         {
@@ -7673,86 +7456,86 @@
       "floor": "digital_doujin"
     },
     {
-      "rank": 99,
-      "id": "d_527672",
-      "key": "d_527672",
-      "title": "牛娘メイドのミルクカフェ",
-      "price": 880,
-      "regular_price": 1760,
+      "rank": 96,
+      "id": "d_840705",
+      "key": "d_840705",
+      "title": "Chill PC Club 〜作業とHの日々〜",
+      "price": 605,
+      "regular_price": 1210,
       "discount_rate": 50,
       "on_sale": true,
       "campaign": null,
       "sale_end_raw": null,
       "sale_end": null,
-      "review_count": 5,
-      "review_average": 4.8,
+      "review_count": 2,
+      "review_average": 5.0,
       "genres": [
         {
-          "id": "153003",
-          "name": "おっぱい"
+          "id": "2004",
+          "name": "めがね"
         },
         {
           "id": "7110",
           "name": "シミュレーション"
         },
         {
-          "id": "5071",
-          "name": "ハーレム"
+          "id": "160088",
+          "name": "ショートカット"
         },
         {
-          "id": "5019",
-          "name": "パイズリ"
-        },
-        {
-          "id": "1008",
-          "name": "メイド"
+          "id": "37",
+          "name": "デモ・体験版あり"
         },
         {
           "id": "5001",
           "name": "中出し"
         },
         {
-          "id": "55",
-          "name": "処女"
+          "id": "160249",
+          "name": "主観視点"
         },
         {
           "id": "2001",
           "name": "巨乳"
         },
         {
-          "id": "160159",
-          "name": "後背位／バック"
-        },
-        {
           "id": "156023",
           "name": "成人向け"
         },
         {
-          "id": "160165",
-          "name": "授乳手コキ"
+          "id": "152014",
+          "name": "日常・生活"
+        },
+        {
+          "id": "160058",
+          "name": "潮吹き"
         },
         {
           "id": "156022",
           "name": "男性向け"
         },
         {
-          "id": "160161",
-          "name": "種付けプレス"
+          "id": "153022",
+          "name": "純愛"
+        },
+        {
+          "id": "154019",
+          "name": "陰毛・腋毛"
         }
       ],
       "circle": {
-        "id": "216173",
-        "name": "黒猫喫茶店"
+        "id": "238728",
+        "name": "ビッグボーイ"
       },
-      "release_date": "2025-03-02",
-      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_527672/",
-      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_527672%2F&af_id=rankidle-990&ch=api",
-      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_527672/d_527672pl.jpg",
+      "release_date": "2026-11-08",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_840705/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_840705%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_840705/d_840705pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     },
     {
-      "rank": 100,
+      "rank": 97,
       "id": "d_600152",
       "key": "d_600152",
       "title": "ずっと好きだったお姉さんが全身自己開発済みの処女未亡人になってた話",
@@ -7827,6 +7610,223 @@
       "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_600152/",
       "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_600152%2F&af_id=rankidle-990&ch=api",
       "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_600152/d_600152pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 98,
+      "id": "d_285449",
+      "key": "d_285449",
+      "title": "ヤリステメスブター ボクだけの謎ルール！女トレーナーに勝つとエッチあたりまえ 完全版",
+      "price": 2640,
+      "regular_price": 5280,
+      "discount_rate": 50,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 326,
+      "review_average": 4.87,
+      "genres": [
+        {
+          "id": "160045",
+          "name": "ツクール"
+        },
+        {
+          "id": "37",
+          "name": "デモ・体験版あり"
+        },
+        {
+          "id": "153016",
+          "name": "ロールプレイング"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "55",
+          "name": "処女"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "27",
+          "name": "辱め"
+        }
+      ],
+      "circle": {
+        "id": "29143",
+        "name": "にゅう工房"
+      },
+      "release_date": "2023-09-01",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_285449/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_285449%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_285449/d_285449pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 99,
+      "id": "d_839446",
+      "key": "d_839446",
+      "title": "5人部屋",
+      "price": 990,
+      "regular_price": 990,
+      "discount_rate": null,
+      "on_sale": false,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 12,
+      "review_average": 4.83,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "5002",
+          "name": "フェラ"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "3001",
+          "name": "体操着・ブルマ"
+        },
+        {
+          "id": "55",
+          "name": "処女"
+        },
+        {
+          "id": "160079",
+          "name": "同級生/同僚"
+        },
+        {
+          "id": "156021",
+          "name": "専売"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160157",
+          "name": "正常位"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "160161",
+          "name": "種付けプレス"
+        },
+        {
+          "id": "160037",
+          "name": "陰キャ・地味"
+        }
+      ],
+      "circle": {
+        "id": "202968",
+        "name": "UDS"
+      },
+      "release_date": "2026-11-08",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_839446/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_839446%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/comic/d_839446/d_839446pl.jpg",
+      "service": "doujin",
+      "floor": "digital_doujin"
+    },
+    {
+      "rank": 100,
+      "id": "d_527672",
+      "key": "d_527672",
+      "title": "牛娘メイドのミルクカフェ",
+      "price": 880,
+      "regular_price": 1760,
+      "discount_rate": 50,
+      "on_sale": true,
+      "campaign": null,
+      "sale_end_raw": null,
+      "sale_end": null,
+      "review_count": 5,
+      "review_average": 4.8,
+      "genres": [
+        {
+          "id": "153003",
+          "name": "おっぱい"
+        },
+        {
+          "id": "7110",
+          "name": "シミュレーション"
+        },
+        {
+          "id": "5071",
+          "name": "ハーレム"
+        },
+        {
+          "id": "5019",
+          "name": "パイズリ"
+        },
+        {
+          "id": "1008",
+          "name": "メイド"
+        },
+        {
+          "id": "5001",
+          "name": "中出し"
+        },
+        {
+          "id": "55",
+          "name": "処女"
+        },
+        {
+          "id": "2001",
+          "name": "巨乳"
+        },
+        {
+          "id": "160159",
+          "name": "後背位／バック"
+        },
+        {
+          "id": "156023",
+          "name": "成人向け"
+        },
+        {
+          "id": "160165",
+          "name": "授乳手コキ"
+        },
+        {
+          "id": "156022",
+          "name": "男性向け"
+        },
+        {
+          "id": "160161",
+          "name": "種付けプレス"
+        }
+      ],
+      "circle": {
+        "id": "216173",
+        "name": "黒猫喫茶店"
+      },
+      "release_date": "2025-03-02",
+      "url": "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_527672/",
+      "affiliate_url": "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_527672%2F&af_id=rankidle-990&ch=api",
+      "image_url": "https://doujin-assets.dmm.co.jp/digital/game/d_527672/d_527672pl.jpg",
       "service": "doujin",
       "floor": "digital_doujin"
     }
