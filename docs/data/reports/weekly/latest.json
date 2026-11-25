@@ -1,7 +1,7 @@
 {
   "week_start": "2026-11-23",
   "week_end": "2026-11-29",
-  "generated_at": "2026-11-25T10:26:16+09:00",
+  "generated_at": "2026-11-25T11:30:33+09:00",
   "data_status": "PARTIAL",
   "observed_days": 3,
   "expected_days": 3,
@@ -1252,68 +1252,68 @@
     ]
   },
   "dlsite_analysis": {
-    "snapshot_count": 14,
+    "snapshot_count": 15,
     "unique_products": 26,
     "top10_stays": [
       {
         "id": "RJ01499436",
         "title": "淫呪の迷宮 ～ミラと遊蕩の主～",
-        "top10_snapshots": 14,
+        "top10_snapshots": 15,
         "observation_rate": 100
       },
       {
         "id": "RJ01609862",
         "title": "なつまじょ！ -二人の魔女と真夏の田舎生活-",
-        "top10_snapshots": 14,
+        "top10_snapshots": 15,
         "observation_rate": 100
       },
       {
         "id": "RJ01662678",
         "title": "まおくんとサキュバスメイドさん～メイドさんにいたずらする探索系RPG2～",
-        "top10_snapshots": 14,
+        "top10_snapshots": 15,
         "observation_rate": 100
       },
       {
         "id": "RJ01680106",
         "title": "DECOY 群青の魔女 DLC 悠遠の旅人",
-        "top10_snapshots": 14,
+        "top10_snapshots": 15,
         "observation_rate": 100
       },
       {
         "id": "RJ01690793",
         "title": "C級サキュバスで抜いてるなんて誰にも秘密にしとくんで",
-        "top10_snapshots": 14,
+        "top10_snapshots": 15,
         "observation_rate": 100
       },
       {
         "id": "RJ01726029",
         "title": "姫騎士シルヴィア",
-        "top10_snapshots": 14,
+        "top10_snapshots": 15,
         "observation_rate": 100
       },
       {
         "id": "RJ01751033",
         "title": "【15時間】『裏坂ひくめ』の\"ガチ実演\"オナニー録～2025【支援サイトまとめ】",
-        "top10_snapshots": 14,
+        "top10_snapshots": 15,
         "observation_rate": 100
       },
       {
         "id": "RJ01751739",
         "title": "淫祠屋敷 ~艶なる祟りの供物~",
-        "top10_snapshots": 14,
+        "top10_snapshots": 15,
         "observation_rate": 100
       },
       {
         "id": "RJ01731408",
         "title": "NEMESIS OF NELVA",
-        "top10_snapshots": 11,
-        "observation_rate": 79
+        "top10_snapshots": 12,
+        "observation_rate": 80
       },
       {
-        "id": "RJ01552098",
-        "title": "DECOY 群青の魔女 DLC 静穏の灯火",
-        "top10_snapshots": 5,
-        "observation_rate": 36
+        "id": "RJ01762757",
+        "title": "穢膿豚語学習 プルセノヅド ～デュヘスバルなプリフェッタをマヌベゥマズロブドップした結果、ヂュッポノドペなブヒュリゲでザマしてしまう話～",
+        "top10_snapshots": 6,
+        "observation_rate": 40
       }
     ],
     "biggest_movers": [
@@ -1405,7 +1405,7 @@
         "rank_change": 2,
         "current_rank": 10,
         "trend_score": null,
-        "observed_at": "2026-11-23T04:26:40+09:00"
+        "observed_at": "2026-11-25T10:26:37+09:00"
       }
     ],
     "price_analysis": {
