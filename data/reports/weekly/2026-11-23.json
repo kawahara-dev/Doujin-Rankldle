@@ -1,12 +1,12 @@
 {
   "week_start": "2026-11-23",
   "week_end": "2026-11-29",
-  "generated_at": "2026-11-26T10:46:56+09:00",
+  "generated_at": "2026-11-26T15:26:07+09:00",
   "data_status": "PARTIAL",
   "observed_days": 4,
   "expected_days": 4,
   "snapshot_counts": {
-    "api": 15
+    "api": 16
   },
   "ranking_source": "api",
   "market_overview": {
@@ -20,50 +20,50 @@
     "max_rank_rise_api": 26
   },
   "price_analysis": {
-    "average_price": 1534,
-    "median_price": 1100,
-    "top10_average_price": 2256,
+    "average_price": 1382,
+    "median_price": 990,
+    "top10_average_price": 1830,
     "top10_median_price": 1650,
     "price_buckets": [
       {
         "label": "〜499円",
-        "count": 3,
+        "count": 4,
         "top10_count": 0
       },
       {
         "label": "500〜999円",
-        "count": 51,
+        "count": 59,
         "top10_count": 3
       },
       {
         "label": "1000〜1999円",
-        "count": 44,
-        "top10_count": 6
+        "count": 41,
+        "top10_count": 7
       },
       {
         "label": "2000〜2999円",
-        "count": 18,
+        "count": 14,
         "top10_count": 4
       },
       {
         "label": "3000円〜",
-        "count": 7,
-        "top10_count": 2
+        "count": 5,
+        "top10_count": 1
       }
     ]
   },
   "sale_analysis": {
-    "sale_product_count": 89,
-    "sale_share": 72,
-    "top10_sale_count": 10,
-    "top10_sale_share": 67,
-    "average_discount_rate": 35,
+    "sale_product_count": 102,
+    "sale_share": 83,
+    "top10_sale_count": 12,
+    "top10_sale_share": 80,
+    "average_discount_rate": 38,
     "max_discount_rate": 75,
     "discount_buckets": {
       "under_20": 16,
       "20_29": 13,
-      "30_49": 24,
-      "50_plus": 36
+      "30_49": 18,
+      "50_plus": 55
     }
   },
   "top_genres": [
@@ -123,9 +123,9 @@
       "name": "ひえ子",
       "observed_products": 3,
       "top10_products": 2,
-      "total_appearances": 45,
+      "total_appearances": 48,
       "best_rank": 1,
-      "top10_appearances": 21,
+      "top10_appearances": 22,
       "flagship_title": "孕ませ？アイドル育成シミュレーター  〜悪魔と契約して、濃厚精子を子宮に注いで1億人のファンを作れ！〜",
       "flagship_best_rank": 1
     },
@@ -133,9 +133,9 @@
       "name": "重戦車うさぎ隊",
       "observed_products": 2,
       "top10_products": 1,
-      "total_appearances": 30,
+      "total_appearances": 32,
       "best_rank": 3,
-      "top10_appearances": 15,
+      "top10_appearances": 16,
       "flagship_title": "元ヒロインと2年越しの恋を叶えるまで！",
       "flagship_best_rank": 3
     },
@@ -143,9 +143,9 @@
       "name": "あいらんどう",
       "observed_products": 2,
       "top10_products": 1,
-      "total_appearances": 29,
+      "total_appearances": 31,
       "best_rank": 3,
-      "top10_appearances": 15,
+      "top10_appearances": 16,
       "flagship_title": "妹に100回中出ししないと出られない部屋",
       "flagship_best_rank": 3
     },
@@ -153,9 +153,9 @@
       "name": "へこバース",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 15,
+      "total_appearances": 16,
       "best_rank": 2,
-      "top10_appearances": 15,
+      "top10_appearances": 16,
       "flagship_title": "ヒプノワーカー〜催◯アプリでやりたい放題〜",
       "flagship_best_rank": 2
     },
@@ -163,9 +163,9 @@
       "name": "KOYUKI屋",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 15,
+      "total_appearances": 16,
       "best_rank": 4,
-      "top10_appearances": 15,
+      "top10_appearances": 16,
       "flagship_title": "ウチのヤンデレな飼い猫ちゃん×2にメチャクチャに絞られちゃう話",
       "flagship_best_rank": 4
     },
@@ -173,9 +173,9 @@
       "name": "サイクロン",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 15,
+      "total_appearances": 16,
       "best_rank": 5,
-      "top10_appearances": 15,
+      "top10_appearances": 16,
       "flagship_title": "サイクロンの同人誌まとめ 2012-2019",
       "flagship_best_rank": 5
     },
@@ -183,9 +183,9 @@
       "name": "華フック",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 15,
+      "total_appearances": 16,
       "best_rank": 5,
-      "top10_appearances": 14,
+      "top10_appearances": 15,
       "flagship_title": "母を家畜にするレシピ",
       "flagship_best_rank": 5
     },
@@ -193,31 +193,31 @@
       "name": "うーらる",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 15,
+      "total_appearances": 16,
       "best_rank": 7,
-      "top10_appearances": 11,
+      "top10_appearances": 12,
       "flagship_title": "悪の手先になったので。〜魔法少女を凌●します〜3後編",
-      "flagship_best_rank": 7
-    },
-    {
-      "name": "兎もに角",
-      "observed_products": 1,
-      "top10_products": 1,
-      "total_appearances": 15,
-      "best_rank": 7,
-      "top10_appearances": 8,
-      "flagship_title": "完全痴●2 清楚なJKを汚し尽くす",
       "flagship_best_rank": 7
     },
     {
       "name": "ぽちたろ企画",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 15,
+      "total_appearances": 16,
       "best_rank": 8,
-      "top10_appearances": 8,
+      "top10_appearances": 9,
       "flagship_title": "らぶらぶ夫婦アンソロジー",
       "flagship_best_rank": 8
+    },
+    {
+      "name": "兎もに角",
+      "observed_products": 1,
+      "top10_products": 1,
+      "total_appearances": 16,
+      "best_rank": 7,
+      "top10_appearances": 8,
+      "flagship_title": "完全痴●2 清楚なJKを汚し尽くす",
+      "flagship_best_rank": 7
     }
   ],
   "new_release_products": 43,
@@ -227,12 +227,12 @@
     {
       "name": "中出し",
       "product_count": 104,
-      "median_price": 1100
+      "median_price": 990
     },
     {
       "name": "巨乳",
       "product_count": 97,
-      "median_price": 1078
+      "median_price": 990
     },
     {
       "name": "おっぱい",
@@ -242,22 +242,22 @@
     {
       "name": "フェラ",
       "product_count": 62,
-      "median_price": 1182
+      "median_price": 1089
     },
     {
       "name": "制服",
       "product_count": 45,
-      "median_price": 1100
+      "median_price": 990
     },
     {
       "name": "パイズリ",
       "product_count": 43,
-      "median_price": 1485
+      "median_price": 1386
     },
     {
       "name": "処女",
       "product_count": 28,
-      "median_price": 1078
+      "median_price": 979
     },
     {
       "name": "人妻・主婦",
@@ -267,7 +267,7 @@
     {
       "name": "学園もの",
       "product_count": 25,
-      "median_price": 968
+      "median_price": 891
     },
     {
       "name": "寝取り・寝取られ・NTR",
@@ -276,8 +276,8 @@
     }
   ],
   "circle_coverage": {
-    "snapshots_with_circle": 15,
-    "total_snapshots": 15,
+    "snapshots_with_circle": 16,
+    "total_snapshots": 16,
     "coverage_share": 100,
     "first_circle_snapshot": "2026-11-23T10:26:13+09:00"
   },
@@ -290,8 +290,8 @@
   },
   "ranking_behavior": {
     "top10_entry_events": 6,
-    "large_rise_5_plus": 47,
-    "large_rise_10_plus": 11,
+    "large_rise_5_plus": 49,
+    "large_rise_10_plus": 12,
     "new_entry_events": 17,
     "reentry_events": 9
   },
@@ -388,13 +388,13 @@
     }
   ],
   "stability_analysis": {
-    "snapshot_count": 15,
+    "snapshot_count": 16,
     "stable_top_products": [
       {
         "id": "d_848845",
         "title": "孕ませ？アイドル育成シミュレーター  〜悪魔と契約して、濃厚精子を子宮に注いで1億人のファンを作れ！〜",
-        "top10_snapshots": 15,
-        "total_snapshots": 15,
+        "top10_snapshots": 16,
+        "total_snapshots": 16,
         "observation_rate": 100,
         "best_rank": 1,
         "latest_rank": 1
@@ -402,8 +402,8 @@
       {
         "id": "d_847072",
         "title": "ヒプノワーカー〜催◯アプリでやりたい放題〜",
-        "top10_snapshots": 15,
-        "total_snapshots": 15,
+        "top10_snapshots": 16,
+        "total_snapshots": 16,
         "observation_rate": 100,
         "best_rank": 2,
         "latest_rank": 2
@@ -411,8 +411,8 @@
       {
         "id": "d_791913",
         "title": "妹に100回中出ししないと出られない部屋",
-        "top10_snapshots": 15,
-        "total_snapshots": 15,
+        "top10_snapshots": 16,
+        "total_snapshots": 16,
         "observation_rate": 100,
         "best_rank": 3,
         "latest_rank": 3
@@ -420,8 +420,8 @@
       {
         "id": "d_839451",
         "title": "元ヒロインと2年越しの恋を叶えるまで！",
-        "top10_snapshots": 15,
-        "total_snapshots": 15,
+        "top10_snapshots": 16,
+        "total_snapshots": 16,
         "observation_rate": 100,
         "best_rank": 3,
         "latest_rank": 4
@@ -429,8 +429,8 @@
       {
         "id": "d_831099",
         "title": "ウチのヤンデレな飼い猫ちゃん×2にメチャクチャに絞られちゃう話",
-        "top10_snapshots": 15,
-        "total_snapshots": 15,
+        "top10_snapshots": 16,
+        "total_snapshots": 16,
         "observation_rate": 100,
         "best_rank": 4,
         "latest_rank": 10
@@ -438,8 +438,8 @@
       {
         "id": "d_201721",
         "title": "サイクロンの同人誌まとめ 2012-2019",
-        "top10_snapshots": 15,
-        "total_snapshots": 15,
+        "top10_snapshots": 16,
+        "total_snapshots": 16,
         "observation_rate": 100,
         "best_rank": 5,
         "latest_rank": 6
@@ -447,38 +447,38 @@
       {
         "id": "d_780681",
         "title": "母を家畜にするレシピ",
-        "top10_snapshots": 14,
-        "total_snapshots": 15,
-        "observation_rate": 93,
+        "top10_snapshots": 15,
+        "total_snapshots": 16,
+        "observation_rate": 94,
         "best_rank": 5,
         "latest_rank": 5
       },
       {
         "id": "d_835500",
         "title": "悪の手先になったので。〜魔法少女を凌●します〜3後編",
-        "top10_snapshots": 11,
-        "total_snapshots": 15,
-        "observation_rate": 73,
+        "top10_snapshots": 12,
+        "total_snapshots": 16,
+        "observation_rate": 75,
         "best_rank": 7,
-        "latest_rank": 7
+        "latest_rank": 8
+      },
+      {
+        "id": "d_831360",
+        "title": "らぶらぶ夫婦アンソロジー",
+        "top10_snapshots": 9,
+        "total_snapshots": 16,
+        "observation_rate": 56,
+        "best_rank": 8,
+        "latest_rank": 9
       },
       {
         "id": "d_797041",
         "title": "完全痴●2 清楚なJKを汚し尽くす",
         "top10_snapshots": 8,
-        "total_snapshots": 15,
-        "observation_rate": 53,
+        "total_snapshots": 16,
+        "observation_rate": 50,
         "best_rank": 7,
         "latest_rank": 12
-      },
-      {
-        "id": "d_831360",
-        "title": "らぶらぶ夫婦アンソロジー",
-        "top10_snapshots": 8,
-        "total_snapshots": 15,
-        "observation_rate": 53,
-        "best_rank": 8,
-        "latest_rank": 8
       }
     ],
     "rise_persistence": [
@@ -490,7 +490,7 @@
         "peak_rank": 49,
         "peak_observed_at": "2026-11-24T23:27:53+09:00",
         "latest_rank": 23,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
         "rank_after_rise": -26,
         "persistence": "一過性",
         "trend_score": 55
@@ -502,9 +502,9 @@
         "rank_change": 21,
         "peak_rank": 44,
         "peak_observed_at": "2026-11-23T23:26:14+09:00",
-        "latest_rank": 20,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
-        "rank_after_rise": -24,
+        "latest_rank": 19,
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
+        "rank_after_rise": -25,
         "persistence": "一過性",
         "trend_score": 65
       },
@@ -515,10 +515,10 @@
         "rank_change": 20,
         "peak_rank": 30,
         "peak_observed_at": "2026-11-26T10:26:01+09:00",
-        "latest_rank": 30,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
-        "rank_after_rise": 0,
-        "persistence": "判定保留",
+        "latest_rank": 14,
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
+        "rank_after_rise": -16,
+        "persistence": "一過性",
         "trend_score": 55
       },
       {
@@ -528,9 +528,9 @@
         "rank_change": 18,
         "peak_rank": 53,
         "peak_observed_at": "2026-11-23T23:26:14+09:00",
-        "latest_rank": 16,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
-        "rank_after_rise": -37,
+        "latest_rank": 17,
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
+        "rank_after_rise": -36,
         "persistence": "一過性",
         "trend_score": 50
       },
@@ -541,9 +541,9 @@
         "rank_change": 16,
         "peak_rank": 14,
         "peak_observed_at": "2026-11-25T23:26:35+09:00",
-        "latest_rank": 9,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
-        "rank_after_rise": -5,
+        "latest_rank": 7,
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
+        "rank_after_rise": -7,
         "persistence": "持続",
         "trend_score": 50
       },
@@ -554,9 +554,9 @@
         "rank_change": 14,
         "peak_rank": 75,
         "peak_observed_at": "2026-11-23T23:26:14+09:00",
-        "latest_rank": 44,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
-        "rank_after_rise": -31,
+        "latest_rank": 42,
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
+        "rank_after_rise": -33,
         "persistence": "一過性",
         "trend_score": 50
       },
@@ -568,7 +568,7 @@
         "peak_rank": 76,
         "peak_observed_at": "2026-11-24T04:25:47+09:00",
         "latest_rank": 58,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
         "rank_after_rise": -18,
         "persistence": "一過性",
         "trend_score": 50
@@ -581,7 +581,7 @@
         "peak_rank": 58,
         "peak_observed_at": "2026-11-24T23:27:53+09:00",
         "latest_rank": 46,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
         "rank_after_rise": -12,
         "persistence": "一過性",
         "trend_score": 50
@@ -593,9 +593,9 @@
         "rank_change": 9,
         "peak_rank": 69,
         "peak_observed_at": "2026-11-25T23:26:35+09:00",
-        "latest_rank": 66,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
-        "rank_after_rise": -3,
+        "latest_rank": 64,
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
+        "rank_after_rise": -5,
         "persistence": "一過性",
         "trend_score": 30
       },
@@ -607,7 +607,7 @@
         "peak_rank": 65,
         "peak_observed_at": "2026-11-25T04:25:57+09:00",
         "latest_rank": 54,
-        "latest_observed_at": "2026-11-26T10:26:01+09:00",
+        "latest_observed_at": "2026-11-26T15:26:07+09:00",
         "rank_after_rise": -11,
         "persistence": "一過性",
         "trend_score": 30
@@ -623,14 +623,14 @@
         "median_rank": 64,
         "top10_products": 13,
         "top10_share": 12,
-        "rise_rate": 34,
+        "rise_rate": 33,
         "average_rank_change": 0
       },
       {
         "name": "巨乳",
         "product_count": 97,
-        "average_rank": 62,
-        "median_rank": 66,
+        "average_rank": 61,
+        "median_rank": 65,
         "top10_products": 11,
         "top10_share": 11,
         "rise_rate": 32,
@@ -640,7 +640,7 @@
         "name": "おっぱい",
         "product_count": 77,
         "average_rank": 62,
-        "median_rank": 67,
+        "median_rank": 68,
         "top10_products": 12,
         "top10_share": 16,
         "rise_rate": 29,
@@ -650,10 +650,10 @@
         "name": "フェラ",
         "product_count": 62,
         "average_rank": 65,
-        "median_rank": 70,
+        "median_rank": 72,
         "top10_products": 8,
         "top10_share": 13,
-        "rise_rate": 28,
+        "rise_rate": 27,
         "average_rank_change": 0
       },
       {
@@ -669,8 +669,8 @@
       {
         "name": "パイズリ",
         "product_count": 43,
-        "average_rank": 66,
-        "median_rank": 80,
+        "average_rank": 65,
+        "median_rank": 81,
         "top10_products": 4,
         "top10_share": 9,
         "rise_rate": 30,
@@ -680,20 +680,20 @@
         "name": "処女",
         "product_count": 28,
         "average_rank": 71,
-        "median_rank": 82,
+        "median_rank": 80,
         "top10_products": 3,
         "top10_share": 11,
-        "rise_rate": 32,
+        "rise_rate": 31,
         "average_rank_change": 0
       },
       {
         "name": "人妻・主婦",
         "product_count": 25,
-        "average_rank": 60,
-        "median_rank": 67,
+        "average_rank": 61,
+        "median_rank": 68,
         "top10_products": 2,
         "top10_share": 8,
-        "rise_rate": 33,
+        "rise_rate": 32,
         "average_rank_change": 0
       },
       {
@@ -710,7 +710,7 @@
         "name": "寝取り・寝取られ・NTR",
         "product_count": 25,
         "average_rank": 65,
-        "median_rank": 76,
+        "median_rank": 75,
         "top10_products": 3,
         "top10_share": 12,
         "rise_rate": 23,
@@ -720,43 +720,43 @@
     "by_price_bucket": [
       {
         "label": "〜499円",
-        "product_count": 3,
+        "product_count": 4,
         "top10_count": 0,
         "top10_share": 0,
         "top10_retention_rate": 0,
-        "average_rank": 84
+        "average_rank": 80
       },
       {
         "label": "500〜999円",
-        "product_count": 51,
+        "product_count": 59,
         "top10_count": 3,
-        "top10_share": 6,
+        "top10_share": 5,
         "top10_retention_rate": 3,
-        "average_rank": 62
+        "average_rank": 63
       },
       {
         "label": "1000〜1999円",
-        "product_count": 44,
-        "top10_count": 6,
-        "top10_share": 14,
-        "top10_retention_rate": 10,
-        "average_rank": 60
+        "product_count": 41,
+        "top10_count": 7,
+        "top10_share": 17,
+        "top10_retention_rate": 11,
+        "average_rank": 58
       },
       {
         "label": "2000〜2999円",
-        "product_count": 18,
+        "product_count": 14,
         "top10_count": 4,
-        "top10_share": 22,
-        "top10_retention_rate": 16,
-        "average_rank": 47
+        "top10_share": 29,
+        "top10_retention_rate": 20,
+        "average_rank": 45
       },
       {
         "label": "3000円〜",
-        "product_count": 7,
-        "top10_count": 2,
-        "top10_share": 29,
+        "product_count": 5,
+        "top10_count": 1,
+        "top10_share": 20,
         "top10_retention_rate": 20,
-        "average_rank": 58
+        "average_rank": 61
       }
     ]
   },
@@ -778,8 +778,8 @@
         "best_rank": 3,
         "latest_rank": 3,
         "days_to_top10": 1,
-        "top10_snapshots": 15,
-        "total_snapshots": 15
+        "top10_snapshots": 16,
+        "total_snapshots": 16
       },
       {
         "id": "d_821842",
@@ -787,11 +787,11 @@
         "release_date": "2026-11-25",
         "launch_type": "じわじわ上昇型",
         "first_rank": 45,
-        "best_rank": 9,
-        "latest_rank": 9,
+        "best_rank": 7,
+        "latest_rank": 7,
         "days_to_top10": 1,
-        "top10_snapshots": 2,
-        "total_snapshots": 6
+        "top10_snapshots": 3,
+        "total_snapshots": 7
       },
       {
         "id": "d_839451",
@@ -802,8 +802,8 @@
         "best_rank": 3,
         "latest_rank": 4,
         "days_to_top10": 5,
-        "top10_snapshots": 15,
-        "total_snapshots": 15
+        "top10_snapshots": 16,
+        "total_snapshots": 16
       },
       {
         "id": "d_831099",
@@ -814,8 +814,8 @@
         "best_rank": 4,
         "latest_rank": 10,
         "days_to_top10": 7,
-        "top10_snapshots": 15,
-        "total_snapshots": 15
+        "top10_snapshots": 16,
+        "total_snapshots": 16
       },
       {
         "id": "d_780681",
@@ -826,8 +826,8 @@
         "best_rank": 5,
         "latest_rank": 5,
         "days_to_top10": 3,
-        "top10_snapshots": 14,
-        "total_snapshots": 15
+        "top10_snapshots": 15,
+        "total_snapshots": 16
       },
       {
         "id": "d_835500",
@@ -836,10 +836,10 @@
         "launch_type": "判定保留",
         "first_rank": 14,
         "best_rank": 7,
-        "latest_rank": 7,
+        "latest_rank": 8,
         "days_to_top10": 4,
-        "top10_snapshots": 11,
-        "total_snapshots": 15
+        "top10_snapshots": 12,
+        "total_snapshots": 16
       },
       {
         "id": "d_831360",
@@ -848,10 +848,10 @@
         "launch_type": "判定保留",
         "first_rank": 15,
         "best_rank": 8,
-        "latest_rank": 8,
+        "latest_rank": 9,
         "days_to_top10": 4,
-        "top10_snapshots": 8,
-        "total_snapshots": 15
+        "top10_snapshots": 9,
+        "total_snapshots": 16
       },
       {
         "id": "d_842918",
@@ -860,10 +860,10 @@
         "launch_type": "判定保留",
         "first_rank": 12,
         "best_rank": 12,
-        "latest_rank": 55,
+        "latest_rank": 56,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_831307",
@@ -875,7 +875,19 @@
         "latest_rank": 13,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
+      },
+      {
+        "id": "d_703543",
+        "title": "だっさwお前まだ誰ともえっち実習ヤレてねぇのかよwしょーがねぇなァ",
+        "release_date": "2026-11-26",
+        "launch_type": "判定保留",
+        "first_rank": 50,
+        "best_rank": 14,
+        "latest_rank": 14,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 3
       },
       {
         "id": "d_779379",
@@ -884,10 +896,10 @@
         "launch_type": "判定保留",
         "first_rank": 16,
         "best_rank": 15,
-        "latest_rank": 28,
+        "latest_rank": 29,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_830731",
@@ -896,10 +908,10 @@
         "launch_type": "判定保留",
         "first_rank": 28,
         "best_rank": 15,
-        "latest_rank": 15,
+        "latest_rank": 16,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_814446",
@@ -908,10 +920,10 @@
         "launch_type": "判定保留",
         "first_rank": 20,
         "best_rank": 16,
-        "latest_rank": 24,
+        "latest_rank": 26,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_850971",
@@ -920,10 +932,10 @@
         "launch_type": "判定保留",
         "first_rank": 84,
         "best_rank": 16,
-        "latest_rank": 16,
+        "latest_rank": 17,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_814780",
@@ -931,11 +943,11 @@
         "release_date": "2026-11-23",
         "launch_type": "判定保留",
         "first_rank": 65,
-        "best_rank": 20,
-        "latest_rank": 20,
+        "best_rank": 19,
+        "latest_rank": 19,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 14
+        "total_snapshots": 15
       },
       {
         "id": "d_804131",
@@ -944,10 +956,10 @@
         "launch_type": "判定保留",
         "first_rank": 34,
         "best_rank": 21,
-        "latest_rank": 21,
+        "latest_rank": 22,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_805482",
@@ -956,10 +968,10 @@
         "launch_type": "判定保留",
         "first_rank": 27,
         "best_rank": 22,
-        "latest_rank": 32,
+        "latest_rank": 33,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_766078",
@@ -971,7 +983,7 @@
         "latest_rank": 23,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 9
+        "total_snapshots": 10
       },
       {
         "id": "d_754090",
@@ -983,7 +995,7 @@
         "latest_rank": 25,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_766939",
@@ -991,11 +1003,11 @@
         "release_date": "2026-11-21",
         "launch_type": "判定保留",
         "first_rank": 40,
-        "best_rank": 29,
-        "latest_rank": 29,
+        "best_rank": 28,
+        "latest_rank": 28,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_842029",
@@ -1007,19 +1019,7 @@
         "latest_rank": 36,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
-      },
-      {
-        "id": "d_703543",
-        "title": "だっさwお前まだ誰ともえっち実習ヤレてねぇのかよwしょーがねぇなァ",
-        "release_date": "2026-11-26",
-        "launch_type": "判定保留",
-        "first_rank": 50,
-        "best_rank": 30,
-        "latest_rank": 30,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 2
+        "total_snapshots": 16
       },
       {
         "id": "d_778609",
@@ -1031,7 +1031,7 @@
         "latest_rank": 31,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_849597",
@@ -1043,7 +1043,7 @@
         "latest_rank": 35,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_844841",
@@ -1064,10 +1064,10 @@
         "launch_type": "判定保留",
         "first_rank": 42,
         "best_rank": 41,
-        "latest_rank": 50,
+        "latest_rank": 53,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_718117",
@@ -1076,10 +1076,10 @@
         "launch_type": "判定保留",
         "first_rank": 44,
         "best_rank": 43,
-        "latest_rank": 84,
+        "latest_rank": 88,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_850970",
@@ -1091,7 +1091,7 @@
         "latest_rank": 45,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_809680",
@@ -1103,7 +1103,7 @@
         "latest_rank": 46,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 11
+        "total_snapshots": 12
       },
       {
         "id": "d_833650",
@@ -1115,7 +1115,7 @@
         "latest_rank": 47,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_842406",
@@ -1123,11 +1123,11 @@
         "release_date": "2026-11-20",
         "launch_type": "判定保留",
         "first_rank": 69,
-        "best_rank": 56,
-        "latest_rank": 56,
+        "best_rank": 55,
+        "latest_rank": 55,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_850572",
@@ -1139,7 +1139,7 @@
         "latest_rank": 58,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 14
+        "total_snapshots": 15
       },
       {
         "id": "d_811954",
@@ -1147,11 +1147,11 @@
         "release_date": "2026-11-20",
         "launch_type": "判定保留",
         "first_rank": 100,
-        "best_rank": 63,
-        "latest_rank": 63,
+        "best_rank": 62,
+        "latest_rank": 62,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 14
+        "total_snapshots": 15
       },
       {
         "id": "d_829251",
@@ -1159,8 +1159,20 @@
         "release_date": "2026-11-20",
         "launch_type": "判定保留",
         "first_rank": 100,
-        "best_rank": 66,
-        "latest_rank": 66,
+        "best_rank": 64,
+        "latest_rank": 64,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 13
+      },
+      {
+        "id": "d_831752",
+        "title": "陰キャ爆乳にチンポ生やしてみたドッキリ",
+        "release_date": "2026-11-21",
+        "launch_type": "判定保留",
+        "first_rank": 98,
+        "best_rank": 65,
+        "latest_rank": 65,
         "days_to_top10": null,
         "top10_snapshots": 0,
         "total_snapshots": 12
@@ -1172,22 +1184,10 @@
         "launch_type": "判定保留",
         "first_rank": 93,
         "best_rank": 68,
-        "latest_rank": 70,
+        "latest_rank": 68,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 12
-      },
-      {
-        "id": "d_831752",
-        "title": "陰キャ爆乳にチンポ生やしてみたドッキリ",
-        "release_date": "2026-11-21",
-        "launch_type": "判定保留",
-        "first_rank": 98,
-        "best_rank": 69,
-        "latest_rank": 69,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 11
+        "total_snapshots": 13
       },
       {
         "id": "d_841044",
@@ -1195,11 +1195,11 @@
         "release_date": "2026-11-20",
         "launch_type": "判定保留",
         "first_rank": 92,
-        "best_rank": 72,
-        "latest_rank": 72,
+        "best_rank": 71,
+        "latest_rank": 71,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_840592",
@@ -1207,11 +1207,11 @@
         "release_date": "2026-11-21",
         "launch_type": "判定保留",
         "first_rank": 91,
-        "best_rank": 73,
-        "latest_rank": 73,
+        "best_rank": 72,
+        "latest_rank": 72,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
       },
       {
         "id": "d_803146",
@@ -1231,11 +1231,11 @@
         "release_date": "2026-11-21",
         "launch_type": "判定保留",
         "first_rank": 98,
-        "best_rank": 86,
-        "latest_rank": 86,
+        "best_rank": 80,
+        "latest_rank": 80,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 6
+        "total_snapshots": 7
       },
       {
         "id": "d_849870",
@@ -1243,11 +1243,11 @@
         "release_date": "2026-11-24",
         "launch_type": "判定保留",
         "first_rank": 91,
-        "best_rank": 87,
-        "latest_rank": 87,
+        "best_rank": 83,
+        "latest_rank": 83,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 2
+        "total_snapshots": 3
       },
       {
         "id": "d_820181",
@@ -1255,11 +1255,11 @@
         "release_date": "2026-11-23",
         "launch_type": "判定保留",
         "first_rank": 100,
-        "best_rank": 97,
-        "latest_rank": 97,
+        "best_rank": 93,
+        "latest_rank": 93,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 3
+        "total_snapshots": 4
       },
       {
         "id": "d_851549",
@@ -1488,129 +1488,129 @@
     "APIランキング上位で15作品を観測しました。",
     "NEWを17件、REENTRYを9件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +26\n🆕 NEW 17件\n🔄 REENTRY 9件\n📡 CROSS 0件\n💸 SALE作品比率 72%\n💰 中央価格 ¥1,100\n\nNEWを17件、REENTRYを9件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +26\n🆕 NEW 17件\n🔄 REENTRY 9件\n📡 CROSS 0件\n💸 SALE作品比率 83%\n💰 中央価格 ¥990\n\nNEWを17件、REENTRYを9件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_201721",
       "title": "サイクロンの同人誌まとめ 2012-2019",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_791913",
       "title": "妹に100回中出ししないと出られない部屋",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_831099",
       "title": "ウチのヤンデレな飼い猫ちゃん×2にメチャクチャに絞られちゃう話",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_839451",
       "title": "元ヒロインと2年越しの恋を叶えるまで！",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_847072",
       "title": "ヒプノワーカー〜催◯アプリでやりたい放題〜",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_848845",
       "title": "孕ませ？アイドル育成シミュレーター  〜悪魔と契約して、濃厚精子を子宮に注いで1億人のファンを作れ！〜",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_780681",
       "title": "母を家畜にするレシピ",
-      "top10_snapshots": 14,
-      "observation_rate": 93
+      "top10_snapshots": 15,
+      "observation_rate": 94
     },
     {
       "id": "d_835500",
       "title": "悪の手先になったので。〜魔法少女を凌●します〜3後編",
-      "top10_snapshots": 11,
-      "observation_rate": 73
+      "top10_snapshots": 12,
+      "observation_rate": 75
+    },
+    {
+      "id": "d_831360",
+      "title": "らぶらぶ夫婦アンソロジー",
+      "top10_snapshots": 9,
+      "observation_rate": 56
     },
     {
       "id": "d_797041",
       "title": "完全痴●2 清楚なJKを汚し尽くす",
       "top10_snapshots": 8,
-      "observation_rate": 53
-    },
-    {
-      "id": "d_831360",
-      "title": "らぶらぶ夫婦アンソロジー",
-      "top10_snapshots": 8,
-      "observation_rate": 53
+      "observation_rate": 50
     }
   ],
   "top10_stays": [
     {
       "id": "d_201721",
       "title": "サイクロンの同人誌まとめ 2012-2019",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_791913",
       "title": "妹に100回中出ししないと出られない部屋",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_831099",
       "title": "ウチのヤンデレな飼い猫ちゃん×2にメチャクチャに絞られちゃう話",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_839451",
       "title": "元ヒロインと2年越しの恋を叶えるまで！",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_847072",
       "title": "ヒプノワーカー〜催◯アプリでやりたい放題〜",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_848845",
       "title": "孕ませ？アイドル育成シミュレーター  〜悪魔と契約して、濃厚精子を子宮に注いで1億人のファンを作れ！〜",
-      "top10_snapshots": 15,
+      "top10_snapshots": 16,
       "observation_rate": 100
     },
     {
       "id": "d_780681",
       "title": "母を家畜にするレシピ",
-      "top10_snapshots": 14,
-      "observation_rate": 93
+      "top10_snapshots": 15,
+      "observation_rate": 94
     },
     {
       "id": "d_835500",
       "title": "悪の手先になったので。〜魔法少女を凌●します〜3後編",
-      "top10_snapshots": 11,
-      "observation_rate": 73
+      "top10_snapshots": 12,
+      "observation_rate": 75
+    },
+    {
+      "id": "d_831360",
+      "title": "らぶらぶ夫婦アンソロジー",
+      "top10_snapshots": 9,
+      "observation_rate": 56
     },
     {
       "id": "d_797041",
       "title": "完全痴●2 清楚なJKを汚し尽くす",
       "top10_snapshots": 8,
-      "observation_rate": 53
-    },
-    {
-      "id": "d_831360",
-      "title": "らぶらぶ夫婦アンソロジー",
-      "top10_snapshots": 8,
-      "observation_rate": 53
+      "observation_rate": 50
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
