@@ -1,10 +1,10 @@
 {
   "week_start": "2026-11-23",
   "week_end": "2026-11-29",
-  "generated_at": "2026-11-26T23:26:58+09:00",
+  "generated_at": "2026-11-27T00:19:19+09:00",
   "data_status": "PARTIAL",
   "observed_days": 4,
-  "expected_days": 4,
+  "expected_days": 5,
   "snapshot_counts": {
     "api": 16
   },
