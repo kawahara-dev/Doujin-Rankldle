@@ -1,29 +1,29 @@
 {
   "week_start": "2026-11-23",
   "week_end": "2026-11-29",
-  "generated_at": "2026-11-27T15:26:19+09:00",
+  "generated_at": "2026-11-27T23:26:38+09:00",
   "data_status": "PARTIAL",
   "observed_days": 5,
   "expected_days": 5,
   "snapshot_counts": {
-    "api": 19
+    "api": 20
   },
   "ranking_source": "api",
   "market_overview": {
-    "unique_products": 130,
-    "top10_unique_products": 16,
-    "new_entries": 22,
+    "unique_products": 131,
+    "top10_unique_products": 17,
+    "new_entries": 23,
     "reentries": 10,
     "cross_trend_events": 0,
     "max_rank_rise_1h": 0,
     "max_rank_rise_24h": 0,
-    "max_rank_rise_api": 30
+    "max_rank_rise_api": 38
   },
   "price_analysis": {
-    "average_price": 1386,
+    "average_price": 1383,
     "median_price": 990,
-    "top10_average_price": 2115,
-    "top10_median_price": 1672,
+    "top10_average_price": 2117,
+    "top10_median_price": 1694,
     "price_buckets": [
       {
         "label": "〜499円",
@@ -32,7 +32,7 @@
       },
       {
         "label": "500〜999円",
-        "count": 62,
+        "count": 63,
         "top10_count": 3
       },
       {
@@ -43,7 +43,7 @@
       {
         "label": "2000〜2999円",
         "count": 15,
-        "top10_count": 4
+        "top10_count": 5
       },
       {
         "label": "3000円〜",
@@ -53,29 +53,29 @@
     ]
   },
   "sale_analysis": {
-    "sale_product_count": 108,
+    "sale_product_count": 109,
     "sale_share": 83,
-    "top10_sale_count": 12,
-    "top10_sale_share": 75,
+    "top10_sale_count": 13,
+    "top10_sale_share": 76,
     "average_discount_rate": 38,
     "max_discount_rate": 75,
     "discount_buckets": {
       "under_20": 18,
       "20_29": 13,
       "30_49": 18,
-      "50_plus": 59
+      "50_plus": 60
     }
   },
   "top_genres": [
     {
       "name": "中出し",
-      "observed_products": 110,
-      "top10_products": 14
+      "observed_products": 111,
+      "top10_products": 15
     },
     {
       "name": "巨乳",
       "observed_products": 101,
-      "top10_products": 12
+      "top10_products": 13
     },
     {
       "name": "おっぱい",
@@ -84,8 +84,8 @@
     },
     {
       "name": "フェラ",
-      "observed_products": 67,
-      "top10_products": 9
+      "observed_products": 68,
+      "top10_products": 10
     },
     {
       "name": "パイズリ",
@@ -123,9 +123,9 @@
       "name": "ひえ子",
       "observed_products": 3,
       "top10_products": 2,
-      "total_appearances": 57,
+      "total_appearances": 60,
       "best_rank": 1,
-      "top10_appearances": 26,
+      "top10_appearances": 28,
       "flagship_title": "孕ませ？アイドル育成シミュレーター  〜悪魔と契約して、濃厚精子を子宮に注いで1億人のファンを作れ！〜",
       "flagship_best_rank": 1
     },
@@ -133,9 +133,9 @@
       "name": "重戦車うさぎ隊",
       "observed_products": 2,
       "top10_products": 1,
-      "total_appearances": 38,
+      "total_appearances": 40,
       "best_rank": 3,
-      "top10_appearances": 19,
+      "top10_appearances": 20,
       "flagship_title": "元ヒロインと2年越しの恋を叶えるまで！",
       "flagship_best_rank": 3
     },
@@ -143,19 +143,19 @@
       "name": "あいらんどう",
       "observed_products": 2,
       "top10_products": 1,
-      "total_appearances": 37,
-      "best_rank": 3,
-      "top10_appearances": 19,
+      "total_appearances": 39,
+      "best_rank": 2,
+      "top10_appearances": 20,
       "flagship_title": "妹に100回中出ししないと出られない部屋",
-      "flagship_best_rank": 3
+      "flagship_best_rank": 2
     },
     {
       "name": "へこバース",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 19,
+      "total_appearances": 20,
       "best_rank": 2,
-      "top10_appearances": 19,
+      "top10_appearances": 20,
       "flagship_title": "ヒプノワーカー〜催◯アプリでやりたい放題〜",
       "flagship_best_rank": 2
     },
@@ -163,9 +163,9 @@
       "name": "サイクロン",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 19,
+      "total_appearances": 20,
       "best_rank": 5,
-      "top10_appearances": 19,
+      "top10_appearances": 20,
       "flagship_title": "サイクロンの同人誌まとめ 2012-2019",
       "flagship_best_rank": 5
     },
@@ -173,9 +173,9 @@
       "name": "華フック",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 19,
+      "total_appearances": 20,
       "best_rank": 5,
-      "top10_appearances": 18,
+      "top10_appearances": 19,
       "flagship_title": "母を家畜にするレシピ",
       "flagship_best_rank": 5
     },
@@ -183,7 +183,7 @@
       "name": "KOYUKI屋",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 19,
+      "total_appearances": 20,
       "best_rank": 4,
       "top10_appearances": 15,
       "flagship_title": "ウチのヤンデレな飼い猫ちゃん×2にメチャクチャに絞られちゃう話",
@@ -193,7 +193,7 @@
       "name": "うーらる",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 19,
+      "total_appearances": 20,
       "best_rank": 7,
       "top10_appearances": 13,
       "flagship_title": "悪の手先になったので。〜魔法少女を凌●します〜3後編",
@@ -203,7 +203,7 @@
       "name": "ぽちたろ企画",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 19,
+      "total_appearances": 20,
       "best_rank": 8,
       "top10_appearances": 12,
       "flagship_title": "らぶらぶ夫婦アンソロジー",
@@ -213,7 +213,7 @@
       "name": "兎もに角",
       "observed_products": 1,
       "top10_products": 1,
-      "total_appearances": 19,
+      "total_appearances": 20,
       "best_rank": 7,
       "top10_appearances": 8,
       "flagship_title": "完全痴●2 清楚なJKを汚し尽くす",
@@ -222,11 +222,11 @@
   ],
   "new_release_products": 48,
   "new_release_share": 37,
-  "new_release_top10_products": 8,
+  "new_release_top10_products": 9,
   "genre_price_summary": [
     {
       "name": "中出し",
-      "product_count": 110,
+      "product_count": 111,
       "median_price": 990
     },
     {
@@ -241,8 +241,8 @@
     },
     {
       "name": "フェラ",
-      "product_count": 67,
-      "median_price": 1078
+      "product_count": 68,
+      "median_price": 1067
     },
     {
       "name": "パイズリ",
@@ -276,26 +276,35 @@
     }
   ],
   "circle_coverage": {
-    "snapshots_with_circle": 19,
-    "total_snapshots": 19,
+    "snapshots_with_circle": 20,
+    "total_snapshots": 20,
     "coverage_share": 100,
     "first_circle_snapshot": "2026-11-23T10:26:13+09:00"
   },
   "metadata_coverage": {
-    "genre": 130,
-    "meaningful_genre": 130,
-    "circle": 130,
-    "release_date": 130,
-    "total_products": 130
+    "genre": 131,
+    "meaningful_genre": 131,
+    "circle": 131,
+    "release_date": 131,
+    "total_products": 131
   },
   "ranking_behavior": {
-    "top10_entry_events": 8,
-    "large_rise_5_plus": 61,
-    "large_rise_10_plus": 17,
-    "new_entry_events": 22,
+    "top10_entry_events": 9,
+    "large_rise_5_plus": 72,
+    "large_rise_10_plus": 21,
+    "new_entry_events": 23,
     "reentry_events": 10
   },
   "biggest_movers": [
+    {
+      "id": "d_833775",
+      "title": "性少女学園2",
+      "ranking_type": "api",
+      "rank_change": 38,
+      "current_rank": 47,
+      "trend_score": 55,
+      "observed_at": "2026-11-27T23:26:38+09:00"
+    },
     {
       "id": "d_828939",
       "title": "人妻管理人響子  完全版",
@@ -342,6 +351,15 @@
       "observed_at": "2026-11-23T23:26:14+09:00"
     },
     {
+      "id": "d_834498",
+      "title": "【スマホ対応】AVメーカーをつくろう！ 〜本格AVメーカー経営シミュレーション×体位開発おさわりクリッカーゲーム〜",
+      "ranking_type": "api",
+      "rank_change": 17,
+      "current_rank": 77,
+      "trend_score": 50,
+      "observed_at": "2026-11-27T23:26:38+09:00"
+    },
+    {
       "id": "d_821842",
       "title": "クール系男装女に彼女取られたから、わからせてやった4",
       "ranking_type": "api",
@@ -351,6 +369,15 @@
       "observed_at": "2026-11-25T23:26:35+09:00"
     },
     {
+      "id": "d_809121",
+      "title": "エロ物件 逃げ場のない部屋",
+      "ranking_type": "api",
+      "rank_change": 16,
+      "current_rank": 75,
+      "trend_score": 50,
+      "observed_at": "2026-11-27T23:26:38+09:00"
+    },
+    {
       "id": "d_849870",
       "title": "孕ませセクキャバ生活シミュレーター 〜借金まみれの推し嬢を、90日で身請けする〜",
       "ranking_type": "api",
@@ -358,70 +385,43 @@
       "current_rank": 69,
       "trend_score": 50,
       "observed_at": "2026-11-26T23:26:58+09:00"
-    },
-    {
-      "id": "d_694992",
-      "title": "妹孕ませないと出られない島2",
-      "ranking_type": "api",
-      "rank_change": 14,
-      "current_rank": 75,
-      "trend_score": 50,
-      "observed_at": "2026-11-23T23:26:14+09:00"
-    },
-    {
-      "id": "d_770285",
-      "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-      "ranking_type": "api",
-      "rank_change": 13,
-      "current_rank": 63,
-      "trend_score": 50,
-      "observed_at": "2026-11-27T04:25:53+09:00"
-    },
-    {
-      "id": "d_850572",
-      "title": "裏アカがバレた水泳部マネージャー",
-      "ranking_type": "api",
-      "rank_change": 12,
-      "current_rank": 76,
-      "trend_score": 50,
-      "observed_at": "2026-11-24T04:25:47+09:00"
     }
   ],
   "stability_analysis": {
-    "snapshot_count": 19,
+    "snapshot_count": 20,
     "stable_top_products": [
       {
         "id": "d_848845",
         "title": "孕ませ？アイドル育成シミュレーター  〜悪魔と契約して、濃厚精子を子宮に注いで1億人のファンを作れ！〜",
-        "top10_snapshots": 19,
-        "total_snapshots": 19,
+        "top10_snapshots": 20,
+        "total_snapshots": 20,
         "observation_rate": 100,
         "best_rank": 1,
         "latest_rank": 1
       },
       {
-        "id": "d_847072",
-        "title": "ヒプノワーカー〜催◯アプリでやりたい放題〜",
-        "top10_snapshots": 19,
-        "total_snapshots": 19,
+        "id": "d_791913",
+        "title": "妹に100回中出ししないと出られない部屋",
+        "top10_snapshots": 20,
+        "total_snapshots": 20,
         "observation_rate": 100,
         "best_rank": 2,
         "latest_rank": 2
       },
       {
-        "id": "d_791913",
-        "title": "妹に100回中出ししないと出られない部屋",
-        "top10_snapshots": 19,
-        "total_snapshots": 19,
+        "id": "d_847072",
+        "title": "ヒプノワーカー〜催◯アプリでやりたい放題〜",
+        "top10_snapshots": 20,
+        "total_snapshots": 20,
         "observation_rate": 100,
-        "best_rank": 3,
+        "best_rank": 2,
         "latest_rank": 3
       },
       {
         "id": "d_839451",
         "title": "元ヒロインと2年越しの恋を叶えるまで！",
-        "top10_snapshots": 19,
-        "total_snapshots": 19,
+        "top10_snapshots": 20,
+        "total_snapshots": 20,
         "observation_rate": 100,
         "best_rank": 3,
         "latest_rank": 5
@@ -429,8 +429,8 @@
       {
         "id": "d_201721",
         "title": "サイクロンの同人誌まとめ 2012-2019",
-        "top10_snapshots": 19,
-        "total_snapshots": 19,
+        "top10_snapshots": 20,
+        "total_snapshots": 20,
         "observation_rate": 100,
         "best_rank": 5,
         "latest_rank": 7
@@ -438,18 +438,18 @@
       {
         "id": "d_780681",
         "title": "母を家畜にするレシピ",
-        "top10_snapshots": 18,
-        "total_snapshots": 19,
+        "top10_snapshots": 19,
+        "total_snapshots": 20,
         "observation_rate": 95,
         "best_rank": 5,
-        "latest_rank": 8
+        "latest_rank": 9
       },
       {
         "id": "d_831099",
         "title": "ウチのヤンデレな飼い猫ちゃん×2にメチャクチャに絞られちゃう話",
         "top10_snapshots": 15,
-        "total_snapshots": 19,
-        "observation_rate": 79,
+        "total_snapshots": 20,
+        "observation_rate": 75,
         "best_rank": 4,
         "latest_rank": 12
       },
@@ -457,8 +457,8 @@
         "id": "d_835500",
         "title": "悪の手先になったので。〜魔法少女を凌●します〜3後編",
         "top10_snapshots": 13,
-        "total_snapshots": 19,
-        "observation_rate": 68,
+        "total_snapshots": 20,
+        "observation_rate": 65,
         "best_rank": 7,
         "latest_rank": 13
       },
@@ -466,13 +466,26 @@
         "id": "d_831360",
         "title": "らぶらぶ夫婦アンソロジー",
         "top10_snapshots": 12,
-        "total_snapshots": 19,
-        "observation_rate": 63,
+        "total_snapshots": 20,
+        "observation_rate": 60,
         "best_rank": 8,
-        "latest_rank": 9
+        "latest_rank": 11
       }
     ],
     "rise_persistence": [
+      {
+        "id": "d_833775",
+        "title": "性少女学園2",
+        "ranking_type": "api",
+        "rank_change": 38,
+        "peak_rank": 47,
+        "peak_observed_at": "2026-11-27T23:26:38+09:00",
+        "latest_rank": 47,
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
+        "rank_after_rise": 0,
+        "persistence": "判定保留",
+        "trend_score": 55
+      },
       {
         "id": "d_828939",
         "title": "人妻管理人響子  完全版",
@@ -480,10 +493,10 @@
         "rank_change": 30,
         "peak_rank": 55,
         "peak_observed_at": "2026-11-27T15:26:19+09:00",
-        "latest_rank": 55,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
-        "rank_after_rise": 0,
-        "persistence": "判定保留",
+        "latest_rank": 31,
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
+        "rank_after_rise": -24,
+        "persistence": "一過性",
         "trend_score": 55
       },
       {
@@ -493,9 +506,9 @@
         "rank_change": 26,
         "peak_rank": 49,
         "peak_observed_at": "2026-11-24T23:27:53+09:00",
-        "latest_rank": 21,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
-        "rank_after_rise": -28,
+        "latest_rank": 17,
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
+        "rank_after_rise": -32,
         "persistence": "一過性",
         "trend_score": 55
       },
@@ -506,9 +519,9 @@
         "rank_change": 21,
         "peak_rank": 44,
         "peak_observed_at": "2026-11-23T23:26:14+09:00",
-        "latest_rank": 17,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
-        "rank_after_rise": -27,
+        "latest_rank": 15,
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
+        "rank_after_rise": -29,
         "persistence": "一過性",
         "trend_score": 65
       },
@@ -520,7 +533,7 @@
         "peak_rank": 30,
         "peak_observed_at": "2026-11-26T10:26:01+09:00",
         "latest_rank": 4,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
         "rank_after_rise": -26,
         "persistence": "持続",
         "trend_score": 55
@@ -532,10 +545,23 @@
         "rank_change": 18,
         "peak_rank": 53,
         "peak_observed_at": "2026-11-23T23:26:14+09:00",
-        "latest_rank": 11,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
-        "rank_after_rise": -42,
-        "persistence": "一過性",
+        "latest_rank": 8,
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
+        "rank_after_rise": -45,
+        "persistence": "持続",
+        "trend_score": 50
+      },
+      {
+        "id": "d_834498",
+        "title": "【スマホ対応】AVメーカーをつくろう！ 〜本格AVメーカー経営シミュレーション×体位開発おさわりクリッカーゲーム〜",
+        "ranking_type": "api",
+        "rank_change": 17,
+        "peak_rank": 77,
+        "peak_observed_at": "2026-11-27T23:26:38+09:00",
+        "latest_rank": 77,
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
+        "rank_after_rise": 0,
+        "persistence": "判定保留",
         "trend_score": 50
       },
       {
@@ -546,9 +572,22 @@
         "peak_rank": 14,
         "peak_observed_at": "2026-11-25T23:26:35+09:00",
         "latest_rank": 6,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
         "rank_after_rise": -8,
         "persistence": "持続",
+        "trend_score": 50
+      },
+      {
+        "id": "d_809121",
+        "title": "エロ物件 逃げ場のない部屋",
+        "ranking_type": "api",
+        "rank_change": 16,
+        "peak_rank": 75,
+        "peak_observed_at": "2026-11-27T23:26:38+09:00",
+        "latest_rank": 75,
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
+        "rank_after_rise": 0,
+        "persistence": "判定保留",
         "trend_score": 50
       },
       {
@@ -558,48 +597,9 @@
         "rank_change": 14,
         "peak_rank": 69,
         "peak_observed_at": "2026-11-26T23:26:58+09:00",
-        "latest_rank": 54,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
-        "rank_after_rise": -15,
-        "persistence": "一過性",
-        "trend_score": 50
-      },
-      {
-        "id": "d_694992",
-        "title": "妹孕ませないと出られない島2",
-        "ranking_type": "api",
-        "rank_change": 14,
-        "peak_rank": 75,
-        "peak_observed_at": "2026-11-23T23:26:14+09:00",
-        "latest_rank": 37,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
-        "rank_after_rise": -38,
-        "persistence": "一過性",
-        "trend_score": 50
-      },
-      {
-        "id": "d_770285",
-        "title": "クール系男装女に彼女寝取られたから、わからせてやった3",
-        "ranking_type": "api",
-        "rank_change": 13,
-        "peak_rank": 63,
-        "peak_observed_at": "2026-11-27T04:25:53+09:00",
-        "latest_rank": 56,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
-        "rank_after_rise": -7,
-        "persistence": "一過性",
-        "trend_score": 50
-      },
-      {
-        "id": "d_850572",
-        "title": "裏アカがバレた水泳部マネージャー",
-        "ranking_type": "api",
-        "rank_change": 12,
-        "peak_rank": 76,
-        "peak_observed_at": "2026-11-24T04:25:47+09:00",
-        "latest_rank": 52,
-        "latest_observed_at": "2026-11-27T15:26:19+09:00",
-        "rank_after_rise": -24,
+        "latest_rank": 49,
+        "latest_observed_at": "2026-11-27T23:26:38+09:00",
+        "rank_after_rise": -20,
         "persistence": "一過性",
         "trend_score": 50
       }
@@ -609,21 +609,21 @@
     "by_genre": [
       {
         "name": "中出し",
-        "product_count": 110,
+        "product_count": 111,
         "average_rank": 62,
-        "median_rank": 66,
-        "top10_products": 14,
-        "top10_share": 13,
-        "rise_rate": 33,
+        "median_rank": 67,
+        "top10_products": 15,
+        "top10_share": 14,
+        "rise_rate": 34,
         "average_rank_change": 0
       },
       {
         "name": "巨乳",
         "product_count": 101,
         "average_rank": 63,
-        "median_rank": 68,
-        "top10_products": 12,
-        "top10_share": 12,
+        "median_rank": 70,
+        "top10_products": 13,
+        "top10_share": 13,
         "rise_rate": 33,
         "average_rank_change": 0
       },
@@ -631,7 +631,7 @@
         "name": "おっぱい",
         "product_count": 82,
         "average_rank": 64,
-        "median_rank": 68,
+        "median_rank": 69,
         "top10_products": 12,
         "top10_share": 15,
         "rise_rate": 30,
@@ -639,22 +639,22 @@
       },
       {
         "name": "フェラ",
-        "product_count": 67,
-        "average_rank": 66,
-        "median_rank": 77,
-        "top10_products": 9,
-        "top10_share": 13,
-        "rise_rate": 29,
+        "product_count": 68,
+        "average_rank": 67,
+        "median_rank": 76,
+        "top10_products": 10,
+        "top10_share": 15,
+        "rise_rate": 30,
         "average_rank_change": 0
       },
       {
         "name": "パイズリ",
         "product_count": 48,
-        "average_rank": 67,
-        "median_rank": 76,
+        "average_rank": 66,
+        "median_rank": 78,
         "top10_products": 5,
         "top10_share": 10,
-        "rise_rate": 31,
+        "rise_rate": 32,
         "average_rank_change": 0
       },
       {
@@ -670,8 +670,8 @@
       {
         "name": "処女",
         "product_count": 28,
-        "average_rank": 71,
-        "median_rank": 80,
+        "average_rank": 72,
+        "median_rank": 78,
         "top10_products": 3,
         "top10_share": 11,
         "rise_rate": 33,
@@ -680,8 +680,8 @@
       {
         "name": "人妻・主婦",
         "product_count": 27,
-        "average_rank": 62,
-        "median_rank": 59,
+        "average_rank": 61,
+        "median_rank": 61,
         "top10_products": 2,
         "top10_share": 7,
         "rise_rate": 32,
@@ -690,21 +690,21 @@
       {
         "name": "学園もの",
         "product_count": 26,
-        "average_rank": 73,
-        "median_rank": 84,
+        "average_rank": 72,
+        "median_rank": 83,
         "top10_products": 2,
         "top10_share": 8,
-        "rise_rate": 30,
+        "rise_rate": 31,
         "average_rank_change": 0
       },
       {
         "name": "寝取り・寝取られ・NTR",
         "product_count": 26,
-        "average_rank": 64,
-        "median_rank": 68,
+        "average_rank": 63,
+        "median_rank": 67,
         "top10_products": 3,
         "top10_share": 12,
-        "rise_rate": 25,
+        "rise_rate": 26,
         "average_rank_change": 0
       }
     ],
@@ -715,15 +715,15 @@
         "top10_count": 0,
         "top10_share": 0,
         "top10_retention_rate": 0,
-        "average_rank": 73
+        "average_rank": 71
       },
       {
         "label": "500〜999円",
-        "product_count": 62,
+        "product_count": 63,
         "top10_count": 3,
         "top10_share": 5,
         "top10_retention_rate": 3,
-        "average_rank": 66
+        "average_rank": 67
       },
       {
         "label": "1000〜1999円",
@@ -731,22 +731,22 @@
         "top10_count": 7,
         "top10_share": 16,
         "top10_retention_rate": 10,
-        "average_rank": 59
+        "average_rank": 58
       },
       {
         "label": "2000〜2999円",
         "product_count": 15,
-        "top10_count": 4,
-        "top10_share": 27,
+        "top10_count": 5,
+        "top10_share": 33,
         "top10_retention_rate": 18,
-        "average_rank": 50
+        "average_rank": 52
       },
       {
         "label": "3000円〜",
         "product_count": 5,
         "top10_count": 2,
         "top10_share": 40,
-        "top10_retention_rate": 24,
+        "top10_retention_rate": 25,
         "average_rank": 57
       }
     ]
@@ -755,9 +755,9 @@
     "new_release_products": 48,
     "by_type": {
       "発売直後TOP入り型": 1,
-      "じわじわ上昇型": 2,
+      "じわじわ上昇型": 3,
       "一過性型": 0,
-      "判定保留": 45
+      "判定保留": 44
     },
     "products": [
       {
@@ -766,11 +766,11 @@
         "release_date": "2026-11-22",
         "launch_type": "発売直後TOP入り型",
         "first_rank": 6,
-        "best_rank": 3,
-        "latest_rank": 3,
+        "best_rank": 2,
+        "latest_rank": 2,
         "days_to_top10": 1,
-        "top10_snapshots": 19,
-        "total_snapshots": 19
+        "top10_snapshots": 20,
+        "total_snapshots": 20
       },
       {
         "id": "d_703543",
@@ -781,8 +781,8 @@
         "best_rank": 4,
         "latest_rank": 4,
         "days_to_top10": 0,
-        "top10_snapshots": 4,
-        "total_snapshots": 7
+        "top10_snapshots": 5,
+        "total_snapshots": 8
       },
       {
         "id": "d_821842",
@@ -793,8 +793,20 @@
         "best_rank": 6,
         "latest_rank": 6,
         "days_to_top10": 1,
-        "top10_snapshots": 7,
-        "total_snapshots": 10
+        "top10_snapshots": 8,
+        "total_snapshots": 11
+      },
+      {
+        "id": "d_850971",
+        "title": "俺だけが常識改変できるテレビ番組 〜生放送のまま、女子アナもお天気お姉さんも脱がせてハメて生放送〜",
+        "release_date": "2026-11-22",
+        "launch_type": "じわじわ上昇型",
+        "first_rank": 84,
+        "best_rank": 8,
+        "latest_rank": 8,
+        "days_to_top10": 5,
+        "top10_snapshots": 1,
+        "total_snapshots": 20
       },
       {
         "id": "d_839451",
@@ -805,8 +817,8 @@
         "best_rank": 3,
         "latest_rank": 5,
         "days_to_top10": 5,
-        "top10_snapshots": 19,
-        "total_snapshots": 19
+        "top10_snapshots": 20,
+        "total_snapshots": 20
       },
       {
         "id": "d_831099",
@@ -818,7 +830,7 @@
         "latest_rank": 12,
         "days_to_top10": 7,
         "top10_snapshots": 15,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_780681",
@@ -827,10 +839,10 @@
         "launch_type": "判定保留",
         "first_rank": 11,
         "best_rank": 5,
-        "latest_rank": 8,
+        "latest_rank": 9,
         "days_to_top10": 3,
-        "top10_snapshots": 18,
-        "total_snapshots": 19
+        "top10_snapshots": 19,
+        "total_snapshots": 20
       },
       {
         "id": "d_835500",
@@ -842,7 +854,7 @@
         "latest_rank": 13,
         "days_to_top10": 4,
         "top10_snapshots": 13,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_831360",
@@ -851,22 +863,10 @@
         "launch_type": "判定保留",
         "first_rank": 15,
         "best_rank": 8,
-        "latest_rank": 9,
+        "latest_rank": 11,
         "days_to_top10": 4,
         "top10_snapshots": 12,
-        "total_snapshots": 19
-      },
-      {
-        "id": "d_850971",
-        "title": "俺だけが常識改変できるテレビ番組 〜生放送のまま、女子アナもお天気お姉さんも脱がせてハメて生放送〜",
-        "release_date": "2026-11-22",
-        "launch_type": "判定保留",
-        "first_rank": 84,
-        "best_rank": 11,
-        "latest_rank": 11,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_842918",
@@ -875,10 +875,10 @@
         "launch_type": "判定保留",
         "first_rank": 12,
         "best_rank": 12,
-        "latest_rank": 68,
+        "latest_rank": 72,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_831307",
@@ -887,10 +887,10 @@
         "launch_type": "判定保留",
         "first_rank": 25,
         "best_rank": 13,
-        "latest_rank": 16,
+        "latest_rank": 19,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_779379",
@@ -899,7 +899,19 @@
         "launch_type": "判定保留",
         "first_rank": 16,
         "best_rank": 15,
-        "latest_rank": 31,
+        "latest_rank": 32,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 20
+      },
+      {
+        "id": "d_814780",
+        "title": "一年後、俺の子を孕む妹の記録。4",
+        "release_date": "2026-11-23",
+        "launch_type": "判定保留",
+        "first_rank": 65,
+        "best_rank": 15,
+        "latest_rank": 15,
         "days_to_top10": null,
         "top10_snapshots": 0,
         "total_snapshots": 19
@@ -911,10 +923,22 @@
         "launch_type": "判定保留",
         "first_rank": 28,
         "best_rank": 15,
-        "latest_rank": 15,
+        "latest_rank": 18,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
+      },
+      {
+        "id": "d_804131",
+        "title": "C級サキュバスで抜いてるなんて誰にも秘密にしとくんで",
+        "release_date": "2026-11-21",
+        "launch_type": "判定保留",
+        "first_rank": 34,
+        "best_rank": 16,
+        "latest_rank": 16,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 20
       },
       {
         "id": "d_814446",
@@ -923,34 +947,10 @@
         "launch_type": "判定保留",
         "first_rank": 20,
         "best_rank": 16,
-        "latest_rank": 43,
+        "latest_rank": 46,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
-      },
-      {
-        "id": "d_814780",
-        "title": "一年後、俺の子を孕む妹の記録。4",
-        "release_date": "2026-11-23",
-        "launch_type": "判定保留",
-        "first_rank": 65,
-        "best_rank": 17,
-        "latest_rank": 17,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 18
-      },
-      {
-        "id": "d_804131",
-        "title": "C級サキュバスで抜いてるなんて誰にも秘密にしとくんで",
-        "release_date": "2026-11-21",
-        "launch_type": "判定保留",
-        "first_rank": 34,
-        "best_rank": 19,
-        "latest_rank": 19,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_766078",
@@ -958,11 +958,11 @@
         "release_date": "2026-11-24",
         "launch_type": "判定保留",
         "first_rank": 75,
-        "best_rank": 21,
-        "latest_rank": 21,
+        "best_rank": 17,
+        "latest_rank": 17,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 13
+        "total_snapshots": 14
       },
       {
         "id": "d_805482",
@@ -971,10 +971,10 @@
         "launch_type": "判定保留",
         "first_rank": 27,
         "best_rank": 22,
-        "latest_rank": 45,
+        "latest_rank": 52,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_754090",
@@ -986,7 +986,7 @@
         "latest_rank": 24,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_766939",
@@ -994,11 +994,11 @@
         "release_date": "2026-11-21",
         "launch_type": "判定保留",
         "first_rank": 40,
-        "best_rank": 27,
-        "latest_rank": 27,
+        "best_rank": 25,
+        "latest_rank": 25,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_778609",
@@ -1006,11 +1006,11 @@
         "release_date": "2026-11-22",
         "launch_type": "判定保留",
         "first_rank": 45,
-        "best_rank": 29,
-        "latest_rank": 29,
+        "best_rank": 27,
+        "latest_rank": 27,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_842029",
@@ -1019,10 +1019,10 @@
         "launch_type": "判定保留",
         "first_rank": 33,
         "best_rank": 29,
-        "latest_rank": 35,
+        "latest_rank": 37,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_849597",
@@ -1034,7 +1034,19 @@
         "latest_rank": 30,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
+      },
+      {
+        "id": "d_828939",
+        "title": "人妻管理人響子  完全版",
+        "release_date": "2026-11-27",
+        "launch_type": "判定保留",
+        "first_rank": 85,
+        "best_rank": 31,
+        "latest_rank": 31,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 3
       },
       {
         "id": "d_844841",
@@ -1054,11 +1066,23 @@
         "release_date": "2026-11-23",
         "launch_type": "判定保留",
         "first_rank": 75,
-        "best_rank": 40,
-        "latest_rank": 40,
+        "best_rank": 39,
+        "latest_rank": 39,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 15
+        "total_snapshots": 16
+      },
+      {
+        "id": "d_833650",
+        "title": "種付け自由学園6",
+        "release_date": "2026-11-21",
+        "launch_type": "判定保留",
+        "first_rank": 63,
+        "best_rank": 41,
+        "latest_rank": 41,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 20
       },
       {
         "id": "d_844894",
@@ -1067,22 +1091,10 @@
         "launch_type": "判定保留",
         "first_rank": 42,
         "best_rank": 41,
-        "latest_rank": 82,
+        "latest_rank": 90,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
-      },
-      {
-        "id": "d_833650",
-        "title": "種付け自由学園6",
-        "release_date": "2026-11-21",
-        "launch_type": "判定保留",
-        "first_rank": 63,
-        "best_rank": 42,
-        "latest_rank": 42,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_850970",
@@ -1091,10 +1103,10 @@
         "launch_type": "判定保留",
         "first_rank": 58,
         "best_rank": 42,
-        "latest_rank": 48,
+        "latest_rank": 57,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
+        "total_snapshots": 20
       },
       {
         "id": "d_718117",
@@ -1109,16 +1121,40 @@
         "total_snapshots": 18
       },
       {
+        "id": "d_833775",
+        "title": "性少女学園2",
+        "release_date": "2026-11-27",
+        "launch_type": "判定保留",
+        "first_rank": 85,
+        "best_rank": 47,
+        "latest_rank": 47,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 2
+      },
+      {
+        "id": "d_849870",
+        "title": "孕ませセクキャバ生活シミュレーター 〜借金まみれの推し嬢を、90日で身請けする〜",
+        "release_date": "2026-11-24",
+        "launch_type": "判定保留",
+        "first_rank": 91,
+        "best_rank": 49,
+        "latest_rank": 49,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 8
+      },
+      {
         "id": "d_850572",
         "title": "裏アカがバレた水泳部マネージャー",
         "release_date": "2026-11-22",
         "launch_type": "判定保留",
         "first_rank": 97,
         "best_rank": 52,
-        "latest_rank": 52,
+        "latest_rank": 54,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 18
+        "total_snapshots": 19
       },
       {
         "id": "d_842406",
@@ -1127,34 +1163,10 @@
         "launch_type": "判定保留",
         "first_rank": 69,
         "best_rank": 53,
-        "latest_rank": 65,
+        "latest_rank": 86,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 19
-      },
-      {
-        "id": "d_849870",
-        "title": "孕ませセクキャバ生活シミュレーター 〜借金まみれの推し嬢を、90日で身請けする〜",
-        "release_date": "2026-11-24",
-        "launch_type": "判定保留",
-        "first_rank": 91,
-        "best_rank": 54,
-        "latest_rank": 54,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 7
-      },
-      {
-        "id": "d_828939",
-        "title": "人妻管理人響子  完全版",
-        "release_date": "2026-11-27",
-        "launch_type": "判定保留",
-        "first_rank": 85,
-        "best_rank": 55,
-        "latest_rank": 55,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 2
+        "total_snapshots": 20
       },
       {
         "id": "d_811954",
@@ -1163,10 +1175,34 @@
         "launch_type": "判定保留",
         "first_rank": 100,
         "best_rank": 57,
-        "latest_rank": 62,
+        "latest_rank": 74,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 18
+        "total_snapshots": 19
+      },
+      {
+        "id": "d_831752",
+        "title": "陰キャ爆乳にチンポ生やしてみたドッキリ",
+        "release_date": "2026-11-21",
+        "launch_type": "判定保留",
+        "first_rank": 98,
+        "best_rank": 59,
+        "latest_rank": 59,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 16
+      },
+      {
+        "id": "d_757171",
+        "title": "チート人事任命権2！！僕が君を採用してあ〜げる",
+        "release_date": "2026-11-21",
+        "launch_type": "判定保留",
+        "first_rank": 98,
+        "best_rank": 60,
+        "latest_rank": 60,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 11
       },
       {
         "id": "d_829251",
@@ -1175,34 +1211,10 @@
         "launch_type": "判定保留",
         "first_rank": 100,
         "best_rank": 60,
-        "latest_rank": 63,
+        "latest_rank": 67,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 16
-      },
-      {
-        "id": "d_831752",
-        "title": "陰キャ爆乳にチンポ生やしてみたドッキリ",
-        "release_date": "2026-11-21",
-        "launch_type": "判定保留",
-        "first_rank": 98,
-        "best_rank": 60,
-        "latest_rank": 60,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 15
-      },
-      {
-        "id": "d_757171",
-        "title": "チート人事任命権2！！僕が君を採用してあ〜げる",
-        "release_date": "2026-11-21",
-        "launch_type": "判定保留",
-        "first_rank": 98,
-        "best_rank": 61,
-        "latest_rank": 61,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 10
+        "total_snapshots": 17
       },
       {
         "id": "d_836477",
@@ -1210,11 +1222,23 @@
         "release_date": "2026-11-22",
         "launch_type": "判定保留",
         "first_rank": 93,
-        "best_rank": 64,
+        "best_rank": 63,
+        "latest_rank": 63,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 17
+      },
+      {
+        "id": "d_840592",
+        "title": "オタクな彼女のエロ倫理観はブッッッ壊れてる",
+        "release_date": "2026-11-21",
+        "launch_type": "判定保留",
+        "first_rank": 91,
+        "best_rank": 66,
         "latest_rank": 66,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 16
+        "total_snapshots": 20
       },
       {
         "id": "d_841044",
@@ -1224,18 +1248,6 @@
         "first_rank": 92,
         "best_rank": 69,
         "latest_rank": 92,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 19
-      },
-      {
-        "id": "d_840592",
-        "title": "オタクな彼女のエロ倫理観はブッッッ壊れてる",
-        "release_date": "2026-11-21",
-        "launch_type": "判定保留",
-        "first_rank": 91,
-        "best_rank": 71,
-        "latest_rank": 71,
         "days_to_top10": null,
         "top10_snapshots": 0,
         "total_snapshots": 19
@@ -1253,40 +1265,28 @@
         "total_snapshots": 7
       },
       {
-        "id": "d_820181",
-        "title": "いつでもどこでも性処理おまんこしてくれる清楚なオナホ従者",
-        "release_date": "2026-11-23",
-        "launch_type": "判定保留",
-        "first_rank": 98,
-        "best_rank": 84,
-        "latest_rank": 84,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 7
-      },
-      {
-        "id": "d_833775",
-        "title": "性少女学園2",
-        "release_date": "2026-11-27",
-        "launch_type": "判定保留",
-        "first_rank": 85,
-        "best_rank": 85,
-        "latest_rank": 85,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 1
-      },
-      {
         "id": "d_834498",
         "title": "【スマホ対応】AVメーカーをつくろう！ 〜本格AVメーカー経営シミュレーション×体位開発おさわりクリッカーゲーム〜",
         "release_date": "2026-11-24",
         "launch_type": "判定保留",
         "first_rank": 96,
-        "best_rank": 94,
-        "latest_rank": 94,
+        "best_rank": 77,
+        "latest_rank": 77,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 2
+        "total_snapshots": 3
+      },
+      {
+        "id": "d_820181",
+        "title": "いつでもどこでも性処理おまんこしてくれる清楚なオナホ従者",
+        "release_date": "2026-11-23",
+        "launch_type": "判定保留",
+        "first_rank": 98,
+        "best_rank": 78,
+        "latest_rank": 78,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 8
       },
       {
         "id": "d_820192",
@@ -1294,11 +1294,23 @@
         "release_date": "2026-11-24",
         "launch_type": "判定保留",
         "first_rank": 99,
-        "best_rank": 97,
-        "latest_rank": 98,
+        "best_rank": 93,
+        "latest_rank": 93,
         "days_to_top10": null,
         "top10_snapshots": 0,
-        "total_snapshots": 4
+        "total_snapshots": 5
+      },
+      {
+        "id": "d_831999",
+        "title": "ガールズクラブ",
+        "release_date": "2026-11-22",
+        "launch_type": "判定保留",
+        "first_rank": 99,
+        "best_rank": 96,
+        "latest_rank": 96,
+        "days_to_top10": null,
+        "top10_snapshots": 0,
+        "total_snapshots": 2
       },
       {
         "id": "d_851549",
@@ -1308,18 +1320,6 @@
         "first_rank": 98,
         "best_rank": 98,
         "latest_rank": 98,
-        "days_to_top10": null,
-        "top10_snapshots": 0,
-        "total_snapshots": 1
-      },
-      {
-        "id": "d_831999",
-        "title": "ガールズクラブ",
-        "release_date": "2026-11-22",
-        "launch_type": "判定保留",
-        "first_rank": 99,
-        "best_rank": 99,
-        "latest_rank": 99,
         "days_to_top10": null,
         "top10_snapshots": 0,
         "total_snapshots": 1
@@ -1339,68 +1339,68 @@
     ]
   },
   "dlsite_analysis": {
-    "snapshot_count": 27,
-    "unique_products": 42,
+    "snapshot_count": 30,
+    "unique_products": 44,
     "top10_stays": [
       {
         "id": "RJ01499436",
         "title": "淫呪の迷宮 ～ミラと遊蕩の主～",
-        "top10_snapshots": 27,
-        "observation_rate": 100
-      },
-      {
-        "id": "RJ01680106",
-        "title": "DECOY 群青の魔女 DLC 悠遠の旅人",
-        "top10_snapshots": 27,
-        "observation_rate": 100
-      },
-      {
-        "id": "RJ01751033",
-        "title": "【15時間】『裏坂ひくめ』の\"ガチ実演\"オナニー録～2025【支援サイトまとめ】",
-        "top10_snapshots": 27,
+        "top10_snapshots": 30,
         "observation_rate": 100
       },
       {
         "id": "RJ01751739",
         "title": "淫祠屋敷 ~艶なる祟りの供物~",
-        "top10_snapshots": 27,
+        "top10_snapshots": 30,
         "observation_rate": 100
+      },
+      {
+        "id": "RJ01680106",
+        "title": "DECOY 群青の魔女 DLC 悠遠の旅人",
+        "top10_snapshots": 29,
+        "observation_rate": 97
+      },
+      {
+        "id": "RJ01751033",
+        "title": "【15時間】『裏坂ひくめ』の\"ガチ実演\"オナニー録～2025【支援サイトまとめ】",
+        "top10_snapshots": 27,
+        "observation_rate": 90
       },
       {
         "id": "RJ01609862",
         "title": "なつまじょ！ -二人の魔女と真夏の田舎生活-",
         "top10_snapshots": 24,
-        "observation_rate": 89
+        "observation_rate": 80
       },
       {
         "id": "RJ01726029",
         "title": "姫騎士シルヴィア",
         "top10_snapshots": 24,
-        "observation_rate": 89
+        "observation_rate": 80
       },
       {
         "id": "RJ01662678",
         "title": "まおくんとサキュバスメイドさん～メイドさんにいたずらする探索系RPG2～",
         "top10_snapshots": 21,
-        "observation_rate": 78
+        "observation_rate": 70
       },
       {
         "id": "RJ01731408",
         "title": "NEMESIS OF NELVA",
         "top10_snapshots": 18,
-        "observation_rate": 67
+        "observation_rate": 60
       },
       {
         "id": "RJ01690793",
         "title": "C級サキュバスで抜いてるなんて誰にも秘密にしとくんで",
         "top10_snapshots": 15,
-        "observation_rate": 56
+        "observation_rate": 50
       },
       {
         "id": "RJ01513592",
         "title": "生贄聖女 ～シャルロッテ～",
-        "top10_snapshots": 9,
-        "observation_rate": 33
+        "top10_snapshots": 12,
+        "observation_rate": 40
       }
     ],
     "biggest_movers": [
@@ -1496,7 +1496,7 @@
       }
     ],
     "price_analysis": {
-      "average_price": 1629,
+      "average_price": 1659,
       "median_price": 1617,
       "price_buckets": [
         {
@@ -1511,8 +1511,8 @@
         },
         {
           "label": "1000〜1999円",
-          "count": 23,
-          "top10_count": 11
+          "count": 24,
+          "top10_count": 13
         },
         {
           "label": "2000〜2999円",
@@ -1521,13 +1521,13 @@
         },
         {
           "label": "3000円〜",
-          "count": 2,
+          "count": 3,
           "top10_count": 1
         }
       ]
     },
-    "new_entries": 20,
-    "reentries": 8
+    "new_entries": 22,
+    "reentries": 9
   },
   "cross_platform": {
     "matched_products": 1,
@@ -1535,133 +1535,133 @@
     "rows": []
   },
   "creator_insights": [
-    "今週の最大上昇はAPIランキングで+30でした。",
-    "APIランキング上位で16作品を観測しました。",
-    "NEWを22件、REENTRYを10件観測しました。"
+    "今週の最大上昇はAPIランキングで+38でした。",
+    "APIランキング上位で17作品を観測しました。",
+    "NEWを23件、REENTRYを10件観測しました。"
   ],
-  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +30\n🆕 NEW 22件\n🔄 REENTRY 10件\n📡 CROSS 0件\n💸 SALE作品比率 83%\n💰 中央価格 ¥990\n\nNEWを22件、REENTRYを10件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
+  "x_post_text": "📊 今週のFANZA同人トレンド\n\n今週途中の暫定集計だよ〜！\n\n🔥 最大上昇 +38\n🆕 NEW 23件\n🔄 REENTRY 10件\n📡 CROSS 0件\n💸 SALE作品比率 83%\n💰 中央価格 ¥990\n\nNEWを23件、REENTRYを10件観測しました。ちょい注目だね👀\n\n※RankIdle観測データによる集計",
   "stable_top10": [
     {
       "id": "d_201721",
       "title": "サイクロンの同人誌まとめ 2012-2019",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_791913",
       "title": "妹に100回中出ししないと出られない部屋",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_839451",
       "title": "元ヒロインと2年越しの恋を叶えるまで！",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_847072",
       "title": "ヒプノワーカー〜催◯アプリでやりたい放題〜",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_848845",
       "title": "孕ませ？アイドル育成シミュレーター  〜悪魔と契約して、濃厚精子を子宮に注いで1億人のファンを作れ！〜",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_780681",
       "title": "母を家畜にするレシピ",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 95
     },
     {
       "id": "d_831099",
       "title": "ウチのヤンデレな飼い猫ちゃん×2にメチャクチャに絞られちゃう話",
       "top10_snapshots": 15,
-      "observation_rate": 79
+      "observation_rate": 75
     },
     {
       "id": "d_835500",
       "title": "悪の手先になったので。〜魔法少女を凌●します〜3後編",
       "top10_snapshots": 13,
-      "observation_rate": 68
+      "observation_rate": 65
     },
     {
       "id": "d_831360",
       "title": "らぶらぶ夫婦アンソロジー",
       "top10_snapshots": 12,
-      "observation_rate": 63
+      "observation_rate": 60
     },
     {
       "id": "d_797041",
       "title": "完全痴●2 清楚なJKを汚し尽くす",
       "top10_snapshots": 8,
-      "observation_rate": 42
+      "observation_rate": 40
     }
   ],
   "top10_stays": [
     {
       "id": "d_201721",
       "title": "サイクロンの同人誌まとめ 2012-2019",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_791913",
       "title": "妹に100回中出ししないと出られない部屋",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_839451",
       "title": "元ヒロインと2年越しの恋を叶えるまで！",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_847072",
       "title": "ヒプノワーカー〜催◯アプリでやりたい放題〜",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_848845",
       "title": "孕ませ？アイドル育成シミュレーター  〜悪魔と契約して、濃厚精子を子宮に注いで1億人のファンを作れ！〜",
-      "top10_snapshots": 19,
+      "top10_snapshots": 20,
       "observation_rate": 100
     },
     {
       "id": "d_780681",
       "title": "母を家畜にするレシピ",
-      "top10_snapshots": 18,
+      "top10_snapshots": 19,
       "observation_rate": 95
     },
     {
       "id": "d_831099",
       "title": "ウチのヤンデレな飼い猫ちゃん×2にメチャクチャに絞られちゃう話",
       "top10_snapshots": 15,
-      "observation_rate": 79
+      "observation_rate": 75
     },
     {
       "id": "d_835500",
       "title": "悪の手先になったので。〜魔法少女を凌●します〜3後編",
       "top10_snapshots": 13,
-      "observation_rate": 68
+      "observation_rate": 65
     },
     {
       "id": "d_831360",
       "title": "らぶらぶ夫婦アンソロジー",
       "top10_snapshots": 12,
-      "observation_rate": 63
+      "observation_rate": 60
     },
     {
       "id": "d_797041",
       "title": "完全痴●2 清楚なJKを汚し尽くす",
       "top10_snapshots": 8,
-      "observation_rate": 42
+      "observation_rate": 40
     }
   ],
   "methodology_note": "販売数・売上ではなく、保存されたランキングスナップショット内の観測結果です。"
