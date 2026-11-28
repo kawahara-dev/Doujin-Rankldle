@@ -1,7 +1,7 @@
 {
   "week_start": "2026-11-23",
   "week_end": "2026-11-29",
-  "generated_at": "2026-11-28T10:26:11+09:00",
+  "generated_at": "2026-11-28T10:28:04+09:00",
   "data_status": "PARTIAL",
   "observed_days": 6,
   "expected_days": 6,
@@ -1387,68 +1387,68 @@
     ]
   },
   "dlsite_analysis": {
-    "snapshot_count": 32,
-    "unique_products": 46,
+    "snapshot_count": 33,
+    "unique_products": 47,
     "top10_stays": [
       {
         "id": "RJ01499436",
         "title": "淫呪の迷宮 ～ミラと遊蕩の主～",
-        "top10_snapshots": 32,
+        "top10_snapshots": 33,
         "observation_rate": 100
       },
       {
         "id": "RJ01751739",
         "title": "淫祠屋敷 ~艶なる祟りの供物~",
-        "top10_snapshots": 32,
+        "top10_snapshots": 33,
         "observation_rate": 100
       },
       {
         "id": "RJ01680106",
         "title": "DECOY 群青の魔女 DLC 悠遠の旅人",
         "top10_snapshots": 29,
-        "observation_rate": 91
+        "observation_rate": 88
       },
       {
         "id": "RJ01751033",
         "title": "【15時間】『裏坂ひくめ』の\"ガチ実演\"オナニー録～2025【支援サイトまとめ】",
         "top10_snapshots": 27,
-        "observation_rate": 84
+        "observation_rate": 82
       },
       {
         "id": "RJ01609862",
         "title": "なつまじょ！ -二人の魔女と真夏の田舎生活-",
         "top10_snapshots": 24,
-        "observation_rate": 75
+        "observation_rate": 73
       },
       {
         "id": "RJ01726029",
         "title": "姫騎士シルヴィア",
         "top10_snapshots": 24,
-        "observation_rate": 75
+        "observation_rate": 73
       },
       {
         "id": "RJ01662678",
         "title": "まおくんとサキュバスメイドさん～メイドさんにいたずらする探索系RPG2～",
         "top10_snapshots": 21,
-        "observation_rate": 66
+        "observation_rate": 64
       },
       {
         "id": "RJ01731408",
         "title": "NEMESIS OF NELVA",
         "top10_snapshots": 18,
-        "observation_rate": 56
+        "observation_rate": 55
+      },
+      {
+        "id": "RJ01513592",
+        "title": "生贄聖女 ～シャルロッテ～",
+        "top10_snapshots": 15,
+        "observation_rate": 45
       },
       {
         "id": "RJ01690793",
         "title": "C級サキュバスで抜いてるなんて誰にも秘密にしとくんで",
         "top10_snapshots": 15,
-        "observation_rate": 47
-      },
-      {
-        "id": "RJ01513592",
-        "title": "生贄聖女 ～シャルロッテ～",
-        "top10_snapshots": 14,
-        "observation_rate": 44
+        "observation_rate": 45
       }
     ],
     "biggest_movers": [
@@ -1544,8 +1544,8 @@
       }
     ],
     "price_analysis": {
-      "average_price": 1653,
-      "median_price": 1617,
+      "average_price": 1676,
+      "median_price": 1650,
       "price_buckets": [
         {
           "label": "〜499円",
@@ -1564,7 +1564,7 @@
         },
         {
           "label": "2000〜2999円",
-          "count": 9,
+          "count": 10,
           "top10_count": 6
         },
         {
@@ -1574,8 +1574,8 @@
         }
       ]
     },
-    "new_entries": 24,
-    "reentries": 9
+    "new_entries": 25,
+    "reentries": 10
   },
   "cross_platform": {
     "matched_products": 2,
